@@ -70,8 +70,8 @@ export default function Hero() {
                 <div className="col-span-1 flex justify-center">
                   <div className="h-1/2">
                     <Image
-                      width={230}
-                      height={62}
+                      width={204}
+                      height={55}
                       src="/static/unicaja-grey.svg"
                       alt="Unicaja Fundación"
                     />

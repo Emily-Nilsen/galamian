@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Features from '../components/features';
+import Testimonial from '../components/testimonial';
 import Noticias from '../components/noticias';
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
       <Hero />
       {/* School features */}
       <Features />
+      {/* Testimonial */}
+      <Testimonial />
       {/* Noticias */}
       <Noticias />
     </div>
