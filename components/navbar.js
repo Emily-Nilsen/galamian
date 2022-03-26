@@ -1,90 +1,77 @@
 /* This example requires Tailwind CSS v2.0+ */
+import Image from 'next/image';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import {
-  BookmarkAltIcon,
-  BriefcaseIcon,
-  ChartBarIcon,
-  CheckCircleIcon,
-  CursorClickIcon,
-  DesktopComputerIcon,
+  BellIcon,
+  AcademicCapIcon,
+  IdentificationIcon,
   GlobeAltIcon,
   InformationCircleIcon,
   MenuIcon,
   NewspaperIcon,
-  OfficeBuildingIcon,
+  LibraryIcon,
   PhoneIcon,
-  PlayIcon,
-  ShieldCheckIcon,
+  PencilAltIcon,
   UserGroupIcon,
-  ViewGridIcon,
   XIcon,
+  MailIcon,
+  UserCircleIcon,
+  CalendarIcon,
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 
 const solutions = [
   {
-    name: 'Analytics',
+    name: 'Estudiar en la AIG',
     description:
-      'Get a better understanding of where your traffic is coming from.',
+      'Los programas de estudios de la Academia Internacional Galamian están desarrollados en pos de educar a músicos profesionales hábiles en todos los aspectos relacionados con el mundo laboral de la música.',
     href: '#',
-    icon: ChartBarIcon,
+    icon: AcademicCapIcon,
   },
   {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    name: 'Audiciones de acceso curso 2022/2023',
+    description:
+      'La Academia Internacional Galamian convoca audiciones de acceso para el curso 2022/2023.',
     href: '#',
-    icon: CursorClickIcon,
+    icon: IdentificationIcon,
   },
   {
-    name: 'Security',
-    description: "Your customers' data will be safe and secure.",
+    name: 'Inscripción en las audiciones',
+    description:
+      'La Academia Internacional Galamian abre la inscripción a sus audiciones de acceso para el curso escolar 2022/2023, a comenzar en el próximo septiembre.',
     href: '#',
-    icon: ShieldCheckIcon,
-  },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: ViewGridIcon,
+    icon: PencilAltIcon,
   },
 ];
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'View All Products', href: '#', icon: CheckCircleIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-];
+const callsToAction = [{ name: 'Contacto', href: '#', icon: PhoneIcon }];
 const company = [
-  { name: 'About', href: '#', icon: InformationCircleIcon },
-  { name: 'Customers', href: '#', icon: OfficeBuildingIcon },
-  { name: 'Press', href: '#', icon: NewspaperIcon },
-  { name: 'Careers', href: '#', icon: BriefcaseIcon },
-  { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
+  { name: 'El Proyecto', href: '#', icon: InformationCircleIcon },
+  { name: 'Sus Fundadores', href: '#', icon: GlobeAltIcon },
+  { name: 'Sala Unicaja', href: '#', icon: LibraryIcon },
 ];
 const resources = [
-  { name: 'Community', href: '#', icon: UserGroupIcon },
-  { name: 'Partners', href: '#', icon: GlobeAltIcon },
-  { name: 'Guides', href: '#', icon: BookmarkAltIcon },
-  { name: 'Webinars', href: '#', icon: DesktopComputerIcon },
+  { name: 'Noticias', href: '#', icon: BellIcon },
+  { name: 'Eventos', href: '#', icon: CalendarIcon },
+  { name: 'Bulletin', href: '#', icon: NewspaperIcon },
+  { name: 'Contacto', href: '#', icon: MailIcon },
 ];
 const blogPosts = [
   {
     id: 1,
-    name: 'Boost your conversion rate',
+    name: 'Misha Dačić – Entrevista en Codalario',
     href: '#',
     preview:
       'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80',
+    imageUrl: '/static/misha.jpg',
   },
   {
     id: 2,
-    name: 'How to use search engine optimization to drive traffic to your site',
+    name: 'Joaquín Riquelme, recital de viola',
     href: '#',
     preview:
       'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80',
+    imageUrl: '/static/joaquin.jpg',
   },
 ];
 
@@ -104,16 +91,18 @@ export default function Navbar() {
           <div className="">
             <a href="#" className="flex">
               <span className="sr-only">Academia Internacional Galamian</span>
-              <h1 className="text-gold-500 text-4xl">G</h1>
-              {/* <img
-                className="w-auto h-8 sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-purple-600.svg"
-                alt=""
-              /> */}
+              <div>
+                <Image
+                  src="/static/galamian-gold-dark.svg"
+                  alt="Galamian logo"
+                  width={40}
+                  height={40}
+                ></Image>
+              </div>
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center p-2 text-neutral-400 bg-white rounded-md hover:text-neutral-500 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
+            <Popover.Button className="inline-flex items-center justify-center p-2 text-neutral-400 hover:text-neutral-500 focus:outline-none focus:ring-0 focus:ring-inset transition duration-200 ease-in-out">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
@@ -125,117 +114,11 @@ export default function Navbar() {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open
-                          ? 'text-neutral-900'
-                          : 'text-neutral-500 uppercase',
-                        'group bg-transparent inline-flex items-center text-sm tracking-wide hover:text-neutral-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500'
-                      )}
-                    >
-                      <span className="uppercase font-light">Estudia</span>
-                      <ChevronDownIcon
-                        className={classNames(
-                          open ? 'text-neutral-600' : 'text-neutral-400',
-                          'ml-2 h-5 w-5 group-hover:text-neutral-500'
-                        )}
-                        aria-hidden="true"
-                      />
-                    </Popover.Button>
-
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-200"
-                      enterFrom="opacity-0 -translate-y-1"
-                      enterTo="opacity-100 translate-y-0"
-                      leave="transition ease-in duration-150"
-                      leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 -translate-y-1"
-                    >
-                      <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
-                        <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
-                          {solutions.map((item) => (
-                            <a
-                              key={item.name}
-                              href={item.href}
-                              className="flex flex-col justify-between p-3 -m-3 rounded-lg hover:bg-neutral-50"
-                            >
-                              <div className="flex md:h-full lg:flex-col">
-                                <div className="flex-shrink-0">
-                                  <span className="inline-flex items-center justify-center w-10 h-10 text-white bg-purple-500 sm:h-12 sm:w-12">
-                                    <item.icon
-                                      className="w-6 h-6"
-                                      aria-hidden="true"
-                                    />
-                                  </span>
-                                </div>
-                                <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                                  <div>
-                                    <p className="text-base font-medium text-neutral-900 uppercase">
-                                      {item.name}
-                                    </p>
-                                    <p className="mt-1 text-sm text-neutral-500">
-                                      {item.description}
-                                    </p>
-                                  </div>
-                                  <p className="mt-2 text-sm font-medium text-purple-500 lg:mt-4">
-                                    Learn more{' '}
-                                    <span aria-hidden="true">&rarr;</span>
-                                  </p>
-                                </div>
-                              </div>
-                            </a>
-                          ))}
-                        </div>
-                        <div className="bg-neutral-50">
-                          <div className="px-4 py-5 mx-auto space-y-6 max-w-7xl sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
-                            {callsToAction.map((item) => (
-                              <div key={item.name} className="flow-root">
-                                <a
-                                  href={item.href}
-                                  className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 rounded-md hover:bg-neutral-100"
-                                >
-                                  <item.icon
-                                    className="flex-shrink-0 w-6 h-6 text-neutral-400"
-                                    aria-hidden="true"
-                                  />
-                                  <span className="ml-3">{item.name}</span>
-                                </a>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </Popover.Panel>
-                    </Transition>
-                  </>
-                )}
-              </Popover>
-              <a
-                href="#"
-                className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase"
-              >
-                La Academia
-              </a>
-              <a
-                href="#"
-                className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase"
-              >
-                Profesores
-              </a>
-              <a
-                href="#"
-                className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase"
-              >
-                Galamian Junior
-              </a>
-              <Popover>
-                {({ open }) => (
-                  <>
-                    <Popover.Button
-                      className={classNames(
                         open ? 'text-neutral-900' : 'text-neutral-500',
-                        'group bg-t inline-flex items-center text-sm tracking-wide uppercase hover:text-neutral-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500'
+                        'group bg-t inline-flex items-center text-sm tracking-wide uppercase hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-200 ease-in-out'
                       )}
                     >
-                      <span className="font-light">Más</span>
+                      <span className="font-base">La Academia</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-neutral-600' : 'text-neutral-400',
@@ -263,17 +146,17 @@ export default function Navbar() {
                           <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div>
                               <h3 className="text-sm font-medium tracking-wide text-neutral-500 uppercase">
-                                Company
+                                La Academia
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
                                 {company.map((item) => (
                                   <li key={item.name} className="flow-root">
                                     <a
                                       href={item.href}
-                                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 rounded-md hover:bg-neutral-50"
+                                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out"
                                     >
                                       <item.icon
-                                        className="flex-shrink-0 w-6 h-6 text-neutral-400"
+                                        className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500"
                                         aria-hidden="true"
                                       />
                                       <span className="ml-4">{item.name}</span>
@@ -284,17 +167,17 @@ export default function Navbar() {
                             </div>
                             <div>
                               <h3 className="text-sm font-medium tracking-wide text-neutral-500 uppercase">
-                                Resources
+                                Recursos
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
                                 {resources.map((item) => (
                                   <li key={item.name} className="flow-root">
                                     <a
                                       href={item.href}
-                                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 rounded-md hover:bg-neutral-50"
+                                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out"
                                     >
                                       <item.icon
-                                        className="flex-shrink-0 w-6 h-6 text-neutral-400"
+                                        className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500"
                                         aria-hidden="true"
                                       />
                                       <span className="ml-4">{item.name}</span>
@@ -307,21 +190,27 @@ export default function Navbar() {
                           <div className="px-4 py-8 bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                             <div>
                               <h3 className="text-sm font-medium tracking-wide text-neutral-500 uppercase">
-                                From the blog
+                                Del bulletin
                               </h3>
                               <ul role="list" className="mt-6 space-y-6">
                                 {blogPosts.map((post) => (
                                   <li key={post.id} className="flow-root">
                                     <a
                                       href={post.href}
-                                      className="flex p-3 -m-3 rounded-lg hover:bg-neutral-100"
+                                      className="flex p-3 -m-3 hover:bg-neutral-100"
                                     >
                                       <div className="flex-shrink-0 hidden sm:block">
-                                        <img
-                                          className="object-cover w-32 h-20 rounded-md"
-                                          src={post.imageUrl}
-                                          alt=""
-                                        />
+                                        <div className="object-cover w-32 h-20 relative">
+                                          <Image
+                                            width={128}
+                                            height={80}
+                                            src={post.imageUrl}
+                                            alt={post.name}
+                                            layout="fill"
+                                            objectFit="cover"
+                                            objectPosition="center"
+                                          />
+                                        </div>
                                       </div>
                                       <div className="flex-1 w-0 sm:ml-8">
                                         <h4 className="text-base font-medium text-neutral-900 truncate">
@@ -339,10 +228,10 @@ export default function Navbar() {
                             <div className="mt-6 text-sm font-medium">
                               <a
                                 href="#"
-                                className="text-purple-600 hover:text-purple-500"
+                                className="text-gold-600 hover:text-gold-500"
                               >
                                 {' '}
-                                View all posts{' '}
+                                Ver todas las publicaciones{' '}
                                 <span aria-hidden="true">&rarr;</span>
                               </a>
                             </div>
@@ -353,17 +242,118 @@ export default function Navbar() {
                   </>
                 )}
               </Popover>
+              <Popover>
+                {({ open }) => (
+                  <>
+                    <Popover.Button
+                      className={classNames(
+                        open
+                          ? 'text-neutral-900'
+                          : 'text-neutral-500 uppercase',
+                        'group bg-transparent inline-flex items-center text-sm tracking-wide hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-200 ease-in-out'
+                      )}
+                    >
+                      <span className="uppercase font-base">Estudia</span>
+                      <ChevronDownIcon
+                        className={classNames(
+                          open ? 'text-neutral-600' : 'text-neutral-400',
+                          'ml-2 h-5 w-5 group-hover:text-neutral-500'
+                        )}
+                        aria-hidden="true"
+                      />
+                    </Popover.Button>
+
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 -translate-y-1"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 -translate-y-1"
+                    >
+                      <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
+                        <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-3 lg:px-8 lg:py-12 xl:py-16">
+                          {solutions.map((item) => (
+                            <a
+                              key={item.name}
+                              href={item.href}
+                              className="flex flex-col justify-between p-3 -m-3 rounded-lg hover:bg-neutral-50"
+                            >
+                              <div className="flex md:h-full lg:flex-col">
+                                <div className="flex-shrink-0">
+                                  <span className="inline-flex items-center justify-center w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
+                                    <item.icon
+                                      className="w-6 h-6"
+                                      aria-hidden="true"
+                                    />
+                                  </span>
+                                </div>
+                                <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                                  <div>
+                                    <p className="text-base font-medium tracking-wide text-neutral-900">
+                                      {item.name}
+                                    </p>
+                                    <p className="mt-1 text-sm text-neutral-500">
+                                      {item.description}
+                                    </p>
+                                  </div>
+                                  <p className="mt-2 text-sm font-medium text-gold-600 lg:mt-4">
+                                    Aprende más{' '}
+                                    <span aria-hidden="true">&rarr;</span>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          ))}
+                        </div>
+                        <div className="bg-neutral-50">
+                          <div className="px-4 py-5 mx-auto space-y-6 max-w-7xl sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
+                            {callsToAction.map((item) => (
+                              <div key={item.name} className="flow-root group">
+                                <a
+                                  href={item.href}
+                                  className="flex items-center p-3 -m-3 text-base transition duration-200 ease-out font-medium text-neutral-900 hover:bg-neutral-100"
+                                >
+                                  <item.icon
+                                    className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500 transition duration-200 ease-in-out"
+                                    aria-hidden="true"
+                                  />
+                                  <span className="ml-3">{item.name}</span>
+                                </a>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </Popover.Panel>
+                    </Transition>
+                  </>
+                )}
+              </Popover>
+
+              <a
+                href="#"
+                className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase self-center transition duration-200 ease-in-out"
+              >
+                Profesores
+              </a>
+              <a
+                href="#"
+                className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase self-center transition duration-200 ease-in-out"
+              >
+                Galamian Junior
+              </a>
             </Popover.Group>
             <div className="flex items-center md:ml-12">
               <a
                 href="#"
                 className="text-sm text-neutral-500 hover:text-neutral-900 tracking-wide"
               >
-                ES | EN
+                English
               </a>
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-4 py-2 ml-8 text-sm tracking-wide text-purple-500 bg-t border-4 border-purple-500 hover:bg-purple-500 hover:text-white uppercase"
+                className="inline-flex items-center justify-center px-4 py-2 ml-8 text-sm tracking-wide text-white bg-neutral-400 hover:bg-neutral-500 hover:text-white uppercase transition duration-200 ease-in-out"
               >
                 Alumnos
               </a>
@@ -372,6 +362,7 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Dropdown Mobile */}
       <Transition
         as={Fragment}
         enter="duration-200 ease-out"
@@ -385,18 +376,21 @@ export default function Navbar() {
           focus
           className="absolute inset-x-0 top-0 z-30 p-2 transition origin-top-right transform md:hidden"
         >
-          <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-neutral-50">
+          <div className="bg-white divide-y-2 ring-1 ring-black ring-opacity-5 divide-neutral-50">
             <div className="px-5 pt-5 pb-6 sm:pb-8">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="w-auto h-8"
-                    src="https://tailwindui.com/img/logos/workflow-mark-purple-600.svg"
-                    alt="Workflow"
-                  />
+                  <div>
+                    <Image
+                      src="/static/galamian-gold-dark.svg"
+                      alt="Galamian logo"
+                      width={40}
+                      height={40}
+                    ></Image>
+                  </div>
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center p-2 text-neutral-400 bg-white rounded-md hover:text-neutral-500 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
+                  <Popover.Button className="inline-flex items-center justify-center p-2 text-neutral-400 hover:text-gold-500 focus:outline-none focus:ring-0 focus:ring-inset transition duration-200 ease-in-out">
                     <span className="sr-only">Close menu</span>
                     <XIcon className="w-6 h-6" aria-hidden="true" />
                   </Popover.Button>
@@ -405,13 +399,34 @@ export default function Navbar() {
               <div className="mt-6 sm:mt-8">
                 <nav>
                   <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
+                    <a
+                      href="#"
+                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out"
+                    >
+                      <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
+                        <LibraryIcon className="w-6 h-6" aria-hidden="true" />
+                      </div>
+                      <span className="ml-4">La Academia</span>
+                    </a>
+                    <a
+                      href="#"
+                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out"
+                    >
+                      <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
+                        <UserCircleIcon
+                          className="w-6 h-6"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <span className="ml-4">Professores</span>
+                    </a>
                     {solutions.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className="flex items-center p-3 -m-3 rounded-lg hover:bg-neutral-50"
                       >
-                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-purple-500 rounded-md sm:h-12 sm:w-12">
+                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
                           <item.icon className="w-6 h-6" aria-hidden="true" />
                         </div>
                         <div className="ml-4 text-base font-medium text-neutral-900">
@@ -420,15 +435,6 @@ export default function Navbar() {
                       </a>
                     ))}
                   </div>
-                  <div className="mt-8 text-base">
-                    <a
-                      href="#"
-                      className="font-medium text-purple-600 hover:text-purple-500"
-                    >
-                      {' '}
-                      View all products <span aria-hidden="true">&rarr;</span>
-                    </a>
-                  </div>
                 </nav>
               </div>
             </div>
@@ -436,58 +442,41 @@ export default function Navbar() {
               <div className="grid grid-cols-2 gap-4">
                 <a
                   href="#"
-                  className="text-base font-medium text-neutral-900 rounded-md hover:text-neutral-700"
+                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  Pricing
+                  Galamian Junior
                 </a>
 
                 <a
                   href="#"
-                  className="text-base font-medium text-neutral-900 rounded-md hover:text-neutral-700"
+                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  Docs
+                  Eventos
                 </a>
 
                 <a
                   href="#"
-                  className="text-base font-medium text-neutral-900 rounded-md hover:text-neutral-700"
+                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  Company
+                  Bulletin
                 </a>
 
                 <a
                   href="#"
-                  className="text-base font-medium text-neutral-900 rounded-md hover:text-neutral-700"
+                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  Resources
-                </a>
-
-                <a
-                  href="#"
-                  className="text-base font-medium text-neutral-900 rounded-md hover:text-neutral-700"
-                >
-                  Blog
-                </a>
-
-                <a
-                  href="#"
-                  className="text-base font-medium text-neutral-900 rounded-md hover:text-neutral-700"
-                >
-                  Contact Sales
+                  Contacto
                 </a>
               </div>
               <div className="mt-6">
                 <a
                   href="#"
-                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-purple-600 border border-transparent rounded-md shadow-sm hover:bg-purple-700"
+                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-neutral-400 border border-transparent hover:bg-neutral-500 transition duration-200 ease-in-out"
                 >
-                  Sign up
+                  Alumnos
                 </a>
-                <p className="mt-6 text-base font-medium text-center text-neutral-500">
-                  Existing customer?{' '}
-                  <a href="#" className="text-purple-600 hover:text-purple-500">
-                    Sign in
-                  </a>
+                <p className="mt-6 text-base font-medium text-center text-neutral-500 transition duration-200 ease-in-out hover:text-neutral-900 cursor-pointer">
+                  English
                 </p>
               </div>
             </div>
