@@ -53,7 +53,7 @@ const callsToAction = [
 ];
 const academia = [
   { name: 'El Proyecto', href: '/academia', icon: InformationCircleIcon },
-  { name: 'Sus Fundadores', href: '/academia', icon: GlobeAltIcon },
+  { name: 'Sus Fundadores', href: '/academia/#fundadores', icon: GlobeAltIcon },
   { name: 'Sala Unicaja', href: '/academia', icon: LibraryIcon },
 ];
 const recursos = [
@@ -382,7 +382,7 @@ export default function Navbar() {
           className="absolute inset-x-0 top-0 z-30 transition origin-top-right transform md:hidden"
         >
           <Popover.Button className="w-screen">
-            <div className="bg-white divide-y-2 ring-1 ring-black ring-opacity-5 divide-neutral-50">
+            <div className="bg-white divide-y-2 ring-1 ring-black ring-opacity-5 divide-neutral-50 shadow-lg">
               <div className="px-5 pt-5 pb-6 sm:pb-8">
                 <div className="flex items-center justify-between">
                   <div>
