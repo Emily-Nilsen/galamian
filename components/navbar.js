@@ -20,41 +20,47 @@ import {
   CalendarIcon,
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
-const solutions = [
+const estudiar = [
   {
     name: 'Estudiar en la AIG',
     description:
       'Los programas de estudios de la Academia Internacional Galamian están desarrollados en pos de educar a músicos profesionales hábiles en todos los aspectos relacionados con el mundo laboral de la música.',
-    href: '#',
+    href: '/estudiar',
     icon: AcademicCapIcon,
   },
   {
     name: 'Audiciones de acceso curso 2022/2023',
     description:
       'La Academia Internacional Galamian convoca audiciones de acceso para el curso 2022/2023.',
-    href: '#',
+    href: '/audiciones',
     icon: IdentificationIcon,
   },
   {
     name: 'Inscripción en las audiciones',
     description:
       'La Academia Internacional Galamian abre la inscripción a sus audiciones de acceso para el curso escolar 2022/2023, a comenzar en el próximo septiembre.',
-    href: '#',
+    href: '/inscripcion',
     icon: PencilAltIcon,
   },
 ];
-const callsToAction = [{ name: 'Contacto', href: '#', icon: PhoneIcon }];
-const company = [
-  { name: 'El Proyecto', href: '#', icon: InformationCircleIcon },
-  { name: 'Sus Fundadores', href: '#', icon: GlobeAltIcon },
-  { name: 'Sala Unicaja', href: '#', icon: LibraryIcon },
+const callsToAction = [
+  { name: 'Contacto', href: '/contacto', icon: PhoneIcon },
 ];
-const resources = [
-  { name: 'Noticias', href: '#', icon: BellIcon },
-  { name: 'Eventos', href: '#', icon: CalendarIcon },
-  { name: 'Bulletin', href: '#', icon: NewspaperIcon },
-  { name: 'Contacto', href: '#', icon: MailIcon },
+const academia = [
+  { name: 'El Proyecto', href: '/academia', icon: InformationCircleIcon },
+  { name: 'Sus Fundadores', href: '/academia', icon: GlobeAltIcon },
+  { name: 'Sala Unicaja', href: '/academia', icon: LibraryIcon },
+];
+const recursos = [
+  { name: 'Noticias', href: '/#noticias', icon: BellIcon },
+  { name: 'Eventos', href: '/eventos', icon: CalendarIcon },
+  { name: 'Bulletin', href: '/bulletin', icon: NewspaperIcon },
+  { name: 'Contacto', href: '/contacto', icon: MailIcon },
 ];
 const blogPosts = [
   {
@@ -88,8 +94,8 @@ export default function Navbar() {
       />
       <div className="relative z-20">
         <div className="flex items-center justify-between px-4 py-5 mx-auto max-w-7xl sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
-          <div className="">
-            <a href="#" className="flex">
+          <Link href="/" passHref>
+            <a className="flex">
               <span className="sr-only">Academia Internacional Galamian</span>
               <div>
                 <Image
@@ -100,7 +106,7 @@ export default function Navbar() {
                 ></Image>
               </div>
             </a>
-          </div>
+          </Link>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center p-2 text-neutral-400 hover:text-neutral-500 focus:outline-none focus:ring-0 focus:ring-inset transition duration-200 ease-in-out">
               <span className="sr-only">Open menu</span>
@@ -149,18 +155,21 @@ export default function Navbar() {
                                 La Academia
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
-                                {company.map((item) => (
+                                {academia.map((item) => (
                                   <li key={item.name} className="flow-root">
-                                    <a
-                                      href={item.href}
-                                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out"
-                                    >
-                                      <item.icon
-                                        className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500"
-                                        aria-hidden="true"
-                                      />
-                                      <span className="ml-4">{item.name}</span>
-                                    </a>
+                                    <Popover.Button>
+                                      <Link href={item.href} passHref>
+                                        <a className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out">
+                                          <item.icon
+                                            className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500"
+                                            aria-hidden="true"
+                                          />
+                                          <span className="ml-4">
+                                            {item.name}
+                                          </span>
+                                        </a>
+                                      </Link>
+                                    </Popover.Button>
                                   </li>
                                 ))}
                               </ul>
@@ -170,18 +179,21 @@ export default function Navbar() {
                                 Recursos
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
-                                {resources.map((item) => (
+                                {recursos.map((item) => (
                                   <li key={item.name} className="flow-root">
-                                    <a
-                                      href={item.href}
-                                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out"
-                                    >
-                                      <item.icon
-                                        className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500"
-                                        aria-hidden="true"
-                                      />
-                                      <span className="ml-4">{item.name}</span>
-                                    </a>
+                                    <Popover.Button>
+                                      <Link href={item.href} passHref>
+                                        <a className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out">
+                                          <item.icon
+                                            className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500"
+                                            aria-hidden="true"
+                                          />
+                                          <span className="ml-4">
+                                            {item.name}
+                                          </span>
+                                        </a>
+                                      </Link>
+                                    </Popover.Button>
                                   </li>
                                 ))}
                               </ul>
@@ -195,45 +207,43 @@ export default function Navbar() {
                               <ul role="list" className="mt-6 space-y-6">
                                 {blogPosts.map((post) => (
                                   <li key={post.id} className="flow-root">
-                                    <a
-                                      href={post.href}
-                                      className="flex p-3 -m-3 hover:bg-neutral-100"
-                                    >
-                                      <div className="flex-shrink-0 hidden sm:block">
-                                        <div className="object-cover w-32 h-20 relative">
-                                          <Image
-                                            width={128}
-                                            height={80}
-                                            src={post.imageUrl}
-                                            alt={post.name}
-                                            layout="fill"
-                                            objectFit="cover"
-                                            objectPosition="center"
-                                          />
+                                    <Link href={post.href} passHref>
+                                      <a className="flex p-3 -m-3 hover:bg-neutral-100">
+                                        <div className="flex-shrink-0 hidden sm:block">
+                                          <div className="object-cover w-32 h-20 relative">
+                                            <Image
+                                              width={128}
+                                              height={80}
+                                              src={post.imageUrl}
+                                              alt={post.name}
+                                              layout="fill"
+                                              objectFit="cover"
+                                              objectPosition="center"
+                                            />
+                                          </div>
                                         </div>
-                                      </div>
-                                      <div className="flex-1 w-0 sm:ml-8">
-                                        <h4 className="text-base font-medium text-neutral-900 truncate">
-                                          {post.name}
-                                        </h4>
-                                        <p className="mt-1 text-sm text-neutral-500">
-                                          {post.preview}
-                                        </p>
-                                      </div>
-                                    </a>
+                                        <div className="flex-1 w-0 sm:ml-8">
+                                          <h4 className="text-base font-medium text-neutral-900 truncate">
+                                            {post.name}
+                                          </h4>
+                                          <p className="mt-1 text-sm text-neutral-500">
+                                            {post.preview}
+                                          </p>
+                                        </div>
+                                      </a>
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
                             </div>
                             <div className="mt-6 text-sm font-medium">
-                              <a
-                                href="#"
-                                className="text-gold-600 hover:text-gold-500"
-                              >
-                                {' '}
-                                Ver todas las publicaciones{' '}
-                                <span aria-hidden="true">&rarr;</span>
-                              </a>
+                              <Link href="/bulletin" passHref>
+                                <a className="text-gold-600 hover:text-gold-500">
+                                  {' '}
+                                  Ver todas las publicaciones{' '}
+                                  <span aria-hidden="true">&rarr;</span>
+                                </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -274,53 +284,52 @@ export default function Navbar() {
                     >
                       <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
                         <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-3 lg:px-8 lg:py-12 xl:py-16">
-                          {solutions.map((item) => (
-                            <a
-                              key={item.name}
-                              href={item.href}
-                              className="flex flex-col justify-between p-3 -m-3 rounded-lg hover:bg-neutral-50"
-                            >
-                              <div className="flex md:h-full lg:flex-col">
-                                <div className="flex-shrink-0">
-                                  <span className="inline-flex items-center justify-center w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
-                                    <item.icon
-                                      className="w-6 h-6"
-                                      aria-hidden="true"
-                                    />
-                                  </span>
-                                </div>
-                                <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                                  <div>
-                                    <p className="text-base font-medium tracking-wide text-neutral-900">
-                                      {item.name}
-                                    </p>
-                                    <p className="mt-1 text-sm text-neutral-500">
-                                      {item.description}
-                                    </p>
+                          {estudiar.map((item) => (
+                            <Popover.Button key={item.name}>
+                              <Link href={item.href} passHref>
+                                <a className="flex flex-col justify-between p-3 -m-3 hover:bg-neutral-50">
+                                  <div className="flex md:h-full lg:flex-col">
+                                    <div className="flex-shrink-0">
+                                      <span className="inline-flex items-center justify-center w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
+                                        <item.icon
+                                          className="w-6 h-6"
+                                          aria-hidden="true"
+                                        />
+                                      </span>
+                                    </div>
+                                    <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                                      <div>
+                                        <p className="text-base font-medium tracking-wide text-neutral-900">
+                                          {item.name}
+                                        </p>
+                                        <p className="mt-1 text-sm text-neutral-500">
+                                          {item.description}
+                                        </p>
+                                      </div>
+                                      <p className="mt-2 text-sm font-medium text-gold-600 lg:mt-4">
+                                        Aprende más{' '}
+                                        <span aria-hidden="true">&rarr;</span>
+                                      </p>
+                                    </div>
                                   </div>
-                                  <p className="mt-2 text-sm font-medium text-gold-600 lg:mt-4">
-                                    Aprende más{' '}
-                                    <span aria-hidden="true">&rarr;</span>
-                                  </p>
-                                </div>
-                              </div>
-                            </a>
+                                </a>
+                              </Link>
+                            </Popover.Button>
                           ))}
                         </div>
                         <div className="bg-neutral-50">
                           <div className="px-4 py-5 mx-auto space-y-6 max-w-7xl sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                             {callsToAction.map((item) => (
                               <div key={item.name} className="flow-root group">
-                                <a
-                                  href={item.href}
-                                  className="flex items-center p-3 -m-3 text-base transition duration-200 ease-out font-medium text-neutral-900 hover:bg-neutral-100"
-                                >
-                                  <item.icon
-                                    className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500 transition duration-200 ease-in-out"
-                                    aria-hidden="true"
-                                  />
-                                  <span className="ml-3">{item.name}</span>
-                                </a>
+                                <Link href={item.href} passHref>
+                                  <a className="flex items-center p-3 -m-3 text-base transition duration-200 ease-out font-medium text-neutral-900 hover:bg-neutral-100">
+                                    <item.icon
+                                      className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500 transition duration-200 ease-in-out"
+                                      aria-hidden="true"
+                                    />
+                                    <span className="ml-3">{item.name}</span>
+                                  </a>
+                                </Link>
                               </div>
                             ))}
                           </div>
@@ -330,19 +339,16 @@ export default function Navbar() {
                   </>
                 )}
               </Popover>
-
-              <a
-                href="#"
-                className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase self-center transition duration-200 ease-in-out"
-              >
-                Profesores
-              </a>
-              <a
-                href="#"
-                className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase self-center transition duration-200 ease-in-out"
-              >
-                Galamian Junior
-              </a>
+              <Link href="/profesores" passHref>
+                <a className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase self-center transition duration-200 ease-in-out">
+                  Profesores
+                </a>
+              </Link>
+              <Link href="/galamian-junior" passHref>
+                <a className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase self-center transition duration-200 ease-in-out">
+                  Galamian Junior
+                </a>
+              </Link>
             </Popover.Group>
             <div className="flex items-center md:ml-12">
               <a
@@ -351,12 +357,11 @@ export default function Navbar() {
               >
                 English
               </a>
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-4 py-2 ml-8 text-sm tracking-wide text-white bg-neutral-400 hover:bg-neutral-500 hover:text-white uppercase transition duration-200 ease-in-out"
-              >
-                Alumnos
-              </a>
+              <Link href="/alumnos" passHref>
+                <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-sm tracking-wide text-white bg-neutral-400 hover:bg-neutral-500 hover:text-white uppercase transition duration-200 ease-in-out">
+                  Alumnos
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -374,113 +379,112 @@ export default function Navbar() {
       >
         <Popover.Panel
           focus
-          className="absolute inset-x-0 top-0 z-30 p-2 transition origin-top-right transform md:hidden"
+          className="absolute inset-x-0 top-0 z-30 transition origin-top-right transform md:hidden"
         >
-          <div className="bg-white divide-y-2 ring-1 ring-black ring-opacity-5 divide-neutral-50">
-            <div className="px-5 pt-5 pb-6 sm:pb-8">
-              <div className="flex items-center justify-between">
-                <div>
+          <Popover.Button className="w-screen">
+            <div className="bg-white divide-y-2 ring-1 ring-black ring-opacity-5 divide-neutral-50">
+              <div className="px-5 pt-5 pb-6 sm:pb-8">
+                <div className="flex items-center justify-between">
                   <div>
-                    <Image
-                      src="/static/galamian-gold-dark.svg"
-                      alt="Galamian logo"
-                      width={40}
-                      height={40}
-                    ></Image>
+                    <Link href="/" passHref>
+                      <div className="cursor-pointer">
+                        <Image
+                          src="/static/galamian-gold-dark.svg"
+                          alt="Galamian logo"
+                          width={40}
+                          height={40}
+                        ></Image>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="-mr-2">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 text-neutral-400 hover:text-gold-500 focus:outline-none focus:ring-0 focus:ring-inset transition duration-200 ease-in-out">
+                      <span className="sr-only">Close menu</span>
+                      <XIcon className="w-6 h-6" aria-hidden="true" />
+                    </Popover.Button>
                   </div>
                 </div>
-                <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center p-2 text-neutral-400 hover:text-gold-500 focus:outline-none focus:ring-0 focus:ring-inset transition duration-200 ease-in-out">
-                    <span className="sr-only">Close menu</span>
-                    <XIcon className="w-6 h-6" aria-hidden="true" />
-                  </Popover.Button>
+                <div className="mt-6 sm:mt-8">
+                  <nav>
+                    <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
+                      <Link href="/academia" passHref>
+                        <a className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out">
+                          <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
+                            <LibraryIcon
+                              className="w-6 h-6"
+                              aria-hidden="true"
+                            />
+                          </div>
+                          <span className="ml-4">La Academia</span>
+                        </a>
+                      </Link>
+                      <Link href="/profesores" passHref>
+                        <a className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out">
+                          <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
+                            <UserCircleIcon
+                              className="w-6 h-6"
+                              aria-hidden="true"
+                            />
+                          </div>
+                          <span className="ml-4">Professores</span>
+                        </a>
+                      </Link>
+                      {estudiar.map((item) => (
+                        <Link key={item.name} href={item.href} passHref>
+                          <a className="flex items-center p-3 -m-3 rounded-lg hover:bg-neutral-50">
+                            <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
+                              <item.icon
+                                className="w-6 h-6"
+                                aria-hidden="true"
+                              />
+                            </div>
+                            <div className="ml-4 text-base font-medium text-neutral-900">
+                              {item.name}
+                            </div>
+                          </a>
+                        </Link>
+                      ))}
+                    </div>
+                  </nav>
                 </div>
               </div>
-              <div className="mt-6 sm:mt-8">
-                <nav>
-                  <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
-                    <a
-                      href="#"
-                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out"
-                    >
-                      <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
-                        <LibraryIcon className="w-6 h-6" aria-hidden="true" />
-                      </div>
-                      <span className="ml-4">La Academia</span>
+
+              <div className="px-5 py-6">
+                <div className="grid grid-cols-2 gap-4 justify-items-start">
+                  <Link href="/galamian-junior" passHref>
+                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Galamian Junior
                     </a>
-                    <a
-                      href="#"
-                      className="flex items-center p-3 -m-3 text-base font-medium text-neutral-900 hover:bg-neutral-50 group transition duration-200 ease-in-out"
-                    >
-                      <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
-                        <UserCircleIcon
-                          className="w-6 h-6"
-                          aria-hidden="true"
-                        />
-                      </div>
-                      <span className="ml-4">Professores</span>
+                  </Link>
+                  <Link href="eventos" passHref>
+                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Eventos
                     </a>
-                    {solutions.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="flex items-center p-3 -m-3 rounded-lg hover:bg-neutral-50"
-                      >
-                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
-                          <item.icon className="w-6 h-6" aria-hidden="true" />
-                        </div>
-                        <div className="ml-4 text-base font-medium text-neutral-900">
-                          {item.name}
-                        </div>
-                      </a>
-                    ))}
-                  </div>
-                </nav>
+                  </Link>
+                  <Link href="/bulletin" passHref>
+                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Bulletin
+                    </a>
+                  </Link>
+                  <Link href="/contacto" passHref>
+                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Contacto
+                    </a>
+                  </Link>
+                </div>
+                <div className="mt-6">
+                  <Link href="/alumnos" passHref>
+                    <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-neutral-400 border border-transparent hover:bg-neutral-500 transition duration-200 ease-in-out">
+                      Alumnos
+                    </a>
+                  </Link>
+                  <p className="mt-6 text-base font-medium text-center text-neutral-500 transition duration-200 ease-in-out hover:text-neutral-900 cursor-pointer">
+                    English
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="px-5 py-6">
-              <div className="grid grid-cols-2 gap-4">
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Galamian Junior
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Eventos
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Bulletin
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Contacto
-                </a>
-              </div>
-              <div className="mt-6">
-                <a
-                  href="#"
-                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-neutral-400 border border-transparent hover:bg-neutral-500 transition duration-200 ease-in-out"
-                >
-                  Alumnos
-                </a>
-                <p className="mt-6 text-base font-medium text-center text-neutral-500 transition duration-200 ease-in-out hover:text-neutral-900 cursor-pointer">
-                  English
-                </p>
-              </div>
-            </div>
-          </div>
+          </Popover.Button>
         </Popover.Panel>
       </Transition>
     </Popover>
