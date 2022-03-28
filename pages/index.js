@@ -4,6 +4,7 @@ import Hero from '../components/hero';
 import Features from '../components/features';
 import Testimonial from '../components/testimonial';
 import Noticias from '../components/noticias';
+import ProfesorQuickview from '../components/profesor-quickview';
 
 export default function Home() {
   return (
@@ -16,6 +17,10 @@ export default function Home() {
       <Testimonial />
       {/* Noticias */}
       <Noticias />
+      {/* ProfesorQuickview modal */}
+      <div className="bg-pink-100">
+        <ProfesorQuickview />
+      </div>
     </div>
   );
 }

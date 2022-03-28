@@ -61,6 +61,18 @@ export default function SalaUnicaja() {
                 </div>
               ))}
             </dl>
+            <div className="mt-10">
+              <a
+                href="https://www.fundacionunicaja.com/cultura/nuestros-centros/sala-unicaja-de-conciertos-maria-cristina/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-base font-medium text-gold-600"
+              >
+                {' '}
+                Sala Unicaja de Conciertos María Cristina{' '}
+                <span aria-hidden="true">&rarr;</span>{' '}
+              </a>
+            </div>
           </div>
 
           <div>
