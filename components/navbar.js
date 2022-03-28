@@ -54,7 +54,7 @@ const callsToAction = [
 const academia = [
   { name: 'El Proyecto', href: '/academia', icon: InformationCircleIcon },
   { name: 'Sus Fundadores', href: '/academia/#fundadores', icon: GlobeAltIcon },
-  { name: 'Sala Unicaja', href: '/academia', icon: LibraryIcon },
+  { name: 'Sala Unicaja', href: '/academia/#salaUnicaja', icon: LibraryIcon },
 ];
 const recursos = [
   { name: 'Noticias', href: '/#noticias', icon: BellIcon },

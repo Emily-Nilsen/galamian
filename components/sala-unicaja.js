@@ -19,28 +19,18 @@ import Image from 'next/image';
 const features = [
   {
     name: 'Sede de la Academia Galamian',
-    description:
-      'The machined kettle has a smooth black finish and contemporary shape that stands apart from most plastic appliances.',
-  },
-  {
-    name: 'Comfort handle',
-    description: 'Shaped for steady pours and insulated to prevent burns.',
-  },
-  {
-    name: 'One-button control',
-    description:
-      'The one button control has a digital readout for setting temperature and turning the kettle on and off.',
-  },
-  {
-    name: 'Long spout',
-    description:
-      "Designed specifically for controlled pour-overs that don't slash or sputter.",
+    sentence_01:
+      'A partir del curso 2018/2019 y por un acuerdo de colaboración con la Fundación Unicaja, la Academia Galamian realizará sus actividades en el complejo de la Sala Unicaja de Conciertos María Cristina de Málaga.',
+    sentence_02:
+      'Aunque los edificios que componen esta sala de conciertos fueron concebidos en el siglo XV como estancia para un colectivo franciscano, en 1843 cambiaron su funcionalidad, convirtiéndose en uno de los primeros conservatorios que se promovieron en España durante el siglo XIX.',
+    sentence_03:
+      'Tras su recuperación por la Fundación Unicaja en 2009, el complejo se ha convertido en una de las estancias más emblemáticas de Málaga y diez años más tarde vuelven a alojar una institución académica, cuya trascendencia internacional busca devolver a este histórico conservatorio su funcionalidad como centro educativo y de difusión cultural de calidad.',
   },
 ];
 
 export default function SalaUnicaja() {
   return (
-    <div className="bg-white">
+    <section id="salaUnicaja" className="bg-white">
       <div className="max-w-2xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
           <div>
@@ -59,8 +49,14 @@ export default function SalaUnicaja() {
                   <dt className="text-base font-medium text-neutral-900">
                     {feature.name}
                   </dt>
-                  <dd className="mt-3 text-sm text-neutral-500">
-                    {feature.description}
+                  <dd className="mt-3 text-base text-neutral-500">
+                    {feature.sentence_01}
+                  </dd>
+                  <dd className="mt-3 text-base text-neutral-500">
+                    {feature.sentence_02}
+                  </dd>
+                  <dd className="mt-3 text-base text-neutral-500">
+                    {feature.sentence_03}
                   </dd>
                 </div>
               ))}
@@ -112,6 +108,6 @@ export default function SalaUnicaja() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

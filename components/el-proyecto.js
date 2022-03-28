@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 /* This example requires Tailwind CSS v2.0+ */
 const stats = [
-  { label: 'Fundado', value: '2010' },
-  { label: 'Empleados', value: '15' },
-  { label: 'Estudiantes', value: '521' },
+  { label: 'Fundado', value: '2010?' },
+  { label: 'Empleados?', value: '15?' },
+  { label: 'Estudiantes', value: '?' },
   { label: '(Algo más?)', value: '(?)' },
 ];
 
