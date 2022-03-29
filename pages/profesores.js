@@ -1,4 +1,5 @@
-import ViolinProfesores from '../components/violin-profesores';
+import ViolinProfesores from '../components/profesores/violin-profesores';
+import VioloncheloProfesores from '../components/profesores/violonchelo-profesores';
 import { Fragment } from 'react';
 import { Tab } from '@headlessui/react';
 
@@ -12,10 +13,10 @@ const tabs = [
     ],
   },
   {
-    name: 'Cello',
+    name: 'Violonchelo',
     features: [
       {
-        component: <ViolinProfesores />,
+        component: <VioloncheloProfesores />,
       },
     ],
   },
