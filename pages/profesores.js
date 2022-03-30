@@ -82,8 +82,8 @@ const Profesores = () => {
                         className={({ selected }) =>
                           classNames(
                             selected
-                              ? 'border-gold-500 text-gold-600'
-                              : 'border-transparent text-neutral-500 hover:text-neutral-700 hover:border-neutral-300',
+                              ? 'border-gold-500 text-gold-600 focus:outline-none focus:ring-0'
+                              : 'border-transparent text-neutral-500 hover:text-neutral-700 hover:border-neutral-300 focus:outline-none focus:ring-0',
                             'whitespace-nowrap py-6 border-b-2 font-medium text-sm'
                           )
                         }

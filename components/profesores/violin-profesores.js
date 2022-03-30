@@ -159,7 +159,7 @@ export default function ViolinProfesores() {
                         <Menu as="div">
                           <div>
                             <Menu.Button>
-                              <div className="font-medium text-lg leading-6 space-y-1 text-neutral-900 text-left">
+                              <div className="font-medium text-lg leading-6 space-y-1 text-neutral-900 text-left focus:outline-none focus:ring-0">
                                 <h3>{person.name}</h3>
                                 <p className="text-gold-600">{person.role}</p>
                               </div>
