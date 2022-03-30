@@ -10,55 +10,55 @@ function classNames(...classes) {
 
 const people = [
   {
-    name: 'Øyvind Gimse',
+    name: 'Nils Georg Nilsen',
     role: 'Profesor Principal',
-    imageUrl: '/static/profesores/oyvind-gimse.jpg',
-    instrument: 'Violonchelo',
+    imageUrl: '/static/profesores/nils-nilsen.jpg',
+    instrument: 'Voz',
+    sentence_01: `Debutó en 2012 en el Avery Fisher Hall de Nueva York y ha actuado en la Ópera Tampa, la Ópera Noruega y con la Orquesta de Cámara de Minsk.`,
+    sentence_02: `Con tan sólo 13 años cantó dúos con Dame Kiri te Kanawa en el Oslo Spectrum Hall. Ha interpretado el papel de Tom Rakewell (El Progreso del Libertino), Torquemada (L’heure Espagnole), Aumônier (Diálogos de los Carmelitas) en la Opera Noruega y el papel principal de Albert Herring en Intermezzo con el director de la Metropolitan Opera, David J. Jackson.`,
+    sentence_03: `Además de ser solista en el Mesías de Händel, Requiem de Mozart, Christus de Mendelssohn y el Oratorio de Navidad de Bach, ha actuado con Opera Tampa en La Viuda Alegre y Dances Patrelle en Nueva York en El Ballet de Gilbert y Sullivan.`,
+    sentence_04: `Nils Georg se graduó con el Grado de Música de la Academia de la Música Noruega y recibió el Master de Música bajo la tutela de Patricia McCaffrey en la Manhattan School of Music de Nueva York.`,
+  },
+  {
+    name: 'Sergio Montero',
+    role: 'Maestro Repertorista',
+    imageUrl: '/static/profesores/sergio-montero.jpg',
+    instrument: 'Voz',
+    sentence_01: `Es profesor superior de piano, música de cámara, solfeo y teoría de la música por el Conservatorio Superior de Música de Málaga, donde ha recibido el Premio de Honor en Piano y Música de Cámara.`,
+    sentence_02: `Además es profesor numerario del Conservatorio Profesional de Música Manuel Carra (Málaga).`,
+    sentence_03: `Ha sido director de los Conservatorios Profesionales Gonzalo Martín Tenllado (Málaga) y Padre Manuel Gámez (Fuengirola), profesor asistente de los maestros Suso Mariátegui y Edemiro Arnaltes, primer pianista del Coro de Ópera de Málaga y pianista de la actriz y cantante Imperio Argentina y de Montserrat Caballé.`,
+    sentence_04: `Recibió la insignia de Plata al Mérito Artístico por la Fundación de Cultura del Ayuntamiento de La Línea de la Concepción y ha sido jurado del IX Concurso Internacional de Piano de Campillos. Colabora habitualmente con la Orquesta Filarmónica de Málaga y es maestro repertorista y profesor asistente del tenor noruego Nils Nilsen en la Academia Internacional Galamian.`,
+  },
+  {
+    name: 'Joel Prieto',
+    role: 'Profesor Invitado',
+    imageUrl: '/static/profesores/joel-prieto.jpg',
+    instrument: 'Voz',
     sentence_01: ``,
     sentence_02: ``,
     sentence_03: ``,
     sentence_04: ``,
   },
   {
-    name: 'Tilman Mahrenholz',
-    role: 'Profesor Principal',
-    imageUrl: '/static/profesores/tilman-mahrenholz.jpeg',
-    instrument: 'Violonchelo',
-    sentence_01: `Tilman Mahrenholz recibe su formación musical en las Escuelas Superiores de Música alemanas de Saarbrücken y Essen donde estudia con Ulrich Voss y Christoph Richter.`,
-    sentence_02: `Continúa sus estudios con Carter Brey, solista de violonchelos de la Orquesta Filarmónica de Nueva York en la prestgiosa Juilliard School of Music de dicha ciudad.`,
-    sentence_03: `Ganador de tres premios en el Concurso Juvenil de Alemania, participa en Festivales Internacionales de Música como el Bain de Musique Flaine y el Aspen Music Festival donde recibe consejos de profesores como Wolfgang Boettcher, Zara Nelsova, Lynn Harrell, el cuarteto Alban Berg y el cuarteto La Salle, entre muchos otros.`,
-    sentence_04: `Actualmente es solista de violonchelos de la Orquesta Filarmónica de Málaga.`,
-  },
-  {
-    name: 'Asier Polo',
+    name: 'Francisco Araiza',
     role: 'Profesor Invitado',
-    imageUrl: '/static/profesores/asier-polo.jpg',
-    instrument: 'Violonchelo',
-    sentence_01: `Considerado por la crítica especializada como uno de los violoncellistas más destacados de su generación.`,
-    sentence_02: `Ha colaborado como solista con algunas de las orquestas más importantes del panorama internacional: Philharmonia Orchestra, London Symphony Orchestra, Danish National Symphony Orchestra, Orchestra Sinfonica Nazionalle della RAI, Dresdner Philharmonie, Orchestre de Paris, BBC Philharmonic, Bergen Filharmoniske Orkester, Israel Philharmonic Orchestra, Berliner Symphoniker, Orquesta Nacional de México, Orquesta Sinfónica de Sao Paulo, Louisiana Philharmonic, Orquesta Nacional de España o la Basel Symphony Orchestra, acompañado bajo la dirección de importantes batutas, como: Pinchas Steinberg, Christian Badea, Rafael Frühbeck de Burgos, Claus Peter Flor, Carlos Miguel Prieto, Günther Herbig, Juanjo Mena, Antoni Wit o Anne Manson.`,
-    sentence_03: `Ha sido invitado por importantes festivales de música, como los festivales de Schleswig-Holstein, Nantes, Ohrid, Biennale di Venezia, Roma, Lisboa, Gstaad Menuhin Festival, Morelia, Granada o San Sebastián.`,
-    sentence_04: `Ha compartido escenario con artistas de la talla de Silvia Marcovici, Nicolás Chumachenco, Sol Ga­betta, Isabelle van Keulen, Josep Colom, Eldar Nebolsin, Gerard Caussé, Cuarteto Janácek, Cuarte­to Casals o el gran tenor Alfredo Kraus, quien le invitó en los últimos años de su carrera a colaborar como solista en sus recitales, actuando en el Maggio Fiorentino, Covent Garden, Royal Opera House, Tonhalle de Zürich, Musikverein de Viena, además de una exitosa gira por las más destacadas salas de conciertos en Japón.`,
-  },
-  {
-    name: 'Alberto Martos',
-    role: 'Profesor Invitado',
-    imageUrl: '/static/profesores/alberto-martos.jpg',
-    instrument: 'Violonchelo',
-    sentence_01: `Tras el éxito de sus grabaciones para el sello Sony Classical, Alberto Martos emerge con fuerza en el panorama musical actual.`,
-    sentence_02: `Formado en España y Alemania, su rica actividad concertística le ha llevado a actuar en salas como el Auditorio Nacional, Palau de la Música Catalana, Carnegie Hall, Sala Pleyel, Teatro Colón o Philarmonie de Berlín. Elegido personalmente por Daniel Barenboim para ocupar el primer atril de la West Eastern Divan Orchestra, fue definido por el maestro como “una de las mayores promesas del violonchelo”.`,
-    sentence_03: `Miembro fundador del prestigioso Garnati Ensemble, su trabajo Playing Goldberg registrado en Sony Classical junto a Pablo Martos y Yuval Gotlibovich obtiene las mejores críticas de prensa. En 2013 recibe junto a su hermano el premio Andalucía Joven por su labor solidaria a través de la música. Parte de esta labor fue registrada en el documental The Healing Notes, producido por Mercedes Milá y dirigido por Amparo Mendo.`,
-    sentence_04: `En 2016 fueron invitados a Puerto Rico, donde inauguraron el museo Pilar Defillò (madre de Pau Casals), siendo nombrados “Huéspedes Distinguidos” de la Ciudad de Mayagüez. En 2017 lanza su nuevo álbum para Sony Classical, que incluye el Concierto en Re Mayor de Franz Joseph Haydn y el Adagio del Concierto en Do Mayor, junto a la Orquesta Ciudad de Granada y bajo la dirección del maestro Antoni Ros Marbà. Este mismo año recibe el premio Andaluces del Futuro (Bankia/Grupo Joly) otorgado en la modalidad de cultura por su brillante trayectoria como solista.`,
+    imageUrl: '/static/profesores/francisco-araiza.jpg',
+    instrument: 'Voz',
+    sentence_01: ``,
+    sentence_02: ``,
+    sentence_03: ``,
+    sentence_04: ``,
   },
 ];
 
-export default function VioloncheloProfesores() {
+export default function VozProfesores() {
   return (
     <div className="relative bg-white pt-4 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl py-6 lg:py-12">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-3xl tracking-wide text-gold-600 sm:text-4xl">
-              Violonchelo
+              Voz
             </h2>
             <p className="text-base text-neutral-500">
               Haga clic en el nombre para leer más sobre cada pedagogo.
@@ -201,7 +201,7 @@ export default function VioloncheloProfesores() {
                                       <p>{person.sentence_04}</p>
 
                                       <Menu.Item>
-                                        <p className="text-gold-600 text-base hover:text-neutral-900 transition duration-200 ease-in-out pt-4">
+                                        <p className="text-gold-600 text-base pt-4 hover:text-neutral-900 transition duration-200 ease-in-out">
                                           Cerrar{' '}
                                           <span aria-hidden="true">
                                             <XIcon

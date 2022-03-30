@@ -1,11 +1,14 @@
 import ViolinProfesores from '../components/profesores/violin-profesores';
 import VioloncheloProfesores from '../components/profesores/violonchelo-profesores';
+import VozProfesores from '../components/profesores/voz-profesores';
+import PianoProfesores from '../components/profesores/piano-profesores';
+import GrupalesProfesores from '../components/profesores/grupales-profesores';
 import { Fragment } from 'react';
 import { Tab } from '@headlessui/react';
 
 const tabs = [
   {
-    name: 'Violín y Viola',
+    name: 'Violín & Viola',
     features: [
       {
         component: <ViolinProfesores />,
@@ -24,7 +27,7 @@ const tabs = [
     name: 'Voz',
     features: [
       {
-        component: <ViolinProfesores />,
+        component: <VozProfesores />,
       },
     ],
   },
@@ -32,7 +35,7 @@ const tabs = [
     name: 'Piano',
     features: [
       {
-        component: <ViolinProfesores />,
+        component: <PianoProfesores />,
       },
     ],
   },
@@ -40,7 +43,7 @@ const tabs = [
     name: 'Asignaturas Grupales',
     features: [
       {
-        component: <ViolinProfesores />,
+        component: <GrupalesProfesores />,
       },
     ],
   },
