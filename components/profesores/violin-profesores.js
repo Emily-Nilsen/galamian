@@ -21,7 +21,7 @@ const people = [
   },
   {
     name: 'Anna Margrethe Nilsen',
-    role: 'Profesor Principal',
+    role: 'Profesora Principal',
     imageUrl: '/static/profesores/anna.jpg',
     instrument: 'Violín & Viola',
     sentence_01: `Anna Margrethe Nilsen es artista de Centaur Records y ganadora en los concursos Sparre Olsen, Eisenberg-Fried y Nacional Noruego.`,
@@ -31,7 +31,7 @@ const people = [
   },
   {
     name: 'Laura Romero',
-    role: 'Profesor Asistente',
+    role: 'Profesora Asistente',
     imageUrl: '/static/profesores/laura-romero.jpeg',
     instrument: 'Violín & Viola',
     sentence_01: `Nacida en Málaga, Laura Romero Alba comienza a tocar el violín a la edad de 7 años. Tras concluir su formación en el Conservatorio Superior de Málaga y en la Academia Internacional ‘Ivan Galamian ’, se traslada a Estados Unidos, donde finaliza sus estudios de postgrado con el maestro Grigory Kalinovsky, en la Universidad de Indiana.`,
@@ -71,7 +71,7 @@ const people = [
   },
   {
     name: 'Molly Carr',
-    role: 'Profesor Invitado',
+    role: 'Profesora Invitada',
     imageUrl: '/static/profesores/molly-carr.jpg',
     instrument: 'Violín & Viola',
     sentence_01: ``,

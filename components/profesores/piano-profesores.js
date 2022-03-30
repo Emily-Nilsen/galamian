@@ -31,7 +31,7 @@ const people = [
   },
   {
     name: 'Anna Petrova',
-    role: 'Profesor Invitado',
+    role: 'Profesora Invitada',
     imageUrl: '/static/profesores/anna-petrova.jpg',
     instrument: 'Piano',
     sentence_01: ``,
