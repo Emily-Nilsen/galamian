@@ -210,7 +210,7 @@ export default function ProfesoresJunior() {
                                             height={802}
                                             layout="responsive"
                                             objectFit="cover"
-                                            objectPosition="center"
+                                            objectPosition="top"
                                           />
                                         </div>
                                       </div>
