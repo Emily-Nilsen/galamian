@@ -8,7 +8,7 @@ import { Tab } from '@headlessui/react';
 
 const tabs = [
   {
-    name: 'Violín & Viola',
+    name: 'Violín/Viola',
     features: [
       {
         component: <ViolinProfesores />,
@@ -40,7 +40,7 @@ const tabs = [
     ],
   },
   {
-    name: 'Asignaturas Grupales',
+    name: 'Grupales',
     features: [
       {
         component: <GrupalesProfesores />,
