@@ -160,7 +160,8 @@ export default function ElProyecto() {
               <Link href="/audiciones" passHref>
                 <a className="text-base font-medium text-gold-600">
                   {' '}
-                  Solicita una plaza para el curso 2022/2023{' '}
+                  Solicita una plaza para el curso {new Date().getFullYear()}/
+                  {new Date().getFullYear() + 1}{' '}
                   <span aria-hidden="true">&rarr;</span>{' '}
                 </a>
               </Link>

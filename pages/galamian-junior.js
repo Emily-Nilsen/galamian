@@ -1,4 +1,7 @@
-import NavigationJunior from '../components/galamian-junior/navigation';
+import EstudiarJunior from '../components/galamian-junior/estudiar';
+import EstudioJunior from '../components/galamian-junior/estudio';
+import ProfesoresJunior from '../components/galamian-junior/profesores';
+import Requisitos from '../components/galamian-junior/requisitos';
 import { Fragment } from 'react';
 import { Tab } from '@headlessui/react';
 import { ExclamationIcon } from '@heroicons/react/solid';
@@ -9,7 +12,7 @@ const tabs = [
     name: 'Estudiar en la AIG',
     features: [
       {
-        // component: <ViolinProfesores />,
+        component: <EstudiarJunior />,
       },
     ],
   },
@@ -17,7 +20,7 @@ const tabs = [
     name: 'Estudio',
     features: [
       {
-        // component: <VioloncheloProfesores />,
+        component: <EstudioJunior />,
       },
     ],
   },
@@ -25,7 +28,7 @@ const tabs = [
     name: 'Profesores',
     features: [
       {
-        // component: <VozProfesores />,
+        component: <ProfesoresJunior />,
       },
     ],
   },
@@ -33,7 +36,7 @@ const tabs = [
     name: 'Requisitos',
     features: [
       {
-        // component: <PianoProfesores />,
+        component: <Requisitos />,
       },
     ],
   },
@@ -46,7 +49,7 @@ function classNames(...classes) {
 const GalamianJunior = () => {
   return (
     <div>
-      <div className="relative bg-white pb-16 sm:pb-24">
+      <div className="relative bg-white pb-6 lg:pb-24">
         <div aria-hidden="true" className="relative">
           <Image
             src="/static/galamian-junior/teachers.jpg"
@@ -66,13 +69,14 @@ const GalamianJunior = () => {
             Galamian <span className="text-gold-600">Junior</span>
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-neutral-500">
-            Encuentra información sobre el curso 2022/2023 para el Estudio
-            Junior de violín y viola.
+            Encuentra información sobre el curso {new Date().getFullYear()}/
+            {new Date().getFullYear() + 1} para el Estudio Junior de violín y
+            viola.
           </p>
         </div>
         {/* Attention! */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <div className="bg-yellow-50 p-4 mt-10">
               <div className="flex">
                 <div className="flex-shrink-0">
@@ -88,8 +92,9 @@ const GalamianJunior = () => {
                   <div className="mt-2 text-sm text-yellow-700">
                     <p>
                       Los alumnos que superen las audiciones convocadas para
-                      junio de 2022 comenzarán a estudiar en la AIG Junior a
-                      partir de septiembre de 2022.
+                      junio de {new Date().getFullYear()} comenzarán a estudiar
+                      en la AIG Junior a partir de septiembre de{' '}
+                      {new Date().getFullYear()}.
                     </p>
                   </div>
                 </div>
@@ -106,14 +111,14 @@ const GalamianJunior = () => {
             <Tab.Group as="div" className="mt-4">
               <div className="-mx-4 flex overflow-x-auto sm:mx-0">
                 <div className="flex-auto px-4 border-b border-neutral-200 sm:px-0">
-                  <Tab.List className="-mb-px flex space-x-10">
+                  <Tab.List className="-mb-px flex justify-between lg:justify-evenly w-full">
                     {tabs.map((tab) => (
                       <Tab
                         key={tab.name}
                         className={({ selected }) =>
                           classNames(
                             selected
-                              ? 'border-gold-500 text-gold-600 focus:outline-none focus:ring-0'
+                              ? 'border-gold-500 text-gold-600 focus:outline-none focus:ring-0 focus:ring-transparent'
                               : 'border-transparent text-neutral-500 hover:text-neutral-700 hover:border-neutral-300 focus:outline-none focus:ring-0',
                             'whitespace-nowrap py-6 border-b-2 font-medium text-sm'
                           )

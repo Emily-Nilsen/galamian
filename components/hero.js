@@ -32,7 +32,7 @@ export default function Hero() {
                     <Image
                       width={275}
                       height={183}
-                      src="/static/maria.jpeg"
+                      src="/static/estudiar.jpg"
                       alt="Maria Christina"
                       layout="fill"
                       objectFit="cover"

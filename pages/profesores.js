@@ -75,7 +75,7 @@ const Profesores = () => {
             <Tab.Group as="div" className="mt-4">
               <div className="-mx-4 flex overflow-x-auto sm:mx-0">
                 <div className="flex-auto px-4 border-b border-neutral-200 sm:px-0">
-                  <Tab.List className="-mb-px flex space-x-10">
+                  <Tab.List className="-mb-px flex justify-between lg:justify-evenly w-full">
                     {tabs.map((tab) => (
                       <Tab
                         key={tab.name}

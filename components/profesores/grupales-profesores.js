@@ -121,11 +121,11 @@ const people = [
   },
 
   {
-    name: 'José Andrés Fernández Camacho',
+    name: 'José Andrés Fernández',
     role: 'Orquesta Infantil y Juvenil',
     imageUrl: '/static/profesores/jose-camacho.jpg',
     instrument: 'Orquesta Infantil y Juvenil',
-    sentence_01: ``,
+    sentence_01: `José Andrés Fernández Camacho`,
     sentence_02: ``,
     sentence_03: ``,
     sentence_04: ``,
