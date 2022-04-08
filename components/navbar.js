@@ -93,7 +93,7 @@ export default function Navbar() {
         aria-hidden="true"
       />
       <div className="relative z-20">
-        <div className="flex items-center justify-between px-4 py-5 mx-auto max-w-7xl sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
+        <div className="flex items-center justify-between px-4 py-5 mx-auto max-w-7xl sm:px-6 sm:py-4 md:justify-start md:space-x-6 lg:space-x-10">
           <Link href="/" passHref>
             <a className="flex">
               <span className="sr-only">Academia Internacional Galamian</span>
@@ -103,6 +103,7 @@ export default function Navbar() {
                   alt="Galamian logo"
                   width={40}
                   height={40}
+                  layout="fixed"
                 ></Image>
               </div>
             </a>
@@ -121,14 +122,14 @@ export default function Navbar() {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-neutral-900' : 'text-neutral-500',
-                        'group bg-t inline-flex items-center text-sm tracking-wide uppercase hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-200 ease-in-out'
+                        'group bg-t inline-flex items-start sm:text-left lg:text-center text-sm tracking-wide uppercase hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-200 ease-in-out'
                       )}
                     >
                       <span className="font-base">La Academia</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-neutral-600' : 'text-neutral-400',
-                          'ml-2 h-5 w-5 group-hover:text-neutral-500'
+                          'ml-1 h-5 w-5 group-hover:text-neutral-500'
                         )}
                         aria-hidden="true"
                       />
@@ -150,7 +151,7 @@ export default function Navbar() {
                         </div>
                         <div className="relative grid grid-cols-1 mx-auto max-w-7xl lg:grid-cols-2">
                           <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
-                            <div>
+                            <div className="self-start">
                               <h3 className="text-sm font-medium tracking-wide text-neutral-500 uppercase">
                                 La Academia
                               </h3>
@@ -267,7 +268,7 @@ export default function Navbar() {
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-neutral-600' : 'text-neutral-400',
-                          'ml-2 h-5 w-5 group-hover:text-neutral-500'
+                          'ml-1 h-5 w-5 group-hover:text-neutral-500'
                         )}
                         aria-hidden="true"
                       />
@@ -340,7 +341,7 @@ export default function Navbar() {
                 )}
               </Popover>
               <Link href="/profesores" passHref>
-                <a className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase self-center transition duration-200 ease-in-out">
+                <a className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900 uppercase transition duration-200 ease-in-out self-center">
                   Profesores
                 </a>
               </Link>
@@ -357,11 +358,6 @@ export default function Navbar() {
               >
                 English
               </a>
-              <Link href="/alumnos" passHref>
-                <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-sm tracking-wide text-white bg-neutral-400 hover:bg-neutral-500 hover:text-white uppercase transition duration-200 ease-in-out">
-                  Alumnos
-                </a>
-              </Link>
             </div>
           </div>
         </div>
@@ -382,7 +378,7 @@ export default function Navbar() {
           className="absolute inset-x-0 top-0 z-30 transition origin-top-right transform md:hidden"
         >
           <Popover.Button className="w-screen">
-            <div className="bg-white divide-y-2 ring-1 ring-black ring-opacity-5 divide-neutral-50 shadow-lg">
+            <div className="bg-white h-screen divide-y-2 ring-1 ring-black ring-opacity-5 divide-neutral-50">
               <div className="px-5 pt-5 pb-6 sm:pb-8">
                 <div className="flex items-center justify-between">
                   <div>
@@ -438,7 +434,7 @@ export default function Navbar() {
                                 aria-hidden="true"
                               />
                             </div>
-                            <div className="ml-4 text-base font-medium text-neutral-900">
+                            <div className="ml-4 text-base font-medium text-neutral-900 text-left">
                               {item.name}
                             </div>
                           </a>
@@ -472,16 +468,11 @@ export default function Navbar() {
                     </a>
                   </Link>
                 </div>
-                <div className="mt-6">
-                  <Link href="/alumnos" passHref>
-                    <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-neutral-400 border border-transparent hover:bg-neutral-500 transition duration-200 ease-in-out">
-                      Alumnos
-                    </a>
-                  </Link>
-                  <p className="mt-6 text-base font-medium text-center text-neutral-500 transition duration-200 ease-in-out hover:text-neutral-900 cursor-pointer">
-                    English
-                  </p>
-                </div>
+              </div>
+              <div className="px-5 py-6 bg-gray-50 h-full">
+                <p className="text-base font-medium text-left text-neutral-600 transition duration-200 ease-in-out hover:text-gold-600 cursor-pointer">
+                  English
+                </p>
               </div>
             </div>
           </Popover.Button>

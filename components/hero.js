@@ -42,7 +42,7 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 flex items-end justify-center h-full">
-                  <h1 className="text-center text-4xl  sm:text-5xl lg:text-6xl tracking-wide">
+                  <h1 className="text-center text-4xl sm:text-5xl lg:text-6xl tracking-wide">
                     <span className="block text-white">
                       Academia Internacional
                     </span>

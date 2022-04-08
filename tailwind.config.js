@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         cream: {
+          400: '#FFE0BA',
           500: '#F2CA99',
         },
         gold: {
