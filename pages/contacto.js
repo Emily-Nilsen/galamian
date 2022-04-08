@@ -14,7 +14,7 @@ import {
 
 export default function Contacto() {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-50">
       <main className="overflow-hidden">
         {/* Header */}
         <div className="bg-gray-50">
@@ -33,7 +33,7 @@ export default function Contacto() {
 
         {/* Contact section */}
         <section
-          className="relative bg-white"
+          className="relative bg-gray-50"
           aria-labelledby="contact-heading"
         >
           <div
@@ -77,7 +77,7 @@ export default function Contacto() {
             </svg>
           </div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative bg-white shadow-xl">
+            <div className="relative bg-white">
               <h2 id="contact-heading" className="sr-only">
                 Contacta con la Academia
               </h2>
