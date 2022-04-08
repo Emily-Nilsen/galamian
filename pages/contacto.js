@@ -321,10 +321,23 @@ export default function Contacto() {
                     Mandanos un mensaje
                   </h3>
                   <form
-                    action="#"
+                    action="/success"
+                    subject="Envío de formulario para la Academia Internacional Galamian"
+                    name="Contacta con la Academia Galamian"
+                    data-netlify="true"
                     method="POST"
                     className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                   >
+                    <input
+                      type="hidden"
+                      name="form-name"
+                      value="Contacta con la Academia Galamian"
+                    />
+                    <input
+                      type="hidden"
+                      name="subject"
+                      value="Envío de formulario para la Academia Internacional Galamian"
+                    />
                     <div>
                       <label
                         htmlFor="first-name"
