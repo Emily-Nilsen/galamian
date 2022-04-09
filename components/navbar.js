@@ -30,21 +30,25 @@ const estudiar = [
     name: 'Estudiar en la AIG',
     description:
       'Los programas de estudios de la Academia Internacional Galamian están desarrollados en pos de educar a músicos profesionales hábiles en todos los aspectos relacionados con el mundo laboral de la música.',
-    href: '/estudiar',
+    href: '/estudia',
     icon: AcademicCapIcon,
   },
   {
-    name: 'Audiciones de acceso curso 2022/2023',
-    description:
-      'La Academia Internacional Galamian convoca audiciones de acceso para el curso 2022/2023.',
-    href: '/audiciones',
+    name: `Audiciones de acceso curso ${new Date().getFullYear()}/${
+      new Date().getFullYear() + 1
+    }`,
+    description: `La Academia Internacional Galamian convoca audiciones de acceso para el curso ${new Date().getFullYear()}/${
+      new Date().getFullYear() + 1
+    }.`,
+    href: '/estudia/#audiciones',
     icon: IdentificationIcon,
   },
   {
     name: 'Inscripción en las audiciones',
-    description:
-      'La Academia Internacional Galamian abre la inscripción a sus audiciones de acceso para el curso escolar 2022/2023, a comenzar en el próximo septiembre.',
-    href: '/inscripcion',
+    description: `La Academia Internacional Galamian abre la inscripción a sus audiciones de acceso para el curso escolar ${new Date().getFullYear()}/${
+      new Date().getFullYear() + 1
+    }, a comenzar en el próximo septiembre.`,
+    href: '/estudia/#inscripcion',
     icon: PencilAltIcon,
   },
 ];

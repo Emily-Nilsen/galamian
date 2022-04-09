@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 
 const navigation = {
   estudiar: [
-    { name: 'Estudiar', href: '/estudiar' },
-    { name: 'Audiciones', href: '/audiciones' },
-    { name: 'Inscripción', href: '/inscripcion' },
+    { name: 'Estudiar', href: '/estudia' },
+    { name: 'Audiciones', href: '/estudia/#audiciones' },
+    { name: 'Inscripción', href: '/estudia/#inscripcion' },
   ],
   recursos: [
     { name: 'Noticias', href: '/#noticias' },
