@@ -321,7 +321,7 @@ export default function Contacto() {
                     Mandanos un mensaje
                   </h3>
                   <form
-                    action="/success"
+                    action="/exito"
                     subject="Envío de formulario para la Academia Internacional Galamian"
                     name="Contacta con la Academia Galamian"
                     data-netlify="true"
@@ -351,7 +351,7 @@ export default function Contacto() {
                           name="first-name"
                           id="first-name"
                           autoComplete="given-name"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200"
+                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
                         />
                       </div>
                     </div>
@@ -368,7 +368,7 @@ export default function Contacto() {
                           name="last-name"
                           id="last-name"
                           autoComplete="family-name"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200"
+                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
                         />
                       </div>
                     </div>
@@ -385,7 +385,7 @@ export default function Contacto() {
                           name="email"
                           type="email"
                           autoComplete="email"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200"
+                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
                         />
                       </div>
                     </div>
@@ -410,7 +410,7 @@ export default function Contacto() {
                           name="phone"
                           id="phone"
                           autoComplete="tel"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200"
+                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
                           aria-describedby="phone-optional"
                         />
                       </div>
@@ -427,7 +427,7 @@ export default function Contacto() {
                           type="text"
                           name="subject"
                           id="subject"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200"
+                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
                         />
                       </div>
                     </div>
@@ -451,7 +451,7 @@ export default function Contacto() {
                           id="message"
                           name="message"
                           rows={4}
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border border-gray-200 "
+                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border border-gray-200 rounded-md"
                           aria-describedby="message-max"
                           defaultValue={''}
                         />
@@ -460,7 +460,7 @@ export default function Contacto() {
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                       <button
                         type="submit"
-                        className="transition duration-300 ease-in-out mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-gold-500 hover:bg-gold-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto"
+                        className="transition duration-300 ease-in-out mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-gold-500 hover:bg-gold-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto rounded-md"
                       >
                         Enviar
                       </button>

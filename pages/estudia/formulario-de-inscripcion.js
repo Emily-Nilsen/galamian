@@ -1,4 +1,4 @@
-import Formulario from '../components/estudio/formulario';
+import Formulario from '../../components/estudio/formulario';
 import Image from 'next/image';
 
 const FormularioDeInscripcion = () => {

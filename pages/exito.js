@@ -25,7 +25,7 @@ export default function Success() {
           <div className="py-16">
             <div className="text-center">
               <p className="text-sm font-semibold text-gold-600 uppercase tracking-wide">
-                Mensaje enviado
+                Se envió con éxito
               </p>
               <h3 className="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
                 ¡Gracias!

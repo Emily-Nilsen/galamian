@@ -5,7 +5,7 @@ export default function Formulario() {
   return (
     <section className="bg-white">
       <div>
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 -mb-8">
           <div className="text-center">
             <div>
               <Image
@@ -20,7 +20,7 @@ export default function Formulario() {
               Academia Internacional{' '}
               <span className="text-gold-600">Galamian</span>
             </h2>
-            <p className="max-w-xl mt-5 mx-auto text-lg text-gray-500">
+            <p className="max-w-xl mt-5 mx-auto text-lg text-neutral-500">
               Formulario de Inscripción en las audiciones de acceso para el
               curso {new Date().getFullYear()}/{new Date().getFullYear() + 1}.
               Fecha límite para su presentación:{' '}
@@ -32,12 +32,12 @@ export default function Formulario() {
           </div>
         </div>
         <form
-          action="/success"
+          action="/exito"
           subject="Formulario de Inscripcion – Academia Internacional Galamian"
           name="Formulario de Inscripcion"
           data-netlify="true"
           method="POST"
-          className="space-y-8 divide-y divide-gray-200 border-t-gray-200 border-t"
+          className="space-y-8 divide-y "
         >
           <input
             type="hidden"
@@ -49,13 +49,13 @@ export default function Formulario() {
             name="subject"
             value="Formulario de Inscripcion – Academia Internacional Galamian"
           />
-          <div className="space-y-8 divide-y divide-gray-200">
+          <div className="space-y-8 divide-y divide-neutral-200">
             <div className="pt-8">
               <div>
-                <h3 className="text-lg leading-6 font-medium text-gray-900">
+                <h3 className="text-lg leading-6 font-medium text-neutral-900">
                   Datos Personales
                 </h3>
-                <p className="mt-1 text-sm text-gray-500">
+                <p className="mt-1 text-sm text-neutral-500">
                   Use una dirección permanente donde pueda recibir correo.
                 </p>
               </div>
@@ -63,7 +63,7 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="first-name"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Nombre
                   </label>
@@ -73,7 +73,7 @@ export default function Formulario() {
                       name="first-name"
                       id="first-name"
                       autoComplete="given-name"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="last-name"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Apellidos
                   </label>
@@ -91,7 +91,7 @@ export default function Formulario() {
                       name="last-name"
                       id="last-name"
                       autoComplete="family-name"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="tipo-de-documento"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Tipo de documento de identidad
                   </label>
@@ -110,7 +110,7 @@ export default function Formulario() {
                       name="tipo-de-documento"
                       id="tipo-de-documento"
                       autoComplete="given-name"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="numero-de-documento"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Número de documento
                   </label>
@@ -128,7 +128,7 @@ export default function Formulario() {
                       name="numero-de-documento"
                       id="numero-de-documento"
                       autoComplete="family-name"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="date-of-birth"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Fecha de nacimiento
                   </label>
@@ -145,7 +145,7 @@ export default function Formulario() {
                       type="text"
                       name="date-of-birth"
                       id="date-of-birth"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                       placeholder="dd/mm/aaaa"
                     />
                   </div>
@@ -154,7 +154,7 @@ export default function Formulario() {
                 <div className="sm:col-span-4">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Email
                   </label>
@@ -164,7 +164,7 @@ export default function Formulario() {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                       placeholder="usted@ejemplo.com"
                     />
                   </div>
@@ -174,7 +174,7 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="pais-de-nacimiento"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     País de nacimiento
                   </label>
@@ -184,7 +184,7 @@ export default function Formulario() {
                       name="pais-de-nacimiento"
                       id="pais-de-nacimiento"
                       autoComplete="given-name"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -192,7 +192,7 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="pais-de-residencia-actual"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     País de residencia actual
                   </label>
@@ -202,7 +202,7 @@ export default function Formulario() {
                       name="pais-de-residencia-actual"
                       id="pais-de-residencia-actual"
                       autoComplete="family-name"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -210,7 +210,7 @@ export default function Formulario() {
                 <div className="sm:col-span-6">
                   <label
                     htmlFor="street-address"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Dirección
                   </label>
@@ -220,7 +220,7 @@ export default function Formulario() {
                       name="street-address"
                       id="street-address"
                       autoComplete="street-address"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -228,7 +228,7 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="city"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Ciudad
                   </label>
@@ -238,7 +238,7 @@ export default function Formulario() {
                       name="city"
                       id="city"
                       autoComplete="address-level2"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -246,7 +246,7 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="region"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Provincia
                   </label>
@@ -256,7 +256,7 @@ export default function Formulario() {
                       name="region"
                       id="region"
                       autoComplete="address-level1"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -264,7 +264,7 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="postal-code"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Código postal
                   </label>
@@ -274,7 +274,7 @@ export default function Formulario() {
                       name="postal-code"
                       id="postal-code"
                       autoComplete="postal-code"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -282,7 +282,7 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="telefono"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Télefono móvil
                   </label>
@@ -291,7 +291,7 @@ export default function Formulario() {
                       type="text"
                       name="telefono"
                       id="telefono"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                       placeholder=""
                     />
                   </div>
@@ -302,10 +302,10 @@ export default function Formulario() {
             {/* Datos del/la responsable */}
             <div className="pt-8">
               <div>
-                <h3 className="text-lg leading-6 font-medium text-gray-900">
+                <h3 className="text-lg leading-6 font-medium text-neutral-900">
                   Datos del/la Responsable
                 </h3>
-                <p className="mt-1 text-sm text-gray-500">
+                <p className="mt-1 text-sm text-neutral-500">
                   Sólo menores de edad.
                 </p>
               </div>
@@ -313,7 +313,7 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="first-name"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Nombre
                   </label>
@@ -323,7 +323,7 @@ export default function Formulario() {
                       name="first-name"
                       id="first-name"
                       autoComplete="given-name"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -331,7 +331,7 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="last-name"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Apellidos
                   </label>
@@ -341,7 +341,7 @@ export default function Formulario() {
                       name="last-name"
                       id="last-name"
                       autoComplete="family-name"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -350,7 +350,7 @@ export default function Formulario() {
                 <div className="sm:col-span-6">
                   <label
                     htmlFor="cargo-de-responsabilidad"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Cargo de responsabilidad
                   </label>
@@ -360,7 +360,7 @@ export default function Formulario() {
                       name="cargo-de-responsabilidad"
                       id="cargo-de-responsabilidad"
                       autoComplete="given-name"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                       placeholder="Madre, Padre, Tutoría..."
                     />
                   </div>
@@ -369,7 +369,7 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="movil"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Teléfono móvil
                   </label>
@@ -378,7 +378,7 @@ export default function Formulario() {
                       type="text"
                       name="movil"
                       id="movil"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -386,7 +386,7 @@ export default function Formulario() {
                 <div className="sm:col-span-4">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-neutral-700"
                   >
                     Email
                   </label>
@@ -396,7 +396,7 @@ export default function Formulario() {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                       placeholder="usted@ejemplo.com"
                     />
                   </div>
@@ -406,10 +406,10 @@ export default function Formulario() {
 
             <div className="pt-8">
               <div>
-                <h3 className="text-lg leading-6 font-medium text-gray-900">
+                <h3 className="text-lg leading-6 font-medium text-neutral-900">
                   Estudia
                 </h3>
-                <p className="mt-1 text-sm text-gray-500">
+                <p className="mt-1 text-sm text-neutral-500">
                   Información sobre su estudio preferido de elección y modo de
                   estudio.
                 </p>
@@ -417,10 +417,10 @@ export default function Formulario() {
               <div className="mt-6">
                 <fieldset className="mt-6">
                   <div>
-                    <legend className="text-base font-medium text-gray-900">
+                    <legend className="text-base font-medium text-neutral-900">
                       Programa al que audita
                     </legend>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-neutral-500">
                       Seleccione un estudio preferido de su elección.
                     </p>
                   </div>
@@ -430,11 +430,11 @@ export default function Formulario() {
                         id="estudio-violin"
                         name="programa"
                         type="radio"
-                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300"
+                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300"
                       />
                       <label
                         htmlFor="estudio-violin"
-                        className="ml-3 block text-sm font-medium text-gray-700"
+                        className="ml-3 block text-sm font-medium text-neutral-700"
                       >
                         Estudio de Violín/Viola
                       </label>
@@ -444,11 +444,11 @@ export default function Formulario() {
                         id="estudio-violoncelo"
                         name="programa"
                         type="radio"
-                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300"
+                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300"
                       />
                       <label
                         htmlFor="estudio-violoncelo"
-                        className="ml-3 block text-sm font-medium text-gray-700"
+                        className="ml-3 block text-sm font-medium text-neutral-700"
                       >
                         Estudio de Violoncelo
                       </label>
@@ -458,11 +458,11 @@ export default function Formulario() {
                         id="estudio-piano"
                         name="programa"
                         type="radio"
-                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300"
+                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300"
                       />
                       <label
                         htmlFor="estudio-piano"
-                        className="ml-3 block text-sm font-medium text-gray-700"
+                        className="ml-3 block text-sm font-medium text-neutral-700"
                       >
                         Estudio de Piano
                       </label>
@@ -472,11 +472,11 @@ export default function Formulario() {
                         id="estudio-voz"
                         name="programa"
                         type="radio"
-                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300"
+                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300"
                       />
                       <label
                         htmlFor="estudio-voz"
-                        className="ml-3 block text-sm font-medium text-gray-700"
+                        className="ml-3 block text-sm font-medium text-neutral-700"
                       >
                         Estudio de Voz
                       </label>
@@ -485,10 +485,10 @@ export default function Formulario() {
                 </fieldset>
                 <fieldset className="mt-6">
                   <div>
-                    <legend className="text-base font-medium text-gray-900">
+                    <legend className="text-base font-medium text-neutral-900">
                       Modalidad
                     </legend>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-neutral-500">
                       Seleccione un modo de estudio.
                     </p>
                   </div>
@@ -498,11 +498,11 @@ export default function Formulario() {
                         id="modalidad-a"
                         name="modalidad"
                         type="radio"
-                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300"
+                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300"
                       />
                       <label
                         htmlFor="modalidad-a"
-                        className="ml-3 block text-sm font-medium text-gray-700"
+                        className="ml-3 block text-sm font-medium text-neutral-700"
                       >
                         A
                       </label>
@@ -512,11 +512,11 @@ export default function Formulario() {
                         id="modalidad-b"
                         name="modalidad"
                         type="radio"
-                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300"
+                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300"
                       />
                       <label
                         htmlFor="modalidad-b"
-                        className="ml-3 block text-sm font-medium text-gray-700"
+                        className="ml-3 block text-sm font-medium text-neutral-700"
                       >
                         B
                       </label>
@@ -526,11 +526,11 @@ export default function Formulario() {
                         id="modalidad-c"
                         name="modalidad"
                         type="radio"
-                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300"
+                        className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300"
                       />
                       <label
                         htmlFor="modalidad-c"
-                        className="ml-3 block text-sm font-medium text-gray-700"
+                        className="ml-3 block text-sm font-medium text-neutral-700"
                       >
                         C
                       </label>
@@ -544,16 +544,16 @@ export default function Formulario() {
             <div className="pt-8">
               <div>
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">
+                  <h3 className="text-lg leading-6 font-medium text-neutral-900">
                     Vídeo
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">
+                  <p className="mt-1 text-sm text-neutral-500">
                     Debido a la circunstancias socio-sanitarias que vive España,
                     la Academia Internacional Galamian convoca sus audiciones de
                     acceso al curso {new Date().getFullYear()}/
                     {new Date().getFullYear() + 1} de manera digital.
                   </p>
-                  <p className="mt-4 text-sm text-gray-500">
+                  <p className="mt-4 text-sm text-neutral-500">
                     Para participar en ellas, se requerirá el envío de un vídeo
                     en el que se evidencie al aspirante interpretando dos obras
                     o movimientos de estilos contrastantes, de libre elección,
@@ -566,19 +566,19 @@ export default function Formulario() {
                   <div className="sm:col-span-4">
                     <label
                       htmlFor="link-1"
-                      className="block text-sm font-medium text-gray-700"
+                      className="block text-sm font-medium text-neutral-700"
                     >
                       Link 1
                     </label>
                     <div className="mt-1 flex rounded-md shadow-none">
-                      <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
+                      <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-neutral-300 bg-neutral-50 text-neutral-500 sm:text-sm">
                         http://
                       </span>
                       <input
                         type="text"
                         name="link-1"
                         id="link-1"
-                        className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-gray-300"
+                        className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                         placeholder="www.ejemplo.com"
                       />
                     </div>
@@ -587,19 +587,19 @@ export default function Formulario() {
                   <div className="sm:col-span-4">
                     <label
                       htmlFor="link-2"
-                      className="block text-sm font-medium text-gray-700"
+                      className="block text-sm font-medium text-neutral-700"
                     >
                       Link 2
                     </label>
                     <div className="mt-1 flex rounded-md shadow-none">
-                      <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
+                      <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-neutral-300 bg-neutral-50 text-neutral-500 sm:text-sm">
                         http://
                       </span>
                       <input
                         type="text"
                         name="link-2"
                         id="link-2"
-                        className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-gray-300"
+                        className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                         placeholder="www.ejemplo.com"
                       />
                     </div>
@@ -612,10 +612,10 @@ export default function Formulario() {
             <div className="pt-8">
               <div>
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">
+                  <h3 className="text-lg leading-6 font-medium text-neutral-900">
                     Documentos
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">
+                  <p className="mt-1 text-sm text-neutral-500">
                     Adjuntos en el mismo mail deberán ir los siguientes
                     documentos:
                   </p>
@@ -628,13 +628,13 @@ export default function Formulario() {
                             id="formulario"
                             name="formulario"
                             type="checkbox"
-                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300 rounded"
+                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300 rounded"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="formulario"
-                            className="font-medium text-gray-700"
+                            className="font-medium text-neutral-700"
                           >
                             Formulario de inscripción
                           </label>
@@ -646,17 +646,17 @@ export default function Formulario() {
                             id="video"
                             name="video"
                             type="checkbox"
-                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300 rounded"
+                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300 rounded"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="video"
-                            className="font-medium text-gray-700"
+                            className="font-medium text-neutral-700"
                           >
                             Vídeo de motivación
                           </label>
-                          <p className="text-gray-500">
+                          <p className="text-neutral-500">
                             El vídeo de motivación deberá ser un monólogo de
                             corta duración en el que el o la aspirante exponga
                             los motivos por los que le gustaría estudiar en la
@@ -668,19 +668,19 @@ export default function Formulario() {
                           <div className="sm:col-span-4 mt-3">
                             <label
                               htmlFor="video-motivacion"
-                              className="block text-sm font-medium text-gray-700"
+                              className="block text-sm font-medium text-neutral-700"
                             >
                               Adjuntase su link
                             </label>
                             <div className="mt-1 flex rounded-md shadow-none">
-                              <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
+                              <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-neutral-300 bg-neutral-50 text-neutral-500 sm:text-sm">
                                 http://
                               </span>
                               <input
                                 type="text"
                                 name="video-motivacion"
                                 id="video-motivacion"
-                                className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-gray-300"
+                                className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                                 placeholder="www.ejemplo.com"
                               />
                             </div>
@@ -693,17 +693,17 @@ export default function Formulario() {
                             id="biografia"
                             name="biografia"
                             type="checkbox"
-                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300 rounded"
+                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300 rounded"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="biografia"
-                            className="font-medium text-gray-700"
+                            className="font-medium text-neutral-700"
                           >
                             Biografía/CV
                           </label>
-                          <p className="text-gray-500">
+                          <p className="text-neutral-500">
                             Envía una copia de su biografía/CV por correo
                             electrónico a la siguiente dirección mail:
                           </p>
@@ -731,17 +731,17 @@ export default function Formulario() {
                             id="renta"
                             name="renta"
                             type="checkbox"
-                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300 rounded"
+                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300 rounded"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="renta"
-                            className="font-medium text-gray-700"
+                            className="font-medium text-neutral-700"
                           >
                             Renta familiar
                           </label>
-                          <p className="text-gray-500">
+                          <p className="text-neutral-500">
                             En caso de solicitar una de las becas otorgadas por
                             la Fundación Reina Nilsen.
                           </p>
@@ -753,17 +753,17 @@ export default function Formulario() {
                             id="video-links"
                             name="video-links"
                             type="checkbox"
-                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300 rounded"
+                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300 rounded"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="video-links"
-                            className="font-medium text-gray-700"
+                            className="font-medium text-neutral-700"
                           >
                             Vídeo links
                           </label>
-                          <p className="text-gray-500">
+                          <p className="text-neutral-500">
                             Links a los dos vídeos, alojados en una plataforma
                             online.
                           </p>
@@ -779,10 +779,10 @@ export default function Formulario() {
             <div className="pt-8">
               <div>
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">
+                  <h3 className="text-lg leading-6 font-medium text-neutral-900">
                     Becas
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">
+                  <p className="mt-1 text-sm text-neutral-500">
                     Información sobre las becas y reducciones de matrícula.
                   </p>
 
@@ -794,18 +794,18 @@ export default function Formulario() {
                             id="renta"
                             name="renta"
                             type="checkbox"
-                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300 rounded"
+                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300 rounded"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="renta"
-                            className="font-medium text-gray-700"
+                            className="font-medium text-neutral-700"
                           >
                             Solicito optar a una beca de reducción de matrícula
                             ofrecida por la Fundación Reina Nilsen
                           </label>
-                          <p className="text-gray-500">
+                          <p className="text-neutral-500">
                             Se podrán en valor su situación económica familiar y
                             los méritos artísticos expuestos en su audición de
                             acceso; el porcentaje de reducción de matrícula será
@@ -820,13 +820,13 @@ export default function Formulario() {
                             id="video-links"
                             name="video-links"
                             type="checkbox"
-                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300 rounded"
+                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300 rounded"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="video-links"
-                            className="font-medium text-gray-700"
+                            className="font-medium text-neutral-700"
                           >
                             Solicito ser considerado para uno de los Programas
                             de Formación en Prácticas de la Academia
@@ -844,10 +844,10 @@ export default function Formulario() {
             <div className="pt-8">
               <div>
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">
+                  <h3 className="text-lg leading-6 font-medium text-neutral-900">
                     Reconocimiento
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">
+                  <p className="mt-1 text-sm text-neutral-500">
                     Antes de presentar el formulario de inscripción, todas las
                     aspirantes deben reconocer lo siguiente.
                   </p>
@@ -860,13 +860,13 @@ export default function Formulario() {
                             id="reconocimiento"
                             name="reconocimiento"
                             type="checkbox"
-                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300 rounded"
+                            className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-neutral-300 rounded"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="reconocimiento"
-                            className="font-medium text-gray-700"
+                            className="font-medium text-neutral-700"
                           >
                             Por la presente certifico que la información
                             proporcionada en este formulario es completa,
@@ -875,7 +875,7 @@ export default function Formulario() {
                           <div className="sm:w-1/4 mt-3">
                             <label
                               htmlFor="fecha"
-                              className="block text-sm font-medium text-gray-700"
+                              className="block text-sm font-medium text-neutral-700"
                             >
                               Fecha
                             </label>
@@ -884,7 +884,7 @@ export default function Formulario() {
                                 type="text"
                                 name="fecha"
                                 id="fecha"
-                                className="focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                                className="focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
                                 placeholder="dd/mm/aaaa"
                               />
                             </div>
@@ -902,7 +902,7 @@ export default function Formulario() {
             <div className="flex justify-end">
               <button
                 type="button"
-                className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-none text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
+                className="bg-white py-2 px-4 border border-neutral-300 rounded-md shadow-none text-sm font-medium text-neutral-700 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
               >
                 Cancelar
               </button>
