@@ -1,7 +1,7 @@
 import Formulario from '../components/estudio/formulario';
 import Image from 'next/image';
 
-const Form = () => {
+const FormularioDeInscripcion = () => {
   return (
     <section>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,4 +40,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormularioDeInscripcion;

@@ -31,7 +31,24 @@ export default function Formulario() {
             </p>
           </div>
         </div>
-        <form className="space-y-8 divide-y divide-gray-200 border-t-gray-200 border-t">
+        <form
+          action="/success"
+          subject="Formulario de Inscripcion – Academia Internacional Galamian"
+          name="Formulario de Inscripcion"
+          data-netlify="true"
+          method="POST"
+          className="space-y-8 divide-y divide-gray-200 border-t-gray-200 border-t"
+        >
+          <input
+            type="hidden"
+            name="Formulario de Inscripcion"
+            value="Formulario de Inscripcion"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="Formulario de Inscripcion – Academia Internacional Galamian"
+          />
           <div className="space-y-8 divide-y divide-gray-200">
             <div className="pt-8">
               <div>
@@ -189,27 +206,6 @@ export default function Formulario() {
                     />
                   </div>
                 </div>
-
-                {/* <div className="sm:col-span-3">
-                <label
-                  htmlFor="country"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Country
-                </label>
-                <div className="mt-1">
-                  <select
-                    id="country"
-                    name="country"
-                    autoComplete="country-name"
-                    className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                  >
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                </div>
-              </div> */}
 
                 <div className="sm:col-span-6">
                   <label
@@ -902,22 +898,22 @@ export default function Formulario() {
             </div>
           </div>
 
-          {/* <div className="pt-5">
-          <div className="flex justify-end">
-            <button
-              type="button"
-              className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-none text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
-            >
-              Cancelar
-            </button>
-            <button
-              type="submit"
-              className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-none text-sm font-medium rounded-md text-white bg-gold-600 hover:bg-gold-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
-            >
-              Guardar
-            </button>
+          <div className="pt-5">
+            <div className="flex justify-end">
+              <button
+                type="button"
+                className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-none text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
+              >
+                Cancelar
+              </button>
+              <button
+                type="submit"
+                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-none text-sm font-medium rounded-md text-white bg-gold-600 hover:bg-gold-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
+              >
+                Enviar
+              </button>
+            </div>
           </div>
-        </div> */}
         </form>
       </div>
     </section>
