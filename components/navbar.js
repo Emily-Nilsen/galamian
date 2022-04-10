@@ -326,15 +326,17 @@ export default function Navbar() {
                           <div className="px-4 py-5 mx-auto space-y-6 max-w-7xl sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                             {callsToAction.map((item) => (
                               <div key={item.name} className="flow-root group">
-                                <Link href={item.href} passHref>
-                                  <a className="flex items-center p-3 -m-3 text-base transition duration-200 ease-out font-medium text-neutral-900 hover:bg-neutral-100">
-                                    <item.icon
-                                      className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500 transition duration-200 ease-in-out"
-                                      aria-hidden="true"
-                                    />
-                                    <span className="ml-3">{item.name}</span>
-                                  </a>
-                                </Link>
+                                <Popover.Button>
+                                  <Link href={item.href} passHref>
+                                    <a className="flex items-center p-3 -m-3 text-base transition duration-200 ease-out font-medium text-neutral-900 hover:bg-neutral-100">
+                                      <item.icon
+                                        className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500 transition duration-200 ease-in-out"
+                                        aria-hidden="true"
+                                      />
+                                      <span className="ml-3">{item.name}</span>
+                                    </a>
+                                  </Link>
+                                </Popover.Button>
                               </div>
                             ))}
                           </div>

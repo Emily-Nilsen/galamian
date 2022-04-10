@@ -142,7 +142,7 @@ export default function Formulario() {
                   </label>
                   <div className="mt-1">
                     <input
-                      type="text"
+                      type="date"
                       name="date-of-birth"
                       id="date-of-birth"
                       className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
@@ -270,7 +270,7 @@ export default function Formulario() {
                   </label>
                   <div className="mt-1">
                     <input
-                      type="text"
+                      type="number"
                       name="postal-code"
                       id="postal-code"
                       autoComplete="postal-code"
@@ -288,7 +288,7 @@ export default function Formulario() {
                   </label>
                   <div className="mt-1">
                     <input
-                      type="text"
+                      type="tel"
                       name="telefono"
                       id="telefono"
                       className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
@@ -375,7 +375,7 @@ export default function Formulario() {
                   </label>
                   <div className="mt-1">
                     <input
-                      type="text"
+                      type="tel"
                       name="movil"
                       id="movil"
                       className="shadow-none focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
@@ -575,7 +575,7 @@ export default function Formulario() {
                         http://
                       </span>
                       <input
-                        type="text"
+                        type="url"
                         name="link-1"
                         id="link-1"
                         className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
@@ -596,7 +596,7 @@ export default function Formulario() {
                         http://
                       </span>
                       <input
-                        type="text"
+                        type="url"
                         name="link-2"
                         id="link-2"
                         className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
@@ -665,7 +665,7 @@ export default function Formulario() {
                             Vímeo.
                           </p>
                           {/* Video de motivación */}
-                          <div className="sm:col-span-4 mt-3">
+                          <div className="sm:col-span-4 mt-3 md:w-2/3">
                             <label
                               htmlFor="video-motivacion"
                               className="block text-sm font-medium text-neutral-700"
@@ -677,7 +677,7 @@ export default function Formulario() {
                                 http://
                               </span>
                               <input
-                                type="text"
+                                type="url"
                                 name="video-motivacion"
                                 id="video-motivacion"
                                 className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
@@ -687,6 +687,7 @@ export default function Formulario() {
                           </div>
                         </div>
                       </div>
+                      {/* Biografia */}
                       <div className="relative flex items-start">
                         <div className="flex items-center h-5">
                           <input
@@ -703,11 +704,59 @@ export default function Formulario() {
                           >
                             Biografía/CV
                           </label>
-                          <p className="text-neutral-500">
+                          <p className="text-neutral-500 sm:col-span-6">
+                            Cargue una copia de tu biografía o currículum en
+                            formato PDF, .doc, .docx o TXT
+                          </p>
+                          {/* <p className="text-neutral-500">
                             Envía una copia de su biografía/CV por correo
                             electrónico a la siguiente dirección mail:
-                          </p>
-                          <a
+                          </p> */}
+                          <div className="sm:col-span-6 pt-4">
+                            <label
+                              htmlFor="cover-photo"
+                              className="block text-sm font-medium text-neutral-700"
+                            >
+                              Sube currículum
+                            </label>
+                            <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-neutral-300 border-dashed rounded-md sm:col-span-6">
+                              <div className="space-y-1 text-center">
+                                <svg
+                                  className="mx-auto h-12 w-12 text-neutral-400"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  viewBox="0 0 48 48"
+                                  aria-hidden="true"
+                                >
+                                  <path
+                                    d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                    strokeWidth={2}
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                  />
+                                </svg>
+                                <div className="flex text-sm text-neutral-600">
+                                  <label
+                                    htmlFor="file-upload"
+                                    className="relative cursor-pointer bg-white rounded-md font-medium text-gold-600 hover:text-gold-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gold-500"
+                                  >
+                                    <span>Cargue un archivo</span>
+                                    <input
+                                      id="file-upload"
+                                      name="file-upload"
+                                      type="file"
+                                      className="sr-only"
+                                    />
+                                  </label>
+                                  <p className="pl-1">o arrastrar y soltar</p>
+                                </div>
+                                <p className="text-xs text-neutral-500">
+                                  PDF, .doc, .docx, TXT hasta 10 MB
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          {/* <a
                             className="mt-6"
                             href="mailto:info@academiagalamian.com"
                             target="_blank"
@@ -722,10 +771,10 @@ export default function Formulario() {
                                 info@academiagalamian.com
                               </span>
                             </div>
-                          </a>
+                          </a> */}
                         </div>
                       </div>
-                      <div className="relative flex items-start">
+                      <div className="relative flex items-start pt-2">
                         <div className="flex items-center h-5">
                           <input
                             id="renta"
@@ -881,7 +930,7 @@ export default function Formulario() {
                             </label>
                             <div className="mt-1">
                               <input
-                                type="text"
+                                type="date"
                                 name="fecha"
                                 id="fecha"
                                 className="focus:ring-gold-500 focus:border-gold-500 block w-full sm:text-sm border-neutral-300 rounded-md"
