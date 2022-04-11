@@ -14,7 +14,7 @@ export default function CTA() {
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
           <div className="inline-flex rounded-md">
             <Link href="/estudia/formulario-de-inscripcion" passHref>
-              <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium text-white bg-gold-600 hover:bg-gold-500 transition duration-200 ease-in-out rounded-md">
+              <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium text-white bg-gold-600 hover:bg-gold-500 transition duration-200 ease-in-out rounded-none">
                 Formulario de Inscripción
               </a>
             </Link>
