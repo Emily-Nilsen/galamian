@@ -40,7 +40,7 @@ const Audiciones = () => {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <div className="absolute inset-0 object-cover w-full h-full">
             <Image
-              src="/static/estudia/violin.gif"
+              src="/static/estudia/audiciones.gif"
               alt=""
               width={500}
               height="500"
