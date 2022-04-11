@@ -75,7 +75,7 @@ export default function Requisitos() {
           {requisitos.map((requisito) => (
             <div
               key={requisito.name}
-              className="flex flex-col bg-white rounded-none shadow-md pb-10"
+              className="flex flex-col bg-gradient-to-b from-neutral-50 to-neutral-100 rounded-none shadow-none pb-6"
             >
               <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                 <div className="absolute top-0 p-5 inline-block bg-gold-600 rounded-none shadow-none transform -translate-y-1/2">
