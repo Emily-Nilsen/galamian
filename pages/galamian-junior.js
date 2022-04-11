@@ -91,10 +91,15 @@ const GalamianJunior = () => {
                   </h3>
                   <div className="mt-2 text-sm text-yellow-700">
                     <p>
-                      Los alumnos que superen las audiciones convocadas para
-                      junio de {new Date().getFullYear()} comenzarán a estudiar
-                      en la AIG Junior a partir de septiembre de{' '}
-                      {new Date().getFullYear()}.
+                      Los alumnos que superen las audiciones convocadas para{' '}
+                      <span className="font-bold">
+                        junio de {new Date().getFullYear()}{' '}
+                      </span>
+                      comenzarán a estudiar en la AIG Junior a partir de{' '}
+                      <span className="font-bold">
+                        septiembre de {new Date().getFullYear()}
+                      </span>
+                      .
                     </p>
                   </div>
                 </div>

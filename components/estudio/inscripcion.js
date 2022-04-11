@@ -28,7 +28,7 @@ const documentos = [
 
 export default function Inscripcion() {
   return (
-    <section id="inscripcion" className="bg-white overflow-hidden">
+    <section className="bg-white overflow-hidden">
       <div>
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="hidden lg:block bg-neutral-50 absolute top-0 bottom-0 left-3/4 w-screen" />

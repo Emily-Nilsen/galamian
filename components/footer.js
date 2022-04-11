@@ -7,8 +7,10 @@ import { motion } from 'framer-motion';
 const navigation = {
   estudiar: [
     { name: 'Estudiar', href: '/estudia' },
-    { name: 'Audiciones', href: '/estudia/#audiciones' },
-    { name: 'Inscripción', href: '/estudia/#inscripcion' },
+    {
+      name: 'Formulario de Inscripción',
+      href: '/estudia/formulario-de-inscripcion',
+    },
   ],
   recursos: [
     { name: 'Noticias', href: '/#noticias' },
@@ -19,10 +21,13 @@ const navigation = {
     { name: 'El Proyecto', href: '/academia' },
     { name: 'Profesores', href: '/profesores' },
     { name: 'Galamian Junior', href: '/galamian-junior' },
-  ],
-  otro: [
     { name: 'Contacto', href: '/contacto' },
-    { name: 'Alumnos', href: '/alumnos' },
+  ],
+  estudios: [
+    { name: 'Violín/Viola', href: '/estudia/violin' },
+    { name: 'Violoncelo', href: '/estudia/violoncelo' },
+    { name: 'Piano', href: '/estudia/piano' },
+    { name: 'Voz', href: '/estudia/voz' },
   ],
   social: [
     {
@@ -103,6 +108,7 @@ export default function Footer() {
           </div>
           <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
+              {/* Estudia */}
               <div>
                 <h3 className="text-sm font-semibold text-gold-500 tracking-wider uppercase">
                   Estudia
@@ -119,12 +125,13 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
+              {/* Recursos */}
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gold-500 tracking-wider uppercase">
-                  Recursos
+                  Estudios
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.recursos.map((item) => (
+                  {navigation.estudios.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} passHref>
                         <a className="text-base text-neutral-300 hover:text-cream-500 transition duration-200 ease-in-out">
@@ -136,6 +143,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
+            {/* La Academia */}
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold text-gold-500 tracking-wider uppercase">
@@ -154,12 +162,13 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
+              {/* Estudios */}
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gold-500 tracking-wider uppercase">
-                  Otro
+                  Recursos
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.otro.map((item) => (
+                  {navigation.recursos.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}

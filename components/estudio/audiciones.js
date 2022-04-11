@@ -4,12 +4,12 @@ import { ExclamationIcon } from '@heroicons/react/solid';
 
 const Audiciones = () => {
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="lg:relative">
-        <div className="max-w-7xl w-full pt-16 pb-20 py-16 lg:text-left">
+        <div className="w-full py-16 pt-16 pb-20 max-w-7xl lg:text-left">
           <div className="lg:w-1/2 sm:px-0 xl:pr-16">
-            <div className="relative max-w-xl px-0 sm:px-0 lg:px-8 lg:max-w-7xl text-left">
-              <h2 className="font-medium text-neutral-900 tracking-wide">
+            <div className="relative max-w-xl px-0 text-left sm:px-0 lg:px-8 lg:max-w-7xl">
+              <h2 className="font-medium tracking-wide text-neutral-900">
                 Audiciones de acceso
               </h2>
               <h2 className="mt-2 text-3xl tracking-wide sm:text-4xl">
@@ -19,7 +19,7 @@ const Audiciones = () => {
                   {new Date().getFullYear()}/{new Date().getFullYear() + 1}
                 </span>
               </h2>
-              <p className="mt-4 max-w-3xl mx-auto text-left text-lg text-neutral-500">
+              <p className="max-w-3xl mx-auto mt-4 text-lg text-left text-neutral-500">
                 La Academia Internacional Galamian convoca audiciones de acceso
                 para el curso {new Date().getFullYear()}/
                 {new Date().getFullYear() + 1}.
@@ -38,9 +38,9 @@ const Audiciones = () => {
           </div>
         </div>
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <div className="absolute inset-0 w-full h-full object-cover">
+          <div className="absolute inset-0 object-cover w-full h-full">
             <Image
-              src="/static/estudia/spinning-globe.gif"
+              src="/static/estudia/violin.gif"
               alt=""
               width={500}
               height="500"
@@ -52,13 +52,13 @@ const Audiciones = () => {
         </div>
       </div>
       {/* Attention! */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-yellow-50 p-4 mt-10">
+          <div className="p-4 mt-10 bg-yellow-50">
             <div className="flex">
               <div className="flex-shrink-0">
                 <ExclamationIcon
-                  className="h-5 w-5 text-yellow-400"
+                  className="w-5 h-5 text-yellow-400"
                   aria-hidden="true"
                 />
               </div>
@@ -69,7 +69,11 @@ const Audiciones = () => {
                 <div className="mt-2 text-sm text-yellow-700">
                   <p>
                     Fecha límite de recepción de inscripciones en las
-                    audiciones: 15 de julio de {new Date().getFullYear()}.
+                    audiciones:{' '}
+                    <span className="font-bold">
+                      15 de julio de {new Date().getFullYear()}
+                    </span>{' '}
+                    .
                   </p>
                 </div>
               </div>

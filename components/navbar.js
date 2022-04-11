@@ -5,7 +5,7 @@ import { Popover, Transition } from '@headlessui/react';
 import {
   BellIcon,
   AcademicCapIcon,
-  IdentificationIcon,
+  ClipboardListIcon,
   GlobeAltIcon,
   InformationCircleIcon,
   MenuIcon,
@@ -28,27 +28,22 @@ import { motion } from 'framer-motion';
 const estudiar = [
   {
     name: 'Estudiar en la AIG',
-    description:
-      'Los programas de estudios de la Academia Internacional Galamian están desarrollados en pos de educar a músicos profesionales hábiles en todos los aspectos relacionados con el mundo laboral de la música.',
+    description: `Encuentre información sobre estudiar en AIG, las audiciones de acceso curso ${new Date().getFullYear()}/${
+      new Date().getFullYear() + 1
+    }, y la inscripción en las audiciones de la AIG.`,
     href: '/estudia',
     icon: AcademicCapIcon,
   },
   {
-    name: `Audiciones de acceso curso ${new Date().getFullYear()}/${
-      new Date().getFullYear() + 1
-    }`,
-    description: `La Academia Internacional Galamian convoca audiciones de acceso para el curso ${new Date().getFullYear()}/${
-      new Date().getFullYear() + 1
-    }.`,
-    href: '/estudia/#audiciones',
-    icon: IdentificationIcon,
+    name: `Planes de estudios`,
+    description: `Encuentre un catálogo de las áreas de estudio que ofrece AIG: violín/viola, violonchelo, piano y voz.`,
+    href: '/estudia/#planesDeEstudios',
+    icon: ClipboardListIcon,
   },
   {
-    name: 'Inscripción en las audiciones',
-    description: `La Academia Internacional Galamian abre la inscripción a sus audiciones de acceso para el curso escolar ${new Date().getFullYear()}/${
-      new Date().getFullYear() + 1
-    }, a comenzar en el próximo septiembre.`,
-    href: '/estudia/#inscripcion',
+    name: 'Formulario de inscripción',
+    description: `La Academia Internacional Galamian abre la inscripción a sus audiciones de acceso hasta el 15 de julio de ${new Date().getFullYear()}, a comenzar en el próximo septiembre.`,
+    href: '/estudia/formulario-de-inscripcion',
     icon: PencilAltIcon,
   },
 ];
@@ -59,12 +54,12 @@ const academia = [
   { name: 'El Proyecto', href: '/academia', icon: InformationCircleIcon },
   { name: 'Sus Fundadores', href: '/academia/#fundadores', icon: GlobeAltIcon },
   { name: 'Sala Unicaja', href: '/academia/#salaUnicaja', icon: LibraryIcon },
+  { name: 'Contacto', href: '/contacto', icon: MailIcon },
 ];
 const recursos = [
   { name: 'Noticias', href: '/#noticias', icon: BellIcon },
   { name: 'Eventos', href: '/eventos', icon: CalendarIcon },
   { name: 'Bulletin', href: '/bulletin', icon: NewspaperIcon },
-  { name: 'Contacto', href: '/contacto', icon: MailIcon },
 ];
 const blogPosts = [
   {
@@ -302,7 +297,7 @@ export default function Navbar() {
                                         />
                                       </span>
                                     </div>
-                                    <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                                    <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4 text-left">
                                       <div>
                                         <p className="text-base font-medium tracking-wide text-neutral-900">
                                           {item.name}
