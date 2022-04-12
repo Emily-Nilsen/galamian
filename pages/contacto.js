@@ -243,7 +243,7 @@ export default function Contacto() {
                           className="flex-shrink-0 w-6 h-6 text-cream-500"
                           aria-hidden="true"
                         />
-                        <span className="ml-3">
+                        <span className="ml-3 overflow-visible">
                           secretaria.academiagalamian@gmail.com
                         </span>
                       </dd>
