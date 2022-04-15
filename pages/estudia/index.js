@@ -41,7 +41,7 @@ function classNames(...classes) {
 const Estudia = () => {
   return (
     <div>
-      <div className="relative bg-white pb-6 lg:pb-24">
+      <div className="relative pb-6 bg-white lg:pb-24">
         <div aria-hidden="true" className="relative">
           <Image
             src="/static/estudia/estudia.jpg"
@@ -56,21 +56,21 @@ const Estudia = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-white" />
         </div>
 
-        <div className="py-6 relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl text-center">
-          <h2 className="font-medium text-neutral-900 tracking-wide">
+        <div className="relative max-w-xl px-4 py-6 mx-auto text-center sm:px-6 lg:px-8 lg:max-w-7xl">
+          <h2 className="font-medium tracking-wide text-neutral-900">
             Estudia con los
           </h2>
           <h2 className="mt-2 text-3xl tracking-wide sm:text-4xl">
             Mejores <span className="text-gold-600">músicos</span>
           </h2>
-          <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-neutral-500">
+          <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-500">
             Cuando decides estudiar en la Academia Internacional Galamian, estás
             apostando por una educación musical de calidad, y emprendes el
             primer paso hacia la profesionalización de tu carrrera artística.
           </p>
           <div className="mt-10">
-            <Link href="/estudia/#planesDeEstudios" passHref>
-              <a className="text-base font-medium text-gold-600">
+            <Link href="/estudios">
+              <a className="text-base font-medium transition duration-200 ease-in-out text-gold-600 hover:underline">
                 {' '}
                 Ver planes de estudios {new Date().getFullYear()}/
                 {new Date().getFullYear() + 1}{' '}
@@ -82,13 +82,13 @@ const Estudia = () => {
 
         <section
           aria-labelledby="features-heading"
-          className="max-w-7xl mx-auto py-4 sm:py-8 sm:px-2 lg:px-8"
+          className="py-4 mx-auto max-w-7xl sm:py-8 sm:px-2 lg:px-8"
         >
-          <div className="max-w-2xl mx-auto px-4 lg:px-0 lg:max-w-none">
+          <div className="max-w-2xl px-4 mx-auto lg:px-0 lg:max-w-none">
             <Tab.Group as="div" className="mt-4">
-              <div className="-mx-4 flex overflow-x-auto sm:mx-0">
+              <div className="flex -mx-4 overflow-x-auto sm:mx-0">
                 <div className="flex-auto px-4 border-b border-neutral-200 sm:px-0">
-                  <Tab.List className="-mb-px flex justify-between lg:justify-evenly w-full">
+                  <Tab.List className="flex justify-between w-full -mb-px lg:justify-evenly">
                     {tabs.map((tab) => (
                       <Tab
                         key={tab.name}

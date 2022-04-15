@@ -1,29 +1,31 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import PlanesDeEstudios from './planes-de-estudios';
-
+import useTranslation from 'next-translate/useTranslation';
 import { CameraIcon } from '@heroicons/react/solid';
 
 export default function Estudiar() {
+  const { t } = useTranslation();
   return (
-    <div className="bg-white overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div className="hidden lg:block bg-neutral-50 absolute top-0 bottom-0 left-3/4 w-screen" />
+    <div className="overflow-hidden bg-white">
+      <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h2 className="leading-6 text-neutral-900 tracking-wide uppercase">
-              Estudiar en la
+            <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+              {t('common:estudiar_subtitle')}
             </h2>
             <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-              Academia Internacional{' '}
-              <span className="text-gold-600">Galamian</span>
+              {t('common:estudiar_title_part_1')}{' '}
+              <span className="block text-gold-600">
+                {t('common:estudiar_title_part_2')}
+              </span>
             </h2>
           </div>
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:row-start-1 lg:col-start-2">
             <svg
-              className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+              className="absolute top-0 right-0 hidden -mt-20 -mr-20 lg:block"
               width={404}
               height={384}
               fill="none"
@@ -55,10 +57,10 @@ export default function Estudiar() {
                 fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
               />
             </svg>
-            <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+            <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="shadow-lg object-cover object-center overflow-hidden">
+                  <div className="object-cover object-center overflow-hidden shadow-lg">
                     <Image
                       src="/static/sala-unicaja.jpg"
                       alt="Sala Unicaja de Conciertos María Cristina"
@@ -70,33 +72,33 @@ export default function Estudiar() {
                     />
                   </div>
                 </div>
-                <figcaption className="mt-3 flex text-sm text-neutral-500">
+                <figcaption className="flex mt-3 text-sm text-neutral-500">
                   <CameraIcon
                     className="flex-none w-5 h-5 text-neutral-400"
                     aria-hidden="true"
                   />
                   <span className="ml-2">
-                    Sala Unicaja de Conciertos María Cristina
+                    {t('common:estudiar_photo_caption_1')}
                   </span>
                 </figcaption>
               </figure>
             </div>
           </div>
           <div className="mt-8 lg:mt-0">
-            <div className="text-base max-w-prose mx-auto lg:max-w-none">
+            <div className="mx-auto text-base max-w-prose lg:max-w-none">
               <h2>
-                <span className="mt-2 block text-xl leading-8 font-normal text-gray-800 sm:text-2xl">
+                <span className="block mt-2 text-xl font-normal leading-8 text-neutral-800 sm:text-2xl">
                   Programa didáctico
                 </span>
               </h2>
-              <p className="text-lg text-neutral-500 mt-4">
+              <p className="mt-4 text-lg text-neutral-500">
                 Los programas de estudios de la Academia Internacional Galamian
                 están desarrollados en pos de educar a músicos profesionales
                 hábiles en todos los aspectos relacionados con el mundo laboral
                 de la música.
               </p>
             </div>
-            <div className="mt-5 prose prose-gold text-neutral-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+            <div className="mx-auto mt-5 prose prose-gold text-neutral-500 lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
                 Estas son las actividades que, durante el curso{' '}
                 {new Date().getFullYear()}/{new Date().getFullYear() + 1}, los
@@ -146,7 +148,7 @@ export default function Estudiar() {
 
               <div className="mt-10">
                 <Link href="/audiciones" passHref>
-                  <a className="text-base font-medium text-gold-600">
+                  <a className="text-base font-medium no-underline transition duration-200 ease-in-out text-gold-600 hover:underline">
                     {' '}
                     Solicita una plaza para el curso {new Date().getFullYear()}/
                     {new Date().getFullYear() + 1}{' '}
@@ -158,7 +160,6 @@ export default function Estudiar() {
           </div>
         </div>
       </div>
-      <PlanesDeEstudios />
     </div>
   );
 }

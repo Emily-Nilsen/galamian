@@ -11,6 +11,7 @@ const navigation = {
       name: 'Formulario de Inscripción',
       href: '/estudia/formulario-de-inscripcion',
     },
+    { name: 'Planes de Estudios', href: '/estudios' },
   ],
   recursos: [
     { name: 'Noticias', href: '/#noticias' },
@@ -24,10 +25,10 @@ const navigation = {
     { name: 'Contacto', href: '/contacto' },
   ],
   estudios: [
-    { name: 'Violín/Viola', href: '/estudia/violin' },
-    { name: 'Violoncelo', href: '/estudia/violoncelo' },
-    { name: 'Piano', href: '/estudia/piano' },
-    { name: 'Voz', href: '/estudia/voz' },
+    { name: 'Violín/Viola', href: '/estudios/violin' },
+    { name: 'Violoncelo', href: '/estudios/violoncelo' },
+    { name: 'Piano', href: '/estudios/piano' },
+    { name: 'Voz', href: '/estudios/voz' },
   ],
   social: [
     {
@@ -74,7 +75,7 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <Link href="/" passHref>
@@ -87,7 +88,7 @@ export default function Footer() {
                 ></Image>
               </div>
             </Link>
-            <p className="text-neutral-300 text-base">
+            <p className="text-base text-neutral-300">
               Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen,
               con la estimable colaboración de Fundación Unicaja.
             </p>
@@ -98,26 +99,26 @@ export default function Footer() {
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-neutral-300 hover:text-cream-500 transition duration-200 ease-in-out"
+                  className="transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                  <item.icon className="w-6 h-6" aria-hidden="true" />
                 </a>
               ))}
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+          <div className="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               {/* Estudia */}
               <div>
-                <h3 className="text-sm font-semibold text-gold-500 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold tracking-wider uppercase text-gold-500">
                   Estudia
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.estudiar.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} passHref>
-                        <a className="text-base text-neutral-300 hover:text-cream-500 transition duration-200 ease-in-out">
+                        <a className="text-base transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500">
                           {item.name}
                         </a>
                       </Link>
@@ -127,14 +128,14 @@ export default function Footer() {
               </div>
               {/* Recursos */}
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gold-500 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold tracking-wider uppercase text-gold-500">
                   Estudios
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.estudios.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} passHref>
-                        <a className="text-base text-neutral-300 hover:text-cream-500 transition duration-200 ease-in-out">
+                        <a className="text-base transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500">
                           {item.name}
                         </a>
                       </Link>
@@ -146,7 +147,7 @@ export default function Footer() {
             {/* La Academia */}
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gold-500 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold tracking-wider uppercase text-gold-500">
                   La Academia
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -154,7 +155,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-neutral-300 hover:text-cream-500 transition duration-200 ease-in-out"
+                        className="text-base transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500"
                       >
                         {item.name}
                       </a>
@@ -164,7 +165,7 @@ export default function Footer() {
               </div>
               {/* Estudios */}
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gold-500 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold tracking-wider uppercase text-gold-500">
                   Recursos
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -172,7 +173,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-neutral-300 hover:text-cream-500 transition duration-200 ease-in-out"
+                        className="text-base transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500"
                       >
                         {item.name}
                       </a>
@@ -183,7 +184,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-700 pt-8">
+        <div className="pt-8 mt-12 border-t border-gray-700">
           <p className="text-base text-neutral-400 xl:text-center">
             &copy; {new Date().getFullYear()} Academia Internacional Galamian.
             Todos los derechos reservados.

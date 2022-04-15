@@ -1,0 +1,18 @@
+{
+  "locales": ["en", "es"],
+  "defaultLocale": "es",
+  "pages": {
+    "*": ["common"],
+    "/": ["inicio"],
+    "/bulletin": ["bulletin"],
+    "/estudia": ["estudia"],
+    "/estudios": ["estudios"],
+    "/eventos": ["eventos"],
+    "/academia": ["academia"],
+    "/contacto": ["contacto"],
+    "/exito": ["exito"],
+    "/galamian-junior": ["galamianJunior"],
+    "/inscripcion": ["inscripcion"],
+    "/profesores": ["profesores"]
+  }
+}

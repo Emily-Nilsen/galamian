@@ -24,6 +24,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
+import LanguageSwitcher from './language-switcher';
 
 const estudiar = [
   {
@@ -37,7 +38,7 @@ const estudiar = [
   {
     name: `Planes de estudios`,
     description: `Encuentre un catálogo de las áreas de estudio que ofrece AIG: violín/viola, violonchelo, piano y voz.`,
-    href: '/estudia/#planesDeEstudios',
+    href: '/estudios',
     icon: ClipboardListIcon,
   },
   {
@@ -353,12 +354,13 @@ export default function Navbar() {
               </Link>
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <a
+              <LanguageSwitcher />
+              {/* <a
                 href="#"
                 className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900"
               >
                 English
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

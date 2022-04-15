@@ -6,50 +6,51 @@ import { Fragment } from 'react';
 import { Tab } from '@headlessui/react';
 import { ExclamationIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
-
-const tabs = [
-  {
-    name: 'Estudiar en la AIG',
-    features: [
-      {
-        component: <EstudiarJunior />,
-      },
-    ],
-  },
-  {
-    name: 'Estudio',
-    features: [
-      {
-        component: <EstudioJunior />,
-      },
-    ],
-  },
-  {
-    name: 'Profesores',
-    features: [
-      {
-        component: <ProfesoresJunior />,
-      },
-    ],
-  },
-  {
-    name: 'Requisitos',
-    features: [
-      {
-        component: <Requisitos />,
-      },
-    ],
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 const GalamianJunior = () => {
+  const { t } = useTranslation();
+  const tabs = [
+    {
+      name: `${t('galamianJunior:tab_estudiar')}`,
+      features: [
+        {
+          component: <EstudiarJunior />,
+        },
+      ],
+    },
+    {
+      name: `${t('galamianJunior:tab_estudio')}`,
+      features: [
+        {
+          component: <EstudioJunior />,
+        },
+      ],
+    },
+    {
+      name: `${t('galamianJunior:tab_profesores')}`,
+      features: [
+        {
+          component: <ProfesoresJunior />,
+        },
+      ],
+    },
+    {
+      name: `${t('galamianJunior:tab_requisitos')}`,
+      features: [
+        {
+          component: <Requisitos />,
+        },
+      ],
+    },
+  ];
   return (
     <div>
-      <div className="relative bg-white pb-6 lg:pb-24">
+      <div className="relative pb-6 bg-white lg:pb-24">
         <div aria-hidden="true" className="relative">
           <Image
             src="/static/galamian-junior/teachers.jpg"
@@ -64,40 +65,41 @@ const GalamianJunior = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-white" />
         </div>
 
-        <div className="py-6 relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h2 className="text-center text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
+        <div className="relative max-w-xl px-4 py-6 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
+          <h2 className="text-3xl leading-8 tracking-wide text-center text-neutral-900 sm:text-4xl">
             Galamian <span className="text-gold-600">Junior</span>
           </h2>
-          <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-neutral-500">
-            Encuentra información sobre el curso {new Date().getFullYear()}/
-            {new Date().getFullYear() + 1} para el Estudio Junior de violín y
-            viola.
+          <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-500">
+            {t('galamianJunior:subtitle_part_1')} {new Date().getFullYear()}/
+            {new Date().getFullYear() + 1} {t('galamianJunior:subtitle_part_2')}
           </p>
         </div>
         {/* Attention! */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
-            <div className="bg-yellow-50 p-4 mt-10">
+            <div className="p-4 mt-10 bg-yellow-50">
               <div className="flex">
                 <div className="flex-shrink-0">
                   <ExclamationIcon
-                    className="h-5 w-5 text-yellow-400"
+                    className="w-5 h-5 text-yellow-400"
                     aria-hidden="true"
                   />
                 </div>
                 <div className="ml-3">
                   <h3 className="text-sm font-medium text-yellow-800">
-                    Atención
+                    {t('galamianJunior:atencion_title')}
                   </h3>
                   <div className="mt-2 text-sm text-yellow-700">
                     <p>
-                      Los alumnos que superen las audiciones convocadas para{' '}
+                      {t('galamianJunior:atencion_text_part_1')}{' '}
                       <span className="font-bold">
-                        junio de {new Date().getFullYear()}{' '}
+                        {t('galamianJunior:atencion_text_part_2')}{' '}
+                        {new Date().getFullYear()}{' '}
                       </span>
-                      comenzarán a estudiar en la AIG Junior a partir de{' '}
+                      {t('galamianJunior:atencion_text_part_3')}{' '}
                       <span className="font-bold">
-                        septiembre de {new Date().getFullYear()}
+                        {t('galamianJunior:atencion_text_part_4')}{' '}
+                        {new Date().getFullYear()}
                       </span>
                       .
                     </p>
@@ -110,13 +112,13 @@ const GalamianJunior = () => {
 
         <section
           aria-labelledby="features-heading"
-          className="max-w-7xl mx-auto py-4 sm:py-8 sm:px-2 lg:px-8"
+          className="py-4 mx-auto max-w-7xl sm:py-8 sm:px-2 lg:px-8"
         >
-          <div className="max-w-2xl mx-auto px-4 lg:px-0 lg:max-w-none">
+          <div className="max-w-2xl px-4 mx-auto lg:px-0 lg:max-w-none">
             <Tab.Group as="div" className="mt-4">
-              <div className="-mx-4 flex overflow-x-auto sm:mx-0">
+              <div className="flex -mx-4 overflow-x-auto sm:mx-0">
                 <div className="flex-auto px-4 border-b border-neutral-200 sm:px-0">
-                  <Tab.List className="-mb-px flex justify-between lg:justify-evenly w-full">
+                  <Tab.List className="flex justify-between w-full -mb-px lg:justify-evenly">
                     {tabs.map((tab) => (
                       <Tab
                         key={tab.name}
