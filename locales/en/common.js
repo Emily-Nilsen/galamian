@@ -18,6 +18,7 @@ const common = {
   // Buttons
   button_solicita_una_plaza: `Apply for the`,
   button_course: `Course `,
+  button_cerrar: `Close`,
 };
 
 export default common;

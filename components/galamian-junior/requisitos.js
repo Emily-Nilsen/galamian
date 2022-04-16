@@ -1,53 +1,57 @@
 import Image from 'next/image';
 import FAQs from './faqs';
-
-const features = [
-  {
-    name: 'Matrícula',
-    description_01: `La matrícula anual es de 3.500€.`,
-    description_02: `Las tasas de matriculación son de carácter anual y pueden dividirse hasta en 3 pagos porcentuales distribuidos a lo largo del curso académico.`,
-    description_03: ``,
-    imageSrc: '/static/galamian-junior/admission.jpg',
-    imageAlt: 'La matrícula de la Academia Galamian',
-  },
-  {
-    name: 'Becas',
-    description_01: `La Fundación Reina Nilsen ofrece una reducción en los costes de matriculación para aquellos alumnos meritorios y de motivación excepcional —poniendo en especial valor la situación económica familiar— de hasta el 50% del coste total de matriculación.`,
-    description_02: `Los solicitud de esta reducción en la matriculación se llevará a cabo una vez el aspirante supere la audición de acceso.`,
-    description_03: `Hecha su inscripción, la Fundación Reina Nilsen pondrá en valor su solicitud junto con un tribunal de la Academia Internacional Galamian, siendo la concesión de esta reducción y su cuantía comunicadas al alumno antes del comienzo del curso en septiembre de ${new Date().getFullYear()}.`,
-    imageSrc: '/static/galamian-junior/becas.jpg',
-    imageAlt: 'La Academia Galamian y su Joven Orquesta',
-  },
-  {
-    name: 'Titulación',
-    description_01: `Los programas educativos de la Academia Internacional Galamian se dividen en tres rangos, dependiendo de la edad y el nivel del alumno: Precollege, Bachelor y Máster.`,
-    description_02: `La participación en uno de estos rangos educativos será determinada por el jurado de la Academia en la audición de acceso del aspirante, entrando en valor su edad, recorrido académico y nivel interpretativo.`,
-    description_03: `La AIG dispone de un título propio para aquellos alumnos que, a juicio de sus profesores principales, superen uno de estos programas.`,
-    imageSrc: '/static/galamian-junior/titulacion.jpg',
-    imageAlt: 'Joven Orquesta de la Academia Galamian',
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 export default function Requisitos() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      name: `${t('galamianJunior:matricula_title')}`,
+      description_01: `${t('galamianJunior:matricula_text_1')}`,
+      description_02: `${t('galamianJunior:matricula_text_2')}`,
+      imageSrc: '/static/galamian-junior/admission.jpg',
+      imageAlt: 'La matrícula de la Academia Galamian',
+    },
+    {
+      name: `${t('galamianJunior:becas_title')}`,
+      description_01: `${t('galamianJunior:becas_text_1')}`,
+      description_02: `${t('galamianJunior:becas_text_2')}`,
+      description_03: `${t(
+        'galamianJunior:becas_text_3'
+      )} ${new Date().getFullYear()}.`,
+      imageSrc: '/static/galamian-junior/becas.jpg',
+      imageAlt: 'La Academia Galamian y su Joven Orquesta',
+    },
+    {
+      name: `${t('galamianJunior:titulacion_title')}`,
+      description_01: `${t('galamianJunior:titulacion_text_1')}`,
+      description_02: `${t('galamianJunior:titulacion_text_2')}`,
+      description_03: `${t('galamianJunior:titulacion_text_3')}`,
+      imageSrc: '/static/galamian-junior/titulacion.jpg',
+      imageAlt: 'Joven Orquesta de la Academia Galamian',
+    },
+  ];
+
   return (
     <div className="bg-white">
-      <div className="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:max-w-7xl lg:px-8">
-        <div className="space-y-5 sm:mx-auto sm:space-y-4 max-w-3xl mx-auto text-center">
-          <h2 className="leading-6 text-neutral-900 tracking-wide uppercase">
-            Requisitos de
+      <div className="max-w-2xl px-4 py-12 mx-auto sm:px-6 lg:py-24 lg:max-w-7xl lg:px-8">
+        <div className="max-w-3xl mx-auto space-y-5 text-center sm:mx-auto sm:space-y-4">
+          <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+            {t('galamianJunior:requisitos_subtitle')}
           </h2>
           <h2 className="text-3xl tracking-wide text-neutral-900 sm:text-4xl">
-            admisión y <span className="text-gold-600">matrícula</span>{' '}
+            {t('galamianJunior:requisitos_title_part_1')}{' '}
+            <span className="text-gold-600">
+              {t('galamianJunior:requisitos_title_part_2')}
+            </span>{' '}
           </h2>
           <p className="mt-4 text-neutral-500">
-            El proceso de admisión y matriculación para estudiantes que ingresan
-            por primera vez en la academia se realiza a través de la página web
-            durante todo el año. Aquí también puedes encontrar preguntas
-            frecuentes.
+            {t('galamianJunior:requisitos_text')}
           </p>
         </div>
 
@@ -86,7 +90,7 @@ export default function Requisitos() {
                   'flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8'
                 )}
               >
-                <div className="aspect-w-5 aspect-h-2 bg-neutral-100 overflow-hidden">
+                <div className="overflow-hidden aspect-w-5 aspect-h-2 bg-neutral-100">
                   <div className="overflow-hidden">
                     <Image
                       src={feature.imageSrc}
