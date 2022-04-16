@@ -19,6 +19,8 @@ const common = {
   button_solicita_una_plaza: `Solicita una plaza para el curso`,
   button_course: ``,
   button_cerrar: `Cerrar`,
+  button_publicaciones: `Ver todas las publicaciones`,
+  button_aprende: `Aprende más`,
 
   //Footer
   footer_text: `Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con la estimable colaboración de Fundación Unicaja.`,
@@ -41,6 +43,33 @@ const common = {
   footer_recursos_1: `Noticias`,
   footer_recursos_2: `Eventos`,
   footer_recursos_3: `Bulletin`,
+
+  //Navbar
+  navbar_link_1: `La Academia`,
+  navbar_link_1_title_1: `La Academia`,
+  navbar_link_1_title_1_1: `El Proyecto`,
+  navbar_link_1_title_1_2: `Sus Fundadores`,
+  navbar_link_1_title_1_3: `Sala Unicaja`,
+  navbar_link_1_title_1_4: `Contacto`,
+  navbar_link_1_title_2: `Recursos`,
+  navbar_link_1_title_2_1: `Noticias`,
+  navbar_link_1_title_2_2: `Eventos`,
+  navbar_link_1_title_2_3: `Bulletin`,
+  navbar_link_1_title_3: `Del Bulletin`,
+  blogpost_name_1: `¡El bulletin vienen pronto!`,
+  blogpost_preview_1: `Estén atentos a nuestro próximo bulletin.`,
+  navbar_link_2: `Estudia`,
+  callsToAction: `Contacto`,
+  estudiar_name_1: `Estudiar en la AIG`,
+  estudiar_description_1_part_1: `Encuentre información sobre estudiar en AIG, las audiciones de acceso curso`,
+  estudiar_description_1_part_2: `, y la inscripción en las audiciones de la AIG.`,
+  estudiar_name_2: `Planes de estudios`,
+  estudiar_description_2_part_1: `Encuentre un catálogo de las áreas de estudio que ofrece AIG: Violín/Viola, Violonchelo, Piano y Voz.`,
+  estudiar_name_3: `Formulario de inscripción`,
+  estudiar_description_3_part_1: `La Academia Internacional Galamian abre la inscripción a sus audiciones de acceso hasta el 15 de julio de `,
+  estudiar_description_3_part_2: `, a comenzar en el próximo septiembre.`,
+  navbar_link_3: `Profesores`,
+  navbar_link_4: `Galamian Junior`,
 };
 
 export default common;

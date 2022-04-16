@@ -26,66 +26,105 @@ import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
 import LanguageSwitcher from './language-switcher';
 
-const estudiar = [
-  {
-    name: 'Estudiar en la AIG',
-    description: `Encuentre información sobre estudiar en AIG, las audiciones de acceso curso ${new Date().getFullYear()}/${
-      new Date().getFullYear() + 1
-    }, y la inscripción en las audiciones de la AIG.`,
-    href: '/estudia',
-    icon: AcademicCapIcon,
-  },
-  {
-    name: `Planes de estudios`,
-    description: `Encuentre un catálogo de las áreas de estudio que ofrece AIG: violín/viola, violonchelo, piano y voz.`,
-    href: '/estudios',
-    icon: ClipboardListIcon,
-  },
-  {
-    name: 'Formulario de inscripción',
-    description: `La Academia Internacional Galamian abre la inscripción a sus audiciones de acceso hasta el 15 de julio de ${new Date().getFullYear()}, a comenzar en el próximo septiembre.`,
-    href: '/estudia/formulario-de-inscripcion',
-    icon: PencilAltIcon,
-  },
-];
-const callsToAction = [
-  { name: 'Contacto', href: '/contacto', icon: PhoneIcon },
-];
-const academia = [
-  { name: 'El Proyecto', href: '/academia', icon: InformationCircleIcon },
-  { name: 'Sus Fundadores', href: '/academia/#fundadores', icon: GlobeAltIcon },
-  { name: 'Sala Unicaja', href: '/academia/#salaUnicaja', icon: LibraryIcon },
-  { name: 'Contacto', href: '/contacto', icon: MailIcon },
-];
-const recursos = [
-  { name: 'Noticias', href: '/#noticias', icon: BellIcon },
-  { name: 'Eventos', href: '/eventos', icon: CalendarIcon },
-  { name: 'Bulletin', href: '/bulletin', icon: NewspaperIcon },
-];
-const blogPosts = [
-  {
-    id: 1,
-    name: 'Misha Dačić – Entrevista en Codalario',
-    href: '#',
-    preview:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl: '/static/misha.jpg',
-  },
-  {
-    id: 2,
-    name: 'Joaquín Riquelme, recital de viola',
-    href: '#',
-    preview:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    imageUrl: '/static/joaquin.jpg',
-  },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 export default function Navbar() {
+  const { t } = useTranslation();
+
+  const estudiar = [
+    {
+      name: `${t('common:estudiar_name_1')}`,
+      description: `${t(
+        'common:estudiar_description_1_part_1'
+      )} ${new Date().getFullYear()}/${new Date().getFullYear() + 1}${t(
+        'common:estudiar_description_1_part_2'
+      )}`,
+      href: '/estudia',
+      icon: AcademicCapIcon,
+    },
+    {
+      name: `${t('common:estudiar_name_2')}`,
+      description: `${t('common:estudiar_description_2_part_1')}`,
+      href: '/estudios',
+      icon: ClipboardListIcon,
+    },
+    {
+      name: `${t('common:estudiar_name_3')}`,
+      description: `${t(
+        'common:estudiar_description_3_part_1'
+      )}${new Date().getFullYear()}${t(
+        'common:estudiar_description_3_part_2'
+      )}`,
+      href: '/estudia/formulario-de-inscripcion',
+      icon: PencilAltIcon,
+    },
+  ];
+  const callsToAction = [
+    {
+      name: `${t('common:callsToAction')}`,
+      href: '/contacto',
+      icon: PhoneIcon,
+    },
+  ];
+  const academia = [
+    {
+      name: `${t('common:navbar_link_1_title_1_1')}`,
+      href: '/academia',
+      icon: InformationCircleIcon,
+    },
+    {
+      name: `${t('common:navbar_link_1_title_1_2')}`,
+      href: '/academia/#fundadores',
+      icon: GlobeAltIcon,
+    },
+    {
+      name: `${t('common:navbar_link_1_title_1_3')}`,
+      href: '/academia/#salaUnicaja',
+      icon: LibraryIcon,
+    },
+    {
+      name: `${t('common:navbar_link_1_title_1_4')}`,
+      href: '/contacto',
+      icon: MailIcon,
+    },
+  ];
+  const recursos = [
+    {
+      name: `${t('common:navbar_link_1_title_2_1')}`,
+      href: '/#noticias',
+      icon: BellIcon,
+    },
+    {
+      name: `${t('common:navbar_link_1_title_2_2')}`,
+      href: '/eventos/',
+      icon: CalendarIcon,
+    },
+    {
+      name: `${t('common:navbar_link_1_title_2_3')}`,
+      href: '/bulletin/',
+      icon: NewspaperIcon,
+    },
+  ];
+  const blogPosts = [
+    {
+      id: 1,
+      name: `${t('common:blogpost_name_1')}`,
+      href: '/bulletin',
+      preview: `${t('common:blogpost_preview_1')}`,
+      imageUrl: '/static/misha.jpg',
+    },
+    // {
+    //   id: 2,
+    //   name: 'Joaquín Riquelme, recital de viola',
+    //   href: '/bulletin',
+    //   preview:
+    //     'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    //   imageUrl: '/static/joaquin.jpg',
+    // },
+  ];
+
   return (
     <Popover className="relative bg-neutral-50">
       <div
@@ -125,7 +164,9 @@ export default function Navbar() {
                         'group bg-t inline-flex items-start sm:text-left lg:text-center text-sm tracking-wide uppercase hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-200 ease-in-out'
                       )}
                     >
-                      <span className="font-base">La Academia</span>
+                      <span className="font-base">
+                        {t('common:navbar_link_1')}
+                      </span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-neutral-600' : 'text-neutral-400',
@@ -153,7 +194,7 @@ export default function Navbar() {
                           <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div className="self-start">
                               <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
-                                La Academia
+                                {t('common:navbar_link_1_title_1')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
                                 {academia.map((item) => (
@@ -177,7 +218,7 @@ export default function Navbar() {
                             </div>
                             <div>
                               <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
-                                Recursos
+                                {t('common:navbar_link_1_title_2')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
                                 {recursos.map((item) => (
@@ -200,59 +241,63 @@ export default function Navbar() {
                               </ul>
                             </div>
                           </nav>
-                          <div className="px-4 py-8 bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
-                            <div>
-                              <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
-                                Del bulletin
-                              </h3>
-                              <ul role="list" className="mt-6 space-y-6">
-                                {blogPosts.map((post) => (
-                                  <li key={post.id} className="flow-root">
-                                    <Link href={post.href} passHref>
-                                      <a className="flex p-3 -m-3 hover:bg-neutral-100">
-                                        <div className="flex-shrink-0 hidden sm:block">
-                                          <div className="relative object-cover w-32 h-20">
-                                            <Image
-                                              width={128}
-                                              height={80}
-                                              src={post.imageUrl}
-                                              alt={post.name}
-                                              layout="fill"
-                                              objectFit="cover"
-                                              objectPosition="center"
-                                            />
+                          <Popover.Button>
+                            <div className="px-4 py-8 text-left bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                              <div>
+                                <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                                  {t('common:navbar_link_1_title_3')}
+                                </h3>
+                                <ul role="list" className="mt-6 space-y-6">
+                                  {blogPosts.map((post) => (
+                                    <li key={post.id} className="flow-root">
+                                      <Link href={post.href} passHref>
+                                        <a className="flex w-full p-3 -m-3 hover:bg-neutral-100">
+                                          <div className="flex-shrink-0 hidden sm:block">
+                                            <div className="relative object-cover w-32 h-20">
+                                              <Image
+                                                width={128}
+                                                height={80}
+                                                src={post.imageUrl}
+                                                alt={post.name}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                objectPosition="center"
+                                              />
+                                            </div>
                                           </div>
-                                        </div>
-                                        <div className="flex-1 w-0 sm:ml-8">
-                                          <h4 className="text-base font-medium truncate text-neutral-900">
-                                            {post.name}
-                                          </h4>
-                                          <p className="mt-1 text-sm text-neutral-500">
-                                            {post.preview}
-                                          </p>
-                                        </div>
-                                      </a>
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
+                                          <div className="flex-1 w-0 sm:ml-8">
+                                            <h4 className="text-base font-medium truncate text-neutral-900">
+                                              {post.name}
+                                            </h4>
+                                            <p className="mt-1 text-sm text-neutral-500">
+                                              {post.preview}
+                                            </p>
+                                          </div>
+                                        </a>
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                              <div className="mt-6 text-sm font-medium">
+                                <Link href="/bulletin/">
+                                  <a className="text-gold-600 hover:text-gold-500">
+                                    {' '}
+                                    {t('common:button_publicaciones')}{' '}
+                                    <span aria-hidden="true">&rarr;</span>
+                                  </a>
+                                </Link>
+                              </div>
                             </div>
-                            <div className="mt-6 text-sm font-medium">
-                              <Link href="/bulletin" passHref>
-                                <a className="text-gold-600 hover:text-gold-500">
-                                  {' '}
-                                  Ver todas las publicaciones{' '}
-                                  <span aria-hidden="true">&rarr;</span>
-                                </a>
-                              </Link>
-                            </div>
-                          </div>
+                          </Popover.Button>
                         </div>
                       </Popover.Panel>
                     </Transition>
                   </>
                 )}
               </Popover>
+
+              {/* Estudiar tab */}
               <Popover>
                 {({ open }) => (
                   <>
@@ -264,7 +309,9 @@ export default function Navbar() {
                         'group bg-transparent inline-flex items-center text-sm tracking-wide hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-200 ease-in-out'
                       )}
                     >
-                      <span className="uppercase font-base">Estudia</span>
+                      <span className="uppercase font-base">
+                        {t('common:navbar_link_2')}
+                      </span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-neutral-600' : 'text-neutral-400',
@@ -308,7 +355,7 @@ export default function Navbar() {
                                         </p>
                                       </div>
                                       <p className="mt-2 text-sm font-medium text-gold-600 lg:mt-4">
-                                        Aprende más{' '}
+                                        {t('common:button_aprende')}{' '}
                                         <span aria-hidden="true">&rarr;</span>
                                       </p>
                                     </div>
@@ -344,23 +391,17 @@ export default function Navbar() {
               </Popover>
               <Link href="/profesores" passHref>
                 <a className="self-center text-sm tracking-wide uppercase transition duration-200 ease-in-out text-neutral-500 hover:text-neutral-900">
-                  Profesores
+                  {t('common:navbar_link_3')}
                 </a>
               </Link>
               <Link href="/galamian-junior" passHref>
                 <a className="self-center text-sm tracking-wide uppercase transition duration-200 ease-in-out text-neutral-500 hover:text-neutral-900">
-                  Galamian Junior
+                  {t('common:navbar_link_4')}
                 </a>
               </Link>
             </Popover.Group>
             <div className="flex items-center md:ml-12">
               <LanguageSwitcher />
-              {/* <a
-                href="#"
-                className="text-sm tracking-wide text-neutral-500 hover:text-neutral-900"
-              >
-                English
-              </a> */}
             </div>
           </div>
         </div>

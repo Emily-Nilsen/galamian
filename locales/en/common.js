@@ -19,6 +19,8 @@ const common = {
   button_solicita_una_plaza: `Apply for the`,
   button_course: `Course `,
   button_cerrar: `Close`,
+  button_publicaciones: `See all posts`,
+  button_aprende: `Learn more`,
 
   //Footer
   footer_text: `An initiative led by Jesús Reina and Anna Margrethe Nilsen, with the valuable collaboration of Fundación Unicaja.`,
@@ -41,6 +43,33 @@ const common = {
   footer_recursos_1: `Notifications`,
   footer_recursos_2: `Events`,
   footer_recursos_3: `Bulletin`,
+
+  //Navbar
+  navbar_link_1: `Academy`,
+  navbar_link_1_title_1: `The Academy`,
+  navbar_link_1_title_1_1: `The Project`,
+  navbar_link_1_title_1_2: `The Founders`,
+  navbar_link_1_title_1_3: `Unicaja Hall`,
+  navbar_link_1_title_1_4: `Contact`,
+  navbar_link_1_title_2: `Resources`,
+  navbar_link_1_title_2_1: `Notifications`,
+  navbar_link_1_title_2_2: `Events`,
+  navbar_link_1_title_2_3: `Bulletin`,
+  navbar_link_1_title_3: `From the Bulletin`,
+  blogpost_name_1: `The bulletin is coming soon!`,
+  blogpost_preview_1: `Stay tuned for our upcoming bulletin.`,
+  navbar_link_2: `Study`,
+  callsToAction: `Contact`,
+  estudiar_name_1: `Study at the AIG`,
+  estudiar_description_1_part_1: `Find information about studying at the AIG, about auditions to attend the`,
+  estudiar_description_1_part_2: ` academic year, and how to register for the AIG auditions.`,
+  estudiar_name_2: `Study plans`,
+  estudiar_description_2_part_1: `Find a catalogue of the areas of study offered by AIG: Violin/Viola, Cello, Piano, and Voice.`,
+  estudiar_name_3: `Registration form`,
+  estudiar_description_3_part_1: `The Galamian International Academy is open for registration of auditions until July 15, `,
+  estudiar_description_3_part_2: `. The academic year starts in September.`,
+  navbar_link_3: `Teachers`,
+  navbar_link_4: `Galamian Junior`,
 };
 
 export default common;
