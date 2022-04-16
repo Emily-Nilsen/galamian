@@ -19,6 +19,28 @@ const common = {
   button_solicita_una_plaza: `Solicita una plaza para el curso`,
   button_course: ``,
   button_cerrar: `Cerrar`,
+
+  //Footer
+  footer_text: `Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con la estimable colaboración de Fundación Unicaja.`,
+  footer_copyright: `Academia Internacional Galamian. Todos los derechos reservados.`,
+  footer_estudia: `Estudia`,
+  footer_estudia_1: `Estudiar`,
+  footer_estudia_2: `Formulario de Inscripción`,
+  footer_estudia_3: `Planes de Estudios`,
+  footer_estudios: `Estudios`,
+  footer_estudios_1: `Violín/Viola`,
+  footer_estudios_2: `Violoncelo`,
+  footer_estudios_3: `Piano`,
+  footer_estudios_4: `Voz`,
+  footer_academia: `La Academia`,
+  footer_academia_1: `El Proyecto`,
+  footer_academia_2: `Profesores`,
+  footer_academia_3: `Galamian Junior`,
+  footer_academia_4: `Contacto`,
+  footer_recursos: `Recursos`,
+  footer_recursos_1: `Noticias`,
+  footer_recursos_2: `Eventos`,
+  footer_recursos_3: `Bulletin`,
 };
 
 export default common;

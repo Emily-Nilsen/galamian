@@ -19,6 +19,28 @@ const common = {
   button_solicita_una_plaza: `Apply for the`,
   button_course: `Course `,
   button_cerrar: `Close`,
+
+  //Footer
+  footer_text: `An initiative led by Jesús Reina and Anna Margrethe Nilsen, with the valuable collaboration of Fundación Unicaja.`,
+  footer_copyright: `Galamian International Academy. All rights reserved.`,
+  footer_estudia: `Study`,
+  footer_estudia_1: `Studying`,
+  footer_estudia_2: `Registration Form`,
+  footer_estudia_3: `Study Plans`,
+  footer_estudios: `Programs`,
+  footer_estudios_1: `Violin/Viola`,
+  footer_estudios_2: `Cello`,
+  footer_estudios_3: `Piano`,
+  footer_estudios_4: `Voice`,
+  footer_academia: `Academy`,
+  footer_academia_1: `The Project`,
+  footer_academia_2: `Teachers`,
+  footer_academia_3: `Galamian Junior`,
+  footer_academia_4: `Contact`,
+  footer_recursos: `Resources`,
+  footer_recursos_1: `Notifications`,
+  footer_recursos_2: `Events`,
+  footer_recursos_3: `Bulletin`,
 };
 
 export default common;
