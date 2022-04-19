@@ -4,11 +4,11 @@ const common = {
   estudiar_title_part_1: `Galamian`,
   estudiar_title_part_2: `International Academy`,
   estudiar_photo_caption_1: `Unicaja Concert Hall María Cristina`,
-  estudiar_para_01: `Being part of the Galamian Academy (AIG) is a crucial decision for your artistic development. The AIG has fully dedicated professionals who guarantee your learning with the most current and advanced methodologies on the music scene.`,
-  estudiar_para_02: `Since its transfer to the former María Cristina Royal Conservatory, the Galamian International Academy has established itself as a musical educational institution of the highest vision and recognition. Students and teachers from all corners of the world attend the AIG.`,
+  estudiar_para_01: `Being part of the Galamian International Academy (GIA) is a crucial decision for your artistic development. The GIA has fully dedicated professionals who guarantee your learning with the most current and advanced methodologies on the music scene.`,
+  estudiar_para_02: `Since its transfer to the former María Cristina Royal Conservatory, the Galamian International Academy has established itself as a musical educational institution of the highest vision and recognition. Students and teachers from all corners of the world attend the GIA.`,
   estudiar_para_03: `Belonging to the student body of the Academy means much more than receiving classes from your principal teacher. We fervently believe in the necessary development of all the skills that make up your musical growth. Among them, of course, is your instrument technique, but not alone.`,
 
-  //La AIG te permite:
+  //La GIA te permite:
   permite_title: `The Galamian International Academy allows you to`,
   permite_list_item_01: `Develop your artistic abilities in a friendly study environment among classmates and teachers. Sharing opinions, criticism and musical experiences with our team and students will help you achieve honourable and competent artistic values ​​in the 21st-century music scene.`,
   permite_list_item_02: `Have all the facilities of the Academy: study booths, classrooms with pianos treated with care and respect, conference room, chamber music rooms and the María Cristina Unicaja Concert Hall.`,
@@ -26,7 +26,7 @@ const common = {
   footer_text: `An initiative led by Jesús Reina and Anna Margrethe Nilsen, with the valuable collaboration of Fundación Unicaja.`,
   footer_copyright: `Galamian International Academy. All rights reserved.`,
   footer_estudia: `Study`,
-  footer_estudia_1: `Studying`,
+  footer_estudia_1: `Study at the GIA`,
   footer_estudia_2: `Registration Form`,
   footer_estudia_3: `Study Plans`,
   footer_estudios: `Programs`,
@@ -48,7 +48,7 @@ const common = {
   navbar_link_1: `Academy`,
   navbar_link_1_title_1: `The Academy`,
   navbar_link_1_title_1_1: `The Project`,
-  navbar_link_1_title_1_2: `The Founders`,
+  navbar_link_1_title_1_2: `Founders`,
   navbar_link_1_title_1_3: `Unicaja Hall`,
   navbar_link_1_title_1_4: `Contact`,
   navbar_link_1_title_2: `Resources`,
@@ -60,16 +60,20 @@ const common = {
   blogpost_preview_1: `Stay tuned for our upcoming bulletin.`,
   navbar_link_2: `Study`,
   callsToAction: `Contact`,
-  estudiar_name_1: `Study at the AIG`,
-  estudiar_description_1_part_1: `Find information about studying at the AIG, about auditions to attend the`,
-  estudiar_description_1_part_2: ` academic year, and how to register for the AIG auditions.`,
+  estudiar_name_1: `Study at the GIA`,
+  estudiar_description_1_part_1: `Find information about studying at the GIA, about auditions to attend the`,
+  estudiar_description_1_part_2: ` academic year, and how to register for the GIA auditions.`,
   estudiar_name_2: `Study plans`,
-  estudiar_description_2_part_1: `Find a catalogue of the areas of study offered by AIG: Violin/Viola, Cello, Piano, and Voice.`,
+  estudiar_description_2_part_1: `Find a catalogue of the areas of study offered by GIA: Violin/Viola, Cello, Piano, and Voice.`,
   estudiar_name_3: `Registration form`,
   estudiar_description_3_part_1: `The Galamian International Academy is open for registration of auditions until July 15, `,
   estudiar_description_3_part_2: `. The academic year starts in September.`,
   navbar_link_3: `Teachers`,
   navbar_link_4: `Galamian Junior`,
+
+  // Estudios Hero header
+  programas_subtitle: `GIA Training programs for the`,
+  programas_title: `Study of`,
 };
 
 export default common;

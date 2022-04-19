@@ -26,7 +26,7 @@ const common = {
   footer_text: `Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con la estimable colaboración de Fundación Unicaja.`,
   footer_copyright: `Academia Internacional Galamian. Todos los derechos reservados.`,
   footer_estudia: `Estudia`,
-  footer_estudia_1: `Estudiar`,
+  footer_estudia_1: `Estudiar en la AIG`,
   footer_estudia_2: `Formulario de Inscripción`,
   footer_estudia_3: `Planes de Estudios`,
   footer_estudios: `Estudios`,
@@ -70,6 +70,10 @@ const common = {
   estudiar_description_3_part_2: `, a comenzar en el próximo septiembre.`,
   navbar_link_3: `Profesores`,
   navbar_link_4: `Galamian Junior`,
+
+  // Estudios Hero header
+  programas_subtitle: `Programas formativos de la AIG`,
+  programas_title: `Estudio de`,
 };
 
 export default common;

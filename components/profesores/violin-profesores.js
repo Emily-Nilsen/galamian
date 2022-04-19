@@ -10,6 +10,7 @@ function classNames(...classes) {
 
 const people = [
   {
+    id: `/#jesus`,
     name: 'Jesús Reina',
     role: 'Profesor Principal',
     imageUrl: '/static/profesores/jesus.jpg',
@@ -20,6 +21,7 @@ const people = [
     sentence_04: `Realizó sus estudios con Patinka Kopec y Pinchas Zukerman, recibiendo el premio R. Bronstein de la Manhattan School of Music. Imparte clases en la Universidad Alfonso X de Madrid y la Academia Galamian en Málaga.`,
   },
   {
+    id: `/#anna`,
     name: 'Anna Margrethe Nilsen',
     role: 'Profesora Principal',
     imageUrl: '/static/profesores/anna.jpg',
@@ -141,7 +143,10 @@ export default function ViolinProfesores() {
             >
               {people.map((person) => (
                 <li key={person.name}>
-                  <div className="flex items-center space-x-4 lg:space-x-6 hover:bg-neutral-50 transition duration-200 ease-in-out cursor-pointer rounded-l-full">
+                  <div
+                    id={person.id}
+                    className="flex items-center space-x-4 lg:space-x-6 hover:bg-neutral-50 transition duration-200 ease-in-out cursor-pointer rounded-l-full"
+                  >
                     <div className="w-16 h-16 lg:w-20 lg:h-20 relative">
                       <Image
                         className="rounded-full"

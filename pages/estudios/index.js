@@ -1,43 +1,50 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-const estudios = [
-  {
-    id: 1,
-    name: 'Estudio de Violín/Viola',
-    href: '/estudios/violin',
-    imageSrc: '/static/estudia/violin.jpg',
-  },
-  {
-    id: 2,
-    name: 'Estudio de Piano',
-    href: '/estudios/piano',
-    imageSrc: '/static/estudia/piano_02.jpg',
-  },
-  {
-    id: 3,
-    name: 'Estudio de Violoncelo',
-    href: '/estudios/violoncelo',
-    imageSrc: '/static/estudia/cello.jpg',
-  },
-  {
-    id: 4,
-    name: 'Estudio de Voz',
-    href: '/estudios/voz',
-    imageSrc: '/static/estudia/voz.jpg',
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Estudios() {
+  const { t } = useTranslation();
+
+  const estudios = [
+    {
+      id: 1,
+      name: `${t('estudios:estudio_violin')}`,
+      href: '/estudios/violin',
+      imageSrc: '/static/estudia/violin.jpg',
+    },
+    {
+      id: 2,
+      name: `${t('estudios:estudio_piano')}`,
+      href: '/estudios/piano',
+      imageSrc: '/static/estudia/piano_02.jpg',
+    },
+    {
+      id: 3,
+      name: `${t('estudios:estudio_violoncelo')}`,
+      href: '/estudios/violoncelo',
+      imageSrc: '/static/estudia/cello.jpg',
+    },
+    {
+      id: 4,
+      name: `${t('estudios:estudio_voz')}`,
+      href: '/estudios/voz',
+      imageSrc: '/static/estudia/voz.jpg',
+    },
+  ];
+
   return (
     <div className="px-4 py-16 mx-auto bg-white max-w-7xl sm:py-24 sm:px-6 lg:px-8">
       <div className="text-center">
         <h2 className="mt-1 text-4xl font-normal text-neutral-900 sm:text-5xl sm:tracking-wide lg:text-6xl">
-          Planes de <span className="text-gold-600"> Estudios</span>
+          {t('estudios:estudios_title_part_1')}{' '}
+          <span className="text-gold-600">
+            {' '}
+            {t('estudios:estudios_title_part_2')}
+          </span>{' '}
+          {t('estudios:estudios_title_part_3')}
         </h2>
         <p className="max-w-xl mx-auto mt-5 text-xl text-neutral-500">
-          La Academia Internacional Galamian ofrece los siguientes cuatro
-          programas de estudio.
+          {t('estudios:estudios_text')}
         </p>
       </div>
 
@@ -58,11 +65,11 @@ export default function Estudios() {
                   />
                 </div>
                 <div
-                  className="flex items-end p-4 transition duration-200 ease-in-out opacity-0 group-hover:opacity-100"
+                  className="flex items-start p-4 transition duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                   aria-hidden="true"
                 >
                   <div className="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-none text-neutral-900 backdrop-filter backdrop-blur">
-                    Ver estudio
+                    {t('estudios:estudio_ver')}
                   </div>
                 </div>
               </div>

@@ -514,9 +514,9 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="h-full px-5 py-6 bg-gray-50">
-                <p className="text-base font-medium text-left transition duration-200 ease-in-out cursor-pointer text-neutral-600 hover:text-gold-600">
-                  English
-                </p>
+                <div className="w-1/2">
+                  <LanguageSwitcher />
+                </div>
               </div>
             </div>
           </Popover.Button>

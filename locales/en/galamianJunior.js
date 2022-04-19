@@ -1,6 +1,6 @@
 const galamianJunior = {
   // Tabs
-  tab_estudiar: `Study at the AIG`,
+  tab_estudiar: `Study at the GIA`,
   tab_estudio: `Study`,
   tab_profesores: `Teachers`,
   tab_requisitos: `Requirements`,
@@ -19,7 +19,7 @@ const galamianJunior = {
   // Estudio
   estudio_subtitle: `Study of`,
   estudio_title: `Violin & Viola`,
-  estudio_para_01_part_1: `Students entering the AIG Junior Violin/Viola Study in the Autumn Semester will receive these lessons from September`,
+  estudio_para_01_part_1: `Students entering the GIA Junior Violin/Viola Study in the Autumn Semester will receive these lessons from September`,
   estudio_para_01_part_2: `to June`,
   estudio_para_01_part_3: `. During that time, they will participate in:`,
   estudio_list_item_01: `Individual classes`,
@@ -42,7 +42,7 @@ const galamianJunior = {
   leccion_title_1_text_2: `The monthly classes will be distributed 50% with each resident teacher.`,
   leccion_title_1_text_3: `7 classes per month with a duration of 45 min.`,
   leccion_title_2: `Masterclasses`,
-  leccion_title_2_text_1: `Masterclasses with the principal professors of the Violin/Viola Study, Jesús Reina and Anna Margrethe Nilsen, directors of the AIG.`,
+  leccion_title_2_text_1: `Masterclasses with the principal professors of the Violin/Viola Study, Jesús Reina and Anna Margrethe Nilsen, directors of the GIA.`,
   leccion_title_2_text_2: `1 class per month with a duration of 45 min.`,
   leccion_title_2_text_3: `Total of 8 monthly individual classes with a duration of 45 min.`,
   leccion_title_3: `Group classes`,
@@ -120,26 +120,26 @@ const galamianJunior = {
 
   // Titulación
   titulacion_title: `Awarding of Title`,
-  titulacion_text_1: `The educational programs of the Galamian International Academy (AIG) are divided into three ranks, depending on the age and level of the student: Pre-college, Bachelor and Master.`,
+  titulacion_text_1: `The educational programs of the Galamian International Academy (GIA) are divided into three ranks, depending on the age and level of the student: Pre-college, Bachelor and Master.`,
   titulacion_text_2: `Participation in one of these educational ranks will be determined by the Academy jury in the applicant's access audition, considering their age, academic background and interpretive level.`,
-  titulacion_text_3: `The AIG offers its degree for students who pass one of these programs in the opinion of their principal teachers.`,
+  titulacion_text_3: `The GIA offers its degree for students who pass one of these programs in the opinion of their principal teachers.`,
 
   // FAQs
   faq_title: `Frequently asked questions`,
-  faq_01: `Is it possible to combine my studies at the conservatory with the Galamian International Academy (AIG) programs?`,
+  faq_01: `Is it possible to combine my studies at the conservatory with the Galamian International Academy (GIA) programs?`,
   faq_01_text_1: `Any of the Galamian International Academy training programs are perfectly compatible with the regulated studies of any other institution.`,
-  faq_02: `What benefits do I obtain by attending the AIG?`,
-  faq_02_text_1: `Teachers of recognized international prestige make up the Galamian International Academy faculty. AIG teachers combine their concert activity with pedagogy at the academy and other renowned centres in Europe and the United States. AIG teachers understand how to transmit their refuted knowledge to the students.`,
-  faq_02_text_2: `The AIG, in conjunction with its teachers, offers dedicated music training. To the exhaustive development of the artistic skills of its students by supporting them in their approach and inclusion in the different professional fields available to professional musicians and performers.`,
+  faq_02: `What benefits do I obtain by attending the GIA?`,
+  faq_02_text_1: `Teachers of recognized international prestige make up the Galamian International Academy faculty. GIA teachers combine their concert activity with pedagogy at the academy and other renowned centres in Europe and the United States. GIA teachers understand how to transmit their refuted knowledge to the students.`,
+  faq_02_text_2: `The GIA, in conjunction with its teachers, offers dedicated music training. To the exhaustive development of the artistic skills of its students by supporting them in their approach and inclusion in the different professional fields available to professional musicians and performers.`,
   faq_03: `Is it possible to access the conservatory having attended the Galamian Academy previously?`,
   faq_03_text_1: `Access to the higher conservatory depends solely on passing a theoretical-practical entrance test. It is possible to take this test independently without previously attending a professional conservatory.`,
-  faq_03_text_2: `If this is the student's objective, the AIG teachers will dedicate an educational program devoted expressly to passing this test.`,
+  faq_03_text_2: `If this is the student's objective, the GIA teachers will dedicate an educational program devoted expressly to passing this test.`,
   faq_04: `Does obtaining my degree from the Galamian International Academy give me any academic advantage or recognition?`,
-  faq_04_text_1: `The AIG degree implies that an international institution, endorsed by the prestigious faculty, management, honorary presidency, and the Galamian International Academy team, backs your knowledge and skills.`,
-  faq_04_text_2: `It is an element of value in any opposition, whether for a public or private position, even if not official. In the face of private institutions, the title of the AIG has a significant value.`,
-  faq_05: `Is there a limited time to attend any of the AIG programs?`,
-  faq_05_text_1: `Each student is free to attend the AIG for as long as necessary. The teaching staff will always be willing to give advice and personalized follow-up to each student.`,
-  faq_05_text_2: `Some students may not wish to participate in any educational rank program (Pre-college, Bachelor or Master). In that case, the student will receive a diploma for each academic year attended at the AIG.`,
+  faq_04_text_1: `The GIA degree implies that an international institution, endorsed by the prestigious faculty, management, honorary presidency, and the Galamian International Academy team, backs your knowledge and skills.`,
+  faq_04_text_2: `It is an element of value in any opposition, whether for a public or private position, even if not official. In the face of private institutions, the title of the GIA has a significant value.`,
+  faq_05: `Is there a limited time to attend any of the GIA programs?`,
+  faq_05_text_1: `Each student is free to attend the GIA for as long as necessary. The teaching staff will always be willing to give advice and personalized follow-up to each student.`,
+  faq_05_text_2: `Some students may not wish to participate in any educational rank program (Pre-college, Bachelor or Master). In that case, the student will receive a diploma for each academic year attended at the GIA.`,
   faq_05_text_3: `The age established for the students of the Junior program is up to 16 years old. There is the possibility of making exceptions if the teaching staff finds it convenient.`,
 };
 export default galamianJunior;
