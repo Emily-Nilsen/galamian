@@ -101,45 +101,9 @@ const galamianJunior = {
   jose_bio_02: `At the same institution, he studied for a Master's degree in musical performance on clarinet and a Master's degree in solo performance with Professor François Benda.`,
   jose_bio_03: `His career as an orchestra conductor has led him to receive the I International Course on Orchestral Conducting in La Serena (Chile). Furthermore, he has conducted orchestras in Spain and Switzerland, such as the Orquesta Juventus Musica Basel, Ensemble de la Hochschule für Musik Basel, Orquesta Málaga Camerata and the Universidad de la Serena Orchestra, among others.`,
 
-  // Requisitos
-  requisitos_subtitle: `Requirements of`,
-  requisitos_title_part_1: `Admission and`,
-  requisitos_title_part_2: `Enrollment`,
-  requisitos_text: `The Galamian International Academy carries out the admission and enrollment process for students entering the academy for the first time via the academy's website throughout the year. Here you will also find frequently asked questions.`,
-
   // Matrícula
   matricula_title: `Enrollment`,
   matricula_text_1: `The annual registration fee is €3,500.`,
   matricula_text_2: `Enrollment fees are for one year. The academy can divide the tuition fee into three payments distributed throughout the academic year.`,
-
-  // Becas
-  becas_title: `Scholarships`,
-  becas_text_1: `The Reina Nilsen Foundation offers a reduction in enrollment costs for deserving and exceptionally motivated students - placing particular value on the family's economic situation - of up to 50% of the total enrollment cost.`,
-  becas_text_2: `The academy will carry out the request for this reduction in enrollment once the applicant passes the audition for access.`,
-  becas_text_3: `Upon registration, the Reina Nilsen Foundation will value your request with the Galamian International Academy panel. The academy will communicate any reduction and amount to the student before starting the course in September `,
-
-  // Titulación
-  titulacion_title: `Awarding of Title`,
-  titulacion_text_1: `The educational programs of the Galamian International Academy (GIA) are divided into three ranks, depending on the age and level of the student: Pre-college, Bachelor and Master.`,
-  titulacion_text_2: `Participation in one of these educational ranks will be determined by the Academy jury in the applicant's access audition, considering their age, academic background and interpretive level.`,
-  titulacion_text_3: `The GIA offers its degree for students who pass one of these programs in the opinion of their principal teachers.`,
-
-  // FAQs
-  faq_title: `Frequently asked questions`,
-  faq_01: `Is it possible to combine my studies at the conservatory with the Galamian International Academy (GIA) programs?`,
-  faq_01_text_1: `Any of the Galamian International Academy training programs are perfectly compatible with the regulated studies of any other institution.`,
-  faq_02: `What benefits do I obtain by attending the GIA?`,
-  faq_02_text_1: `Teachers of recognized international prestige make up the Galamian International Academy faculty. GIA teachers combine their concert activity with pedagogy at the academy and other renowned centres in Europe and the United States. GIA teachers understand how to transmit their refuted knowledge to the students.`,
-  faq_02_text_2: `The GIA, in conjunction with its teachers, offers dedicated music training. To the exhaustive development of the artistic skills of its students by supporting them in their approach and inclusion in the different professional fields available to professional musicians and performers.`,
-  faq_03: `Is it possible to access the conservatory having attended the Galamian Academy previously?`,
-  faq_03_text_1: `Access to the higher conservatory depends solely on passing a theoretical-practical entrance test. It is possible to take this test independently without previously attending a professional conservatory.`,
-  faq_03_text_2: `If this is the student's objective, the GIA teachers will dedicate an educational program devoted expressly to passing this test.`,
-  faq_04: `Does obtaining my degree from the Galamian International Academy give me any academic advantage or recognition?`,
-  faq_04_text_1: `The GIA degree implies that an international institution, endorsed by the prestigious faculty, management, honorary presidency, and the Galamian International Academy team, backs your knowledge and skills.`,
-  faq_04_text_2: `It is an element of value in any opposition, whether for a public or private position, even if not official. In the face of private institutions, the title of the GIA has a significant value.`,
-  faq_05: `Is there a limited time to attend any of the GIA programs?`,
-  faq_05_text_1: `Each student is free to attend the GIA for as long as necessary. The teaching staff will always be willing to give advice and personalized follow-up to each student.`,
-  faq_05_text_2: `Some students may not wish to participate in any educational rank program (Pre-college, Bachelor or Master). In that case, the student will receive a diploma for each academic year attended at the GIA.`,
-  faq_05_text_3: `The age established for the students of the Junior program is up to 16 years old. There is the possibility of making exceptions if the teaching staff finds it convenient.`,
 };
 export default galamianJunior;

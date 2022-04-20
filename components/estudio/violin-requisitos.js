@@ -1,22 +1,16 @@
 import Image from 'next/image';
-import FAQs from './faqs';
+import FAQs from '../galamian-junior/faqs';
 import useTranslation from 'next-translate/useTranslation';
+import { CheckIcon } from '@heroicons/react/outline';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Requisitos() {
+export default function ViolinRequisitos() {
   const { t } = useTranslation();
 
   const features = [
-    {
-      name: `${t('galamianJunior:matricula_title')}`,
-      description_01: `${t('galamianJunior:matricula_text_1')}`,
-      description_02: `${t('galamianJunior:matricula_text_2')}`,
-      imageSrc: '/static/galamian-junior/admission.jpg',
-      imageAlt: 'La matrícula de la Academia Galamian',
-    },
     {
       name: `${t('common:becas_title')}`,
       description_01: `${t('common:becas_text_1')}`,
@@ -24,16 +18,33 @@ export default function Requisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/galamian-junior/becas.jpg',
-      imageAlt: 'La Academia Galamian y su Joven Orquesta',
+      imageSrc: '/static/estudia/violin-study-img-3.jpg',
+      imageAlt: '',
+    },
+    {
+      name: `${t('common:practicas_title')}`,
+      description_01: `${t('common:practicas_text_1')}`,
+      description_02: `${t(
+        'common:practicas_text_2'
+      )}${new Date().getFullYear()}.`,
+      description_03: `${t(
+        'common:practicas_text_3_part_1'
+      )}${new Date().getFullYear()}`,
+      description_04: `${t('common:practicas_text_3_part_2')}.`,
+      subtitle: `${t('common:practicas_subtitle')}`,
+      list_1: `${t('common:practicas_item_1')}`,
+      list_2: `${t('common:practicas_item_2')}`,
+      list_3: `${t('common:practicas_item_3')}`,
+      imageSrc: '/static/estudia/violin-study-img-1.jpg',
+      imageAlt: '',
     },
     {
       name: `${t('common:titulacion_title')}`,
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/galamian-junior/titulacion.jpg',
-      imageAlt: 'Joven Orquesta de la Academia Galamian',
+      imageSrc: '/static/estudia/violin-study-img-4.jpg',
+      imageAlt: '',
     },
   ];
 
@@ -78,8 +89,43 @@ export default function Requisitos() {
                 </p>
                 <p className="mt-2 text-base text-neutral-500">
                   {feature.description_03}
+                  <span>{feature.description_04}</span>
                 </p>
+                {feature.subtitle ? (
+                  <>
+                    {' '}
+                    <h3 className="text-neutral-900 font-semibold text-base sm:text-lg pt-6 mb-4">
+                      {feature.subtitle}
+                    </h3>
+                    <ul role="list">
+                      <li className="list-none text-neutral-500 pb-3">
+                        <CheckIcon
+                          className="absolute h-6 w-6 text-lime-500"
+                          aria-hidden="true"
+                        />
+                        <p className="ml-9 text-base">{feature.list_1}</p>
+                      </li>
+                      <li className="list-none text-neutral-500 pb-3">
+                        <CheckIcon
+                          className="absolute h-6 w-6 text-lime-500"
+                          aria-hidden="true"
+                        />
+                        <p className="ml-9 text-base">{feature.list_2}</p>
+                      </li>
+                      <li className="list-none text-neutral-500 pb-3 ">
+                        <CheckIcon
+                          className="absolute h-6 w-6 text-lime-500"
+                          aria-hidden="true"
+                        />
+                        <p className="ml-9 text-base">{feature.list_3}</p>
+                      </li>
+                    </ul>
+                  </>
+                ) : (
+                  ''
+                )}
               </div>
+
               <div
                 className={classNames(
                   featureIdx % 2 === 0
@@ -97,7 +143,7 @@ export default function Requisitos() {
                       height={200}
                       layout="fill"
                       objectFit="cover"
-                      objectPosition="center"
+                      objectPosition="top"
                     />
                   </div>
                 </div>

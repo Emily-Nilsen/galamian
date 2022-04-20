@@ -11,29 +11,29 @@ export default function FAQs() {
 
   const faqs = [
     {
-      question: `${t('galamianJunior:faq_01')}`,
-      answer_01: `${t('galamianJunior:faq_01_text_1')}`,
+      question: `${t('common:faq_01')}`,
+      answer_01: `${t('common:faq_01_text_1')}`,
     },
     {
-      question: `${t('galamianJunior:faq_02')}`,
-      answer_01: `${t('galamianJunior:faq_02_text_1')}`,
-      answer_02: `${t('galamianJunior:faq_02_text_2')}`,
+      question: `${t('common:faq_02')}`,
+      answer_01: `${t('common:faq_02_text_1')}`,
+      answer_02: `${t('common:faq_02_text_2')}`,
     },
     {
-      question: `${t('galamianJunior:faq_03')}`,
-      answer_01: `${t('galamianJunior:faq_03_text_1')}`,
-      answer_02: `${t('galamianJunior:faq_03_text_2')}`,
+      question: `${t('common:faq_03')}`,
+      answer_01: `${t('common:faq_03_text_1')}`,
+      answer_02: `${t('common:faq_03_text_2')}`,
     },
     {
-      question: `${t('galamianJunior:faq_04')}`,
-      answer_01: `${t('galamianJunior:faq_04_text_1')}`,
-      answer_02: `${t('galamianJunior:faq_04_text_2')}`,
+      question: `${t('common:faq_04')}`,
+      answer_01: `${t('common:faq_04_text_1')}`,
+      answer_02: `${t('common:faq_04_text_2')}`,
     },
     {
-      question: `${t('galamianJunior:faq_05')}`,
-      answer_01: `${t('galamianJunior:faq_05_text_1')}`,
-      answer_02: `${t('galamianJunior:faq_05_text_2')}`,
-      answer_03: `${t('galamianJunior:faq_05_text_3')}`,
+      question: `${t('common:faq_05')}`,
+      answer_01: `${t('common:faq_05_text_1')}`,
+      answer_02: `${t('common:faq_05_text_2')}`,
+      answer_03: `${t('common:faq_05_text_3')}`,
     },
   ];
 
@@ -42,7 +42,7 @@ export default function FAQs() {
       <div className="px-4 py-12 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-neutral-200">
           <h2 className="text-3xl text-center text-neutral-900 sm:text-4xl">
-            {t('galamianJunior:faq_title')}
+            {t('common:faq_title')}
           </h2>
 
           <dl className="mt-6 space-y-6 divide-y divide-neutral-200">

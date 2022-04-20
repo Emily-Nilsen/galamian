@@ -4,6 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import { ExclamationIcon } from '@heroicons/react/solid';
 import { CheckIcon } from '@heroicons/react/outline';
 import ProfesoresViolin from '../../components/estudio/profesores-violin';
+import ViolinRequisitos from '../../components/estudio/violin-requisitos';
 
 export default function Violin() {
   const { t } = useTranslation();
@@ -137,13 +138,13 @@ export default function Violin() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
               <Image
-                src="/static/estudia/viola_01.jpg"
+                src="/static/estudia/violin-study-hero.jpg"
                 alt="Estudio de violín/viola"
-                width={1920}
-                height={1532}
+                width={6240}
+                height={4160}
                 layout="fill"
                 objectFit="cover"
-                objectPosition="right"
+                objectPosition="center"
               />
             </div>
           </div>
@@ -452,16 +453,18 @@ export default function Violin() {
               </div>
             </div>
 
-            <h2>{t('violin:estudio_para_12_part_1')}</h2>
+            <h2 className="text-xl tracking-wide text-neutral-900 sm:text-2xl font-semibold">
+              {t('violin:estudio_para_12_part_1')}
+            </h2>
             <p>{t('violin:estudio_para_12_part_2')}</p>
             <p>{t('violin:estudio_para_12_part_3')}</p>
             <figure>
               <div className="w-full rounded-none">
                 <Image
-                  src="/static/estudia/viola_02.jpg"
+                  src="/static/estudia/violin-study-img-2.jpg"
                   alt="Estudio de violín/viola"
-                  width={1920}
-                  height={1441}
+                  width={3709}
+                  height={2472}
                   layout="responsive"
                   objectFit="cover"
                   objectPosition="center"
@@ -471,7 +474,9 @@ export default function Violin() {
                 {/* Sagittis scelerisque nulla cursus in enim consectetur quam. */}
               </figcaption>
             </figure>
-            <h2>{t('violin:estudio_para_13_part_1')}</h2>
+            <h2 className="text-xl tracking-wide text-neutral-900 sm:text-2xl font-semibold">
+              {t('violin:estudio_para_13_part_1')}
+            </h2>
             <p>
               {t('violin:estudio_para_13_part_2')}
               <Link href="/profesores">
@@ -485,6 +490,7 @@ export default function Violin() {
         </div>
       </div>
       <ProfesoresViolin />
+      <ViolinRequisitos />
     </section>
   );
 }

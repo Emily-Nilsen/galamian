@@ -62,5 +62,16 @@ const violin = {
   estudio_list_repertoristas: `Repertoristas`,
   estudio_list_matricula: `Matrícula*`,
   estudio_footer: `Las tasas de matriculación son de carácter anual y pueden dividirse hasta en tres pagos porcentuales distribuidos a lo largo del curso académico.`,
+
+  //Profesores del Estudio de Violín/Viola
+  profesores_subtitle: `Profesores del`,
+  profesores_title_part_1: `Estudio de `,
+  profesores_title_part_2: `Violín/Viola`,
+  profesores_title_part_3: ``,
+  profesores_principales: `Profesores Principales`,
+  profesores_asistentes: `Profesora Asistente`,
+  profesores_invitados: `Profesores Invitados`,
+  principal_profesor_male: `Profesor Principal`,
+  principal_profesor_female: `Profesora Principal`,
 };
 export default violin;

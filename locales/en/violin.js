@@ -62,5 +62,16 @@ const violin = {
   estudio_list_repertoristas: `Repertorists`,
   estudio_list_matricula: `Tuition fee*`,
   estudio_footer: `Students can divide the annual enrollment fees into three payments distributed throughout the academic year.`,
+
+  //Profesores del Estudio de Violín/Viola
+  profesores_subtitle: `Professors of the`,
+  profesores_title_part_1: ``,
+  profesores_title_part_2: `Violin/Viola `,
+  profesores_title_part_3: `Study`,
+  profesores_principales: `Principal Professors`,
+  profesores_asistentes: `Assistant Professor`,
+  profesores_invitados: `Guest Professors`,
+  principal_profesor_male: `Principal Professor`,
+  principal_profesor_female: `Principal Professor`,
 };
 export default violin;
