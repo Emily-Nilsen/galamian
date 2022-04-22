@@ -11,70 +11,70 @@ export default function Violin() {
 
   const modes = [
     {
-      name: `${t('violin:estudio_list_ano_magistrales')}`,
+      name: `${t('common:estudio_list_ano_magistrales')}`,
       modeA: `64`,
       modeB: `48`,
       modeC: `32`,
     },
     {
-      name: `${t('violin:estudio_list_profesores_invitados')}`,
+      name: `${t('common:estudio_list_profesores_invitados')}`,
       modeA: `2`,
       modeB: `2`,
       modeC: `1`,
     },
     {
-      name: `${t('violin:estudio_list_rendimiento')}`,
+      name: `${t('common:estudio_list_rendimiento')}`,
       modeA: `10`,
       modeB: `10`,
       modeC: `10`,
     },
     {
-      name: `${t('violin:estudio_list_camara')}`,
+      name: `${t('common:estudio_list_camara')}`,
       modeA: `14`,
       modeB: `14`,
       modeC: `14`,
     },
     {
-      name: `${t('violin:estudio_list_eConferencias')}`,
+      name: `${t('common:estudio_list_eConferencias')}`,
       modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
       modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
       modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
     },
     {
-      name: `${t('violin:estudio_list_distancia')}`,
+      name: `${t('common:estudio_list_distancia')}`,
       modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
       modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
       modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
     },
     {
-      name: `${t('violin:estudio_list_conciertos_camara')}`,
+      name: `${t('common:estudio_list_conciertos_camara')}`,
       modeA: `2`,
       modeB: `2`,
       modeC: `2`,
     },
     {
-      name: `${t('violin:estudio_list_conciertos_alumnos')}`,
+      name: `${t('common:estudio_list_conciertos_alumnos')}`,
       modeA: `2`,
       modeB: `2`,
       modeC: `2`,
     },
     {
-      name: `${t('violin:estudio_list_recital_propia')}`,
+      name: `${t('common:estudio_list_recital_propia')}`,
       modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
       modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
       modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
     },
     {
-      name: `${t('violin:estudio_list_repertoristas')}`,
+      name: `${t('common:estudio_list_repertoristas')}`,
       modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
       modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
       modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
     },
     {
-      name: `${t('violin:estudio_list_matricula')}`,
-      modeA: `7.890€`,
-      modeB: `6.590€`,
-      modeC: `5.190€`,
+      name: `${t('common:estudio_list_matricula')}`,
+      modeA: `${t('common:estudio_list_fee_1')}`,
+      modeB: `${t('common:estudio_list_fee_2')}`,
+      modeC: `${t('common:estudio_list_fee_3')}`,
     },
   ];
 
@@ -108,18 +108,18 @@ export default function Violin() {
                     </div>
                     <div className="ml-3">
                       <h3 className="text-sm font-medium text-yellow-800">
-                        {t('violin:atencion_title')}
+                        {t('common:atencion_title')}
                       </h3>
                       <div className="mt-2 text-sm text-yellow-700">
                         <p>
-                          {t('violin:atencion_text_part_1')}{' '}
+                          {t('common:atencion_text_part_1')}{' '}
                           <span className="font-bold">
-                            {t('violin:atencion_text_part_2')}{' '}
+                            {t('common:atencion_text_part_2')}{' '}
                             {new Date().getFullYear()}{' '}
                           </span>
-                          {t('violin:atencion_text_part_3')}{' '}
+                          {t('common:atencion_text_violin')}{' '}
                           <span className="font-bold">
-                            {t('violin:atencion_text_part_4')}{' '}
+                            {t('common:atencion_text_part_4')}{' '}
                             {new Date().getFullYear()}
                           </span>
                           .
@@ -138,10 +138,10 @@ export default function Violin() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
               <Image
-                src="/static/estudia/violin-study-hero.jpg"
+                src="/static/estudia/violin-study-img-6.webp"
                 alt="Estudio de violín/viola"
-                width={6240}
-                height={4160}
+                width={5060}
+                height={3525}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
@@ -289,48 +289,48 @@ export default function Violin() {
           <div className="mx-auto text-lg max-w-prose">
             <h1>
               <span className="block text-base font-semibold tracking-wide text-center uppercase text-gold-600">
-                {t('violin:estudio_subtitle')}
+                {t('common:estudio_subtitle')}
               </span>
               <span className="block mt-2 text-4xl font-normal leading-8 tracking-wide text-center text-neutral-900 sm:text-5xl">
-                {t('violin:estudio_title')}
+                {t('common:estudio_title_violin')}
               </span>
             </h1>
             <p className="mt-8 text-xl leading-8 text-neutral-500">
-              {t('violin:estudio_para_01_part_1')}{' '}
+              {t('common:estudio_para_01_part_1_violin')}{' '}
               <span className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out hover:underline no-underline">
                 <Link href="/profesores/#jesus" passHref>
-                  {t('violin:estudio_para_01_part_2')}
+                  {t('common:estudio_para_01_part_2_violin')}
                 </Link>{' '}
               </span>
-              {t('violin:estudio_para_01_part_3')}{' '}
+              {t('common:estudio_para_01_part_3')}{' '}
               <span className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out hover:underline no-underline">
                 <Link href="/profesores/#anna" passHref>
-                  {t('violin:estudio_para_01_part_4')}
+                  {t('common:estudio_para_01_part_4_violin')}
                 </Link>{' '}
               </span>
-              {t('violin:estudio_para_01_part_5')}
+              {t('common:estudio_para_01_part_5_violin')}
             </p>
           </div>
           <div className="mx-auto mt-6 prose prose-lg prose-gold text-neutral-500">
-            <p>{t('violin:estudio_para_02')}</p>
+            <p>{t('common:estudio_para_02')}</p>
             <p>
-              {t('violin:estudio_para_03_part_1')}
+              {t('common:estudio_para_03_violin')}
               {new Date().getFullYear()}
-              {t('violin:estudio_para_03_part_2')}
+              {t('common:estudio_para_03_part_2')}
             </p>
 
             <ul role="list">
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('violin:estudio_para_04_part_1')}
+                  {t('common:estudio_para_04_part_1')}
                 </span>
-                {t('violin:estudio_para_04_part_2')}
+                {t('common:estudio_para_04_violin')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('violin:estudio_para_05_part_1')}
+                  {t('common:estudio_para_05_part_1')}
                 </span>
-                {t('violin:estudio_para_05_part_2')}
+                {t('common:estudio_para_05_part_2')}
               </li>
               <li className="list-none text-neutral-900">
                 <CheckIcon
@@ -338,44 +338,44 @@ export default function Violin() {
                   aria-hidden="true"
                 />
                 <p className="ml-9 text-lg leading-6 font-medium text-neutral-900">
-                  {t('violin:estudio_para_05_part_3')}
+                  {t('common:estudio_para_05_part_3')}
                 </p>
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('violin:estudio_para_06_part_1')}
+                  {t('common:estudio_para_06_part_1')}
                 </span>
-                {t('violin:estudio_para_06_part_2')}
+                {t('common:estudio_para_06_violin')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('violin:estudio_para_07_part_1')}
+                  {t('common:estudio_para_07_part_1')}
                 </span>
-                {t('violin:estudio_para_07_part_2')}
+                {t('common:estudio_para_07_part_2')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('violin:estudio_para_08_part_1')}
+                  {t('common:estudio_para_08_part_1')}
                 </span>
-                {t('violin:estudio_para_08_part_2')}
+                {t('common:estudio_para_08_part_2')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('violin:estudio_para_09_part_1')}
+                  {t('common:estudio_para_09_part_1')}
                 </span>
-                {t('violin:estudio_para_09_part_2')}
+                {t('common:estudio_para_09_part_2')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('violin:estudio_para_10_part_1')}
+                  {t('common:estudio_para_10_part_1')}
                 </span>
-                {t('violin:estudio_para_10_part_2')}
+                {t('common:estudio_para_10_part_2')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('violin:estudio_para_11_part_1')}
+                  {t('common:estudio_para_11_part_1')}
                 </span>
-                {t('violin:estudio_para_11_part_2')}
+                {t('common:estudio_para_11_part_2')}
               </li>
             </ul>
             {/* Modalidad */}
@@ -388,7 +388,7 @@ export default function Violin() {
                         <table className="min-w-full divide-y divide-neutral-300">
                           <div className="table-caption text-lg max-w-lg">
                             <h3 className="text-neutral-500 mt-0 text-lg sm:text-xl">
-                              {t('violin:modalidades_table_title')}
+                              {t('common:modalidades_table_title_violin')}
                             </h3>
                           </div>
                           <thead className="bg-neutral-50">
@@ -397,7 +397,7 @@ export default function Violin() {
                                 scope="col"
                                 className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-neutral-900 sm:pl-6"
                               >
-                                {t('violin:estudio_list_modalidad')}
+                                {t('common:estudio_list_modalidad')}
                               </th>
 
                               <th
@@ -443,7 +443,7 @@ export default function Violin() {
                         <div className="flex max-w-md -mt-4 border-t-neutral-200 border-t">
                           <div className="pr-1">*</div>
                           <div className="table-footer-group text-sm">
-                            {t('violin:estudio_footer')}
+                            {t('common:estudio_footer')}
                           </div>
                         </div>
                       </div>
@@ -454,17 +454,17 @@ export default function Violin() {
             </div>
 
             <h2 className="text-xl tracking-wide text-neutral-900 sm:text-2xl font-semibold">
-              {t('violin:estudio_para_12_part_1')}
+              {t('common:estudio_para_12_part_1')}
             </h2>
-            <p>{t('violin:estudio_para_12_part_2')}</p>
-            <p>{t('violin:estudio_para_12_part_3')}</p>
+            <p>{t('common:estudio_para_12_part_2')}</p>
+            <p>{t('common:estudio_para_12_part_3')}</p>
             <figure>
               <div className="w-full rounded-none">
                 <Image
-                  src="/static/estudia/violin-study-img-2.jpg"
+                  src="/static/estudia/violin-study-img-3.jpg"
                   alt="Estudio de violín/viola"
-                  width={3709}
-                  height={2472}
+                  width={4088}
+                  height={2725}
                   layout="responsive"
                   objectFit="cover"
                   objectPosition="center"
@@ -475,16 +475,16 @@ export default function Violin() {
               </figcaption>
             </figure>
             <h2 className="text-xl tracking-wide text-neutral-900 sm:text-2xl font-semibold">
-              {t('violin:estudio_para_13_part_1')}
+              {t('common:estudio_para_13_part_1')}
             </h2>
             <p>
-              {t('violin:estudio_para_13_part_2')}
+              {t('common:estudio_para_13_part_2')}
               <Link href="/profesores">
                 <a className="text-gold-600 no-underline hover:text-neutral-900 transition duration-200 ease-in-out">
-                  {t('violin:estudio_para_13_part_3')}
+                  {t('common:estudio_para_13_part_3')}
                 </a>
               </Link>
-              {t('violin:estudio_para_13_part_4')}
+              {t('common:estudio_para_13_part_4')}
             </p>
           </div>
         </div>

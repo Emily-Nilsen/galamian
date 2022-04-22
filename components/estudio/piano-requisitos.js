@@ -7,7 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function ViolinRequisitos() {
+export default function PianoRequisitos() {
   const { t } = useTranslation();
 
   const features = [
@@ -18,8 +18,8 @@ export default function ViolinRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/estudia/anna-violin-3.jpg',
-      imageAlt: 'Estudio de Violín/Viola',
+      imageSrc: '/static/estudia/violin-study-img-1.jpg',
+      imageAlt: 'Estudio de Piano',
     },
     {
       name: `${t('common:practicas_title')}`,
@@ -35,16 +35,16 @@ export default function ViolinRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc: '/static/estudia/violin-study-img-1.jpg',
-      imageAlt: 'Estudio de Violín/Viola',
+      imageSrc: '/static/estudia/piano-study-img-3.webp',
+      imageAlt: 'Estudio de Piano',
     },
     {
       name: `${t('common:titulacion_title')}`,
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/estudia/violin-study-img-5.webp',
-      imageAlt: 'Estudio de Violín/Viola',
+      imageSrc: '/static/estudia/piano_03.jpg',
+      imageAlt: 'Estudio de Piano',
     },
   ];
 
@@ -143,7 +143,7 @@ export default function ViolinRequisitos() {
                       height={2725}
                       layout="fill"
                       objectFit="cover"
-                      objectPosition="top"
+                      objectPosition="center"
                     />
                   </div>
                 </div>

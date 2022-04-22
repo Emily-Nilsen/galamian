@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import useTranslation from 'next-translate/useTranslation';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { CameraIcon } from '@heroicons/react/solid';
@@ -8,50 +9,52 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const people = [
-  {
-    name: 'Josu De Solaun',
-    role: 'Profesor Invitado Principal',
-    imageUrl: '/static/profesores/josu-de-solaun.jpg',
-    instrument: 'Piano',
-    sentence_01: ``,
-    sentence_02: ``,
-    sentence_03: ``,
-    sentence_04: ``,
-  },
-  {
-    name: 'Misha Dacić',
-    role: 'Profesor Invitado Principal',
-    imageUrl: '/static/profesores/misha-dacic.jpg',
-    instrument: 'Piano',
-    sentence_01: ``,
-    sentence_02: ``,
-    sentence_03: ``,
-    sentence_04: ``,
-  },
-  {
-    name: 'Anna Petrova',
-    role: 'Profesora Invitada',
-    imageUrl: '/static/profesores/anna-petrova.jpg',
-    instrument: 'Piano',
-    sentence_01: ``,
-    sentence_02: ``,
-    sentence_03: ``,
-    sentence_04: ``,
-  },
-  {
-    name: 'Francesco Libetta',
-    role: 'Profesor Invitado',
-    imageUrl: '/static/profesores/francesco-libetta.jpg',
-    instrument: 'Piano',
-    sentence_01: ``,
-    sentence_02: ``,
-    sentence_03: ``,
-    sentence_04: ``,
-  },
-];
-
 export default function PianoProfesores() {
+  const { t } = useTranslation();
+
+  const people = [
+    {
+      name: 'Misha Dacić',
+      role: `${t('common:misha_role')}`,
+      imageUrl: '/static/profesores/misha-dacic.jpg',
+      instrument: `${t('common:misha_instrument')}`,
+      sentence_01: `${t('common:misha_para_1')}`,
+      sentence_02: `${t('common:misha_para_2')}`,
+      sentence_03: `${t('common:misha_para_3')}`,
+      sentence_04: `${t('common:misha_para_4')}`,
+    },
+    {
+      name: 'Josu De Solaun',
+      role: `${t('common:josu_role')}`,
+      imageUrl: '/static/profesores/josu-de-solaun.jpg',
+      instrument: `${t('common:josu_instrument')}`,
+      sentence_01: ``,
+      sentence_02: ``,
+      sentence_03: ``,
+      sentence_04: ``,
+    },
+    {
+      name: 'Anna Petrova',
+      role: 'Profesora Invitada',
+      imageUrl: '/static/profesores/anna-petrova.jpg',
+      instrument: 'Piano',
+      sentence_01: ``,
+      sentence_02: ``,
+      sentence_03: ``,
+      sentence_04: ``,
+    },
+    {
+      name: 'Francesco Libetta',
+      role: 'Profesor Invitado',
+      imageUrl: '/static/profesores/francesco-libetta.jpg',
+      instrument: 'Piano',
+      sentence_01: ``,
+      sentence_02: ``,
+      sentence_03: ``,
+      sentence_04: ``,
+    },
+  ];
+
   return (
     <div className="relative bg-white pt-4 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl py-6 lg:py-12">
@@ -202,7 +205,7 @@ export default function PianoProfesores() {
 
                                       <Menu.Item>
                                         <p className="text-gold-600 text-base hover:text-neutral-900 transition duration-200 ease-in-out pt-4">
-                                          Cerrar{' '}
+                                          {t('common:button_cerrar')}{' '}
                                           <span aria-hidden="true">
                                             <XIcon
                                               className="h-4 w-4 inline-block"

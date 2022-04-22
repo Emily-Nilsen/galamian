@@ -2,18 +2,12 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 import { CameraIcon } from '@heroicons/react/solid';
 
-export default function ProfesoresViolin() {
+export default function ProfesoresPiano() {
   const { t } = useTranslation();
 
   const profesoresInvitados = [
-    { nombre: `Grigory Kalinovsky` },
-    { nombre: `Alexander Sitkovetsky` },
-    { nombre: `Molly Carr` },
-    { nombre: `Alfredo García` },
-    { nombre: `Koh Gabriel Kameda` },
-    { nombre: `Joaquín Riquelme` },
-    { nombre: `Jordán Tejedor` },
-    { nombre: `Salvador Esteve` },
+    { nombre: `Anna Petrova` },
+    { nombre: `Francesco Libetta` },
   ];
   return (
     <section id="fundadores" className="py-0 bg-white overflow-hidden lg:py-0">
@@ -23,34 +17,28 @@ export default function ProfesoresViolin() {
           <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="mx-auto text-lg max-w-prose">
               <h2 className="text-base font-semibold tracking-wide uppercase text-neutral-900">
-                {t('violin:profesores_subtitle')}
+                {t('piano:profesores_subtitle')}
               </h2>
               <h2 className="mt-2 text-left text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-                {t('violin:profesores_title_part_1')}
+                {t('piano:profesores_title_part_1')}
                 <span className="text-gold-600">
-                  {t('violin:profesores_title_part_2')}
+                  {t('piano:profesores_title_part_2')}
                 </span>
-                {t('violin:profesores_title_part_3')}
+                {t('piano:profesores_title_part_3')}
               </h2>
               <div className="grid sm:grid-cols-2 pt-10 pb-6 text-neutral-500 justify-between">
                 <div className="sm:col-span-1 pb-6 pr-6  leading-7">
                   <h3 className="text-neutral-900 font-semibold pb-2 text-lg">
-                    {t('violin:profesores_principales')}
+                    {t('piano:profesores_principales')}
                   </h3>
                   <ul role="list">
-                    <li>Jesús Reina</li>
-                    <li>Anna Margrethe Nilsen</li>
-                  </ul>
-                  <h3 className="text-neutral-900 font-semibold pb-2 pt-6 text-lg">
-                    {t('violin:profesores_asistentes')}
-                  </h3>
-                  <ul role="list">
-                    <li>Laura Romero</li>
+                    <li>Misha Dacić</li>
+                    <li>Josu De Solaun</li>
                   </ul>
                 </div>
                 <div className="sm:col-span-1">
                   <h3 className="text-neutral-900 font-semibold pb-2 text-lg">
-                    {t('violin:profesores_invitados')}
+                    {t('piano:profesores_invitados')}
                   </h3>
                   <div className="flex gap-10 leading-8">
                     <div>
@@ -70,7 +58,7 @@ export default function ProfesoresViolin() {
           </div>
         </div>
       </div>
-      {/* Jesus */}
+      {/* Misha Dacić */}
       <div className="relative bg-neutral-50 py-6 sm:py-16">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
           <div className="relative sm:py-16 lg:py-0">
@@ -86,10 +74,10 @@ export default function ProfesoresViolin() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <div className="rounded-none shadow-lg object-cover object-center overflow-hidden">
                     <Image
-                      src="/static/estudia/jesus-violin-img-1.jpg"
-                      alt="Jesús Reina"
-                      width={4239}
-                      height={3903}
+                      src="/static/profesores/misha-dacic.jpg"
+                      alt="Misha Dacić"
+                      width={2414}
+                      height={1527}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
@@ -102,7 +90,7 @@ export default function ProfesoresViolin() {
                     aria-hidden="true"
                   />
                   <span className="ml-2">
-                    {t('violin:principal_profesor_male')} Jesús Reina
+                    {t('piano:principal_profesor_male')} Misha Dacić
                   </span>
                 </figcaption>
               </figure>
@@ -114,26 +102,29 @@ export default function ProfesoresViolin() {
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <div>
                 <h2 className="text-base text-gold-600 font-semibold tracking-wide uppercase">
-                  {t('violin:principal_profesor_male')}
+                  {t('piano:principal_profesor_male')}
                 </h2>
                 <h2 className="mt-2 text-3xl leading-8 font-normal tracking-wide text-neutral-900 sm:text-4xl">
-                  Jesús Reina
+                  Misha Dacić
                 </h2>
               </div>
               <div className="mt-6 text-neutral-500 space-y-6">
-                <p className="text-lg">{t('common:jesus_para_1')}</p>
+                <p className="text-lg">{t('common:misha_para_1')}</p>
                 <p className="text-base leading-7">
-                  {t('common:jesus_para_2')}
+                  {t('common:misha_para_2')}
                 </p>
                 <p className="text-base leading-7">
-                  {t('common:jesus_para_3')}
+                  {t('common:misha_para_3')}
+                </p>
+                <p className="text-base leading-7">
+                  {t('common:misha_para_4')}
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* Anna */}
+      {/* Josu De Solaun */}
       <div className="relative bg-neutral-50 pb-16 pt-2 sm:pb-24 sm:pt-6">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
           <div className="relative sm:py-16 lg:py-0">
@@ -149,10 +140,10 @@ export default function ProfesoresViolin() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <div className="rounded-none shadow-lg object-cover object-center overflow-hidden">
                     <Image
-                      src="/static/profesores/anna.jpg"
-                      alt="Anna Margrethe Nilsen"
-                      width={1048}
-                      height={873}
+                      src="/static/profesores/josu-de-solaun.jpg"
+                      alt="Josu De Solaun"
+                      width={652}
+                      height={419}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
@@ -165,8 +156,7 @@ export default function ProfesoresViolin() {
                     aria-hidden="true"
                   />
                   <span className="ml-2">
-                    {t('violin:principal_profesor_female')} Anna Margrethe
-                    Nilsen
+                    {t('piano:principal_profesor_male')} Josu De Solaun
                   </span>
                 </figcaption>
               </figure>
@@ -178,16 +168,16 @@ export default function ProfesoresViolin() {
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <div>
                 <h2 className="text-base text-gold-600 font-semibold tracking-wide uppercase">
-                  {t('violin:principal_profesor_female')}
+                  {t('piano:principal_profesor_male')}
                 </h2>
                 <h2 className="mt-2 text-3xl leading-8 font-normal tracking-wide text-neutral-900 sm:text-4xl">
-                  Anna Margrethe Nilsen
+                  Josu De Solaun
                 </h2>
               </div>
               <div className="mt-6 text-neutral-500 space-y-6">
-                <p className="text-lg">{t('common:anna_para_1')}</p>
-                <p className="text-base leading-7">{t('common:anna_para_2')}</p>
-                <p className="text-base leading-7">{t('common:anna_para_3')}</p>
+                <p className="text-lg">{t('common:josu_para_1')}</p>
+                <p className="text-base leading-7">{t('common:josu_para_2')}</p>
+                <p className="text-base leading-7">{t('common:josu_para_3')}</p>
               </div>
             </div>
           </div>
