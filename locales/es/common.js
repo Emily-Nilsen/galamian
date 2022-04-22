@@ -106,6 +106,24 @@ const common = {
   josu_para_3: ``,
   josu_para_4: ``,
 
+  // Profesores del Estudio de Violoncelo
+  // Øyvind Gimse
+  oyvind_role: `Profesor Principal`,
+  oyvind_instrument: `Violoncelo`,
+  oyvind_para_1: `Sus siete nominaciones a los premios GRAMMY® avalan la relevancia que su implicación como director artístico de los Solistas de Trondheim ha tenido durante más de 15 años a la cabeza de esta agrupación. Un puesto de diligencia artística y también después de siete años como violonchelista solista de la Trondheim Symphony Orchestra.`,
+  oyvind_para_2: `Øyvind Gimse es un músico incansable, que ha recorrido el mundo con su inquietud musical por estandarte: desde Japón hasta Sudáfrica, pasando por las américas y todos los rincones de Europa.`,
+  oyvind_para_3: `Además de su participación en los Solistas de Trondheim, Gimse ha desarrollado una ferviente carrera en la música de cámara, que le ha llevado a compartir escena en agrupaciones junto a otros grandes artístas como Martin Fröst, Anne Sophie Mutter o Bobby McFerryn.`,
+  oyvind_para_4: `Sus trabajos con la compositora Sofiya Gubaidulina son de referencia discográfica en el repertorio contemporáneo, que se suman a su decena de grabaciones con casas como Naxos o Deutsche Grammophon. La relación entre el cellista y la compositora rusa ha resultado en estrenos absolutos de obras hoy icónicas de la música culta contemporánea.`,
+  oyvind_para_5: `Øyvind es un pedagogode reconocimiento internacional, quien ha impartido clases en Suecia, Dinamarca, Polonia, España y Brasil, además ostentar un reconocido puesto como profesor principal en el Institue of Music de la Norwegian University of Science and Technology. Desde 2018, el violonchelista es miembro activo del claustro de profesores del Programa Academistas Galamian, el itinerario de especialización en interpretación orquestal de la Academia Internacional Galamian, misma institución en la que imparte clases magistrales de violoncelo y música de cámara.`,
+
+  // Tilman Mahrenholz
+  tilman_role: `Profesor Principal`,
+  tilman_instrument: `Violoncelo`,
+  tilman_para_1: ``,
+  tilman_para_2: ``,
+  tilman_para_3: ``,
+  tilman_para_4: ``,
+
   // Requisitos
   requisitos_subtitle: `Requisitos de`,
   requisitos_title_part_1: `Admisión y`,
@@ -158,28 +176,36 @@ const common = {
   atencion_text_part_1: `Los alumnos que superen las audiciones convocadas para`,
   atencion_text_part_2: `junio de`,
   atencion_text_violin: `comenzarán a estudiar el Estudio de Violín/Viola en la Academia Internacional Galamian a partir de`,
+  atencion_text_violoncelo: `comenzarán a estudiar el Estudio de Violoncelo en la Academia Internacional Galamian a partir de`,
   atencion_text_piano: `comenzarán a estudiar el Estudio de Piano en la Academia Internacional Galamian a partir de`,
   atencion_text_part_4: `septiembre de`,
 
   // Estudios en AIG
   estudio_subtitle: `Estudio de`,
   estudio_title_violin: `Violín & Viola`,
+  estudio_title_violoncelo: `Violoncelo`,
   estudio_title_piano: `Piano`,
   estudio_para_01_part_1_violin: `Los violinistas`,
+  estudio_para_01_part_1_violoncelo: `Los violonchelistas`,
   estudio_para_01_part_1_piano: `Los pianistas`,
   estudio_para_01_part_2_violin: `Jesús Reina`,
+  estudio_para_01_part_2_violoncelo: `Øyvind Gimse`,
   estudio_para_01_part_2_piano: `Misha Dacić`,
   estudio_para_01_part_3: `y`,
   estudio_para_01_part_4_violin: `Anna Margrethe Nilsen`,
+  estudio_para_01_part_4_violoncelo: `Tilman Mahrenholz`,
   estudio_para_01_part_4_piano: `Josu De Solaun`,
   estudio_para_01_part_5_violin: `son los profesores principales del Estudio de Violín/Viola de la Academia Internacional Galamian.`,
+  estudio_para_01_part_5_violoncelo: `son los profesores principales del Estudio de Violoncelo de la Academia Internacional Galamian.`,
   estudio_para_01_part_5_piano: `son los profesores principales del Estudio de Piano de la Academia Internacional Galamian.`,
   estudio_para_02: `Los alumnos miembros de este programa reciben una instrucción dedicada por parte de los profesores principales a través de clases magistrales individuales, además de talleres, cursos y eventos a partir de los cuales el Estudio alimenta el crecimiento de sus alumnos.`,
   estudio_para_03_violin: `Los alumnos que ingresen en el Estudio de Violín/Viola de la AIG en el Semestre de Otoño recibirán estas lecciones desde septiembre de `,
+  estudio_para_03_violoncelo: `Los alumnos que ingresen en el Estudio de Violoncelo de la AIG en el Semestre de Otoño recibirán estas lecciones desde septiembre de `,
   estudio_para_03_piano: `Los alumnos que ingresen en el Estudio de Piano de la AIG en el Semestre de Otoño recibirán estas lecciones desde septiembre de `,
   estudio_para_03_part_2: `, periodo en el que participarán en:`,
   estudio_para_04_part_1: `Clases magistrales individuales `,
   estudio_para_04_violin: `con los profesores principales del Estudio de Violín/Viola, Anna Margrethe Nilsen y Jesús Reina, además de poder asistir a las lecciones impartidas a todos sus compañeros del estudio. Las clases mensuales se distribuirán en un 50% con cada uno de los profesores principales.`,
+  estudio_para_04_violoncelo: `con los profesores principales del Estudio de Violoncelo, Øyvind Gimse y Tilman Mahrenholz, además de poder asistir a las lecciones impartidas a todos sus compañeros del estudio. Las clases mensuales se distribuirán en un 50% con cada uno de los profesores principales.`,
   estudio_para_04_piano: `con los profesores principales del Estudio de Piano, Misha Dacić, además de poder asistir a las lecciones impartidas a todos sus compañeros del estudio. Las clases mensuales se distribuirán en un 50% con cada uno de los profesores principales.`,
 
   estudio_para_05_part_1: `Clases magistrales de rendimiento `,
@@ -187,6 +213,7 @@ const common = {
   estudio_para_05_part_3: `Una clase en grupo cada tres semanas`,
   estudio_para_06_part_1: `Profesores invitados `,
   estudio_para_06_violin: `que nutren al Estudio de diversidad artistica durante cada curso académico profesores de renombre internacional visitan el Estudio de Violín/Viola, o impartan clases por video conferencia.`,
+  estudio_para_06_violoncelo: `que nutren al Estudio de diversidad artistica durante cada curso académico profesores de renombre internacional visitan el Estudio de Violoncelo, o impartan clases por video conferencia.`,
   estudio_para_06_piano: `que nutren al Estudio de diversidad artistica durante cada curso académico profesores de renombre internacional visitan el Estudio de Piano, o impartan clases por video conferencia.`,
   estudio_para_07_part_1: `Música de cámara `,
   estudio_para_07_part_2: `como parte integral de la formación musical: agrupaciones de iniciación y avanzados colaborando con profesorado de la academia. Podrás participar distintos proyectos a lo largo del curso, llevándolos por las salas de conciertos referentes en Málaga y participando en el Festival Internacional de Música de Cámara Málaga Clásica, en su programa Talentos.`,
@@ -208,6 +235,7 @@ const common = {
 
   // Modalidades
   modalidades_table_title_violin: `Las clases, conciertos y matrícula del Estudio de Violín/Viola para un año académico`,
+  modalidades_table_title_violoncelo: `Las clases, conciertos y matrícula del Estudio de Violoncelo para un año académico`,
   modalidades_table_title_piano: `Las clases, conciertos y matrícula del Estudio de Piano para un año académico`,
   estudio_list_modalidad: `Modalidad`,
   estudio_list_ano_magistrales: `Clases individuales magistrales`,
