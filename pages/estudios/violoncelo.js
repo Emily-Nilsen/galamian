@@ -140,8 +140,8 @@ export default function Violoncelo() {
               <Image
                 src="/static/estudia/piano-study-img-4.webp"
                 alt="Estudio de Violoncelo"
-                width={6000}
-                height={3198}
+                width={2400}
+                height={1600}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="right"
@@ -463,8 +463,8 @@ export default function Violoncelo() {
                 <Image
                   src="/static/estudia/cello-img-1.webp"
                   alt="Estudio de Violoncelo"
-                  width={4592}
-                  height={3061}
+                  width={1500}
+                  height={1000}
                   layout="responsive"
                   objectFit="cover"
                   objectPosition="center"

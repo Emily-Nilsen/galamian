@@ -18,7 +18,7 @@ export default function ViolonceloRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/estudia/cello-img-2.webp',
+      imageSrc: '/static/estudia/cello-img-5.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -35,7 +35,7 @@ export default function ViolonceloRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc: '/static/estudia/cello-img-3.webp',
+      imageSrc: '/static/estudia/cello-img-2.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -139,8 +139,8 @@ export default function ViolonceloRequisitos() {
                     <Image
                       src={feature.imageSrc}
                       alt={feature.imageAlt}
-                      width={6000}
-                      height={2358}
+                      width={1500}
+                      height={590}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
