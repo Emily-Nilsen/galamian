@@ -138,13 +138,13 @@ export default function Violoncelo() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
               <Image
-                src="/static/estudia/cello-img-1.webp"
+                src="/static/estudia/piano-study-img-4.webp"
                 alt="Estudio de Violoncelo"
                 width={6000}
                 height={3198}
                 layout="fill"
                 objectFit="cover"
-                objectPosition="top"
+                objectPosition="right"
               />
             </div>
           </div>
@@ -461,7 +461,7 @@ export default function Violoncelo() {
             <figure>
               <div className="w-full rounded-none">
                 <Image
-                  src="/static/estudia/piano-study-img-4.webp"
+                  src="/static/estudia/cello-img-1.webp"
                   alt="Estudio de Violoncelo"
                   width={4592}
                   height={3061}
