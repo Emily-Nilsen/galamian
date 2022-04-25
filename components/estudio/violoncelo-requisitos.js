@@ -18,7 +18,7 @@ export default function ViolonceloRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/estudia/violin-study-img-1.jpg',
+      imageSrc: '/static/estudia/cello-img-2.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -35,7 +35,7 @@ export default function ViolonceloRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc: '/static/estudia/piano-study-img-3.webp',
+      imageSrc: '/static/estudia/cello-img-3.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -43,7 +43,7 @@ export default function ViolonceloRequisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/estudia/piano_03.jpg',
+      imageSrc: '/static/estudia/cello-img-4.webp',
       imageAlt: 'Estudio de Piano',
     },
   ];
@@ -94,30 +94,30 @@ export default function ViolonceloRequisitos() {
                 {feature.subtitle ? (
                   <>
                     {' '}
-                    <h3 className="text-neutral-900 font-semibold text-base sm:text-lg pt-6 mb-4">
+                    <h3 className="pt-6 mb-4 text-base font-semibold text-neutral-900 sm:text-lg">
                       {feature.subtitle}
                     </h3>
                     <ul role="list">
-                      <li className="list-none text-neutral-500 pb-3">
+                      <li className="pb-3 list-none text-neutral-500">
                         <CheckIcon
-                          className="absolute h-6 w-6 text-lime-500"
+                          className="absolute w-6 h-6 text-lime-500"
                           aria-hidden="true"
                         />
-                        <p className="ml-9 text-base">{feature.list_1}</p>
+                        <p className="text-base ml-9">{feature.list_1}</p>
                       </li>
-                      <li className="list-none text-neutral-500 pb-3">
+                      <li className="pb-3 list-none text-neutral-500">
                         <CheckIcon
-                          className="absolute h-6 w-6 text-lime-500"
+                          className="absolute w-6 h-6 text-lime-500"
                           aria-hidden="true"
                         />
-                        <p className="ml-9 text-base">{feature.list_2}</p>
+                        <p className="text-base ml-9">{feature.list_2}</p>
                       </li>
-                      <li className="list-none text-neutral-500 pb-3 ">
+                      <li className="pb-3 list-none text-neutral-500 ">
                         <CheckIcon
-                          className="absolute h-6 w-6 text-lime-500"
+                          className="absolute w-6 h-6 text-lime-500"
                           aria-hidden="true"
                         />
-                        <p className="ml-9 text-base">{feature.list_3}</p>
+                        <p className="text-base ml-9">{feature.list_3}</p>
                       </li>
                     </ul>
                   </>
@@ -139,8 +139,8 @@ export default function ViolonceloRequisitos() {
                     <Image
                       src={feature.imageSrc}
                       alt={feature.imageAlt}
-                      width={4088}
-                      height={2725}
+                      width={6000}
+                      height={2358}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"

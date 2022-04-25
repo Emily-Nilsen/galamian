@@ -1,17 +1,17 @@
 const violoncelo = {
-  title: `Violoncelo`,
-  text_part_1: `Información para el curso de Estudio de Violoncelo de `,
-  text_part_2: ``,
+  title: `Cello`,
+  text_part_1: `Information for the `,
+  text_part_2: ` Cello Study course`,
 
-  //Profesores del Estudio de Violoncelo
-  profesores_subtitle: `Profesores del`,
-  profesores_title_part_1: `Estudio de `,
-  profesores_title_part_2: `Violoncelo`,
-  profesores_title_part_3: ``,
-  profesores_principales: `Profesores Principales`,
-  profesores_asistentes: `Profesora Asistente`,
-  profesores_invitados: `Profesores Invitados`,
-  principal_profesor_male: `Profesor Principal`,
-  principal_profesor_female: `Profesora Principal`,
+  //Profesores del Estudio de Cello
+  profesores_subtitle: `Professors of the`,
+  profesores_title_part_1: ``,
+  profesores_title_part_2: `Cello `,
+  profesores_title_part_3: `Study`,
+  profesores_principales: `Principal Professors`,
+  profesores_asistentes: `Assistant Professor`,
+  profesores_invitados: `Guest Professors`,
+  principal_profesor_male: `Principal Professor`,
+  principal_profesor_female: `Principal Professor`,
 };
 export default violoncelo;

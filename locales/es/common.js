@@ -112,17 +112,18 @@ const common = {
   oyvind_instrument: `Violoncelo`,
   oyvind_para_1: `Sus siete nominaciones a los premios GRAMMY® avalan la relevancia que su implicación como director artístico de los Solistas de Trondheim ha tenido durante más de 15 años a la cabeza de esta agrupación. Un puesto de diligencia artística y también después de siete años como violonchelista solista de la Trondheim Symphony Orchestra.`,
   oyvind_para_2: `Øyvind Gimse es un músico incansable, que ha recorrido el mundo con su inquietud musical por estandarte: desde Japón hasta Sudáfrica, pasando por las américas y todos los rincones de Europa.`,
-  oyvind_para_3: `Además de su participación en los Solistas de Trondheim, Gimse ha desarrollado una ferviente carrera en la música de cámara, que le ha llevado a compartir escena en agrupaciones junto a otros grandes artístas como Martin Fröst, Anne Sophie Mutter o Bobby McFerryn.`,
+  oyvind_para_3: `Además de su participación en los Solistas de Trondheim, Gimse ha desarrollado una ferviente carrera en la música de cámara, que le ha llevado a compartir escena en agrupaciones junto a otros grandes artístas como Martin Fröst, Anne Sophie Mutter o Bobby McFerrin.`,
   oyvind_para_4: `Sus trabajos con la compositora Sofiya Gubaidulina son de referencia discográfica en el repertorio contemporáneo, que se suman a su decena de grabaciones con casas como Naxos o Deutsche Grammophon. La relación entre el cellista y la compositora rusa ha resultado en estrenos absolutos de obras hoy icónicas de la música culta contemporánea.`,
-  oyvind_para_5: `Øyvind es un pedagogode reconocimiento internacional, quien ha impartido clases en Suecia, Dinamarca, Polonia, España y Brasil, además ostentar un reconocido puesto como profesor principal en el Institue of Music de la Norwegian University of Science and Technology. Desde 2018, el violonchelista es miembro activo del claustro de profesores del Programa Academistas Galamian, el itinerario de especialización en interpretación orquestal de la Academia Internacional Galamian, misma institución en la que imparte clases magistrales de violoncelo y música de cámara.`,
+  oyvind_para_5: `Øyvind es un pedagogo reconocimiento internacional, quien ha impartido clases en Suecia, Dinamarca, Polonia, España y Brasil, además ostentar un reconocido puesto como profesor principal en el Institue of Music de la Norwegian University of Science and Technology. Desde 2018, el violonchelista es miembro activo del claustro de profesores del Programa Academistas Galamian, el itinerario de especialización en interpretación orquestal de la Academia Internacional Galamian, misma institución en la que imparte clases magistrales de violoncelo y música de cámara.`,
 
   // Tilman Mahrenholz
   tilman_role: `Profesor Principal`,
   tilman_instrument: `Violoncelo`,
-  tilman_para_1: ``,
-  tilman_para_2: ``,
-  tilman_para_3: ``,
-  tilman_para_4: ``,
+  tilman_para_1: `Tilman Mahrenholz inició su formación musical en la "Hochschule für Musik Saar" en Saarbrücken y en la "Folkwang-Hochschule" en Essen, en su Alemania natal. Posteriormente se traslada a Nueva York, siendo becado por sus méritos artísticos por la prestigiosa "Juilliard School of Music", donde conseguirá su diploma en "Master of Music".`,
+  tilman_para_2: `Entre sus Profesores figuran Ulrich Voss, Prof. Christoph Richter, y Carter Brey, solista de violoncelo de la Orquesta Filarmónica de Nueva York.`,
+  tilman_para_3: `Ha sido ganador de tres premios en el Concurso Juvenil de Alemania y ha participado en Festivales Internacionales de Música como el Bain de Musique Flaine y el Aspen Music Festival, donde pudo continuar su formación junto a Wolfgang Boettcher, Zara Nelsova, Lynn Harrell, el cuarteto Alban Berg y el cuarteto La Salle, entre muchos otros.`,
+  tilman_para_4: `Tilman Mahrenholz fue miembro fundador del "Cuarteto Alborán", formando parte a lo largo de su carrera de otras formaciones camerísticas y orquestales, como trío de piano y orquestas de cámara y sinfónicas, entre ellas la Orquesta Sinfónica de la Radio de Saarbrücken y la Orquesta Ciudad de Granada. Conciertos de solista así como de cámara y sinfónicos lo han llevado por países como Alemania, Austria, Francia, EE UU, Luxemburgo, Marruecos y España.`,
+  tilman_para_5: `Entre sus actuaciones recientes destaca la interpretación del concierto de A. Dvorak en el Teatro Cervantes de Málaga junto a la Orquesta Filarmónica de esta ciudad bajo la batuta del maestro Paul Goodwin. Actualmente, Tilman Mahrenholz es solista de violoncelos de la Orquesta Filarmónica de Málaga.`,
 
   // Requisitos
   requisitos_subtitle: `Requisitos de`,

@@ -106,6 +106,26 @@ const common = {
   josu_para_3: ``,
   josu_para_4: ``,
 
+  // Profesores del Estudio de Violoncelo
+  // Øyvind Gimse
+  oyvind_role: `Principal Professor`,
+  oyvind_instrument: `Cello`,
+  oyvind_para_1: `His seven GRAMMY® Award nominations attest to the importance of his involvement as artistic director of the Trondheim Soloists for more than 15 years at the head of this group. In addition to holding a position of creative diligence, Øyvind Gimse has also been a solo cellist with the Trondheim Symphony Orchestra for seven years.`,
+  oyvind_para_2: `Øyvind Gimse is a tireless musician who has travelled the world with his musical concern as a standard: from Japan to South Africa, passing through the Americas and all corners of Europe.`,
+  oyvind_para_3: `In addition to his contribution to the Trondheim Soloists, Gimse has developed a vibrant career in chamber music. This career has led him to share the stage in groups with other great artists such as Martin Fröst, Anne Sophie Mutter and Bobby McFerrin.`,
+  oyvind_para_4: `His works with the composer Sofiya Gubaidulina are a record reference in the contemporary repertoire, adding to his ten recordings with houses such as Naxos and Deutsche Grammophon. The relationship between the cellist and the Russian composer has resulted in world premieres of now-iconic works of contemporary art music.`,
+  oyvind_para_5: `Øyvind is an internationally recognized pedagogue, having taught in Sweden, Denmark, Poland, Spain and Brazil. He holds a recognized position as a Senior Lecturer at the Institue of Music at the Norwegian University of Science and Technology. Since 2018, the cellist has been an active member of the faculty of the Galamian Academists Program, the specialization itinerary in orchestral performance of the Galamian International Academy. In the same institution, he teaches cello and chamber music masterclasses.
+  `,
+
+  // Tilman Mahrenholz
+  tilman_role: `Principal Professor`,
+  tilman_instrument: `Cello`,
+  tilman_para_1: `Tilman Mahrenholz began his musical training at the "Hochschule für Musik Saar" in Saarbrücken and at the "Folkwang-Hochschule" in Essen, in his native Germany. Later, he moved to New York and was awarded a scholarship for his artistic merits by the prestigious "Juilliard School of Music" and received his "Master of Music" diploma.`,
+  tilman_para_2: `His teachers include Ulrich Voss, Prof. Christoph Richter, and Carter Brey, cello soloist with the New York Philharmonic Orchestra.`,
+  tilman_para_3: `Tilman Mahrenholz has won three prizes at the German Youth Competition. He has also participated in international music festivals such as the Bain de Musique Flaine and the Aspen Music Festival. He continued his training with Wolfgang Boettcher, Zara Nelsova, Lynn Harrell, the quartet Alban Berg and the La Salle Quartet, among many others.`,
+  tilman_para_4: `Tilman Mahrenholz was a founding member of the "Alborán Quartet". He continued to form parts of other groups, such as piano trios and chamber and symphony orchestras, including the Saarbrücken Radio Symphony Orchestra and the City of Granada Orchestra. Soloist, chamber and symphonic concerts have taken him to countries such as Germany, Austria, France, the USA, Luxembourg, Morocco and Spain.`,
+  tilman_para_5: `One of Tilman Mahrenholz's most recent significant performances includes his interpretation of the A. Dvorak concert at the Cervantes Theater in Malaga with the Malaga Philharmonic Orchestra, under the conductor's baton of maestro Paul Goodwin. Currently, Tilman Mahrenholz is a cello soloist with the Malaga Philharmonic Orchestra.`,
+
   // Requisitos
   requisitos_subtitle: `Requirements of`,
   requisitos_title_part_1: `Admission and`,
@@ -178,7 +198,7 @@ const common = {
   estudio_para_01_part_4_violoncelo: `Tilman Mahrenholz`,
   estudio_para_01_part_4_piano: `Josu De Solaun`,
   estudio_para_01_part_5_violin: `are the principal professors of the Violin/Viola Study at the Galamian International Academy.`,
-  estudio_para_01_part_5_violin: `are the principal professors of the Cello Study at the Galamian International Academy.`,
+  estudio_para_01_part_5_violoncelo: `are the principal professors of the Cello Study at the Galamian International Academy.`,
   estudio_para_01_part_5_piano: `are the principal professors of the Piano Study at the Galamian International Academy.`,
   estudio_para_02: `The students who are members of this program receive dedicated instruction from the leading professors through individual masterclasses and workshops, courses, and events from which the Study nurtures the growth of its students.`,
   estudio_para_03_violin: `Students entering the GIA Violin/Viola Study in the Autumn Semester will receive these lessons from September `,
