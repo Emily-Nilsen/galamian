@@ -5,6 +5,7 @@ import { ExclamationIcon } from '@heroicons/react/solid';
 import { CheckIcon } from '@heroicons/react/outline';
 import ProfesoresViolin from '../../components/estudio/profesores-violin';
 import ViolinRequisitos from '../../components/estudio/violin-requisitos';
+import ViolinGalleryOne from '../../components/estudio/violin-gallery-1';
 
 export default function Violin() {
   const { t } = useTranslation();
@@ -134,49 +135,47 @@ export default function Violin() {
         </div>
       </div>
       <div className="relative bg-neutral-50">
-        <div className="lg:absolute lg:inset-0">
-          <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
-            <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
-              <Image
-                src="/static/estudia/violin-study-img-6.webp"
-                alt="Estudio de violín/viola"
-                width={2400}
-                height={1672}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-              />
+        <div className="relative object-cover w-full h-56">
+          <Image
+            src="/static/estudia/violin/group-photo-06.webp"
+            alt="Estudio de violín/viola"
+            width={1921}
+            height={984}
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+          />
+        </div>
+        <div className="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6">
+          <div className="mx-auto text-base max-w-prose">
+            <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+              {t('common:estudiar_subtitle')}
+            </h2>
+            <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
+              {t('common:estudiar_title_part_1')}{' '}
+              <span className="block text-gold-600">
+                {t('common:estudiar_title_part_2')}
+              </span>
+            </h2>
+            <p className="mt-8 text-lg text-neutral-500">
+              {t('common:estudiar_para_01')}
+            </p>
+            <div className="mt-5 prose text-neutral-500 prose-gold">
+              <p>{t('common:estudiar_para_02')}</p>
+              <p>{t('common:estudiar_para_03')}</p>
+              <h3>{t('common:permite_title')}</h3>
+              <ul role="list">
+                <li>{t('common:permite_list_item_01')}</li>
+                <li>{t('common:permite_list_item_02')}</li>
+                <li>{t('common:permite_list_item_03')}</li>
+                <li>{t('common:permite_list_item_04')}</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div className="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
-          <div className="lg:col-start-2 lg:pl-8">
-            <div className="mx-auto text-base max-w-prose lg:max-w-lg lg:ml-auto lg:mr-0">
-              <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
-                {t('common:estudiar_subtitle')}
-              </h2>
-              <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-                {t('common:estudiar_title_part_1')}{' '}
-                <span className="block text-gold-600">
-                  {t('common:estudiar_title_part_2')}
-                </span>
-              </h2>
-              <p className="mt-8 text-lg text-neutral-500">
-                {t('common:estudiar_para_01')}
-              </p>
-              <div className="mt-5 prose text-neutral-500 prose-gold">
-                <p>{t('common:estudiar_para_02')}</p>
-                <p>{t('common:estudiar_para_03')}</p>
-                <h3>{t('common:permite_title')}</h3>
-                <ul role="list">
-                  <li>{t('common:permite_list_item_01')}</li>
-                  <li>{t('common:permite_list_item_02')}</li>
-                  <li>{t('common:permite_list_item_03')}</li>
-                  <li>{t('common:permite_list_item_04')}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        {/* Violin Gallery One */}
+        <div className="lg:pt-0">
+          <ViolinGalleryOne />
         </div>
       </div>
 
@@ -378,6 +377,7 @@ export default function Violin() {
                 {t('common:estudio_para_11_part_2')}
               </li>
             </ul>
+
             {/* Modalidad */}
             <div className="px-6">
               <div className="sm:flex sm:items-center">
@@ -461,7 +461,7 @@ export default function Violin() {
             <figure>
               <div className="w-full rounded-none">
                 <Image
-                  src="/static/estudia/violin-study-img-3.webp"
+                  src="/static/estudia/violin/violin-photo-08.webp"
                   alt="Estudio de violín/viola"
                   width={1500}
                   height={1000}

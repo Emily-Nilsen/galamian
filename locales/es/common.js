@@ -20,7 +20,9 @@ const common = {
   button_course: ``,
   button_cerrar: `Cerrar`,
   button_publicaciones: `Ver todas las publicaciones`,
+  button_faq: `Ver todas las preguntas frecuentes`,
   button_aprende: `Aprende más`,
+  button_back: `Volver`,
 
   //Footer
   footer_text: `Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con la estimable colaboración de Fundación Unicaja.`,
@@ -41,7 +43,6 @@ const common = {
   footer_academia_4: `Contacto`,
   footer_recursos: `Recursos`,
   footer_recursos_1: `Noticias`,
-  footer_recursos_2: `Eventos`,
   footer_recursos_3: `Bulletin`,
 
   //Navbar
@@ -56,8 +57,15 @@ const common = {
   navbar_link_1_title_2_2: `Eventos`,
   navbar_link_1_title_2_3: `Bulletin`,
   navbar_link_1_title_3: `Del Bulletin`,
+  navbar_link_1_title_4: `¿Tienes una pregunta?`,
+  navbar_violin: `Estudio de Violin/Viola`,
+  navbar_piano: `Estudio de Piano`,
+  navbar_cello: `Estudio de Cello`,
+  navbar_voice: `Estudio de Voice`,
+  blog: `El bulletin`,
+  blog_coming: `¡vienen pronto!`,
   blogpost_name_1: `¡El bulletin vienen pronto!`,
-  blogpost_preview_1: `Estén atentos a nuestro próximo bulletin.`,
+  blogpost_preview_1: `Estén atentos a nuestras próximas noticias y eventos.`,
   navbar_link_2: `Estudia`,
   callsToAction: `Contacto`,
   estudiar_name_1: `Estudiar en la AIG`,
@@ -179,6 +187,7 @@ const common = {
   atencion_text_violin: `comenzarán a estudiar el Estudio de Violín/Viola en la Academia Internacional Galamian a partir de`,
   atencion_text_violoncelo: `comenzarán a estudiar el Estudio de Violoncelo en la Academia Internacional Galamian a partir de`,
   atencion_text_piano: `comenzarán a estudiar el Estudio de Piano en la Academia Internacional Galamian a partir de`,
+  atencion_text_voz: `comenzarán a estudiar el Estudio de Voz en la Academia Internacional Galamian a partir de`,
   atencion_text_part_4: `septiembre de`,
 
   // Estudios en AIG
@@ -186,19 +195,25 @@ const common = {
   estudio_title_violin: `Violín & Viola`,
   estudio_title_violoncelo: `Violoncelo`,
   estudio_title_piano: `Piano`,
+  estudio_title_voz: `Voz`,
   estudio_para_01_part_1_violin: `Los violinistas`,
   estudio_para_01_part_1_violoncelo: `Los violonchelistas`,
   estudio_para_01_part_1_piano: `Los pianistas`,
+  estudio_para_01_part_1_voz: `El tenor`,
   estudio_para_01_part_2_violin: `Jesús Reina`,
   estudio_para_01_part_2_violoncelo: `Øyvind Gimse`,
   estudio_para_01_part_2_piano: `Misha Dacić`,
+  estudio_para_01_part_2_voz: `Nils Nilsen`,
   estudio_para_01_part_3: `y`,
+  estudio_para_01_part_3_voz: `es el profesor principal del Estudio de Voz de la Academia Internacional Galamian. Junto a él, el pianista `,
   estudio_para_01_part_4_violin: `Anna Margrethe Nilsen`,
   estudio_para_01_part_4_violoncelo: `Tilman Mahrenholz`,
   estudio_para_01_part_4_piano: `Josu De Solaun`,
+  estudio_para_01_part_4_voz: `Sergio Montero `,
   estudio_para_01_part_5_violin: `son los profesores principales del Estudio de Violín/Viola de la Academia Internacional Galamian.`,
   estudio_para_01_part_5_violoncelo: `son los profesores principales del Estudio de Violoncelo de la Academia Internacional Galamian.`,
   estudio_para_01_part_5_piano: `son los profesores principales del Estudio de Piano de la Academia Internacional Galamian.`,
+  estudio_para_01_part_5_voz: `completa el equipo del estudio como profesor de repertorio y pianista acompañante.`,
   estudio_para_02: `Los alumnos miembros de este programa reciben una instrucción dedicada por parte de los profesores principales a través de clases magistrales individuales, además de talleres, cursos y eventos a partir de los cuales el Estudio alimenta el crecimiento de sus alumnos.`,
   estudio_para_03_violin: `Los alumnos que ingresen en el Estudio de Violín/Viola de la AIG en el Semestre de Otoño recibirán estas lecciones desde septiembre de `,
   estudio_para_03_violoncelo: `Los alumnos que ingresen en el Estudio de Violoncelo de la AIG en el Semestre de Otoño recibirán estas lecciones desde septiembre de `,
@@ -207,7 +222,7 @@ const common = {
   estudio_para_04_part_1: `Clases magistrales individuales `,
   estudio_para_04_violin: `con los profesores principales del Estudio de Violín/Viola, Anna Margrethe Nilsen y Jesús Reina, además de poder asistir a las lecciones impartidas a todos sus compañeros del estudio. Las clases mensuales se distribuirán en un 50% con cada uno de los profesores principales.`,
   estudio_para_04_violoncelo: `con los profesores principales del Estudio de Violoncelo, Øyvind Gimse y Tilman Mahrenholz, además de poder asistir a las lecciones impartidas a todos sus compañeros del estudio. Las clases mensuales se distribuirán en un 50% con cada uno de los profesores principales.`,
-  estudio_para_04_piano: `con los profesores principales del Estudio de Piano, Misha Dacić, además de poder asistir a las lecciones impartidas a todos sus compañeros del estudio. Las clases mensuales se distribuirán en un 50% con cada uno de los profesores principales.`,
+  estudio_para_04_piano: `con los profesores principales del Estudio de Piano, Misha Dacić y Josu De Solaun, además de poder asistir a las lecciones impartidas a todos sus compañeros del estudio. Las clases mensuales se distribuirán en un 50% con cada uno de los profesores principales.`,
 
   estudio_para_05_part_1: `Clases magistrales de rendimiento `,
   estudio_para_05_part_2: `consisten en clases grupales de repertorio, técnicas de estudios y práctica performativa. Desarrolla tus técnicas de interpretación sobre el escenario, compartiendo experiencias prácticas junto a tus compañeros del estudio.`,
@@ -233,6 +248,8 @@ const common = {
   estudio_para_13_part_2: `Joven Orquesta de la Academia Galamian para aquellos alumnos de entre 11 y 16 años, quienes disfrutan de su primera experiencia orquestan en un programa tutelado por `,
   estudio_para_13_part_3: `José Andrés Fernández Camacho `,
   estudio_para_13_part_4: `y otros profesores de la Orquesta de la Academia Galamian.`,
+  estudio_para_14_part_1: `Interpretación concertante `,
+  estudio_para_14_part_2: `para aprender un movimiento de concierto clásico con un pianista y un conjunto de cámara de la academia, adquiriendo experiencia tocando con una orquesta.`,
 
   // Modalidades
   modalidades_table_title_violin: `Las clases, conciertos y matrícula del Estudio de Violín/Viola para un año académico`,
@@ -253,7 +270,14 @@ const common = {
   estudio_list_fee_1: `7.890€`,
   estudio_list_fee_2: `6.590€`,
   estudio_list_fee_3: `5.190€`,
+  estudio_list_fee_4: `2.300€`,
+  estudio_list_fee_5: `1.900€`,
+  estudio_list_fee_6: `1.450€`,
   estudio_footer: `Las tasas de matriculación son de carácter anual y pueden dividirse hasta en tres pagos porcentuales distribuidos a lo largo del curso académico.`,
+
+  // 404 Page Not Found
+  notfound_title: '¡Oh oh! Creo que estás perdido.',
+  notfound_text: 'Parece que la página que estás buscando no existe.',
 };
 
 export default common;

@@ -2,13 +2,12 @@ import Image from 'next/image';
 import FAQs from '../galamian-junior/faqs';
 import useTranslation from 'next-translate/useTranslation';
 import { CheckIcon } from '@heroicons/react/outline';
-import ViolinGalleryTwo from './violin-gallery-2';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function ViolinRequisitos() {
+export default function VozRequisitos() {
   const { t } = useTranslation();
 
   const features = [
@@ -19,8 +18,8 @@ export default function ViolinRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/estudia/violin/scholarships-violin.webp',
-      imageAlt: 'Estudio de Violín/Viola',
+      imageSrc: '/static/estudia/voz.jpg',
+      imageAlt: 'Estudio de Voz',
     },
     {
       name: `${t('common:practicas_title')}`,
@@ -36,16 +35,16 @@ export default function ViolinRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc: '/static/estudia/violin/group-photo-04.webp',
-      imageAlt: 'Estudio de Violín/Viola',
+      imageSrc: '/static/estudia/voz.webp',
+      imageAlt: 'Estudio de Voz',
     },
     {
       name: `${t('common:titulacion_title')}`,
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/estudia/violin/title.jpeg',
-      imageAlt: 'Estudio de Violín/Viola',
+      imageSrc: '/static/estudia/voz.jpg',
+      imageAlt: 'Estudio de Voz',
     },
   ];
 
@@ -140,8 +139,8 @@ export default function ViolinRequisitos() {
                     <Image
                       src={feature.imageSrc}
                       alt={feature.imageAlt}
-                      width={1500}
-                      height={1000}
+                      width={4088}
+                      height={2725}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
@@ -152,10 +151,6 @@ export default function ViolinRequisitos() {
             </div>
           ))}
         </div>
-      </div>
-      {/* Violin Gallery Two */}
-      <div className="md:pt-10 bg-white">
-        <ViolinGalleryTwo />
       </div>
       <FAQs />
     </div>

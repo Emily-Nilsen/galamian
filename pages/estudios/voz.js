@@ -3,8 +3,8 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { ExclamationIcon } from '@heroicons/react/solid';
 import { CheckIcon } from '@heroicons/react/outline';
-import ProfesoresViolin from '../../components/estudio/profesores-violin';
-import ViolinRequisitos from '../../components/estudio/violin-requisitos';
+import ProfesoresVoz from '../../components/estudio/profesores-voz';
+import VozRequisitos from '../../components/estudio/voz-requisitos';
 
 export default function Violin() {
   const { t } = useTranslation();
@@ -36,15 +36,15 @@ export default function Violin() {
     },
     {
       name: `${t('common:estudio_list_eConferencias')}`,
-      modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
+      modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
     },
     {
       name: `${t('common:estudio_list_distancia')}`,
-      modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
+      modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
     },
     {
       name: `${t('common:estudio_list_conciertos_camara')}`,
@@ -60,21 +60,21 @@ export default function Violin() {
     },
     {
       name: `${t('common:estudio_list_recital_propia')}`,
-      modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
+      modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
     },
     {
       name: `${t('common:estudio_list_repertoristas')}`,
-      modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
+      modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
     },
     {
       name: `${t('common:estudio_list_matricula')}`,
-      modeA: `${t('common:estudio_list_fee_1')}`,
-      modeB: `${t('common:estudio_list_fee_2')}`,
-      modeC: `${t('common:estudio_list_fee_3')}`,
+      modeA: `${t('common:estudio_list_fee_4')}`,
+      modeB: `${t('common:estudio_list_fee_5')}`,
+      modeC: `${t('common:estudio_list_fee_6')}`,
     },
   ];
 
@@ -88,15 +88,15 @@ export default function Violin() {
             </h2>
             <h1 className="mt-1 text-4xl font-normal text-neutral-900 sm:text-5xl sm:tracking-wide lg:text-6xl">
               {t('common:programas_title')}{' '}
-              <span className="text-gold-600"> {t('violin:title')}</span>
+              <span className="text-gold-600"> {t('voz:title')}</span>
             </h1>
             <p className="max-w-xl mx-auto mt-5 text-xl text-neutral-500">
-              {t('violin:text_part_1')} {new Date().getFullYear()}/
+              {t('voz:text_part_1')} {new Date().getFullYear()}/
               {new Date().getFullYear() + 1}
-              {t('violin:text_part_2')}.
+              {t('voz:text_part_2')}.
             </p>
             {/* Attention! */}
-            <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 text-left pt-6 sm:pt-10">
+            <div className="px-4 pt-6 mx-auto text-left max-w-7xl sm:px-6 lg:px-8 sm:pt-10">
               <div className="max-w-2xl mx-auto">
                 <div className="p-4 mt-10 bg-yellow-50">
                   <div className="flex">
@@ -117,7 +117,7 @@ export default function Violin() {
                             {t('common:atencion_text_part_2')}{' '}
                             {new Date().getFullYear()}{' '}
                           </span>
-                          {t('common:atencion_text_violin')}{' '}
+                          {t('common:atencion_text_voz')}{' '}
                           <span className="font-bold">
                             {t('common:atencion_text_part_4')}{' '}
                             {new Date().getFullYear()}
@@ -138,8 +138,8 @@ export default function Violin() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
               <Image
-                src="/static/estudia/violin-study-hero.jpg"
-                alt="Estudio de violín/viola"
+                src="/static/estudia/voz-study-hero.jpg"
+                alt="Estudio de Voz"
                 width={6240}
                 height={4160}
                 layout="fill"
@@ -180,7 +180,7 @@ export default function Violin() {
         </div>
       </div>
 
-      {/* Estudio de Violín/Viola en AIG */}
+      {/* Estudio de Voz en AIG */}
       <div className="relative py-16 overflow-hidden bg-white">
         <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
           <div
@@ -292,23 +292,23 @@ export default function Violin() {
                 {t('common:estudio_subtitle')}
               </span>
               <span className="block mt-2 text-4xl font-normal leading-8 tracking-wide text-center text-neutral-900 sm:text-5xl">
-                {t('common:estudio_title')}
+                {t('common:estudio_title_voz')}
               </span>
             </h1>
             <p className="mt-8 text-xl leading-8 text-neutral-500">
-              {t('common:estudio_para_01_part_1')}{' '}
-              <span className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out hover:underline no-underline">
-                <Link href="/profesores/#jesus" passHref>
-                  {t('common:estudio_para_01_part_2')}
+              {t('common:estudio_para_01_part_1_voz')}{' '}
+              <span className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
+                <Link href="/profesores/#nils" passHref>
+                  {t('common:estudio_para_01_part_2_voz')}
                 </Link>{' '}
               </span>
-              {t('common:estudio_para_01_part_3')}{' '}
-              <span className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out hover:underline no-underline">
-                <Link href="/profesores/#anna" passHref>
-                  {t('common:estudio_para_01_part_4')}
+              {t('common:estudio_para_01_part_3_voz')}{' '}
+              <span className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
+                <Link href="/profesores/#sergio" passHref>
+                  {t('common:estudio_para_01_part_4_voz')}
                 </Link>{' '}
               </span>
-              {t('common:estudio_para_01_part_5')}
+              {t('common:estudio_para_01_part_5_voz')}
             </p>
           </div>
           <div className="mx-auto mt-6 prose prose-lg prose-gold text-neutral-500">
@@ -334,10 +334,10 @@ export default function Violin() {
               </li>
               <li className="list-none text-neutral-900">
                 <CheckIcon
-                  className="absolute h-6 w-6 text-lime-500"
+                  className="absolute w-6 h-6 text-lime-500"
                   aria-hidden="true"
                 />
-                <p className="ml-9 text-lg leading-6 font-medium text-neutral-900">
+                <p className="text-lg font-medium leading-6 ml-9 text-neutral-900">
                   {t('common:estudio_para_05_part_3')}
                 </p>
               </li>
@@ -381,13 +381,13 @@ export default function Violin() {
             {/* Modalidad */}
             <div className="px-6">
               <div className="sm:flex sm:items-center">
-                <div className="mt-2 mb-4 flex flex-col w-full">
-                  <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div className="flex flex-col w-full mt-2 mb-4">
+                  <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                       <div className="overflow-hidden shadow-none ring-0 ring-black ring-opacity-5">
                         <table className="min-w-full divide-y divide-neutral-300">
-                          <div className="table-caption text-lg max-w-lg">
-                            <h3 className="text-neutral-500 mt-0 text-lg sm:text-xl">
+                          <div className="table-caption max-w-lg text-lg">
+                            <h3 className="mt-0 text-lg text-neutral-500 sm:text-xl">
                               {t('common:modalidades_table_title')}
                             </h3>
                           </div>
@@ -420,27 +420,27 @@ export default function Violin() {
                               </th>
                             </tr>
                           </thead>
-                          <tbody className="divide-y divide-neutral-200 bg-white">
+                          <tbody className="bg-white divide-y divide-neutral-200">
                             {modes.map((mode) => (
                               <tr key={mode.name}>
-                                <td className="whitespace-normal py-4 pl-4 pr-3 text-sm font-medium text-neutral-900 sm:pl-6">
+                                <td className="py-4 pl-4 pr-3 text-sm font-medium whitespace-normal text-neutral-900 sm:pl-6">
                                   {mode.name}
                                 </td>
 
-                                <td className="whitespace-nowrap px-3 py-4 text-sm text-neutral-500">
+                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-500">
                                   {mode.modeA}
                                 </td>
-                                <td className="whitespace-nowrap px-3 py-4 text-sm text-neutral-500">
+                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-500">
                                   {mode.modeB}
                                 </td>
-                                <td className="whitespace-nowrap px-3 py-4 text-sm text-neutral-500">
+                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-500">
                                   {mode.modeC}
                                 </td>
                               </tr>
                             ))}
                           </tbody>
                         </table>
-                        <div className="flex max-w-md -mt-4 border-t-neutral-200 border-t">
+                        <div className="flex max-w-md -mt-4 border-t border-t-neutral-200">
                           <div className="pr-1">*</div>
                           <div className="table-footer-group text-sm">
                             {t('common:estudio_footer')}
@@ -453,7 +453,7 @@ export default function Violin() {
               </div>
             </div>
 
-            <h2 className="text-xl tracking-wide text-neutral-900 sm:text-2xl font-semibold">
+            <h2 className="text-xl font-semibold tracking-wide text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_12_part_1')}
             </h2>
             <p>{t('common:estudio_para_12_part_2')}</p>
@@ -461,8 +461,8 @@ export default function Violin() {
             <figure>
               <div className="w-full rounded-none">
                 <Image
-                  src="/static/estudia/violin-study-img-2.jpg"
-                  alt="Estudio de violín/viola"
+                  src="/static/estudia/voz-study-img-2.jpg"
+                  alt="Estudio de Voz"
                   width={3709}
                   height={2472}
                   layout="responsive"
@@ -474,13 +474,13 @@ export default function Violin() {
                 {/* Sagittis scelerisque nulla cursus in enim consectetur quam. */}
               </figcaption>
             </figure>
-            <h2 className="text-xl tracking-wide text-neutral-900 sm:text-2xl font-semibold">
+            <h2 className="text-xl font-semibold tracking-wide text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_13_part_1')}
             </h2>
             <p>
               {t('common:estudio_para_13_part_2')}
               <Link href="/profesores">
-                <a className="text-gold-600 no-underline hover:text-neutral-900 transition duration-200 ease-in-out">
+                <a className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900">
                   {t('common:estudio_para_13_part_3')}
                 </a>
               </Link>
@@ -489,8 +489,8 @@ export default function Violin() {
           </div>
         </div>
       </div>
-      <ProfesoresViolin />
-      <ViolinRequisitos />
+      <ProfesoresVoz />
+      <VozRequisitos />
     </section>
   );
 }

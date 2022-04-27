@@ -20,7 +20,9 @@ const common = {
   button_course: `Course `,
   button_cerrar: `Close`,
   button_publicaciones: `See all posts`,
+  button_faq: `See all FAQs`,
   button_aprende: `Learn more`,
+  button_back: `Go back`,
 
   //Footer
   footer_text: `An initiative led by Jesús Reina and Anna Margrethe Nilsen, with the valuable collaboration of Fundación Unicaja.`,
@@ -29,7 +31,7 @@ const common = {
   footer_estudia_1: `Study at the GIA`,
   footer_estudia_2: `Registration Form`,
   footer_estudia_3: `Study Plans`,
-  footer_estudios: `Programs`,
+  footer_estudios: `Study Programs`,
   footer_estudios_1: `Violin/Viola`,
   footer_estudios_2: `Cello`,
   footer_estudios_3: `Piano`,
@@ -41,7 +43,6 @@ const common = {
   footer_academia_4: `Contact`,
   footer_recursos: `Resources`,
   footer_recursos_1: `Notifications`,
-  footer_recursos_2: `Events`,
   footer_recursos_3: `Bulletin`,
 
   //Navbar
@@ -56,8 +57,15 @@ const common = {
   navbar_link_1_title_2_2: `Events`,
   navbar_link_1_title_2_3: `Bulletin`,
   navbar_link_1_title_3: `From the Bulletin`,
+  navbar_link_1_title_4: `Have a question?`,
+  navbar_violin: `Violin/Viola Study`,
+  navbar_piano: `Piano Study`,
+  navbar_cello: `Cello Study`,
+  navbar_voice: `Voice Study`,
+  blog: `Bulletin`,
+  blog_coming: `coming soon!`,
   blogpost_name_1: `The bulletin is coming soon!`,
-  blogpost_preview_1: `Stay tuned for our upcoming bulletin.`,
+  blogpost_preview_1: `Stay tuned for our upcoming news and events.`,
   navbar_link_2: `Study`,
   callsToAction: `Contact`,
   estudiar_name_1: `Study at the GIA`,
@@ -180,6 +188,7 @@ const common = {
   atencion_text_violin: `will begin studying the Violin/Viola Study at the Galamian International Academy from`,
   atencion_text_violoncelo: `will begin studying the Cello Study at the Galamian International Academy from`,
   atencion_text_piano: `will begin studying the Piano Study at the Galamian International Academy from`,
+  atencion_text_voz: `will begin studying the Voice Study at the Galamian International Academy from`,
   atencion_text_part_4: `September`,
 
   // Estudios en AIG
@@ -187,19 +196,25 @@ const common = {
   estudio_title_violin: `Violin & Viola`,
   estudio_title_violoncelo: `Cello`,
   estudio_title_piano: `Piano`,
+  estudio_title_voz: `Voice`,
   estudio_para_01_part_1_violin: `Violinists`,
   estudio_para_01_part_1_violoncelo: `Cellists`,
   estudio_para_01_part_1_piano: `Pianists`,
+  estudio_para_01_part_1_voz: `Tenor`,
   estudio_para_01_part_2_violin: `Jesús Reina`,
   estudio_para_01_part_2_violoncelo: `Øyvind Gimse`,
   estudio_para_01_part_2_piano: `Misha Dacić`,
+  estudio_para_01_part_2_voz: `Nils Nilsen`,
   estudio_para_01_part_3: `and`,
+  estudio_para_01_part_3_voz: `is the head professor of the Galamian International Academy Studio for Voice. The pianist, `,
   estudio_para_01_part_4_violin: `Anna Margrethe Nilsen`,
   estudio_para_01_part_4_violoncelo: `Tilman Mahrenholz`,
   estudio_para_01_part_4_piano: `Josu De Solaun`,
+  estudio_para_01_part_4_voz: `Sergio Montero,`,
   estudio_para_01_part_5_violin: `are the principal professors of the Violin/Viola Study at the Galamian International Academy.`,
   estudio_para_01_part_5_violoncelo: `are the principal professors of the Cello Study at the Galamian International Academy.`,
   estudio_para_01_part_5_piano: `are the principal professors of the Piano Study at the Galamian International Academy.`,
+  estudio_para_01_part_5_voz: `completes the study team as repertoire teacher and the accompanying pianist.`,
   estudio_para_02: `The students who are members of this program receive dedicated instruction from the leading professors through individual masterclasses and workshops, courses, and events from which the Study nurtures the growth of its students.`,
   estudio_para_03_violin: `Students entering the GIA Violin/Viola Study in the Autumn Semester will receive these lessons from September `,
   estudio_para_03_violoncelo: `Students entering the GIA Cello Study in the Autumn Semester will receive these lessons from September `,
@@ -208,7 +223,7 @@ const common = {
   estudio_para_04_part_1: `Individual masterclasses `,
   estudio_para_04_violin: `with the principal teachers of the Violin/Viola Studio, Anna Margrethe Nilsen and Jesús Reina, and attending the lessons given to all their fellow students. The monthly classes will be distributed 50% between each principal teacher.`,
   estudio_para_04_violoncelo: `with the principal teachers of the Cello Studio, Øyvind Gimse and Tilman Mahrenholz, and attending the lessons given to all their fellow students. The monthly classes will be distributed 50% between each principal teacher.`,
-  estudio_para_04_piano: `with the principal teachers of the Piano Studio, Misha Dacić, and attending the lessons given to all their fellow students. The monthly classes will be distributed 50% between each principal teacher.`,
+  estudio_para_04_piano: `with the principal teachers of the Piano Studio, Misha Dacić and Josu De Solaun, and attending the lessons given to all their fellow students. The monthly classes will be distributed 50% between each principal teacher.`,
 
   estudio_para_05_part_1: `Performance masterclasses `,
   estudio_para_05_part_2: `consist of group repertoire classes, studio techniques, and performative practice. You will develop your acting techniques on stage and share practical experiences with your study colleagues.`,
@@ -234,6 +249,8 @@ const common = {
   estudio_para_13_part_2: `The Galamian Academy Youth Orchestra offers students between 11 and 16 years an opportunity to enjoy their first orchestral experience in a program supervised by `,
   estudio_para_13_part_3: `José Andrés Fernández Camacho `,
   estudio_para_13_part_4: `and other professors of the Galamian Academy Orchestra.`,
+  estudio_para_14_part_1: `Concert performances `,
+  estudio_para_14_part_2: `to learn a classical concert movement with an academy pianist and chamber ensemble, gaining experience playing with an orchestra.`,
 
   // Modalidades
   modalidades_table_title_violin: `Study of Violin/Viola classes, concerts and tuition fees per academic year`,
@@ -254,7 +271,14 @@ const common = {
   estudio_list_fee_1: `€7,890`,
   estudio_list_fee_2: `€6,590`,
   estudio_list_fee_3: `€5,190`,
+  estudio_list_fee_4: `€2,300`,
+  estudio_list_fee_5: `€1,900`,
+  estudio_list_fee_6: `€1,450`,
   estudio_footer: `Students can divide the annual enrollment fees into three payments distributed throughout the academic year.`,
+
+  // 404 Page Not Found
+  notfound_title: 'Uh oh! I think you’re lost.',
+  notfound_text: "It looks like the page you’re looking for doesn't exist.",
 };
 
 export default common;

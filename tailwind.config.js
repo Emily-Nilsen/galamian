@@ -19,6 +19,9 @@ module.exports = {
           500: '#8C5D42',
         },
       },
+      backgroundImage: {
+        notfound: `url('/static/lost.jpg')`,
+      },
     },
   },
   plugins: [

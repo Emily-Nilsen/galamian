@@ -33,41 +33,7 @@ function classNames(...classes) {
 export default function Navbar() {
   const { t } = useTranslation();
 
-  const estudiar = [
-    {
-      name: `${t('common:estudiar_name_1')}`,
-      description: `${t(
-        'common:estudiar_description_1_part_1'
-      )} ${new Date().getFullYear()}/${new Date().getFullYear() + 1}${t(
-        'common:estudiar_description_1_part_2'
-      )}`,
-      href: '/estudia',
-      icon: AcademicCapIcon,
-    },
-    {
-      name: `${t('common:estudiar_name_2')}`,
-      description: `${t('common:estudiar_description_2_part_1')}`,
-      href: '/estudios',
-      icon: ClipboardListIcon,
-    },
-    {
-      name: `${t('common:estudiar_name_3')}`,
-      description: `${t(
-        'common:estudiar_description_3_part_1'
-      )}${new Date().getFullYear()}${t(
-        'common:estudiar_description_3_part_2'
-      )}`,
-      href: '/estudia/formulario-de-inscripcion',
-      icon: PencilAltIcon,
-    },
-  ];
-  const callsToAction = [
-    {
-      name: `${t('common:callsToAction')}`,
-      href: '/contacto',
-      icon: PhoneIcon,
-    },
-  ];
+  // Academy
   const academia = [
     {
       name: `${t('common:navbar_link_1_title_1_1')}`,
@@ -97,11 +63,6 @@ export default function Navbar() {
       icon: BellIcon,
     },
     {
-      name: `${t('common:navbar_link_1_title_2_2')}`,
-      href: '/eventos/',
-      icon: CalendarIcon,
-    },
-    {
       name: `${t('common:navbar_link_1_title_2_3')}`,
       href: '/bulletin/',
       icon: NewspaperIcon,
@@ -123,6 +84,93 @@ export default function Navbar() {
     //     'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
     //   imageUrl: '/static/joaquin.jpg',
     // },
+  ];
+
+  // Study
+  const estudiar = [
+    {
+      name: `${t('common:estudiar_name_1')}`,
+      description: `${t(
+        'common:estudiar_description_1_part_1'
+      )} ${new Date().getFullYear()}/${new Date().getFullYear() + 1}${t(
+        'common:estudiar_description_1_part_2'
+      )}`,
+      href: '/estudia',
+      icon: AcademicCapIcon,
+    },
+    {
+      name: `${t('common:estudiar_name_2')}`,
+      description: `${t('common:estudiar_description_2_part_1')}`,
+      href: '/estudios',
+      icon: ClipboardListIcon,
+    },
+    {
+      name: `${t('common:estudiar_name_3')}`,
+      description: `${t(
+        'common:estudiar_description_3_part_1'
+      )}${new Date().getFullYear()}${t(
+        'common:estudiar_description_3_part_2'
+      )}`,
+      href: '/estudia/formulario-de-inscripcion',
+      icon: PencilAltIcon,
+    },
+  ];
+  const studies = [
+    {
+      name: `${t('common:footer_estudios_1')}`,
+      href: `/estudios/violin`,
+    },
+    {
+      name: `${t('common:footer_estudios_3')}`,
+      href: `/estudios/piano`,
+    },
+    {
+      name: `${t('common:footer_estudios_2')}`,
+      href: `/estudios/violoncelo`,
+    },
+    {
+      name: `${t('common:footer_estudios_4')}`,
+      href: `/estudios/voz`,
+    },
+  ];
+  const callsToAction = [
+    {
+      name: `${t('common:callsToAction')}`,
+      href: '/contacto',
+      icon: PhoneIcon,
+    },
+  ];
+
+  // Mobile Navbar
+  const mobileTabs = [
+    {
+      name: `${t('common:navbar_violin')}`,
+      href: `/estudios/violin`,
+    },
+    {
+      name: `${t('common:navbar_piano')}`,
+      href: `/estudios/piano`,
+    },
+    {
+      name: `${t('common:navbar_cello')}`,
+      href: `/estudios/violoncelo`,
+    },
+    {
+      name: `${t('common:navbar_voice')}`,
+      href: `/estudios/voz`,
+    },
+    {
+      name: `${t('common:footer_academia_3')}`,
+      href: `/galamian-junior`,
+    },
+    {
+      name: `${t('common:footer_recursos_3')}`,
+      href: `/bulletin`,
+    },
+    {
+      name: `${t('common:footer_academia_4')}`,
+      href: `/contacto`,
+    },
   ];
 
   return (
@@ -330,59 +378,98 @@ export default function Navbar() {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 -translate-y-1"
                     >
-                      <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
-                        <div className="grid items-start px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-3 lg:px-8 lg:py-12 xl:py-16">
-                          {estudiar.map((item) => (
-                            <Popover.Button key={item.name}>
-                              <Link href={item.href} passHref>
-                                <a className="flex flex-col justify-between p-3 -m-3 hover:bg-neutral-50">
-                                  <div className="flex md:h-full lg:flex-col">
-                                    <div className="flex-shrink-0">
-                                      <span className="inline-flex items-center justify-center w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
-                                        <item.icon
-                                          className="w-6 h-6"
-                                          aria-hidden="true"
-                                        />
-                                      </span>
-                                    </div>
-                                    <div className="ml-4 text-left md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                                      <div>
-                                        <p className="text-base font-medium tracking-wide text-neutral-900">
-                                          {item.name}
-                                        </p>
-                                        <p className="mt-1 text-sm text-neutral-500">
-                                          {item.description}
-                                        </p>
-                                      </div>
-                                      <p className="mt-2 text-sm font-medium text-gold-600 lg:mt-4">
-                                        {t('common:button_aprende')}{' '}
-                                        <span aria-hidden="true">&rarr;</span>
-                                      </p>
-                                    </div>
-                                  </div>
-                                </a>
-                              </Link>
-                            </Popover.Button>
-                          ))}
+                      <Popover.Panel className="absolute inset-x-0 z-10 hidden transform shadow-lg md:block top-full">
+                        <div className="absolute inset-0 flex">
+                          <div className="w-1/2 bg-white" />
+                          <div className="w-1/2 bg-neutral-50" />
                         </div>
-                        <div className="bg-neutral-50">
-                          <div className="px-4 py-5 mx-auto space-y-6 max-w-7xl sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
-                            {callsToAction.map((item) => (
-                              <div key={item.name} className="flow-root group">
-                                <Popover.Button>
-                                  <Link href={item.href} passHref>
-                                    <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-out text-neutral-900 hover:bg-neutral-100">
-                                      <item.icon
-                                        className="flex-shrink-0 w-6 h-6 transition duration-200 ease-in-out text-neutral-400 group-hover:text-gold-500"
-                                        aria-hidden="true"
-                                      />
-                                      <span className="ml-3">{item.name}</span>
-                                    </a>
-                                  </Link>
-                                </Popover.Button>
+                        <div className="relative grid grid-cols-1 mx-auto max-w-7xl lg:grid-cols-2">
+                          <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
+                            <div className="self-start">
+                              <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                                {t('common:footer_estudia')}
+                              </h3>
+                              <ul role="list" className="mt-5 space-y-6">
+                                {estudiar.map((item) => (
+                                  <li key={item.name} className="flow-root">
+                                    <Popover.Button>
+                                      <Link href={item.href} passHref>
+                                        <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-in-out text-neutral-900 hover:bg-neutral-50 group">
+                                          <item.icon
+                                            className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500"
+                                            aria-hidden="true"
+                                          />
+                                          <span className="ml-4">
+                                            {item.name}
+                                          </span>
+                                        </a>
+                                      </Link>
+                                    </Popover.Button>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div>
+                              <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                                {t('common:footer_estudios')}
+                              </h3>
+                              <ul role="list" className="mt-5 space-y-6">
+                                {studies.map((item) => (
+                                  <li key={item.name} className="flow-root">
+                                    <Popover.Button>
+                                      <Link href={item.href} passHref>
+                                        <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-in-out text-neutral-900 hover:bg-neutral-50 group">
+                                          <span className="ml-0">
+                                            {item.name}
+                                          </span>
+                                        </a>
+                                      </Link>
+                                    </Popover.Button>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </nav>
+                          <Popover.Button className="self-start">
+                            <div className="items-stretch px-4 py-8 text-left bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                              <div>
+                                <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                                  {t('common:navbar_link_1_title_4')}
+                                </h3>
+                                <ul role="list" className="mt-5 space-y-6">
+                                  {callsToAction.map((item) => (
+                                    <div
+                                      key={item.name}
+                                      className="flow-root group"
+                                    >
+                                      <Popover.Button>
+                                        <Link href={item.href} passHref>
+                                          <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-out text-neutral-900 hover:bg-neutral-100">
+                                            <item.icon
+                                              className="flex-shrink-0 w-6 h-6 transition duration-200 ease-in-out text-neutral-400 group-hover:text-gold-500"
+                                              aria-hidden="true"
+                                            />
+                                            <span className="ml-3">
+                                              {item.name}
+                                            </span>
+                                          </a>
+                                        </Link>
+                                      </Popover.Button>
+                                    </div>
+                                  ))}
+                                </ul>
                               </div>
-                            ))}
-                          </div>
+                              <div className="mt-6 text-sm font-medium">
+                                <Link href="/estudios/violin/#faqs">
+                                  <a className="text-gold-600 hover:text-gold-500">
+                                    {' '}
+                                    {t('common:button_faq')}{' '}
+                                    <span aria-hidden="true">&rarr;</span>
+                                  </a>
+                                </Link>
+                              </div>
+                            </div>
+                          </Popover.Button>
                         </div>
                       </Popover.Panel>
                     </Transition>
@@ -455,7 +542,9 @@ export default function Navbar() {
                               aria-hidden="true"
                             />
                           </div>
-                          <span className="ml-4">La Academia</span>
+                          <span className="ml-4">
+                            {t('common:footer_academia')}
+                          </span>
                         </a>
                       </Link>
                       <Link href="/profesores" passHref>
@@ -466,7 +555,9 @@ export default function Navbar() {
                               aria-hidden="true"
                             />
                           </div>
-                          <span className="ml-4">Professores</span>
+                          <span className="ml-4">
+                            {t('common:footer_academia_2')}
+                          </span>
                         </a>
                       </Link>
                       {estudiar.map((item) => (
@@ -491,26 +582,13 @@ export default function Navbar() {
 
               <div className="px-5 py-6">
                 <div className="grid grid-cols-2 gap-4 justify-items-start">
-                  <Link href="/galamian-junior" passHref>
-                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Galamian Junior
-                    </a>
-                  </Link>
-                  <Link href="eventos" passHref>
-                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Eventos
-                    </a>
-                  </Link>
-                  <Link href="/bulletin" passHref>
-                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Bulletin
-                    </a>
-                  </Link>
-                  <Link href="/contacto" passHref>
-                    <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Contacto
-                    </a>
-                  </Link>
+                  {mobileTabs.map((tab) => (
+                    <Link key={tab.href} href={tab.href} passHref>
+                      <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                        {tab.name}
+                      </a>
+                    </Link>
+                  ))}
                 </div>
               </div>
               <div className="h-full px-5 py-6 bg-gray-50">

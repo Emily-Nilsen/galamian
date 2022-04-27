@@ -38,7 +38,7 @@ export default function FAQs() {
   ];
 
   return (
-    <div className="bg-neutral-50">
+    <div id="faqs" className="bg-neutral-50">
       <div className="px-4 py-12 mx-auto max-w-7xl sm:py-16 md:pb-24 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-neutral-200">
           <h2 className="text-3xl text-center text-neutral-900 sm:text-4xl">

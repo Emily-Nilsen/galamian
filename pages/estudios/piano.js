@@ -36,15 +36,15 @@ export default function Piano() {
     },
     {
       name: `${t('common:estudio_list_eConferencias')}`,
-      modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
+      modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
     },
     {
       name: `${t('common:estudio_list_distancia')}`,
-      modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
+      modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
     },
     {
       name: `${t('common:estudio_list_conciertos_camara')}`,
@@ -60,15 +60,15 @@ export default function Piano() {
     },
     {
       name: `${t('common:estudio_list_recital_propia')}`,
-      modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
+      modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
     },
     {
       name: `${t('common:estudio_list_repertoristas')}`,
-      modeA: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeB: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
-      modeC: <CheckIcon className="absolute h-6 w-6 text-lime-500" />,
+      modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
+      modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
     },
     {
       name: `${t('common:estudio_list_matricula')}`,
@@ -96,7 +96,7 @@ export default function Piano() {
               {t('piano:text_part_2')}.
             </p>
             {/* Attention! */}
-            <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 text-left pt-6 sm:pt-10">
+            <div className="px-4 pt-6 mx-auto text-left max-w-7xl sm:px-6 lg:px-8 sm:pt-10">
               <div className="max-w-2xl mx-auto">
                 <div className="p-4 mt-10 bg-yellow-50">
                   <div className="flex">
@@ -297,14 +297,14 @@ export default function Piano() {
             </h1>
             <p className="mt-8 text-xl leading-8 text-neutral-500">
               {t('common:estudio_para_01_part_1_piano')}{' '}
-              <span className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out hover:underline no-underline">
-                <Link href="/profesores/#jesus" passHref>
+              <span className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
+                <Link href="/profesores/#" passHref>
                   {t('common:estudio_para_01_part_2_piano')}
                 </Link>{' '}
               </span>
               {t('common:estudio_para_01_part_3')}{' '}
-              <span className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out hover:underline no-underline">
-                <Link href="/profesores/#anna" passHref>
+              <span className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
+                <Link href="/profesores/#" passHref>
                   {t('common:estudio_para_01_part_4_piano')}
                 </Link>{' '}
               </span>
@@ -334,10 +334,10 @@ export default function Piano() {
               </li>
               <li className="list-none text-neutral-900">
                 <CheckIcon
-                  className="absolute h-6 w-6 text-lime-500"
+                  className="absolute w-6 h-6 text-lime-500"
                   aria-hidden="true"
                 />
-                <p className="ml-9 text-lg leading-6 font-medium text-neutral-900">
+                <p className="text-lg font-medium leading-6 ml-9 text-neutral-900">
                   {t('common:estudio_para_05_part_3')}
                 </p>
               </li>
@@ -361,6 +361,12 @@ export default function Piano() {
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
+                  {t('common:estudio_para_14_part_1')}
+                </span>
+                {t('common:estudio_para_14_part_2')}
+              </li>
+              <li>
+                <span className="font-bold text-neutral-900">
                   {t('common:estudio_para_09_part_1')}
                 </span>
                 {t('common:estudio_para_09_part_2')}
@@ -381,13 +387,13 @@ export default function Piano() {
             {/* Modalidad */}
             <div className="px-6">
               <div className="sm:flex sm:items-center">
-                <div className="mt-2 mb-4 flex flex-col w-full">
-                  <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div className="flex flex-col w-full mt-2 mb-4">
+                  <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                       <div className="overflow-hidden shadow-none ring-0 ring-black ring-opacity-5">
                         <table className="min-w-full divide-y divide-neutral-300">
-                          <div className="table-caption text-lg max-w-lg">
-                            <h3 className="text-neutral-500 mt-0 text-lg sm:text-xl">
+                          <div className="table-caption max-w-lg text-lg">
+                            <h3 className="mt-0 text-lg text-neutral-500 sm:text-xl">
                               {t('common:modalidades_table_title_piano')}
                             </h3>
                           </div>
@@ -420,27 +426,27 @@ export default function Piano() {
                               </th>
                             </tr>
                           </thead>
-                          <tbody className="divide-y divide-neutral-200 bg-white">
+                          <tbody className="bg-white divide-y divide-neutral-200">
                             {modes.map((mode) => (
                               <tr key={mode.name}>
-                                <td className="whitespace-normal py-4 pl-4 pr-3 text-sm font-medium text-neutral-900 sm:pl-6">
+                                <td className="py-4 pl-4 pr-3 text-sm font-medium whitespace-normal text-neutral-900 sm:pl-6">
                                   {mode.name}
                                 </td>
 
-                                <td className="whitespace-nowrap px-3 py-4 text-sm text-neutral-500">
+                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-500">
                                   {mode.modeA}
                                 </td>
-                                <td className="whitespace-nowrap px-3 py-4 text-sm text-neutral-500">
+                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-500">
                                   {mode.modeB}
                                 </td>
-                                <td className="whitespace-nowrap px-3 py-4 text-sm text-neutral-500">
+                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-500">
                                   {mode.modeC}
                                 </td>
                               </tr>
                             ))}
                           </tbody>
                         </table>
-                        <div className="flex max-w-md -mt-4 border-t-neutral-200 border-t">
+                        <div className="flex max-w-md -mt-4 border-t border-t-neutral-200">
                           <div className="pr-1">*</div>
                           <div className="table-footer-group text-sm">
                             {t('common:estudio_footer')}
@@ -453,7 +459,7 @@ export default function Piano() {
               </div>
             </div>
 
-            <h2 className="text-xl tracking-wide text-neutral-900 sm:text-2xl font-semibold">
+            <h2 className="text-xl font-semibold tracking-wide text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_12_part_1')}
             </h2>
             <p>{t('common:estudio_para_12_part_2')}</p>
@@ -474,13 +480,13 @@ export default function Piano() {
                 {/* Sagittis scelerisque nulla cursus in enim consectetur quam. */}
               </figcaption>
             </figure>
-            <h2 className="text-xl tracking-wide text-neutral-900 sm:text-2xl font-semibold">
+            <h2 className="text-xl font-semibold tracking-wide text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_13_part_1')}
             </h2>
             <p>
               {t('common:estudio_para_13_part_2')}
               <Link href="/profesores">
-                <a className="text-gold-600 no-underline hover:text-neutral-900 transition duration-200 ease-in-out">
+                <a className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900">
                   {t('common:estudio_para_13_part_3')}
                 </a>
               </Link>
