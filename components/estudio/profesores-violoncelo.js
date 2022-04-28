@@ -72,12 +72,12 @@ export default function ProfesoresVioloncelo() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden rounded-none shadow-lg">
+                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
                     <Image
-                      src="/static/profesores/oyvind-gimse.jpg"
+                      src="/static/estudia/cello/oyvind-gimse.webp"
                       alt="Øyvind Gimse"
-                      width={400}
-                      height={340}
+                      width={2854}
+                      height={1665}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
@@ -141,12 +141,12 @@ export default function ProfesoresVioloncelo() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden rounded-none shadow-lg">
+                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
                     <Image
-                      src="/static/profesores/tilman-mahrenholz.jpeg"
+                      src="/static/estudia/cello/tilman-mahrenholz.webp"
                       alt="Tilman Mahrenholz"
-                      width={1048}
-                      height={873}
+                      width={1234}
+                      height={720}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"

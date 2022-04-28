@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-export default function ViolinGalleryOne() {
+export default function ViolonceloGalleryTwo() {
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden bg-neutral-50 md:pb-6">
       {/* Large screens */}
       <div className="hidden md:flex flex-wrap -m-1 md:-m-2">
         <div className="flex flex-wrap w-1/2">
@@ -15,7 +15,7 @@ export default function ViolinGalleryOne() {
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-photo-07.webp"
+                src="/static/estudia/cello/cello-photo-06.webp"
               />
             </div>
           </div>
@@ -28,7 +28,7 @@ export default function ViolinGalleryOne() {
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-photo-04.webp"
+                src="/static/estudia/cello/cello-photo-04.webp"
               />
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function ViolinGalleryOne() {
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-photo-02.webp"
+                src="/static/estudia/cello/cello-photo-07.webp"
               />
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function ViolinGalleryOne() {
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-study-img-2.webp"
+                src="/static/estudia/cello/group-photo-07.webp"
               />
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function ViolinGalleryOne() {
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-study-img-3.webp"
+                src="/static/estudia/cello/cello-violin-photo-03.webp"
               />
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function ViolinGalleryOne() {
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/anna-violin-2.webp"
+                src="/static/estudia/cello/cello-violin-photo-02.webp"
               />
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function ViolinGalleryOne() {
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-photo-07.webp"
+                src="/static/estudia/cello/cello-photo-06.webp"
               />
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function ViolinGalleryOne() {
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-photo-04.webp"
+                src="/static/estudia/cello/cello-photo-04.webp"
               />
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function ViolinGalleryOne() {
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-photo-02.webp"
+                src="/static/estudia/cello/cello-photo-07.webp"
               />
             </div>
           </div>

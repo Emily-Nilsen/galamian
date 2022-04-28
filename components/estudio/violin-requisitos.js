@@ -44,7 +44,7 @@ export default function ViolinRequisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/estudia/violin/title.jpeg',
+      imageSrc: '/static/estudia/violin/title.webp',
       imageAlt: 'Estudio de Violín/Viola',
     },
   ];

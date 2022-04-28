@@ -88,7 +88,7 @@ export default function ProfesoresViolin() {
                     <Image
                       src="/static/estudia/violin/jesus-photo-01.webp"
                       alt="Jesús Reina"
-                      width={1500}
+                      width={2367}
                       height={1381}
                       layout="responsive"
                       objectFit="cover"
@@ -151,7 +151,7 @@ export default function ProfesoresViolin() {
                     <Image
                       src="/static/profesores/anna.jpg"
                       alt="Anna Margrethe Nilsen"
-                      width={1048}
+                      width={1497}
                       height={873}
                       layout="responsive"
                       objectFit="cover"

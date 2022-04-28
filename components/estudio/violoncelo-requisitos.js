@@ -2,6 +2,7 @@ import Image from 'next/image';
 import FAQs from '../galamian-junior/faqs';
 import useTranslation from 'next-translate/useTranslation';
 import { CheckIcon } from '@heroicons/react/outline';
+import ViolonceloGalleryTwo from './violoncelo-gallery-2';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -18,7 +19,7 @@ export default function ViolonceloRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/estudia/cello-img-5.webp',
+      imageSrc: '/static/estudia/cello/cello-img-5.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -35,7 +36,7 @@ export default function ViolonceloRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc: '/static/estudia/cello-img-2.webp',
+      imageSrc: '/static/estudia/cello/cello-img-2.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -43,7 +44,7 @@ export default function ViolonceloRequisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/estudia/cello-img-4.webp',
+      imageSrc: '/static/estudia/cello/cello-img-4.webp',
       imageAlt: 'Estudio de Piano',
     },
   ];
@@ -151,6 +152,10 @@ export default function ViolonceloRequisitos() {
             </div>
           ))}
         </div>
+      </div>
+      {/* Violin Gallery Two */}
+      <div className="md:pt-10 bg-white">
+        <ViolonceloGalleryTwo />
       </div>
       <FAQs />
     </div>
