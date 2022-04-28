@@ -3,55 +3,58 @@ import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { CameraIcon } from '@heroicons/react/solid';
 import { XIcon } from '@heroicons/react/outline';
+import useTranslation from 'next-translate/useTranslation';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const people = [
-  {
-    name: 'Nils Georg Nilsen',
-    role: 'Profesor Principal',
-    imageUrl: '/static/profesores/nils-nilsen.jpg',
-    instrument: 'Voz',
-    sentence_01: `Debutó en 2012 en el Avery Fisher Hall de Nueva York y ha actuado en la Ópera Tampa, la Ópera Noruega y con la Orquesta de Cámara de Minsk.`,
-    sentence_02: `Con tan sólo 13 años cantó dúos con Dame Kiri te Kanawa en el Oslo Spectrum Hall. Ha interpretado el papel de Tom Rakewell (El Progreso del Libertino), Torquemada (L’heure Espagnole), Aumônier (Diálogos de los Carmelitas) en la Opera Noruega y el papel principal de Albert Herring en Intermezzo con el director de la Metropolitan Opera, David J. Jackson.`,
-    sentence_03: `Además de ser solista en el Mesías de Händel, Requiem de Mozart, Christus de Mendelssohn y el Oratorio de Navidad de Bach, ha actuado con Opera Tampa en La Viuda Alegre y Dances Patrelle en Nueva York en El Ballet de Gilbert y Sullivan.`,
-    sentence_04: `Nils Georg se graduó con el Grado de Música de la Academia de la Música Noruega y recibió el Master de Música bajo la tutela de Patricia McCaffrey en la Manhattan School of Music de Nueva York.`,
-  },
-  {
-    name: 'Sergio Montero',
-    role: 'Maestro Repertorista',
-    imageUrl: '/static/profesores/sergio-montero.jpg',
-    instrument: 'Voz',
-    sentence_01: `Es profesor superior de piano, música de cámara, solfeo y teoría de la música por el Conservatorio Superior de Música de Málaga, donde ha recibido el Premio de Honor en Piano y Música de Cámara.`,
-    sentence_02: `Además es profesor numerario del Conservatorio Profesional de Música Manuel Carra (Málaga).`,
-    sentence_03: `Ha sido director de los Conservatorios Profesionales Gonzalo Martín Tenllado (Málaga) y Padre Manuel Gámez (Fuengirola), profesor asistente de los maestros Suso Mariátegui y Edemiro Arnaltes, primer pianista del Coro de Ópera de Málaga y pianista de la actriz y cantante Imperio Argentina y de Montserrat Caballé.`,
-    sentence_04: `Recibió la insignia de Plata al Mérito Artístico por la Fundación de Cultura del Ayuntamiento de La Línea de la Concepción y ha sido jurado del IX Concurso Internacional de Piano de Campillos. Colabora habitualmente con la Orquesta Filarmónica de Málaga y es maestro repertorista y profesor asistente del tenor noruego Nils Nilsen en la Academia Internacional Galamian.`,
-  },
-  {
-    name: 'Joel Prieto',
-    role: 'Profesor Invitado',
-    imageUrl: '/static/profesores/joel-prieto.jpg',
-    instrument: 'Voz',
-    sentence_01: ``,
-    sentence_02: ``,
-    sentence_03: ``,
-    sentence_04: ``,
-  },
-  {
-    name: 'Francisco Araiza',
-    role: 'Profesor Invitado',
-    imageUrl: '/static/profesores/francisco-araiza.jpg',
-    instrument: 'Voz',
-    sentence_01: ``,
-    sentence_02: ``,
-    sentence_03: ``,
-    sentence_04: ``,
-  },
-];
-
 export default function VozProfesores() {
+  const { t } = useTranslation();
+
+  const people = [
+    {
+      name: 'Nils Georg Nilsen',
+      role: `${t('common:nils_role')}`,
+      imageUrl: '/static/profesores/nils-nilsen.jpg',
+      instrument: `${t('common:nils_instrument')}`,
+      sentence_01: `${t('common:nils_para_1')}`,
+      sentence_02: `${t('common:nils_para_2')}`,
+      sentence_03: `${t('common:nils_para_3')}`,
+      sentence_04: `${t('common:nils_para_4')}`,
+    },
+    {
+      name: 'Sergio Montero',
+      role: `${t('common:sergio_role')}`,
+      imageUrl: '/static/profesores/sergio-montero.jpg',
+      instrument: `${t('common:sergio_instrument')}`,
+      sentence_01: `${t('common:sergio_para_1')}`,
+      sentence_02: `${t('common:sergio_para_2')}`,
+      sentence_03: `${t('common:sergio_para_3')}`,
+      sentence_04: `${t('common:sergio_para_4')}`,
+    },
+    {
+      name: 'Joel Prieto',
+      role: 'Profesor Invitado',
+      imageUrl: '/static/profesores/joel-prieto.jpg',
+      instrument: 'Voz',
+      sentence_01: ``,
+      sentence_02: ``,
+      sentence_03: ``,
+      sentence_04: ``,
+    },
+    {
+      name: 'Francisco Araiza',
+      role: 'Profesor Invitado',
+      imageUrl: '/static/profesores/francisco-araiza.jpg',
+      instrument: 'Voz',
+      sentence_01: ``,
+      sentence_02: ``,
+      sentence_03: ``,
+      sentence_04: ``,
+    },
+  ];
+
   return (
     <div className="relative bg-white pt-4 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl py-6 lg:py-12">
@@ -202,7 +205,7 @@ export default function VozProfesores() {
 
                                       <Menu.Item>
                                         <p className="text-gold-600 text-base pt-4 hover:text-neutral-900 transition duration-200 ease-in-out">
-                                          Cerrar{' '}
+                                          {t('common:button_cerrar')}{' '}
                                           <span aria-hidden="true">
                                             <XIcon
                                               className="h-4 w-4 inline-block"

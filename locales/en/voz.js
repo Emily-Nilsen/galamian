@@ -9,7 +9,7 @@ const voz = {
   profesores_title_part_2: `Voice `,
   profesores_title_part_3: `Study`,
   profesores_principales: `Principal Professor`,
-  profesores_asistentes: `Assistant Professor`,
+  profesores_repertorista: `Principal Pianist`,
   profesores_invitados: `Guest Professors`,
   principal_profesor_male: `Principal Professor`,
   principal_profesor_female: `Principal Professor`,

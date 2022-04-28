@@ -18,7 +18,7 @@ export default function VozRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/estudia/voz.jpg',
+      imageSrc: '/static/estudia/voice/voice-photo-img-05.webp',
       imageAlt: 'Estudio de Voz',
     },
     {
@@ -35,7 +35,7 @@ export default function VozRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc: '/static/estudia/voz.webp',
+      imageSrc: '/static/estudia/voice/voice-photo-img-03.webp',
       imageAlt: 'Estudio de Voz',
     },
     {
@@ -43,7 +43,7 @@ export default function VozRequisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/estudia/voz.jpg',
+      imageSrc: '/static/estudia/voice/voice-photo-img-04.webp',
       imageAlt: 'Estudio de Voz',
     },
   ];

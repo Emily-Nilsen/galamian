@@ -460,7 +460,7 @@ export default function Violoncelo() {
             <figure>
               <div className="w-full rounded-none">
                 <Image
-                  src="/static/estudia/cello-img-1.webp"
+                  src="/static/estudia/cello/cello-img-1.webp"
                   alt="Estudio de Violoncelo"
                   width={1500}
                   height={1000}

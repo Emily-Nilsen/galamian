@@ -6,8 +6,8 @@ export default function ProfesoresVoz() {
   const { t } = useTranslation();
 
   const profesoresInvitados = [
-    { nombre: `Anna Petrova` },
-    { nombre: `Francesco Libetta` },
+    { nombre: `Joel Prieto` },
+    { nombre: `Francisco Araiza` },
   ];
   return (
     <section id="fundadores" className="py-0 overflow-hidden bg-white lg:py-0">
@@ -32,8 +32,13 @@ export default function ProfesoresVoz() {
                     {t('voz:profesores_principales')}
                   </h3>
                   <ul role="list">
-                    <li>Misha Dacić</li>
-                    <li>Josu De Solaun</li>
+                    <li>Nils Georg Nilsen</li>
+                  </ul>
+                  <h3 className="pt-6 pb-2 text-lg font-semibold text-neutral-900">
+                    {t('voz:profesores_repertorista')}
+                  </h3>
+                  <ul role="list">
+                    <li>Sergio Montero</li>
                   </ul>
                 </div>
                 <div className="sm:col-span-1">
@@ -58,7 +63,7 @@ export default function ProfesoresVoz() {
           </div>
         </div>
       </div>
-      {/* Misha Dacić */}
+      {/* Nils Georg Nilsen */}
       <div className="relative py-6 bg-neutral-50 sm:py-16">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
           <div className="relative sm:py-16 lg:py-0">
@@ -72,12 +77,12 @@ export default function ProfesoresVoz() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden rounded-none shadow-lg">
+                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
                     <Image
-                      src="/static/profesores/misha-dacic.jpg"
-                      alt="Misha Dacić"
-                      width={2414}
-                      height={1527}
+                      src="/static/profesores/nils-nilsen.webp"
+                      alt="Nils Georg Nilsen"
+                      width={1830}
+                      height={1068}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
@@ -90,7 +95,7 @@ export default function ProfesoresVoz() {
                     aria-hidden="true"
                   />
                   <span className="ml-2">
-                    {t('voz:principal_profesor_male')} Misha Dacić
+                    {t('voz:principal_profesor_male')} Nils Georg Nilsen
                   </span>
                 </figcaption>
               </figure>
@@ -105,26 +110,20 @@ export default function ProfesoresVoz() {
                   {t('voz:principal_profesor_male')}
                 </h2>
                 <h2 className="mt-2 text-3xl font-normal leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-                  Misha Dacić
+                  Nils Georg Nilsen
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-500">
-                <p className="text-lg">{t('common:misha_para_1')}</p>
-                <p className="text-base leading-7">
-                  {t('common:misha_para_2')}
-                </p>
-                <p className="text-base leading-7">
-                  {t('common:misha_para_3')}
-                </p>
-                <p className="text-base leading-7">
-                  {t('common:misha_para_4')}
-                </p>
+                <p className="text-lg">{t('common:nils_para_1')}</p>
+                <p className="text-base leading-7">{t('common:nils_para_2')}</p>
+                <p className="text-base leading-7">{t('common:nils_para_3')}</p>
+                <p className="text-base leading-7">{t('common:nils_para_4')}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* Josu De Solaun */}
+      {/* Sergio Montero */}
       <div className="relative pt-2 pb-16 bg-neutral-50 sm:pb-24 sm:pt-6">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
           <div className="relative sm:py-16 lg:py-0">
@@ -138,12 +137,12 @@ export default function ProfesoresVoz() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden rounded-none shadow-lg">
+                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
                     <Image
-                      src="/static/profesores/josu-de-solaun.jpg"
-                      alt="Josu De Solaun"
-                      width={652}
-                      height={419}
+                      src="/static/profesores/sergio-montero.webp"
+                      alt="Sergio Montero"
+                      width={987}
+                      height={576}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
@@ -156,7 +155,7 @@ export default function ProfesoresVoz() {
                     aria-hidden="true"
                   />
                   <span className="ml-2">
-                    {t('voz:principal_profesor_male')} Josu De Solaun
+                    {t('voz:profesores_repertorista')} Sergio Montero
                   </span>
                 </figcaption>
               </figure>
@@ -168,16 +167,23 @@ export default function ProfesoresVoz() {
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <div>
                 <h2 className="text-base font-semibold tracking-wide uppercase text-gold-600">
-                  {t('voz:principal_profesor_male')}
+                  {t('voz:profesores_repertorista')}
                 </h2>
                 <h2 className="mt-2 text-3xl font-normal leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-                  Josu De Solaun
+                  Sergio Montero
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-500">
-                <p className="text-lg">{t('common:josu_para_1')}</p>
-                <p className="text-base leading-7">{t('common:josu_para_2')}</p>
-                <p className="text-base leading-7">{t('common:josu_para_3')}</p>
+                <p className="text-lg">{t('common:sergio_para_1')}</p>
+                <p className="text-base leading-7">
+                  {t('common:sergio_para_2')}
+                </p>
+                <p className="text-base leading-7">
+                  {t('common:sergio_para_3')}
+                </p>
+                <p className="text-base leading-7">
+                  {t('common:sergio_para_3')}
+                </p>
               </div>
             </div>
           </div>

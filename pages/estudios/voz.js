@@ -6,15 +6,15 @@ import { CheckIcon } from '@heroicons/react/outline';
 import ProfesoresVoz from '../../components/estudio/profesores-voz';
 import VozRequisitos from '../../components/estudio/voz-requisitos';
 
-export default function Violin() {
+export default function Voz() {
   const { t } = useTranslation();
 
   const modes = [
     {
       name: `${t('common:estudio_list_ano_magistrales')}`,
-      modeA: `64`,
-      modeB: `48`,
-      modeC: `32`,
+      modeA: `24`,
+      modeB: `16`,
+      modeC: `8`,
     },
     {
       name: `${t('common:estudio_list_profesores_invitados')}`,
@@ -24,15 +24,15 @@ export default function Violin() {
     },
     {
       name: `${t('common:estudio_list_rendimiento')}`,
-      modeA: `10`,
-      modeB: `10`,
-      modeC: `10`,
+      modeA: `8`,
+      modeB: `8`,
+      modeC: `8`,
     },
     {
-      name: `${t('common:estudio_list_camara')}`,
-      modeA: `14`,
-      modeB: `14`,
-      modeC: `14`,
+      name: `${t('common:estudio_list_clases_de_repertoro')}`,
+      modeA: `16`,
+      modeB: `16`,
+      modeC: `16`,
     },
     {
       name: `${t('common:estudio_list_eConferencias')}`,
@@ -60,12 +60,6 @@ export default function Violin() {
     },
     {
       name: `${t('common:estudio_list_recital_propia')}`,
-      modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
-      modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
-      modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
-    },
-    {
-      name: `${t('common:estudio_list_repertoristas')}`,
       modeA: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
       modeB: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
       modeC: <CheckIcon className="absolute w-6 h-6 text-lime-500" />,
@@ -138,13 +132,13 @@ export default function Violin() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
               <Image
-                src="/static/estudia/voz-study-hero.jpg"
+                src="/static/estudia/voice/voice-photo-img-02.webp"
                 alt="Estudio de Voz"
-                width={6240}
-                height={4160}
+                width={2400}
+                height={1383}
                 layout="fill"
                 objectFit="cover"
-                objectPosition="center"
+                objectPosition="left top"
               />
             </div>
           </div>
@@ -313,8 +307,9 @@ export default function Violin() {
           </div>
           <div className="mx-auto mt-6 prose prose-lg prose-gold text-neutral-500">
             <p>{t('common:estudio_para_02')}</p>
+            <p>{t('common:estudio_voz')}</p>
             <p>
-              {t('common:estudio_para_03_part_1')}
+              {t('common:estudio_para_03_voz')}
               {new Date().getFullYear()}
               {t('common:estudio_para_03_part_2')}
             </p>
@@ -324,7 +319,7 @@ export default function Violin() {
                 <span className="font-bold text-neutral-900">
                   {t('common:estudio_para_04_part_1')}
                 </span>
-                {t('common:estudio_para_04_part_2')}
+                {t('common:estudio_para_04_voz')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
@@ -338,14 +333,32 @@ export default function Violin() {
                   aria-hidden="true"
                 />
                 <p className="text-lg font-medium leading-6 ml-9 text-neutral-900">
-                  {t('common:estudio_para_05_part_3')}
+                  {t('common:estudio_para_05_part_4')}
+                </p>
+              </li>
+              <li className="list-none text-neutral-900">
+                <CheckIcon
+                  className="absolute w-6 h-6 text-lime-500"
+                  aria-hidden="true"
+                />
+                <p className="text-lg font-medium leading-6 ml-9 text-neutral-900">
+                  {t('common:estudio_para_05_part_5')}
+                </p>
+              </li>
+              <li className="list-none text-neutral-900">
+                <CheckIcon
+                  className="absolute w-6 h-6 text-lime-500"
+                  aria-hidden="true"
+                />
+                <p className="text-lg font-medium leading-6 ml-9 text-neutral-900">
+                  {t('common:estudio_para_05_part_6')}
                 </p>
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
                   {t('common:estudio_para_06_part_1')}
                 </span>
-                {t('common:estudio_para_06_part_2')}
+                {t('common:estudio_para_06_voz')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
@@ -361,9 +374,18 @@ export default function Violin() {
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('common:estudio_para_09_part_1')}
+                  {t('common:estudio_para_15_part_1')}
                 </span>
-                {t('common:estudio_para_09_part_2')}
+                {t('common:estudio_para_15_part_2')}
+              </li>
+              <li className="list-none text-neutral-900">
+                <CheckIcon
+                  className="absolute w-6 h-6 text-lime-500"
+                  aria-hidden="true"
+                />
+                <p className="text-lg font-medium leading-6 ml-9 text-neutral-900">
+                  {t('common:estudio_para_15_part_3')}
+                </p>
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
@@ -373,9 +395,9 @@ export default function Violin() {
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
-                  {t('common:estudio_para_11_part_1')}
+                  {t('common:estudio_para_11_part_1_voz')}
                 </span>
-                {t('common:estudio_para_11_part_2')}
+                {t('common:estudio_para_11_part_2_voz')}
               </li>
             </ul>
             {/* Modalidad */}
@@ -388,7 +410,7 @@ export default function Violin() {
                         <table className="min-w-full divide-y divide-neutral-300">
                           <div className="table-caption max-w-lg text-lg">
                             <h3 className="mt-0 text-lg text-neutral-500 sm:text-xl">
-                              {t('common:modalidades_table_title')}
+                              {t('common:modalidades_table_title_voz')}
                             </h3>
                           </div>
                           <thead className="bg-neutral-50">
@@ -461,10 +483,10 @@ export default function Violin() {
             <figure>
               <div className="w-full rounded-none">
                 <Image
-                  src="/static/estudia/voz-study-img-2.jpg"
+                  src="/static/estudia/voice/voice-photo-01.webp"
                   alt="Estudio de Voz"
-                  width={3709}
-                  height={2472}
+                  width={1080}
+                  height={803}
                   layout="responsive"
                   objectFit="cover"
                   objectPosition="center"
