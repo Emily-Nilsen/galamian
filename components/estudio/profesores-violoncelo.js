@@ -116,12 +116,6 @@ export default function ProfesoresVioloncelo() {
                 <p className="text-base leading-7">
                   {t('common:oyvind_para_3')}
                 </p>
-                <p className="text-base leading-7">
-                  {t('common:oyvind_para_4')}
-                </p>
-                <p className="text-base leading-7">
-                  {t('common:oyvind_para_5')}
-                </p>
               </div>
             </div>
           </div>
@@ -184,12 +178,6 @@ export default function ProfesoresVioloncelo() {
                 </p>
                 <p className="text-base leading-7">
                   {t('common:tilman_para_3')}
-                </p>
-                <p className="text-base leading-7">
-                  {t('common:tilman_para_4')}
-                </p>
-                <p className="text-base leading-7">
-                  {t('common:tilman_para_5')}
                 </p>
               </div>
             </div>

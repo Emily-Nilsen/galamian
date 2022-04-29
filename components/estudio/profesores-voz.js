@@ -95,7 +95,7 @@ export default function ProfesoresVoz() {
                     aria-hidden="true"
                   />
                   <span className="ml-2">
-                    {t('voz:principal_profesor_male')} Nils Georg Nilsen
+                    {t('voz:principal_profesor_male')} Nils Nilsen
                   </span>
                 </figcaption>
               </figure>
@@ -110,14 +110,23 @@ export default function ProfesoresVoz() {
                   {t('voz:principal_profesor_male')}
                 </h2>
                 <h2 className="mt-2 text-3xl font-normal leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-                  Nils Georg Nilsen
+                  Nils Nilsen
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-500">
                 <p className="text-lg">{t('common:nils_para_1')}</p>
                 <p className="text-base leading-7">{t('common:nils_para_2')}</p>
                 <p className="text-base leading-7">{t('common:nils_para_3')}</p>
-                <p className="text-base leading-7">{t('common:nils_para_4')}</p>
+                <div>
+                  <a
+                    href={t('common:nils_href')}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-base leading-7 text-gold-600 font-semibold hover:text-neutral-900 transition duration-200 ease-in-out"
+                  >
+                    {t('common:nils_website')}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -177,9 +186,6 @@ export default function ProfesoresVoz() {
                 <p className="text-lg">{t('common:sergio_para_1')}</p>
                 <p className="text-base leading-7">
                   {t('common:sergio_para_2')}
-                </p>
-                <p className="text-base leading-7">
-                  {t('common:sergio_para_3')}
                 </p>
                 <p className="text-base leading-7">
                   {t('common:sergio_para_3')}

@@ -128,6 +128,16 @@ export default function ProfesoresViolin() {
                 <p className="text-base leading-7">
                   {t('common:jesus_para_3')}
                 </p>
+                <div>
+                  <a
+                    href={t('common:jesus_href')}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-base leading-7 text-gold-600 font-semibold hover:text-neutral-900 transition duration-200 ease-in-out"
+                  >
+                    {t('common:jesus_website')}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -165,8 +175,7 @@ export default function ProfesoresViolin() {
                     aria-hidden="true"
                   />
                   <span className="ml-2">
-                    {t('violin:principal_profesor_female')} Anna Margrethe
-                    Nilsen
+                    {t('violin:principal_profesor_female')} Anna Nilsen
                   </span>
                 </figcaption>
               </figure>
@@ -181,13 +190,23 @@ export default function ProfesoresViolin() {
                   {t('violin:principal_profesor_female')}
                 </h2>
                 <h2 className="mt-2 text-3xl font-normal leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-                  Anna Margrethe Nilsen
+                  Anna Nilsen
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-500">
                 <p className="text-lg">{t('common:anna_para_1')}</p>
                 <p className="text-base leading-7">{t('common:anna_para_2')}</p>
                 <p className="text-base leading-7">{t('common:anna_para_3')}</p>
+                <div>
+                  <a
+                    href={t('common:anna_href')}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-base leading-7 text-gold-600 font-semibold hover:text-neutral-900 transition duration-200 ease-in-out"
+                  >
+                    {t('common:anna_website')}
+                  </a>
+                </div>
               </div>
             </div>
           </div>

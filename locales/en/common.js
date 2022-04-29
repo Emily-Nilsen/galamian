@@ -87,16 +87,20 @@ const common = {
   // Jesus Reina
   jesus_role: `Principal Professor`,
   jesus_instrument: `Violin & Viola`,
-  jesus_para_1: `Jesús Reina is a Sony Classical artist.`,
-  jesus_para_2: `He has performed with Pinchas Zukerman, Valery Gergiev and Eiji Oue, and with orchestras such as the Mariinsky Theatre, Barcelona Symphony, Mahler Philharmoniker, HSO and Malaga Philharmonic and in venues such as Carnegie Hall, Metropolitan Series, Royal Festival Hall, Wigmore Hall, Wiener Konzerthaus, National Auditorium and Palau de Barcelona.`,
-  jesus_para_3: `Jesús Reina was awarded the Puerta de Andalucía award and the Malaga Medal of Honor and is co-founder of the Galamian International Academy and the Málaga Clásica Festival.`,
-  jesus_para_4: `He studied with Patinka Kopec and Pinchas Zukerman, receiving the R. Bronstein Award from the Manhattan School of Music. Jesús Reina teaches at the Alfonso X University in Madrid and the Galamian International Academy in Malaga.`,
+  jesus_para_1: `He is praised by critics thanks to his "radiant and soulful personality" —John Rockwell, and his "overflowing freshness and spontaneity"- El País. Since his childhood, Jesús Reina conquered the public when he learned the violin from his grandfather José Queen in the field of folk music.`,
+  jesus_para_2: `He has performed with Pinchas Zukerman, Valery Gergiev, and Eiji Oue, with orchestras such as the Mariinsky Theatre, Barcelona Symphony, Mahler Philharmoniker HSO and Malaga Philharmonic and in venues such as Carnegie Hall, Metropolitan Series, Royal Festival Hall, Wigmore Hall, Wiener Konzerthaus, National Auditorium and Palau de Barcelona. Jesús Reina was awarded the Puerta de Andalucía award and the Malaga Medal of Honor and is co-founder of the Galamian Academy and the Málaga Clásica Festival. He studied with Patinka Kopec and Pinchas Zukerman, receiving the R. Bronstein Award from the Manhattan School of Music.`,
+  jesus_para_3: `Jesús Reina appears on the weekly television success of Canal Sur, "Tierra de Talento", where, in addition to jury duty for the program, he collaborates with great artists from various musical genres, such as José Mercé, María Villalón, Mariola Cantarero, India Martínez, Pasión Vega, El Kanka and Ale Romero.`,
+  jesus_website: `www.jesusreina.es`,
+  jesus_href: `https://www.jesusreina.es/`,
   // Anna Margrethe Nilsen
   anna_role: `Principal Professor`,
   anna_instrument: `Violin & Viola`,
-  anna_para_1: `Anna Margrethe Nilsen is a Centaur Records artist and winner of the Sparre Olsen, Eisenberg-Fried and Norwegian National competitions.`,
-  anna_para_2: `She has studied with Isaac Schuldman, Patinka Kopec and Pinchas Zukerman. She has also performed in venues such as Wiener Konzerthaus, Oslo Auditorium, Saint Petersburg Philharmonic, Carnegie Hall, and orchestras such as the Bergen Philharmonic and Kaliningrad Chamber Orchestra, Trondheim Symphony, Juenesses Musicales, Novgorod Chamber Opera, Norwegian Opera, Saint Petersburg Symphony and Belarus Chamber Opera.`,
-  anna_para_3: `Anna Margrethe Nilsen has collaborated with artists such as Pinchas Zukerman, Paul Neubauer, Liza Fershtman, Amanda Forsyth, and Guy Braustein.`,
+  anna_para_1: `La violinista noruega Anna Margrethe Nilsen es cofundadora y directora de la Academia Galamian y el Festival Málaga Clásica. Aclamada por la crítica por su forma de tocar “llena de dulzura, entusiasmo, alegría y rico timbre”, Nilsen es artista de Centaur Records y ganadora en los concursos Sparre Olsen, Eisenberg-Fried y Nacional Noruego.`,
+  anna_para_2: `Estudió con Isaac Schuldman, Patinka Kopec y Pinchas Zukerman como estudiante de la Manhattan School of Music y ha actuado en salas como Wiener Konzerthaus, Auditorio de Oslo, Filarmonía de San Petersburgo, Carnegie Hall, y con orquestas como la Filarmónica de Bergen, Kaliningrado de Cámara, Sinfónica de Trondheim, Juenesses Musicales, Nóvgorod de Cámara, Ópera Noruega, Sinfónica de San Petersburgo y Bielorrusia de Cámara.`,
+  anna_para_3: `Ha
+  colaborado con artistas como Pinchas Zukerman, Paul Neubauer, Liza Fershtman, Amanda Forsyth y Guy Braustein.`,
+  anna_website: `www.annanilsen-violin.com`,
+  anna_href: `https://www.annanilsen-violin.com/`,
 
   // Profesores del Estudio de Violín/Viola
   // Misha Dacić
@@ -120,38 +124,33 @@ const common = {
   // Øyvind Gimse
   oyvind_role: `Principal Professor`,
   oyvind_instrument: `Cello`,
-  oyvind_para_1: `His seven GRAMMY® Award nominations attest to the importance of his involvement as artistic director of the Trondheim Soloists for more than 15 years at the head of this group. In addition to holding a position of creative diligence, Øyvind Gimse has also been a solo cellist with the Trondheim Symphony Orchestra for seven years.`,
-  oyvind_para_2: `Øyvind Gimse is a tireless musician who has travelled the world with his musical concern as a standard: from Japan to South Africa, passing through the Americas and all corners of Europe.`,
-  oyvind_para_3: `In addition to his contribution to the Trondheim Soloists, Gimse has developed a vibrant career in chamber music. This career has led him to share the stage in groups with other great artists such as Martin Fröst, Anne Sophie Mutter and Bobby McFerrin.`,
-  oyvind_para_4: `His works with the composer Sofiya Gubaidulina are a record reference in the contemporary repertoire, adding to his ten recordings with houses such as Naxos and Deutsche Grammophon. The relationship between the cellist and the Russian composer has resulted in world premieres of now-iconic works of contemporary art music.`,
-  oyvind_para_5: `Øyvind is an internationally recognized pedagogue, having taught in Sweden, Denmark, Poland, Spain and Brazil. He holds a recognized position as a Senior Lecturer at the Institue of Music at the Norwegian University of Science and Technology. Since 2018, the cellist has been an active member of the faculty of the Galamian Academists Program, the specialization itinerary in orchestral performance of the Galamian International Academy. In the same institution, he teaches cello and chamber music masterclasses.
-  `,
+  oyvind_para_1: `The Trondheim Soloists appointed Cellist Øyvind Gimse as Artistic Director in 2002, continuing the broad profile and musical versatility that characterizes the group. Having studied in Munich, Salzburg and Vienna with professors such as Walter Nothas, Frans Helmersen and William Pleeth, he became the principal cellist of the Trondheim Symphony Orchestra from 1991 to 1997.`,
+  oyvind_para_2: `Currently, Øyvind Gimse is a professor at the Trondheim Conservatory of Music. He enjoys an active career as a soloist and chamber musician. He often combines poetry, visual art, dance and theatre within an overall artistic ensemble.`,
+  oyvind_para_3: `Øyvind Gimse has a unique musical ability to move audiences, placing the musical experience at the centre of his work. “He has everything that he has to have to become an international format solo artist,” Anne-Sophie Mutter told the Trondheim newspaper Adresseavisen in May 1999.`,
 
   // Tilman Mahrenholz
   tilman_role: `Principal Professor`,
   tilman_instrument: `Cello`,
-  tilman_para_1: `Tilman Mahrenholz began his musical training at the "Hochschule für Musik Saar" in Saarbrücken and at the "Folkwang-Hochschule" in Essen, in his native Germany. Later, he moved to New York and was awarded a scholarship for his artistic merits by the prestigious "Juilliard School of Music" and received his "Master of Music" diploma.`,
-  tilman_para_2: `His teachers include Ulrich Voss, Prof. Christoph Richter, and Carter Brey, cello soloist with the New York Philharmonic Orchestra.`,
-  tilman_para_3: `Tilman Mahrenholz has won three prizes at the German Youth Competition. He has also participated in international music festivals such as the Bain de Musique Flaine and the Aspen Music Festival. He continued his training with Wolfgang Boettcher, Zara Nelsova, Lynn Harrell, the quartet Alban Berg and the La Salle Quartet, among many others.`,
-  tilman_para_4: `Tilman Mahrenholz was a founding member of the "Alborán Quartet". He continued to form parts of other groups, such as piano trios and chamber and symphony orchestras, including the Saarbrücken Radio Symphony Orchestra and the City of Granada Orchestra. Soloist, chamber and symphonic concerts have taken him to countries such as Germany, Austria, France, the USA, Luxembourg, Morocco and Spain.`,
-  tilman_para_5: `One of Tilman Mahrenholz's most recent significant performances includes his interpretation of the A. Dvorak concert at the Cervantes Theater in Malaga with the Malaga Philharmonic Orchestra, under the conductor's baton of maestro Paul Goodwin. Currently, Tilman Mahrenholz is a cello soloist with the Malaga Philharmonic Orchestra.`,
+  tilman_para_1: `Tilman Mahrenholz was born in Germany and received his training at the "Hochschule für Musik Saar" in Saarbrücken and at the "Folkwang-Hochschule" in Essen. Later, he moved to New York, receiving a scholarship from the prestigious Juilliard School of Music. His teachers include Ulrich Voss, Prof. Christoph Richter, and Carter Brey.`,
+  tilman_para_2: `Tilman Mahrenholz was a founding member of the "Alborán Quartet". In addition, he has formed parts of other chamber and orchestral ensembles throughout his career, including the Saarbrücken Radio Symphony Orchestra and the City of Granada Orchestra. He has won three prizes in the German Youth Competition. He has also participated in International Music Festivals such as the Bain de Musique Flaine and the Aspen Music Festival.`,
+  tilman_para_3: `Soloist, chamber and symphonic concerts have taken him to countries such as Germany, Austria, France, the USA, Luxembourg, Morocco and Spain. Tilman Mahrenholz is currently a cello soloist with the Malaga Philharmonic Orchestra.`,
 
   // Profesores del Estudio de Voz
   // Nils Georg
   nils_role: `Principal Professor `,
   nils_instrument: `Voice`,
-  nils_para_1: `Nils Georg Nilsen made his debut in 2012 at the Avery Fisher Hall in New York and performed at the Tampa Opera, the Norwegian Opera, and the Minsk Chamber Orchestra.`,
-  nils_para_2: `At 13 years old, he sang duets with Dame Kiri te Kanawa at the Oslo Spectrum Hall. He has also performed the role of Tom Rakewell (The Rake's Progress), Torquemada (L'heure Espagnole), and Aumônier (Dialogues of the Carmelites) at the Norwegian Opera and the title role of Albert Herring in Intermezzo with the director of the Metropolitan Opera, David J. Jackson.`,
-  nils_para_3: `In addition to soloing in Handel's Messiah, Mozart's Requiem, Mendelssohn's Christus and Bach's Christmas Oratorio, Nils Georg Nilsen has performed with Opera Tampa in The Merry Widow and Dances Patrelle in New York in The Gilbert and Sullivan Ballet.`,
-  nils_para_4: `Nils Georg graduated with a Bachelor of Music from the Norwegian Academy of Music. He later received a Master of Music under the tutelage of Patricia McCaffrey at the Manhattan School of Music in New York.`,
+  nils_para_1: `Norwegian soloist and voice teacher Nils Nilsen works as a vocal technique teacher at the Galamian International Academy. He made his debut in 2012 at the Avery Fisher Hall in New York and has performed with the "Opera Tampa" and "Norwegian Opera" companies and with the Minsk Chamber Orchestra. At age 13, he sang with Dama Kiribati te Kanawa, forming an artistic duo at the Spectrum venue in Oslo.`,
+  nils_para_2: `Some of his merits include winning the Solveig prize in the Edvard Grieg competition. Nils Nilsen has also had other successes in his professional career, including winning numerous audience awards during the LidalNorth Festival and being the winner of Norway's "Youth Music" contest.`,
+  nils_para_3: `Recently, he has been a soloist with the Chicago Symphony Orchestra, has sung with the Israel Opera, and performed at various festivals and concerts, both in his home country of Norway and abroad, including the Malaga Classic Festival.`,
+  nils_website: `www.nilsnilsentenor.com`,
+  nils_href: `https://nilsnilsentenor.com/`,
 
   // Sergio Montero
   sergio_role: `Principal Pianist`,
   sergio_instrument: `Piano`,
-  sergio_para_1: `Sergio Montero is a piano, chamber music, solfeggio, and music theory professor at the Conservatorio Superior de Música de Málaga and has received the Honor Award in Piano and Chamber Music.`,
-  sergio_para_2: `He is also a tenured professor at the Manuel Carra Professional Conservatory of Music in Málaga.`,
-  sergio_para_3: `He has been director of the Gonzalo Martín Tenllado (Málaga) and Padre Manuel Gámez (Fuengirola) Professional Conservatories, assistant professor of the masters Suso Mariátegui and Edemiro Arnaltes, first pianist of the Málaga Opera Choir and pianist for the actress and singer Imperio Argentina and of Montserrat Caballe.`,
-  sergio_para_4: `Sergio Montero received the Silver Badge for Artistic Merit by the Cultural Foundation of the City Council of La Línea de la Concepción and has been a jury member of the IX Campillos International Piano Competition. He regularly collaborates with the Málaga Philharmonic Orchestra. Furthermore, he is the principal pianist and assistant professor for the Norwegian tenor Nils Nilsen at the Galamian International Academy.`,
+  sergio_para_1: `He is a piano, chamber music, solfeggio, and music theory professor at the Conservatorio Superior de Música de Málaga, where he has received the Honor Award in Piano and Chamber Music. He is also a tenured professor at the Manuel Carra Professional Conservatory of Music (Málaga).`,
+  sergio_para_2: `He has been director of the Gonzalo Martín Tenllado (Málaga) and Padre Manuel Gámez (Fuengirola) Professional Conservatories, assistant professor of the masters Suso Mariátegui and Edemiro Arnaltes, first pianist of the Malaga Opera Choir and pianist of the actress and singer Imperio Argentina and of Montserrat Caballe.`,
+  sergio_para_3: `He received the Silver Badge for Artistic Merit by the Cultural Foundation of the City Council of La Línea de la Concepción and has been a jury member of the IX Campillos International Piano Competition. He is also a master of repertoire and assistant professor of the Norwegian tenor Nils Nilsen at the Galamian International Academy. He regularly collaborates with the Malaga Philharmonic Orchestra.`,
 
   // Requisitos
   requisitos_subtitle: `Requirements of`,
