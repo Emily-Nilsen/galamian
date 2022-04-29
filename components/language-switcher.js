@@ -6,7 +6,7 @@ import { useState } from 'react';
 const LanguageSwitcher = () => {
   const { locale, locales, defaultLocale, asPath } = useRouter();
 
-  const [showMe, setShowMe] = useState(false);
+  const [showMe, setShowMe] = useState(true);
   function toggle() {
     setShowMe(!showMe);
   }
@@ -21,15 +21,14 @@ const LanguageSwitcher = () => {
         >
           {showMe ? (
             <Link activeClassName={locale === 'es'} href={asPath} locale="es">
-              español
+              English
             </Link>
           ) : (
             <Link activeClassName={locale === 'en'} href={asPath} locale="en">
-              English
+              español
             </Link>
           )}
         </button>
-        <button className="px-2 transition duration-200 ease-in-out hover:text-neutral-900"></button>
       </div>
     </div>
   );
