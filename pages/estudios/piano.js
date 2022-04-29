@@ -138,7 +138,7 @@ export default function Piano() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
               <Image
-                src="/static/estudia/piano-study-img-2.webp"
+                src="/static/estudia/piano/piano-study-img-2.webp"
                 alt="Estudio de Piano"
                 width={4880}
                 height={3253}
@@ -467,7 +467,7 @@ export default function Piano() {
             <figure>
               <div className="w-full rounded-none">
                 <Image
-                  src="/static/estudia/piano-study-img-1.webp"
+                  src="/static/estudia/piano/piano-study-img-1.webp"
                   alt="Estudio de violín/viola"
                   width={4070}
                   height={2713}

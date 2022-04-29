@@ -102,17 +102,19 @@ const common = {
   // Misha Dacić
   misha_role: `Principal Guest Professor`,
   misha_instrument: `Piano`,
-  misha_para_1: `Following his debut on the Miami International Piano Festival's Discovery Series in 2003, Misha Dacić quickly became a sought-after solo artist capturing audiences across the United States. He performed at festivals such as Ravinia's Rising Stars Series in Chicago, Gilmore Keyboard Festival, Xavier Piano Series in Cincinnati, Frederic Chopin Society's Series in Minneapolis, and Steinway Hall in New York, among many others. He has also performed in numerous renowned venues: Weill Hall of Carnegie Hall, Steinway Hall, Wigmore Hall, Royal Festival Hall, Wiener Konzerthaus, Wiener Saal, Glinka Hall of the San Dacić Philharmonic. Furthermore, he has appeared in recitals and as a guest soloist in Central America, South America, Europe, Russia, the Middle East and Japan.`,
-  misha_para_2: `Misha Dacić's performances stand out at the "Martha Argerich Project Festival" in Lugano, at the Mendelssohn House in Leipzig, at the Oji Hall in Tokyo, at the Sergiu Celibidache Festival in Bucharest, at the "Raritäten der Klaviermusik" Festival in Husum, in the International Piano Festival in Mexico City, and with the Brazilian Symphony Orchestra at the Municipal Theater of Rio de Janeiro. In 2009 he joined the legendary violinist Ida Haendel, and he has performed with her worldwide ever since. VAI captured and released a DVD from one of his live performances. "Misha Dacić in Recital", with several live performances, was also released by VAI in 2009. The album, published by Piano Classics, was a dedication to Franz Liszt's Bicentenary in 2011 and was greatly received by critics worldwide – "surprising strength of temperament and mastery" (Bryce Morrison, Gramophone). In 2018, Brilliant Classics released Dacić's album with works by Alexander Scriabin.`,
-  misha_para_3: `In 2016, at the Sergei Rachmaninoff museum in Ivanovka, Russia, at the Russian composer's former residence, Dacić gave a premiere of his arrangement for two pianos of Rachmaninoff's choral symphony 'Bells', in collaboration with pianist Zlata Chochieva. He was named artistic director of the Rachmaninoff Festival at the same venue.`,
-  misha_para_4: `Born into a family with a musical tradition, and receiving the first lessons from his father, Misha Dacić has been performing in public since the age of ten. Lazar Berman, Kemal Gekić, and Jorge Luis Prats are among his mentors.`,
+  misha_para_1: `Following his debut on the Miami International Piano Festival's Discovery Series in 2003, Misha Dacić quickly became a sought-after solo artist capturing audiences across the United States and performing at festivals such as Ravinia's Rising Stars Series in Chicago, Gilmore Keyboard Festival, Xavier Piano Series in Cincinnati, Frederic Chopin Society's Series in Minneapolis, at Steinway Hall in New York, among many others.`,
+  misha_para_2: `Born into a family with a musical tradition and receiving his first lessons from his father, Misha Dacić began performing in public at age ten. His mentors include Kemal Gekić, Frank Cooper, Alan Fraser, Lazar Berman, and Jorge Luis Prats.`,
+  misha_para_3: `As a chamber musician, his collaboration with violinist Gilles Apap and Argentine tango maestro Pablo Ziegler are some of Dacic's highlights. He has been a member of the Miami International Piano Festival Academy since 2015. He has also received support from the Patrons of Exceptional Artists since 2003.`,
+  misha_website: `www.mishadacic.com`,
+  misha_href: `https://www.mishadacic.com/`,
   // Josu De Solaun
   josu_role: `Principal Guest Professor`,
   josu_instrument: `Piano`,
-  josu_para_1: ``,
-  josu_para_2: ``,
-  josu_para_3: ``,
-  josu_para_4: ``,
+  josu_para_1: `The international press acclaimed him for his "poetic sense of sound, bold artistic vision and brilliant virtuoso skills, entirely at the service of the works he performs" (Nikolaus Frey, Fuldaer Zeitung). Josu De Solaun is a citizen of both Spain and the United States, and he earned his PhD from the Manhattan School of Music.`,
+  josu_para_2: `His two primary musical mentors in New York were the pianists Nina Svetlanova (a student of Heinrich Neuhaus) and Horacio Gutiérrez.`,
+  josu_para_3: `Josu De Solaun is a winner of the First Prize of the XIII George Enescu International Piano Competition, the XV José Iturbi International Piano Competition and the First Piano Competition of the European Union. He is an extraordinarily prolific pianist-composer and performs in many of the most prestigious venues globally as a concert soloist with orchestras. In addition, he performs as a chamber musician, recitalist and improviser. He is also a published poet.`,
+  josu_website: `www.josudesolaun.com`,
+  josu_href: `https://www.josudesolaun.com/`,
 
   // Profesores del Estudio de Violoncelo
   // Øyvind Gimse

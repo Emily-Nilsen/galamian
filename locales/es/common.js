@@ -102,17 +102,19 @@ const common = {
   // Misha Dacić
   misha_role: `Profesor Invitado Principal`,
   misha_instrument: `Piano`,
-  misha_para_1: `Después de su debut en la Discovery Series del Miami International Piano Festival en 2003, Misha Dacić se convirtió rápidamente en un solicitado solista que capturó audiencias en todo Estados Unidos actuando en festivales como Ravinia's Rising Stars Series en Chicago, Gilmore Keyboard Festival, Xavier Piano Series en Cincinnati, Frederic Chopin Society's Series en Minneapolis, en el Steinway Hall de Nueva York, entre muchos otros. Ha actuado en reconocidas salas: Weill Hall de Carnegie Hall, Steinway Hall, Wigmore Hall, Royal Festival Hall, Wiener Konzerthaus, Wiener Saal, Sala Glinka de la Filarmónica de San Dacić apareció en recitales asi como solista invitado en América Central, América del Sur, Europa, Rusia, Oriente Medio y Japón.`,
-  misha_para_2: `Se destacan sus actuaciones en el "Martha Argerich Project Festival" en Lugano, en la casa de Mendelssohn en Leipzig, en el Oji Hall en Tokyo, en el Festival Sergiu Celibidache en Bucarest, en el Festival "Raritäten der Klaviermusik" en Husum, en el Festival Internacional de Piano en la Ciudad de México, y con la Orquesta Sinfónica Brasileña en el Teatro Municipal de Río de Janeiro. En 2009 se unió a la legendaria violinista Ida Haendel actuando con ella en todo el mundo desde entonces. Una de sus actuaciones en vivo fue capturada en un DVD lanzado por VAI. "Misha Dacić en Recital", con varias actuaciones en vivo, también fue lanzado por VAI en 2009. El album dedicado a la ocasión del Bicentenario de Franz Liszt en 2011, publicado por Piano Classics, fue recibido en gran medida por la crítica de todo el mundo – "sorprendente fuerza temperamental y maestria" (Bryce Morrison, Gramophone). En 2018, Brilliant Classics lanzó el álbum de Dacić con obras de Alexander Scriabin.`,
-  misha_para_3: `En 2016, en el museo Sergei Rachmaninoff en Ivanovka, Rusia, que solía ser la residencia del compositor ruso, Dacić dio un estreno de su arreglo para dos pianos de la sinfonía coral 'Campanas' de Rachmaninoff, en colaboración con la pianista Zlata Chochieva, y fue nombrado director artístico del Festival Rachmaninoff en el mismo lugar.`,
-  misha_para_4: `Nacido en una familia con tradición musical, y habiendo recibido las primeras clases de su padre, Misha Dacić ha estado actuando en público desde la edad de diez años. Lazar Berman, Kemal Gekić, y Jorge Luis Prats se cuentan entre sus mentores.`,
+  misha_para_1: `Después de su debut en la Discovery Series del Miami International Piano Festival en 2003, Misha Dacić se convirtió rápidamente en un solicitado solista que capturó audiencias en todo Estados Unidos actuando en festivales como Ravinia's Rising Stars Series en Chicago, Gilmore Keyboard Festival, Xavier Piano Series en Cincinnati, Frederic Chopin Society's Series en Minneapolis, en el Steinway Hall de Nueva York, entre muchos otros.`,
+  misha_para_2: `Nacido en una familia con tradición musical y habiendo recibido las primeras lecciones de su padre, Misha Dacić comienza a actuar en público desde la edad de diez años. Kemal Gekić, Frank Cooper, Alan Fraser, Lazar Berman y Jorge Luis Prats se cuentan entre sus mentores.`,
+  misha_para_3: `La colaboración con el violinista Gilles Apap y con el maestro de tango argentino Pablo Ziegler son algunos de los momentos más destacados de Dacic como músico de cámara. Es miembro de la Miami International Piano Festival Academy desde 2015 y ha recibido el apoyo de Patrons of Exceptional Artists desde 2003.`,
+  misha_website: `www.mishadacic.com`,
+  misha_href: `https://www.mishadacic.com/`,
   // Josu De Solaun
   josu_role: `Profesor Invitado Principal`,
   josu_instrument: `Piano`,
-  josu_para_1: ``,
-  josu_para_2: ``,
-  josu_para_3: ``,
-  josu_para_4: ``,
+  josu_para_1: `Aclamado por la prensa internacional por su “sentido poético del sonido, audaz visión artística y brillantes habilidades virtuosas, enteramente al servicio de las obras que interpreta” (Nikolaus Frey, Fuldaer Zeitung), Josu De Solaun es ciudadano de España y Estados Unidos, donde obtuvo su doctorado en la Manhattan School of Music.`,
+  josu_para_2: `Sus dos principales mentores musicales en Nueva York fueron los pianistas Nina Svetlanova (alumna de Heinrich Neuhaus) y Horacio Gutiérrez.`,
+  josu_para_3: `Ganador del Primer Premio del XIII Concurso Internacional de Piano George Enescu, el XV Concurso Internacional de Piano José Iturbi y el Primer Concurso de Piano de la Unión Europea, es un pianista-compositor extraordinariamente prolífico que actúa en muchas de las salas más prestigiosas del mundo como solista de conciertos con orquestas, músico de cámara, recitalista e improvisador y compositor. También es un poeta publicado.`,
+  josu_website: `www.josudesolaun.com`,
+  josu_href: `https://www.josudesolaun.com/`,
 
   // Profesores del Estudio de Violoncelo
   // Øyvind Gimse

@@ -72,11 +72,11 @@ export default function ProfesoresPiano() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="rounded-none shadow-lg object-cover object-center overflow-hidden">
+                  <div className="rounded-none shadow-none object-cover object-center overflow-hidden">
                     <Image
                       src="/static/profesores/misha-dacic.jpg"
                       alt="Misha Dacić"
-                      width={2414}
+                      width={2617}
                       height={1527}
                       layout="responsive"
                       objectFit="cover"
@@ -116,9 +116,16 @@ export default function ProfesoresPiano() {
                 <p className="text-base leading-7">
                   {t('common:misha_para_3')}
                 </p>
-                <p className="text-base leading-7">
-                  {t('common:misha_para_4')}
-                </p>
+                <div>
+                  <a
+                    href={t('common:misha_href')}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-base leading-7 text-gold-600 font-semibold hover:text-neutral-900 transition duration-200 ease-in-out"
+                  >
+                    {t('common:misha_website')}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -138,11 +145,11 @@ export default function ProfesoresPiano() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="rounded-none shadow-lg object-cover object-center overflow-hidden">
+                  <div className="rounded-none shadow-none object-cover object-center overflow-hidden">
                     <Image
                       src="/static/profesores/josu-de-solaun.jpg"
                       alt="Josu De Solaun"
-                      width={652}
+                      width={718}
                       height={419}
                       layout="responsive"
                       objectFit="cover"
@@ -178,6 +185,16 @@ export default function ProfesoresPiano() {
                 <p className="text-lg">{t('common:josu_para_1')}</p>
                 <p className="text-base leading-7">{t('common:josu_para_2')}</p>
                 <p className="text-base leading-7">{t('common:josu_para_3')}</p>
+                <div>
+                  <a
+                    href={t('common:josu_href')}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-base leading-7 text-gold-600 font-semibold hover:text-neutral-900 transition duration-200 ease-in-out"
+                  >
+                    {t('common:josu_website')}
+                  </a>
+                </div>
               </div>
             </div>
           </div>

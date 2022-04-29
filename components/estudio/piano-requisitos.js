@@ -18,7 +18,7 @@ export default function PianoRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/estudia/violin-study-img-1.jpg',
+      imageSrc: '/static/estudia/piano/piano-photo-02.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -35,7 +35,7 @@ export default function PianoRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc: '/static/estudia/piano-study-img-3.webp',
+      imageSrc: '/static/estudia/piano/piano-study-img-3.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -43,7 +43,7 @@ export default function PianoRequisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/estudia/piano_03.jpg',
+      imageSrc: '/static/estudia/piano/violin-study-img-1.webp',
       imageAlt: 'Estudio de Piano',
     },
   ];
