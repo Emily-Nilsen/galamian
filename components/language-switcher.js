@@ -21,11 +21,11 @@ const LanguageSwitcher = () => {
         >
           {showMe ? (
             <Link activeClassName={locale === 'es'} href={asPath} locale="es">
-              English
+              español
             </Link>
           ) : (
             <Link activeClassName={locale === 'en'} href={asPath} locale="en">
-              español
+              English
             </Link>
           )}
         </button>

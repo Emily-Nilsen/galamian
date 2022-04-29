@@ -195,6 +195,9 @@ export default function Navbar() {
               </div>
             </a>
           </Link>
+          <div className="md:hidden">
+            <LanguageSwitcher />
+          </div>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center p-2 transition duration-200 ease-in-out text-neutral-400 hover:text-neutral-500 focus:outline-none focus:ring-0 focus:ring-inset">
               <span className="sr-only">Open menu</span>
@@ -533,7 +536,7 @@ export default function Navbar() {
                 </div>
                 <div className="mt-6 sm:mt-8">
                   <nav>
-                    <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
+                    <div className="grid gap-5 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                       <Link href="/academia" passHref>
                         <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-in-out text-neutral-900 hover:bg-neutral-50 group">
                           <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
@@ -591,11 +594,11 @@ export default function Navbar() {
                   ))}
                 </div>
               </div>
-              <div className="h-full px-5 py-6 bg-gray-50">
+              {/* <div className="h-full px-5 py-6 bg-gray-50">
                 <div className="w-1/2">
                   <LanguageSwitcher />
                 </div>
-              </div>
+              </div> */}
             </div>
           </Popover.Button>
         </Popover.Panel>
