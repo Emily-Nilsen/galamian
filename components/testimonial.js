@@ -70,7 +70,7 @@ export default function Testimonial() {
                   objectPosition="center"
                 />
               </div>
-              <div className="relative lg:col-span-1">
+              <div className="relative lg:col-span-1 text-left">
                 <blockquote className="mt-6 text-white">
                   <p className="text-xl font-medium sm:text-2xl italic">
                     {testimonial.text}
