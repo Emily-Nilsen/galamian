@@ -58,14 +58,14 @@ export default function Testimonial() {
               key={testimonial.author}
               className="relative py-24 px-8 bg-gold-600 lg:px-16 lg:grid lg:grid-cols-2 lg:gap-x-8 h-full"
             >
-              <div className="absolute inset-0 opacity-50 filter saturate-0 mix-blend-multiply">
+              <div className="absolute inset-0 opacity-50 filter saturate-0 mix-blend-multiply w-full h-full object-cover">
                 <Image
-                  width={1920}
-                  height={1280}
+                  width={1000}
+                  height={600}
                   src={testimonial.image}
                   alt={testimonial.author}
-                  className="w-full h-full object-cover"
-                  layout="responsive"
+                  className=""
+                  layout="fill"
                   objectFit="cover"
                   objectPosition="center"
                 />
