@@ -1,2 +1,51 @@
-const inicio = {};
+const inicio = {
+  title_1: `Galamian`,
+  title_2: `International Academy`,
+  title_3: ``,
+
+  // Features
+  feature_title_1: `Galamian`,
+  feature_title_2: `International Academy`,
+  feature_title_3: ``,
+  feature_name_1: `The Academy`,
+  feature_description_1: `An initiative led by Jesús Reina and Anna Margrethe Nilsen, with the valuable collaboration of Fundación Unicaja.`,
+  feature_name_2: `Study at the GIA`,
+  feature_description_2: `You receive a quality musical education when you decide to study at the Galamian International Academy. The GIA is your first step towards the professionalization of your artistic career.`,
+  feature_name_3: `The Teachers`,
+  feature_description_3: `The Galamian International Academy has a team of pedagogues of the highest international prestige, whose convergence is only possible in this educational centre.`,
+  feature_name_4: `Galamian Junior`,
+  feature_description_4: `We have fully dedicated professionals comprising our institution to guarantee your learning with the most current and advanced methodologies on the music scene.`,
+
+  // Noticias
+  noticias_title: `Notifications`,
+  noticias_readmore: `Read more`,
+  post_1_title: `Galamian Junior`,
+  post_1_sent_1_part_1: `Find information about the `,
+  post_1_sent_1_part_2: `academic year for the Junior Study of Violin and Viola.`,
+  post_1_sent_2_part_1: `Students who pass the auditions called for June `,
+  post_1_sent_2_part_2: `will begin studying at the GIA Junior from September `,
+  post_1_date: `Until June `,
+  post_2_title: `Registration for study course auditions`,
+  post_2_sent_1: `The Galamian International Academy opens the registration period for the auditions for access to the next course, `,
+  post_2_sent_2: `The GIA holds auditions via video due to the current pandemic situation. Registration is open until July 15.`,
+  post_2_sent_3: `You can find all the details about how to participate in the auditions below.`,
+  post_2_date: `Until July 15, `,
+
+  // Testimonials
+  testimonial_text_1: `It is an honour for me to be part of the great tradition of your academy and the Galamian legacy.`,
+  testimonial_author_1: `Pinchas Zukerman`,
+  testimonial_source_1: `Israeli violist, violinist and conductor`,
+  testimonial_text_2: `I have had the honour of verifying that the Galamian Academy is a project of the highest artistic and pedagogical level, in a unique setting and a building itself a work of art. I think you are doing fundamental work for the culture of our country.`,
+  testimonial_author_2: `Luis Auñón`,
+  testimonial_source_2: `Oboe soloist of the National Opera Theater (Lisbon)`,
+  testimonial_text_3: `It is fantastic that you are bringing your knowledge and talent to the south of Spain, radically improving the level of music education with the creation of the Galamian Academy. Future generations of musicians will be very grateful.`,
+  testimonial_author_3: `Alexander Sitkovetsky`,
+  testimonial_source_3: `International soloist and founder of the Sitkovetsky Trio`,
+  testimonial_text_4: `Creating the Galamian Academy has created an important and unique cultural institution.`,
+  testimonial_author_4: `Eric Silberger`,
+  testimonial_source_4: `International violin concert artist and founder of the Hawaii Chamber Music Festival`,
+  testimonial_text_5: `The Galamian Academy is consolidated as an elite centre of international reference, an institution with unprecedented human and professional excellence.`,
+  testimonial_author_5: `Sergio Montero`,
+  testimonial_source_5: `Pianist, vocal coach and master of repertoire for figures such as Montserrat Caballé`,
+};
 export default inicio;

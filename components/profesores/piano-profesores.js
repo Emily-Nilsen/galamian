@@ -21,17 +21,37 @@ export default function PianoProfesores() {
       sentence_01: `${t('common:misha_para_1')}`,
       sentence_02: `${t('common:misha_para_2')}`,
       sentence_03: `${t('common:misha_para_3')}`,
-      sentence_04: `${t('common:misha_para_4')}`,
+      website: `${t('common:misha_website')}`,
+      href: `${t('common:misha_href')}`,
     },
     {
       name: 'Josu De Solaun',
       role: `${t('common:josu_role')}`,
       imageUrl: '/static/profesores/josu-de-solaun.jpg',
       instrument: `${t('common:josu_instrument')}`,
-      sentence_01: ``,
-      sentence_02: ``,
-      sentence_03: ``,
-      sentence_04: ``,
+      sentence_01: `${t('common:josu_para_1')}`,
+      sentence_02: `${t('common:josu_para_2')}`,
+      sentence_03: `${t('common:josu_para_3')}`,
+      website: `${t('common:josu_website')}`,
+      href: `${t('common:josu_href')}`,
+    },
+    {
+      name: 'Antonio Ortiz',
+      role: `${t('common:antonio_role')}`,
+      imageUrl: '/static/profesores/antonio-ortiz.webp',
+      instrument: `${t('common:antonio_instrument')}`,
+      sentence_01: `${t('common:antonio_para_1')}`,
+      sentence_02: `${t('common:antonio_para_2')}`,
+      sentence_03: `${t('common:antonio_para_3')}`,
+    },
+    {
+      name: 'Miguel Ángel Latorre',
+      role: `${t('common:miguel_role')}`,
+      imageUrl: '/static/profesores/miguel-latorre.webp',
+      instrument: `${t('common:miguel_instrument')}`,
+      sentence_01: `${t('common:miguel_para_1')}`,
+      sentence_02: `${t('common:miguel_para_2')}`,
+      sentence_03: `${t('common:miguel_para_3')}`,
     },
     {
       name: 'Anna Petrova',
@@ -61,10 +81,10 @@ export default function PianoProfesores() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-3xl tracking-wide text-gold-600 sm:text-4xl">
-              Piano
+              {t('profesores:tab_piano')}
             </h2>
             <p className="text-base text-neutral-500">
-              Haga clic en el nombre para leer más sobre cada pedagogo.
+              {t('profesores:study_text')}
             </p>
           </div>
           <div className="lg:col-span-2">
@@ -168,7 +188,7 @@ export default function PianoProfesores() {
                                     <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
                                       <figure>
                                         <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                                          <div className="shadow-lg object-cover object-center overflow-hidden">
+                                          <div className="shadow-none object-cover object-center overflow-hidden">
                                             <Image
                                               src={person.imageUrl}
                                               alt={person.name}
@@ -202,6 +222,16 @@ export default function PianoProfesores() {
                                       <p>{person.sentence_02}</p>
                                       <p>{person.sentence_03}</p>
                                       <p>{person.sentence_04}</p>
+                                      <div>
+                                        <a
+                                          href={person.href}
+                                          target="_blank"
+                                          rel="noreferrer"
+                                          className="text-base leading-7 text-neutral-600 font-semibold hover:text-gold-600 transition duration-200 ease-in-out no-underline"
+                                        >
+                                          {person.website}
+                                        </a>
+                                      </div>
 
                                       <Menu.Item>
                                         <p className="text-gold-600 text-base hover:text-neutral-900 transition duration-200 ease-in-out pt-4">

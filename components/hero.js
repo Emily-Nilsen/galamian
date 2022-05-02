@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import useTranslation from 'next-translate/useTranslation';
 
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react';
@@ -18,6 +19,8 @@ function classNames(...classes) {
 }
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-white">
       <main>
@@ -43,10 +46,15 @@ export default function Hero() {
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 flex items-end justify-center h-full">
                   <h1 className="text-center text-4xl sm:text-5xl lg:text-6xl tracking-wide">
-                    <span className="block text-white">
-                      Academia Internacional
+                    <span className="block text-gold-500">
+                      {t('inicio:title_1')}
                     </span>
-                    <span className="block text-gold-500">Galamian</span>
+                    <span className="block text-white">
+                      {t('inicio:title_2')}
+                    </span>
+                    <span className="block text-gold-500">
+                      {t('inicio:title_3')}
+                    </span>
                   </h1>
                 </div>
               </div>

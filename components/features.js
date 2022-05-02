@@ -1,39 +1,37 @@
-/* This example requires Tailwind CSS v2.0+ */
 import {
   LibraryIcon,
   AcademicCapIcon,
   UserCircleIcon,
   UserGroupIcon,
 } from '@heroicons/react/outline';
-
-const features = [
-  {
-    name: 'La Academia',
-    description:
-      'Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con la estimable colaboración de Fundación Unicaja.',
-    icon: LibraryIcon,
-  },
-  {
-    name: 'Estudiar en la AIG',
-    description:
-      'Cuando decides estudiar en la Academia Internacional Galamian, estás apostando por una educación musical de calidad, y emprendes el primer paso hacia la profesionalización de tu carrrera artística.',
-    icon: AcademicCapIcon,
-  },
-  {
-    name: 'Los Profesores',
-    description:
-      'La Academia Internacional Galamian cuenta con un equipo de pedagogos del mayor prestigio internacional, cuya convergencia tan sólo es posible en este centro educativo.',
-    icon: UserCircleIcon,
-  },
-  {
-    name: 'Galamian Junior',
-    description:
-      'Los profesionales que conforman esta institución se dedican íntegramente a garantizar tu aprendizaje con las metodologías más actuales y avanzadas del panorama musical.',
-    icon: UserGroupIcon,
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Features() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      name: `${t('inicio:feature_name_1')}`,
+      description: `${t('inicio:feature_description_1')}`,
+      icon: LibraryIcon,
+    },
+    {
+      name: `${t('inicio:feature_name_2')}`,
+      description: `${t('inicio:feature_description_2')}`,
+      icon: AcademicCapIcon,
+    },
+    {
+      name: `${t('inicio:feature_name_3')}`,
+      description: `${t('inicio:feature_description_3')}`,
+      icon: UserCircleIcon,
+    },
+    {
+      name: `${t('inicio:feature_name_4')}`,
+      description: `${t('inicio:feature_description_4')}`,
+      icon: UserGroupIcon,
+    },
+  ];
+
   return (
     <div className="bg-white overflow-hidden">
       <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -74,8 +72,13 @@ export default function Features() {
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div className="lg:col-span-1">
             <h2 className="text-3xl text-neutral-900 sm:text-4xl tracking-wide">
-              Academia Internacional{' '}
-              <span className="text-gold-600">Galamian</span>
+              <span className="text-gold-600 block">
+                {t('inicio:feature_title_1')}
+              </span>
+              {t('inicio:feature_title_2')}{' '}
+              <span className="text-gold-600">
+                {t('inicio:feature_title_3')}
+              </span>
             </h2>
           </div>
           <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">

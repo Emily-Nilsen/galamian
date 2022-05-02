@@ -5,66 +5,67 @@ import PianoProfesores from '../components/profesores/piano-profesores';
 import GrupalesProfesores from '../components/profesores/grupales-profesores';
 import { Fragment } from 'react';
 import { Tab } from '@headlessui/react';
-
-const tabs = [
-  {
-    name: 'Violín/Viola',
-    features: [
-      {
-        component: <ViolinProfesores />,
-      },
-    ],
-  },
-  {
-    name: 'Violonchelo',
-    features: [
-      {
-        component: <VioloncheloProfesores />,
-      },
-    ],
-  },
-  {
-    name: 'Voz',
-    features: [
-      {
-        component: <VozProfesores />,
-      },
-    ],
-  },
-  {
-    name: 'Piano',
-    features: [
-      {
-        component: <PianoProfesores />,
-      },
-    ],
-  },
-  {
-    name: 'Grupales',
-    features: [
-      {
-        component: <GrupalesProfesores />,
-      },
-    ],
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 const Profesores = () => {
+  const { t } = useTranslation();
+
+  const tabs = [
+    {
+      name: `${t('profesores:tab_violin')}`,
+      features: [
+        {
+          component: <ViolinProfesores />,
+        },
+      ],
+    },
+    {
+      name: `${t('profesores:tab_piano')}`,
+      features: [
+        {
+          component: <PianoProfesores />,
+        },
+      ],
+    },
+    {
+      name: `${t('profesores:tab_cello')}`,
+      features: [
+        {
+          component: <VioloncheloProfesores />,
+        },
+      ],
+    },
+    {
+      name: `${t('profesores:tab_voice')}`,
+      features: [
+        {
+          component: <VozProfesores />,
+        },
+      ],
+    },
+    {
+      name: `${t('profesores:tab_groups')}`,
+      features: [
+        {
+          component: <GrupalesProfesores />,
+        },
+      ],
+    },
+  ];
   return (
     <div>
       <div className="relative bg-white pt-16 sm:pt-24">
         <div className="pb-0 lg:pb-4 relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
           <h2 className="text-center text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-            Un equipo <span className="text-gold-600">excepcional</span>
+            {t('profesores:title_1')}
+            <span className="text-gold-600">{t('profesores:title_2')}</span>
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-neutral-500">
-            La Academia Internacional Galamian cuenta con un equipo de pedagogos
-            del mayor prestigio internacional, cuya convergencia tan sólo es
-            posible en este centro educativo.
+            {t('profesores:subtitle')}
           </p>
         </div>
         <section

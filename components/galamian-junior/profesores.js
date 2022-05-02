@@ -15,59 +15,63 @@ export default function ProfesoresJunior() {
   const people = [
     {
       name: 'Laura Romero',
-      role: `${t('galamianJunior:laura_role')}`,
+      role: `${t('common:laura_role')}`,
       imageUrl: '/static/galamian-junior/laura.jpg',
-      bio_01: `${t('galamianJunior:laura_bio_01')}`,
-      bio_02: `${t('galamianJunior:laura_bio_02')}`,
-      bio_03: `${t('galamianJunior:laura_bio_03')}`,
+      bio_01: `${t('common:laura_para_1')}`,
+      bio_02: `${t('common:laura_para_2')}`,
+      bio_03: `${t('common:laura_para_3')}`,
     },
     {
       name: 'Irene Ortega',
-      role: `${t('galamianJunior:irene_role')}`,
+      role: `${t('common:irene_role')}`,
       imageUrl: '/static/galamian-junior/irene.jpg',
-      bio_01: `${t('galamianJunior:irene_bio_01')}`,
-      bio_02: `${t('galamianJunior:irene_bio_02')}`,
-      bio_03: `${t('galamianJunior:irene_bio_03')}`,
+      bio_01: `${t('common:irene_para_1')}`,
+      bio_02: `${t('common:irene_para_2')}`,
+      bio_03: `${t('common:irene_para_3')}`,
     },
     {
       name: 'Jesús Reina',
-      role: `${t('galamianJunior:jesus_role')}`,
+      role: `${t('common:jesus_role')}`,
       imageUrl: '/static/galamian-junior/jesus.jpg',
-      bio_01: `${t('galamianJunior:jesus_bio_01')}`,
-      bio_02: `${t('galamianJunior:jesus_bio_02')}`,
-      bio_03: `${t('galamianJunior:jesus_bio_03')}`,
+      bio_01: `${t('common:jesus_para_1')}`,
+      bio_02: `${t('common:jesus_para_1')}`,
+      bio_03: `${t('common:jesus_para_1')}`,
+      website: `${t('common:jesus_website')}`,
+      href: `${t('common:jesus_href')}`,
     },
     {
-      name: 'Anna Margrethe Nilsen',
-      role: `${t('galamianJunior:anna_role')}`,
+      name: 'Anna Nilsen',
+      role: `${t('common:anna_role')}`,
       imageUrl: '/static/galamian-junior/anna.jpg',
-      bio_01: `${t('galamianJunior:anna_bio_01')}`,
-      bio_02: `${t('galamianJunior:anna_bio_02')}`,
-      bio_03: `${t('galamianJunior:anna_bio_03')}`,
+      bio_01: `${t('common:anna_para_1')}`,
+      bio_02: `${t('common:anna_para_2')}`,
+      bio_03: `${t('common:anna_para_3')}`,
+      website: `${t('common:anna_website')}`,
+      href: `${t('common:anna_href')}`,
     },
     {
       name: 'Natalia Kuchaeva',
-      role: `${t('galamianJunior:natalia_role')}`,
+      role: `${t('common:natalia_role')}`,
       imageUrl: '/static/galamian-junior/natalia.jpg',
-      bio_01: `${t('galamianJunior:natalia_bio_01')}`,
-      bio_02: `${t('galamianJunior:natalia_bio_02')}`,
-      bio_03: `${t('galamianJunior:natalia_bio_03')}`,
+      bio_01: `${t('common:natalia_para_1')}`,
+      bio_02: `${t('common:natalia_para_2')}`,
+      bio_03: `${t('common:natalia_para_3')}`,
     },
     {
       name: 'Vicente Chuliá',
-      role: `${t('galamianJunior:vicente_role')}`,
+      role: `${t('common:vicente_role')}`,
       imageUrl: '/static/galamian-junior/vicente.jpg',
-      bio_01: `${t('galamianJunior:vicente_bio_01')}`,
-      bio_02: `${t('galamianJunior:vicente_bio_02')}`,
-      bio_03: `${t('galamianJunior:vicente_bio_03')}`,
+      bio_01: `${t('common:vicente_para_1')}`,
+      bio_02: `${t('common:vicente_para_2')}`,
+      bio_03: `${t('common:vicente_para_3')}`,
     },
     {
       name: 'Jose Andrés Fernández',
-      role: `${t('galamianJunior:jose_role')}`,
+      role: `${t('common:jose_role')}`,
       imageUrl: '/static/galamian-junior/jose-camacho.jpg',
-      bio_01: `${t('galamianJunior:jose_bio_01')}`,
-      bio_02: `${t('galamianJunior:jose_bio_02')}`,
-      bio_03: `${t('galamianJunior:jose_bio_03')}`,
+      bio_01: `${t('common:jose_para_1')}`,
+      bio_02: `${t('common:jose_para_2')}`,
+      bio_03: `${t('common:jose_para_3')}`,
     },
   ];
 
@@ -185,16 +189,16 @@ export default function ProfesoresJunior() {
                                   </svg>
                                   <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                                     <figure>
-                                      <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                                        <div className="object-cover object-center overflow-hidden shadow-lg">
+                                      <div className="aspect-w-12 aspect-h-10 lg:aspect-none">
+                                        <div className="object-cover object-center overflow-hidden shadow-none">
                                           <Image
                                             src={person.imageUrl}
                                             alt={person.name}
-                                            width={1184}
+                                            width={962}
                                             height={802}
                                             layout="responsive"
                                             objectFit="cover"
-                                            objectPosition="top"
+                                            objectPosition="center"
                                           />
                                         </div>
                                       </div>
@@ -219,6 +223,16 @@ export default function ProfesoresJunior() {
                                   <div className="mx-auto mt-5 prose prose-gold text-neutral-500 lg:max-w-none lg:row-start-1 lg:col-start-1">
                                     <p>{person.bio_02}</p>
                                     <p>{person.bio_03}</p>
+                                    <div>
+                                      <a
+                                        href={person.href}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="text-base leading-7 text-neutral-600 font-semibold hover:text-gold-600 transition duration-200 ease-in-out no-underline"
+                                      >
+                                        {person.website}
+                                      </a>
+                                    </div>
 
                                     <Menu.Item>
                                       <p className="pt-4 text-base transition duration-200 ease-in-out cursor-pointer text-gold-600 hover:text-neutral-900">

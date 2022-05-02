@@ -74,7 +74,7 @@ export default function ProfesoresVioloncelo() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
                     <Image
-                      src="/static/estudia/cello/oyvind-gimse.webp"
+                      src="/static/profesores/oyvind-gimse.webp"
                       alt="Øyvind Gimse"
                       width={2854}
                       height={1665}
@@ -137,7 +137,7 @@ export default function ProfesoresVioloncelo() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
                     <Image
-                      src="/static/estudia/cello/tilman-mahrenholz.webp"
+                      src="/static/profesores/tilman-mahrenholz.webp"
                       alt="Tilman Mahrenholz"
                       width={1234}
                       height={720}

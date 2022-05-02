@@ -22,7 +22,8 @@ export default function ViolinProfesores() {
       sentence_01: `${t('common:jesus_para_1')}`,
       sentence_02: `${t('common:jesus_para_2')}`,
       sentence_03: `${t('common:jesus_para_3')}`,
-      sentence_04: `${t('common:jesus_para_4')}`,
+      website: `${t('common:jesus_website')}`,
+      href: `${t('common:jesus_href')}`,
     },
     {
       id: `/#anna`,
@@ -33,26 +34,29 @@ export default function ViolinProfesores() {
       sentence_01: `${t('common:anna_para_1')}`,
       sentence_02: `${t('common:anna_para_2')}`,
       sentence_03: `${t('common:anna_para_3')}`,
+      website: `${t('common:anna_website')}`,
+      href: `${t('common:anna_href')}`,
     },
     {
       name: 'Laura Romero',
-      role: 'Profesora Asistente',
+      role: `${t('common:laura_role')}`,
       imageUrl: '/static/profesores/laura-romero.jpeg',
-      instrument: 'Violín & Viola',
-      sentence_01: `Nacida en Málaga, Laura Romero Alba comienza a tocar el violín a la edad de 7 años. Tras concluir su formación en el Conservatorio Superior de Málaga y en la Academia Internacional ‘Ivan Galamian ’, se traslada a Estados Unidos, donde finaliza sus estudios de postgrado con el maestro Grigory Kalinovsky, en la Universidad de Indiana.`,
-      sentence_02: `Durante su estancia en los Estados Unidos, ha formado parte de orquestas como Columbus Indiana Philarmonic, Richmond Symphony Orchestra o Terre Haute Symphony Orchestra. Ha recibido masterclasses de la mano de célebres pedagogos como Pinchas Zukerman , Patinka Kopec,Jesús Reina, o Anna Margrethe Nilsen.`,
-      sentence_03: `Ha ofrecido conciertos en distintos puntos de lageografía española así como en otras ciudades del extranjero, como Oslo (Noruega) y Houston (Texas, Estados Unidos). Ha actuado recientemente junto a la Hispanian Symphony Orchestra, la Orquesta Filarmónica de Málaga, la Orquesta Provincial de Málaga y la Joven Orquesta Nacional de España.`,
-      sentence_04: `En el ámbito de la música de cámara, participa en diversas agrupaciones como ‘River Quintet’ o ‘Camerata Bitácora’ tocando tanto el violín como la viola, realizando conciertos por la ciudad malagueña. Ha participado en festivales como el pasado VII Festival Internacional de Música de Cámara Málaga Clásica.`,
+      instrument: `${t('common:laura_instrument')}`,
+      sentence_01: `${t('common:laura_para_1')}`,
+      sentence_02: `${t('common:laura_para_2')}`,
+      sentence_03: `${t('common:laura_para_3')}`,
+      website: `${t('common:laura_website')}`,
+      href: `${t('common:laura_href')}`,
     },
     {
       name: 'Alfredo García',
-      role: 'Profesor Invitado',
+      role: `${t('common:alfredo_role')}`,
       imageUrl: '/static/profesores/alfredo-garcia.jpg',
-      instrument: 'Violín & Viola',
-      sentence_01: `Alfredo García comienza sus estudios musicales en Salamanca, con Consolación Muñoz. Continúa en Madrid con Francisco Martín, el reconocido pedagogo Antonio Arias y, en el RCSMM, con el Catedrático y concertino de la ONE, Víctor Martín.`,
-      sentence_02: `Obtiene el Premio de Honor Fin de Carrera en la especialidad de violín. En 1993 gana el Premio Nacional de Violín Pablo Sarasate. En 1998 es el primer clasificado en el Concurso Nacional de violín “Ciudad de Soria”. Becado por el Ministerio de Educación y por la Fundación Fulbright, cursa un Performer Diploma y un Master of Violin en la Jacob’s School of Music (Indiana University, USA) entre los años 1996 y 2000. Allí estudiacon el mundialmente conocido pedagogo Mauricio Fuks, siendo profesor asistente de su clase durante 4 años. Ha recibido clases de los Maestros Pedro León, J.L. García Asensio, Lorand Fenyves, G. Sebok, J. Starker, J. Dunham (Cuarteto Cleveland), Alan de Verich, E.Bitteti y un innumerable número de grandes músicos de talla mundial.`,
-      sentence_03: `Sus alumnos han ingresado en las mejores orquestas de España y en las Escuelas y Universidades de Música más prestigiosas. Es profesor en el Conservatorio Profesional de Música “Amaniel” y en la facultad de música de la Universidad Alfonso X de Madrid. Ha asistido también como Assistant Professor en el Curso de verano del Mozarteum en Salzburgo. Desarrolla asimismo una intensa actividad concertística, tanto como solista como miembro integrante de diversos grupos de cámara. Ha sido Concertino de la OS del Infantado de Guadalajara y es Concertino de la Orquesta de Cámara SIC, dirigida por el maestro Sebastián Mariné. Es miembro fundador del cuarteto “Areteia”.`,
-      sentence_04: `Ha tocado en España, Austria, Japón, EEUU, Italia y otros países. Ha colaborado con Sebastián Mariné, Graham Jackson, Alberto Rosado, Daniel del Pino, Gerardo López Laguna, Mariana Gurkova, Michal Dmochowski, Pedro Carbajosa, Vadim Glazkov, Elena Aguado, Fabián Panisello, entre otros. Ha interpretado varias veces los 24 Caprichos de Paganini en público, en una sola sesión. Acaba de grabar un CD con la casa discográfica Verso en el que interpreta las 6 Sonatas para violín solo de Eugene Ysaye. Próximamente verán la luz el primer y segundo volúmenes de su Método para Violín. Interpreta sus conciertos con el violín “Dorna”, construido especialmente para él por el gran maestro luthier J.M. Lozano.`,
+      instrument: `${t('common:alfredo_instrument')}`,
+      sentence_01: `${t('common:alfredo_para_1')}`,
+      sentence_02: `${t('common:alfredo_para_2')}`,
+      sentence_03: `${t('common:alfredo_para_3')}`,
+      sentence_04: `${t('common:alfredo_para_4')}`,
     },
     {
       name: 'Grigory Kalinovsky',
@@ -132,10 +136,10 @@ export default function ViolinProfesores() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-3xl tracking-wide text-gold-600 sm:text-4xl">
-              Violín y Viola
+              {t('profesores:study_violin')}
             </h2>
             <p className="text-base text-neutral-500">
-              Haga clic en el nombre para leer más sobre cada pedagogo.
+              {t('profesores:study_text')}
             </p>
           </div>
           <div className="lg:col-span-2">
@@ -242,7 +246,7 @@ export default function ViolinProfesores() {
                                     <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
                                       <figure>
                                         <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                                          <div className="shadow-lg object-cover object-center overflow-hidden">
+                                          <div className="shadow-none object-cover object-center overflow-hidden">
                                             <Image
                                               src={person.imageUrl}
                                               alt={person.name}
@@ -276,6 +280,16 @@ export default function ViolinProfesores() {
                                       <p>{person.sentence_02}</p>
                                       <p>{person.sentence_03}</p>
                                       <p>{person.sentence_04}</p>
+                                      <div>
+                                        <a
+                                          href={person.href}
+                                          target="_blank"
+                                          rel="noreferrer"
+                                          className="text-base leading-7 text-neutral-600 font-semibold hover:text-gold-600 transition duration-200 ease-in-out no-underline"
+                                        >
+                                          {person.website}
+                                        </a>
+                                      </div>
 
                                       <Menu.Item>
                                         <p className="text-gold-600 text-base hover:text-neutral-900 transition duration-200 ease-in-out pt-4">

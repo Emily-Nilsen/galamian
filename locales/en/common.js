@@ -92,17 +92,56 @@ const common = {
   jesus_para_3: `Jesús Reina appears on the weekly television success of Canal Sur, "Tierra de Talento", where, in addition to jury duty for the program, he collaborates with great artists from various musical genres, such as José Mercé, María Villalón, Mariola Cantarero, India Martínez, Pasión Vega, El Kanka and Ale Romero.`,
   jesus_website: `www.jesusreina.es`,
   jesus_href: `https://www.jesusreina.es/`,
+
   // Anna Margrethe Nilsen
   anna_role: `Principal Professor`,
   anna_instrument: `Violin & Viola`,
-  anna_para_1: `La violinista noruega Anna Margrethe Nilsen es cofundadora y directora de la Academia Galamian y el Festival Málaga Clásica. Aclamada por la crítica por su forma de tocar “llena de dulzura, entusiasmo, alegría y rico timbre”, Nilsen es artista de Centaur Records y ganadora en los concursos Sparre Olsen, Eisenberg-Fried y Nacional Noruego.`,
-  anna_para_2: `Estudió con Isaac Schuldman, Patinka Kopec y Pinchas Zukerman como estudiante de la Manhattan School of Music y ha actuado en salas como Wiener Konzerthaus, Auditorio de Oslo, Filarmonía de San Petersburgo, Carnegie Hall, y con orquestas como la Filarmónica de Bergen, Kaliningrado de Cámara, Sinfónica de Trondheim, Juenesses Musicales, Nóvgorod de Cámara, Ópera Noruega, Sinfónica de San Petersburgo y Bielorrusia de Cámara.`,
-  anna_para_3: `Ha
-  colaborado con artistas como Pinchas Zukerman, Paul Neubauer, Liza Fershtman, Amanda Forsyth y Guy Braustein.`,
+  anna_para_1: `Norwegian violinist Anna Margrethe Nilsen is co-founder and director of the Galamian Academy and the Málaga Clásica Festival. She is a Centaur Records artist and winner of the Sparre Olsen, Eisenberg-Fried and Norwegian National competitions. Critics acclaim her for playing “full of sweetness, enthusiasm, joy and rich timbre“.`,
+  anna_para_2: `Anna Nilsen studied with Isaac Schuldman, Patinka Kopec and Pinchas Zukerman as a student at the Manhattan School of Music and has performed in venues such as Wiener Konzerthaus, Oslo Auditorium, St. Petersburg Philharmonic, Carnegie Hall, and with orchestras such as the Bergen Philharmonic, Kaliningrad of Chamber, Trondheim Symphony, Juenesses Musicales, Novgorod Chamber, Norwegian Opera, Saint Petersburg Symphony and Belarus Chamber.`,
+  anna_para_3: `She has collaborated with artists such as Pinchas Zukerman, Paul Neubauer, Liza Fershtman, Amanda Forsyth, and Guy Braunstein.`,
   anna_website: `www.annanilsen-violin.com`,
   anna_href: `https://www.annanilsen-violin.com/`,
 
-  // Profesores del Estudio de Violín/Viola
+  // Laura Romero
+  laura_role: `Assistant Professor`,
+  laura_instrument: `Violin & Viola`,
+  laura_para_1: `Born in Malaga, Laura Romero Alba began playing the violin at age seven.`,
+  laura_para_2: `She completed her training at the Superior Conservatory of Malaga and the Galamian International Academy with professors Anna Nilsen and Jesús Reina. Later, she moved to the United States, where she did postgraduate studies with professor Grigory Kalinovsky at Indiana University. Laura Romero also received masterclasses from famous pedagogues such as Pinchas Zukerman and Patinka Kopec.`,
+  laura_para_3: `Laura Romero has performed in concerts throughout Europe and the United States. She has formed part of orchestras such as the Columbus Indiana Philharmonic, the Richmond Symphony Orchestra, the Terre Haute Symphony Orchestra, the Malaga Philharmonic Orchestra the National Youth Orchestra of Spain. Currently, Laura is the assistant professor of violin and viola at the Galamian International Academy in Málaga.`,
+
+  // Irene Ortega
+  irene_role: `Resident Professor`,
+  irene_para_1: `The violinist was born in Jerez de la Frontera, and she received her first violin lessons at age four.`,
+  irene_para_2: `After receiving advice from violinists of the stature of Pinchas Zukerman, Patinka Kopec, Grigory Kalinovsky, Alexander Sitkovetsky and Bretislav Novotný, in 2019, Irene Ortega obtained her degree from the Galamian International Academy through The Royal Schools of Music, under the tutelage of the violinists Jesús Reina and Anna Nilsen.`,
+  irene_para_3: `In chamber music, Irene Ortega has trained with internationally renowned musicians such as the Casals Quartet Abel Tomás and Arnau Tomás, the pianists Josu de Solaun, Anna Petrova and Misha Dacic, and the cellists Øyvind Gimsey Kyril Zlotnikov.`,
+
+  // Alfredo García
+  alfredo_role: `Guest Professor`,
+  alfredo_instrument: `Violin & Viola`,
+  alfredo_para_1: `Alfredo García began his musical studies in Salamanca, with Consolación Muñoz. He continued in Madrid with Francisco Martín, the renowned pedagogue Antonio Arias and, at the RCSMM, with the Professor and concertmaster of the ONE, Víctor Martín.`,
+  alfredo_para_2: ``,
+  alfredo_para_3: ``,
+  alfredo_para_4: ``,
+
+  // Natalia Kuchaeva
+  natalia_role: `Brainin Method`,
+  natalia_para_1: `Coming from a family of scientists and with a deep musical tradition, the Moscow pianist Natalia Kucháeva has lived in Spain since 2009. Her repertoire covers a wide range of styles, from the Baroque to the 21st century.`,
+  natalia_para_2: `Natalia Kucháeva received solid musical training at the School of Music affiliated with the P.I. Tchaikovsky in Moscow. Later, she graduated and completed postgraduate studies at the Gnessin Academy under the direction of Master Vladimir Tropp.`,
+  natalia_para_3: `She perfects herself at the Superior School of Music in Lucerne (Switzerland) with the internationally renowned pianist Konstantin Lifschitz. She currently develops her work as a teacher by applying the Brainin Method in her teaching.`,
+
+  // Vicente Chulía
+  vicente_role: `Fundamental Principles of Musical Interpretation`,
+  vicente_para_1: `Born in Spain, the conductor and composer Vicente Chulía incorporates both inseparable facets of musical art into a broad idea of ​​symphonic interpretation. He has studied conducting at the “Musikene” Superior Conservatory of Music in San Sebastián with Maestro Enrique García Asensio. He is a graduate conductor at the Royal Superior Conservatory of Madrid with Antonio Moya.`,
+  vicente_para_2: `He also has training in harmony, counterpoint, fugue, orchestration and composition with Salvador Chuliá Hernández and musicology with José Climent.`,
+  vicente_para_3: `Vicente Chulía currently has a comprehensive catalogue of publications of more than seventy symphonic, chamber and solo works that he performed nationally and internationally.`,
+
+  // Jose Camacho
+  jose_role: `Orchestra`,
+  jose_para_1: `José Andrés Fernández Camacho has a diploma in orchestra conducting from the Hochschule für Musik in Basel (Switzerland), under the tutelage of maestro Rodolfo Fischer.`,
+  jose_para_2: `At the same institution, he studied for a Master's degree in musical performance on clarinet and a Master's degree in solo performance with Professor François Benda.`,
+  jose_para_3: `His career as an orchestra conductor has led him to receive the I International Course on Orchestral Conducting in La Serena (Chile). Furthermore, he has conducted orchestras in Spain and Switzerland, such as the Orquesta Juventus Musica Basel, Ensemble de la Hochschule für Musik Basel, Orquesta Málaga Camerata and the Universidad de la Serena Orchestra, among others.`,
+
+  // Profesores del Estudio de Piano
   // Misha Dacić
   misha_role: `Principal Guest Professor`,
   misha_instrument: `Piano`,
@@ -111,6 +150,7 @@ const common = {
   misha_para_3: `As a chamber musician, his collaboration with violinist Gilles Apap and Argentine tango maestro Pablo Ziegler are some of Dacic's highlights. He has been a member of the Miami International Piano Festival Academy since 2015. He has also received support from the Patrons of Exceptional Artists since 2003.`,
   misha_website: `www.mishadacic.com`,
   misha_href: `https://www.mishadacic.com/`,
+
   // Josu De Solaun
   josu_role: `Principal Guest Professor`,
   josu_instrument: `Piano`,
@@ -119,6 +159,20 @@ const common = {
   josu_para_3: `Josu De Solaun is a winner of the First Prize of the XIII George Enescu International Piano Competition, the XV José Iturbi International Piano Competition and the First Piano Competition of the European Union. He is an extraordinarily prolific pianist-composer and performs in many of the most prestigious venues globally as a concert soloist with orchestras. In addition, he performs as a chamber musician, recitalist and improviser. He is also a published poet.`,
   josu_website: `www.josudesolaun.com`,
   josu_href: `https://www.josudesolaun.com/`,
+
+  // Antonio Ortiz
+  antonio_role: `Guest Professor`,
+  antonio_instrument: `Piano`,
+  antonio_para_1: `Currently Professor of Piano at the Conservatorio Superior de Música de Málaga, Antonio Ortiz combines teaching with his concert activity, regularly being invited to participate in renowned national and international venues.`,
+  antonio_para_2: `He studied with masters such as Dimitri Bashkirov and Claudio Martínez Mehner at the "Reina Sofía" Higher School of Music in Madrid, Josep María Colom at the University of Alcalá, Marie Françoise Buquet in Paris and José Felipe Díaz at the Superior Conservatory of Music of Malaga.`,
+  antonio_para_3: `Antonio Ortiz has performed concerts with leading Spanish orchestras such as the Spanish Radio Television Symphony Orchestra, the National Youth Orchestra of Spain and the Malaga Philharmonic Orchestra, under the direction of Aldo Ceccato, Bruno Aprea, Fusao Kajima, Pablo Mielgo, Manuel Hernández-Silva, Roselín Pabón and Blanca Trabalón. He has won prizes in the contests "Manuel de Falla" and "José Roca" and made different recordings for TVE and Radio Clásica of RNE.`,
+
+  // Miguel Ángel Latorre
+  miguel_role: `Accompanying Pianist`,
+  miguel_instrument: `Piano`,
+  miguel_para_1: `He studied piano at the Gonzalo Martín Tenllado Professional Conservatory and the Superior Conservatory of Music of Malaga, finishing in 2018 under the tutelage of Juan Jesús Peralta.`,
+  miguel_para_2: `In 2015, he did an Erasmus stay at the Royal Irish Academy of Music to study with Professor Therese Fahy. Miguel Ángel Latorre holds a Master's degree in Musical Heritage from the University of Granada.`,
+  miguel_para_3: `He continues his training with the pianists Nuria Perles and Javier Herreros. He is also a finalist in three editions of the Málaga Crea Festival of Young Performers, obtaining the Second Prize in 2018. Since 2019, he has collaborated with the Ivan Galamian International Academy as an accompanying pianist.`,
 
   // Profesores del Estudio de Violoncelo
   // Øyvind Gimse
@@ -134,6 +188,13 @@ const common = {
   tilman_para_1: `Tilman Mahrenholz was born in Germany and received his training at the "Hochschule für Musik Saar" in Saarbrücken and at the "Folkwang-Hochschule" in Essen. Later, he moved to New York, receiving a scholarship from the prestigious Juilliard School of Music. His teachers include Ulrich Voss, Prof. Christoph Richter, and Carter Brey.`,
   tilman_para_2: `Tilman Mahrenholz was a founding member of the "Alborán Quartet". In addition, he has formed parts of other chamber and orchestral ensembles throughout his career, including the Saarbrücken Radio Symphony Orchestra and the City of Granada Orchestra. He has won three prizes in the German Youth Competition. He has also participated in International Music Festivals such as the Bain de Musique Flaine and the Aspen Music Festival.`,
   tilman_para_3: `Soloist, chamber and symphonic concerts have taken him to countries such as Germany, Austria, France, the USA, Luxembourg, Morocco and Spain. Tilman Mahrenholz is currently a cello soloist with the Malaga Philharmonic Orchestra.`,
+
+  // Gabriel Ureña
+  gabriel_role: `Guest Professor`,
+  gabriel_instrument: `Cello`,
+  gabriel_para_1: `Gabriel Ureña has performed as a soloist with the London City Orchestra, Oviedo Filarmonía and Arteus Orquesta and in prestigious international venues such as the Musikverein (Vienna), Champs-Élysées Theater (Paris), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) and the Teatro de la Maestranza (Seville).`,
+  gabriel_para_2: `He has shared the stage with artists such as Leo Nucci, Edita Gruberová, Ainhoa ​​Arteta, Ruggero Raimondi, Anna Netrebko, Ilya Gringolts, Benjamin Schmid, the Labèque sisters, Natalia Gutman and Midori. Furthermore, Gabriel Ureña has won the First Prize at the Cello de Arquillos Competition (Jaén ) and the "Ciudad de Manresa" International Chamber Music Competition.`,
+  gabriel_para_3: `Among his recent career milestones is the publication of his first CD, with the Aria Classics label, with works by Prokofiev, Shostakovich and Rachmaninov, together with the pianist Patxi Aizpiri, his solo concert with the Malaga Philharmonic Orchestra and his debut with the National Orchestra of Colombia at the Teatro Colón in Bogotá.`,
 
   // Profesores del Estudio de Voz
   // Nils Georg
@@ -151,6 +212,15 @@ const common = {
   sergio_para_1: `He is a piano, chamber music, solfeggio, and music theory professor at the Conservatorio Superior de Música de Málaga, where he has received the Honor Award in Piano and Chamber Music. He is also a tenured professor at the Manuel Carra Professional Conservatory of Music (Málaga).`,
   sergio_para_2: `He has been director of the Gonzalo Martín Tenllado (Málaga) and Padre Manuel Gámez (Fuengirola) Professional Conservatories, assistant professor of the masters Suso Mariátegui and Edemiro Arnaltes, first pianist of the Malaga Opera Choir and pianist of the actress and singer Imperio Argentina and of Montserrat Caballe.`,
   sergio_para_3: `He received the Silver Badge for Artistic Merit by the Cultural Foundation of the City Council of La Línea de la Concepción and has been a jury member of the IX Campillos International Piano Competition. He is also a master of repertoire and assistant professor of the Norwegian tenor Nils Nilsen at the Galamian International Academy. He regularly collaborates with the Malaga Philharmonic Orchestra.`,
+
+  // Mariola Cantarero
+  mariola_role: `Guest Professor`,
+  mariola_instrument: `Voice`,
+  mariola_para_1: `Mariola Cantarero has been awarded in different international singing competitions such as "Francisco Viñas", "Operalia ́99", "Pedro Lavirgen", and "A.S.L.I.C.O. 2000", and received awards such as "Current Opera Award", "Revelation of the circle of friends of the Liceo", "Image Award of the City of Granada", "Critical Eye of RNE", "The Honorable Mention of the Diputación de Granada", "The Gold Medal of the City of Granada", as well as "The Gold Medal of Andalusia".`,
+  mariola_para_2: `After her debut at the Carlo Felice Theater in Genova, she became a regular soprano at major theaters such as the Teatro Real de Madrid, Liceo de Barcelona, Maggio Fiorentino, San Carlo di Napoli, L'Opera di Roma, Rossini Opera Festival, among others.`,
+  mariola_para_3: `Mariola Cantarero has been managed by directors such as Zubin Mehta, Alberto Zedda, Jesús López Cobos, Daniel Oren, Campanella, and Roberto Abbado. Among her extensive discography, it is worth highlighting "Luisa Fernanda" with Plácido Domingo and "Falstaff" directed by Zubin Mehta.`,
+  mariola_website: `www.mariola-cantarero.es`,
+  mariola_href: `https://mariola-cantarero.es/`,
 
   // Requisitos
   requisitos_subtitle: `Requirements of`,

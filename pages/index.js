@@ -13,6 +13,7 @@ export default function Home() {
       {/* School features */}
       <Features />
       {/* Testimonial */}
+
       <Testimonial />
       {/* Noticias */}
       <Noticias />

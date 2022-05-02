@@ -1,30 +1,36 @@
-const posts = [
-  {
-    title: 'Galamían Junior',
-    href: '/galamian-junior',
-    sentence01: `Encuentra información sobre el curso ${new Date().getFullYear()}/${
-      new Date().getFullYear() + 1
-    } para el Estudio Junior de violín y
-      viola.`,
-    sentence02: `Los alumnos que superen las audiciones convocadas para junio de ${new Date().getFullYear()} comenzarán a estudiar en la AIG Junior a partir de septiembre de ${new Date().getFullYear()}.`,
-    date: `Hasta junio de ${new Date().getFullYear()}`,
-    datetime: '2020-03-10',
-  },
-  {
-    title: 'Inscripción a las audiciones de acceso',
-    href: '/estudia',
-    sentence01: `La Academia Internacional Galamian abre el periodo de inscripción a las audiciones de acceso al próximo curso, ${new Date().getFullYear()}/
-      ${new Date().getFullYear() + 1}.`,
-    sentence02:
-      'Debido a la situación causada por la pandemia, estas audiciones se llevarán a cabo a través de vídeo. La inscripción está abierta hasta el 15 de julio.',
-    sentence03:
-      'Abajo puedes conocer todos los detalles para participar en las audiciones.',
-    date: 'Hasta el 15 de julio',
-    datetime: '2020-03-16',
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Noticias() {
+  const { t } = useTranslation();
+
+  const posts = [
+    {
+      title: `${t('inicio:post_1_title')}`,
+      href: '/galamian-junior',
+      sentence01: `${t(
+        'inicio:post_1_sent_1_part_1'
+      )}${new Date().getFullYear()}/${new Date().getFullYear() + 1} ${t(
+        'inicio:post_1_sent_1_part_2'
+      )}`,
+      sentence02: `${t(
+        'inicio:post_1_sent_2_part_1'
+      )}${new Date().getFullYear()} ${t(
+        'inicio:post_1_sent_2_part_2'
+      )}${new Date().getFullYear()}.`,
+      date: `${t('inicio:post_1_date')}${new Date().getFullYear()}`,
+    },
+    {
+      title: `${t('inicio:post_2_title')}`,
+      href: '/estudia',
+      sentence01: `${t('inicio:post_2_sent_1')}${new Date().getFullYear()}/
+        ${new Date().getFullYear() + 1}.`,
+      sentence02: `${t('inicio:post_2_sent_2')}`,
+      sentence03: `${t('inicio:post_2_sent_3')}`,
+      date: `${t('inicio:post_2_date')}${new Date().getFullYear()}`,
+      datetime: '2020-03-16',
+    },
+  ];
+
   return (
     <section
       id="noticias"
@@ -33,7 +39,7 @@ export default function Noticias() {
       <div className="relative max-w-lg mx-auto divide-y-2 divide-neutral-200 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl tracking-wide text-gold-600 sm:text-4xl">
-            Noticias
+            {t('inicio:noticias_title')}
           </h2>
           <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center"></div>
         </div>
@@ -60,7 +66,7 @@ export default function Noticias() {
                   href={post.href}
                   className="text-base font-semibold text-gold-600 hover:text-gold-500"
                 >
-                  Lee más
+                  {t('inicio:noticias_readmore')}
                 </a>
               </div>
             </div>

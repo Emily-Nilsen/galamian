@@ -92,17 +92,57 @@ const common = {
   jesus_para_3: `Aparece semanalmente en el éxito televisivo de Canal Sur, “Tierra de Talento”, donde además de ejercer la labor de jurado del programa, colabora con grandes artistas de diversos géneros musicales, como José Mercé, María Villalón, Mariola Cantarero, India Martínez, Pasión Vega, El Kanka y Ale Romero.`,
   jesus_website: `www.jesusreina.es`,
   jesus_href: `https://www.jesusreina.es/`,
+
   // Anna Margrethe Nilsen
   anna_role: `Profesora Principal`,
   anna_instrument: `Violín & Viola`,
   anna_para_1: `La violinista noruega Anna Margrethe Nilsen es cofundadora y directora de la Academia Galamian y el Festival Málaga Clásica. Aclamada por la crítica por su forma de tocar “llena de dulzura, entusiasmo, alegría y rico timbre”, Nilsen es artista de Centaur Records y ganadora en los concursos Sparre Olsen, Eisenberg-Fried y Nacional Noruego.`,
   anna_para_2: `Estudió con Isaac Schuldman, Patinka Kopec y Pinchas Zukerman como estudiante de la Manhattan School of Music y ha actuado en salas como Wiener Konzerthaus, Auditorio de Oslo, Filarmonía de San Petersburgo, Carnegie Hall, y con orquestas como la Filarmónica de Bergen, Kaliningrado de Cámara, Sinfónica de Trondheim, Juenesses Musicales, Nóvgorod de Cámara, Ópera Noruega, Sinfónica de San Petersburgo y Bielorrusia de Cámara.`,
   anna_para_3: `Ha
-  colaborado con artistas como Pinchas Zukerman, Paul Neubauer, Liza Fershtman, Amanda Forsyth y Guy Braustein.`,
+  colaborado con artistas como Pinchas Zukerman, Paul Neubauer, Liza Fershtman, Amanda Forsyth y Guy Braunstein.`,
   anna_website: `www.annanilsen-violin.com`,
   anna_href: `https://www.annanilsen-violin.com/`,
 
-  // Profesores del Estudio de Violín/Viola
+  // Laura Romero
+  laura_role: `Profesora Asistente`,
+  laura_instrument: `Violín & Viola`,
+  laura_para_1: `Nacida en Málaga, Laura Romero Alba comienza a tocar el violín a la edad de siete años.`,
+  laura_para_2: `Tras concluir su formación en el Conservatorio Superior de Málaga y en la Academia Internacional Galamian, con los profesores Anna Margrethe Nilsen y Jesús Reina, se traslada a Estados Unidos, donde realiza sus estudios de posgrado con el maestro Grigory Kalinovsky, en la Universidad de Indiana, habiendo recibido clases magistrales de la mano de célebres pedagogos como Pinchas Zukerman o Patinka Kopec.`,
+  laura_para_3: `Ha ofrecido conciertos en distintos puntos de Europa y Estados Unidos, formando parte de orquestas como Columbus Indiana Philarmonic, Richmond Symphony Orchestra o Terre Haute Symphony Orchestra, la Orquesta Filarmónica de Málaga y la Joven Orquesta Nacional de España. Actualmente es la profesora asistente de violín y viola en la Academia Internacional Galamian en Málaga.`,
+
+  // Irene Ortega
+  irene_role: `Profesora Residente `,
+  irene_para_1: `Violinista nacida en Jerez de la Frontera, recibe sus primeras clases de violín a la edad de cuatro años.`,
+  irene_para_2: `Tras recibir consejo de violinistas de la talla de Pinchas Zukerman, Patinka Kopec, Grigory Kalinovsky, Alexander Sitkovetsky o Bretislav Novotný, en el año 2019 obtuvo su licenciatura en la Academia Internacional Galamian a través de The Royal Schools of Music, bajo la tutela de los violinistas Jesús Reina y Anna Nilsen.`,
+  irene_para_3: `En el ámbito de la música de cámara se ha formado con músicos de renombre internacional como los integrantes del Cuarteto Casals Abel Tomás y Arnau Tomás, los pianistas Josu de Solaun, Anna Petrova y Misha Dacic, y los violonchelistas Øyvind Gimsey Kyril Zlotnikov.`,
+
+  // Alfredo García
+  alfredo_role: `Profesor Invitado`,
+  alfredo_instrument: `Violín & Viola`,
+  alfredo_para_1: `Alfredo García comienza sus estudios musicales en Salamanca, con Consolación Muñoz. Continúa en Madrid con Francisco Martín, el reconocido pedagogo Antonio Arias y, en el RCSMM, con el Catedrático y concertino de la ONE, Víctor Martín.`,
+  alfredo_para_2: `Obtiene el Premio de Honor Fin de Carrera en la especialidad de violín. En 1993 gana el Premio Nacional de Violín Pablo Sarasate. En 1998 es el primer clasificado en el Concurso Nacional de violín “Ciudad de Soria”. Becado por el Ministerio de Educación y por la Fundación Fulbright, cursa un Performer Diploma y un Master of Violin en la Jacob’s School of Music (Indiana University, USA) entre los años 1996 y 2000. Allí estudiacon el mundialmente conocido pedagogo Mauricio Fuks, siendo profesor asistente de su clase durante 4 años. Ha recibido clases de los Maestros Pedro León, J.L. García Asensio, Lorand Fenyves, G. Sebok, J. Starker, J. Dunham (Cuarteto Cleveland), Alan de Verich, E.Bitteti y un innumerable número de grandes músicos de talla mundial.`,
+  alfredo_para_3: `Sus alumnos han ingresado en las mejores orquestas de España y en las Escuelas y Universidades de Música más prestigiosas. Es profesor en el Conservatorio Profesional de Música “Amaniel” y en la facultad de música de la Universidad Alfonso X de Madrid. Ha asistido también como Assistant Professor en el Curso de verano del Mozarteum en Salzburgo. Desarrolla asimismo una intensa actividad concertística, tanto como solista como miembro integrante de diversos grupos de cámara. Ha sido Concertino de la OS del Infantado de Guadalajara y es Concertino de la Orquesta de Cámara SIC, dirigida por el maestro Sebastián Mariné. Es miembro fundador del cuarteto “Areteia”.`,
+  alfredo_para_4: `Ha tocado en España, Austria, Japón, EEUU, Italia y otros países. Ha colaborado con Sebastián Mariné, Graham Jackson, Alberto Rosado, Daniel del Pino, Gerardo López Laguna, Mariana Gurkova, Michal Dmochowski, Pedro Carbajosa, Vadim Glazkov, Elena Aguado, Fabián Panisello, entre otros. Ha interpretado varias veces los 24 Caprichos de Paganini en público, en una sola sesión. Acaba de grabar un CD con la casa discográfica Verso en el que interpreta las 6 Sonatas para violín solo de Eugene Ysaye. Próximamente verán la luz el primer y segundo volúmenes de su Método para Violín. Interpreta sus conciertos con el violín “Dorna”, construido especialmente para él por el gran maestro luthier J.M. Lozano.`,
+
+  // Natalia Kuchaeva
+  natalia_role: `Método Brainin`,
+  natalia_para_1: `Procedente de una familia de científicos y de gran tradición musical, la pianista moscovita Natalia Kucháeva reside en España desde el año 2009. Su repertorio abarca el más amplio abanico de estilos desde el barroco hasta el siglo XXI.`,
+  natalia_para_2: `Recibe una sólida formación musical en la Escuela de Música afiliada al Conservatorio Estatal P.I. Tchaikovsky de Moscú y en la Academia Gnessin donde se gradúa y realiza los estudios de Posgrado bajo la dirección del maestro Vladimir Tropp.`,
+  natalia_para_3: `Se perfecciona en la Escuela Superior de Música de Lucerna (Suiza), con el pianista de reconocido prestigio internacional Konstantin Lifschitz. Actualmente desarrolla su labor como docente aplicando el Método Brainin en su enseñanza.`,
+
+  // Vicente Chulía
+  vicente_role: `Principios Fundamentales de la Interpretación Musical`,
+  vicente_para_1: `Director de orquesta y compositor español que incorpora ambas facetas inseparables del arte musical a una idea amplia de la interpretación sinfónica, ha estudiado dirección de orquesta en el Conservatorio Superior de Música “Musikene” de San Sebastián con el Maestro Enrique García Asensio y es graduado de dirección en el Real Conservatorio Superior de Madrid con Antonio Moya.`,
+  vicente_para_2: `También tiene formación de armonía, contrapunto, fuga, orquestación y composición con Salvador Chuliá Hernández y musicología con José Climent.`,
+  vicente_para_3: `En la actualidad posee un amplio catálogo de publicaciones de más de setenta obras sinfónicas, de cámara y para solista que son interpretadas a nivel nacional e internacional.`,
+
+  // Jose Camacho
+  jose_role: `Orquesta`,
+  jose_para_1: `José Andrés Fernández Camacho es diplomado en dirección de orquesta por la Hochschule für Musik de Basilea (Suiza), bajo la tutela del maestro Rodolfo Fischer.`,
+  jose_para_2: `En la misma institución, cursó estudios de Máster en interpretación musical en clarinete, así como un Máster en interpretación solista con el profesor François Benda.`,
+  jose_para_3: `Su recorrido como director de orquesta le ha llevado a ser premiado en el I Curso Internacional de Dirección Orquestal en la Serena (Chile) y a dirigir orquestas en España y Suiza, como la Orquesta Juventus Musica Basel, Ensemble de la Hochschule für Musik Basel, Orquesta Málaga Camerata y la Orquesta Universidad de la Serena, entre otras.`,
+
+  // Profesores del Estudio de Piano
   // Misha Dacić
   misha_role: `Profesor Invitado Principal`,
   misha_instrument: `Piano`,
@@ -111,6 +151,7 @@ const common = {
   misha_para_3: `La colaboración con el violinista Gilles Apap y con el maestro de tango argentino Pablo Ziegler son algunos de los momentos más destacados de Dacic como músico de cámara. Es miembro de la Miami International Piano Festival Academy desde 2015 y ha recibido el apoyo de Patrons of Exceptional Artists desde 2003.`,
   misha_website: `www.mishadacic.com`,
   misha_href: `https://www.mishadacic.com/`,
+
   // Josu De Solaun
   josu_role: `Profesor Invitado Principal`,
   josu_instrument: `Piano`,
@@ -119,6 +160,20 @@ const common = {
   josu_para_3: `Ganador del Primer Premio del XIII Concurso Internacional de Piano George Enescu, el XV Concurso Internacional de Piano José Iturbi y el Primer Concurso de Piano de la Unión Europea, es un pianista-compositor extraordinariamente prolífico que actúa en muchas de las salas más prestigiosas del mundo como solista de conciertos con orquestas, músico de cámara, recitalista e improvisador y compositor. También es un poeta publicado.`,
   josu_website: `www.josudesolaun.com`,
   josu_href: `https://www.josudesolaun.com/`,
+
+  // Antonio Ortiz
+  antonio_role: `Profesor Invitado`,
+  antonio_instrument: `Piano`,
+  antonio_para_1: `Actualmente Catedrático de Piano en el Conservatorio Superior de Música de Málaga, Antonio Ortiz compagina la docencia con su actividad concertística, siendo regularmente invitado a participar en salas de reconocido prestigio del ámbito nacional e internacional.`,
+  antonio_para_2: `Estudió con maestros de la talla de Dimitri Bashkirov y Claudio Martínez Mehner en la Escuela Superior de Música “Reina Sofía” de Madrid, Josep María Colom en la Universidad de Alcalá, Marie Françoise Buquet en París y José Felipe Díaz en Conservatorio Superior de Música de Málaga.`,
+  antonio_para_3: `Ha realizado conciertos con las principales orquestas españolas como la Orquesta Sinfónica de Radio Televisión Española, Joven Orquesta Nacional de España y Orquesta Filarmónica de Málaga, bajo la dirección de Aldo Ceccato, Bruno Aprea, Fusao Kajima, Pablo Mielgo, Manuel Hernández-Silva, Roselín Pabón y Blanca Trabalón. Ha obtenido premios en los concursos "Manuel de Falla” y "José Roca” y efectuado diferentes grabaciones para TVE y Radio Clásica de RNE.`,
+
+  // Miguel Ángel Latorre
+  miguel_role: `Pianista Acompañante`,
+  miguel_instrument: `Piano`,
+  miguel_para_1: `Realizó sus estudios de piano en el Conservatorio Profesional Gonzalo Martín Tenllado y en el Conservatorio Superior de Málaga, finalizando en 2018 bajo la tutela de Juan Jesús Peralta.`,
+  miguel_para_2: `En 2015, realiza una estancia Erasmus en la Royal Irish Academy of Music, para estudiar con la profesora Therese Fahy. Posee el título de Máster en Patrimonio Musical por la Universidad de Granada.`,
+  miguel_para_3: `Actualmente, continúa su formación con los pianistas Nuria Perles y Javier Herreros. Es finalista en tres ediciones de la Muestra de Jóvenes Intérpretes Málaga Crea, obteniendo el Segundo Premio en el año 2018. Desde 2019, colabora con la Academia Ivan Galamian como pianista acompañante.`,
 
   // Profesores del Estudio de Violoncelo
   // Øyvind Gimse
@@ -134,6 +189,13 @@ const common = {
   tilman_para_1: `Tilman Mahrenholz, nacido en Alemania, recibe su formación en la «Hochschule für Musik Saar» en Saarbrücken y en la «Folkwang-Hochschule» en Essen. Posteriormente se traslada a Nueva York, siendo becado por la prestigiosa Juilliard School of Music Entre sus Profesores figuran Ulrich Voss, Prof. Christoph Richter, y Carter Brey.`,
   tilman_para_2: `Ha sido ganador de tres premios en el Concurso Juvenil de Alemania y ha participado en Festivales Internacionales de Música como el Bain de Musique Flaine y el Aspen Music Festival. Tilman Mahrenholz fue miembro fundador del «Cuarteto Alborán», formando parte a lo largo de su carrera de otras formaciones camerísticas y orquestales, entre ellas la Orquesta Sinfónica de la Radio de Saarbrücken y la Orquesta Ciudad de Granada.`,
   tilman_para_3: `Conciertos de solista así como de cámara y sinfónicos lo han llevado por países como Alemania, Austria, Francia, EE UU, Luxemburgo, Marruecos y España. Actualmente, Tilman Mahrenholz es solista de violonchelos de la Orquesta Filarmónica de Málaga.`,
+
+  // Gabriel Ureña
+  gabriel_role: `Profesor Invitado`,
+  gabriel_instrument: `Violoncelo`,
+  gabriel_para_1: `Gabriel Ureña ha tocado como solista con la London City Orchestra, Oviedo Filarmonía o Arteus Orquesta y en salas internacionales prestigiosas como el Musikverein (Viena), Teatro de los Campos Elíseos (París), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) o el Teatro de la Maestranza (Sevilla).`,
+  gabriel_para_2: `Ha compartido escenario con artistas como Leo Nucci, Edita Gruberová, Ainhoa Arteta, Ruggero Raimondi, Anna Netrebko, Ilya Gringolts, Benjamin Schmid, las hermanas Labèque, Natalia Gutman o Midori, y ha ganado el Primer Premio del Concurso de Cello de Arquillos (Jaén) y del Concurso Internacional de Música de Cámara "Ciudad de Manresa”.`,
+  gabriel_para_3: `Entre los hitos más recientes de su carrera figuran la publicación de su primer CD, con el sello Aria Classics, con obras de Prokofiev, Shostakovich y Rachmaninov, junto al pianista Patxi Aizpiri, su concierto como solista con la Orquesta Filarmónica de Málaga o su debut con la Orquesta Nacional de Colombia en el Teatro Colón de Bogotá.`,
 
   // Profesores del Estudio de Voz
   // Nils Georg
@@ -151,6 +213,15 @@ const common = {
   sergio_para_1: `Es profesor superior de piano, música de cámara, solfeo y teoría de la música por el Conservatorio Superior de Música de Málaga, donde ha recibido el Premio de Honor en Piano y Música de Cámara. Además es profesor numerario del Conservatorio Profesional de Música Manuel Carra (Málaga).`,
   sergio_para_2: `Ha sido director de los Conservatorios Profesionales Gonzalo Martín Tenllado (Málaga) y Padre Manuel Gámez (Fuengirola), profesor asistente de los maestros Suso Mariátegui y Edemiro Arnaltes, primer pianista del Coro de Ópera de Málaga y pianista de la actriz y cantante Imperio Argentina y de Montserrat Caballé.`,
   sergio_para_3: `Recibió la insignia de Plata al Mérito Artístico por la Fundación de Cultura del Ayuntamiento de La Línea de la Concepción y ha sido jurado del IX Concurso Internacional de Piano de Campillos. Colabora habitualmente con la Orquesta Filarmónica de Málaga y es maestro repertorista y profesor asistente del tenor noruego Nils Nilsen en la Academia Internacional Galamian.`,
+
+  // Mariola Cantarero
+  mariola_role: `Profesor Invitada`,
+  mariola_instrument: `Voz`,
+  mariola_para_1: `Ha sido premiada en diferentes concursos internacionales de canto como el "Francisco Viñas", "Operalia ́99", "Pedro Lavirgen" y "A.S.L.I.C.O. 2000”, y recibido premios como "Premio ópera Actual", "Revelación del círculo de amigos del Liceo", "Premio Imagen de la Ciudad de Granada", "Ojo Crítico de RNE", "La Mención de Honor de la Diputación de Granada", "La Medalla de Oro de la Ciudad de Granada", así como "La Medalla de Oro de Andalucía”.`,
+  mariola_para_2: `Después de su debut en el teatro Carlo Felice de Genova, se convirtió en soprano habitual de los principales teatros como el Teatro Real de Madrid, Liceo de Barcelona, Maggio Fiorentino, San Carlo di Napoli, L ́Opera di Roma, Rossini Opera Festival, entre otros.`,
+  mariola_para_3: `Ha sido dirigida por directores como Zubin Mehta, Alberto Zedda, Jesús López Cobos, Daniel Oren, Campanella, o Roberto Abbado. Entre su amplia discografía cabe destacar "Luisa Fernanda" junto a Plácido Domingo y "Falstaff" dirigida por Zubin Mehta.`,
+  mariola_website: `www.mariola-cantarero.es`,
+  mariola_href: `https://mariola-cantarero.es/`,
 
   // Requisitos
   requisitos_subtitle: `Requisitos de`,

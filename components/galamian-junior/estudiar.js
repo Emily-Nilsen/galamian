@@ -60,7 +60,7 @@ export default function EstudiarJunior() {
             <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden shadow-lg">
+                  <div className="object-cover object-center overflow-hidden shadow-none">
                     <Image
                       src="/static/galamian-junior/sala-unicaja.jpg"
                       alt="Sala Unicaja de Conciertos María Cristina"
