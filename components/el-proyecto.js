@@ -129,22 +129,15 @@ export default function ElProyecto() {
           {/* Stats section */}
           <div className="mt-10">
             <dl className="grid grid-cols-3 gap-x-4 gap-y-8">
-              {/* {stats.map((stat) => ( */}
-              <div
-                // key={stat.label}
-                className="border-t-2 border-neutral-100 pt-6"
-              >
+              <div className="border-t-2 border-neutral-100 pt-6">
                 <dt className="text-base font-medium text-neutral-500">
                   {t('academia:founded')}
                 </dt>
-                <dd className="text-xl sm:text-2xl font-extrabold tracking-tight text-neutral-900">
+                <dd className="text-xl sm:text-2xl font-extrabold tracking-tight text-neutral-900 place-self-end">
                   2014
                 </dd>
               </div>
-              <div
-                // key={stat.label}
-                className="border-t-2 border-neutral-100 pt-6 col-span-2"
-              >
+              <div className="border-t-2 border-neutral-100 pt-6 col-span-2">
                 <dt className="text-base font-medium text-neutral-500">
                   {t('academia:schools')}
                 </dt>
@@ -152,7 +145,6 @@ export default function ElProyecto() {
                   <Schools />
                 </dd>
               </div>
-              {/* // ))} */}
             </dl>
             <div className="mt-10">
               <Link href="/estudia" passHref>

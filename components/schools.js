@@ -10,7 +10,7 @@ const container = {
     opacity: 1,
     transition: {
       delayChildren: 0,
-      staggerChildren: 2.5,
+      staggerChildren: 3,
     },
   },
 };
@@ -20,11 +20,10 @@ const item = {
   show: {
     opacity: [0, 1, 0],
     transition: {
-      duration: 2.5,
+      duration: 3,
       type: 'fade',
       ease: 'easeOut',
     },
-    // transitionEnd: { opacity: 1 },
   },
 };
 
@@ -46,17 +45,19 @@ export default function Schools({ isVisible }) {
   ];
 
   return (
-    <motion.ol
-      variants={container}
-      initial="hidden"
-      animate="show"
-      className="relative"
-    >
-      {schools.map((school, i) => (
-        <motion.li key={i} variants={item} exit={{ opacity: 1 }}>
-          <div className="absolute top-0 left-0 z-10">{school.name}</div>
-        </motion.li>
-      ))}
-    </motion.ol>
+    <div className="pb-10">
+      <motion.ol
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="relative"
+      >
+        {schools.map((school, i) => (
+          <motion.li key={i} variants={item} exit={{ opacity: 1 }}>
+            <div className="absolute top-0 left-0 z-10">{school.name}</div>
+          </motion.li>
+        ))}
+      </motion.ol>
+    </div>
   );
 }
