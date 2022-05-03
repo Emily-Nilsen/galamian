@@ -21,21 +21,23 @@ export default function Schools() {
   ];
 
   return (
-    <div>
+    <div className="">
       <Carousel
         infiniteLoop
         autoPlay
-        interval="3000"
-        useKeyboardArrows
+        interval="3500"
+        transitionTime="150"
+        useKeyboardArrows={false}
         swipeable={false}
-        stopOnHover
+        stopOnHover={false}
         showStatus={false}
         renderIndicator={false}
         showArrows={false}
+        paritialVisibilityGutter="40"
       >
         {schools.map((school) => (
           <div
-            className="text-left mr-6 pb-2 sm:pr-0 sm:pb-0"
+            className="text-left mr-0 pr-6 pb-2 sm:pr-0 sm:pb-0 gap-x-1 flex"
             key={school.name}
           >
             {school.name}

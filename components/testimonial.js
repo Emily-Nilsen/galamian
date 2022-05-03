@@ -45,9 +45,10 @@ export default function Testimonial() {
         <Carousel
           infiniteLoop
           autoPlay
-          interval="10000"
+          interval="9000"
+          transitionTime="500"
           useKeyboardArrows
-          swipeable
+          swipeable={false}
           stopOnHover
           showStatus={false}
         >

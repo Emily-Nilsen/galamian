@@ -137,7 +137,7 @@ export default function ElProyecto() {
                   <dt className="text-base font-medium text-neutral-500">
                     {stat.label}
                   </dt>
-                  <dd className="text-2xl sm:text-3xl font-extrabold tracking-tight text-neutral-900">
+                  <dd className="text-xl sm:text-2xl font-extrabold tracking-tight text-neutral-900">
                     {stat.value}
                   </dd>
                 </div>
