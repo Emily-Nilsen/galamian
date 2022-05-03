@@ -34,7 +34,10 @@ export default function Schools() {
         showArrows={false}
       >
         {schools.map((school) => (
-          <div className="text-left" key={school.name}>
+          <div
+            className="text-left mr-6 pb-2 sm:pr-0 sm:pb-0"
+            key={school.name}
+          >
             {school.name}
           </div>
         ))}

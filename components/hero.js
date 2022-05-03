@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
-
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import {
@@ -89,8 +87,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
-        {/* More main page content here... */}
       </main>
     </div>
   );
