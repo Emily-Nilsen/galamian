@@ -9,7 +9,7 @@ const container = {
   show: {
     opacity: 1,
     transition: {
-      delayChildren: 0,
+      delayChildren: 0.5,
       staggerChildren: 3,
     },
   },
@@ -19,6 +19,17 @@ const item = {
   hidden: { opacity: 0 },
   show: {
     opacity: [0, 1, 0],
+    transition: {
+      duration: 3,
+      type: 'fade',
+      ease: 'easeOut',
+    },
+  },
+};
+const itemLast = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: [0, 1],
     transition: {
       duration: 3,
       type: 'fade',
@@ -49,14 +60,17 @@ export default function Schools({ isVisible }) {
       <motion.ol
         variants={container}
         initial="hidden"
-        animate="show"
+        whileInView="show"
         className="relative"
       >
         {schools.map((school, i) => (
           <motion.li key={i} variants={item} exit={{ opacity: 1 }}>
-            <div className="absolute top-0 left-0 z-10">{school.name}</div>
+            <div className="absolute top-0 left-0">{school.name}</div>
           </motion.li>
         ))}
+        <motion.li variants={itemLast} exit={{ opacity: 1 }}>
+          <div className="absolute top-0 left-0">{t('academia:school_01')}</div>
+        </motion.li>
       </motion.ol>
     </div>
   );
