@@ -16,7 +16,7 @@ export default function VozProfesores() {
     {
       name: 'Nils Georg Nilsen',
       role: `${t('common:nils_role')}`,
-      imageUrl: '/static/profesores/nils-nilsen.jpg',
+      imageUrl: '/static/profesores/nils-nilsen.webp',
       instrument: `${t('common:nils_instrument')}`,
       sentence_01: `${t('common:nils_para_1')}`,
       sentence_02: `${t('common:nils_para_2')}`,
@@ -27,7 +27,7 @@ export default function VozProfesores() {
     {
       name: 'Sergio Montero',
       role: `${t('common:sergio_role')}`,
-      imageUrl: '/static/profesores/sergio-montero.jpg',
+      imageUrl: '/static/profesores/sergio-montero.webp',
       instrument: `${t('common:sergio_instrument')}`,
       sentence_01: `${t('common:sergio_para_1')}`,
       sentence_02: `${t('common:sergio_para_2')}`,

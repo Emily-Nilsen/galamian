@@ -102,7 +102,7 @@ export default function SusFundadores() {
               <Image
                 width={1024}
                 height={1200}
-                src="/static/jesus.jpg"
+                src="/static/profesores/jesus.jpg"
                 alt="Jesús Reina"
                 layout="responsive"
                 objectFit="cover"
@@ -198,7 +198,7 @@ export default function SusFundadores() {
                 <Image
                   width={1024}
                   height={1200}
-                  src="/static/anna.jpg"
+                  src="/static/profesores/anna.jpg"
                   alt="Anna Margrethe Nilsen"
                   layout="responsive"
                   objectFit="cover"
