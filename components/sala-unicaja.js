@@ -1,34 +1,17 @@
 import Image from 'next/image';
-
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
-const features = [
-  {
-    name: 'Sede de la Academia Galamian',
-    sentence_01:
-      'A partir del curso 2018/2019 y por un acuerdo de colaboración con la Fundación Unicaja, la Academia Galamian realizará sus actividades en el complejo de la Sala Unicaja de Conciertos María Cristina de Málaga.',
-    sentence_02:
-      'Aunque los edificios que componen esta sala de conciertos fueron concebidos en el siglo XV como estancia para un colectivo franciscano, en 1843 cambiaron su funcionalidad, convirtiéndose en uno de los primeros conservatorios que se promovieron en España durante el siglo XIX.',
-    sentence_03:
-      'Tras su recuperación por la Fundación Unicaja en 2009, el complejo se ha convertido en una de las estancias más emblemáticas de Málaga y diez años más tarde vuelven a alojar una institución académica, cuya trascendencia internacional busca devolver a este histórico conservatorio su funcionalidad como centro educativo y de difusión cultural de calidad.',
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 export default function SalaUnicaja() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      name: `${t('academia:unicaja_subtitle')}`,
+      sentence_01: `${t('academia:unicaja_text_1')}`,
+      sentence_02: `${t('academia:unicaja_text_2')}`,
+      sentence_03: `${t('academia:unicaja_text_3')}`,
+    },
+  ];
   return (
     <section id="salaUnicaja" className="bg-white">
       <div className="max-w-2xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -36,10 +19,10 @@ export default function SalaUnicaja() {
           <div>
             <div className="border-b border-neutral-200 pb-10">
               <h2 className="font-medium text-neutral-900 tracking-wide">
-                Sala Unicaja de
+                {t('academia:unicaja_title_1')}
               </h2>
               <h2 className="mt-2 text-3xl tracking-wide text-gold-600 sm:text-4xl">
-                Conciertos María Cristina
+                {t('academia:unicaja_title_2')}
               </h2>
             </div>
 
@@ -69,19 +52,19 @@ export default function SalaUnicaja() {
                 className="text-base font-medium text-gold-600"
               >
                 {' '}
-                Sala Unicaja de Conciertos María Cristina{' '}
+                {t('common:button_unicaja')}{' '}
                 <span aria-hidden="true">&rarr;</span>{' '}
               </a>
             </div>
           </div>
 
           <div>
-            <div className="aspect-w-1 aspect-h-1 shadow-xl bg-neutral-100 overflow-hidden">
+            <div className="aspect-w-1 aspect-h-1 shadow-none bg-neutral-100 overflow-hidden">
               <div className="w-full h-full object-center object-cover">
                 <Image
                   width={540}
                   height={560}
-                  src="/static/sala-unicaja.jpg"
+                  src="/static/unicaja-2.webp"
                   alt="Sala Unicaja de Conciertos María Cristina"
                   layout="fill"
                   objectFit="cover"
@@ -90,12 +73,12 @@ export default function SalaUnicaja() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4 mt-4 sm:gap-6 sm:mt-6 lg:gap-8 lg:mt-8">
-              <div className="aspect-w-1 aspect-h-1 shadow-xl bg-neutral-100 overflow-hidden">
+              <div className="aspect-w-1 aspect-h-1 shadow-none bg-neutral-100 overflow-hidden">
                 <div className="w-full h-full object-center object-cover">
                   <Image
                     width={540}
                     height={560}
-                    src="/static/sala-maria.jpg"
+                    src="/static/unicaja-3.webp"
                     alt="Sala Unicaja de Conciertos María Cristina"
                     layout="fill"
                     objectFit="cover"
@@ -103,12 +86,12 @@ export default function SalaUnicaja() {
                   />
                 </div>
               </div>
-              <div className="aspect-w-1 aspect-h-1 shadow-xl bg-neutral-100 overflow-hidden">
+              <div className="aspect-w-1 aspect-h-1 shadow-none bg-neutral-100 overflow-hidden">
                 <div className="w-full h-full object-center object-cover">
                   <Image
                     width={540}
                     height={560}
-                    src="/static/sala-unicaja-2.jpg"
+                    src="/static/unicaja-1.webp"
                     alt="Sala Unicaja de Conciertos María Cristina"
                     layout="fill"
                     objectFit="cover"

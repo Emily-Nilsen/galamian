@@ -1,24 +1,29 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-/* This example requires Tailwind CSS v2.0+ */
-const stats = [
-  { label: 'Fundado', value: '2010?' },
-  { label: 'Empleados?', value: '15?' },
-  { label: 'Estudiantes', value: '?' },
-  { label: '(Algo más?)', value: '(?)' },
-];
+import Schools from './schools';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function ElProyecto() {
+  const { t } = useTranslation();
+
+  const stats = [
+    { label: `${t('academia:founded')}`, value: '2014' },
+    {
+      label: `${t('academia:schools')}`,
+      value: <Schools />,
+    },
+  ];
+
   return (
     <div className="relative bg-white py-16 sm:py-24">
       <div className="pb-12 lg:pb-4 relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="text-center text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-          Academia Internacional <span className="text-gold-600">Galamian</span>
+          <span className="text-gold-600 block">{t('academia:title_1')}</span>
+          {t('academia:title_2')}{' '}
+          <span className="text-gold-600">{t('academia:title_3')}</span>
         </h2>
         <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-neutral-500">
-          Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con
-          la estimable colaboración de Fundación Unicaja.
+          {t('academia:subtitle')}
         </p>
       </div>
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
@@ -64,16 +69,16 @@ export default function ElProyecto() {
 
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
-            <div className="relative pt-64 pb-10 shadow-xl overflow-hidden">
+            <div className="relative pt-64 pb-10 shadow-none overflow-hidden">
               <div className="absolute inset-0 h-full w-full object-cover">
                 <Image
-                  src="/static/stock-image-02.jpg"
+                  src="/static/group-photo-07.webp"
                   alt="El Proyecto"
-                  width={1920}
-                  height={2879}
+                  width={1600}
+                  height={1067}
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="center"
+                  objectPosition="bottom"
                 />
               </div>
               <div className="absolute inset-0 bg-gold-500 mix-blend-multiply" />
@@ -90,15 +95,13 @@ export default function ElProyecto() {
                 <blockquote className="mt-8">
                   <div className="relative text-lg font-medium text-white md:flex-grow">
                     <p className="relative italic">
-                      Tincidunt integer commodo, cursus etiam aliquam neque, et.
-                      Consectetur pretium in volutpat, diam. Montes, magna
-                      cursus nulla feugiat dignissim id lobortis amet.
+                      {t('academia:blockquote')}
                     </p>
                   </div>
 
                   <footer className="mt-4">
                     <p className="text-base font-semibold text-cream-500">
-                      Un Nombre, Algun sitio
+                      {t('academia:author')}
                     </p>
                   </footer>
                 </blockquote>
@@ -111,30 +114,14 @@ export default function ElProyecto() {
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h2 className="text-3xl text-gold-600 tracking-wide sm:text-4xl">
-              El Proyecto
+              {t('academia:title_project')}
             </h2>
             <div className="mt-6 text-neutral-500 space-y-6">
               <p className="text-base leading-7">
-                Esta Academia es creada en Málaga por el concertista
-                internacional Jesús Reina, proyecto que realiza conjuntamente
-                con la violinista noruega Anna Nilsen, con la intención de
-                ofrecer una enseñanza musical de alto nivel a interpretes de
-                intrumentos de cuerda, piano y a cantantes, compartiendo
-                conocimientos y valores musicales adquiridos tras más de 15 años
-                de estudios en ciudades como Madrid, Oslo, Londres o Nueva York.
+                {t('academia:project_text_1')}
               </p>
               <p className="text-base leading-7">
-                El nombre de la academia hace honor al gran pedagogo Ivan
-                Galamian, que fue maestro del legendarios violinistas como
-                Pinchas Zukerman, quien a su vez fue el maestro principal de los
-                directores de la academia. Desde sus comienzos, la Academia
-                cuenta con el apoyo de Patinka Kopec, Codirectora del Programa
-                de Pinchas Zukerman en la Manhattan School of Music, y John
-                Rockwell, Jefe de Crítica del New York Times, quienes ocupan el
-                cargo de Directores de Honor. Entre los profesores visitantes
-                que han visitado la academia se encuentran los propios Patinka
-                Kopec y Pinchas Zukerman, los cellistas Amanda Forsyth y Asier
-                Polo, y el violista Paul Neubauer.
+                {t('academia:project_text_2')}
               </p>
             </div>
           </div>
@@ -157,12 +144,13 @@ export default function ElProyecto() {
               ))}
             </dl>
             <div className="mt-10">
-              <Link href="/audiciones" passHref>
+              <Link href="/estudia" passHref>
                 <a className="text-base font-medium text-gold-600">
                   {' '}
-                  Solicita una plaza para el curso {new Date().getFullYear()}/
-                  {new Date().getFullYear() + 1}{' '}
-                  <span aria-hidden="true">&rarr;</span>{' '}
+                  {t('common:button_solicita_1')}
+                  {new Date().getFullYear()}/{new Date().getFullYear() + 1}
+                  {t('common:button_solicita_2')}{' '}
+                  <span aria-hidden="true">&rarr;</span>
                 </a>
               </Link>
             </div>

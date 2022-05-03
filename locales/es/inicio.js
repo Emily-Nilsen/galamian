@@ -33,9 +33,9 @@ const inicio = {
   post_2_date: `Hasta el 15 de julio, `,
 
   // Testimonials
-  testimonial_text_1: `Es un honor para mí ser parte de la gran tradición de vuestra academia y del legado de Galamian.`,
-  testimonial_author_1: `Pinchas Zukerman`,
-  testimonial_source_1: `Violista, violinista y director de orquesta israelí`,
+  testimonial_text_1: `Siempre espero con ansia mis visitas anuales a la Academia Galamian. Hay un ambiente tan maravilloso aquí –la escuela está obviamente dedicada a cuidar y educar a los estudiantes y ayudarles a convertirse en los mejores músicos que puedan llegar a ser – ¡es realmente inspirador!`,
+  testimonial_author_1: `Grigory Kalinovsky`,
+  testimonial_source_1: `Violinista y pedagogo ruso`,
   testimonial_text_2: `He tenido el honor de comprobar que la Academia Galamian es un proyecto de altísimo nivel artístico y pedagógico, en un entorno inigua- lable y un edificio que en sí es una obra de arte. Creo que estáis haciendo una labor fundamental para la cultura de nuestro país.`,
   testimonial_author_2: `Luis Auñón`,
   testimonial_source_2: `Oboe solista del Teatro Nacional de la Ópera (Lisboa)`,

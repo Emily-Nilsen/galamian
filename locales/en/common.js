@@ -23,6 +23,9 @@ const common = {
   button_faq: `See all FAQs`,
   button_aprende: `Learn more`,
   button_back: `Go back`,
+  button_solicita_1: `Apply for a place for the `,
+  button_solicita_2: ` course`,
+  button_unicaja: `Unicaja Concert Hall María Cristina`,
 
   //Footer
   footer_text: `An initiative led by Jesús Reina and Anna Margrethe Nilsen, with the valuable collaboration of Fundación Unicaja.`,
@@ -209,9 +212,11 @@ const common = {
   // Sergio Montero
   sergio_role: `Principal Pianist`,
   sergio_instrument: `Piano`,
-  sergio_para_1: `He is a piano, chamber music, solfeggio, and music theory professor at the Conservatorio Superior de Música de Málaga, where he has received the Honor Award in Piano and Chamber Music. He is also a tenured professor at the Manuel Carra Professional Conservatory of Music (Málaga).`,
+  sergio_para_1: `He is a piano, chamber music, solfeggio, and music theory professor at the Superior Conservatory of Music of Málaga, where he has received the Honor Award in Piano and Chamber Music. He is also a tenured professor at the Manuel Carra Professional Conservatory of Music (Málaga).`,
   sergio_para_2: `He has been director of the Gonzalo Martín Tenllado (Málaga) and Padre Manuel Gámez (Fuengirola) Professional Conservatories, assistant professor of the masters Suso Mariátegui and Edemiro Arnaltes, first pianist of the Malaga Opera Choir and pianist of the actress and singer Imperio Argentina and of Montserrat Caballe.`,
   sergio_para_3: `He received the Silver Badge for Artistic Merit by the Cultural Foundation of the City Council of La Línea de la Concepción and has been a jury member of the IX Campillos International Piano Competition. He is also a master of repertoire and assistant professor of the Norwegian tenor Nils Nilsen at the Galamian International Academy. He regularly collaborates with the Malaga Philharmonic Orchestra.`,
+  sergio_website: ``,
+  sergio_href: ``,
 
   // Mariola Cantarero
   mariola_role: `Guest Professor`,

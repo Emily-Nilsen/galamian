@@ -22,8 +22,9 @@ export default function Noticias() {
     {
       title: `${t('inicio:post_2_title')}`,
       href: '/estudia',
-      sentence01: `${t('inicio:post_2_sent_1')}${new Date().getFullYear()}/
-        ${new Date().getFullYear() + 1}.`,
+      sentence01: `${t('inicio:post_2_sent_1')}${new Date().getFullYear()}/${
+        new Date().getFullYear() + 1
+      }.`,
       sentence02: `${t('inicio:post_2_sent_2')}`,
       sentence03: `${t('inicio:post_2_sent_3')}`,
       date: `${t('inicio:post_2_date')}${new Date().getFullYear()}`,

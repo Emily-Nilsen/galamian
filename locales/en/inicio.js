@@ -32,9 +32,9 @@ const inicio = {
   post_2_date: `Until July 15, `,
 
   // Testimonials
-  testimonial_text_1: `It is an honour for me to be part of the great tradition of your academy and the Galamian legacy.`,
-  testimonial_author_1: `Pinchas Zukerman`,
-  testimonial_source_1: `Israeli violist, violinist and conductor`,
+  testimonial_text_1: `I always look forward to my annual visits to the Galamian Academy. There is such a wonderful atmosphere here – the school is obviously dedicated to caring for and educating students to help them become the best musicians they can be – it's truly inspiring!`,
+  testimonial_author_1: `Grigory Kalinovsky`,
+  testimonial_source_1: `Russian violinist and pedagogue`,
   testimonial_text_2: `I have had the honour of verifying that the Galamian Academy is a project of the highest artistic and pedagogical level, in a unique setting and a building itself a work of art. I think you are doing fundamental work for the culture of our country.`,
   testimonial_author_2: `Luis Auñón`,
   testimonial_source_2: `Oboe soloist of the National Opera Theater (Lisbon)`,

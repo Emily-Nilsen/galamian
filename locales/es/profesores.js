@@ -9,6 +9,6 @@ const profesores = {
   tab_groups: `Grupales`,
   study_violin: `Violín & Viola`,
   study_groups: `Asignaturas Grupales`,
-  study_text: `Haga clic en el nombre para leer más sobre cada pedagogo.`,
+  study_text: `Haga clic en cada profesor/profesora principal para leer más.`,
 };
 export default profesores;

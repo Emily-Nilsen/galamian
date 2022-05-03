@@ -9,6 +9,6 @@ const profesores = {
   tab_groups: `Groups`,
   study_violin: `Violin & Viola`,
   study_groups: `Group Subjects`,
-  study_text: `Click on the name to read more about each pedagogue.`,
+  study_text: `Click on each principal/assistant professor to read more.`,
 };
 export default profesores;

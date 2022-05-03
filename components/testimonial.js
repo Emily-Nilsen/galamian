@@ -50,8 +50,6 @@ export default function Testimonial() {
           swipeable
           stopOnHover
           showStatus={false}
-          // centerMode
-          // dynamicHeight
         >
           {testimonials.map((testimonial) => (
             <div

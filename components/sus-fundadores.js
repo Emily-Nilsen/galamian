@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function SusFundadores() {
+  const { t } = useTranslation();
   return (
     <section
       id="fundadores"
@@ -43,13 +45,10 @@ export default function SusFundadores() {
 
         <div className="relative">
           <h2 className="text-center text-3xl leading-8 tracking-wide text-gold-600 sm:text-4xl">
-            Sus fundadores
+            {t('academia:fundadores_title')}
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-neutral-500">
-            Málaga, la ciudad natal de Jesús Reina, ha sido el lugar en la que
-            él y Anna Margrethe Nilsen han decidido construir una institución
-            académica sin precedentes, compaginando su actividad docente con
-            proyectos artísticos de envergadura internacional.
+            {t('academia:fundadores_subtitle')}
           </p>
         </div>
 
@@ -59,19 +58,10 @@ export default function SusFundadores() {
               Jesús Reina
             </h2>
             <p className="mt-3 text-base leading-7 text-neutral-500">
-              Pinchas Zukerman, Valery Gergiev y Eiji Oue entre otros, con
-              orquestas como las del Teatro Mariinsky, Sinfónica de Barcelona,
-              Mahler Philharmoniker, HSO y Filarmónica de Málaga y en salas como
-              Carnegie Hall, Metropolitan Series, Royal Festival Hall, Wigmore
-              Hall, Wiener Konzerthaus, Auditorio Nacional y Palau de Barcelona.
+              {t('academia:jesus_para_1')}
             </p>
             <p className="mt-3 text-base leading-7 text-neutral-500">
-              Fue galardonado el premio Puerta de Andalucía y la Medalla de
-              Honor de Málaga y es cofundador de la Academia Galamian y el
-              Festival Málaga Clásica. Realizó sus estudios con Patinka Kopec y
-              Pinchas Zukerman, recibiendo el premio R. Bronstein de la
-              Manhattan School of Music. Imparte clases en la Universidad
-              Alfonso X de Madrid y la Academia Galamian en Málaga.
+              {t('academia:jesus_para_2')}
             </p>
           </div>
 
@@ -108,7 +98,7 @@ export default function SusFundadores() {
                 fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)"
               />
             </svg>
-            <div className="relative mx-auto shadow-xl w-[410px]">
+            <div className="relative mx-auto shadow-none w-[410px]">
               <Image
                 width={1024}
                 height={1200}
@@ -163,21 +153,10 @@ export default function SusFundadores() {
                 Anna Margrethe Nilsen
               </h2>
               <p className="mt-3 text-base leading-7 text-neutral-500">
-                Anna Margrethe Nilsen es artista de Centaur Records y ganadora
-                en los concursos Sparre Olsen, Eisenberg-Fried y Nacional
-                Noruego. Ha estudiado con Isaac Schuldman, Patinka Kopec y
-                Pinchas Zukerman y actuado en salas como Wiener Konzerthaus,
-                Auditorio de Oslo, Filarmonía de San Petersburgo, Carnegie Hall,
-                y con orquestas como la Filarmónica de Bergen, Kaliningrado de
-                Cámara, Sinfónica de Trondheim, Juenesses Musicales, Nóvgorod de
-                Cámara, Ópera Noruega, Sinfónica de San Petersburgo y
-                Bielorrusia de Cámara.
+                {t('academia:anna_para_1')}
               </p>
               <p className="mt-3 text-base leading-7 text-neutral-500">
-                Ha colaborado con artistas como Pinchas Zukerman, Paul Neubauer,
-                Liza Fershtman, Amanda Forsyth y Guy Braustein. Es profesora en
-                la Academia Galamian, y cofundadora y directora del Festival
-                Málaga Clásica.
+                {t('academia:anna_para_2')}
               </p>
             </div>
 
@@ -215,7 +194,7 @@ export default function SusFundadores() {
                   fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"
                 />
               </svg>
-              <div className="relative mx-auto shadow-xl w-[410px]">
+              <div className="relative mx-auto shadow-none w-[410px]">
                 <Image
                   width={1024}
                   height={1200}
