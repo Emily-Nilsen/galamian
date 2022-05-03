@@ -2,8 +2,33 @@ import useTranslation from 'next-translate/useTranslation';
 import React, { Component } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import { motion, AnimatePresence } from 'framer-motion';
 
-export default function Schools() {
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0,
+      staggerChildren: 2.5,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: [0, 1, 0],
+    transition: {
+      duration: 2.5,
+      type: 'fade',
+      ease: 'easeOut',
+    },
+    // transitionEnd: { opacity: 1 },
+  },
+};
+
+export default function Schools({ isVisible }) {
   const { t } = useTranslation();
   const schools = [
     { name: `${t('academia:school_01')}` },
@@ -21,29 +46,17 @@ export default function Schools() {
   ];
 
   return (
-    <div className="">
-      <Carousel
-        infiniteLoop
-        autoPlay
-        interval="3500"
-        transitionTime="150"
-        useKeyboardArrows={false}
-        swipeable={false}
-        stopOnHover={false}
-        showStatus={false}
-        renderIndicator={false}
-        showArrows={false}
-        paritialVisibilityGutter="40"
-      >
-        {schools.map((school) => (
-          <div
-            className="text-left mr-0 pr-6 pb-2 sm:pr-0 sm:pb-0 gap-x-1 flex"
-            key={school.name}
-          >
-            {school.name}
-          </div>
-        ))}
-      </Carousel>
-    </div>
+    <motion.ol
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="relative"
+    >
+      {schools.map((school, i) => (
+        <motion.li key={i} variants={item} exit={{ opacity: 1 }}>
+          <div className="absolute top-0 left-0 z-10">{school.name}</div>
+        </motion.li>
+      ))}
+    </motion.ol>
   );
 }
