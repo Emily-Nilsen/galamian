@@ -26,6 +26,8 @@ const common = {
   button_solicita_1: `Solicita una plaza para el curso `,
   button_solicita_2: ` `,
   button_unicaja: `Sala Unicaja de Conciertos María Cristina`,
+  button_inscribir_1: `Inscríbete en las audiciones `,
+  button_inscribir_2: ``,
 
   //Footer
   footer_text: `Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con la estimable colaboración de Fundación Unicaja.`,

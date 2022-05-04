@@ -3,8 +3,10 @@ import Link from 'next/link';
 import { ExclamationIcon } from '@heroicons/react/solid';
 import Requisitos from '../../components/estudio/requisitos';
 import CTA from '../../components/estudio/cta';
+import useTranslation from 'next-translate/useTranslation';
 
 const Audiciones = () => {
+  const { t } = useTranslation();
   return (
     <main className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="lg:relative">
@@ -12,26 +14,27 @@ const Audiciones = () => {
           <div className="lg:w-1/2 sm:px-0 xl:pr-16">
             <div className="relative max-w-xl px-0 text-left sm:px-0 lg:px-8 lg:max-w-7xl">
               <h2 className="font-medium tracking-wide text-neutral-900">
-                Audiciones de acceso
+                {t('estudia:auditions_title_1')}
               </h2>
               <h2 className="mt-2 text-3xl tracking-wide sm:text-4xl">
-                Curso{' '}
+                {t('estudia:auditions_title_2')}{' '}
                 <span className="text-gold-600">
                   {' '}
                   {new Date().getFullYear()}/{new Date().getFullYear() + 1}
                 </span>
               </h2>
               <p className="max-w-3xl mx-auto mt-4 text-lg text-left text-neutral-500">
-                La Academia Internacional Galamian convoca audiciones de acceso
-                para el curso {new Date().getFullYear()}/
-                {new Date().getFullYear() + 1}.
+                {t('estudia:auditions_subtitle_1')}
+                {new Date().getFullYear()}/{new Date().getFullYear() + 1}
+                {t('estudia:auditions_subtitle_2')}.
               </p>
               <div className="mt-10">
                 <Link href="/estudia/formulario-de-inscripcion" passHref>
                   <a className="text-base font-medium text-gold-600">
                     {' '}
-                    Inscríbete en las audiciones {new Date().getFullYear()}/
-                    {new Date().getFullYear() + 1}{' '}
+                    {t('common:button_inscribir_1')}
+                    {new Date().getFullYear()}/{new Date().getFullYear() + 1}{' '}
+                    {t('common:button_inscribir_2')}{' '}
                     <span aria-hidden="true">&rarr;</span>{' '}
                   </a>
                 </Link>
@@ -67,14 +70,14 @@ const Audiciones = () => {
               </div>
               <div className="ml-3">
                 <h3 className="text-sm font-medium text-yellow-800">
-                  Atención
+                  {t('estudia:auditions_attention')}
                 </h3>
                 <div className="mt-2 text-sm text-yellow-700">
                   <p>
-                    Fecha límite de recepción de inscripciones en las
-                    audiciones:{' '}
+                    {t('estudia:auditions_attention_text_1')}{' '}
                     <span className="font-bold">
-                      15 de julio de {new Date().getFullYear()}
+                      {t('estudia:auditions_attention_text_2')}
+                      {new Date().getFullYear()}
                     </span>
                     .
                   </p>
@@ -90,10 +93,10 @@ const Audiciones = () => {
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
             <div className="text-base max-w-prose lg:max-w-none">
               <h2 className="leading-6 text-gold-600 font-semibold tracking-wide uppercase">
-                Audiciones de acceso
+                {t('estudia:access_title_1')}
               </h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-neutral-900 sm:text-4xl">
-                Estudios de la Academia
+                {t('estudia:access_title_2')}
               </p>
             </div>
           </div>
@@ -167,18 +170,13 @@ const Audiciones = () => {
             <div className="relative md:bg-white md:p-6">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                 <div className="prose prose-gold prose-lg text-neutral-500 lg:max-w-none">
-                  <p>
-                    La Academia convoca audiciones de acceso a sus programas de
-                    estudios regulares, de entre uno y cuatro años de duración.
-                    Las plazas convocadas dan acceso a formar parte de los
-                    siguientes Estudios:
-                  </p>
+                  <p>{t('estudia:access_para_1')}</p>
 
                   <ul role="list">
                     <li>
                       <Link href="/estudia/violin" passHref>
                         <a className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out">
-                          Estudio de Violín/Viola
+                          {t('estudia:access_violin')}
                         </a>
                       </Link>
                     </li>
@@ -186,7 +184,7 @@ const Audiciones = () => {
                     <li>
                       <Link href="/estudia/piano" passHref>
                         <a className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out">
-                          Estudio de Piano
+                          {t('estudia:access_piano')}
                         </a>
                       </Link>
                     </li>
@@ -194,7 +192,7 @@ const Audiciones = () => {
                     <li>
                       <Link href="/estudia/violonchelo" passHref>
                         <a className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out">
-                          Estudio de Violoncelo
+                          {t('estudia:access_cello')}
                         </a>
                       </Link>
                     </li>
@@ -202,27 +200,29 @@ const Audiciones = () => {
                     <li>
                       <Link href="/estudia/voz" passHref>
                         <a className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out">
-                          Estudio de Voz
+                          {t('estudia:access_voice')}
                         </a>
                       </Link>
                     </li>
                   </ul>
                 </div>
                 <div className="mt-6 prose prose-gold prose-lg text-neutral-500 lg:mt-0">
+                  <p>{t('estudia:access_para_2')}</p>
                   <p>
-                    Las audiciones de acceso a cada uno de los Estudios de la
-                    AIG se llevarán a cabo de forma online, a través de vídeo.
-                  </p>
-                  <p>
-                    Para participar en ellas, deberás inscribirte siguiendo los
-                    criterios que las fundamentan antes del{' '}
-                    <span className="font-bold">15 de julio</span> completando y
-                    enviando{' '}
+                    {t('estudia:access_para_3_1')}{' '}
+                    <span className="font-bold">
+                      {t('estudia:access_para_3_2')}
+                    </span>{' '}
+                    {t('estudia:access_para_3_3')}{' '}
                     <Link href="/estudia/formulario-de-inscripcion" passHref>
                       <a className="text-gold-600 hover:text-gold-500 transition duration-200 ease-in-out">
-                        este formulario
+                        {t('estudia:access_para_3_4')}
                       </a>
                     </Link>
+                    {t('estudia:access_para_3_5')}
+                    <span className="font-bold">
+                      {t('estudia:access_para_3_6')}
+                    </span>
                     .
                   </p>
                 </div>

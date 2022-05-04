@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Map from '../components/map';
 import useTranslation from 'next-translate/useTranslation';
-
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import {

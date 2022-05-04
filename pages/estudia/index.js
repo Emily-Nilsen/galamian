@@ -6,39 +6,41 @@ import { Tab } from '@headlessui/react';
 import { ExclamationIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const tabs = [
-  {
-    name: 'Estudiar en la AIG',
-    features: [
-      {
-        component: <Estudiar />,
-      },
-    ],
-  },
-  {
-    name: `Audiciones`,
-    features: [
-      {
-        component: <Audiciones />,
-      },
-    ],
-  },
-  {
-    name: 'Inscripción',
-    features: [
-      {
-        component: <Inscripcion />,
-      },
-    ],
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 const Estudia = () => {
+  const { t } = useTranslation();
+
+  const tabs = [
+    {
+      name: `${t('estudia:tab_estudiar')}`,
+      features: [
+        {
+          component: <Estudiar />,
+        },
+      ],
+    },
+    {
+      name: `${t('estudia:tab_audiciones')}`,
+      features: [
+        {
+          component: <Audiciones />,
+        },
+      ],
+    },
+    {
+      name: `${t('estudia:tab_inscripcion')}`,
+      features: [
+        {
+          component: <Inscripcion />,
+        },
+      ],
+    },
+  ];
   return (
     <div>
       <div className="relative pb-6 bg-white lg:pb-24">
@@ -58,22 +60,21 @@ const Estudia = () => {
 
         <div className="relative max-w-xl px-4 py-6 mx-auto text-center sm:px-6 lg:px-8 lg:max-w-7xl">
           <h2 className="font-medium tracking-wide text-neutral-900">
-            Estudia con los
+            {t('estudia:title_1')}
           </h2>
           <h2 className="mt-2 text-3xl tracking-wide sm:text-4xl">
-            Mejores <span className="text-gold-600">músicos</span>
+            {t('estudia:title_2')}
+            <span className="text-gold-600">{t('estudia:title_3')}</span>
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-500">
-            Cuando decides estudiar en la Academia Internacional Galamian, estás
-            apostando por una educación musical de calidad, y emprendes el
-            primer paso hacia la profesionalización de tu carrrera artística.
+            {t('estudia:subtitle')}
           </p>
           <div className="mt-10">
             <Link href="/estudios">
               <a className="text-base font-medium transition duration-200 ease-in-out text-gold-600 hover:underline">
                 {' '}
-                Ver planes de estudios {new Date().getFullYear()}/
-                {new Date().getFullYear() + 1}{' '}
+                {t('estudia:study_plans')}
+                {new Date().getFullYear()}/{new Date().getFullYear() + 1}{' '}
                 <span aria-hidden="true">&rarr;</span>{' '}
               </a>
             </Link>

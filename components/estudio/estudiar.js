@@ -60,7 +60,7 @@ export default function Estudiar() {
             <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden shadow-lg">
+                  <div className="object-cover object-center overflow-hidden shadow-none">
                     <Image
                       src="/static/sala-unicaja.jpg"
                       alt="Sala Unicaja de Conciertos María Cristina"
@@ -88,70 +88,38 @@ export default function Estudiar() {
             <div className="mx-auto text-base max-w-prose lg:max-w-none">
               <h2>
                 <span className="block mt-2 text-xl font-normal leading-8 text-neutral-800 sm:text-2xl">
-                  Programa didáctico
+                  {t('estudia:estudiar_title')}
                 </span>
               </h2>
               <p className="mt-4 text-lg text-neutral-500">
-                Los programas de estudios de la Academia Internacional Galamian
-                están desarrollados en pos de educar a músicos profesionales
-                hábiles en todos los aspectos relacionados con el mundo laboral
-                de la música.
+                {t('estudia:estudiar_para_1')}
               </p>
             </div>
             <div className="mx-auto mt-5 prose prose-gold text-neutral-500 lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-                Estas son las actividades que, durante el curso{' '}
-                {new Date().getFullYear()}/{new Date().getFullYear() + 1}, los
-                alumnos de todos los Estudios de la Academia participarán:
+                {t('estudia:estudiar_para_2_1')}
+                {new Date().getFullYear()}/{new Date().getFullYear() + 1}
+                {t('estudia:estudiar_para_2_2')}
               </p>
               <ul role="list">
-                <li>
-                  Programas instrumentales individuales especialmente diseñados
-                  con un elenco de profesores de primer nivel internacional:
-                  Violín, violoncelo, piano y voz.
-                </li>
-                <li>
-                  Clases magistrales y a distancia de profesores visitantes.
-                </li>
-                <li>
-                  Aprendizaje a distancia con equipamiento tecnológico de última
-                  generación.
-                </li>
-                <li>
-                  Cursos por symposium y Conferencias que abarcan desde el
-                  estudio de una partitura y técnicas de memorización hasta la
-                  ﬁlosofía de la música.
-                </li>
-                <li>
-                  Música de cámara como parte integral de la formación musical:
-                  agrupaciones de iniciación y avanzadas colaborando con
-                  profesorado de la academia.
-                </li>
-                <li>
-                  Encuentros orquestales con director de la academia y
-                  directores invitados, con posibilidad de desarrollar actividad
-                  orquestal como asignatura principal.
-                </li>
-                <li>
-                  Clases grupales de repertorio, técnicas de estudios y práctica
-                  performativa.
-                </li>
-                <li>
-                  Prácticas de desarrollo de proyectos y acompañamiento a
-                  músicos guiados por el profesorado de la academia.
-                </li>
-                <li>
-                  Conciertos en la Sala Unicaja de Conciertos María Cristina y
-                  otros espacios.
-                </li>
+                <li>{t('estudia:estudiar_list_1')}</li>
+                <li>{t('estudia:estudiar_list_2')}</li>
+                <li>{t('estudia:estudiar_list_3')}</li>
+                <li>{t('estudia:estudiar_list_4')}</li>
+                <li>{t('estudia:estudiar_list_5')}</li>
+                <li>{t('estudia:estudiar_list_6')}</li>
+                <li>{t('estudia:estudiar_list_7')}</li>
+                <li>{t('estudia:estudiar_list_8')}</li>
+                <li>{t('estudia:estudiar_list_9')}</li>
               </ul>
 
               <div className="mt-10">
                 <Link href="/audiciones" passHref>
                   <a className="text-base font-medium no-underline transition duration-200 ease-in-out text-gold-600 hover:underline">
                     {' '}
-                    Solicita una plaza para el curso {new Date().getFullYear()}/
-                    {new Date().getFullYear() + 1}{' '}
+                    {t('common:button_solicita_1')}
+                    {new Date().getFullYear()}/{new Date().getFullYear() + 1}{' '}
+                    {t('common:button_solicita_2')}{' '}
                     <span aria-hidden="true">&rarr;</span>{' '}
                   </a>
                 </Link>

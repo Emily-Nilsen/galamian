@@ -1,2 +1,73 @@
-const estudia = {};
+const estudia = {
+  title_1: `Study with the`,
+  title_2: `Best `,
+  title_3: `Musicians`,
+  subtitle: `You receive a quality musical education when you decide to study at the Galamian International Academy. The GIA is your first step towards the professionalization of your artistic career.`,
+  study_plans: `See study plans `,
+  tab_estudiar: `Study at the GIA`,
+  tab_audiciones: `Auditions`,
+  tab_inscripcion: `Enrolment`,
+
+  // Estudiar en la AIG
+  estudiar_title: `Didactic program`,
+  estudiar_para_1: `The Galamian International Academy develops the study programs to educate skilled professional musicians in all aspects related to the working world of music.`,
+  estudiar_para_2_1: `Below is a list of activities that all students will participate in during the `,
+  estudiar_para_2_2: ` academic year:`,
+  estudiar_list_1: `Individual instrumental programs specially designed with a cast of top international teachers for violin, cello, piano and voice.`,
+  estudiar_list_2: `Visiting professors offer both masterclasses and distance learning.`,
+  estudiar_list_3: `Distance learning with state-of-the-art technological equipment.`,
+  estudiar_list_4: `Symposium courses and conferences, ranging from score study and memorization techniques to the philosophy of music.`,
+  estudiar_list_5: `Chamber music is an integral part of musical training: Beginner and advanced groups collaborate with teachers from the academy.`,
+  estudiar_list_6: `Orchestral meetings with the director of the academy and invited conductors, with the option of developing orchestral activity as the main subject.`,
+  estudiar_list_7: `Group classes on repertoire, study techniques and performative practice.`,
+  estudiar_list_8: `The academy teachers guide the development of project practices and accompaniment to musicians.`,
+  estudiar_list_9: `Concerts held in the María Cristina Unicaja Concert Hall and other venues.`,
+
+  // Audiciones
+  auditions_title_1: `Course Access`,
+  auditions_title_2: `Auditions`,
+  auditions_subtitle_1: `The Galamian International Academy will announce course access auditions for the `,
+  auditions_subtitle_2: ` academic year`,
+  auditions_attention: `Attention`,
+  auditions_attention_text_1: `The deadline for receiving registrations for the auditions is `,
+  auditions_attention_text_2: `July 15, `,
+
+  // Access Auditions
+  access_title_1: `Course Access Auditions`,
+  access_title_2: `Academy Studies`,
+  access_para_1: `The Academy announces auditions for course access to its regular study programs that last between one and four years. Places of offer give access to the following Studies:`,
+  access_violin: `Violin/Viola Study`,
+  access_piano: `Piano Study`,
+  access_cello: `Cello Study`,
+  access_voice: `Voice Study`,
+  access_para_2: `Auditions for access to each GIA Study will be held online via video.`,
+  access_para_3_1: `To participate, you must first register and support all criteria by completing `,
+  access_para_3_2: ``,
+  access_para_3_3: ` `,
+  access_para_3_4: `this form`,
+  access_para_3_5: ` before `,
+  access_para_3_6: `July 15`,
+
+  // Requisitos
+  requisitos_title: `Requirements`,
+  requisitos_subtitle: `Below are the standard requirements for all studies offered by the Galamian International Academy.`,
+  requisitos_sr: `Study requirements`,
+  requirement_1_title: `Audition and video requirements`,
+  requirement_1_para_1: `The audition will consist of the submission and assessment before a jury of one or more videos provided by the applicant.`,
+  requirement_1_para_2: `The video must show the technical and musical abilities of the applicant with their instrument. Furthermore, the candidate must demonstrate themselves clearly and visually.`,
+  requirement_2_title: `Repertoire`,
+  requirement_2_para_1: `Students must submit a video performing at least two works or movements with contrasting styles to apply for an audition.`,
+  requirement_2_para_2: `The duration of either performance is unlimited.`,
+  requirement_2_para_3: `Despite how the work was originally written, applicants may record the video with or without piano or orchestral accompaniment.`,
+  requirement_3_title: `Documentation and deadlines`,
+  requirement_3_para_1: `The applicant must submit their registration form within the application period, open until July 15.`,
+  requirement_3_para_2_1: `To apply for the `,
+  requirement_3_para_2_2: ` academic year, students must upload their video through one or more links hosted by a digital repository  (YouTube or Vimeo).`,
+  requirement_3_para_3: `The audition result will be announced within ten days after the deadline through direct contact with the applicant.`,
+
+  // CTA
+  cta_question: `Ready to apply?`,
+  cta_call: `Register for the auditions.`,
+  cta_form: `Registration form`,
+};
 export default estudia;

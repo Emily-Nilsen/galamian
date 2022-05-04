@@ -26,6 +26,8 @@ const common = {
   button_solicita_1: `Apply for a place for the `,
   button_solicita_2: ` course`,
   button_unicaja: `Unicaja Concert Hall María Cristina`,
+  button_inscribir_1: `Sign up for the `,
+  button_inscribir_2: ` auditions`,
 
   //Footer
   footer_text: `An initiative led by Jesús Reina and Anna Margrethe Nilsen, with the valuable collaboration of Fundación Unicaja.`,
@@ -230,13 +232,13 @@ const common = {
   // Requisitos
   requisitos_subtitle: `Requirements of`,
   requisitos_title_part_1: `Admission and`,
-  requisitos_title_part_2: `Enrollment`,
-  requisitos_text: `The Galamian International Academy carries out the admission and enrollment process for students entering the academy for the first time via the academy's website throughout the year. Here you will also find frequently asked questions.`,
+  requisitos_title_part_2: `Enrolment`,
+  requisitos_text: `The Galamian International Academy carries out the admission and enrolment process for students entering the academy for the first time via the academy's website throughout the year. Here you will also find frequently asked questions.`,
 
   // Becas
   becas_title: `Scholarships`,
-  becas_text_1: `The Reina Nilsen Foundation offers a reduction in enrollment costs for deserving and exceptionally motivated students - placing particular value on the family's economic situation - of up to 50% of the total enrollment cost.`,
-  becas_text_2: `The academy will carry out the request for this reduction in enrollment once the applicant passes the audition for access.`,
+  becas_text_1: `The Reina Nilsen Foundation offers a reduction in enrolment costs for deserving and exceptionally motivated students - placing particular value on the family's economic situation - of up to 50% of the total enrolment cost.`,
+  becas_text_2: `The academy will carry out the request for this reduction in enrolment once the applicant passes the audition for access.`,
   becas_text_3: `Upon registration, the Reina Nilsen Foundation will value your request with the Galamian International Academy panel. The academy will communicate any reduction and amount to the student before starting the course in September `,
 
   // Titulación
@@ -247,7 +249,7 @@ const common = {
 
   // Programas de Prácticas
   practicas_title: `Internship Programs`,
-  practicas_text_1: `The Galamian International Academy offers a significant reduction in enrollment fees for those students who wish to participate in any Internship Programs.`,
+  practicas_text_1: `The Galamian International Academy offers a significant reduction in enrolment fees for those students who wish to participate in any Internship Programs.`,
   practicas_text_2: `Students must pass an interview with part of the AIG team to be part of these programs. Spaces for these programs will be limited. The Academy prioritizes students with greater seniority or those who have passed the access auditions during the face-to-face phase in July `,
   practicas_text_3_part_1: `The Academy will advise students who have passed the July `,
   practicas_text_3_part_2: ` auditions of the offered specialty programs to those interested in participating`,
@@ -380,7 +382,7 @@ const common = {
   estudio_list_fee_4: `€2,300`,
   estudio_list_fee_5: `€1,900`,
   estudio_list_fee_6: `€1,450`,
-  estudio_footer: `Students can divide the annual enrollment fees into three payments distributed throughout the academic year.`,
+  estudio_footer: `Students can divide the annual enrolment fees into three payments distributed throughout the academic year.`,
 
   // 404 Page Not Found
   notfound_title: 'Uh oh! I think you’re lost.',
@@ -389,7 +391,7 @@ const common = {
   // Contacto
   contact_title_1: `Contact the `,
   contact_title_2: `Academy`,
-  contact_subtitle: `Request more information about our educational program, enrollment, projects and faculty.`,
+  contact_subtitle: `Request more information about our educational program, enrolment, projects and faculty.`,
   contact_sr: `Contact the Academy`,
   contact_info_title: `Contact information`,
   contact_info_subtitle: `Find a Google map of the academy at the bottom of the page.`,

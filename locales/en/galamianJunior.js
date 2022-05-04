@@ -74,8 +74,8 @@ const galamianJunior = {
   profesores_text: `The Galamian International Academy has a team of pedagogues of the highest international prestige, whose convergence is only possible in this educational centre. Click on the name to read more about each pedagogue.`,
 
   // Matrícula
-  matricula_title: `Enrollment`,
+  matricula_title: `Enrolment`,
   matricula_text_1: `The annual registration fee is €3,500.`,
-  matricula_text_2: `Enrollment fees are for one year. The academy can divide the tuition fee into three payments distributed throughout the academic year.`,
+  matricula_text_2: `Enrolment fees are for one year. The academy can divide the tuition fee into three payments distributed throughout the academic year.`,
 };
 export default galamianJunior;

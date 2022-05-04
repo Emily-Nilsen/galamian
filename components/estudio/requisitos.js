@@ -1,36 +1,37 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-const requisitos = [
-  {
-    name: 'Requisitos de la audicion y vídeos',
-    step: '1',
-    description:
-      'La audición consistirá en el envío y valoración ante jurado de uno o varios vídeos proporcionados por el/la aspirante.',
-    description_02: `El vídeo deberá mostrar las capacidades técnicas y musicales del/la aspirante con su instrumento, y deberá poder evidenciarse la figura de este de forma clara y visual.`,
-    description_03: ``,
-  },
-  {
-    name: 'Repertorio',
-    step: '2',
-    description:
-      'En este vídeo necesario para la audición, el/la aspirante deberá interpretar al menos dos obras o movimientos con estilos contrastantes.',
-    description_02: `Tanto la duración de estas obras como la de la totalidad del vídeo es libre.`,
-    description_03: `Los/las aspirantes podrán realizar este vídeo sin acompañamiento de piano u orquesta, a pesar de que la obra esté escrita originalmente contando con ese acompañamiento.`,
-  },
-  {
-    name: 'Documentación y plazos',
-    step: '3',
-    description:
-      'El/la aspirante deberá haber enviado su formulario de inscripción dentro del plazo de aplicación, estando este abierto hasta el 15 de julio.',
-    description_02: `El vídeo necesario para auditar al curso ${new Date().getFullYear()}/${
-      new Date().getFullYear() + 1
-    } será adjuntado a través de uno o varios links que dirijan a un repositorio digital en el que estos estén alojados (YouTube o Vimeo).`,
-    description_03: `Los resultados de las audiciones se darán a conocer en los diez días posteriores al cierre del plazo, a través de un contacto privado con los/las aspirantes.`,
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Requisitos() {
+  const { t } = useTranslation();
+
+  const requisitos = [
+    {
+      name: `${t('estudia:requirement_1_title')}`,
+      step: '1',
+      description: `${t('estudia:requirement_1_para_1')}`,
+      description_02: `${t('estudia:requirement_1_para_2')}`,
+    },
+    {
+      name: `${t('estudia:requirement_2_title')}`,
+      step: '2',
+      description: `${t('estudia:requirement_2_para_1')}`,
+      description_02: `${t('estudia:requirement_2_para_2')}`,
+      description_03: `${t('estudia:requirement_2_para_3')}`,
+    },
+    {
+      name: `${t('estudia:requirement_3_title')}`,
+      step: '3',
+      description: `${t('estudia:requirement_3_para_1')}`,
+      description_02: `${t(
+        'estudia:requirement_3_para_2_1'
+      )}${new Date().getFullYear()}/${new Date().getFullYear() + 1}${t(
+        'estudia:requirement_3_para_2_2'
+      )}`,
+      description_03: `${t('estudia:requirement_2_para_3')}`,
+    },
+  ];
+
   return (
     <div className="bg-white">
       {/* Header */}
@@ -54,11 +55,10 @@ export default function Requisitos() {
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-            Requisitos
+            {t('estudia:requisitos_title')}
           </p>
           <p className="mt-6 max-w-3xl text-xl text-neutral-300">
-            Estos son los requisitos comunes para todos los estudios que ofrece
-            la Academia Internacional Galamian.
+            {t('estudia:requisitos_subtitle')}
           </p>
         </div>
       </div>
@@ -69,7 +69,7 @@ export default function Requisitos() {
         aria-labelledby="contact-heading"
       >
         <h2 className="sr-only" id="contact-heading">
-          Requisitos de los estudios
+          {t('estudia:requisitos_sr')}
         </h2>
         <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
           {requisitos.map((requisito) => (
