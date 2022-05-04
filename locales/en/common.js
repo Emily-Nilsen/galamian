@@ -385,6 +385,30 @@ const common = {
   // 404 Page Not Found
   notfound_title: 'Uh oh! I think you’re lost.',
   notfound_text: "It looks like the page you’re looking for doesn't exist.",
+
+  // Contacto
+  contact_title_1: `Contact the `,
+  contact_title_2: `Academy`,
+  contact_subtitle: `Request more information about our educational program, enrollment, projects and faculty.`,
+  contact_sr: `Contact the Academy`,
+  contact_info_title: `Contact information`,
+  contact_info_subtitle: `Find a Google map of the academy at the bottom of the page.`,
+  address_1: `Unicaja Concert Hall María Cristina`,
+  address_2: `Calle Marqués de Valdecañas, 2, 29008 Málaga,`,
+  address_3: `Spain`,
+  map_title: `The Academy`,
+
+  // Contact form
+  contactform_title: `Send us a message`,
+  contactform_name: `Name`,
+  contactform_surname: `Surname`,
+  contactform_email: `E-mail`,
+  contactform_phone: `Phone number`,
+  contactform_optional: `Optional`,
+  contactform_subject: `Subject`,
+  contactform_message: `Message`,
+  contactform_max: `Max. 500 characters`,
+  contactform_send: `Send`,
 };
 
 export default common;

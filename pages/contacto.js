@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Map from '../components/map';
+import useTranslation from 'next-translate/useTranslation';
 
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -13,6 +14,7 @@ import {
 } from '@heroicons/react/outline';
 
 export default function Contacto() {
+  const { t } = useTranslation();
   return (
     <div className="bg-gray-50">
       <main className="overflow-hidden">
@@ -21,11 +23,13 @@ export default function Contacto() {
           <div className="py-24 lg:py-32">
             <div className="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
               <h1 className="text-4xl text-gray-900 sm:text-5xl lg:text-6xl font-normal">
-                Contacta con la <span className="text-gold-600">Academia</span>
+                {t('common:contact_title_1')}
+                <span className="text-gold-600">
+                  {t('common:contact_title_2')}
+                </span>
               </h1>
               <p className="mt-6 text-xl text-gray-500 max-w-3xl">
-                Solicita más información sobre nuestro programa educativo,
-                matriculación, proyectos y el profesorado.
+                {t('common:contact_subtitle')}
               </p>
             </div>
           </div>
@@ -79,7 +83,7 @@ export default function Contacto() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative bg-white">
               <h2 id="contact-heading" className="sr-only">
-                Contacta con la Academia
+                {t('common:contact_sr')}
               </h2>
 
               <div className="grid grid-cols-1 lg:grid-cols-3">
@@ -186,11 +190,10 @@ export default function Contacto() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-medium text-white">
-                    Información del contacto
+                    {t('common:contact_info_title')}
                   </h3>
                   <p className="mt-6 text-base text-gray-50 max-w-3xl">
-                    Encuentra el mapa de Google de la academia en la parte
-                    inferior de la página.
+                    {t('common:contact_info_subtitle')}
                   </p>
                   <dl className="mt-8 space-y-6">
                     <dt>
@@ -204,13 +207,11 @@ export default function Contacto() {
                         />
                         <span className="ml-3">
                           <span className="block font-semibold">
-                            Sala Unicaja de Conciertos María Cristina‍
+                            {t('common:address_1')}
                           </span>
 
-                          <span className="block">
-                            Calle Marqués de Valdecañas, 2, 29008 Málaga,
-                          </span>
-                          <span className="block">España</span>
+                          <span className="block">{t('common:address_2')}</span>
+                          <span className="block">{t('common:address_3')}</span>
                         </span>
                       </dd>
                     </Link>
@@ -318,7 +319,7 @@ export default function Contacto() {
                 {/* Contact form */}
                 <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                   <h3 className="text-lg font-medium text-gray-900">
-                    Mandanos un mensaje
+                    {t('common:contactform_title')}
                   </h3>
                   <form
                     action="/exito"
@@ -343,7 +344,7 @@ export default function Contacto() {
                         htmlFor="first-name"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        Nombre
+                        {t('common:contactform_name')}
                       </label>
                       <div className="mt-1">
                         <input
@@ -360,7 +361,7 @@ export default function Contacto() {
                         htmlFor="last-name"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        Apellido
+                        {t('common:contactform_surname')}
                       </label>
                       <div className="mt-1">
                         <input
@@ -377,7 +378,7 @@ export default function Contacto() {
                         htmlFor="email"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        Email
+                        {t('common:contactform_email')}
                       </label>
                       <div className="mt-1">
                         <input
@@ -395,13 +396,13 @@ export default function Contacto() {
                           htmlFor="phone"
                           className="block text-sm font-medium text-gray-900"
                         >
-                          Número de télefono
+                          {t('common:contactform_phone')}
                         </label>
                         <span
                           id="phone-optional"
                           className="text-sm text-gray-500"
                         >
-                          Optativo
+                          {t('common:contactform_optional')}
                         </span>
                       </div>
                       <div className="mt-1">
@@ -420,7 +421,7 @@ export default function Contacto() {
                         htmlFor="subject"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        Asunto
+                        {t('common:contactform_subject')}
                       </label>
                       <div className="mt-1">
                         <input
@@ -437,13 +438,13 @@ export default function Contacto() {
                           htmlFor="message"
                           className="block text-sm font-medium text-gray-900"
                         >
-                          Mensaje
+                          {t('common:contactform_message')}
                         </label>
                         <span
                           id="message-max"
                           className="text-sm text-gray-500"
                         >
-                          Máx. 500 caracteres
+                          {t('common:contactform_max')}
                         </span>
                       </div>
                       <div className="mt-1">
@@ -460,9 +461,9 @@ export default function Contacto() {
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                       <button
                         type="submit"
-                        className="transition duration-300 ease-in-out mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-gold-500 hover:bg-gold-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto rounded-md"
+                        className="transition duration-300 ease-in-out mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-gold-500 hover:bg-gold-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto rounded-none"
                       >
-                        Enviar
+                        {t('common:contactform_send')}
                       </button>
                     </div>
                   </form>
@@ -479,23 +480,21 @@ export default function Contacto() {
               id="offices-heading"
               className="text-3xl font-semibold text-gray-900"
             >
-              La Academia
+              {t('common:map_title')}
             </h2>
             <p className="text-base text-gray-500 max-w-3xl">
               <span className="ml-3">
                 <span className="block font-semibold">
-                  Sala Unicaja de Conciertos María Cristina‍
+                  {t('common:address_1')}
                 </span>
 
-                <span className="block">
-                  Calle Marqués de Valdecañas, 2, 29008 Málaga,
-                </span>
-                <span className="block">España</span>
+                <span className="block">{t('common:address_2')}</span>
+                <span className="block">{t('common:address_3')}</span>
               </span>
             </p>
             <div className="mt-10">
               {/* Google Map */}
-              <div className="relative h-0 overflow-hidden pb-[85%] shadow-xl">
+              <div className="relative h-0 overflow-hidden pb-[85%] shadow-none">
                 <Map />
               </div>
             </div>

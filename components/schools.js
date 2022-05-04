@@ -1,7 +1,5 @@
 import useTranslation from 'next-translate/useTranslation';
 import React, { Component } from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel } from 'react-responsive-carousel';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const container = {
@@ -38,7 +36,7 @@ const itemLast = {
   },
 };
 
-export default function Schools({ isVisible }) {
+export default function Schools() {
   const { t } = useTranslation();
   const schools = [
     { name: `${t('academia:school_01')}` },

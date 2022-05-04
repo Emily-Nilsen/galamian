@@ -384,6 +384,32 @@ const common = {
   // 404 Page Not Found
   notfound_title: '¡Oh oh! Creo que estás perdido.',
   notfound_text: 'Parece que la página que estás buscando no existe.',
+
+  // Contacto
+  contact_title_1: `Contacta con la `,
+  contact_title_2: `Academia`,
+  contact_subtitle: `Solicita más información sobre nuestro programa educativo,
+  matriculación, proyectos y el profesorado.`,
+  contact_sr: `Contacta con la Academia`,
+  contact_info_title: `Información del contacto`,
+  contact_info_subtitle: `Encuentra el mapa de Google de la academia en la parte
+  inferior de la página.`,
+  address_1: `Sala Unicaja de Conciertos María Cristina‍`,
+  address_2: `Calle Marqués de Valdecañas, 2, 29008 Málaga,`,
+  address_3: `España`,
+  map_title: `La Academia`,
+
+  // Contact form
+  contactform_title: `Mandanos un mensaje`,
+  contactform_name: `Nombre`,
+  contactform_surname: `Apellido`,
+  contactform_email: `Email`,
+  contactform_phone: `Número de télefono`,
+  contactform_optional: `Optativo`,
+  contactform_subject: `Asunto`,
+  contactform_message: `Mensaje`,
+  contactform_max: `Máx. 500 caracteres`,
+  contactform_send: `Enviar`,
 };
 
 export default common;

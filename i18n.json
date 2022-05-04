@@ -12,10 +12,8 @@
     "/estudios/violoncelo": ["violoncelo"],
     "/estudios/voz": ["voz"],
     "/academia": ["academia"],
-    "/contacto": ["contacto"],
     "/exito": ["exito"],
     "/galamian-junior": ["galamianJunior"],
-    "/inscripcion": ["inscripcion"],
     "/profesores": ["profesores"]
   }
 }
