@@ -98,5 +98,30 @@ const estudia = {
   cta_form: `Formulario de Inscripción`,
 
   // Inscripción
+  enrolment_title_1: `Inscripción en las Audiciones de la`,
+  enrolment_title_2: ``,
+  enrolment_title_3: `Academia Internacional`,
+  enrolment_title_4: ` Galamian`,
+  enrolment_title_5: `Inscripción a las audiciones`,
+  enrolment_para_1_1: `La Academia Internacional Galamian abre la inscripción a sus
+  audiciones de acceso para el curso escolar`,
+  enrolment_para_1_2: `, a comenzar en el próximo septiembre.`,
+  enrolment_para_2_1: `Dada la circunstancia excepcional que atraviesa España, estas
+  audiciones se llevarán a cabo a`,
+  enrolment_para_2_2: `través de vídeo`,
+  enrolment_para_3_1: `El periodo de inscripción en las audiciones ya está abierto, y
+  los aspirantes pueden inscribirse en él hasta el`,
+  enrolment_para_3_2: `15 de julio de `,
+  enrolment_para_4: `En esta página podrás conocer cómo participar en las
+  audiciones de acceso al próximo curso.`,
+  enrolment_subtitle: `Documentos necesarios para la inscripción`,
+  enrolment_list_title_1: `Formulario de inscripción`,
+  enrolment_list_text_1: `Encuentre un enlace al formulario de inscripción a continuación.`,
+  enrolment_list_title_2: `Vídeo de motivación`,
+  enrolment_list_text_2: `Un ídeo de corta duración en el que expliques los motivos por los cuales quieres formar parte de la academia. Este vídeo también deberá de alojarse en una plataforma tipo YouTube o Vímeo.`,
+  enrolment_list_title_3: `Renta familiar`,
+  enrolment_list_text_3: `Un documento acreditativo sobre la última renta familiar en la que el alumno esté incluido (sólo para aquellas inscripciones que soliciten beca).`,
+  enrolment_list_title_4: `Links al vídeo`,
+  enrolment_list_text_4: `Uno o varios links al o los vídeos con los que quieras auditar a la Academia Internacional Galamian. Estos vídeos también deberá de alojarse en una plataforma tipo YouTube o Vímeo.`,
 };
 export default estudia;

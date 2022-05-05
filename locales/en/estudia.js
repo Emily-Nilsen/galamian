@@ -69,5 +69,28 @@ const estudia = {
   cta_question: `Ready to apply?`,
   cta_call: `Register for the auditions.`,
   cta_form: `Registration form`,
+
+  // Inscripción
+  enrolment_title_1: `Registration for the auditions`,
+  enrolment_title_2: `Galamian `,
+  enrolment_title_3: `International Academy`,
+  enrolment_title_4: ``,
+  enrolment_title_5: `How to register`,
+  enrolment_para_1_1: `The Galamian International Academy opens registration for its access auditions for the`,
+  enrolment_para_1_2: ` school year, to begin next September.`,
+  enrolment_para_2_1: `Given the current pandemic circumstances, the Academy holds auditions`,
+  enrolment_para_2_2: `via video`,
+  enrolment_para_3_1: `The audition registration period is now open, and applicants can register until `,
+  enrolment_para_3_2: `July 15, `,
+  enrolment_para_4: `Learn how to register for auditions for the next GIA study course below.`,
+  enrolment_subtitle: `Required documents for registration`,
+  enrolment_list_title_1: `Registration form`,
+  enrolment_list_text_1: `Find a link to the registration form below.`,
+  enrolment_list_title_2: `Motivational video`,
+  enrolment_list_text_2: `A short video in which you explain why you want to be part of the Academy. Applicants must upload this video on a platform such as YouTube or Vímeo.`,
+  enrolment_list_title_3: `Family income`,
+  enrolment_list_text_3: `Applicants can submit a supporting document on the last family income, including the student's income (only for those registrations requesting a scholarship).`,
+  enrolment_list_title_4: `Links to the video`,
+  enrolment_list_text_4: `The applicant must submit one or several links to the video/videos to the digital platforms mentioned above.`,
 };
 export default estudia;

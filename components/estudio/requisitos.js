@@ -37,7 +37,7 @@ export default function Requisitos() {
       {/* Header */}
       <div className="relative pb-32 bg-neutral-800">
         <div className="absolute inset-0">
-          <div className="w-full h-full object-cover">
+          <div className="object-cover w-full h-full">
             <Image
               layout="responsive"
               objectFit="cover"
@@ -53,11 +53,11 @@ export default function Requisitos() {
             aria-hidden="true"
           />
         </div>
-        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
+          <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-white sm:text-4xl">
             {t('estudia:requisitos_title')}
           </p>
-          <p className="mt-6 max-w-3xl text-xl text-neutral-300">
+          <p className="max-w-3xl mt-6 text-xl text-neutral-300">
             {t('estudia:requisitos_subtitle')}
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function Requisitos() {
 
       {/* Overlapping cards */}
       <section
-        className="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8"
+        className="relative z-10 px-4 pb-32 mx-auto -mt-32 max-w-7xl sm:px-6 lg:px-8"
         aria-labelledby="contact-heading"
       >
         <h2 className="sr-only" id="contact-heading">
@@ -75,10 +75,10 @@ export default function Requisitos() {
           {requisitos.map((requisito) => (
             <div
               key={requisito.name}
-              className="flex flex-col bg-gradient-to-b from-neutral-50 to-neutral-100 rounded-none shadow-none pb-6"
+              className="flex flex-col pb-6 rounded-none shadow-none bg-gradient-to-b from-neutral-50 to-neutral-100"
             >
-              <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-                <div className="absolute top-0 p-5 inline-block bg-gold-600 rounded-none shadow-none transform -translate-y-1/2">
+              <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
+                <div className="absolute top-0 inline-block p-5 transform -translate-y-1/2 rounded-none shadow-none bg-gold-600">
                   <p className="text-white">{requisito.step}</p>
                 </div>
                 <h3 className="text-xl font-medium text-neutral-900">

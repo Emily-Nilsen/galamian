@@ -3,50 +3,55 @@ import Link from 'next/link';
 import CTA from '../../components/estudio/cta';
 import { CheckIcon } from '@heroicons/react/outline';
 import { CameraIcon } from '@heroicons/react/solid';
-
-const documentos = [
-  {
-    name: 'Formulario de inscripción',
-    description:
-      'Encuentre un enlace al formulario de inscripción a continuación.',
-  },
-  {
-    name: 'Vídeo de motivación',
-    description: `Un ídeo de corta duración en el que expliques los motivos por los cuales quieres formar parte de la academia. Este vídeo también deberá de alojarse en una plataforma tipo YouTube o Vímeo.`,
-  },
-  {
-    name: 'Renta familiar',
-    description:
-      'Un documento acreditativo sobre la última renta familiar en la que el alumno esté incluido (sólo para aquellas inscripciones que soliciten beca).',
-  },
-  {
-    name: 'Links al vídeo',
-    description:
-      'Uno o varios links al o los vídeos con los que quieras auditar a la Academia Internacional Galamian. Estos vídeos también deberá de alojarse en una plataforma tipo YouTube o Vímeo.',
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Inscripcion() {
+  const { t } = useTranslation();
+
+  const documentos = [
+    {
+      name: `${t('estudia:enrolment_list_title_1')}`,
+      description: `${t('estudia:enrolment_list_text_1')}`,
+    },
+    {
+      name: `${t('estudia:enrolment_list_title_2')}`,
+      description: `${t('estudia:enrolment_list_text_2')}`,
+    },
+    {
+      name: `${t('estudia:enrolment_list_title_3')}`,
+      description: `${t('estudia:enrolment_list_text_3')}`,
+    },
+    {
+      name: `${t('estudia:enrolment_list_title_4')}`,
+      description: `${t('estudia:enrolment_list_text_4')}`,
+    },
+  ];
+
   return (
-    <section className="bg-white overflow-hidden">
+    <section className="overflow-hidden bg-white">
       <div>
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <div className="hidden lg:block bg-neutral-50 absolute top-0 bottom-0 left-3/4 w-screen" />
+        <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
-              <h2 className="leading-6 text-neutral-900 tracking-wide uppercase">
-                Inscripción en las Audiciones de la
+              <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+                {t('estudia:enrolment_title_1')}
               </h2>
               <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-                Academia Internacional{' '}
-                <span className="text-gold-600">Galamian</span>
+                <span className="text-gold-600">
+                  {t('estudia:enrolment_title_2')}
+                </span>
+                {t('estudia:enrolment_title_3')}
+                <span className="text-gold-600">
+                  {t('estudia:enrolment_title_4')}
+                </span>
               </h2>
             </div>
           </div>
           <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
             <div className="relative lg:row-start-1 lg:col-start-2">
               <svg
-                className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+                className="absolute top-0 right-0 hidden -mt-20 -mr-20 lg:block"
                 width={404}
                 height={384}
                 fill="none"
@@ -78,10 +83,10 @@ export default function Inscripcion() {
                   fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
                 />
               </svg>
-              <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+              <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                    <div className="shadow-lg object-cover object-center overflow-hidden">
+                    <div className="object-cover object-center overflow-hidden shadow-none">
                       <Image
                         src="/static/estudia/inscripcion.jpeg"
                         alt="Sala Unicaja de Conciertos María Cristina"
@@ -93,49 +98,51 @@ export default function Inscripcion() {
                       />
                     </div>
                   </div>
-                  <figcaption className="mt-3 flex text-sm text-neutral-500">
+                  <figcaption className="flex mt-3 text-sm text-neutral-500">
                     <CameraIcon
                       className="flex-none w-5 h-5 text-neutral-400"
                       aria-hidden="true"
                     />
                     <span className="ml-2">
-                      Sala Unicaja de Conciertos María Cristina
+                      {t('common:estudiar_photo_caption_1')}
                     </span>
                   </figcaption>
                 </figure>
               </div>
             </div>
             <div className="mt-8 lg:mt-0">
-              <div className="text-base max-w-prose mx-auto lg:max-w-none">
+              <div className="mx-auto text-base max-w-prose lg:max-w-none">
                 <h2>
-                  <span className="mt-2 block text-xl leading-8 font-normal text-neutral-800 sm:text-2xl">
-                    Inscripción a las audiciones
+                  <span className="block mt-2 text-xl font-normal leading-8 text-neutral-800 sm:text-2xl">
+                    {t('estudia:enrolment_title_5')}
                   </span>
                 </h2>
-                <p className="text-lg text-neutral-500 mt-4">
-                  La Academia Internacional Galamian abre la inscripción a sus
-                  audiciones de acceso para el curso escolar{' '}
-                  {new Date().getFullYear()}/{new Date().getFullYear() + 1}, a
-                  comenzar en el próximo septiembre.
+                <p className="mt-4 text-lg text-neutral-500">
+                  {t('estudia:enrolment_para_1_1')} {new Date().getFullYear()}/
+                  {new Date().getFullYear() + 1}
+                  {t('estudia:enrolment_para_1_2')}
                 </p>
               </div>
-              <div className="mt-5 prose prose-gold text-neutral-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+              <div className="mx-auto mt-5 prose prose-gold text-neutral-500 lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
-                  Dada la circunstancia excepcional que atraviesa España, estas
-                  audiciones se llevarán a cabo a{' '}
-                  <span className="font-bold">través de vídeo</span>.
+                  {t('estudia:enrolment_para_2_1')}{' '}
+                  <span className="font-bold">
+                    {t('estudia:enrolment_para_2_2')}
+                  </span>
+                  .
                 </p>
                 <p>
-                  El periodo de inscripción en las audiciones ya está abierto, y
-                  los aspirantes pueden inscribirse en él hasta el 15 de julio
-                  de {new Date().getFullYear()}.
+                  {t('estudia:enrolment_para_3_1')}{' '}
+                  <span className="font-bold">
+                    {' '}
+                    {t('estudia:enrolment_para_3_2')}
+                    {new Date().getFullYear()}
+                  </span>
+                  .
                 </p>
-                <p>
-                  En esta página podrás conocer cómo participar en las
-                  audiciones de acceso al próximo curso.
-                </p>
+                <p>{t('estudia:enrolment_para_4')}</p>
                 <h3 className="text-neutral-900">
-                  Documentos necesarios para la inscripción
+                  {t('estudia:enrolment_subtitle')}
                 </h3>
                 <div className="lg:mt-0">
                   <dl className="space-y-10 ">
@@ -143,14 +150,14 @@ export default function Inscripcion() {
                       <div key={documento.name} className="relative">
                         <dt>
                           <CheckIcon
-                            className="absolute h-6 w-6 text-lime-500"
+                            className="absolute w-6 h-6 text-lime-500"
                             aria-hidden="true"
                           />
-                          <p className="ml-9 text-lg leading-6 font-medium text-neutral-900">
+                          <p className="text-lg font-medium leading-6 ml-9 text-neutral-900">
                             {documento.name}
                           </p>
                         </dt>
-                        <dd className="-mt-4 ml-9 text-base text-neutral-500">
+                        <dd className="-mt-4 text-base ml-9 text-neutral-500">
                           {documento.description}
                         </dd>
                       </div>
