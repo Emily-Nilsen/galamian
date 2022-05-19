@@ -54,9 +54,9 @@ export default function Requisitos() {
           />
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
-          <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-white sm:text-4xl">
+          <h2 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-white sm:text-4xl">
             {t('estudia:requisitos_title')}
-          </p>
+          </h2>
           <p className="max-w-3xl mt-6 text-xl text-neutral-300">
             {t('estudia:requisitos_subtitle')}
           </p>
@@ -78,19 +78,21 @@ export default function Requisitos() {
               className="flex flex-col pb-6 rounded-none shadow-none bg-gradient-to-b from-neutral-50 to-neutral-100"
             >
               <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
-                <div className="absolute top-0 inline-block p-5 transform -translate-y-1/2 rounded-none shadow-none bg-gold-600">
-                  <p className="text-white">{requisito.step}</p>
+                <div className="absolute top-0 inline-block px-6 py-4 transform -translate-y-1/2 rounded-none rounded-full shadow-none bg-gold-600">
+                  <h2 className="text-lg font-bold text-white">
+                    {requisito.step}
+                  </h2>
                 </div>
-                <h3 className="text-xl font-medium text-neutral-900">
+                <h3 className="text-xl font-semibold tracking-tight text-neutral-900">
                   {requisito.name}
                 </h3>
-                <p className="mt-4 text-base text-neutral-500">
+                <p className="mt-4 text-base text-neutral-600">
                   {requisito.description}
                 </p>
-                <p className="mt-4 text-base text-neutral-500">
+                <p className="mt-4 text-base text-neutral-600">
                   {requisito.description_02}
                 </p>
-                <p className="mt-4 text-base text-neutral-500">
+                <p className="mt-4 text-base text-neutral-600">
                   {requisito.description_03}
                 </p>
               </div>

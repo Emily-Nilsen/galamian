@@ -20,8 +20,8 @@ export default function Estudios() {
     },
     {
       id: 3,
-      name: `${t('estudios:estudio_violoncelo')}`,
-      href: '/estudios/violoncelo',
+      name: `${t('estudios:estudio_violonchelo')}`,
+      href: '/estudios/violonchelo',
       imageSrc: '/static/estudia/cello.jpg',
     },
     {

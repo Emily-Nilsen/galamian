@@ -22,16 +22,6 @@ module.exports = {
       backgroundImage: {
         notfound: `url('/static/lost.jpg')`,
       },
-      animation: {
-        'fade-in': 'fade-in 3.7s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-      },
-      keyframes: {
-        'fade-in': {
-          '0%, 40%': { opacity: 0 },
-          '40%, 60%': { opacity: 1 },
-          '60%, 100%': { opacity: 0 },
-        },
-      },
     },
   },
   plugins: [

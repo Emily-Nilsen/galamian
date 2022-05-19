@@ -3,7 +3,6 @@ import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Features from '../components/features';
 import Testimonial from '../components/testimonial';
-import Testimonials from '../components/testimonials';
 import Noticias from '../components/noticias';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -44,17 +43,9 @@ const itemLast = {
 export default function Home() {
   return (
     <div>
-      {/* Hero card */}
       <Hero />
-      {/* School features */}
       <Features />
-      {/* Testimonial */}
-      {/* <div className="relative mb-20">
-        <Testimonials />
-      </div> */}
       <Testimonial />
-      {/* Noticias */}
-
       <Noticias />
     </div>
   );

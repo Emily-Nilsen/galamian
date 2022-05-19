@@ -26,10 +26,10 @@ export default function Hero() {
           {/* Hero card */}
           <div className="relative">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-neutral-100" />
-            <div className="max-w-7xl mx-auto">
+            <div className="mx-auto max-w-7xl">
               <div className="relative h-[50vh]">
                 <div className="absolute inset-0">
-                  <div className="h-full w-full object-cover">
+                  <div className="object-cover w-full h-full">
                     <Image
                       width={275}
                       height={183}
@@ -42,15 +42,15 @@ export default function Hero() {
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 mix-blend-multiply" />
                 </div>
-                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 flex items-end justify-center h-full">
-                  <h1 className="text-center text-4xl sm:text-5xl lg:text-6xl tracking-wide">
-                    <span className="block text-gold-500">
+                <div className="relative flex items-end justify-center h-full px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                  <h1 className="text-4xl font-normal tracking-tight text-center sm:text-5xl lg:text-6xl">
+                    <span className="block font-bold text-gold-500">
                       {t('inicio:title_1')}
                     </span>
                     <span className="block text-white">
                       {t('inicio:title_2')}
                     </span>
-                    <span className="block text-gold-500">
+                    <span className="block font-bold text-gold-500">
                       {t('inicio:title_3')}
                     </span>
                   </h1>
@@ -60,10 +60,10 @@ export default function Hero() {
           </div>
 
           {/* Logo cloud */}
-          <div className="bg-neutral-100 flex items-center justify-center">
-            <div className="max-w-7xl mx-auto py-16 px-6 sm:px-8 lg:px-10">
-              <div className="grid grid-cols-2 md:gap-14 gap-6">
-                <div className="col-span-1 flex justify-self-start">
+          <div className="flex items-center justify-center bg-neutral-100">
+            <div className="px-6 py-16 mx-auto max-w-7xl sm:px-8 lg:px-10">
+              <div className="grid grid-cols-2 gap-6 md:gap-14">
+                <div className="flex col-span-1 justify-self-start">
                   <div className="h-1/2">
                     <Image
                       width={255}
@@ -73,7 +73,7 @@ export default function Hero() {
                     />
                   </div>
                 </div>
-                <div className="col-span-1 flex justify-center">
+                <div className="flex justify-center col-span-1">
                   <div className="h-1/2">
                     <Image
                       width={204}

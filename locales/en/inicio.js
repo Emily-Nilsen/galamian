@@ -24,7 +24,7 @@ const inicio = {
   post_1_sent_1_part_2: `academic year for the Junior Study of Violin and Viola.`,
   post_1_sent_2_part_1: `Students who pass the auditions called for June `,
   post_1_sent_2_part_2: `will begin studying at the GIA Junior from September `,
-  post_1_date: `Until June `,
+  post_1_date: `Until July 15, `,
   post_2_title: `Registration for study course auditions`,
   post_2_sent_1: `The Galamian International Academy opens the registration period for the auditions for access to the next course, `,
   post_2_sent_2: `The GIA holds auditions via video due to the current pandemic situation. Registration is open until July 15.`,

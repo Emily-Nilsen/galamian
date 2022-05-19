@@ -6,7 +6,7 @@ const estudios = {
   estudios_text: `La Academia Internacional Galamian ofrece los siguientes cuatro programas de estudio.`,
   estudio_violin: `Estudio de Violín/Viola`,
   estudio_piano: `Estudio de Piano`,
-  estudio_violoncelo: `Estudio de Violoncelo`,
+  estudio_violonchelo: `Estudio de Violonchelo`,
   estudio_voz: `Estudio de Voz`,
   estudio_ver: `Ver estudio`,
 

@@ -2,13 +2,13 @@ import Image from 'next/image';
 import FAQs from '../galamian-junior/faqs';
 import useTranslation from 'next-translate/useTranslation';
 import { CheckIcon } from '@heroicons/react/outline';
-import ViolonceloGalleryTwo from './violoncelo-gallery-2';
+import VioloncheloGalleryTwo from './violonchelo-gallery-2';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function ViolonceloRequisitos() {
+export default function VioloncheloRequisitos() {
   const { t } = useTranslation();
 
   const features = [
@@ -154,8 +154,8 @@ export default function ViolonceloRequisitos() {
         </div>
       </div>
       {/* Violin Gallery Two */}
-      <div className="md:pt-10 bg-white">
-        <ViolonceloGalleryTwo />
+      <div className="bg-white md:pt-10">
+        <VioloncheloGalleryTwo />
       </div>
       <FAQs />
     </div>

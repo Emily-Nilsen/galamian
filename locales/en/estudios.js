@@ -6,7 +6,7 @@ const estudios = {
   estudios_text: `The Galamian International Academy offers the following four programs of study.`,
   estudio_violin: `Violin/Viola Study`,
   estudio_piano: `Piano Study`,
-  estudio_violoncelo: `Cello Study`,
+  estudio_violonchelo: `Cello Study`,
   estudio_voz: `Voice Study`,
   estudio_ver: `See study`,
 };

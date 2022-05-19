@@ -3,11 +3,11 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { ExclamationIcon } from '@heroicons/react/solid';
 import { CheckIcon } from '@heroicons/react/outline';
-import ProfesoresVioloncelo from '../../components/estudio/profesores-violoncelo';
-import ViolonceloRequisitos from '../../components/estudio/violoncelo-requisitos';
-import ViolonceloGalleryOne from '../../components/estudio/violoncelo-gallery-1';
+import ProfesoresViolonchelo from '../../components/estudio/profesores-violonchelo';
+import VioloncheloRequisitos from '../../components/estudio/violonchelo-requisitos';
+import VioloncheloGalleryOne from '../../components/estudio/violonchelo-gallery-1';
 
-export default function Violoncelo() {
+export default function Violonchelo() {
   const { t } = useTranslation();
 
   const modes = [
@@ -89,12 +89,12 @@ export default function Violoncelo() {
             </h2>
             <h1 className="mt-1 text-4xl font-normal text-neutral-900 sm:text-5xl sm:tracking-wide lg:text-6xl">
               {t('common:programas_title')}{' '}
-              <span className="text-gold-600"> {t('violoncelo:title')}</span>
+              <span className="text-gold-600"> {t('violonchelo:title')}</span>
             </h1>
             <p className="max-w-xl mx-auto mt-5 text-xl text-neutral-500">
-              {t('violoncelo:text_part_1')} {new Date().getFullYear()}/
+              {t('violonchelo:text_part_1')} {new Date().getFullYear()}/
               {new Date().getFullYear() + 1}
-              {t('violoncelo:text_part_2')}.
+              {t('violonchelo:text_part_2')}.
             </p>
             {/* Attention! */}
             <div className="px-4 pt-6 mx-auto text-left max-w-7xl sm:px-6 lg:px-8 sm:pt-10">
@@ -118,7 +118,7 @@ export default function Violoncelo() {
                             {t('common:atencion_text_part_2')}{' '}
                             {new Date().getFullYear()}{' '}
                           </span>
-                          {t('common:atencion_text_violoncelo')}{' '}
+                          {t('common:atencion_text_violonchelo')}{' '}
                           <span className="font-bold">
                             {t('common:atencion_text_part_4')}{' '}
                             {new Date().getFullYear()}
@@ -138,7 +138,7 @@ export default function Violoncelo() {
         <div className="relative object-cover w-full h-56">
           <Image
             src="/static/estudia/cello/group-photo-01.webp"
-            alt="Estudio de Violoncelo"
+            alt="Estudio de Violonchelo"
             width={2000}
             height={1000}
             layout="fill"
@@ -175,11 +175,11 @@ export default function Violoncelo() {
         </div>
         {/* Cello Gallery One */}
         <div className="lg:pt-0">
-          <ViolonceloGalleryOne />
+          <VioloncheloGalleryOne />
         </div>
       </div>
 
-      {/* Estudio de Violoncelo en AIG */}
+      {/* Estudio de Violonchelo en AIG */}
       <div className="relative py-16 overflow-hidden bg-white">
         <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
           <div
@@ -291,29 +291,29 @@ export default function Violoncelo() {
                 {t('common:estudio_subtitle')}
               </span>
               <span className="block mt-2 text-4xl font-normal leading-8 tracking-wide text-center text-neutral-900 sm:text-5xl">
-                {t('common:estudio_title_violoncelo')}
+                {t('common:estudio_title_violonchelo')}
               </span>
             </h1>
             <p className="mt-8 text-xl leading-8 text-neutral-500">
-              {t('common:estudio_para_01_part_1_violoncelo')}{' '}
+              {t('common:estudio_para_01_part_1_violonchelo')}{' '}
               <span className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
                 <Link href="/profesores/#jesus" passHref>
-                  {t('common:estudio_para_01_part_2_violoncelo')}
+                  {t('common:estudio_para_01_part_2_violonchelo')}
                 </Link>{' '}
               </span>
               {t('common:estudio_para_01_part_3')}{' '}
               <span className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
                 <Link href="/profesores/#anna" passHref>
-                  {t('common:estudio_para_01_part_4_violoncelo')}
+                  {t('common:estudio_para_01_part_4_violonchelo')}
                 </Link>{' '}
               </span>
-              {t('common:estudio_para_01_part_5_violoncelo')}
+              {t('common:estudio_para_01_part_5_violonchelo')}
             </p>
           </div>
           <div className="mx-auto mt-6 prose prose-lg prose-gold text-neutral-500">
             <p>{t('common:estudio_para_02')}</p>
             <p>
-              {t('common:estudio_para_03_violoncelo')}
+              {t('common:estudio_para_03_violonchelo')}
               {new Date().getFullYear()}
               {t('common:estudio_para_03_part_2')}
             </p>
@@ -323,7 +323,7 @@ export default function Violoncelo() {
                 <span className="font-bold text-neutral-900">
                   {t('common:estudio_para_04_part_1')}
                 </span>
-                {t('common:estudio_para_04_violoncelo')}
+                {t('common:estudio_para_04_violonchelo')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
@@ -344,7 +344,7 @@ export default function Violoncelo() {
                 <span className="font-bold text-neutral-900">
                   {t('common:estudio_para_06_part_1')}
                 </span>
-                {t('common:estudio_para_06_violoncelo')}
+                {t('common:estudio_para_06_violonchelo')}
               </li>
               <li>
                 <span className="font-bold text-neutral-900">
@@ -387,7 +387,7 @@ export default function Violoncelo() {
                         <table className="min-w-full divide-y divide-neutral-300">
                           <div className="table-caption max-w-lg text-lg">
                             <h3 className="mt-0 text-lg text-neutral-500 sm:text-xl">
-                              {t('common:modalidades_table_title_violoncelo')}
+                              {t('common:modalidades_table_title_violonchelo')}
                             </h3>
                           </div>
                           <thead className="bg-neutral-50">
@@ -461,7 +461,7 @@ export default function Violoncelo() {
               <div className="w-full rounded-none">
                 <Image
                   src="/static/estudia/cello/cello-img-1.webp"
-                  alt="Estudio de Violoncelo"
+                  alt="Estudio de Violonchelo"
                   width={1500}
                   height={1000}
                   layout="responsive"
@@ -488,8 +488,8 @@ export default function Violoncelo() {
           </div>
         </div>
       </div>
-      <ProfesoresVioloncelo />
-      <ViolonceloRequisitos />
+      <ProfesoresViolonchelo />
+      <VioloncheloRequisitos />
     </section>
   );
 }

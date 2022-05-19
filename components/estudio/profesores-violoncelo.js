@@ -2,7 +2,7 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 import { CameraIcon } from '@heroicons/react/solid';
 
-export default function ProfesoresVioloncelo() {
+export default function ProfesoresViolonchelo() {
   const { t } = useTranslation();
 
   const profesoresInvitados = [
@@ -17,19 +17,19 @@ export default function ProfesoresVioloncelo() {
           <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="mx-auto text-lg max-w-prose">
               <h2 className="text-base font-semibold tracking-wide uppercase text-neutral-900">
-                {t('violoncelo:profesores_subtitle')}
+                {t('violonchelo:profesores_subtitle')}
               </h2>
               <h2 className="mt-2 text-3xl leading-8 tracking-wide text-left text-neutral-900 sm:text-4xl">
-                {t('violoncelo:profesores_title_part_1')}
+                {t('violonchelo:profesores_title_part_1')}
                 <span className="text-gold-600">
-                  {t('violoncelo:profesores_title_part_2')}
+                  {t('violonchelo:profesores_title_part_2')}
                 </span>
-                {t('violoncelo:profesores_title_part_3')}
+                {t('violonchelo:profesores_title_part_3')}
               </h2>
               <div className="grid justify-between pt-10 pb-6 sm:grid-cols-2 text-neutral-500">
                 <div className="pb-6 pr-6 leading-7 sm:col-span-1">
                   <h3 className="pb-2 text-lg font-semibold text-neutral-900">
-                    {t('violoncelo:profesores_principales')}
+                    {t('violonchelo:profesores_principales')}
                   </h3>
                   <ul role="list">
                     <li>Øyvind Gimse</li>
@@ -38,7 +38,7 @@ export default function ProfesoresVioloncelo() {
                 </div>
                 <div className="sm:col-span-1">
                   <h3 className="pb-2 text-lg font-semibold text-neutral-900">
-                    {t('violoncelo:profesores_invitados')}
+                    {t('violonchelo:profesores_invitados')}
                   </h3>
                   <div className="flex gap-10 leading-8">
                     <div>
@@ -90,7 +90,7 @@ export default function ProfesoresVioloncelo() {
                     aria-hidden="true"
                   />
                   <span className="ml-2">
-                    {t('violoncelo:principal_profesor_male')} Øyvind Gimse
+                    {t('violonchelo:principal_profesor_male')} Øyvind Gimse
                   </span>
                 </figcaption>
               </figure>
@@ -102,7 +102,7 @@ export default function ProfesoresVioloncelo() {
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <div>
                 <h2 className="text-base font-semibold tracking-wide uppercase text-gold-600">
-                  {t('violoncelo:principal_profesor_male')}
+                  {t('violonchelo:principal_profesor_male')}
                 </h2>
                 <h2 className="mt-2 text-3xl font-normal leading-8 tracking-wide text-neutral-900 sm:text-4xl">
                   Øyvind Gimse
@@ -153,7 +153,7 @@ export default function ProfesoresVioloncelo() {
                     aria-hidden="true"
                   />
                   <span className="ml-2">
-                    {t('violoncelo:principal_profesor_male')} Tilman Mahrenholz
+                    {t('violonchelo:principal_profesor_male')} Tilman Mahrenholz
                   </span>
                 </figcaption>
               </figure>
@@ -165,7 +165,7 @@ export default function ProfesoresVioloncelo() {
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <div>
                 <h2 className="text-base font-semibold tracking-wide uppercase text-gold-600">
-                  {t('violoncelo:principal_profesor_male')}
+                  {t('violonchelo:principal_profesor_male')}
                 </h2>
                 <h2 className="mt-2 text-3xl font-normal leading-8 tracking-wide text-neutral-900 sm:text-4xl">
                   Tilman Mahrenholz

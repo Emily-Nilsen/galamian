@@ -21,7 +21,7 @@ const estudia = {
   alumnos de todos los Estudios de la Academia participarán:`,
   estudiar_list_1: `Programas instrumentales individuales especialmente diseñados
   con un elenco de profesores de primer nivel internacional:
-  Violín, violoncelo, piano y voz.`,
+  Violín, violonchelo, piano y voz.`,
   estudiar_list_2: `Clases magistrales y a distancia de profesores visitantes.`,
   estudiar_list_3: `Aprendizaje a distancia con equipamiento tecnológico de última
   generación.`,
@@ -61,7 +61,7 @@ const estudia = {
   siguientes Estudios:`,
   access_violin: `Estudio de Violín/Viola`,
   access_piano: `Estudio de Piano`,
-  access_cello: `Estudio de Violoncelo`,
+  access_cello: `Estudio de Violonchelo`,
   access_voice: `Estudio de Voz`,
   access_para_2: `Las audiciones de acceso a cada uno de los Estudios de la
   AIG se llevarán a cabo de forma online, a través de vídeo.`,

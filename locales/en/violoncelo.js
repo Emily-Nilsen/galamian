@@ -1,4 +1,4 @@
-const violoncelo = {
+const violonchelo = {
   title: `Cello`,
   text_part_1: `Information for the `,
   text_part_2: ` Cello Study course`,
@@ -14,4 +14,4 @@ const violoncelo = {
   principal_profesor_male: `Principal Professor`,
   principal_profesor_female: `Principal Professor`,
 };
-export default violoncelo;
+export default violonchelo;

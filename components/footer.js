@@ -20,7 +20,7 @@ export default function Footer() {
       { name: `${t('common:footer_estudios_1')}`, href: '/estudios/violin' },
       {
         name: `${t('common:footer_estudios_2')}`,
-        href: '/estudios/violoncelo',
+        href: '/estudios/violonchelo',
       },
       { name: `${t('common:footer_estudios_3')}`, href: '/estudios/piano' },
       { name: `${t('common:footer_estudios_4')}`, href: '/estudios/voz' },
@@ -114,14 +114,14 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               {/* Estudia */}
               <div>
-                <h3 className="text-sm font-semibold tracking-wider uppercase text-gold-500">
+                <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
                   {t('common:footer_estudia')}
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.estudiar.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} passHref>
-                        <a className="text-base transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500">
+                        <a className="text-base tracking-tight transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500">
                           {item.name}
                         </a>
                       </Link>
@@ -131,14 +131,14 @@ export default function Footer() {
               </div>
               {/* Estudios */}
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold tracking-wider uppercase text-gold-500">
+                <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
                   {t('common:footer_estudios')}
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.estudios.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} passHref>
-                        <a className="text-base transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500">
+                        <a className="text-base tracking-tight transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500">
                           {item.name}
                         </a>
                       </Link>
@@ -150,7 +150,7 @@ export default function Footer() {
             {/* La Academia */}
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold tracking-wider uppercase text-gold-500">
+                <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
                   {t('common:footer_academia')}
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -158,7 +158,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500"
+                        className="text-base tracking-tight transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500"
                       >
                         {item.name}
                       </a>
@@ -168,7 +168,7 @@ export default function Footer() {
               </div>
               {/* Recursos */}
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold tracking-wider uppercase text-gold-500">
+                <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
                   {t('common:footer_recursos')}
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -176,7 +176,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500"
+                        className="text-base tracking-tight transition duration-200 ease-in-out text-neutral-300 hover:text-cream-500"
                       >
                         {item.name}
                       </a>
@@ -188,7 +188,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pt-8 mt-12 border-t border-gray-700">
-          <p className="text-base text-neutral-400 xl:text-center">
+          <p className="text-sm text-neutral-400 xl:text-center">
             &copy; {new Date().getFullYear()} {t('common:footer_copyright')}
           </p>
         </div>

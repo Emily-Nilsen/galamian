@@ -1,4 +1,5 @@
 import useTranslation from 'next-translate/useTranslation';
+import Link from 'next/link';
 
 export default function Noticias() {
   const { t } = useTranslation();
@@ -39,7 +40,7 @@ export default function Noticias() {
     >
       <div className="relative max-w-lg mx-auto divide-y-2 divide-neutral-200 lg:max-w-7xl">
         <div>
-          <h2 className="text-3xl tracking-wide text-gold-600 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gold-600 sm:text-4xl">
             {t('inicio:noticias_title')}
           </h2>
           <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center"></div>
@@ -47,28 +48,33 @@ export default function Noticias() {
         <div className="grid gap-16 pt-10 mt-6 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
           {posts.map((post) => (
             <div key={post.title}>
-              <p className="text-sm text-neutral-500">{post.date}</p>
-              <a href="#" className="block mt-2">
-                <p className="text-xl font-semibold text-neutral-900">
-                  {post.title}
-                </p>
-                <p className="mt-3 text-base text-neutral-500">
-                  {post.sentence01}
-                </p>
-                <p className="mt-3 text-base text-neutral-500">
-                  {post.sentence02}
-                </p>
-                <p className="mt-3 text-base text-neutral-500">
-                  {post.sentence03}
-                </p>
-              </a>
+              <p className="pb-2 text-sm font-semibold text-gold-600">
+                {post.date}
+              </p>
+              <Link href="#" passHref className="block mt-2">
+                <div>
+                  <h3 className="text-2xl font-bold tracking-tight text-neutral-800">
+                    {post.title}
+                  </h3>
+                  <p className="mt-3 text-base text-neutral-600">
+                    {post.sentence01}
+                  </p>
+                  <p className="mt-3 text-base text-neutral-600">
+                    {post.sentence02}
+                  </p>
+                  <p className="mt-3 text-base text-neutral-600">
+                    {post.sentence03}
+                  </p>
+                </div>
+              </Link>
               <div className="mt-3">
-                <a
-                  href={post.href}
-                  className="text-base font-semibold text-gold-600 hover:text-gold-500"
-                >
-                  {t('inicio:noticias_readmore')}
-                </a>
+                <button>
+                  <Link href={post.href}>
+                    <a className="text-base font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
+                      {t('inicio:noticias_readmore')}
+                    </a>
+                  </Link>
+                </button>
               </div>
             </div>
           ))}

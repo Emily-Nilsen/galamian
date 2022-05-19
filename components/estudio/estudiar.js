@@ -11,12 +11,12 @@ export default function Estudiar() {
         <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+            <h2 className="font-normal leading-6 tracking-tight uppercase text-neutral-900">
               {t('common:estudiar_subtitle')}
             </h2>
-            <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
+            <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
               {t('common:estudiar_title_part_1')}{' '}
-              <span className="block text-gold-600">
+              <span className="block font-bold text-gold-600">
                 {t('common:estudiar_title_part_2')}
               </span>
             </h2>
@@ -72,9 +72,9 @@ export default function Estudiar() {
                     />
                   </div>
                 </div>
-                <figcaption className="flex mt-3 text-sm text-neutral-500">
+                <figcaption className="flex mt-3 text-sm text-neutral-700">
                   <CameraIcon
-                    className="flex-none w-5 h-5 text-neutral-400"
+                    className="flex-none w-5 h-5 text-gold-500"
                     aria-hidden="true"
                   />
                   <span className="ml-2">
@@ -87,15 +87,15 @@ export default function Estudiar() {
           <div className="mt-8 lg:mt-0">
             <div className="mx-auto text-base max-w-prose lg:max-w-none">
               <h2>
-                <span className="block mt-2 text-xl font-normal leading-8 text-neutral-800 sm:text-2xl">
+                <span className="block mt-2 text-xl font-semibold leading-8 tracking-tight text-neutral-800 sm:text-2xl">
                   {t('estudia:estudiar_title')}
                 </span>
               </h2>
-              <p className="mt-4 text-lg text-neutral-500">
+              <p className="mt-4 text-lg text-neutral-600">
                 {t('estudia:estudiar_para_1')}
               </p>
             </div>
-            <div className="mx-auto mt-5 prose prose-gold text-neutral-500 lg:max-w-none lg:row-start-1 lg:col-start-1">
+            <div className="mx-auto mt-5 prose prose-gold text-neutral-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
                 {t('estudia:estudiar_para_2_1')}
                 {new Date().getFullYear()}/{new Date().getFullYear() + 1}
@@ -114,8 +114,8 @@ export default function Estudiar() {
               </ul>
 
               <div className="mt-10">
-                <Link href="/audiciones" passHref>
-                  <a className="text-base font-medium no-underline transition duration-200 ease-in-out text-gold-600 hover:underline">
+                <Link href="/estudia/formulario-de-inscripcion" passHref>
+                  <a className="text-base font-semibold tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                     {' '}
                     {t('common:button_solicita_1')}
                     {new Date().getFullYear()}/{new Date().getFullYear() + 1}{' '}

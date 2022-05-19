@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
-export default function ViolonceloGalleryOne() {
+export default function VioloncheloGalleryOne() {
   return (
     <section className="overflow-hidden">
       {/* Large screens */}
-      <div className="hidden md:flex flex-wrap -m-1 md:-m-2">
+      <div className="flex-wrap hidden -m-1 md:flex md:-m-2">
         <div className="flex flex-wrap w-1/2">
           <div className="w-1/2 p-1 md:p-2">
             <div className="block object-cover object-center w-full h-full rounded-lg">
@@ -89,7 +89,7 @@ export default function ViolonceloGalleryOne() {
         </div>
       </div>
       {/* Small screens */}
-      <div className="md:hidden flex flex-wrap -m-1 md:-m-2">
+      <div className="flex flex-wrap -m-1 md:hidden md:-m-2">
         <div className="flex flex-wrap w-full">
           <div className="w-1/2 p-1 md:p-2">
             <div className="block object-cover object-center w-full h-full rounded-none">

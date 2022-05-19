@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
 import Image from 'next/image';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -24,7 +23,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
-import LanguageSwitcher from './language-switcher';
+import Language from './language';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -126,7 +125,7 @@ export default function Navbar() {
     },
     {
       name: `${t('common:footer_estudios_2')}`,
-      href: `/estudios/violoncelo`,
+      href: `/estudios/violonchelo`,
     },
     {
       name: `${t('common:footer_estudios_4')}`,
@@ -153,7 +152,7 @@ export default function Navbar() {
     },
     {
       name: `${t('common:navbar_cello')}`,
-      href: `/estudios/violoncelo`,
+      href: `/estudios/violonchelo`,
     },
     {
       name: `${t('common:navbar_voice')}`,
@@ -196,10 +195,10 @@ export default function Navbar() {
             </a>
           </Link>
           <div className="md:hidden">
-            <LanguageSwitcher />
+            <Language />
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center p-2 transition duration-200 ease-in-out text-neutral-400 hover:text-neutral-500 focus:outline-none focus:ring-0 focus:ring-inset">
+            <Popover.Button className="inline-flex items-center justify-center p-2 transition duration-200 ease-in-out text-gold-500 hover:text-neutral-600 focus:outline-none focus:ring-0 focus:ring-inset">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
@@ -211,8 +210,8 @@ export default function Navbar() {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-neutral-900' : 'text-neutral-500',
-                        'group bg-t inline-flex items-start sm:text-left lg:text-center text-sm tracking-wide uppercase hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-200 ease-in-out'
+                        open ? 'text-neutral-900' : 'text-neutral-600',
+                        'group bg-t inline-flex items-start sm:text-left lg:text-center text-sm tracking-wide uppercase hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-500 ease-in-out focus:font-normal hover:border-b hover:border-gold-500 border-b border-transparent'
                       )}
                     >
                       <span className="font-base">
@@ -221,7 +220,7 @@ export default function Navbar() {
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-neutral-600' : 'text-neutral-400',
-                          'ml-1 h-5 w-5 group-hover:text-neutral-500'
+                          'ml-1 h-5 w-5 group-hover:text-neutral-600'
                         )}
                         aria-hidden="true"
                       />
@@ -244,7 +243,7 @@ export default function Navbar() {
                         <div className="relative grid grid-cols-1 mx-auto max-w-7xl lg:grid-cols-2">
                           <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div className="self-start">
-                              <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                              <h3 className="text-base font-bold tracking-normal uppercase text-neutral-600">
                                 {t('common:navbar_link_1_title_1')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
@@ -252,12 +251,12 @@ export default function Navbar() {
                                   <li key={item.name} className="flow-root">
                                     <Popover.Button>
                                       <Link href={item.href} passHref>
-                                        <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-in-out text-neutral-900 hover:bg-neutral-50 group">
+                                        <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-in-out text-neutral-600 hover:bg-neutral-50 group hover:text-neutral-900">
                                           <item.icon
-                                            className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500"
+                                            className="flex-shrink-0 w-6 h-6 text-gold-500 group-hover:text-gold-600"
                                             aria-hidden="true"
                                           />
-                                          <span className="ml-4">
+                                          <span className="ml-4 tracking-tight">
                                             {item.name}
                                           </span>
                                         </a>
@@ -268,7 +267,7 @@ export default function Navbar() {
                               </ul>
                             </div>
                             <div>
-                              <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                              <h3 className="text-base font-bold tracking-normal uppercase text-neutral-600">
                                 {t('common:navbar_link_1_title_2')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
@@ -276,12 +275,12 @@ export default function Navbar() {
                                   <li key={item.name} className="flow-root">
                                     <Popover.Button>
                                       <Link href={item.href} passHref>
-                                        <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-in-out text-neutral-900 hover:bg-neutral-50 group">
+                                        <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-in-out text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50 group">
                                           <item.icon
-                                            className="flex-shrink-0 w-6 h-6 text-neutral-400 group-hover:text-gold-500"
+                                            className="flex-shrink-0 w-6 h-6 text-gold-500 group-hover:text-gold-600"
                                             aria-hidden="true"
                                           />
-                                          <span className="ml-4">
+                                          <span className="ml-4 tracking-tight">
                                             {item.name}
                                           </span>
                                         </a>
@@ -295,7 +294,7 @@ export default function Navbar() {
                           <Popover.Button>
                             <div className="px-4 py-8 text-left bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
-                                <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                                <h3 className="text-base font-bold tracking-normal uppercase text-neutral-600">
                                   {t('common:navbar_link_1_title_3')}
                                 </h3>
                                 <ul role="list" className="mt-6 space-y-6">
@@ -317,10 +316,10 @@ export default function Navbar() {
                                             </div>
                                           </div>
                                           <div className="flex-1 w-0 sm:ml-8">
-                                            <h4 className="text-base font-medium truncate text-neutral-900">
+                                            <h4 className="text-base font-semibold tracking-tight truncate text-neutral-900">
                                               {post.name}
                                             </h4>
-                                            <p className="mt-1 text-sm text-neutral-500">
+                                            <p className="mt-1 text-sm tracking-tight text-neutral-600">
                                               {post.preview}
                                             </p>
                                           </div>
@@ -330,9 +329,9 @@ export default function Navbar() {
                                   ))}
                                 </ul>
                               </div>
-                              <div className="mt-6 text-sm font-medium">
+                              <div className="mt-6">
                                 <Link href="/bulletin/">
-                                  <a className="text-gold-600 hover:text-gold-500">
+                                  <a className="text-sm font-semibold tracking-tight text-gold-600 hover:text-gold-500">
                                     {' '}
                                     {t('common:button_publicaciones')}{' '}
                                     <span aria-hidden="true">&rarr;</span>
@@ -356,7 +355,7 @@ export default function Navbar() {
                       className={classNames(
                         open
                           ? 'text-neutral-900'
-                          : 'text-neutral-500 uppercase',
+                          : 'text-neutral-600 uppercase',
                         'group bg-transparent inline-flex items-center text-sm tracking-wide hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-200 ease-in-out'
                       )}
                     >
@@ -366,7 +365,7 @@ export default function Navbar() {
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-neutral-600' : 'text-neutral-400',
-                          'ml-1 h-5 w-5 group-hover:text-neutral-500'
+                          'ml-1 h-5 w-5 group-hover:text-neutral-600'
                         )}
                         aria-hidden="true"
                       />
@@ -389,7 +388,7 @@ export default function Navbar() {
                         <div className="relative grid grid-cols-1 mx-auto max-w-7xl lg:grid-cols-2">
                           <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div className="self-start">
-                              <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                              <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-600">
                                 {t('common:footer_estudia')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
@@ -413,7 +412,7 @@ export default function Navbar() {
                               </ul>
                             </div>
                             <div>
-                              <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                              <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-600">
                                 {t('common:footer_estudios')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
@@ -436,7 +435,7 @@ export default function Navbar() {
                           <Popover.Button className="self-start">
                             <div className="items-stretch px-4 py-8 text-left bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
-                                <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-500">
+                                <h3 className="text-sm font-medium tracking-wide uppercase text-neutral-600">
                                   {t('common:navbar_link_1_title_4')}
                                 </h3>
                                 <ul role="list" className="mt-5 space-y-6">
@@ -480,18 +479,18 @@ export default function Navbar() {
                 )}
               </Popover>
               <Link href="/profesores" passHref>
-                <a className="self-center text-sm tracking-wide uppercase transition duration-200 ease-in-out text-neutral-500 hover:text-neutral-900">
+                <a className="self-center text-sm tracking-wide uppercase transition duration-200 ease-in-out text-neutral-600 hover:text-neutral-900">
                   {t('common:navbar_link_3')}
                 </a>
               </Link>
               <Link href="/galamian-junior" passHref>
-                <a className="self-center text-sm tracking-wide uppercase transition duration-200 ease-in-out text-neutral-500 hover:text-neutral-900">
+                <a className="self-center text-sm tracking-wide uppercase transition duration-200 ease-in-out text-neutral-600 hover:text-neutral-900">
                   {t('common:navbar_link_4')}
                 </a>
               </Link>
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <LanguageSwitcher />
+              <Language />
             </div>
           </div>
         </div>
@@ -528,7 +527,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 transition duration-200 ease-in-out text-neutral-400 hover:text-gold-500 focus:outline-none focus:ring-0 focus:ring-inset">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 transition duration-200 ease-in-out text-gold-500 hover:text-neutral-600 focus:outline-none focus:ring-0 focus:ring-inset">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="w-6 h-6" aria-hidden="true" />
                     </Popover.Button>
@@ -538,7 +537,7 @@ export default function Navbar() {
                   <nav>
                     <div className="grid gap-5 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                       <Link href="/academia" passHref>
-                        <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-in-out text-neutral-900 hover:bg-neutral-50 group">
+                        <a className="flex items-center p-3 -m-3 text-base transition duration-500 ease-in-out text-neutral-900 hover:bg-neutral-50 group hover:font-normal">
                           <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
                             <LibraryIcon
                               className="w-6 h-6"
@@ -551,7 +550,7 @@ export default function Navbar() {
                         </a>
                       </Link>
                       <Link href="/profesores" passHref>
-                        <a className="flex items-center p-3 -m-3 text-base font-medium transition duration-200 ease-in-out text-neutral-900 hover:bg-neutral-50 group">
+                        <a className="flex items-center p-3 -m-3 text-base transition duration-500 ease-in-out hover:bg-neutral-50 group text-neutral-900 hover:font-normal">
                           <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gold-500 bg-neutral-50 sm:h-12 sm:w-12">
                             <UserCircleIcon
                               className="w-6 h-6"
@@ -572,7 +571,7 @@ export default function Navbar() {
                                 aria-hidden="true"
                               />
                             </div>
-                            <div className="ml-4 text-base font-medium text-left text-neutral-900">
+                            <div className="ml-4 text-base text-left transition duration-500 ease-in-out text-neutral-900 hover:font-normal">
                               {item.name}
                             </div>
                           </a>
@@ -584,21 +583,16 @@ export default function Navbar() {
               </div>
 
               <div className="px-5 py-6">
-                <div className="grid grid-cols-2 gap-4 justify-items-start">
+                <div className="grid grid-cols-2 gap-5 justify-items-start">
                   {mobileTabs.map((tab) => (
                     <Link key={tab.href} href={tab.href} passHref>
-                      <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      <a className="text-base transition duration-500 ease-in-out text-neutral-900 hover:font-normal">
                         {tab.name}
                       </a>
                     </Link>
                   ))}
                 </div>
               </div>
-              {/* <div className="h-full px-5 py-6 bg-gray-50">
-                <div className="w-1/2">
-                  <LanguageSwitcher />
-                </div>
-              </div> */}
             </div>
           </Popover.Button>
         </Popover.Panel>

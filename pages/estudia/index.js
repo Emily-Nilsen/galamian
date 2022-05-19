@@ -59,19 +59,21 @@ const Estudia = () => {
         </div>
 
         <div className="relative max-w-xl px-4 py-6 mx-auto text-center sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h2 className="font-medium tracking-wide text-neutral-900">
+          <h2 className="font-normal tracking-tight text-neutral-900">
             {t('estudia:title_1')}
           </h2>
-          <h2 className="mt-2 text-3xl tracking-wide sm:text-4xl">
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
             {t('estudia:title_2')}
-            <span className="text-gold-600">{t('estudia:title_3')}</span>
+            <span className="font-bold text-gold-600">
+              {t('estudia:title_3')}
+            </span>
           </h2>
-          <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-500">
+          <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-600">
             {t('estudia:subtitle')}
           </p>
           <div className="mt-10">
             <Link href="/estudios">
-              <a className="text-base font-medium transition duration-200 ease-in-out text-gold-600 hover:underline">
+              <a className="text-base font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                 {' '}
                 {t('estudia:study_plans')}
                 {new Date().getFullYear()}/{new Date().getFullYear() + 1}{' '}
@@ -97,8 +99,8 @@ const Estudia = () => {
                           classNames(
                             selected
                               ? 'border-gold-500 text-gold-600 focus:outline-none focus:ring-0 focus:ring-transparent'
-                              : 'border-transparent text-neutral-500 hover:text-neutral-700 hover:border-neutral-300 focus:outline-none focus:ring-0',
-                            'whitespace-nowrap py-6 border-b-2 font-medium text-sm'
+                              : 'border-transparent text-neutral-600 hover:text-neutral-900 hover:border-neutral-300 focus:outline-none focus:ring-0',
+                            'whitespace-nowrap py-6 border-b-2 font-semibold text-base tracking-tight'
                           )
                         }
                       >

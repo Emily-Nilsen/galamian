@@ -33,10 +33,10 @@ export default function Features() {
   ];
 
   return (
-    <div className="bg-white overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div className="overflow-hidden bg-white">
+      <div className="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <svg
-          className="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
+          className="absolute top-0 transform -translate-x-1/2 left-full -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
           width={404}
           height={784}
           fill="none"
@@ -57,7 +57,7 @@ export default function Features() {
                 y={0}
                 width={2}
                 height={4}
-                className="text-neutral-200"
+                className="text-neutral-200 opacity-70"
                 fill="currentColor"
               />
             </pattern>
@@ -71,12 +71,12 @@ export default function Features() {
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div className="lg:col-span-1">
-            <h2 className="text-3xl text-neutral-900 sm:text-4xl tracking-wide">
-              <span className="text-gold-600 block">
+            <h2 className="text-3xl tracking-tight text-neutral-900 sm:text-4xl">
+              <span className="block font-bold text-gold-600">
                 {t('inicio:feature_title_1')}
               </span>
               {t('inicio:feature_title_2')}{' '}
-              <span className="text-gold-600">
+              <span className="font-bold text-gold-600">
                 {t('inicio:feature_title_3')}
               </span>
             </h2>
@@ -85,14 +85,14 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name}>
                 <dt>
-                  <div className="flex items-center justify-center h-12 w-12 bg-neutral-50 text-gold-500">
-                    <feature.icon className="h-6 w-6" aria-hidden="true" />
+                  <div className="flex items-center justify-center w-12 h-12 bg-neutral-50 text-gold-500">
+                    <feature.icon className="w-6 h-6" aria-hidden="true" />
                   </div>
-                  <p className="mt-5 text-lg leading-6 font-medium text-neutral-900">
+                  <h3 className="mt-5 text-xl font-bold leading-6 tracking-tight text-neutral-800">
                     {feature.name}
-                  </p>
+                  </h3>
                 </dt>
-                <dd className="mt-2 text-base text-neutral-500">
+                <dd className="mt-2 text-base text-neutral-600">
                   {feature.description}
                 </dd>
               </div>
