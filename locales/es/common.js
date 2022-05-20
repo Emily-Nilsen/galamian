@@ -1,5 +1,8 @@
 const common = {
   //Estudiar en la AIG
+  title_1: ``,
+  title_2: `Academia Internacional`,
+  title_3: `Galamian`,
   estudiar_subtitle: `Estudiar en la`,
   estudiar_title_part_1: `Academia Internacional`,
   estudiar_title_part_2: `Galamian`,

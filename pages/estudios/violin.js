@@ -299,13 +299,13 @@ export default function Violin() {
             </h1>
             <p className="mt-8 text-xl leading-8 text-neutral-600">
               {t('common:estudio_para_01_part_1_violin')}{' '}
-              <span className="tracking-tight no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
+              <span className="tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
                 <Link href="/profesores/#jesus" passHref>
                   {t('common:estudio_para_01_part_2_violin')}
                 </Link>{' '}
               </span>
               {t('common:estudio_para_01_part_3')}{' '}
-              <span className="tracking-tight no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
+              <span className="tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
                 <Link href="/profesores/#anna" passHref>
                   {t('common:estudio_para_01_part_4_violin')}
                 </Link>{' '}
@@ -483,7 +483,7 @@ export default function Violin() {
             <p>
               {t('common:estudio_para_13_part_2')}
               <Link href="/profesores">
-                <a className="tracking-tight no-underline transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900">
+                <a className="tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
                   {t('common:estudio_para_13_part_3')}
                 </a>
               </Link>

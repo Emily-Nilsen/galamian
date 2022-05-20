@@ -52,16 +52,16 @@ export default function VozRequisitos() {
     <div className="bg-white">
       <div className="max-w-2xl px-4 py-12 mx-auto sm:px-6 lg:py-24 lg:max-w-7xl lg:px-8">
         <div className="max-w-3xl mx-auto space-y-5 text-center sm:mx-auto sm:space-y-4">
-          <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+          <h2 className="font-medium leading-6 tracking-tight uppercase text-neutral-900">
             {t('common:requisitos_subtitle')}
           </h2>
-          <h2 className="text-3xl tracking-wide text-neutral-900 sm:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
             {t('common:requisitos_title_part_1')}{' '}
-            <span className="text-gold-600">
+            <span className="font-bold text-gold-600">
               {t('common:requisitos_title_part_2')}
             </span>{' '}
           </h2>
-          <p className="mt-4 text-neutral-500">{t('common:requisitos_text')}</p>
+          <p className="mt-4 text-neutral-600">{t('common:requisitos_text')}</p>
         </div>
 
         <div className="mt-16 space-y-16">
@@ -78,16 +78,16 @@ export default function VozRequisitos() {
                   'mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4'
                 )}
               >
-                <h3 className="text-xl font-medium text-neutral-900">
+                <h3 className="text-xl font-semibold tracking-tight text-neutral-900">
                   {feature.name}
                 </h3>
-                <p className="mt-2 text-base text-neutral-500">
+                <p className="mt-2 text-base text-neutral-600">
                   {feature.description_01}
                 </p>
-                <p className="mt-2 text-base text-neutral-500">
+                <p className="mt-2 text-base text-neutral-600">
                   {feature.description_02}
                 </p>
-                <p className="mt-2 text-base text-neutral-500">
+                <p className="mt-2 text-base text-neutral-600">
                   {feature.description_03}
                   <span>{feature.description_04}</span>
                 </p>
@@ -98,21 +98,21 @@ export default function VozRequisitos() {
                       {feature.subtitle}
                     </h3>
                     <ul role="list">
-                      <li className="pb-3 list-none text-neutral-500">
+                      <li className="pb-3 list-none text-neutral-600">
                         <CheckIcon
                           className="absolute w-6 h-6 text-lime-500"
                           aria-hidden="true"
                         />
                         <p className="text-base ml-9">{feature.list_1}</p>
                       </li>
-                      <li className="pb-3 list-none text-neutral-500">
+                      <li className="pb-3 list-none text-neutral-600">
                         <CheckIcon
                           className="absolute w-6 h-6 text-lime-500"
                           aria-hidden="true"
                         />
                         <p className="text-base ml-9">{feature.list_2}</p>
                       </li>
-                      <li className="pb-3 list-none text-neutral-500 ">
+                      <li className="pb-3 list-none text-neutral-600 ">
                         <CheckIcon
                           className="absolute w-6 h-6 text-lime-500"
                           aria-hidden="true"

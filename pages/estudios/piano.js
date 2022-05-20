@@ -83,14 +83,17 @@ export default function Piano() {
       <div className="bg-white">
         <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-base font-semibold tracking-wide uppercase text-neutral-900">
+            <h2 className="text-base font-medium tracking-tight uppercase text-neutral-900">
               {t('common:programas_subtitle')}
             </h2>
-            <h1 className="mt-1 text-4xl font-normal text-neutral-900 sm:text-5xl sm:tracking-wide lg:text-6xl">
+            <h1 className="mt-2 text-4xl font-semibold text-neutral-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
               {t('common:programas_title')}{' '}
-              <span className="text-gold-600"> {t('piano:title')}</span>
+              <span className="font-bold text-gold-600">
+                {' '}
+                {t('piano:title')}
+              </span>
             </h1>
-            <p className="max-w-xl mx-auto mt-5 text-xl text-neutral-500">
+            <p className="max-w-xl mx-auto mt-5 text-xl text-neutral-600">
               {t('piano:text_part_1')} {new Date().getFullYear()}/
               {new Date().getFullYear() + 1}
               {t('piano:text_part_2')}.
@@ -107,7 +110,7 @@ export default function Piano() {
                       />
                     </div>
                     <div className="ml-3">
-                      <h3 className="text-sm font-medium text-yellow-800">
+                      <h3 className="text-base font-semibold tracking-tight text-yellow-800">
                         {t('common:atencion_title')}
                       </h3>
                       <div className="mt-2 text-sm text-yellow-700">
@@ -152,22 +155,27 @@ export default function Piano() {
         <div className="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
           <div className="lg:col-start-2 lg:pl-8">
             <div className="mx-auto text-base max-w-prose lg:max-w-lg lg:ml-auto lg:mr-0">
-              <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+              <h2 className="font-medium leading-6 tracking-tight uppercase text-neutral-900">
                 {t('common:estudiar_subtitle')}
               </h2>
-              <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-                {t('common:estudiar_title_part_1')}{' '}
-                <span className="block text-gold-600">
-                  {t('common:estudiar_title_part_2')}
+              <h2 className="text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
+                <span className="block font-bold text-gold-600">
+                  {t('common:title_1')}
+                </span>
+                {t('common:title_2')}{' '}
+                <span className="font-bold text-gold-600">
+                  {t('common:title_3')}
                 </span>
               </h2>
-              <p className="mt-8 text-lg text-neutral-500">
+              <p className="mt-8 text-lg text-neutral-600">
                 {t('common:estudiar_para_01')}
               </p>
-              <div className="mt-5 prose text-neutral-500 prose-gold">
+              <div className="mt-5 prose text-neutral-600 prose-gold">
                 <p>{t('common:estudiar_para_02')}</p>
                 <p>{t('common:estudiar_para_03')}</p>
-                <h3>{t('common:permite_title')}</h3>
+                <h3 className="font-semibold tracking-tight">
+                  {t('common:permite_title')}
+                </h3>
                 <ul role="list">
                   <li>{t('common:permite_list_item_01')}</li>
                   <li>{t('common:permite_list_item_02')}</li>
@@ -288,22 +296,22 @@ export default function Piano() {
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="mx-auto text-lg max-w-prose">
             <h1>
-              <span className="block text-base font-semibold tracking-wide text-center uppercase text-gold-600">
+              <span className="block text-base font-medium tracking-tight text-center uppercase text-gold-600">
                 {t('common:estudio_subtitle')}
               </span>
-              <span className="block mt-2 text-4xl font-normal leading-8 tracking-wide text-center text-neutral-900 sm:text-5xl">
+              <span className="block mt-2 text-4xl font-semibold leading-8 tracking-tight text-center text-neutral-900 sm:text-5xl">
                 {t('common:estudio_title_piano')}
               </span>
             </h1>
-            <p className="mt-8 text-xl leading-8 text-neutral-500">
+            <p className="mt-8 text-xl leading-8 text-neutral-600">
               {t('common:estudio_para_01_part_1_piano')}{' '}
-              <span className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
+              <span className="font-semibold tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
                 <Link href="/profesores/#" passHref>
                   {t('common:estudio_para_01_part_2_piano')}
                 </Link>{' '}
               </span>
               {t('common:estudio_para_01_part_3')}{' '}
-              <span className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
+              <span className="font-semibold tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
                 <Link href="/profesores/#" passHref>
                   {t('common:estudio_para_01_part_4_piano')}
                 </Link>{' '}
@@ -311,7 +319,7 @@ export default function Piano() {
               {t('common:estudio_para_01_part_5_piano')}
             </p>
           </div>
-          <div className="mx-auto mt-6 prose prose-lg prose-gold text-neutral-500">
+          <div className="mx-auto mt-6 prose prose-lg prose-gold text-neutral-600">
             <p>{t('common:estudio_para_02')}</p>
             <p>
               {t('common:estudio_para_03_piano')}
@@ -393,7 +401,7 @@ export default function Piano() {
                       <div className="overflow-hidden shadow-none ring-0 ring-black ring-opacity-5">
                         <table className="min-w-full divide-y divide-neutral-300">
                           <div className="table-caption max-w-lg text-lg">
-                            <h3 className="mt-0 text-lg text-neutral-500 sm:text-xl">
+                            <h3 className="mt-0 text-lg tracking-tight text-neutral-600 sm:text-xl">
                               {t('common:modalidades_table_title_piano')}
                             </h3>
                           </div>
@@ -433,13 +441,13 @@ export default function Piano() {
                                   {mode.name}
                                 </td>
 
-                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-500">
+                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-600">
                                   {mode.modeA}
                                 </td>
-                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-500">
+                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-600">
                                   {mode.modeB}
                                 </td>
-                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-500">
+                                <td className="px-3 py-4 text-sm whitespace-nowrap text-neutral-600">
                                   {mode.modeC}
                                 </td>
                               </tr>
@@ -447,8 +455,8 @@ export default function Piano() {
                           </tbody>
                         </table>
                         <div className="flex max-w-md -mt-4 border-t border-t-neutral-200">
-                          <div className="pr-1">*</div>
-                          <div className="table-footer-group text-sm">
+                          <div className="pr-1 text-gold-600">*</div>
+                          <div className="table-footer-group text-sm text-neutral-700">
                             {t('common:estudio_footer')}
                           </div>
                         </div>
@@ -459,7 +467,7 @@ export default function Piano() {
               </div>
             </div>
 
-            <h2 className="text-xl font-semibold tracking-wide text-neutral-900 sm:text-2xl">
+            <h2 className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_12_part_1')}
             </h2>
             <p>{t('common:estudio_para_12_part_2')}</p>
@@ -480,13 +488,13 @@ export default function Piano() {
                 {/* Sagittis scelerisque nulla cursus in enim consectetur quam. */}
               </figcaption>
             </figure>
-            <h2 className="text-xl font-semibold tracking-wide text-neutral-900 sm:text-2xl">
+            <h2 className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_13_part_1')}
             </h2>
             <p>
               {t('common:estudio_para_13_part_2')}
               <Link href="/profesores">
-                <a className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900">
+                <a className="tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
                   {t('common:estudio_para_13_part_3')}
                 </a>
               </Link>

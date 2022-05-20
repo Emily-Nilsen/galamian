@@ -96,7 +96,7 @@ export default function ProfesoresViolin() {
                     />
                   </div>
                 </div>
-                <figcaption className="flex mt-3 text-sm text-neutral-600">
+                <figcaption className="flex mt-3 text-sm text-neutral-700">
                   <CameraIcon
                     className="flex-none w-5 h-5 text-gold-500"
                     aria-hidden="true"
@@ -169,7 +169,7 @@ export default function ProfesoresViolin() {
                     />
                   </div>
                 </div>
-                <figcaption className="flex mt-3 text-sm text-neutral-600">
+                <figcaption className="flex mt-3 text-sm text-neutral-700">
                   <CameraIcon
                     className="flex-none w-5 h-5 text-gold-500"
                     aria-hidden="true"
