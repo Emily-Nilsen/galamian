@@ -71,7 +71,7 @@ export default function Features() {
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div className="lg:col-span-1">
-            <h2 className="text-3xl tracking-tight text-neutral-900 sm:text-4xl">
+            <h2 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
               <span className="block font-bold text-gold-600">
                 {t('inicio:feature_title_1')}
               </span>

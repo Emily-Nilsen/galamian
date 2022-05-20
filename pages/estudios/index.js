@@ -16,7 +16,7 @@ export default function Estudios() {
       id: 2,
       name: `${t('estudios:estudio_piano')}`,
       href: '/estudios/piano',
-      imageSrc: '/static/estudia/piano_02.jpg',
+      imageSrc: '/static/estudia/piano/piano_02.jpg',
     },
     {
       id: 3,
@@ -28,22 +28,22 @@ export default function Estudios() {
       id: 4,
       name: `${t('estudios:estudio_voz')}`,
       href: '/estudios/voz',
-      imageSrc: '/static/estudia/voz.jpg',
+      imageSrc: '/static/estudia/voice/voz.jpg',
     },
   ];
 
   return (
     <div className="px-4 py-16 mx-auto bg-white max-w-7xl sm:py-24 sm:px-6 lg:px-8">
       <div className="text-center">
-        <h2 className="mt-1 text-4xl font-normal text-neutral-900 sm:text-5xl sm:tracking-wide lg:text-6xl">
+        <h2 className="mt-1 text-4xl font-semibold text-neutral-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
           {t('estudios:estudios_title_part_1')}{' '}
-          <span className="text-gold-600">
+          <span className="font-bold text-gold-600">
             {' '}
             {t('estudios:estudios_title_part_2')}
           </span>{' '}
           {t('estudios:estudios_title_part_3')}
         </h2>
-        <p className="max-w-xl mx-auto mt-5 text-xl text-neutral-500">
+        <p className="max-w-xl mx-auto mt-5 text-xl text-neutral-600">
           {t('estudios:estudios_text')}
         </p>
       </div>
@@ -68,12 +68,12 @@ export default function Estudios() {
                   className="flex items-start p-4 transition duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                   aria-hidden="true"
                 >
-                  <div className="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-none text-neutral-900 backdrop-filter backdrop-blur">
+                  <div className="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-50 rounded-none text-neutral-900 backdrop-filter backdrop-blur">
                     {t('estudios:estudio_ver')}
                   </div>
                 </div>
               </div>
-              <div className="flex items-center justify-between mt-4 space-x-8 text-base font-medium text-neutral-900">
+              <div className="flex items-center justify-between mt-4 space-x-8 text-lg font-bold tracking-tight text-neutral-900">
                 <h3>
                   <a href={estudio.href}>
                     <span aria-hidden="true" className="absolute inset-0" />

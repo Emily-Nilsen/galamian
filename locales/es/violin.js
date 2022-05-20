@@ -6,7 +6,7 @@ const violin = {
   //Profesores del Estudio de Violín/Viola
   profesores_subtitle: `Profesores del`,
   profesores_title_part_1: `Estudio de `,
-  profesores_title_part_2: `Violín/Viola`,
+  profesores_title_part_2: `Violín & Viola`,
   profesores_title_part_3: ``,
   profesores_principales: `Profesores Principales`,
   profesores_asistentes: `Profesora Asistente`,

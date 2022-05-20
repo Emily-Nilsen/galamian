@@ -58,25 +58,27 @@ const Profesores = () => {
   ];
   return (
     <div>
-      <div className="relative bg-white pt-16 sm:pt-24">
-        <div className="pb-0 lg:pb-4 relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h2 className="text-center text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
+      <div className="relative pt-16 bg-white sm:pt-24">
+        <div className="relative max-w-xl px-4 pb-0 mx-auto lg:pb-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+          <h2 className="text-3xl font-semibold leading-8 tracking-tight text-center text-neutral-900 sm:text-4xl">
             {t('profesores:title_1')}
-            <span className="text-gold-600">{t('profesores:title_2')}</span>
+            <span className="font-bold text-gold-600">
+              {t('profesores:title_2')}
+            </span>
           </h2>
-          <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-neutral-500">
+          <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-600">
             {t('profesores:subtitle')}
           </p>
         </div>
         <section
           aria-labelledby="features-heading"
-          className="max-w-7xl mx-auto py-4 sm:py-8 sm:px-2 lg:px-8"
+          className="py-4 mx-auto max-w-7xl sm:py-8 sm:px-2 lg:px-8"
         >
-          <div className="max-w-2xl mx-auto px-4 lg:px-0 lg:max-w-none">
+          <div className="max-w-2xl px-4 mx-auto lg:px-0 lg:max-w-none">
             <Tab.Group as="div" className="mt-4">
-              <div className="-mx-4 flex overflow-x-auto sm:mx-0">
+              <div className="flex -mx-4 overflow-x-auto sm:mx-0">
                 <div className="flex-auto px-4 border-b border-neutral-200 sm:px-0">
-                  <Tab.List className="-mb-px flex justify-between lg:justify-evenly w-full">
+                  <Tab.List className="flex justify-between w-full -mb-px lg:justify-evenly">
                     {tabs.map((tab) => (
                       <Tab
                         key={tab.name}
@@ -84,8 +86,8 @@ const Profesores = () => {
                           classNames(
                             selected
                               ? 'border-gold-500 text-gold-600 focus:outline-none focus:ring-0'
-                              : 'border-transparent text-neutral-500 hover:text-neutral-700 hover:border-neutral-300 focus:outline-none focus:ring-0',
-                            'whitespace-nowrap py-6 border-b-2 font-medium text-sm'
+                              : 'border-transparent text-neutral-600 hover:text-neutral-900 hover:border-neutral-400 focus:outline-none focus:ring-0',
+                            'whitespace-nowrap py-6 border-b-2 font-semibold text-base tracking-tight'
                           )
                         }
                       >

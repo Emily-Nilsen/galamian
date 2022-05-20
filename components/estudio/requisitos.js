@@ -78,7 +78,7 @@ export default function Requisitos() {
               className="flex flex-col pb-6 rounded-none shadow-none bg-gradient-to-b from-neutral-50 to-neutral-100"
             >
               <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
-                <div className="absolute top-0 inline-block px-6 py-4 transform -translate-y-1/2 rounded-none rounded-full shadow-none bg-gold-600">
+                <div className="absolute top-0 inline-block px-6 py-4 transform -translate-y-1/2 rounded-full shadow-none bg-gold-600">
                   <h2 className="text-lg font-bold text-white">
                     {requisito.step}
                   </h2>

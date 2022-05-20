@@ -99,7 +99,7 @@ const Estudia = () => {
                           classNames(
                             selected
                               ? 'border-gold-500 text-gold-600 focus:outline-none focus:ring-0 focus:ring-transparent'
-                              : 'border-transparent text-neutral-600 hover:text-neutral-900 hover:border-neutral-300 focus:outline-none focus:ring-0',
+                              : 'border-transparent text-neutral-600 hover:text-neutral-900 hover:border-neutral-400 focus:outline-none focus:ring-0',
                             'whitespace-nowrap py-6 border-b-2 font-semibold text-base tracking-tight'
                           )
                         }

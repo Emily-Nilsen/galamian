@@ -6,11 +6,11 @@ export default function SusFundadores() {
   return (
     <section
       id="fundadores"
-      className="py-16 bg-neutral-50 overflow-hidden lg:py-24"
+      className="py-16 overflow-hidden bg-neutral-50 lg:py-24"
     >
-      <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+      <div className="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <svg
-          className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4"
+          className="absolute hidden transform -translate-x-1/2 lg:block left-full -translate-y-1/4"
           width={404}
           height={784}
           fill="none"
@@ -44,30 +44,30 @@ export default function SusFundadores() {
         </svg>
 
         <div className="relative">
-          <h2 className="text-center text-3xl leading-8 tracking-wide text-gold-600 sm:text-4xl">
+          <h2 className="text-3xl font-bold leading-8 tracking-tight text-center text-gold-600 sm:text-4xl">
             {t('academia:fundadores_title')}
           </h2>
-          <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-neutral-500">
+          <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-600">
             {t('academia:fundadores_subtitle')}
           </p>
         </div>
 
         <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="relative">
-            <h2 className="text-2xl text-neutral-900 tracking-wide sm:text-3xl">
+            <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">
               Jesús Reina
             </h2>
-            <p className="mt-3 text-base leading-7 text-neutral-500">
+            <p className="mt-3 text-base leading-7 text-neutral-600">
               {t('academia:jesus_para_1')}
             </p>
-            <p className="mt-3 text-base leading-7 text-neutral-500">
+            <p className="mt-3 text-base leading-7 text-neutral-600">
               {t('academia:jesus_para_2')}
             </p>
           </div>
 
-          <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+          <div className="relative mt-10 -mx-4 lg:mt-0" aria-hidden="true">
             <svg
-              className="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
+              className="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden"
               width={784}
               height={404}
               fill="none"
@@ -113,7 +113,7 @@ export default function SusFundadores() {
         </div>
 
         <svg
-          className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12"
+          className="absolute hidden transform translate-x-1/2 translate-y-12 lg:block right-full"
           width={404}
           height={784}
           fill="none"
@@ -149,20 +149,20 @@ export default function SusFundadores() {
         <div className="relative mt-12 sm:mt-16 lg:mt-24">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="lg:col-start-2">
-              <h2 className="text-2xl text-neutral-900 tracking-wide sm:text-3xl">
+              <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">
                 Anna Margrethe Nilsen
               </h2>
-              <p className="mt-3 text-base leading-7 text-neutral-500">
+              <p className="mt-3 text-base leading-7 text-neutral-600">
                 {t('academia:anna_para_1')}
               </p>
-              <p className="mt-3 text-base leading-7 text-neutral-500">
+              <p className="mt-3 text-base leading-7 text-neutral-600">
                 {t('academia:anna_para_2')}
               </p>
             </div>
 
-            <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+            <div className="relative mt-10 -mx-4 lg:mt-0 lg:col-start-1">
               <svg
-                className="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
+                className="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden"
                 width={784}
                 height={404}
                 fill="none"

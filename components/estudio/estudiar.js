@@ -15,9 +15,13 @@ export default function Estudiar() {
               {t('common:estudiar_subtitle')}
             </h2>
             <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
-              {t('common:estudiar_title_part_1')}{' '}
-              <span className="block font-bold text-gold-600">
-                {t('common:estudiar_title_part_2')}
+              <span className="font-bold text-gold-600">
+                {t('estudia:enrolment_title_2')}
+              </span>
+              <span className="block">{t('estudia:enrolment_title_3')}</span>
+
+              <span className="font-bold text-gold-600">
+                {t('estudia:enrolment_title_4')}
               </span>
             </h2>
           </div>

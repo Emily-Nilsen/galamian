@@ -22,26 +22,26 @@ export default function ProfesoresViolin() {
           {/* Hero */}
           <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="mx-auto text-lg max-w-prose">
-              <h2 className="text-base font-semibold tracking-wide uppercase text-neutral-900">
+              <h2 className="text-base font-medium tracking-tight uppercase text-neutral-900">
                 {t('violin:profesores_subtitle')}
               </h2>
-              <h2 className="mt-2 text-3xl leading-8 tracking-wide text-left text-neutral-900 sm:text-4xl">
+              <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-left text-neutral-900 sm:text-4xl">
                 {t('violin:profesores_title_part_1')}
-                <span className="text-gold-600">
+                <span className="font-bold text-gold-600">
                   {t('violin:profesores_title_part_2')}
                 </span>
                 {t('violin:profesores_title_part_3')}
               </h2>
-              <div className="grid justify-between pt-10 pb-6 sm:grid-cols-2 text-neutral-500">
+              <div className="grid justify-between pt-10 pb-6 sm:grid-cols-2 text-neutral-600">
                 <div className="pb-6 pr-6 leading-7 sm:col-span-1">
-                  <h3 className="pb-2 text-lg font-semibold text-neutral-900">
+                  <h3 className="pb-2 text-lg font-semibold tracking-tight text-neutral-900">
                     {t('violin:profesores_principales')}
                   </h3>
                   <ul role="list">
                     <li>Jesús Reina</li>
                     <li>Anna Margrethe Nilsen</li>
                   </ul>
-                  <h3 className="pt-6 pb-2 text-lg font-semibold text-neutral-900">
+                  <h3 className="pt-6 pb-2 text-lg font-semibold tracking-tight text-neutral-900">
                     {t('violin:profesores_asistentes')}
                   </h3>
                   <ul role="list">
@@ -49,7 +49,7 @@ export default function ProfesoresViolin() {
                   </ul>
                 </div>
                 <div className="sm:col-span-1">
-                  <h3 className="pb-2 text-lg font-semibold text-neutral-900">
+                  <h3 className="pb-2 text-lg font-semibold tracking-tight text-neutral-900">
                     {t('violin:profesores_invitados')}
                   </h3>
                   <div className="flex gap-10 leading-8">
@@ -96,9 +96,9 @@ export default function ProfesoresViolin() {
                     />
                   </div>
                 </div>
-                <figcaption className="flex mt-3 text-sm text-neutral-500">
+                <figcaption className="flex mt-3 text-sm text-neutral-600">
                   <CameraIcon
-                    className="flex-none w-5 h-5 text-neutral-400"
+                    className="flex-none w-5 h-5 text-gold-500"
                     aria-hidden="true"
                   />
                   <span className="ml-2">
@@ -113,14 +113,14 @@ export default function ProfesoresViolin() {
             {/* Content area */}
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <div>
-                <h2 className="text-base font-semibold tracking-wide uppercase text-gold-600">
+                <h2 className="text-base font-medium tracking-tight uppercase text-gold-600">
                   {t('violin:principal_profesor_male')}
                 </h2>
-                <h2 className="mt-2 text-3xl font-normal leading-8 tracking-wide text-neutral-900 sm:text-4xl">
+                <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
                   Jesús Reina
                 </h2>
               </div>
-              <div className="mt-6 space-y-6 text-neutral-500">
+              <div className="mt-6 space-y-6 text-neutral-600">
                 <p className="text-lg">{t('common:jesus_para_1')}</p>
                 <p className="text-base leading-7">
                   {t('common:jesus_para_2')}
@@ -133,7 +133,7 @@ export default function ProfesoresViolin() {
                     href={t('common:jesus_href')}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-base leading-7 text-gold-600 font-semibold hover:text-neutral-900 transition duration-200 ease-in-out"
+                    className="text-lg font-semibold leading-7 tracking-normal transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900"
                   >
                     {t('common:jesus_website')}
                   </a>
@@ -169,9 +169,9 @@ export default function ProfesoresViolin() {
                     />
                   </div>
                 </div>
-                <figcaption className="flex mt-3 text-sm text-neutral-500">
+                <figcaption className="flex mt-3 text-sm text-neutral-600">
                   <CameraIcon
-                    className="flex-none w-5 h-5 text-neutral-400"
+                    className="flex-none w-5 h-5 text-gold-500"
                     aria-hidden="true"
                   />
                   <span className="ml-2">
@@ -186,14 +186,14 @@ export default function ProfesoresViolin() {
             {/* Content area */}
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <div>
-                <h2 className="text-base font-semibold tracking-wide uppercase text-gold-600">
+                <h2 className="text-base font-medium tracking-tight uppercase text-gold-600">
                   {t('violin:principal_profesor_female')}
                 </h2>
-                <h2 className="mt-2 text-3xl font-normal leading-8 tracking-wide text-neutral-900 sm:text-4xl">
+                <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
                   Anna Nilsen
                 </h2>
               </div>
-              <div className="mt-6 space-y-6 text-neutral-500">
+              <div className="mt-6 space-y-6 text-neutral-600">
                 <p className="text-lg">{t('common:anna_para_1')}</p>
                 <p className="text-base leading-7">{t('common:anna_para_2')}</p>
                 <p className="text-base leading-7">{t('common:anna_para_3')}</p>
@@ -202,7 +202,7 @@ export default function ProfesoresViolin() {
                     href={t('common:anna_href')}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-base leading-7 text-gold-600 font-semibold hover:text-neutral-900 transition duration-200 ease-in-out"
+                    className="text-lg font-semibold leading-7 tracking-normal transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900"
                   >
                     {t('common:anna_website')}
                   </a>

@@ -97,7 +97,7 @@ export default function Testimonial() {
               </div>
               <div className="relative text-left lg:col-span-1">
                 <blockquote className="mt-6 text-white">
-                  <h3 className="text-lg font-light tracking-tight sm:text-xl">
+                  <h3 className="text-lg font-normal tracking-tight sm:text-xl">
                     {testimonial.text}
                   </h3>
                   <footer className="mt-6">

@@ -15,14 +15,18 @@ export default function ElProyecto() {
   ];
 
   return (
-    <div className="relative bg-white py-16 sm:py-24">
-      <div className="pb-12 lg:pb-4 relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="text-center text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-          <span className="text-gold-600 block">{t('academia:title_1')}</span>
+    <div className="relative py-16 bg-white sm:py-24">
+      <div className="relative max-w-xl px-4 pb-12 mx-auto lg:pb-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+        <h2 className="text-3xl font-semibold leading-8 tracking-tight text-center text-neutral-900 sm:text-4xl">
+          <span className="block font-bold text-gold-600">
+            {t('academia:title_1')}
+          </span>
           {t('academia:title_2')}{' '}
-          <span className="text-gold-600">{t('academia:title_3')}</span>
+          <span className="font-bold text-gold-600">
+            {t('academia:title_3')}
+          </span>
         </h2>
-        <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-neutral-500">
+        <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-600">
           {t('academia:subtitle')}
         </p>
       </div>
@@ -32,9 +36,9 @@ export default function ElProyecto() {
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 right-1/2 w-full bg-neutral-50 lg:right-72" />
+            <div className="absolute inset-y-0 w-full right-1/2 bg-neutral-50 lg:right-72" />
             <svg
-              className="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
+              className="absolute -ml-3 top-8 left-1/2 lg:-right-8 lg:left-auto lg:top-12"
               width={404}
               height={392}
               fill="none"
@@ -67,10 +71,10 @@ export default function ElProyecto() {
             </svg>
           </div>
 
-          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+          <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
-            <div className="relative pt-64 pb-10 shadow-none overflow-hidden">
-              <div className="absolute inset-0 h-full w-full object-cover">
+            <div className="relative pt-64 pb-10 overflow-hidden shadow-none">
+              <div className="absolute inset-0 object-cover w-full h-full">
                 <Image
                   src="/static/group-photo-07.webp"
                   alt="El Proyecto"
@@ -93,14 +97,12 @@ export default function ElProyecto() {
                   ></Image>
                 </div>
                 <blockquote className="mt-8">
-                  <div className="relative text-lg font-medium text-white md:flex-grow">
-                    <p className="relative italic">
-                      {t('academia:blockquote')}
-                    </p>
+                  <div className="relative text-xl font-semibold tracking-tight text-white md:flex-grow">
+                    <h3 className="relative">{t('academia:blockquote')}</h3>
                   </div>
 
                   <footer className="mt-4">
-                    <p className="text-base font-semibold text-cream-500">
+                    <p className="text-base font-normal brightness-110 text-cream-500">
                       {t('academia:author')}
                     </p>
                   </footer>
@@ -110,13 +112,13 @@ export default function ElProyecto() {
           </div>
         </div>
 
-        <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+        <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h2 className="text-3xl text-gold-600 tracking-wide sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-gold-600 sm:text-4xl">
               {t('academia:title_project')}
             </h2>
-            <div className="mt-6 text-neutral-500 space-y-6">
+            <div className="mt-6 space-y-6 text-neutral-600">
               <p className="text-base leading-7">
                 {t('academia:project_text_1')}
               </p>
@@ -128,27 +130,29 @@ export default function ElProyecto() {
 
           {/* Stats section */}
           <div className="mt-10">
-            <dl className="grid grid-cols-3 gap-x-4 gap-y-8">
-              <div className="border-t-2 border-neutral-100 pt-6">
-                <dt className="text-base font-medium text-neutral-500">
-                  {t('academia:founded')}
-                </dt>
-                <dd className="text-xl sm:text-2xl font-extrabold tracking-tight text-neutral-900 place-self-end">
-                  2014
-                </dd>
-              </div>
-              <div className="border-t-2 border-neutral-100 pt-6 col-span-2">
-                <dt className="text-base font-medium text-neutral-500">
-                  {t('academia:schools')}
-                </dt>
-                <dd className="text-xl sm:text-2xl font-extrabold tracking-tight text-neutral-900">
-                  <Schools />
-                </dd>
-              </div>
-            </dl>
+            <h3 className="tracking-tight">
+              <dl className="grid grid-cols-3 gap-x-4 gap-y-8">
+                <div className="pt-6 border-t-2 border-neutral-100">
+                  <dt className="text-base font-medium text-neutral-600">
+                    {t('academia:founded')}
+                  </dt>
+                  <dd className="text-2xl font-bold tracking-tight place-self-end sm:text-2xl text-neutral-900 ">
+                    2014
+                  </dd>
+                </div>
+                <div className="col-span-2 pt-6 border-t-2 border-neutral-100">
+                  <dt className="text-base font-medium text-neutral-500">
+                    {t('academia:schools')}
+                  </dt>
+                  <dd className="text-xl font-extrabold tracking-tight sm:text-2xl text-neutral-900">
+                    <Schools />
+                  </dd>
+                </div>
+              </dl>
+            </h3>
             <div className="mt-10">
-              <Link href="/estudia" passHref>
-                <a className="text-base font-medium text-gold-600">
+              <Link href="/estudia/formulario-de-inscripcion" passHref>
+                <a className="text-base font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                   {' '}
                   {t('common:button_solicita_1')}
                   {new Date().getFullYear()}/{new Date().getFullYear() + 1}

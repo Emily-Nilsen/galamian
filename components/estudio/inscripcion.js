@@ -34,15 +34,16 @@ export default function Inscripcion() {
           <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
-              <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+              <h2 className="font-normal leading-6 tracking-tight uppercase text-neutral-900">
                 {t('estudia:enrolment_title_1')}
               </h2>
-              <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-                <span className="text-gold-600">
+              <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
+                <span className="font-bold text-gold-600">
                   {t('estudia:enrolment_title_2')}
                 </span>
-                {t('estudia:enrolment_title_3')}
-                <span className="text-gold-600">
+                <span className="block">{t('estudia:enrolment_title_3')}</span>
+
+                <span className="font-bold text-gold-600">
                   {t('estudia:enrolment_title_4')}
                 </span>
               </h2>
@@ -98,9 +99,9 @@ export default function Inscripcion() {
                       />
                     </div>
                   </div>
-                  <figcaption className="flex mt-3 text-sm text-neutral-500">
+                  <figcaption className="flex mt-3 text-sm text-neutral-700">
                     <CameraIcon
-                      className="flex-none w-5 h-5 text-neutral-400"
+                      className="flex-none w-5 h-5 text-gold-500"
                       aria-hidden="true"
                     />
                     <span className="ml-2">
@@ -113,17 +114,17 @@ export default function Inscripcion() {
             <div className="mt-8 lg:mt-0">
               <div className="mx-auto text-base max-w-prose lg:max-w-none">
                 <h2>
-                  <span className="block mt-2 text-xl font-normal leading-8 text-neutral-800 sm:text-2xl">
+                  <span className="block mt-2 text-xl font-semibold leading-8 tracking-tight text-neutral-800 sm:text-2xl">
                     {t('estudia:enrolment_title_5')}
                   </span>
                 </h2>
-                <p className="mt-4 text-lg text-neutral-500">
+                <p className="mt-4 text-lg text-neutral-600">
                   {t('estudia:enrolment_para_1_1')} {new Date().getFullYear()}/
                   {new Date().getFullYear() + 1}
                   {t('estudia:enrolment_para_1_2')}
                 </p>
               </div>
-              <div className="mx-auto mt-5 prose prose-gold text-neutral-500 lg:max-w-none lg:row-start-1 lg:col-start-1">
+              <div className="mx-auto mt-5 prose prose-gold text-neutral-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
                   {t('estudia:enrolment_para_2_1')}{' '}
                   <span className="font-bold">
@@ -141,7 +142,7 @@ export default function Inscripcion() {
                   .
                 </p>
                 <p>{t('estudia:enrolment_para_4')}</p>
-                <h3 className="text-neutral-900">
+                <h3 className="text-2xl font-bold tracking-tight text-neutral-800">
                   {t('estudia:enrolment_subtitle')}
                 </h3>
                 <div className="lg:mt-0">
@@ -153,11 +154,11 @@ export default function Inscripcion() {
                             className="absolute w-6 h-6 text-lime-500"
                             aria-hidden="true"
                           />
-                          <p className="text-lg font-medium leading-6 ml-9 text-neutral-900">
+                          <p className="text-lg font-semibold leading-6 ml-9 text-neutral-800">
                             {documento.name}
                           </p>
                         </dt>
-                        <dd className="-mt-4 text-base ml-9 text-neutral-500">
+                        <dd className="-mt-4 text-base ml-9 text-neutral-600">
                           {documento.description}
                         </dd>
                       </div>

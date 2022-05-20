@@ -41,7 +41,7 @@ export default function FAQs() {
     <div id="faqs" className="bg-neutral-50">
       <div className="px-4 py-12 mx-auto max-w-7xl sm:py-16 md:pb-24 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-neutral-200">
-          <h2 className="text-3xl text-center text-neutral-900 sm:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-center text-neutral-900 sm:text-4xl">
             {t('common:faq_title')}
           </h2>
 
@@ -52,7 +52,7 @@ export default function FAQs() {
                   <>
                     <dt className="text-lg">
                       <Disclosure.Button className="flex items-start justify-between w-full text-left text-neutral-400">
-                        <span className="font-medium text-neutral-800">
+                        <span className="font-medium tracking-tight text-neutral-800">
                           {faq.question}
                         </span>
                         <span className="flex items-center ml-6 h-7">
@@ -67,13 +67,13 @@ export default function FAQs() {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="pr-12 mt-2">
-                      <p className="text-base text-neutral-500">
+                      <p className="text-base text-neutral-600">
                         {faq.answer_01}
                       </p>
-                      <p className="pt-2 text-base text-neutral-500">
+                      <p className="pt-2 text-base text-neutral-600">
                         {faq.answer_02}
                       </p>
-                      <p className="pt-2 text-base text-neutral-500">
+                      <p className="pt-2 text-base text-neutral-600">
                         {faq.answer_03}
                       </p>
                     </Disclosure.Panel>

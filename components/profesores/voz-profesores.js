@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { CameraIcon } from '@heroicons/react/solid';
-import { XIcon } from '@heroicons/react/outline';
+import { XIcon, ArrowNarrowRightIcon } from '@heroicons/react/outline';
 import useTranslation from 'next-translate/useTranslation';
 
 function classNames(...classes) {
@@ -69,14 +69,14 @@ export default function VozProfesores() {
   ];
 
   return (
-    <div className="relative bg-white pt-4 pb-16 sm:pb-24">
-      <div className="mx-auto max-w-7xl py-6 lg:py-12">
+    <div className="relative pt-4 pb-16 bg-white sm:pb-24">
+      <div className="py-6 mx-auto max-w-7xl lg:py-12">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
           <div className="space-y-5 sm:space-y-4">
-            <h2 className="text-3xl tracking-wide text-gold-600 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-gold-600 sm:text-4xl">
               {t('profesores:tab_voice')}
             </h2>
-            <p className="text-base text-neutral-500">
+            <p className="text-base text-neutral-600">
               {t('profesores:study_text')}
             </p>
           </div>
@@ -87,8 +87,11 @@ export default function VozProfesores() {
             >
               {people.map((person) => (
                 <li key={person.name}>
-                  <div className="flex items-center space-x-4 lg:space-x-6 hover:bg-neutral-50 transition duration-200 ease-in-out cursor-pointer rounded-l-full">
-                    <div className="w-16 h-16 lg:w-20 lg:h-20 relative">
+                  <div
+                    id={person.id}
+                    className="flex items-center space-x-4 transition duration-200 ease-in-out rounded-l-full cursor-pointer lg:space-x-6 hover:bg-neutral-50"
+                  >
+                    <div className="relative w-16 h-16 border-2 rounded-full lg:w-20 lg:h-20 border-gold-500">
                       <Image
                         className="rounded-full"
                         width={1000}
@@ -100,12 +103,12 @@ export default function VozProfesores() {
                         objectPosition="center"
                       />
                     </div>
-                    <div className="font-medium text-lg leading-6 space-y-1 text-neutral-900 relative">
+                    <div className="relative space-y-1 text-lg font-medium leading-6 text-neutral-900">
                       <div>
                         <Menu as="div">
                           <div>
                             <Menu.Button>
-                              <div className="font-medium text-lg leading-6 space-y-1 text-neutral-900 text-left">
+                              <div className="space-y-1 text-lg font-medium leading-6 tracking-tight text-left text-neutral-900 focus:outline-none focus:ring-0 ring-0 ring-transparent focus:ring-transparent">
                                 <h3>{person.name}</h3>
                                 <p className="text-gold-600">{person.role}</p>
                               </div>
@@ -120,23 +123,23 @@ export default function VozProfesores() {
                             leaveFrom="transform opacity-100 scale-100"
                             leaveTo="transform opacity-0 scale-95"
                           >
-                            <Menu.Items className="origin-top-left fixed z-20 left-0 top-0 h-full w-full overflow-x-hidden bg-white focus:outline-none">
-                              <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                                <div className="hidden lg:block bg-neutral-50 absolute top-0 bottom-0 left-3/4 w-screen" />
+                            <Menu.Items className="fixed top-0 left-0 z-20 w-full h-full overflow-x-hidden origin-top-left bg-white focus:outline-none">
+                              <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                                <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
                                 <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
                                   <div className="flex items-start justify-between">
                                     <div>
-                                      <h3 className="text-base text-neutral-900 tracking-wide">
+                                      <h3 className="text-base font-normal tracking-tight text-neutral-900">
                                         {person.instrument}
                                       </h3>
-                                      <h2 className="mt-2 text-3xl leading-8 tracking-wide text-gold-600 sm:text-4xl">
+                                      <h2 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gold-600 sm:text-4xl">
                                         {person.name}
                                       </h2>
                                     </div>
                                     <Menu.Item>
                                       <div className="absolute right-6 top-6">
                                         <XIcon
-                                          className="h-6 w-6 text-neutral-400 hover:text-neutral-900 transition duration-200 ease-in-out"
+                                          className="w-6 h-6 transition duration-200 ease-in-out text-neutral-400 hover:text-neutral-900"
                                           aria-hidden="true"
                                         />
                                       </div>
@@ -146,7 +149,7 @@ export default function VozProfesores() {
                                 <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
                                   <div className="relative lg:row-start-1 lg:col-start-2">
                                     <svg
-                                      className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+                                      className="absolute top-0 right-0 hidden -mt-20 -mr-20 lg:block"
                                       width={404}
                                       height={384}
                                       fill="none"
@@ -178,10 +181,10 @@ export default function VozProfesores() {
                                         fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
                                       />
                                     </svg>
-                                    <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+                                    <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                                       <figure>
                                         <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                                          <div className="shadow-none object-cover object-center overflow-hidden">
+                                          <div className="object-cover object-center overflow-hidden shadow-none">
                                             <Image
                                               src={person.imageUrl}
                                               alt={person.name}
@@ -193,7 +196,7 @@ export default function VozProfesores() {
                                             />
                                           </div>
                                         </div>
-                                        {/* <figcaption className="mt-3 flex text-sm text-neutral-500">
+                                        {/* <figcaption className="flex mt-3 text-sm text-neutral-500">
                                           <CameraIcon
                                             className="flex-none w-5 h-5 text-neutral-400"
                                             aria-hidden="true"
@@ -206,36 +209,36 @@ export default function VozProfesores() {
                                     </div>
                                   </div>
                                   <div className="mt-8 lg:mt-0">
-                                    <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                                      <p className="text-lg text-neutral-500">
+                                    <div className="mx-auto text-base max-w-prose lg:max-w-none">
+                                      <p className="text-lg font-light text-neutral-600">
                                         {person.sentence_01}
                                       </p>
                                     </div>
-                                    <div className="mt-5 prose prose-gold text-neutral-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                                    <div className="mx-auto mt-5 font-light prose prose-gold text-neutral-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
                                       <p>{person.sentence_02}</p>
                                       <p>{person.sentence_03}</p>
                                       <p>{person.sentence_04}</p>
-                                      <div>
+                                      <div className="mt-6">
                                         <a
                                           href={person.href}
                                           target="_blank"
                                           rel="noreferrer"
-                                          className="text-base leading-7 text-neutral-600 font-semibold hover:text-gold-600 transition duration-200 ease-in-out no-underline"
+                                          className="text-xl font-semibold leading-7 tracking-tight no-underline transition duration-200 ease-in-out text-neutral-500 hover:text-gold-600"
                                         >
                                           {person.website}
                                         </a>
                                       </div>
 
                                       <Menu.Item>
-                                        <p className="text-gold-600 text-base pt-4 hover:text-neutral-900 transition duration-200 ease-in-out">
-                                          {t('common:button_cerrar')}{' '}
+                                        <h3 className="pt-4 text-lg font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900 group">
+                                          {t('common:button_back')}{' '}
                                           <span aria-hidden="true">
-                                            <XIcon
-                                              className="h-4 w-4 inline-block"
+                                            <ArrowNarrowRightIcon
+                                              className="inline-block w-5 h-5 transition duration-300 ease-in-out text-gold-600 group-hover:text-neutral-900"
                                               aria-hidden="true"
                                             />
                                           </span>{' '}
-                                        </p>
+                                        </h3>
                                       </Menu.Item>
                                     </div>
                                   </div>

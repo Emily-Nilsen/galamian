@@ -15,19 +15,19 @@ import {
 export default function Contacto() {
   const { t } = useTranslation();
   return (
-    <div className="bg-gray-50">
+    <div className="bg-neutral-50">
       <main className="overflow-hidden">
         {/* Header */}
-        <div className="bg-gray-50">
+        <div className="bg-neutral-50">
           <div className="py-24 lg:py-32">
-            <div className="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-              <h1 className="text-4xl text-gray-900 sm:text-5xl lg:text-6xl font-normal">
+            <div className="relative z-10 pl-4 pr-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+              <h1 className="text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
                 {t('common:contact_title_1')}
-                <span className="text-gold-600">
+                <span className="font-bold text-gold-600">
                   {t('common:contact_title_2')}
                 </span>
               </h1>
-              <p className="mt-6 text-xl text-gray-500 max-w-3xl">
+              <p className="max-w-3xl mt-6 text-xl text-neutral-600">
                 {t('common:contact_subtitle')}
               </p>
             </div>
@@ -36,17 +36,17 @@ export default function Contacto() {
 
         {/* Contact section */}
         <section
-          className="relative bg-gray-50"
+          className="relative bg-neutral-50"
           aria-labelledby="contact-heading"
         >
           <div
-            className="absolute w-full h-1/2 bg-gray-50"
+            className="absolute w-full h-1/2 bg-neutral-50"
             aria-hidden="true"
           />
           {/* Decorative dot pattern */}
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <svg
-              className="absolute z-0 top-0 right-0 transform -translate-y-16 translate-x-1/2 sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72"
+              className="absolute top-0 right-0 z-0 transform translate-x-1/2 -translate-y-16 sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72"
               width={404}
               height={384}
               fill="none"
@@ -67,7 +67,7 @@ export default function Contacto() {
                     y={0}
                     width={2}
                     height={4}
-                    className="text-gray-200"
+                    className="text-neutral-200"
                     fill="currentColor"
                   />
                 </pattern>
@@ -79,7 +79,7 @@ export default function Contacto() {
               />
             </svg>
           </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="relative bg-white">
               <h2 id="contact-heading" className="sr-only">
                 {t('common:contact_sr')}
@@ -87,7 +87,7 @@ export default function Contacto() {
 
               <div className="grid grid-cols-1 lg:grid-cols-3">
                 {/* Contact information */}
-                <div className="relative overflow-hidden py-10 px-6 bg-gradient-to-b from-gold-400 to-gold-600 sm:px-10 xl:p-12">
+                <div className="relative px-6 py-10 overflow-hidden bg-gradient-to-b from-gold-400 to-gold-600 sm:px-10 xl:p-12">
                   {/* Decorative angle backgrounds */}
                   <div
                     className="absolute inset-0 pointer-events-none sm:hidden"
@@ -123,7 +123,7 @@ export default function Contacto() {
                     </svg>
                   </div>
                   <div
-                    className="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none sm:block lg:hidden"
+                    className="absolute top-0 bottom-0 right-0 hidden w-1/2 pointer-events-none sm:block lg:hidden"
                     aria-hidden="true"
                   >
                     <svg
@@ -156,7 +156,7 @@ export default function Contacto() {
                     </svg>
                   </div>
                   <div
-                    className="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none lg:block"
+                    className="absolute top-0 bottom-0 right-0 hidden w-1/2 pointer-events-none lg:block"
                     aria-hidden="true"
                   >
                     <svg
@@ -188,10 +188,10 @@ export default function Contacto() {
                       </defs>
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-white">
+                  <h3 className="text-xl font-semibold tracking-tight text-white">
                     {t('common:contact_info_title')}
                   </h3>
-                  <p className="mt-6 text-base text-gray-50 max-w-3xl">
+                  <p className="max-w-3xl mt-6 text-base text-neutral-50">
                     {t('common:contact_info_subtitle')}
                   </p>
                   <dl className="mt-8 space-y-6">
@@ -199,7 +199,7 @@ export default function Contacto() {
                       <span className="sr-only">Address</span>
                     </dt>
                     <Link href="/contacto/#googleMap" passHref>
-                      <dd className="flex text-base text-gray-50 cursor-pointer hover:text-white hover:underline transition-all duration-300 ease-in-out">
+                      <dd className="flex text-base transition-all duration-300 ease-in-out cursor-pointer text-neutral-50 hover:text-white hover:underline">
                         <LocationMarkerIcon
                           className="flex-shrink-0 w-6 h-6 text-cream-500"
                           aria-hidden="true"
@@ -221,7 +221,7 @@ export default function Contacto() {
                       href="tel:+34699067452"
                       className="hover:text-white hover:underline"
                     >
-                      <dd className="flex text-base text-gray-50">
+                      <dd className="flex text-base text-neutral-50">
                         <PhoneIcon
                           className="flex-shrink-0 w-6 h-6 text-cream-500"
                           aria-hidden="true"
@@ -238,21 +238,22 @@ export default function Contacto() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <dd className="flex text-base text-gray-50">
+                      <dd className="flex text-base text-neutral-50">
                         <MailIcon
                           className="flex-shrink-0 w-6 h-6 text-cream-500"
                           aria-hidden="true"
                         />
-                        <span className="ml-3 overflow-visible">
-                          secretaria.academiagalamian@gmail.com
+                        <span className="ml-3 overflow-visible tracking-tight lg:leading-5 xl:leading-normal">
+                          secretaria.academiagalamian
+                          <span className="lg:block xl:inline">@gmail.com</span>
                         </span>
                       </dd>
                     </a>
                   </dl>
-                  <ul role="list" className="mt-8 flex space-x-12">
+                  <ul role="list" className="flex mt-8 space-x-12">
                     <li>
                       <a
-                        className="text-cream-500 hover:text-cream-400 transition duration-300 ease-in-out"
+                        className="transition duration-300 ease-in-out text-cream-500 hover:text-cream-400"
                         href="https://www.facebook.com/academiagalamian"
                         target="_blank"
                         rel="noreferrer"
@@ -274,7 +275,7 @@ export default function Contacto() {
                     </li>
                     <li>
                       <a
-                        className="text-cream-500 hover:text-cream-400 transition duration-300 ease-in-out"
+                        className="transition duration-300 ease-in-out text-cream-500 hover:text-cream-400"
                         href="https://twitter.com/AIGalamian"
                         target="_blank"
                         rel="noreferrer"
@@ -296,7 +297,7 @@ export default function Contacto() {
                     </li>
                     <li>
                       <a
-                        className="text-cream-500 hover:text-cream-400 transition duration-300 ease-in-out"
+                        className="transition duration-300 ease-in-out text-cream-500 hover:text-cream-400"
                         href="https://www.instagram.com/academia.galamian/"
                         target="_blank"
                         rel="noreferrer"
@@ -316,8 +317,8 @@ export default function Contacto() {
                 </div>
 
                 {/* Contact form */}
-                <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                  <h3 className="text-lg font-medium text-gray-900">
+                <div className="px-6 py-10 sm:px-10 lg:col-span-2 xl:p-12">
+                  <h3 className="text-xl font-bold tracking-tight text-neutral-800">
                     {t('common:contactform_title')}
                   </h3>
                   <form
@@ -326,7 +327,7 @@ export default function Contacto() {
                     name="Contacta con la Academia Galamian"
                     data-netlify="true"
                     method="POST"
-                    className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                    className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                   >
                     <input
                       type="hidden"
@@ -341,7 +342,7 @@ export default function Contacto() {
                     <div>
                       <label
                         htmlFor="first-name"
-                        className="block text-sm font-medium text-gray-900"
+                        className="block text-base font-medium tracking-tight text-neutral-900"
                       >
                         {t('common:contactform_name')}
                       </label>
@@ -351,14 +352,14 @@ export default function Contacto() {
                           name="first-name"
                           id="first-name"
                           autoComplete="given-name"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
+                          className="block w-full px-4 py-3 rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                         />
                       </div>
                     </div>
                     <div>
                       <label
                         htmlFor="last-name"
-                        className="block text-sm font-medium text-gray-900"
+                        className="block text-base font-medium tracking-tight text-neutral-900"
                       >
                         {t('common:contactform_surname')}
                       </label>
@@ -368,14 +369,14 @@ export default function Contacto() {
                           name="last-name"
                           id="last-name"
                           autoComplete="family-name"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
+                          className="block w-full px-4 py-3 rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                         />
                       </div>
                     </div>
                     <div>
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-gray-900"
+                        className="block text-base font-medium tracking-tight text-neutral-900"
                       >
                         {t('common:contactform_email')}
                       </label>
@@ -385,7 +386,7 @@ export default function Contacto() {
                           name="email"
                           type="email"
                           autoComplete="email"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
+                          className="block w-full px-4 py-3 rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                         />
                       </div>
                     </div>
@@ -393,13 +394,13 @@ export default function Contacto() {
                       <div className="flex justify-between">
                         <label
                           htmlFor="phone"
-                          className="block text-sm font-medium text-gray-900"
+                          className="block text-base font-medium tracking-tight text-neutral-900"
                         >
                           {t('common:contactform_phone')}
                         </label>
                         <span
                           id="phone-optional"
-                          className="text-sm text-gray-500"
+                          className="text-base text-neutral-500"
                         >
                           {t('common:contactform_optional')}
                         </span>
@@ -410,7 +411,7 @@ export default function Contacto() {
                           name="phone"
                           id="phone"
                           autoComplete="tel"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
+                          className="block w-full px-4 py-3 rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                           aria-describedby="phone-optional"
                         />
                       </div>
@@ -418,7 +419,7 @@ export default function Contacto() {
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="subject"
-                        className="block text-sm font-medium text-gray-900"
+                        className="block text-base font-medium tracking-tight text-neutral-900"
                       >
                         {t('common:contactform_subject')}
                       </label>
@@ -427,7 +428,7 @@ export default function Contacto() {
                           type="text"
                           name="subject"
                           id="subject"
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gray-200 rounded-md"
+                          className="block w-full px-4 py-3 rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                         />
                       </div>
                     </div>
@@ -435,13 +436,13 @@ export default function Contacto() {
                       <div className="flex justify-between">
                         <label
                           htmlFor="message"
-                          className="block text-sm font-medium text-gray-900"
+                          className="block text-base font-medium tracking-tight text-neutral-900"
                         >
                           {t('common:contactform_message')}
                         </label>
                         <span
                           id="message-max"
-                          className="text-sm text-gray-500"
+                          className="text-base text-neutral-500"
                         >
                           {t('common:contactform_max')}
                         </span>
@@ -451,7 +452,7 @@ export default function Contacto() {
                           id="message"
                           name="message"
                           rows={4}
-                          className="py-3 px-4 block w-full text-gray-900 focus:ring-gold-500 focus:border-gold-500 border border-gray-200 rounded-md"
+                          className="block w-full px-4 py-3 border rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                           aria-describedby="message-max"
                           defaultValue={''}
                         />
@@ -460,7 +461,7 @@ export default function Contacto() {
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                       <button
                         type="submit"
-                        className="transition duration-300 ease-in-out mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-gold-500 hover:bg-gold-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto rounded-none"
+                        className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-lg font-semibold tracking-tight text-white transition duration-300 ease-in-out border border-transparent rounded-none bg-gold-500 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto"
                       >
                         {t('common:contactform_send')}
                       </button>
@@ -474,14 +475,14 @@ export default function Contacto() {
 
         {/* Contact grid */}
         <section id="googleMap" aria-labelledby="offices-heading">
-          <div className="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+          <div className="px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
             <h2
               id="offices-heading"
-              className="text-3xl font-semibold text-gray-900"
+              className="text-3xl font-semibold tracking-tight text-neutral-900"
             >
               {t('common:map_title')}
             </h2>
-            <p className="text-base text-gray-500 max-w-3xl">
+            <p className="max-w-3xl text-base text-neutral-600">
               <span className="ml-3">
                 <span className="block font-semibold">
                   {t('common:address_1')}

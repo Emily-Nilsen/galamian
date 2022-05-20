@@ -174,7 +174,7 @@ const Audiciones = () => {
 
                   <ul role="list">
                     <li>
-                      <Link href="/estudia/violin" passHref>
+                      <Link href="/estudios/violin" passHref>
                         <a className="font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                           {t('estudia:access_violin')}
                         </a>
@@ -182,7 +182,7 @@ const Audiciones = () => {
                     </li>
 
                     <li>
-                      <Link href="/estudia/piano" passHref>
+                      <Link href="/estudios/piano" passHref>
                         <a className="font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                           {t('estudia:access_piano')}
                         </a>
@@ -190,7 +190,7 @@ const Audiciones = () => {
                     </li>
 
                     <li>
-                      <Link href="/estudia/violonchelo" passHref>
+                      <Link href="/estudios/violonchelo" passHref>
                         <a className="font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                           {t('estudia:access_cello')}
                         </a>
@@ -198,7 +198,7 @@ const Audiciones = () => {
                     </li>
 
                     <li>
-                      <Link href="/estudia/voz" passHref>
+                      <Link href="/estudios/voz" passHref>
                         <a className="font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                           {t('estudia:access_voice')}
                         </a>
