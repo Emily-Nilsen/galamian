@@ -12,12 +12,12 @@ export default function EstudioJunior() {
         <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+            <h2 className="font-medium leading-6 tracking-tight uppercase text-neutral-900">
               {t('galamianJunior:estudio_subtitle')}
             </h2>
-            <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
+            <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
               {t('galamianJunior:estudio_title')}{' '}
-              <span className="text-gold-600">Junior</span>
+              <span className="font-bold text-gold-600">Junior</span>
             </h2>
           </div>
         </div>
@@ -71,9 +71,9 @@ export default function EstudioJunior() {
                     />
                   </div>
                 </div>
-                <figcaption className="flex mt-3 text-sm text-neutral-500">
+                <figcaption className="flex mt-3 text-sm text-neutral-600">
                   <CameraIcon
-                    className="flex-none w-5 h-5 text-neutral-400"
+                    className="flex-none w-5 h-5 text-gold-500"
                     aria-hidden="true"
                   />
                   <span className="ml-2">
@@ -85,7 +85,7 @@ export default function EstudioJunior() {
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="mx-auto text-base max-w-prose lg:max-w-none">
-              <p className="text-lg text-neutral-500">
+              <p className="text-lg text-neutral-600">
                 {t('galamianJunior:estudio_para_01_part_1')}{' '}
                 {new Date().getFullYear()}{' '}
                 {t('galamianJunior:estudio_para_01_part_2')}{' '}
@@ -93,7 +93,7 @@ export default function EstudioJunior() {
                 {t('galamianJunior:estudio_para_01_part_3')}
               </p>
             </div>
-            <div className="pb-6 mx-auto mt-5 prose prose-gold text-neutral-500 lg:max-w-none lg:row-start-1 lg:col-start-1 lg:pb-0">
+            <div className="pb-6 mx-auto mt-5 prose prose-gold text-neutral-600 lg:max-w-none lg:row-start-1 lg:col-start-1 lg:pb-0">
               <ul role="list">
                 <li>{t('galamianJunior:estudio_list_item_01')}</li>
                 <li>{t('galamianJunior:estudio_list_item_02')}</li>
@@ -111,14 +111,16 @@ export default function EstudioJunior() {
               </ul>
               <p>{t('galamianJunior:estudio_para_02')}</p>
               <p>{t('galamianJunior:estudio_para_03')}</p>
-              <h3>{t('galamianJunior:lecciones_title')}</h3>
+              <h3 className="tracking-tight">
+                {t('galamianJunior:lecciones_title')}
+              </h3>
               <p>{t('galamianJunior:lecciones_text')}</p>
             </div>
           </div>
           <Lecciones />
           <div className="mt-10">
             <Link href="/estudia/formulario-de-inscripcion" passHref>
-              <a className="text-base font-medium text-gold-600">
+              <a className="text-base font-semibold tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                 {' '}
                 {t('common:button_solicita_una_plaza')}{' '}
                 {new Date().getFullYear()}/{new Date().getFullYear() + 1}{' '}

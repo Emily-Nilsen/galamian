@@ -66,10 +66,10 @@ const GalamianJunior = () => {
         </div>
 
         <div className="relative max-w-xl px-4 py-6 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h2 className="text-3xl leading-8 tracking-wide text-center text-neutral-900 sm:text-4xl">
-            Galamian <span className="text-gold-600">Junior</span>
+          <h2 className="text-4xl font-semibold leading-8 tracking-tight text-center text-neutral-900 sm:text-5xl lg:text-6xl">
+            Galamian <span className="font-bold text-gold-600">Junior</span>
           </h2>
-          <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-500">
+          <p className="max-w-3xl mx-auto mt-4 text-lg text-center text-neutral-600">
             {t('galamianJunior:subtitle_part_1')} {new Date().getFullYear()}/
             {new Date().getFullYear() + 1} {t('galamianJunior:subtitle_part_2')}
           </p>
@@ -86,7 +86,7 @@ const GalamianJunior = () => {
                   />
                 </div>
                 <div className="ml-3">
-                  <h3 className="text-sm font-medium text-yellow-800">
+                  <h3 className="text-base font-semibold tracking-tight text-yellow-800">
                     {t('galamianJunior:atencion_title')}
                   </h3>
                   <div className="mt-2 text-sm text-yellow-700">
@@ -127,7 +127,7 @@ const GalamianJunior = () => {
                             selected
                               ? 'border-gold-500 text-gold-600 focus:outline-none focus:ring-0 focus:ring-transparent'
                               : 'border-transparent text-neutral-500 hover:text-neutral-700 hover:border-neutral-300 focus:outline-none focus:ring-0',
-                            'whitespace-nowrap py-6 border-b-2 font-medium text-sm'
+                            'whitespace-nowrap py-6 border-b-2 font-semibold text-base tracking-tight'
                           )
                         }
                       >

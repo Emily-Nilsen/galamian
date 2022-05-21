@@ -85,7 +85,7 @@ export default function VioloncheloProfesores() {
                     id={person.id}
                     className="flex items-center space-x-4 transition duration-200 ease-in-out rounded-l-full cursor-pointer lg:space-x-6 hover:bg-neutral-50"
                   >
-                    <div className="relative w-16 h-16 border-2 rounded-full lg:w-20 lg:h-20 border-gold-500">
+                    <div className="relative w-16 h-16 lg:w-20 lg:h-20">
                       <Image
                         className="rounded-full"
                         width={1000}

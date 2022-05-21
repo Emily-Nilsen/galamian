@@ -350,8 +350,8 @@ const common = {
   estudio_para_12_part_1: `Orquesta de la Academia Galamian`,
   estudio_para_12_part_2: `Orquesta de la Academia Galamian con proyectos artísticos que se desarrollan a lo largo de encuentros intensivos con profesionales venidos de orquestas de referencia a nivel internacional. La Academia mantiene un estrecho contacto con músicos de la Berliner Philharmoniker, New York Philharmonic, Orquestra della Svizzera Italiana, Orquesta Ciudad de Almería, Orquesta Camera Musicae, Orquesta del Principado de Asturias y Orquesta Sinfonica Portuguesa, quienes forman parte del profesorado de este programa orquestal.`,
   estudio_para_12_part_3: `Además existe la opción de elegir interpretación orquestal como asignatura principal, siendo parte de encuentros adicionales.`,
-  estudio_para_13_part_1: `Joven Orquesta de la Academia Galamian`,
-  estudio_para_13_part_2: `Joven Orquesta de la Academia Galamian para aquellos alumnos de entre 11 y 16 años, quienes disfrutan de su primera experiencia orquestan en un programa tutelado por `,
+  estudio_para_13_part_1: `Joven Orquesta de la Academia Galamian (JOAG)`,
+  estudio_para_13_part_2: `Joven Orquesta de la Academia Galamian para alumnos hasta la edad de 18 años, quienes disfrutan de su primera experiencia orquestan en un programa tutelado por `,
   estudio_para_13_part_3: `José Andrés Fernández Camacho `,
   estudio_para_13_part_4: `y otros profesores de la Orquesta de la Academia Galamian.`,
   estudio_para_14_part_1: `Interpretación concertante `,
@@ -416,6 +416,9 @@ const common = {
   contactform_message: `Mensaje`,
   contactform_max: `Máx. 500 caracteres`,
   contactform_send: `Enviar`,
+
+  // JOAG
+  joag: `Orquesta JOAG`,
 };
 
 export default common;

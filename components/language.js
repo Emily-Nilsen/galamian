@@ -19,7 +19,7 @@ export default function Language() {
     <span className="relative z-0 inline-flex rounded-md shadow-none">
       <button
         type="button"
-        className="relative inline-flex items-center px-4 py-2 text-sm transition duration-300 ease-in-out border border-l-0 text-neutral-600 rounded-l-md border-gold-500 bg-t hover:text-neutral-900 focus:z-10 focus:outline-none border-y-0 focus:ring-0 hover:font-normal"
+        className="relative inline-flex items-center px-4 py-2 text-sm tracking-tight transition duration-300 ease-in-out border border-l-0 text-neutral-500 rounded-l-md border-gold-500 bg-t hover:text-neutral-900 focus:z-10 focus:outline-none border-y-0 focus:ring-0"
       >
         <Link
           activeClassName={locale === 'en'}
@@ -33,7 +33,7 @@ export default function Language() {
 
       <button
         type="button"
-        className="relative inline-flex items-center px-4 py-2 -ml-px text-sm transition duration-300 ease-in-out border border-r-0 text-neutral-600 rounded-r-md border-gold-500 bg-t hover:text-neutral-900 focus:z-10 focus:outline-none focus:ring-0 border-y-0 hover:font-normal"
+        className="relative inline-flex items-center px-4 py-2 -ml-px text-sm tracking-tight transition duration-300 ease-in-out border border-r-0 text-neutral-500 rounded-r-md border-gold-500 bg-t hover:text-neutral-900 focus:z-10 focus:outline-none focus:ring-0 border-y-0"
       >
         <Link
           activeClassName={locale === 'es'}

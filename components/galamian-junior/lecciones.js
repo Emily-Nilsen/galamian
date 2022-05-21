@@ -114,7 +114,7 @@ export default function Lecciones() {
             leccionIdx === lecciones.length - 1
               ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none'
               : '',
-            'relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gold-500'
+            'relative group bg-white hover:bg-neutral-50 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gold-500 transition duration-300 ease-in-out'
           )}
         >
           <div>
@@ -122,29 +122,29 @@ export default function Lecciones() {
               className={classNames(
                 leccion.iconBackground,
                 leccion.iconForeground,
-                'rounded-lg inline-flex p-3 ring-4 ring-white'
+                'rounded-lg inline-flex p-3 ring-2 group-hover:ring-neutral-50 ring-white group-hover:bg-white transition duration-300 ease-in-out group-hover:text-gold-500'
               )}
             >
               <leccion.icon className="w-6 h-6" aria-hidden="true" />
             </span>
           </div>
           <div className="mt-8">
-            <h3 className="text-lg font-medium">
+            <h3 className="text-lg font-semibold tracking-tight">
               <a href={leccion.href} className="focus:outline-none">
                 {/* Extend touch target to entire panel */}
                 <span className="absolute inset-0" aria-hidden="true" />
                 {leccion.title}
               </a>
             </h3>
-            <p className="mt-2 text-sm text-neutral-500">
+            <p className="mt-2 text-sm text-neutral-600">
               {leccion.description}
             </p>
-            <p className="mt-2 text-sm text-neutral-500">{leccion.item_01}</p>
-            <p className="mt-2 text-sm text-neutral-500">{leccion.item_02}</p>
-            <p className="mt-2 text-sm text-neutral-500">{leccion.item_03}</p>
+            <p className="mt-2 text-sm text-neutral-600">{leccion.item_01}</p>
+            <p className="mt-2 text-sm text-neutral-600">{leccion.item_02}</p>
+            <p className="mt-2 text-sm text-neutral-600">{leccion.item_03}</p>
           </div>
           <span
-            className="absolute pointer-events-none top-6 right-6 text-neutral-300 group-hover:text-neutral-400"
+            className="absolute transition duration-500 ease-in-out pointer-events-none top-6 right-6 text-neutral-300 group-hover:text-gold-500"
             aria-hidden="true"
           >
             <svg

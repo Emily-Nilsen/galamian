@@ -456,6 +456,7 @@ export default function Violin() {
               </div>
             </div>
 
+            {/* Galamian Academy Orchestra */}
             <h2 className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_12_part_1')}
             </h2>
@@ -477,6 +478,7 @@ export default function Violin() {
                 {/* Sagittis scelerisque nulla cursus in enim consectetur quam. */}
               </figcaption>
             </figure>
+            {/* Galamian Academy Youth Orchestra */}
             <h2 className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_13_part_1')}
             </h2>

@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 import React, { Component } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import { ChevronDownIcon } from '@heroicons/react/solid';
+import { ChevronDownIcon, CheckIcon } from '@heroicons/react/solid';
 
 export default function Testimonial() {
   const { t } = useTranslation();
@@ -45,8 +45,8 @@ export default function Testimonial() {
       <div className="relative px-0 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <Carousel
           infiniteLoop
-          autoPlay
-          interval="9000"
+          // autoPlay
+          // interval="9000"
           transitionTime="500"
           useKeyboardArrows
           swipeable={false}
@@ -54,12 +54,16 @@ export default function Testimonial() {
           showStatus={false}
           renderIndicator={(onClickHandler, isSelected, index, label) => {
             const defStyle = {
-              marginLeft: 20,
-              color: 'white',
+              marginLeft: 30,
               cursor: 'pointer',
+              width: 1,
+              height: 1,
+              color: 'transparent',
+              backgroundColor: '#E6A165',
+              borderRadius: 100,
             };
             const style = isSelected
-              ? { ...defStyle, color: '#D9985F' }
+              ? { ...defStyle, backgroundColor: 'white', color: 'transparent' }
               : { ...defStyle };
             return (
               <span
@@ -72,8 +76,7 @@ export default function Testimonial() {
                 tabIndex={0}
                 aria-label={`${label} ${index + 1}`}
               >
-                {`o`}
-                {/* {'__ ' + index} */}
+                {`GA`}
               </span>
             );
           }}

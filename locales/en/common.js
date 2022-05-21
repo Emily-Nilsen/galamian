@@ -352,7 +352,7 @@ const common = {
   estudio_para_12_part_2: `The Galamian Academy Orchestra has artistic projects developed through intensive meetings with professionals from internationally renowned orchestras. The Academy maintains close contact with musicians from the following orchestras: Berliner Philharmoniker, New York Philharmonic, Orquestra della Svizzera Italiana, Orquesta Ciudad de Almería, Orquesta Camera Musicae, Orquesta del Principado de Asturias and Orquesta Sinfonica Portuguesa and form part of the faculty of this orchestral program.`,
   estudio_para_12_part_3: `In addition, students can choose orchestral interpretation as the main subject by being part of additional meetings.`,
   estudio_para_13_part_1: `Galamian Academy Youth Orchestra`,
-  estudio_para_13_part_2: `The Galamian Academy Youth Orchestra offers students between 11 and 16 years an opportunity to enjoy their first orchestral experience in a program supervised by `,
+  estudio_para_13_part_2: `The Galamian Academy Youth Orchestra offers students up until 18 years an opportunity to enjoy their first orchestral experience in a program supervised by `,
   estudio_para_13_part_3: `José Andrés Fernández Camacho `,
   estudio_para_13_part_4: `and other professors of the Galamian Academy Orchestra.`,
   estudio_para_14_part_1: `Concert performances `,
@@ -415,6 +415,9 @@ const common = {
   contactform_message: `Message`,
   contactform_max: `Max. 500 characters`,
   contactform_send: `Send`,
+
+  // JOAG
+  joag: `Youth Orchestra`,
 };
 
 export default common;

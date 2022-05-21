@@ -24,16 +24,17 @@ export default function Footer() {
       },
       { name: `${t('common:footer_estudios_3')}`, href: '/estudios/piano' },
       { name: `${t('common:footer_estudios_4')}`, href: '/estudios/voz' },
+      { name: `${t('common:footer_academia_3')}`, href: '/galamian-junior' },
     ],
     academia: [
       { name: `${t('common:footer_academia_1')}`, href: '/academia' },
       { name: `${t('common:footer_academia_2')}`, href: '/profesores' },
-      { name: `${t('common:footer_academia_3')}`, href: '/galamian-junior' },
       { name: `${t('common:footer_academia_4')}`, href: '/contacto' },
     ],
     recursos: [
       { name: `${t('common:footer_recursos_1')}`, href: '/#noticias' },
       { name: `${t('common:footer_recursos_3')}`, href: '/bulletin' },
+      { name: `${t('common:joag')}`, href: '/joag' },
     ],
     social: [
       {
@@ -89,6 +90,7 @@ export default function Footer() {
                   alt="Galamian logo"
                   width={50}
                   height={50}
+                  className="transition duration-300 ease-in hover:scale-105"
                 ></Image>
               </div>
             </Link>

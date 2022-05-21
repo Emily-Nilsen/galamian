@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { CameraIcon } from '@heroicons/react/solid';
-import { XIcon } from '@heroicons/react/outline';
+import { XIcon, ArrowNarrowRightIcon } from '@heroicons/react/outline';
 import useTranslation from 'next-translate/useTranslation';
 
 function classNames(...classes) {
@@ -80,14 +80,14 @@ export default function ProfesoresJunior() {
       <div className="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="max-w-3xl mx-auto space-y-5 text-center sm:mx-auto sm:space-y-4">
-            <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+            <h2 className="font-medium leading-6 tracking-tight uppercase text-neutral-900">
               {t('galamianJunior:profesores_subtitle')}
             </h2>
-            <h2 className="text-3xl tracking-wide sm:text-4xl text-neutral-900">
+            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl text-neutral-900">
               {t('galamianJunior:profesores_title')}{' '}
-              <span className="text-gold-600">Junior</span>
+              <span className="font-bold text-gold-600">Junior</span>
             </h2>
-            <p className="text-lg text-neutral-500">
+            <p className="text-lg text-neutral-600">
               {t('galamianJunior:profesores_text')}
             </p>
           </div>
@@ -114,10 +114,12 @@ export default function ProfesoresJunior() {
                   <div className="relative space-y-2">
                     <div className="space-y-1 text-lg font-medium leading-6 text-neutral-900">
                       <Menu as="div">
-                        <div className="transition duration-200 ease-in-out hover:bg-neutral-50">
+                        <div className="transition duration-300 ease-in-out hover:bg-neutral-50">
                           <Menu.Button>
-                            <h3>{person.name}</h3>
-                            <p className="text-gold-600">{person.role}</p>
+                            <h3 className="tracking-tight">{person.name}</h3>
+                            <p className="tracking-tight text-gold-600">
+                              {person.role}
+                            </p>
                           </Menu.Button>
                         </div>
                         <Transition
@@ -135,10 +137,10 @@ export default function ProfesoresJunior() {
                               <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
                                 <div className="flex items-start justify-between">
                                   <div>
-                                    <h3 className="text-base tracking-wide text-neutral-900">
+                                    <h3 className="text-base font-medium tracking-tight text-neutral-900">
                                       {person.instrument}
                                     </h3>
-                                    <h2 className="mt-2 text-3xl leading-8 tracking-wide text-gold-600 sm:text-4xl">
+                                    <h2 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gold-600 sm:text-4xl">
                                       {person.name}
                                     </h2>
                                   </div>
@@ -216,34 +218,34 @@ export default function ProfesoresJunior() {
                                 </div>
                                 <div className="mt-8 lg:mt-0">
                                   <div className="mx-auto text-base max-w-prose lg:max-w-none">
-                                    <p className="text-lg text-neutral-500">
+                                    <p className="text-lg font-light text-neutral-600">
                                       {person.bio_01}
                                     </p>
                                   </div>
-                                  <div className="mx-auto mt-5 prose prose-gold text-neutral-500 lg:max-w-none lg:row-start-1 lg:col-start-1">
+                                  <div className="mx-auto mt-5 font-light prose prose-gold text-neutral-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
                                     <p>{person.bio_02}</p>
                                     <p>{person.bio_03}</p>
-                                    <div>
+                                    <div className="mt-6">
                                       <a
                                         href={person.href}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="text-base leading-7 text-neutral-600 font-semibold hover:text-gold-600 transition duration-200 ease-in-out no-underline"
+                                        className="text-xl font-semibold leading-7 tracking-tight no-underline transition duration-200 ease-in-out text-neutral-500 hover:text-gold-600"
                                       >
                                         {person.website}
                                       </a>
                                     </div>
 
                                     <Menu.Item>
-                                      <p className="pt-4 text-base transition duration-200 ease-in-out cursor-pointer text-gold-600 hover:text-neutral-900">
-                                        {t('common:button_cerrar')}{' '}
+                                      <h3 className="pt-4 text-lg font-semibold tracking-tight transition duration-300 ease-in-out cursor-pointer text-gold-600 hover:text-neutral-900 group">
+                                        {t('common:button_back')}{' '}
                                         <span aria-hidden="true">
-                                          <XIcon
-                                            className="inline-block w-4 h-4"
+                                          <ArrowNarrowRightIcon
+                                            className="inline-block w-5 h-5 transition duration-300 ease-in-out text-gold-600 group-hover:text-neutral-900"
                                             aria-hidden="true"
                                           />
                                         </span>{' '}
-                                      </p>
+                                      </h3>
                                     </Menu.Item>
                                   </div>
                                 </div>

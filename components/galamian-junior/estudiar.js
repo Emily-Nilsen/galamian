@@ -11,12 +11,12 @@ export default function EstudiarJunior() {
         <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h2 className="leading-6 tracking-wide uppercase text-neutral-900">
+            <h2 className="font-medium leading-6 tracking-tight uppercase text-neutral-900">
               {t('common:estudiar_subtitle')}
             </h2>
-            <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
+            <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
               {t('common:estudiar_title_part_1')}{' '}
-              <span className="block text-gold-600">
+              <span className="block font-bold text-gold-600">
                 {t('common:estudiar_title_part_2')}
               </span>
             </h2>
@@ -72,9 +72,9 @@ export default function EstudiarJunior() {
                     />
                   </div>
                 </div>
-                <figcaption className="flex mt-3 text-sm text-neutral-500">
+                <figcaption className="flex mt-3 text-sm text-neutral-600">
                   <CameraIcon
-                    className="flex-none w-5 h-5 text-neutral-400"
+                    className="flex-none w-5 h-5 text-gold-500"
                     aria-hidden="true"
                   />
                   <span className="ml-2">
@@ -90,10 +90,10 @@ export default function EstudiarJunior() {
                 {t('common:estudiar_para_01')}
               </p>
             </div>
-            <div className="mx-auto mt-5 prose prose-gold text-neutral-500 lg:max-w-none lg:row-start-1 lg:col-start-1">
+            <div className="mx-auto mt-5 prose prose-gold text-neutral-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>{t('common:estudiar_para_02')}</p>
               <p>{t('common:estudiar_para_03')}</p>
-              <h3>{t('common:permite_title')}</h3>
+              <h3 className="tracking-tight">{t('common:permite_title')}</h3>
               <ul role="list">
                 <li>{t('common:permite_list_item_01')}</li>
                 <li>{t('common:permite_list_item_02')}</li>
@@ -102,7 +102,7 @@ export default function EstudiarJunior() {
               </ul>
               <div className="mt-10">
                 <Link href="/estudia/formulario-de-inscripcion" passHref>
-                  <a className="text-base font-medium no-underline transition duration-200 ease-in-out text-gold-600 hover:underline hover:text-gold-500">
+                  <a className="text-base font-semibold tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                     {' '}
                     {t('common:button_solicita_una_plaza')}{' '}
                     {new Date().getFullYear()}/{new Date().getFullYear() + 1}{' '}
