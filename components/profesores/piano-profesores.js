@@ -15,63 +15,64 @@ export default function PianoProfesores() {
   const people = [
     {
       name: 'Misha Dacić',
-      role: `${t('common:misha_role')}`,
+      role: `${t('professors:misha_role')}`,
       imageUrl: '/static/profesores/misha-dacic.jpg',
-      instrument: `${t('common:misha_instrument')}`,
-      sentence_01: `${t('common:misha_para_1')}`,
-      sentence_02: `${t('common:misha_para_2')}`,
-      sentence_03: `${t('common:misha_para_3')}`,
-      website: `${t('common:misha_website')}`,
-      href: `${t('common:misha_href')}`,
+      instrument: `${t('professors:misha_instrument')}`,
+      sentence_01: `${t('professors:misha_para_1')}`,
+      sentence_02: `${t('professors:misha_para_2')}`,
+      sentence_03: `${t('professors:misha_para_3')}`,
+      website: `${t('professors:misha_website')}`,
+      href: `${t('professors:misha_href')}`,
     },
     {
       name: 'Josu De Solaun',
-      role: `${t('common:josu_role')}`,
+      role: `${t('professors:josu_role')}`,
       imageUrl: '/static/profesores/josu-de-solaun.jpg',
-      instrument: `${t('common:josu_instrument')}`,
-      sentence_01: `${t('common:josu_para_1')}`,
-      sentence_02: `${t('common:josu_para_2')}`,
-      sentence_03: `${t('common:josu_para_3')}`,
-      website: `${t('common:josu_website')}`,
-      href: `${t('common:josu_href')}`,
+      instrument: `${t('professors:josu_instrument')}`,
+      sentence_01: `${t('professors:josu_para_1')}`,
+      sentence_02: `${t('professors:josu_para_2')}`,
+      sentence_03: `${t('professors:josu_para_3')}`,
+      website: `${t('professors:josu_website')}`,
+      href: `${t('professors:josu_href')}`,
     },
     {
       name: 'Antonio Ortiz',
-      role: `${t('common:antonio_role')}`,
+      role: `${t('professors:antonio_role')}`,
       imageUrl: '/static/profesores/antonio-ortiz.webp',
-      instrument: `${t('common:antonio_instrument')}`,
-      sentence_01: `${t('common:antonio_para_1')}`,
-      sentence_02: `${t('common:antonio_para_2')}`,
-      sentence_03: `${t('common:antonio_para_3')}`,
+      instrument: `${t('professors:antonio_instrument')}`,
+      sentence_01: `${t('professors:antonio_para_1')}`,
+      sentence_02: `${t('professors:antonio_para_2')}`,
+      sentence_03: `${t('professors:antonio_para_3')}`,
     },
     {
       name: 'Miguel Ángel Latorre',
-      role: `${t('common:miguel_role')}`,
+      role: `${t('professors:miguel_role')}`,
       imageUrl: '/static/profesores/miguel-latorre.webp',
-      instrument: `${t('common:miguel_instrument')}`,
-      sentence_01: `${t('common:miguel_para_1')}`,
-      sentence_02: `${t('common:miguel_para_2')}`,
-      sentence_03: `${t('common:miguel_para_3')}`,
+      instrument: `${t('professors:miguel_instrument')}`,
+      sentence_01: `${t('professors:miguel_para_1')}`,
+      sentence_02: `${t('professors:miguel_para_2')}`,
+      sentence_03: `${t('professors:miguel_para_3')}`,
     },
     {
       name: 'Anna Petrova',
-      role: 'Profesora Invitada',
+      role: `${t('professors:petrova_role')}`,
       imageUrl: '/static/profesores/anna-petrova.jpg',
-      instrument: 'Piano',
-      sentence_01: ``,
-      sentence_02: ``,
-      sentence_03: ``,
-      sentence_04: ``,
+      instrument: `${t('professors:petrova_instrument')}`,
+      sentence_01: `${t('professors:petrova_para_1')}`,
+      sentence_02: `${t('professors:petrova_para_2')}`,
+      sentence_03: `${t('professors:petrova_para_3')}`,
+      website: `${t('professors:petrova_website')}`,
+      href: `${t('professors:petrova_href')}`,
     },
     {
       name: 'Francesco Libetta',
-      role: 'Profesor Invitado',
-      imageUrl: '/static/profesores/francesco-libetta.jpg',
-      instrument: 'Piano',
-      sentence_01: ``,
-      sentence_02: ``,
-      sentence_03: ``,
-      sentence_04: ``,
+      role: `${t('professors:francesco_role')}`,
+      imageUrl: '/static/profesores/francesco-libetta.webp',
+      instrument: `${t('professors:francesco_instrument')}`,
+      sentence_01: `${t('professors:francesco_para_1')}`,
+      sentence_02: `${t('professors:francesco_para_2')}`,
+      sentence_03: `${t('professors:francesco_para_3')}`,
+      sentence_04: `${t('professors:francesco_para_4')}`,
     },
   ];
 
@@ -203,15 +204,6 @@ export default function PianoProfesores() {
                                             />
                                           </div>
                                         </div>
-                                        {/* <figcaption className="flex mt-3 text-sm text-neutral-500">
-                                          <CameraIcon
-                                            className="flex-none w-5 h-5 text-neutral-400"
-                                            aria-hidden="true"
-                                          />
-                                          <span className="ml-2">
-                                            {person.name}
-                                          </span>
-                                        </figcaption> */}
                                       </figure>
                                     </div>
                                   </div>

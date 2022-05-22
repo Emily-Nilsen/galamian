@@ -122,23 +122,23 @@ export default function Navbar() {
   ];
   const studies = [
     {
-      name: `${t('common:footer_estudios_1')}`,
+      name: `${t('footer:estudios_1')}`,
       href: `/estudios/violin`,
     },
     {
-      name: `${t('common:footer_estudios_3')}`,
+      name: `${t('footer:estudios_3')}`,
       href: `/estudios/piano`,
     },
     {
-      name: `${t('common:footer_estudios_2')}`,
+      name: `${t('footer:estudios_2')}`,
       href: `/estudios/violonchelo`,
     },
     {
-      name: `${t('common:footer_estudios_4')}`,
+      name: `${t('footer:estudios_4')}`,
       href: `/estudios/voz`,
     },
     {
-      name: `${t('common:footer_academia_3')}`,
+      name: `${t('footer:academia_3')}`,
       href: `/galamian-junior`,
     },
   ];
@@ -169,15 +169,15 @@ export default function Navbar() {
       href: `/estudios/voz`,
     },
     {
-      name: `${t('common:footer_academia_3')}`,
+      name: `${t('footer:academia_3')}`,
       href: `/galamian-junior`,
     },
     {
-      name: `${t('common:footer_recursos_3')}`,
+      name: `${t('footer:recursos_3')}`,
       href: `/bulletin`,
     },
     {
-      name: `${t('common:footer_academia_4')}`,
+      name: `${t('footer:academia_4')}`,
       href: `/contacto`,
     },
     {
@@ -404,7 +404,7 @@ export default function Navbar() {
                           <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div className="self-start">
                               <h3 className="text-base font-bold tracking-tight uppercase text-neutral-600">
-                                {t('common:footer_estudia')}
+                                {t('footer:estudia')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
                                 {estudiar.map((item) => (
@@ -428,7 +428,7 @@ export default function Navbar() {
                             </div>
                             <div>
                               <h3 className="text-base font-bold tracking-tight uppercase text-neutral-600">
-                                {t('common:footer_estudios')}
+                                {t('footer:estudios')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
                                 {studies.map((item) => (
@@ -502,7 +502,7 @@ export default function Navbar() {
               {/* Profesores */}
               <Link href="/contacto" passHref>
                 <a className="self-end text-sm tracking-tight uppercase transition duration-200 ease-in-out text-neutral-500 hover:text-neutral-900">
-                  {t('common:footer_academia_4')}
+                  {t('footer:academia_4')}
                 </a>
               </Link>
             </Popover.Group>
@@ -562,7 +562,7 @@ export default function Navbar() {
                             />
                           </div>
                           <span className="ml-4 tracking-tight">
-                            {t('common:footer_academia')}
+                            {t('footer:academia')}
                           </span>
                         </a>
                       </Link>
@@ -575,7 +575,7 @@ export default function Navbar() {
                             />
                           </div>
                           <span className="ml-4 tracking-tight">
-                            {t('common:footer_academia_2')}
+                            {t('footer:academia_2')}
                           </span>
                         </a>
                       </Link>

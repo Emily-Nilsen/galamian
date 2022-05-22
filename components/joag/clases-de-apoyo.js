@@ -191,7 +191,7 @@ export default function ClasesDeApoyo() {
                 type="submit"
                 className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gold-600 hover:bg-gold-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
               >
-                Let's talk
+                Send me more information
               </button>
             </div>
           </form>

@@ -1,0 +1,22 @@
+const footer = {
+  text: `An initiative led by Jesús Reina and Anna Margrethe Nilsen, with the valuable collaboration of Fundación Unicaja.`,
+  copyright: `Galamian International Academy. All rights reserved.`,
+  estudia: `Study`,
+  estudia_1: `Study at the GIA`,
+  estudia_2: `Registration Form`,
+  estudia_3: `Study Plans`,
+  estudios: `Study Programs`,
+  estudios_1: `Violin/Viola`,
+  estudios_2: `Cello`,
+  estudios_3: `Piano`,
+  estudios_4: `Voice`,
+  academia: `Academy`,
+  academia_1: `The Project`,
+  academia_2: `Teachers`,
+  academia_3: `Galamian Junior`,
+  academia_4: `Contact`,
+  recursos: `Resources`,
+  recursos_1: `Notifications`,
+  recursos_3: `Bulletin`,
+};
+export default footer;

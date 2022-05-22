@@ -9,31 +9,31 @@ export default function Footer() {
 
   const navigation = {
     estudiar: [
-      { name: `${t('common:footer_estudia_1')}`, href: '/estudia' },
+      { name: `${t('footer:estudia_1')}`, href: '/estudia' },
       {
-        name: `${t('common:footer_estudia_2')}`,
+        name: `${t('footer:estudia_2')}`,
         href: '/estudia/formulario-de-inscripcion',
       },
-      { name: `${t('common:footer_estudia_3')}`, href: '/estudios' },
+      { name: `${t('footer:estudia_3')}`, href: '/estudios' },
     ],
     estudios: [
-      { name: `${t('common:footer_estudios_1')}`, href: '/estudios/violin' },
+      { name: `${t('footer:estudios_1')}`, href: '/estudios/violin' },
       {
-        name: `${t('common:footer_estudios_2')}`,
+        name: `${t('footer:estudios_2')}`,
         href: '/estudios/violonchelo',
       },
-      { name: `${t('common:footer_estudios_3')}`, href: '/estudios/piano' },
-      { name: `${t('common:footer_estudios_4')}`, href: '/estudios/voz' },
-      { name: `${t('common:footer_academia_3')}`, href: '/galamian-junior' },
+      { name: `${t('footer:estudios_3')}`, href: '/estudios/piano' },
+      { name: `${t('footer:estudios_4')}`, href: '/estudios/voz' },
+      { name: `${t('footer:academia_3')}`, href: '/galamian-junior' },
     ],
     academia: [
-      { name: `${t('common:footer_academia_1')}`, href: '/academia' },
-      { name: `${t('common:footer_academia_2')}`, href: '/profesores' },
-      { name: `${t('common:footer_academia_4')}`, href: '/contacto' },
+      { name: `${t('footer:academia_1')}`, href: '/academia' },
+      { name: `${t('footer:academia_2')}`, href: '/profesores' },
+      { name: `${t('footer:academia_4')}`, href: '/contacto' },
     ],
     recursos: [
-      { name: `${t('common:footer_recursos_1')}`, href: '/#noticias' },
-      { name: `${t('common:footer_recursos_3')}`, href: '/bulletin' },
+      { name: `${t('footer:recursos_1')}`, href: '/#noticias' },
+      { name: `${t('footer:recursos_3')}`, href: '/bulletin' },
       { name: `${t('common:joag')}`, href: '/joag' },
     ],
     social: [
@@ -94,9 +94,7 @@ export default function Footer() {
                 ></Image>
               </div>
             </Link>
-            <p className="text-base text-neutral-300">
-              {t('common:footer_text')}
-            </p>
+            <p className="text-base text-neutral-300">{t('footer:text')}</p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a
@@ -117,7 +115,7 @@ export default function Footer() {
               {/* Estudia */}
               <div>
                 <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
-                  {t('common:footer_estudia')}
+                  {t('footer:estudia')}
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.estudiar.map((item) => (
@@ -134,7 +132,7 @@ export default function Footer() {
               {/* Estudios */}
               <div className="mt-12 md:mt-0">
                 <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
-                  {t('common:footer_estudios')}
+                  {t('footer:estudios')}
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.estudios.map((item) => (
@@ -153,7 +151,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
-                  {t('common:footer_academia')}
+                  {t('footer:academia')}
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.academia.map((item) => (
@@ -171,7 +169,7 @@ export default function Footer() {
               {/* Recursos */}
               <div className="mt-12 md:mt-0">
                 <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
-                  {t('common:footer_recursos')}
+                  {t('footer:recursos')}
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.recursos.map((item) => (
@@ -191,7 +189,7 @@ export default function Footer() {
         </div>
         <div className="pt-8 mt-12 border-t border-gray-700">
           <p className="text-sm text-neutral-400 xl:text-center">
-            &copy; {new Date().getFullYear()} {t('common:footer_copyright')}
+            &copy; {new Date().getFullYear()} {t('footer:copyright')}
           </p>
         </div>
       </div>

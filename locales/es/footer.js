@@ -1,0 +1,22 @@
+const footer = {
+  text: `Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con la estimable colaboración de Fundación Unicaja.`,
+  copyright: `Academia Internacional Galamian. Todos los derechos reservados.`,
+  estudia: `Estudia`,
+  estudia_1: `Estudiar en la AIG`,
+  estudia_2: `Formulario de Inscripción`,
+  estudia_3: `Planes de Estudios`,
+  estudios: `Estudios`,
+  estudios_1: `Violín/Viola`,
+  estudios_2: `Violonchelo`,
+  estudios_3: `Piano`,
+  estudios_4: `Voz`,
+  academia: `La Academia`,
+  academia_1: `El Proyecto`,
+  academia_2: `Profesores`,
+  academia_3: `Galamian Junior`,
+  academia_4: `Contacto`,
+  recursos: `Recursos`,
+  recursos_1: `Noticias`,
+  recursos_3: `Bulletin`,
+};
+export default footer;
