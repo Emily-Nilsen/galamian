@@ -6,6 +6,7 @@ import { CheckIcon } from '@heroicons/react/outline';
 import ProfesoresViolin from '../../components/estudio/profesores-violin';
 import ViolinRequisitos from '../../components/estudio/violin-requisitos';
 import ViolinGalleryOne from '../../components/estudio/violin-gallery-1';
+import JoagCTA from '../../components/joag/cta';
 
 export default function Violin() {
   const { t } = useTranslation();
@@ -484,13 +485,12 @@ export default function Violin() {
             </h2>
             <p>
               {t('common:estudio_para_13_part_2')}
-              <Link href="/profesores">
-                <a className="tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
-                  {t('common:estudio_para_13_part_3')}
-                </a>
-              </Link>
+              <span className="font-semibold">
+                {t('common:estudio_para_13_part_3')}
+              </span>
               {t('common:estudio_para_13_part_4')}
             </p>
+            <JoagCTA />
           </div>
         </div>
       </div>

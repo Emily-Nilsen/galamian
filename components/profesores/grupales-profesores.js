@@ -15,7 +15,7 @@ export default function GrupalesProfesores() {
   const people = [
     {
       name: 'Jesús Reina',
-      role: `${t('professors:jesus_role')}`,
+      role: `${t('professors:jesus_chamber_role')}`,
       imageUrl: '/static/profesores/jesus.jpg',
       instrument: `${t('professors:jesus_instrument')}`,
       sentence_01: `${t('professors:jesus_para_1')}`,
@@ -26,7 +26,7 @@ export default function GrupalesProfesores() {
     },
     {
       name: 'Anna Margrethe Nilsen',
-      role: `${t('professors:anna_role')}`,
+      role: `${t('professors:anna_chamber_role')}`,
       imageUrl: '/static/profesores/anna.jpg',
       instrument: `${t('professors:anna_instrument')}`,
       sentence_01: `${t('professors:anna_para_1')}`,
@@ -37,37 +37,41 @@ export default function GrupalesProfesores() {
     },
     {
       name: 'Pablo Martos',
-      role: 'Música de Cámara',
-      imageUrl: '/static/profesores/pablo-martos.jpg',
-      instrument: 'Violín',
-      sentence_01: ``,
-      sentence_02: ``,
-      sentence_03: ``,
-      sentence_04: ``,
+      role: `${t('professors:pablo_chamber_role')}`,
+      imageUrl: '/static/profesores/pablo_martos.webp',
+      instrument: `${t('professors:pablo_instrument')}`,
+      sentence_01: `${t('professors:pablo_para_1')}`,
+      sentence_02: `${t('professors:pablo_para_2')}`,
+      sentence_03: `${t('professors:pablo_para_3')}`,
+      website: `${t('professors:pablo_website')}`,
+      href: `${t('professors:pablo_href')}`,
     },
     {
       name: 'Alberto Martos',
-      role: 'Música de Cámara',
-      imageUrl: '/static/profesores/alberto-martos.jpg',
-      instrument: 'Violín',
-      sentence_01: `Tras el éxito de sus grabaciones para el sello Sony Classical, Alberto Martos emerge con fuerza en el panorama musical actual.`,
-      sentence_02: `Formado en España y Alemania, su rica actividad concertística le ha llevado a actuar en salas como el Auditorio Nacional, Palau de la Música Catalana, Carnegie Hall, Sala Pleyel, Teatro Colón o Philarmonie de Berlín. Elegido personalmente por Daniel Barenboim para ocupar el primer atril de la West Eastern Divan Orchestra, fue definido por el maestro como “una de las mayores promesas del violonchelo”.`,
-      sentence_03: `Miembro fundador del prestigioso Garnati Ensemble, su trabajo Playing Goldberg registrado en Sony Classical junto a Pablo Martos y Yuval Gotlibovich obtiene las mejores críticas de prensa. En 2013 recibe junto a su hermano el premio Andalucía Joven por su labor solidaria a través de la música. Parte de esta labor fue registrada en el documental The Healing Notes, producido por Mercedes Milá y dirigido por Amparo Mendo.`,
-      sentence_04: `En 2016 fueron invitados a Puerto Rico, donde inauguraron el museo Pilar Defillò (madre de Pau Casals), siendo nombrados “Huéspedes Distinguidos” de la Ciudad de Mayagüez. En 2017 lanza su nuevo álbum para Sony Classical, que incluye el Concierto en Re Mayor de Franz Joseph Haydn y el Adagio del Concierto en Do Mayor, junto a la Orquesta Ciudad de Granada y bajo la dirección del maestro Antoni Ros Marbà. Este mismo año recibe el premio Andaluces del Futuro (Bankia/Grupo Joly) otorgado en la modalidad de cultura por su brillante trayectoria como solista.`,
+      role: `${t('professors:alberto_chamber_role')}`,
+      imageUrl: '/static/profesores/alberto-martos.webp',
+      instrument: `${t('professors:alberto_instrument')}`,
+      sentence_01: `${t('professors:alberto_para_1')}`,
+      sentence_02: `${t('professors:alberto_para_2')}`,
+      sentence_03: `${t('professors:alberto_para_3')}`,
+      website: `${t('professors:alberto_website')}`,
+      href: `${t('professors:alberto_href')}`,
     },
     {
       name: 'José Vélez',
-      role: 'Música de Cámara',
-      imageUrl: '/static/profesores/jose-velez.jpg',
+      role: `${t('professors:velez_chamber_role')}`,
+      imageUrl: '/static/profesores/jose-velez.jpeg',
       instrument: 'Cantante',
-      sentence_01: ``,
-      sentence_02: ``,
-      sentence_03: ``,
-      sentence_04: ``,
+      instrument: `${t('professors:velez_instrument')}`,
+      sentence_01: `${t('professors:velez_para_1')}`,
+      sentence_02: `${t('professors:velez_para_2')}`,
+      sentence_03: `${t('professors:velez_para_3')}`,
+      website: `${t('professors:velez_website')}`,
+      href: `${t('professors:velez_href')}`,
     },
     {
       name: 'Misha Dacić',
-      role: `${t('professors:misha_role')}`,
+      role: `${t('professors:misha_chamber_role')}`,
       imageUrl: '/static/profesores/misha-dacic.jpg',
       instrument: `${t('professors:misha_instrument')}`,
       sentence_01: `${t('professors:misha_para_1')}`,
@@ -78,27 +82,30 @@ export default function GrupalesProfesores() {
     },
     {
       name: 'Alexander Sitkovetsky',
-      role: 'Música de Cámara',
+      role: `${t('professors:alexander_chamber_role')}`,
       imageUrl: '/static/profesores/alexander-sitkovetsky.jpg',
       instrument: 'Violín',
-      sentence_01: `Alexander Sitkovetsky nace en Moscú en una familia con una establecida tradición musical. Hizo su debut a la edad de ocho años y el mismo año fue a estudiar a la Menuhin School.`,
-      sentence_02: `Lord Menuhin fue su inspiración a lo largo de sus estudios y actuaron juntos en varias ocasiones incluyendo el Concierto Doble de Bach, Dúos de Bartok en el Palacio de St. James y el Concierto de Mendelssohn, bajo la batuta de Menuhin. Seguidamente actuó con la Filarmónica de los Países Bajos y la Royal Filarmonic, English Chamber Orchestra, Academy of St. Martin in the Fields, la BBC Concert Orchestra, entre muchas otras.`,
-      sentence_03: `Ha compartido el escenario con Julia Fischer, Janine Jansen, Misha Maisky, Polina Leschenko, Julian Rachlin y muchos otros. Alexander ha grabado para Angel/EMI, Decca y Orfeo, incluyendo el Concierto Doble de Bach con Julia Fischer. La pasada temporada fue invitado a tocar en orquestas de Inglaterra, Holanda, España, Rusia y Alemania al igual que recitales y participaciones en festivales en Noruega, Japón, Rumanía, Inglaterra, Francia, Holanda y Estados Unidos.`,
-      sentence_04: `Alexander comenzó a formar parte de la prestigiosa Chamber Music Society Two en el Lincoln Center de Nueva York. Junto a la pianista Wu Qian y el cellista Isang Enders, Alexander es miembro del Sitkovetsky Piano Trio, actuando frecuentemente en el Wigmore Hall de Inglaterra al igual que por Europa en salas como el Concertgebouw de Amsterdam y la Frankurt Alte Oper.`,
+      instrument: `${t('professors:alexander_instrument')}`,
+      sentence_01: `${t('professors:alexander_para_1')}`,
+      sentence_02: `${t('professors:alexander_para_2')}`,
+      sentence_03: `${t('professors:alexander_para_3')}`,
+      sentence_04: `${t('professors:alexander_para_4')}`,
     },
     {
       name: 'Anna Petrova',
-      role: 'Música de Cámara',
+      role: `${t('professors:petrova_chamber_role')}`,
       imageUrl: '/static/profesores/anna-petrova.jpg',
       instrument: 'Piano',
-      sentence_01: ``,
-      sentence_02: ``,
-      sentence_03: ``,
-      sentence_04: ``,
+      instrument: `${t('professors:petrova_instrument')}`,
+      sentence_01: `${t('professors:petrova_para_1')}`,
+      sentence_02: `${t('professors:petrova_para_2')}`,
+      sentence_03: `${t('professors:petrova_para_3')}`,
+      website: `${t('professors:petrova_website')}`,
+      href: `${t('professors:petrova_href')}`,
     },
     {
       name: 'Josu De Solaun',
-      role: `${t('professors:josu_role')}`,
+      role: `${t('professors:josu_chamber_role')}`,
       imageUrl: '/static/profesores/josu-de-solaun.jpg',
       instrument: `${t('professors:josu_instrument')}`,
       sentence_01: `${t('professors:josu_para_1')}`,
@@ -109,234 +116,418 @@ export default function GrupalesProfesores() {
     },
     {
       name: 'Molly Carr',
-      role: 'Música de Cámara',
+      role: `${t('professors:molly_chamber_role')}`,
       imageUrl: '/static/profesores/molly-carr.jpg',
-      instrument: 'Violín',
-      sentence_01: ``,
-      sentence_02: ``,
-      sentence_03: ``,
-      sentence_04: ``,
+      instrument: `${t('professors:molly_instrument')}`,
+      sentence_01: `${t('professors:molly_para_1')}`,
+      sentence_02: `${t('professors:molly_para_2')}`,
+      sentence_03: `${t('professors:molly_para_3')}`,
+      website: `${t('professors:molly_website')}`,
+      href: `${t('professors:molly_href')}`,
     },
     {
       name: 'Øyvind Gimse',
-      role: `${t('professors:oyvind_role')}`,
+      role: `${t('professors:oyvind_chamber_role')}`,
       imageUrl: '/static/profesores/oyvind-gimse.jpg',
       instrument: `${t('professors:oyvind_instrument')}`,
       sentence_01: `${t('professors:oyvind_para_1')}`,
       sentence_02: `${t('professors:oyvind_para_2')}`,
       sentence_03: `${t('professors:oyvind_para_3')}`,
     },
+  ];
 
+  const conductors = [
     {
       name: 'José Andrés Fernández',
-      role: 'Orquesta Infantil y Juvenil',
-      imageUrl: '/static/profesores/jose-camacho.jpg',
-      instrument: 'Orquesta Infantil y Juvenil',
-      sentence_01: `José Andrés Fernández Camacho`,
-      sentence_02: ``,
-      sentence_03: ``,
-      sentence_04: ``,
+      role: `${t('professors:jose_group_role')}`,
+      imageUrl: '/static/profesores/jose-camacho.webp',
+      instrument: `${t('professors:jose_instrument')}`,
+      sentence_01: `${t('professors:jose_para_1')}`,
+      sentence_02: `${t('professors:jose_para_2')}`,
+      sentence_03: `${t('professors:jose_para_3')}`,
     },
     {
       name: 'Tomás Grau',
-      role: 'Orquesta Academia Galamian',
+      role: `${t('professors:grau_group_role')}`,
       imageUrl: '/static/profesores/tomas-grau.jpg',
-      instrument: 'Orquesta Academia Galamian',
-      sentence_01: ``,
-      sentence_02: ``,
-      sentence_03: ``,
-      sentence_04: ``,
+      instrument: `${t('professors:grau_instrument')}`,
+      sentence_01: `${t('professors:grau_para_1')}`,
+      sentence_02: `${t('professors:grau_para_2')}`,
+      sentence_03: `${t('professors:grau_para_3')}`,
+      sentence_04: `${t('professors:grau_para_4')}`,
+      sentence_05: `${t('professors:grau_para_5')}`,
+      website: `${t('professors:grau_website')}`,
+      href: `${t('professors:grau_href')}`,
     },
   ];
 
   return (
-    <div className="relative pt-4 pb-16 bg-white sm:pb-24">
-      <div className="py-6 mx-auto max-w-7xl lg:py-12">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
-          <div className="space-y-5 sm:space-y-4">
-            <h2 className="text-3xl font-bold tracking-tight text-gold-600 sm:text-4xl">
-              {t('profesores:study_groups')}
-            </h2>
-            <p className="text-base text-neutral-600">
-              {t('profesores:study_text')}
-            </p>
-          </div>
-          <div className="lg:col-span-2">
-            <ul
-              role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:gap-x-8"
-            >
-              {people.map((person) => (
-                <li key={person.name}>
-                  <div
-                    id={person.id}
-                    className="flex items-center space-x-4 transition duration-200 ease-in-out rounded-l-full cursor-pointer lg:space-x-6 hover:bg-neutral-50"
-                  >
-                    <div className="relative w-16 h-16 lg:w-20 lg:h-20">
-                      <Image
-                        className="rounded-full"
-                        width={1000}
-                        height={1000}
-                        src={person.imageUrl}
-                        alt={person.name}
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="center"
-                      />
-                    </div>
-                    <div className="relative space-y-1 text-lg font-medium leading-6 text-neutral-900">
-                      <div>
-                        <Menu as="div">
-                          <div>
-                            <Menu.Button>
-                              <div className="space-y-1 text-lg font-medium leading-6 tracking-tight text-left text-neutral-900 focus:outline-none focus:ring-0 ring-0 ring-transparent focus:ring-transparent">
-                                <h3>{person.name}</h3>
-                                <p className="text-gold-600">{person.role}</p>
-                              </div>
-                            </Menu.Button>
-                          </div>
-                          <Transition
-                            as={Fragment}
-                            enter="transition ease-out duration-100"
-                            enterFrom="transform opacity-0 scale-95"
-                            enterTo="transform opacity-100 scale-100"
-                            leave="transition ease-in duration-75"
-                            leaveFrom="transform opacity-100 scale-100"
-                            leaveTo="transform opacity-0 scale-95"
-                          >
-                            <Menu.Items className="fixed top-0 left-0 z-20 w-full h-full overflow-x-hidden origin-top-left bg-white focus:outline-none">
-                              <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                                <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
-                                <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
-                                  <div className="flex items-start justify-between">
-                                    <div>
-                                      <h3 className="text-base font-normal tracking-tight text-neutral-900">
-                                        {person.instrument}
-                                      </h3>
-                                      <h2 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gold-600 sm:text-4xl">
-                                        {person.name}
-                                      </h2>
-                                    </div>
-                                    <Menu.Item>
-                                      <div className="absolute right-6 top-6">
-                                        <XIcon
-                                          className="w-6 h-6 transition duration-200 ease-in-out text-neutral-400 hover:text-neutral-900"
-                                          aria-hidden="true"
-                                        />
-                                      </div>
-                                    </Menu.Item>
-                                  </div>
+    <section>
+      {/* Chamber Musicians */}
+      <div className="relative pt-4 pb-16 bg-white lg:pt-10 sm:pb-24">
+        <div className="pt-6 pb-16 mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
+            <div className="space-y-5 sm:space-y-4">
+              <h2 className="text-3xl font-bold tracking-tight text-gold-600 sm:text-4xl">
+                {t('profesores:study_groups')}
+              </h2>
+              <p className="text-base text-neutral-600">
+                {t('profesores:study_text')}
+              </p>
+            </div>
+            <div className="lg:col-span-2">
+              <ul
+                role="list"
+                className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:gap-x-8"
+              >
+                {people.map((person) => (
+                  <li key={person.name}>
+                    <div
+                      id={person.id}
+                      className="flex items-center space-x-4 transition duration-200 ease-in-out rounded-l-full cursor-pointer lg:space-x-6 hover:bg-neutral-50"
+                    >
+                      <div className="relative w-16 h-16 lg:w-20 lg:h-20">
+                        <Image
+                          className="rounded-full"
+                          width={1000}
+                          height={1000}
+                          src={person.imageUrl}
+                          alt={person.name}
+                          layout="fill"
+                          objectFit="cover"
+                          objectPosition="center"
+                        />
+                      </div>
+                      <div className="relative space-y-1 text-lg font-medium leading-6 text-neutral-900">
+                        <div>
+                          <Menu as="div">
+                            <div>
+                              <Menu.Button>
+                                <div className="space-y-1 text-lg font-medium leading-6 tracking-tight text-left text-neutral-900 focus:outline-none focus:ring-0 ring-0 ring-transparent focus:ring-transparent">
+                                  <h3>{person.name}</h3>
+                                  <p className="text-gold-600">{person.role}</p>
                                 </div>
-                                <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
-                                  <div className="relative lg:row-start-1 lg:col-start-2">
-                                    <svg
-                                      className="absolute top-0 right-0 hidden -mt-20 -mr-20 lg:block"
-                                      width={404}
-                                      height={384}
-                                      fill="none"
-                                      viewBox="0 0 404 384"
-                                      aria-hidden="true"
-                                    >
-                                      <defs>
-                                        <pattern
-                                          id="de316486-4a29-4312-bdfc-fbce2132a2c1"
-                                          x={0}
-                                          y={0}
-                                          width={20}
-                                          height={20}
-                                          patternUnits="userSpaceOnUse"
-                                        >
-                                          <rect
-                                            x={0}
-                                            y={0}
-                                            width={2}
-                                            height={4}
-                                            className="text-neutral-200"
-                                            fill="currentColor"
-                                          />
-                                        </pattern>
-                                      </defs>
-                                      <rect
-                                        width={404}
-                                        height={384}
-                                        fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
-                                      />
-                                    </svg>
-                                    <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
-                                      <figure>
-                                        <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                                          <div className="object-cover object-center overflow-hidden shadow-none">
-                                            <Image
-                                              src={person.imageUrl}
-                                              alt={person.name}
-                                              width={1184}
-                                              height={802}
-                                              layout="responsive"
-                                              objectFit="cover"
-                                              objectPosition="center"
-                                            />
-                                          </div>
-                                        </div>
-                                        {/* <figcaption className="flex mt-3 text-sm text-neutral-500">
-                                          <CameraIcon
-                                            className="flex-none w-5 h-5 text-neutral-400"
+                              </Menu.Button>
+                            </div>
+                            <Transition
+                              as={Fragment}
+                              enter="transition ease-out duration-100"
+                              enterFrom="transform opacity-0 scale-95"
+                              enterTo="transform opacity-100 scale-100"
+                              leave="transition ease-in duration-75"
+                              leaveFrom="transform opacity-100 scale-100"
+                              leaveTo="transform opacity-0 scale-95"
+                            >
+                              <Menu.Items className="fixed top-0 left-0 z-20 w-full h-full overflow-x-hidden origin-top-left bg-white focus:outline-none">
+                                <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                                  <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
+                                  <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+                                    <div className="flex items-start justify-between">
+                                      <div>
+                                        <h3 className="text-base font-normal tracking-tight text-neutral-900">
+                                          {person.instrument}
+                                        </h3>
+                                        <h2 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gold-600 sm:text-4xl">
+                                          {person.name}
+                                        </h2>
+                                      </div>
+                                      <Menu.Item>
+                                        <div className="absolute right-6 top-6">
+                                          <XIcon
+                                            className="w-6 h-6 transition duration-200 ease-in-out text-neutral-400 hover:text-neutral-900"
                                             aria-hidden="true"
                                           />
-                                          <span className="ml-2">
-                                            {person.name}
-                                          </span>
-                                        </figcaption> */}
-                                      </figure>
-                                    </div>
-                                  </div>
-                                  <div className="mt-8 lg:mt-0">
-                                    <div className="mx-auto text-base max-w-prose lg:max-w-none">
-                                      <p className="text-lg font-light text-neutral-600">
-                                        {person.sentence_01}
-                                      </p>
-                                    </div>
-                                    <div className="mx-auto mt-5 font-light prose prose-gold text-neutral-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
-                                      <p>{person.sentence_02}</p>
-                                      <p>{person.sentence_03}</p>
-                                      <p>{person.sentence_04}</p>
-                                      <div className="mt-6">
-                                        <a
-                                          href={person.href}
-                                          target="_blank"
-                                          rel="noreferrer"
-                                          className="text-xl font-semibold leading-7 tracking-tight no-underline transition duration-200 ease-in-out text-neutral-500 hover:text-gold-600"
-                                        >
-                                          {person.website}
-                                        </a>
-                                      </div>
-
-                                      <Menu.Item>
-                                        <h3 className="pt-4 text-lg font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900 group">
-                                          {t('common:button_back')}{' '}
-                                          <span aria-hidden="true">
-                                            <ArrowNarrowRightIcon
-                                              className="inline-block w-5 h-5 transition duration-300 ease-in-out text-gold-600 group-hover:text-neutral-900"
-                                              aria-hidden="true"
-                                            />
-                                          </span>{' '}
-                                        </h3>
+                                        </div>
                                       </Menu.Item>
                                     </div>
                                   </div>
+                                  <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+                                    <div className="relative lg:row-start-1 lg:col-start-2">
+                                      <svg
+                                        className="absolute top-0 right-0 hidden -mt-20 -mr-20 lg:block"
+                                        width={404}
+                                        height={384}
+                                        fill="none"
+                                        viewBox="0 0 404 384"
+                                        aria-hidden="true"
+                                      >
+                                        <defs>
+                                          <pattern
+                                            id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                                            x={0}
+                                            y={0}
+                                            width={20}
+                                            height={20}
+                                            patternUnits="userSpaceOnUse"
+                                          >
+                                            <rect
+                                              x={0}
+                                              y={0}
+                                              width={2}
+                                              height={4}
+                                              className="text-neutral-200"
+                                              fill="currentColor"
+                                            />
+                                          </pattern>
+                                        </defs>
+                                        <rect
+                                          width={404}
+                                          height={384}
+                                          fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
+                                        />
+                                      </svg>
+                                      <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
+                                        <figure>
+                                          <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                                            <div className="object-cover object-center overflow-hidden shadow-none">
+                                              <Image
+                                                src={person.imageUrl}
+                                                alt={person.name}
+                                                width={1184}
+                                                height={802}
+                                                layout="responsive"
+                                                objectFit="cover"
+                                                objectPosition="center"
+                                              />
+                                            </div>
+                                          </div>
+                                        </figure>
+                                      </div>
+                                    </div>
+                                    <div className="mt-8 lg:mt-0">
+                                      <div className="mx-auto text-base max-w-prose lg:max-w-none">
+                                        <p className="text-lg font-light text-neutral-600">
+                                          {person.sentence_01}
+                                        </p>
+                                      </div>
+                                      <div className="mx-auto mt-5 font-light prose prose-gold text-neutral-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
+                                        <p>{person.sentence_02}</p>
+                                        <p>{person.sentence_03}</p>
+                                        <p>{person.sentence_04}</p>
+                                        <p>{person.sentence_05}</p>
+                                        <div className="mt-6">
+                                          <a
+                                            href={person.href}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="text-xl font-semibold leading-7 tracking-tight no-underline transition duration-200 ease-in-out text-neutral-500 hover:text-gold-600"
+                                          >
+                                            {person.website}
+                                          </a>
+                                        </div>
+
+                                        <Menu.Item>
+                                          <h3 className="pt-4 text-lg font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900 group">
+                                            {t('common:button_back')}{' '}
+                                            <span aria-hidden="true">
+                                              <ArrowNarrowRightIcon
+                                                className="inline-block w-5 h-5 transition duration-300 ease-in-out text-gold-600 group-hover:text-neutral-900"
+                                                aria-hidden="true"
+                                              />
+                                            </span>{' '}
+                                          </h3>
+                                        </Menu.Item>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                            </Menu.Items>
-                          </Transition>
-                        </Menu>
+                              </Menu.Items>
+                            </Transition>
+                          </Menu>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Conductors */}
+
+        <div
+          id="conductors"
+          className="pt-16 pb-2 mx-auto border-t max-w-7xl border-neutral-200"
+        >
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
+            <div className="space-y-5 sm:space-y-4">
+              <h2 className="text-3xl font-bold tracking-tight text-gold-600 sm:text-4xl">
+                {t('profesores:conductors')}
+              </h2>
+              <p className="text-base text-neutral-600">
+                {t('profesores:conductors_text')}
+              </p>
+            </div>
+            <div className="lg:col-span-2">
+              <ul
+                role="list"
+                className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:gap-x-8"
+              >
+                {conductors.map((person) => (
+                  <li key={person.name}>
+                    <div
+                      id={person.id}
+                      className="flex items-center space-x-4 transition duration-200 ease-in-out rounded-l-full cursor-pointer lg:space-x-6 hover:bg-neutral-50"
+                    >
+                      <div className="relative w-16 h-16 lg:w-20 lg:h-20">
+                        <Image
+                          className="rounded-full"
+                          width={1000}
+                          height={1000}
+                          src={person.imageUrl}
+                          alt={person.name}
+                          layout="fill"
+                          objectFit="cover"
+                          objectPosition="center"
+                        />
+                      </div>
+                      <div className="relative space-y-1 text-lg font-medium leading-6 text-neutral-900">
+                        <div>
+                          <Menu as="div">
+                            <div>
+                              <Menu.Button>
+                                <div className="space-y-1 text-lg font-medium leading-6 tracking-tight text-left text-neutral-900 focus:outline-none focus:ring-0 ring-0 ring-transparent focus:ring-transparent">
+                                  <h3>{person.name}</h3>
+                                  <p className="text-gold-600">{person.role}</p>
+                                </div>
+                              </Menu.Button>
+                            </div>
+                            <Transition
+                              as={Fragment}
+                              enter="transition ease-out duration-100"
+                              enterFrom="transform opacity-0 scale-95"
+                              enterTo="transform opacity-100 scale-100"
+                              leave="transition ease-in duration-75"
+                              leaveFrom="transform opacity-100 scale-100"
+                              leaveTo="transform opacity-0 scale-95"
+                            >
+                              <Menu.Items className="fixed top-0 left-0 z-20 w-full h-full overflow-x-hidden origin-top-left bg-white focus:outline-none">
+                                <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                                  <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-neutral-50 left-3/4" />
+                                  <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+                                    <div className="flex items-start justify-between">
+                                      <div>
+                                        <h3 className="text-base font-normal tracking-tight text-neutral-900">
+                                          {person.instrument}
+                                        </h3>
+                                        <h2 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gold-600 sm:text-4xl">
+                                          {person.name}
+                                        </h2>
+                                      </div>
+                                      <Menu.Item>
+                                        <div className="absolute right-6 top-6">
+                                          <XIcon
+                                            className="w-6 h-6 transition duration-200 ease-in-out text-neutral-400 hover:text-neutral-900"
+                                            aria-hidden="true"
+                                          />
+                                        </div>
+                                      </Menu.Item>
+                                    </div>
+                                  </div>
+                                  <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+                                    <div className="relative lg:row-start-1 lg:col-start-2">
+                                      <svg
+                                        className="absolute top-0 right-0 hidden -mt-20 -mr-20 lg:block"
+                                        width={404}
+                                        height={384}
+                                        fill="none"
+                                        viewBox="0 0 404 384"
+                                        aria-hidden="true"
+                                      >
+                                        <defs>
+                                          <pattern
+                                            id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                                            x={0}
+                                            y={0}
+                                            width={20}
+                                            height={20}
+                                            patternUnits="userSpaceOnUse"
+                                          >
+                                            <rect
+                                              x={0}
+                                              y={0}
+                                              width={2}
+                                              height={4}
+                                              className="text-neutral-200"
+                                              fill="currentColor"
+                                            />
+                                          </pattern>
+                                        </defs>
+                                        <rect
+                                          width={404}
+                                          height={384}
+                                          fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
+                                        />
+                                      </svg>
+                                      <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
+                                        <figure>
+                                          <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                                            <div className="object-cover object-center overflow-hidden shadow-none">
+                                              <Image
+                                                src={person.imageUrl}
+                                                alt={person.name}
+                                                width={1184}
+                                                height={802}
+                                                layout="responsive"
+                                                objectFit="cover"
+                                                objectPosition="center"
+                                              />
+                                            </div>
+                                          </div>
+                                        </figure>
+                                      </div>
+                                    </div>
+                                    <div className="mt-8 lg:mt-0">
+                                      <div className="mx-auto text-base max-w-prose lg:max-w-none">
+                                        <p className="text-lg font-light text-neutral-600">
+                                          {person.sentence_01}
+                                        </p>
+                                      </div>
+                                      <div className="mx-auto mt-5 font-light prose prose-gold text-neutral-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
+                                        <p>{person.sentence_02}</p>
+                                        <p>{person.sentence_03}</p>
+                                        <p>{person.sentence_04}</p>
+                                        <p>{person.sentence_05}</p>
+                                        <div className="mt-6">
+                                          <a
+                                            href={person.href}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="text-xl font-semibold leading-7 tracking-tight no-underline transition duration-200 ease-in-out text-neutral-500 hover:text-gold-600"
+                                          >
+                                            {person.website}
+                                          </a>
+                                        </div>
+
+                                        <Menu.Item>
+                                          <h3 className="pt-4 text-lg font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900 group">
+                                            {t('common:button_back')}{' '}
+                                            <span aria-hidden="true">
+                                              <ArrowNarrowRightIcon
+                                                className="inline-block w-5 h-5 transition duration-300 ease-in-out text-gold-600 group-hover:text-neutral-900"
+                                                aria-hidden="true"
+                                              />
+                                            </span>{' '}
+                                          </h3>
+                                        </Menu.Item>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </Menu.Items>
+                            </Transition>
+                          </Menu>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

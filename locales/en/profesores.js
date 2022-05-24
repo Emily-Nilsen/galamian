@@ -8,7 +8,9 @@ const profesores = {
   tab_voice: `Voice`,
   tab_groups: `Groups`,
   study_violin: `Violin & Viola`,
-  study_groups: `Group Subjects`,
+  study_groups: `Chamber Musicians`,
   study_text: `Click on each professor to read more.`,
+  conductors: `Conductors`,
+  conductors_text: `Click on each conductor to read more.`,
 };
 export default profesores;

@@ -258,6 +258,12 @@ const common = {
 
   // JOAG
   joag: `Orquesta JOAG`,
+
+  // JOAG CTA
+  joag_cta_title_1: `Recibe clases a tu medida.`,
+  joag_cta_title_2: `Entra en la JOAG.`,
+  joag_cta_text: `Cree clases personalizadas y obtenga experiencia orquestal de primera mano con el Joven Orquesta de la Academia Galamian.`,
+  joag_cta_button: `Aprende más`,
 };
 
 export default common;

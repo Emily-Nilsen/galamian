@@ -256,6 +256,12 @@ const common = {
 
   // JOAG
   joag: `Youth Orchestra`,
+
+  // JOAG CTA
+  joag_cta_title_1: `Receive tailored classes.`,
+  joag_cta_title_2: `Join the Youth Orchestra.`,
+  joag_cta_text: `Create tailored classes and gain first-hand orchestral experience with the Galamian Academy Youth Orchestra.`,
+  joag_cta_button: `Learn more`,
 };
 
 export default common;

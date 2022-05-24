@@ -5,6 +5,7 @@ import { ExclamationIcon } from '@heroicons/react/solid';
 import { CheckIcon } from '@heroicons/react/outline';
 import ProfesoresVoz from '../../components/estudio/profesores-voz';
 import VozRequisitos from '../../components/estudio/voz-requisitos';
+import JoagCTA from '../../components/joag/cta';
 
 export default function Voz() {
   const { t } = useTranslation();
@@ -501,13 +502,12 @@ export default function Voz() {
             </h2>
             <p>
               {t('common:estudio_para_13_part_2')}
-              <Link href="/profesores">
-                <a className="tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
-                  {t('common:estudio_para_13_part_3')}
-                </a>
-              </Link>
+              <span className="font-semibold">
+                {t('common:estudio_para_13_part_3')}
+              </span>
               {t('common:estudio_para_13_part_4')}
             </p>
+            <JoagCTA />
           </div>
         </div>
       </div>

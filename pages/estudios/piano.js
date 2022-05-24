@@ -493,11 +493,7 @@ export default function Piano() {
             </h2>
             <p>
               {t('common:estudio_para_13_part_2')}
-              <Link href="/profesores">
-                <a className="tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
-                  {t('common:estudio_para_13_part_3')}
-                </a>
-              </Link>
+              {t('common:estudio_para_13_part_3')}
               {t('common:estudio_para_13_part_4')}
             </p>
           </div>

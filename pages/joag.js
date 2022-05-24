@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import RegistrationFee from '../components/joag/registration-fee';
-import Content from '../components/joag/content';
+import SignUp from '../components/joag/sign-up';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
@@ -45,11 +45,9 @@ export default function Joag() {
                 </h1>
                 <p className="mt-3 text-base text-neutral-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   {t('joag:subtitle_part_1')}{' '}
-                  <Link href="#" passHref>
-                    <a className="font-semibold tracking-tight transition duration-300 ease-in-out text-gold-500 hover:text-neutral-900">
-                      {t('joag:subtitle_part_2')}{' '}
-                    </a>
-                  </Link>
+                  <span className="font-semibold">
+                    {t('joag:subtitle_part_2')}{' '}
+                  </span>
                   {t('joag:subtitle_part_3')}
                 </p>
               </div>
@@ -69,7 +67,7 @@ export default function Joag() {
         </div>
       </div>
       <RegistrationFee />
-      <Content />
+      <SignUp />
     </section>
   );
 }

@@ -6,6 +6,7 @@ import { CheckIcon } from '@heroicons/react/outline';
 import ProfesoresViolonchelo from '../../components/estudio/profesores-violonchelo';
 import VioloncheloRequisitos from '../../components/estudio/violonchelo-requisitos';
 import VioloncheloGalleryOne from '../../components/estudio/violonchelo-gallery-1';
+import JoagCTA from '../../components/joag/cta';
 
 export default function Violonchelo() {
   const { t } = useTranslation();
@@ -483,13 +484,12 @@ export default function Violonchelo() {
             </h2>
             <p>
               {t('common:estudio_para_13_part_2')}
-              <Link href="/profesores">
-                <a className="no-underline transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900">
-                  {t('common:estudio_para_13_part_3')}
-                </a>
-              </Link>
+              <span className="font-semibold">
+                {t('common:estudio_para_13_part_3')}
+              </span>
               {t('common:estudio_para_13_part_4')}
             </p>
+            <JoagCTA />
           </div>
         </div>
       </div>

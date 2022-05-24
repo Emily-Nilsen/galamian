@@ -17,7 +17,7 @@ import {
   MailIcon,
   UserCircleIcon,
   CalendarIcon,
-  MusicNoteIcon,
+  ExternalLinkIcon,
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { useRouter } from 'next/router';
@@ -70,7 +70,7 @@ export default function Navbar() {
     {
       name: `${t('common:joag')}`,
       href: '/joag',
-      icon: MusicNoteIcon,
+      icon: ExternalLinkIcon,
     },
   ];
   const blogPosts = [

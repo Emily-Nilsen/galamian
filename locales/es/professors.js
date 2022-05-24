@@ -2,6 +2,7 @@ const professors = {
   // VIOLIN & VIOLA
   // Jesus Reina
   jesus_role: `Profesor Principal`,
+  jesus_chamber_role: `Violín & Viola`,
   jesus_instrument: `Violín & Viola`,
   jesus_para_1: `Ensalzado por la crítica gracias a su “personalidad radiante y llena de alma” —John Rockwell, su “frescura y espontaneidad desbordante”- El País, Jesús Reina conquista al público desde su infancia, cuando conoce el violín de la mano de su abuelo José Reina en el ámbito de la música folklórica.`,
   jesus_para_2: `Ha actuado con Pinchas Zukerman, Valery Gergiev y Eiji Oue entre otros, con orquestas como las del Teatro Mariinsky, Sinfónica de Barcelona, Mahler Philharmoniker, HSO y Filarmónica de Málaga y en salas como Carnegie Hall, Metropolitan Series, Royal Festival Hall, Wigmore Hall, Wiener Konzerthaus, Auditorio Nacional y Palau de Barcelona. Fue galardonado con el premio Puerta de Andalucía y la Medalla de Honor de Málaga y es cofundador de la Academia Galamian y el Festival Málaga Clásica. Realizó sus estudios con Patinka Kopec y Pinchas Zukerman, recibiendo el premio R. Bronstein de la Manhattan School of Music.`,
@@ -11,6 +12,7 @@ const professors = {
 
   // Anna Margrethe Nilsen
   anna_role: `Profesora Principal`,
+  anna_chamber_role: `Violín & Viola`,
   anna_instrument: `Violín & Viola`,
   anna_para_1: `La violinista noruega Anna Margrethe Nilsen es cofundadora y directora de la Academia Galamian y el Festival Málaga Clásica. Aclamada por la crítica por su forma de tocar “llena de dulzura, entusiasmo, alegría y rico timbre”, Nilsen es artista de Centaur Records y ganadora en los concursos Sparre Olsen, Eisenberg-Fried y Nacional Noruego.`,
   anna_para_2: `Estudió con Isaac Schuldman, Patinka Kopec y Pinchas Zukerman como estudiante de la Manhattan School of Music y ha actuado en salas como Wiener Konzerthaus, Auditorio de Oslo, Filarmonía de San Petersburgo, Carnegie Hall, y con orquestas como la Filarmónica de Bergen, Kaliningrado de Cámara, Sinfónica de Trondheim, Juenesses Musicales, Nóvgorod de Cámara, Ópera Noruega, Sinfónica de San Petersburgo y Bielorrusia de Cámara.`,
@@ -55,12 +57,6 @@ const professors = {
   vicente_website: `www.vicentechulia.com`,
   vicente_href: `https://www.vicentechulia.com/`,
 
-  // Jose Camacho
-  jose_role: `Orquesta`,
-  jose_para_1: `José Andrés Fernández Camacho es diplomado en dirección de orquesta por la Hochschule für Musik de Basilea (Suiza), bajo la tutela del maestro Rodolfo Fischer.`,
-  jose_para_2: `En la misma institución, cursó estudios de Máster en interpretación musical en clarinete, así como un Máster en interpretación solista con el profesor François Benda.`,
-  jose_para_3: `Su recorrido como director de orquesta le ha llevado a ser premiado en el I Curso Internacional de Dirección Orquestal en la Serena (Chile) y a dirigir orquestas en España y Suiza, como la Orquesta Juventus Musica Basel, Ensemble de la Hochschule für Musik Basel, Orquesta Málaga Camerata y la Orquesta Universidad de la Serena, entre otras.`,
-
   // Grigory Kalinovsky
   grigory_role: `Profesor Invitado`,
   grigory_instrument: `Violín`,
@@ -73,11 +69,12 @@ const professors = {
 
   // Alexander Sitkovetsky
   alexander_role: `Profesor Invitado`,
+  alexander_chamber_role: `Violín`,
   alexander_instrument: `Violín`,
   alexander_para_1: `Alexander Sitkovetsky nace en Moscú en una familia con una establecida tradición musical. Hizo su debut a la edad de ocho años y el mismo año fue a estudiar a la Menuhin School.`,
   alexander_para_2: `Lord Menuhin fue su inspiración a lo largo de sus estudios y actuaron juntos en varias ocasiones incluyendo el Concierto Doble de Bach, Dúos de Bartok en el Palacio de St. James y el Concierto de Mendelssohn, bajo la batuta de Menuhin. Seguidamente actuó con la Filarmónica de los Países Bajos y la Royal Filarmonic, English Chamber Orchestra, Academy of St. Martin in the Fields, la BBC Concert Orchestra, entre muchas otras.`,
   alexander_para_3: `Ha compartido el escenario con Julia Fischer, Janine Jansen, Misha Maisky, Polina Leschenko, Julian Rachlin y muchos otros. Alexander ha grabado para Angel/EMI, Decca y Orfeo, incluyendo el Concierto Doble de Bach con Julia Fischer. La pasada temporada fue invitado a tocar en orquestas de Inglaterra, Holanda, España, Rusia y Alemania al igual que recitales y participaciones en festivales en Noruega, Japón, Rumanía, Inglaterra, Francia, Holanda y Estados Unidos.`,
-  alexander_para_4: `Alexander comenzó a formar parte de la prestigiosa Chamber Music Society Two en el Lincoln Center de Nueva York. Junto a la pianista Wu Qian y el cellista Isang Enders, Alexander es miembro del Sitkovetsky Piano Trio, actuando frecuentemente en el Wigmore Hall de Inglaterra al igual que por Europa en salas como el Concertgebouw de Amsterdam y la Frankurt Alte Oper.`,
+  alexander_para_4: `Alexander comenzó a formar parte de la prestigiosa Chamber Music Society Two en el Lincoln Center de Nueva York. Junto a la pianista Wu Qian y el cellista Isang Enders, Alexander es miembro del Sitkovetsky Piano Trio, actuando frecuentemente en el Wigmore Hall de Inglaterra al igual que por Europa en salas como el Concertgebouw de Amsterdam y la Frankfurt Alte Oper.`,
 
   // Salvador Esteve
   salvador_role: `Profesor Invitado`,
@@ -95,6 +92,7 @@ const professors = {
 
   // Molly Carr
   molly_role: `Profesora Invitada`,
+  molly_chamber_role: `Viola`,
   molly_instrument: `Viola`,
   molly_para_1: `Violist Molly Carr enjoys a diverse musical career as recitalist, chamber musician, educator, and artistic director. Hailed as “one of the most interesting interpreters of the viola today” (Codalario Spain) and praised for her “intoxicating” (New York Times) and “ravishing” (STRAD) performances, she has been the recipient of numerous international prizes and awards from the Primrose International Viola Competition, Chamber Music America, ProMusicis Foundation, Davidson Institute, Virtu Foundation, MAW Alumni Enterprise Awards, ASTA, and ARTS among many others.`,
   molly_para_2: `Her performances have taken her across North America, Europe, the Middle East, and Asia and been broadcast on BBC World News, CNN, Forbes, PBS’s Live from Lincoln Center, Good Morning America, and National Public Radio in the US, as well as on Canadian, Bulgarian, Israeli, Argentinian and Hungarian National Television and Radio. In 2018 she was named by the Sandi Klein Show as one of America’s leading “Creative Women,” honored at the United Nations and awarded the International Father Eugène Merlet Award for Community Service for her work in prisons and with refugees around the globe as the Founding Director for the nonprofit Project: Music Heals Us.`,
@@ -123,6 +121,7 @@ const professors = {
 
   // Misha Dacić
   misha_role: `Profesor Invitado Principal`,
+  misha_chamber_role: `Piano`,
   misha_instrument: `Piano`,
   misha_para_1: `Después de su debut en la Discovery Series del Miami International Piano Festival en 2003, Misha Dacić se convirtió rápidamente en un solicitado solista que capturó audiencias en todo Estados Unidos actuando en festivales como Ravinia's Rising Stars Series en Chicago, Gilmore Keyboard Festival, Xavier Piano Series en Cincinnati, Frederic Chopin Society's Series en Minneapolis, en el Steinway Hall de Nueva York, entre muchos otros.`,
   misha_para_2: `Nacido en una familia con tradición musical y habiendo recibido las primeras lecciones de su padre, Misha Dacić comienza a actuar en público desde la edad de diez años. Kemal Gekić, Frank Cooper, Alan Fraser, Lazar Berman y Jorge Luis Prats se cuentan entre sus mentores.`,
@@ -132,6 +131,7 @@ const professors = {
 
   // Josu De Solaun
   josu_role: `Profesor Invitado Principal`,
+  josu_chamber_role: `Piano`,
   josu_instrument: `Piano`,
   josu_para_1: `Aclamado por la prensa internacional por su “sentido poético del sonido, audaz visión artística y brillantes habilidades virtuosas, enteramente al servicio de las obras que interpreta” (Nikolaus Frey, Fuldaer Zeitung), Josu De Solaun es ciudadano de España y Estados Unidos, donde obtuvo su doctorado en la Manhattan School of Music.`,
   josu_para_2: `Sus dos principales mentores musicales en Nueva York fueron los pianistas Nina Svetlanova (alumna de Heinrich Neuhaus) y Horacio Gutiérrez.`,
@@ -155,6 +155,7 @@ const professors = {
 
   // Anna Petrova
   petrova_role: `Profesora Invitada`,
+  petrova_chamber_role: `Piano`,
   petrova_instrument: `Piano`,
   petrova_para_1: `Bulgarian pianist, Anna Petrova, made her New York City orchestral debut with conductor Philippe Entremont and is praised for her “artistic, clear and enlightened” performances [BBC Magazine].`,
   petrova_para_2: `She is an Assistant Professor of Piano at the University of Louisville, KY and performs extensively as a soloist and chamber musician. In October 2018, Petrova was honored at the United Nations for her work with refugees around the globe through the Carr-Petrova Duo’s Novel Voices Refugee Aid Project; she was also chosen as one of America's leading "Creative Women” subsequently appearing on the Sandi Klein Show "Conversations With Creative Women."`,
@@ -177,6 +178,7 @@ const professors = {
 
   // Øyvind Gimse
   oyvind_role: `Profesor Principal`,
+  oyvind_chamber_role: `Violonchelo`,
   oyvind_instrument: `Violonchelo`,
   oyvind_para_1: `El cellista Øyvind Gimse fue designado Director Artístico de los Trondheim Soloists en 2002, continuando con el amplio perfil y versatilidad musical que caracteriza al grupo. Habiendo estudiado en Munich, Salzburg y Vienna, con profesores como Walter Nothas, Frans Helmersen and William Pleeth, llegó a ser el principal cellista de la Orquesta Sinfónica de Trondheim de 1991 a 1997.`,
   oyvind_para_2: `Actualmente es profesor en el Conservatorio de Música de Trondheim y disfruta de una activa carrera como solista y músico de cámara. Øyvind Gimse combina a menudo poesía, arte visual, danza y teatro dentro de un conjunto artístico global.`,
@@ -195,6 +197,24 @@ const professors = {
   gabriel_para_1: `Gabriel Ureña ha tocado como solista con la London City Orchestra, Oviedo Filarmonía o Arteus Orquesta y en salas internacionales prestigiosas como el Musikverein (Viena), Teatro de los Campos Elíseos (París), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) o el Teatro de la Maestranza (Sevilla).`,
   gabriel_para_2: `Ha compartido escenario con artistas como Leo Nucci, Edita Gruberová, Ainhoa Arteta, Ruggero Raimondi, Anna Netrebko, Ilya Gringolts, Benjamin Schmid, las hermanas Labèque, Natalia Gutman o Midori, y ha ganado el Primer Premio del Concurso de Cello de Arquillos (Jaén) y del Concurso Internacional de Música de Cámara "Ciudad de Manresa”.`,
   gabriel_para_3: `Entre los hitos más recientes de su carrera figuran la publicación de su primer CD, con el sello Aria Classics, con obras de Prokofiev, Shostakovich y Rachmaninov, junto al pianista Patxi Aizpiri, su concierto como solista con la Orquesta Filarmónica de Málaga o su debut con la Orquesta Nacional de Colombia en el Teatro Colón de Bogotá.`,
+
+  // Alberto Martos
+  alberto_chamber_role: `Violonchelo`,
+  alberto_instrument: `Violonchelo`,
+  alberto_para_1: `Tras el éxito de sus grabaciones para el sello Sony Classical, Alberto Martos emerge con fuerza en el panorama musical actual. Formado en España y Alemania, su rica actividad concertística le ha llevado a actuar en salas como el Auditorio Nacional, Palau de la Música Catalana, Carnegie Hall, Sala Pleyel, Teatro Colón o Philarmonie de Berlín. Elegido personalmente por Daniel Barenboim para ocupar el primer atril de la West Eastern Divan Orchestra, fue definido por el maestro como “una de las mayores promesas del violonchelo”.`,
+  alberto_para_2: `Miembro fundador del prestigioso Garnati Ensemble, su trabajo Playing Goldberg registrado en Sony Classical junto a Pablo Martos y Yuval Gotlibovich obtiene las mejores críticas de la prensa especializada. En 2013 recibe junto a su hermano el premio Andalucía Joven por su labor solidaria a través de la música. Parte de esta labor fue registrada en el documental The Healing Notes, producido por Mercedes Milá y dirigido por Amparo Mendo. En 2016 fueron invitados a Puerto Rico, donde inauguraron el museo Pilar Defillò (madre de Pau Casals), siendo nombrados “Huéspedes Distinguidos” de la Ciudad de Mayagüez.`,
+  alberto_para_3: `A pesar de abarcar todo tipo de repertorios, Alberto Martos es un gran defensor de la música contemporánea. Le han dedicado obras compositores de la talla de José Luís Greco, Ramón Paús, Pedro Guajardo, Yuval Gotlibovich o Juan Cruz. Algunos de los últimos estrenos incluyen Audax y Ciudadano Sombra de Ramón Paús, Cuento de Yuval Gotlibovich, el estreno absoluto de los tríos de Conrado del Campo (recuperación de patrimonio) y Woman at a Window de José Luís Greco.`,
+  alberto_website: `www.albertomartos.com`,
+  alberto_href: `http://www.albertomartos.com/`,
+
+  // Pablo Martos
+  pablo_chamber_role: `Violín`,
+  pablo_instrument: `Violín`,
+  pablo_para_1: `Su rica actividad musical le ha llevado a tocar en prestigiosas salas de Europa, EEUU, Rusia o Israel. Tras su paso como miembro de la orquesta West-Eastern-Divan dirigida por Daniel Barenboim y fruto de este vínculo con los proyectos del maestro, ha realizado giras e impartido masterclasses en Oriente Medio.`,
+  pablo_para_2: `Miembro fundador de la agrupación Garnati Ensemble, ha dirigido la Temporada de Conciertos Garnati celebrada en Granada. Graba para Sony Classical una transcripción para trío de cuerda de las “Variaciones Goldberg” de J.S. Bach (realizada por el propio Ensemble).`,
+  pablo_para_3: `Son frecuentes sus apariciones en medios de comunicación, destacando el estreno absoluto de los Tríos de Conrado del Campo junto a Garnati Ensemble (RNE) y su personal composición sobre las Folias de España interpretadas por él mismo y retransmitida por TVE.`,
+  pablo_website: `pablomartos.es`,
+  pablo_href: `http://pablomartos.es/`,
 
   /////////////////////////////////////////////////////////////////////////////
 
@@ -243,5 +263,34 @@ const professors = {
   araiza_para_4: `Other high points include the award "Best Musical Event 1988" for his recital in Tokyo and the triumphant role debuts of Lohengrin in Venice in 1990 (with Christian Thielemann conducting), Walter von Stolzing in 1993 at the Metropolitan Opera New York (Director: Otto Schenk, Conductor: James Levine). Further highlights include performing the fire god Loge in Robert Wilson's Zurich "Ring" production, being awarded the Mozart Medal from the University of Mexico City in 1991, the Mario del Monaco Prize "O tello d'Oro" in 1995, and the actor award "Goldener Merkur" 1996 in Munich.`,
   araiza_website: `www.franciscoaraiza.com`,
   araiza_href: `http://www.franciscoaraiza.com/`,
+
+  // José Vélez
+  velez_chamber_role: `Cantante`,
+  velez_instrument: `Cantante`,
+  velez_para_1: `In the late 1960s, a music teacher from the Organización Juvenil Española (Spanish Youth Organisation) had the idea to create the music group Grupo Marabilla with some of his students, among them the Spanish singer José Velázquez. When the group separated, he began his solo career. In 1968 he participated in Madrid's talent contest "Salto a la Fama". He began to get recognition from that point, which led him to establish himself in Madrid.`,
+  velez_para_2: `In 1976, he brought out his first album, Vino Griego, and in 1977 he participated in the Sopot International Song Festival with the song "Romántica". Televisión Española internally chose him as the Spanish entry for the Eurovision Song Contest 1978 in Paris with the song "Bailemos un vals". He placed 9th in a field of 20.`,
+  velez_para_3: `He has developed most of his career in Latin America from that moment onwards. He has achieved 19 platinum records and 32 gold records.`,
+  velez_website: `www.josevelez.es`,
+  velez_href: `https://www.josevelez.es/`,
+
+  // CONDUCTORS
+  // José Andrés Camacho
+  jose_role: `Orquesta`,
+  jose_group_role: `Orquesta Juvenil y Infantil`,
+  jose_instrument: `Orquesta Juvenil y Infantil`,
+  jose_para_1: `José Andrés Fernández Camacho es diplomado en dirección de orquesta por la Hochschule für Musik de Basilea (Suiza), bajo la tutela del maestro Rodolfo Fischer.`,
+  jose_para_2: `En la misma institución, cursó estudios de Máster en interpretación musical en clarinete, así como un Máster en interpretación solista con el profesor François Benda.`,
+  jose_para_3: `Su recorrido como director de orquesta le ha llevado a ser premiado en el I Curso Internacional de Dirección Orquestal en la Serena (Chile) y a dirigir orquestas en España y Suiza, como la Orquesta Juventus Musica Basel, Ensemble de la Hochschule für Musik Basel, Orquesta Málaga Camerata y la Orquesta Universidad de la Serena, entre otras.`,
+
+  // Tomás Grau
+  grau_group_role: `Orquesta Academia Galamian`,
+  grau_instrument: `Orquesta Academia Galamian`,
+  grau_para_1: `Director inspirado y de gran sensibilidad, Tomàs Grau se caracteriza por su gesto preciso y claro y por la sinceridad de sus lecturas musicales, que buscan transmitir de manera diáfana las verdaderas emociones que hay en cada una de las partituras, compartiendo con el público su amor por la música.`,
+  grau_para_2: `Ha dirigido, entre otros, solistas de talla internacional como Anne-Sophie Mutter, Maria João Pires, Midori, Patricia Kopatchinskaja, Gautier Capuçon, Mischa Maisky, Sabine Meyer, Steven Isserlis, Paul Lewis, Stephen Kovacevich, Alexander Melnikov, Seong-Jin Cho, Mark Padmore y Alice Sara Ott en las principales salas de conciertos de España, como el Auditorio Nacional de Madrid, el Auditorio de Zaragoza, el Palau de la Música Catalana o l’Auditori de Barcelona, como también a nivel internacional en la Tonhalle de Zúrich.`,
+  grau_para_3: `Actualmente es el director titular y artístico de la Franz Schubert Filharmonia, y lo invitan regularmente a dirigir otras formaciones, como la Beethoven Philharmonie, Stuttgarter Kammerorchester, Orquesta Nacional de España, Orquesta Sinfónica del Principado de Asturias, Orquesta Filarmónica de Málaga, Orquesta Sinfónica de la Región de Murcia, Orquesta de Córdoba y Orquesta Sinfónica de Burgos.`,
+  grau_para_4: `Ha grabado para sellos como SONY Classical, ARS Produktion -sello del año en los International Classical Music Awards- o Discmedi. Entre sus compromisos más inmediatos destaca dirigir solistas como Ivo Pogorelich, Alexei Volodin, Javier Perianes y, de nuevo, Patricia Kopatchinskaja.`,
+  grau_para_5: `Proveniente de Barcelona, Tomàs Grau obtuvo el Título Superior de Dirección de Orquesta en la Escuela Superior de Música de Cataluña, alcanzando las máximas calificaciones. Posteriormente, completó sus estudios en los Wiener Meisterkurse.`,
+  grau_website: `tomasgrau.com`,
+  grau_href: `https://tomasgrau.com/`,
 };
 export default professors;
