@@ -351,6 +351,7 @@ export default function Contacto() {
                           type="text"
                           name="first-name"
                           id="first-name"
+                          required
                           autoComplete="given-name"
                           className="block w-full px-4 py-3 rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                         />
@@ -368,6 +369,7 @@ export default function Contacto() {
                           type="text"
                           name="last-name"
                           id="last-name"
+                          required
                           autoComplete="family-name"
                           className="block w-full px-4 py-3 rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                         />
@@ -385,6 +387,7 @@ export default function Contacto() {
                           id="email"
                           name="email"
                           type="email"
+                          required
                           autoComplete="email"
                           className="block w-full px-4 py-3 rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                         />
@@ -428,6 +431,7 @@ export default function Contacto() {
                           type="text"
                           name="subject"
                           id="subject"
+                          required
                           className="block w-full px-4 py-3 rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                         />
                       </div>
@@ -452,6 +456,8 @@ export default function Contacto() {
                           id="message"
                           name="message"
                           rows={4}
+                          required
+                          maxLength="500"
                           className="block w-full px-4 py-3 border rounded-none text-neutral-900 focus:ring-gold-500 focus:border-gold-500 border-neutral-200"
                           aria-describedby="message-max"
                           defaultValue={''}

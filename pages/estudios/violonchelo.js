@@ -56,9 +56,9 @@ export default function Violonchelo() {
     },
     {
       name: `${t('common:estudio_list_conciertos_alumnos')}`,
-      modeA: `2`,
-      modeB: `2`,
-      modeC: `2`,
+      modeA: `3`,
+      modeB: `3`,
+      modeC: `3`,
     },
     {
       name: `${t('common:estudio_list_recital_propia')}`,

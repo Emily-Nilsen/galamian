@@ -167,6 +167,7 @@ export default function SignUp() {
                       name="opcion"
                       defaultValue="una-clase"
                       type="radio"
+                      required
                       className="w-4 h-4 text-gold-600 border-neutral-300 focus:ring-gold-500"
                     />
                     <label htmlFor="opcion-una-clase" className="ml-3">

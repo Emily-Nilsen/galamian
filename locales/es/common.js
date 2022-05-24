@@ -264,6 +264,49 @@ const common = {
   joag_cta_title_2: `Entra en la JOAG.`,
   joag_cta_text: `Cree clases personalizadas y obtenga experiencia orquestal de primera mano con el Joven Orquesta de la Academia Galamian.`,
   joag_cta_button: `Aprende más`,
+
+  // Registration Form
+  registration_subtitle_1: `Formulario de Inscripción en las audiciones de acceso para el
+  curso`,
+  registration_subtitle_2: `.`,
+  registration_subtitle_3: `Fecha límite para su presentación:`,
+  registration_subtitle_4: `30 de junio de`,
+  registration_subtitle_5: `(incluido)`,
+  // Warning
+  registration_warning: `Aviso`,
+  registration_warning_text: `Si abandona la página antes de enviar el formulario de inscripción, se borrarán todos los campos completados.`,
+  // Datos Personales
+  registration_datos_personales: `Datos Personales`,
+  registration_datos_personales_text: `Use una dirección permanente donde pueda recibir correo.`,
+  registration_nombre: `Nombre`,
+  registration_apellidos: `Apellidos`,
+  registration_tipo_id: `Tipo de documento de identidad`,
+  registration_numero_id: `Número de documento`,
+  registration_fecha_nacimiento: `Fecha de nacimiento`,
+  registration_email_placeholder: `usted@ejemplo.com`,
+  registration_pais_nacimiento: `País de nacimiento`,
+  registration_pais_residencia: `País de residencia actual`,
+  registration_direccion: `Dirección`,
+  registration_ciudad: `Ciudad`,
+  registration_provincia: `Provincia`,
+  registration_postcode: `Código postal`,
+  registration_mobile: `Télefono móvil`,
+  // Datos del/la Responsable
+  responsable_title: `Datos del/la responsable`,
+  responsable_subtitle: `Sólo menores de edad.`,
+  responsable_cargo: `Cargo de responsabilidad`,
+  responsable_cargo_placeholder: `Madre, Padre, Tutoría...`,
+  // Estudia
+  registration_estudia_title: `Estudia`,
+  registration_estudia_subtitle: `Información sobre su estudio preferido de elección y modo de estudio.`,
+  registration_programa_title: `Programa al que audita`,
+  registration_programa_subtitle: `Seleccione un estudio preferido de su elección.`,
+  registration_violin: `Estudio de Violín/Viola`,
+  registration_cello: `Estudio de Violonchelo`,
+  registration_piano: `Estudio de Piano`,
+  registration_voz: `Estudio de Voz`,
+  registration_mode: `Modalidad`,
+  registration_mode_text: `Seleccione un modo de estudio.`,
 };
 
 export default common;

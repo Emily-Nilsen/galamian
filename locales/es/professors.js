@@ -177,6 +177,8 @@ const professors = {
   // VIOLONCHELO
 
   // Øyvind Gimse
+  oyvind_name: `Øyvind Gimse`,
+  oyvind_image: `/static/profesores/oyvind-gimse.webp`,
   oyvind_role: `Profesor Principal`,
   oyvind_chamber_role: `Violonchelo`,
   oyvind_instrument: `Violonchelo`,
@@ -185,6 +187,8 @@ const professors = {
   oyvind_para_3: `Tiene una habilidad musical única para emocionar al público, situando la experiencia musical en el centro de su trabajo. “Tiene todo lo que tiene que tener para llegar a ser un solista de formato internacional”, dijo Anne-Sophie Mutter al periódico de Trondheim Adresseavisen en mayo de 1999.`,
 
   // Tilman Mahrenholz
+  tilman_name: `Tilman Mahrenholz`,
+  tilman_image: `/static/profesores/tilman-mahrenholz.webp`,
   tilman_role: `Profesor Principal`,
   tilman_instrument: `Violonchelo`,
   tilman_para_1: `Tilman Mahrenholz, nacido en Alemania, recibe su formación en la «Hochschule für Musik Saar» en Saarbrücken y en la «Folkwang-Hochschule» en Essen. Posteriormente se traslada a Nueva York, siendo becado por la prestigiosa Juilliard School of Music Entre sus Profesores figuran Ulrich Voss, Prof. Christoph Richter, y Carter Brey.`,
@@ -192,6 +196,8 @@ const professors = {
   tilman_para_3: `Conciertos de solista así como de cámara y sinfónicos lo han llevado por países como Alemania, Austria, Francia, EE UU, Luxemburgo, Marruecos y España. Actualmente, Tilman Mahrenholz es solista de violonchelos de la Orquesta Filarmónica de Málaga.`,
 
   // Gabriel Ureña
+  gabriel_name: `Gabriel Ureña`,
+  gabriel_image: `/static/profesores/gabriel-urena.webp`,
   gabriel_role: `Profesor Invitado`,
   gabriel_instrument: `Violonchelo`,
   gabriel_para_1: `Gabriel Ureña ha tocado como solista con la London City Orchestra, Oviedo Filarmonía o Arteus Orquesta y en salas internacionales prestigiosas como el Musikverein (Viena), Teatro de los Campos Elíseos (París), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) o el Teatro de la Maestranza (Sevilla).`,
@@ -199,6 +205,9 @@ const professors = {
   gabriel_para_3: `Entre los hitos más recientes de su carrera figuran la publicación de su primer CD, con el sello Aria Classics, con obras de Prokofiev, Shostakovich y Rachmaninov, junto al pianista Patxi Aizpiri, su concierto como solista con la Orquesta Filarmónica de Málaga o su debut con la Orquesta Nacional de Colombia en el Teatro Colón de Bogotá.`,
 
   // Alberto Martos
+  alberto_name: `Alberto Martos`,
+  alberto_image: `/static/profesores/alberto-martos.webp`,
+  alberto_role: `Profesor Invitado`,
   alberto_chamber_role: `Violonchelo`,
   alberto_instrument: `Violonchelo`,
   alberto_para_1: `Tras el éxito de sus grabaciones para el sello Sony Classical, Alberto Martos emerge con fuerza en el panorama musical actual. Formado en España y Alemania, su rica actividad concertística le ha llevado a actuar en salas como el Auditorio Nacional, Palau de la Música Catalana, Carnegie Hall, Sala Pleyel, Teatro Colón o Philarmonie de Berlín. Elegido personalmente por Daniel Barenboim para ocupar el primer atril de la West Eastern Divan Orchestra, fue definido por el maestro como “una de las mayores promesas del violonchelo”.`,
@@ -215,6 +224,29 @@ const professors = {
   pablo_para_3: `Son frecuentes sus apariciones en medios de comunicación, destacando el estreno absoluto de los Tríos de Conrado del Campo junto a Garnati Ensemble (RNE) y su personal composición sobre las Folias de España interpretadas por él mismo y retransmitida por TVE.`,
   pablo_website: `pablomartos.es`,
   pablo_href: `http://pablomartos.es/`,
+
+  // Kyril Zlotnikov
+  kyril_name: `Kyril Zlotnikov`,
+  kyril_image: `/static/profesores/kyril.jpeg`,
+  kyril_role: `Profesor Invitado`,
+  kyril_instrument: `Violonchelo`,
+  kyril_para_1: `Born in Minsk, Belarus to a family of professional musicians, Kyril Zlotnikov began his studies at the Belarusian State Music Academy with Prof. Vladimir Perlin. He continued his studies in Israel with Prof. Uzi Wiesel and Hillel Zori, completing his musical education under the direction Prof. Michael Khomitzer in Jerusalem Rubin Academy of Music and Dance. While a student, Kyril Zlotnikov participated in master classes and courses with such prominent musicians as Isaac Stern, Yo-Yo Ma,Natalia Gutman, Boris Pergamenschikov, Aldo Parisot and Georgy Kurtag.`,
+  kyril_para_2: `Since 1991 Kyril Zlotnikov was a recipient of a scholarship for musical achievements from the America-Israel Culture Foundation, won prizes in many contests including the Clairmont Competition, the Braun-Roger Siegl Competition, the Pierre Tarcali Prize is the most recent one.`,
+  kyril_para_3: `He is a founding member of the recognized for its artistic creativity, one of the most dynamic and exciting young quartets currently performing - The Jerusalem Quartet. The musicians have been giving multiply performances all over the world and become the Israel''s leading string quartet. Since 2002 the Jerusalem Quartet records exclusively for Harmonia Mundi.`,
+  kyril_para_4: `Along with his extensive chamber music appearances Kyril Zlotnikov has performed and been broadcast as a soloist with internationally renowned orchestras, such as the Israel Philharmonic Orchestra, Jerusalem Symphony Orchestra, the Ludwigsburg Symphony Orchestra, The Gulbenkian Orchestra, West-Eastern Divan Orchestra, Jerusalem Camerata and enjoys artistic collaboration with acclaimed conductors including Daniel Barenboim, Zubin Mehta, Pierre Boulez, Lawrence Foster, Asher Fish, Simone Young. He has a wide repertoire covering the important cello works of the baroque, the classical period, romantic and the contemporary music.`,
+  kyril_website: `www.jerusalem-quartet.com`,
+  kyril_href: `http://www.jerusalem-quartet.com/index.php/about/kyril-zlotnikov-cello`,
+
+  // Asier Polo
+  asier_name: `Asier Polo`,
+  asier_image: `/static/profesores/asier-polo.jpg`,
+  asier_role: `Profesor Invitado`,
+  asier_instrument: `Violonchelo`,
+  asier_para_1: `Considerado por la crítica especializada como uno de los violonchelistas más destacados de su generación, Asier Polo ha colaborado como solista con algunas de las orquestas más importantes del panorama internacional: Philharmonia Orchestra, London Symphony Orchestra, Danish National Symphony Orchestra, Orchestra Sinfonica Nazionalle della RAI, Dresdner Philharmonie, Orchestre de Paris, BBC Philharmonic, Bergen Filharmoniske Orkester, Israel Philharmonic Orchestra, Berliner Symphoniker, Orquesta Nacional de México, Orquesta Sinfónica de Sao Paulo, Louisiana Philharmonic, Malaysian Philharmonic Orchestra, Orquesta Nacional de España o la Basel Symphony Orchestra, acompañado bajo la dirección de importantes batutas, como John Axelrod, Pinchas Steinberg, Christian Badea, Rafael Frühbeck de Burgos, Claus Peter Flor, Carlos Miguel Prieto, Günther Herbig, Juanjo Mena, Antoni Wit o Anne Manson.`,
+  asier_para_2: `Ha sido invitado a importantes eventos musicales, como los festivales de Schleswig-Holstein, Nantes, Ohrid, Biennale di Venezia, Roma, Lisboa, Gstaad Menuhin Festival, Morelia, Granada o San Sebastián.`,
+  asier_para_3: `Ha compartido escenario con artistas de la talla de Silvia Marcovici, Nicolás Chumachenco, Sol Gabetta, Maxim Rysanov, Isabelle van Keulen, Josep Colom, Eldar Nebolsin, Gérard Caussé, Cuarteto Janácek, Cuarteto Casals o el gran tenor Alfredo Kraus, quien le invitó en los últimos años de su carrera a colaborar como solista en sus recitales, actuando en el Maggio Musicale Fiorentino, Covent Garden, Royal Opera House, Tonhalle de Zürich, Musikverein de Viena, además de una exitosa gira por las más destacadas salas de conciertos en Japón.`,
+  asier_website: `www.asierpolo.com`,
+  asier_href: `https://www.asierpolo.com/`,
 
   /////////////////////////////////////////////////////////////////////////////
 

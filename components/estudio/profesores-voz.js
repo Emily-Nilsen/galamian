@@ -8,6 +8,7 @@ export default function ProfesoresVoz() {
   const profesoresInvitados = [
     { nombre: `Joel Prieto` },
     { nombre: `Francisco Araiza` },
+    { nombre: `Mariola Cantarero` },
   ];
   return (
     <section id="fundadores" className="py-0 overflow-hidden bg-white lg:py-0">

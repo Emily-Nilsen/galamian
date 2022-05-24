@@ -1,7 +1,11 @@
 import Image from 'next/image';
 import { MailIcon } from '@heroicons/react/outline';
+import { ExclamationIcon } from '@heroicons/react/solid';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Formulario() {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-white">
       <div>
@@ -16,33 +20,60 @@ export default function Formulario() {
                 layout="fixed"
               ></Image>
             </div>
-            <h2 className="mt-2 text-3xl leading-8 tracking-wide text-neutral-900 sm:text-4xl">
-              Academia Internacional{' '}
-              <span className="text-gold-600">Galamian</span>
+            <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
+              <span className="font-bold text-gold-600">
+                {t('common:title_1')}{' '}
+              </span>
+              {t('common:title_2')}{' '}
+              <span className="font-bold text-gold-600">
+                {t('common:title_3')}
+              </span>
             </h2>
-            <p className="max-w-xl mx-auto mt-5 text-lg text-neutral-500">
-              Formulario de Inscripción en las audiciones de acceso para el
-              curso {new Date().getFullYear()}/{new Date().getFullYear() + 1}.
-              Fecha límite para su presentación:{' '}
+            <p className="max-w-xl mx-auto mt-5 text-lg text-neutral-600">
+              {t('common:registration_subtitle_1')} {new Date().getFullYear()}/
+              {new Date().getFullYear() + 1}
+              {t('common:registration_subtitle_2')}{' '}
+              {t('common:registration_subtitle_3')}{' '}
               <span className="font-bold">
-                30 de junio de {new Date().getFullYear()}
-              </span>{' '}
-              (incluido).
+                {t('common:registration_subtitle_4')} {new Date().getFullYear()}
+              </span>
+              {t('common:registration_subtitle_5')}.
             </p>
+          </div>
+          {/* Warning message */}
+          <div className="pt-16">
+            <div className="p-4 rounded-md bg-yellow-50">
+              <div className="flex">
+                <div className="flex-shrink-0">
+                  <ExclamationIcon
+                    className="w-5 h-5 text-yellow-400"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="ml-3">
+                  <h3 className="text-sm font-semibold text-yellow-800">
+                    {t('common:registration_warning')}
+                  </h3>
+                  <div className="mt-2 text-sm text-yellow-700">
+                    <p>{t('common:registration_warning_text')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <form
           action="/exito"
           subject="Formulario de Inscripcion – Academia Internacional Galamian"
-          name="Formulario de Inscripcion"
+          name="Formulario de Inscripcion AIG"
           data-netlify="true"
           method="POST"
           className="space-y-8 divide-y "
         >
           <input
             type="hidden"
-            name="Formulario de Inscripcion"
-            value="Formulario de Inscripcion"
+            name="Formulario de Inscripcion AIG"
+            value="Formulario de Inscripcion AIG"
           />
           <input
             type="hidden"
@@ -52,28 +83,29 @@ export default function Formulario() {
           <div className="space-y-8 divide-y divide-neutral-200">
             <div className="pt-8">
               <div>
-                <h3 className="text-lg font-medium leading-6 text-neutral-900">
-                  Datos Personales
+                <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
+                  {t('common:registration_datos_personales')}
                 </h3>
-                <p className="mt-1 text-sm text-neutral-500">
-                  Use una dirección permanente donde pueda recibir correo.
+                <p className="mt-1 text-sm text-neutral-600">
+                  {t('common:registration_datos_personales_text')}
                 </p>
               </div>
               <div className="grid grid-cols-1 mt-6 gap-y-6 gap-x-4 sm:grid-cols-6">
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="first-name"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Nombre
+                    {t('common:registration_nombre')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="first-name"
                       id="first-name"
+                      required
                       autoComplete="given-name"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -81,17 +113,18 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="last-name"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Apellidos
+                    {t('common:registration_apellidos')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="last-name"
                       id="last-name"
+                      required
                       autoComplete="family-name"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -100,17 +133,18 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="tipo-de-documento"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Tipo de documento de identidad
+                    {t('common:registration_tipo_id')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="tipo-de-documento"
                       id="tipo-de-documento"
-                      autoComplete="given-name"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      required
+                      autoComplete="off"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -118,17 +152,18 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="numero-de-documento"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Número de documento
+                    {t('common:registration_numero_id')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="numero-de-documento"
                       id="numero-de-documento"
-                      autoComplete="family-name"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      required
+                      autoComplete="off"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -136,16 +171,17 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="date-of-birth"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Fecha de nacimiento
+                    {t('common:registration_fecha_nacimiento')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="date"
                       name="date-of-birth"
                       id="date-of-birth"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      required
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                       placeholder="dd/mm/aaaa"
                     />
                   </div>
@@ -154,7 +190,7 @@ export default function Formulario() {
                 <div className="sm:col-span-4">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
                     Email
                   </label>
@@ -164,8 +200,9 @@ export default function Formulario() {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
-                      placeholder="usted@ejemplo.com"
+                      required
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      placeholder={t('common:registration_email_placeholder')}
                     />
                   </div>
                 </div>
@@ -174,17 +211,18 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="pais-de-nacimiento"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    País de nacimiento
+                    {t('common:registration_pais_nacimiento')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="pais-de-nacimiento"
                       id="pais-de-nacimiento"
-                      autoComplete="given-name"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      required
+                      autoComplete="off"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -192,17 +230,18 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="pais-de-residencia-actual"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    País de residencia actual
+                    {t('common:registration_pais_residencia')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="pais-de-residencia-actual"
                       id="pais-de-residencia-actual"
-                      autoComplete="family-name"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      required
+                      autoComplete="off"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -210,17 +249,18 @@ export default function Formulario() {
                 <div className="sm:col-span-6">
                   <label
                     htmlFor="street-address"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Dirección
+                    {t('common:registration_direccion')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="street-address"
                       id="street-address"
+                      required
                       autoComplete="street-address"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -228,17 +268,18 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="city"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Ciudad
+                    {t('common:registration_ciudad')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="city"
                       id="city"
+                      required
                       autoComplete="address-level2"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -246,17 +287,18 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="region"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Provincia
+                    {t('common:registration_provincia')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="region"
                       id="region"
+                      required
                       autoComplete="address-level1"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -264,17 +306,18 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="postal-code"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Código postal
+                    {t('common:registration_postcode')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="number"
                       name="postal-code"
                       id="postal-code"
+                      required
                       autoComplete="postal-code"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -282,16 +325,19 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="telefono"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Télefono móvil
+                    {t('common:registration_mobile')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="tel"
                       name="telefono"
                       id="telefono"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      required
+                      autoComplete="tel"
+                      aria-describedby="phone-description"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                       placeholder=""
                     />
                   </div>
@@ -302,20 +348,20 @@ export default function Formulario() {
             {/* Datos del/la responsable */}
             <div className="pt-8">
               <div>
-                <h3 className="text-lg font-medium leading-6 text-neutral-900">
-                  Datos del/la Responsable
+                <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
+                  {t('common:responsable_title')}
                 </h3>
-                <p className="mt-1 text-sm text-neutral-500">
-                  Sólo menores de edad.
+                <p className="mt-1 text-sm text-neutral-600">
+                  {t('common:responsable_subtitle')}
                 </p>
               </div>
               <div className="grid grid-cols-1 mt-6 gap-y-6 gap-x-4 sm:grid-cols-6">
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="first-name"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Nombre
+                    {t('common:registration_nombre')}
                   </label>
                   <div className="mt-1">
                     <input
@@ -323,7 +369,7 @@ export default function Formulario() {
                       name="first-name"
                       id="first-name"
                       autoComplete="given-name"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -331,9 +377,9 @@ export default function Formulario() {
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="last-name"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Apellidos
+                    {t('common:registration_apellidos')}
                   </label>
                   <div className="mt-1">
                     <input
@@ -341,7 +387,7 @@ export default function Formulario() {
                       name="last-name"
                       id="last-name"
                       autoComplete="family-name"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -350,18 +396,18 @@ export default function Formulario() {
                 <div className="sm:col-span-6">
                   <label
                     htmlFor="cargo-de-responsabilidad"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Cargo de responsabilidad
+                    {t('common:responsable_cargo')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="text"
                       name="cargo-de-responsabilidad"
                       id="cargo-de-responsabilidad"
-                      autoComplete="given-name"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
-                      placeholder="Madre, Padre, Tutoría..."
+                      autoComplete="off"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      placeholder={t('common:responsable_cargo_placeholder')}
                     />
                   </div>
                 </div>
@@ -369,16 +415,18 @@ export default function Formulario() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="movil"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
-                    Teléfono móvil
+                    {t('common:registration_mobile')}
                   </label>
                   <div className="mt-1">
                     <input
                       type="tel"
                       name="movil"
                       id="movil"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      autoComplete="tel"
+                      aria-describedby="phone-description"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                     />
                   </div>
                 </div>
@@ -386,7 +434,7 @@ export default function Formulario() {
                 <div className="sm:col-span-4">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-neutral-700"
+                    className="block text-sm font-medium tracking-tight text-neutral-700"
                   >
                     Email
                   </label>
@@ -396,8 +444,8 @@ export default function Formulario() {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="block w-full rounded-md shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
-                      placeholder="usted@ejemplo.com"
+                      className="block w-full rounded-none shadow-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                      placeholder={t('common:registration_email_placeholder')}
                     />
                   </div>
                 </div>
@@ -406,22 +454,21 @@ export default function Formulario() {
 
             <div className="pt-8">
               <div>
-                <h3 className="text-lg font-medium leading-6 text-neutral-900">
-                  Estudia
+                <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
+                  {t('common:registration_estudia_title')}
                 </h3>
-                <p className="mt-1 text-sm text-neutral-500">
-                  Información sobre su estudio preferido de elección y modo de
-                  estudio.
+                <p className="mt-1 text-sm text-neutral-600">
+                  {t('common:registration_estudia_subtitle')}
                 </p>
               </div>
               <div className="mt-6">
                 <fieldset className="mt-6">
                   <div>
-                    <legend className="text-base font-medium text-neutral-900">
-                      Programa al que audita
+                    <legend className="text-base font-medium tracking-tight text-neutral-900">
+                      {t('common:registration_programa_title')}
                     </legend>
-                    <p className="text-sm text-neutral-500">
-                      Seleccione un estudio preferido de su elección.
+                    <p className="text-sm text-neutral-600">
+                      {t('common:registration_programa_subtitle')}
                     </p>
                   </div>
                   <div className="mt-4 space-y-4">
@@ -430,13 +477,14 @@ export default function Formulario() {
                         id="estudio-violin"
                         name="programa"
                         type="radio"
+                        required
                         className="w-4 h-4 focus:ring-gold-500 text-gold-600 border-neutral-300"
                       />
                       <label
                         htmlFor="estudio-violin"
-                        className="block ml-3 text-sm font-medium text-neutral-700"
+                        className="block ml-3 text-sm font-medium tracking-tight text-neutral-700"
                       >
-                        Estudio de Violín/Viola
+                        {t('common:registration_violin')}
                       </label>
                     </div>
                     <div className="flex items-center">
@@ -448,9 +496,9 @@ export default function Formulario() {
                       />
                       <label
                         htmlFor="estudio-violonchelo"
-                        className="block ml-3 text-sm font-medium text-neutral-700"
+                        className="block ml-3 text-sm font-medium tracking-tight text-neutral-700"
                       >
-                        Estudio de Violonchelo
+                        {t('common:registration_cello')}
                       </label>
                     </div>
                     <div className="flex items-center">
@@ -462,9 +510,9 @@ export default function Formulario() {
                       />
                       <label
                         htmlFor="estudio-piano"
-                        className="block ml-3 text-sm font-medium text-neutral-700"
+                        className="block ml-3 text-sm font-medium tracking-tight text-neutral-700"
                       >
-                        Estudio de Piano
+                        {t('common:registration_piano')}
                       </label>
                     </div>
                     <div className="flex items-center">
@@ -476,20 +524,20 @@ export default function Formulario() {
                       />
                       <label
                         htmlFor="estudio-voz"
-                        className="block ml-3 text-sm font-medium text-neutral-700"
+                        className="block ml-3 text-sm font-medium tracking-tight text-neutral-700"
                       >
-                        Estudio de Voz
+                        {t('common:registration_voz')}
                       </label>
                     </div>
                   </div>
                 </fieldset>
                 <fieldset className="mt-6">
                   <div>
-                    <legend className="text-base font-medium text-neutral-900">
-                      Modalidad
+                    <legend className="text-base font-medium tracking-tight text-neutral-900">
+                      {t('common:registration_mode')}
                     </legend>
-                    <p className="text-sm text-neutral-500">
-                      Seleccione un modo de estudio.
+                    <p className="text-sm text-neutral-600">
+                      {t('common:registration_mode_text')}
                     </p>
                   </div>
                   <div className="mt-4 space-y-4">
@@ -498,11 +546,12 @@ export default function Formulario() {
                         id="modalidad-a"
                         name="modalidad"
                         type="radio"
+                        required
                         className="w-4 h-4 focus:ring-gold-500 text-gold-600 border-neutral-300"
                       />
                       <label
                         htmlFor="modalidad-a"
-                        className="block ml-3 text-sm font-medium text-neutral-700"
+                        className="block ml-3 text-sm font-medium tracking-tight text-neutral-700"
                       >
                         A
                       </label>
@@ -516,7 +565,7 @@ export default function Formulario() {
                       />
                       <label
                         htmlFor="modalidad-b"
-                        className="block ml-3 text-sm font-medium text-neutral-700"
+                        className="block ml-3 text-sm font-medium tracking-tight text-neutral-700"
                       >
                         B
                       </label>
@@ -530,9 +579,23 @@ export default function Formulario() {
                       />
                       <label
                         htmlFor="modalidad-c"
-                        className="block ml-3 text-sm font-medium text-neutral-700"
+                        className="block ml-3 text-sm font-medium tracking-tight text-neutral-700"
                       >
                         C
+                      </label>
+                    </div>
+                    <div className="flex items-center">
+                      <input
+                        id="modalidad-galamian-junior"
+                        name="modalidad"
+                        type="radio"
+                        className="w-4 h-4 focus:ring-gold-500 text-gold-600 border-neutral-300"
+                      />
+                      <label
+                        htmlFor="modalidad-galamian-junior"
+                        className="block ml-3 text-sm font-medium tracking-tight text-neutral-700"
+                      >
+                        Galamian Junior
                       </label>
                     </div>
                   </div>
@@ -544,16 +607,16 @@ export default function Formulario() {
             <div className="pt-8">
               <div>
                 <div>
-                  <h3 className="text-lg font-medium leading-6 text-neutral-900">
+                  <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
                     Vídeo
                   </h3>
-                  <p className="mt-1 text-sm text-neutral-500">
+                  <p className="mt-1 text-sm text-neutral-600">
                     Debido a la circunstancias socio-sanitarias que vive España,
                     la Academia Internacional Galamian convoca sus audiciones de
                     acceso al curso {new Date().getFullYear()}/
                     {new Date().getFullYear() + 1} de manera digital.
                   </p>
-                  <p className="mt-4 text-sm text-neutral-500">
+                  <p className="mt-4 text-sm text-neutral-600">
                     Para participar en ellas, se requerirá el envío de un vídeo
                     en el que se evidencie al aspirante interpretando dos obras
                     o movimientos de estilos contrastantes, de libre elección,
@@ -566,19 +629,17 @@ export default function Formulario() {
                   <div className="sm:col-span-4">
                     <label
                       htmlFor="link-1"
-                      className="block text-sm font-medium text-neutral-700"
+                      className="block text-sm font-medium tracking-tight text-neutral-700"
                     >
                       Link 1
                     </label>
-                    <div className="flex mt-1 rounded-md shadow-none">
-                      <span className="inline-flex items-center px-3 border border-r-0 rounded-l-md border-neutral-300 bg-neutral-50 text-neutral-500 sm:text-sm">
-                        http://
-                      </span>
+                    <div className="flex mt-1 rounded-none shadow-none">
                       <input
                         type="url"
                         name="link-1"
                         id="link-1"
-                        className="flex-1 block w-full min-w-0 px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                        required
+                        className="flex-1 block w-full min-w-0 px-3 py-2 rounded-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                         placeholder="www.ejemplo.com"
                       />
                     </div>
@@ -587,19 +648,17 @@ export default function Formulario() {
                   <div className="sm:col-span-4">
                     <label
                       htmlFor="link-2"
-                      className="block text-sm font-medium text-neutral-700"
+                      className="block text-sm font-medium tracking-tight text-neutral-700"
                     >
                       Link 2
                     </label>
-                    <div className="flex mt-1 rounded-md shadow-none">
-                      <span className="inline-flex items-center px-3 border border-r-0 rounded-l-md border-neutral-300 bg-neutral-50 text-neutral-500 sm:text-sm">
-                        http://
-                      </span>
+                    <div className="flex mt-1 rounded-none shadow-none">
                       <input
                         type="url"
                         name="link-2"
                         id="link-2"
-                        className="flex-1 block w-full min-w-0 px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                        required
+                        className="flex-1 block w-full min-w-0 px-3 py-2 rounded-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                         placeholder="www.ejemplo.com"
                       />
                     </div>
@@ -612,34 +671,16 @@ export default function Formulario() {
             <div className="pt-8">
               <div>
                 <div>
-                  <h3 className="text-lg font-medium leading-6 text-neutral-900">
+                  <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
                     Documentos
                   </h3>
-                  <p className="mt-1 text-sm text-neutral-500">
-                    Adjuntos en el mismo mail deberán ir los siguientes
+                  <p className="mt-1 text-sm text-neutral-600">
+                    El formulario de inscripción de AIG requiere los siguientes
                     documentos:
                   </p>
 
                   <fieldset className="mt-6">
                     <div className="space-y-4">
-                      <div className="relative flex items-start">
-                        <div className="flex items-center h-5">
-                          <input
-                            id="formulario"
-                            name="formulario"
-                            type="checkbox"
-                            className="w-4 h-4 rounded focus:ring-gold-500 text-gold-600 border-neutral-300"
-                          />
-                        </div>
-                        <div className="ml-3 text-sm">
-                          <label
-                            htmlFor="formulario"
-                            className="font-medium text-neutral-700"
-                          >
-                            Formulario de inscripción
-                          </label>
-                        </div>
-                      </div>
                       <div className="relative flex items-start">
                         <div className="flex items-center h-5">
                           <input
@@ -652,11 +693,11 @@ export default function Formulario() {
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="video"
-                            className="font-medium text-neutral-700"
+                            className="font-medium tracking-tight text-neutral-700"
                           >
                             Vídeo de motivación
                           </label>
-                          <p className="text-neutral-500">
+                          <p className="text-neutral-600">
                             El vídeo de motivación deberá ser un monólogo de
                             corta duración en el que el o la aspirante exponga
                             los motivos por los que le gustaría estudiar en la
@@ -668,19 +709,17 @@ export default function Formulario() {
                           <div className="mt-3 sm:col-span-4 md:w-2/3">
                             <label
                               htmlFor="video-motivacion"
-                              className="block text-sm font-medium text-neutral-700"
+                              className="block text-sm font-medium tracking-tight text-neutral-700"
                             >
                               Adjuntase su link
                             </label>
-                            <div className="flex mt-1 rounded-md shadow-none">
-                              <span className="inline-flex items-center px-3 border border-r-0 rounded-l-md border-neutral-300 bg-neutral-50 text-neutral-500 sm:text-sm">
-                                http://
-                              </span>
+                            <div className="flex mt-1 rounded-none shadow-none">
                               <input
                                 type="url"
                                 name="video-motivacion"
                                 id="video-motivacion"
-                                className="flex-1 block w-full min-w-0 px-3 py-2 rounded-none rounded-r-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                                required
+                                className="flex-1 block w-full min-w-0 px-3 py-2 rounded-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                                 placeholder="www.ejemplo.com"
                               />
                             </div>
@@ -694,32 +733,30 @@ export default function Formulario() {
                             id="biografia"
                             name="biografia"
                             type="checkbox"
+                            required
                             className="w-4 h-4 rounded focus:ring-gold-500 text-gold-600 border-neutral-300"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="biografia"
-                            className="font-medium text-neutral-700"
+                            className="font-medium tracking-tight text-neutral-700"
                           >
                             Biografía/CV
                           </label>
-                          <p className="text-neutral-500 sm:col-span-6">
+                          <p className="text-neutral-600 sm:col-span-6">
                             Cargue una copia de tu biografía o currículum en
                             formato PDF, .doc, .docx o TXT
                           </p>
-                          {/* <p className="text-neutral-500">
-                            Envía una copia de su biografía/CV por correo
-                            electrónico a la siguiente dirección mail:
-                          </p> */}
+
                           <div className="pt-4 sm:col-span-6">
                             <label
-                              htmlFor="cover-photo"
-                              className="block text-sm font-medium text-neutral-700"
+                              htmlFor="cv"
+                              className="block text-sm font-medium tracking-tight text-neutral-700"
                             >
                               Sube currículum
                             </label>
-                            <div className="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-dashed rounded-md border-neutral-300 sm:col-span-6">
+                            <div className="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-dashed rounded-none border-neutral-300 sm:col-span-6">
                               <div className="space-y-1 text-center">
                                 <svg
                                   className="w-12 h-12 mx-auto text-neutral-400"
@@ -737,41 +774,32 @@ export default function Formulario() {
                                 </svg>
                                 <div className="flex text-sm text-neutral-600">
                                   <label
-                                    htmlFor="file-upload"
-                                    className="relative font-medium bg-white rounded-md cursor-pointer text-gold-600 hover:text-gold-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gold-500"
+                                    htmlFor="cv-upload"
+                                    className="relative font-medium tracking-tight bg-white rounded-none cursor-pointer text-gold-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gold-500"
                                   >
-                                    <span>Cargue un archivo</span>
+                                    <span className="transition duration-300 ease-in-out hover:underline">
+                                      Cargue un archivo
+                                    </span>
                                     <input
-                                      id="file-upload"
-                                      name="file-upload"
+                                      id="cv-upload"
+                                      name="cv-upload"
                                       type="file"
+                                      required
+                                      accept=".doc,.pdf,.docx,.txt,.jpg,.jpeg,"
+                                      multiple
                                       className="sr-only"
                                     />
                                   </label>
-                                  <p className="pl-1">o arrastrar y soltar</p>
+                                  <h3 className="pl-1 font-normal tracking-tight">
+                                    o arrastrar y soltar
+                                  </h3>
                                 </div>
-                                <p className="text-xs text-neutral-500">
+                                <p className="text-xs text-neutral-600">
                                   PDF, .doc, .docx, TXT hasta 10 MB
                                 </p>
                               </div>
                             </div>
                           </div>
-                          {/* <a
-                            className="mt-6"
-                            href="mailto:info@academiagalamian.com"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <div className="flex mt-4 text-base text-gold-600">
-                              <MailIcon
-                                className="flex-shrink-0 w-6 h-6 text-gold-600"
-                                aria-hidden="true"
-                              />
-                              <span className="ml-3">
-                                info@academiagalamian.com
-                              </span>
-                            </div>
-                          </a> */}
                         </div>
                       </div>
                       <div className="relative flex items-start pt-2">
@@ -786,14 +814,65 @@ export default function Formulario() {
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="renta"
-                            className="font-medium text-neutral-700"
+                            className="font-medium tracking-tight text-neutral-700"
                           >
                             Renta familiar
                           </label>
-                          <p className="text-neutral-500">
+                          <p className="text-neutral-600">
                             En caso de solicitar una de las becas otorgadas por
                             la Fundación Reina Nilsen.
                           </p>
+                          {/* Renta familiar */}
+                          <div className="pt-4 sm:col-span-6">
+                            <label
+                              htmlFor="renta-familiar"
+                              className="block text-sm font-medium tracking-tight text-neutral-700"
+                            >
+                              Sube renta familiar
+                            </label>
+                            <div className="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-dashed rounded-none border-neutral-300 sm:col-span-6">
+                              <div className="space-y-1 text-center">
+                                <svg
+                                  className="w-12 h-12 mx-auto text-neutral-400"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  viewBox="0 0 48 48"
+                                  aria-hidden="true"
+                                >
+                                  <path
+                                    d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                    strokeWidth={2}
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                  />
+                                </svg>
+                                <div className="flex text-sm text-neutral-600">
+                                  <label
+                                    htmlFor="renta-familiar-upload"
+                                    className="relative font-medium tracking-tight transition duration-300 ease-in-out bg-white rounded-none cursor-pointer text-gold-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gold-500"
+                                  >
+                                    <span className="transition duration-300 ease-in-out hover:underline">
+                                      Cargue un archivo
+                                    </span>
+                                    <input
+                                      id="renta-familiar-upload"
+                                      name="renta-familiar-upload"
+                                      type="file"
+                                      accept=".doc,.pdf,.docx,.txt,.jpg,.jpeg,"
+                                      multiple
+                                      className="sr-only"
+                                    />
+                                  </label>
+                                  <h3 className="pl-1 font-normal tracking-tight">
+                                    o arrastrar y soltar
+                                  </h3>
+                                </div>
+                                <p className="text-xs text-neutral-600">
+                                  PDF, .doc, .docx, TXT hasta 10 MB
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div className="relative flex items-start">
@@ -802,17 +881,18 @@ export default function Formulario() {
                             id="video-links"
                             name="video-links"
                             type="checkbox"
+                            required
                             className="w-4 h-4 rounded focus:ring-gold-500 text-gold-600 border-neutral-300"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="video-links"
-                            className="font-medium text-neutral-700"
+                            className="font-medium tracking-tight text-neutral-700"
                           >
                             Vídeo links
                           </label>
-                          <p className="text-neutral-500">
+                          <p className="text-neutral-600">
                             Links a los dos vídeos, alojados en una plataforma
                             online.
                           </p>
@@ -828,10 +908,10 @@ export default function Formulario() {
             <div className="pt-8">
               <div>
                 <div>
-                  <h3 className="text-lg font-medium leading-6 text-neutral-900">
+                  <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
                     Becas
                   </h3>
-                  <p className="mt-1 text-sm text-neutral-500">
+                  <p className="mt-1 text-sm text-neutral-600">
                     Información sobre las becas y reducciones de matrícula.
                   </p>
 
@@ -849,12 +929,12 @@ export default function Formulario() {
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="renta"
-                            className="font-medium text-neutral-700"
+                            className="font-medium tracking-tight text-neutral-700"
                           >
                             Solicito optar a una beca de reducción de matrícula
                             ofrecida por la Fundación Reina Nilsen
                           </label>
-                          <p className="text-neutral-500">
+                          <p className="text-neutral-600">
                             Se podrán en valor su situación económica familiar y
                             los méritos artísticos expuestos en su audición de
                             acceso; el porcentaje de reducción de matrícula será
@@ -875,7 +955,7 @@ export default function Formulario() {
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="video-links"
-                            className="font-medium text-neutral-700"
+                            className="font-medium tracking-tight text-neutral-700"
                           >
                             Solicito ser considerado para uno de los Programas
                             de Formación en Prácticas de la Academia
@@ -893,10 +973,10 @@ export default function Formulario() {
             <div className="pt-8">
               <div>
                 <div>
-                  <h3 className="text-lg font-medium leading-6 text-neutral-900">
+                  <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
                     Reconocimiento
                   </h3>
-                  <p className="mt-1 text-sm text-neutral-500">
+                  <p className="mt-1 text-sm text-neutral-600">
                     Antes de presentar el formulario de inscripción, todas las
                     aspirantes deben reconocer lo siguiente.
                   </p>
@@ -909,13 +989,14 @@ export default function Formulario() {
                             id="reconocimiento"
                             name="reconocimiento"
                             type="checkbox"
+                            required
                             className="w-4 h-4 rounded focus:ring-gold-500 text-gold-600 border-neutral-300"
                           />
                         </div>
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="reconocimiento"
-                            className="font-medium text-neutral-700"
+                            className="font-medium tracking-tight text-neutral-700"
                           >
                             Por la presente certifico que la información
                             proporcionada en este formulario es completa,
@@ -924,7 +1005,7 @@ export default function Formulario() {
                           <div className="mt-3 sm:w-1/4">
                             <label
                               htmlFor="fecha"
-                              className="block text-sm font-medium text-neutral-700"
+                              className="block text-sm font-medium tracking-tight text-neutral-700"
                             >
                               Fecha
                             </label>
@@ -933,7 +1014,8 @@ export default function Formulario() {
                                 type="date"
                                 name="fecha"
                                 id="fecha"
-                                className="block w-full rounded-md focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
+                                required
+                                className="block w-full rounded-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
                                 placeholder="dd/mm/aaaa"
                               />
                             </div>
@@ -951,13 +1033,13 @@ export default function Formulario() {
             <div className="flex justify-end">
               <button
                 type="button"
-                className="px-4 py-2 text-sm font-medium bg-white border rounded-md shadow-none border-neutral-300 text-neutral-700 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
+                className="items-center px-4 py-2 text-sm font-medium tracking-tight transition duration-300 ease-in-out bg-white border rounded-none shadow-none border-neutral-300 text-neutral-700 hover:bg-neutral-200 hover:text-neutral-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
               >
                 Cancelar
               </button>
               <button
                 type="submit"
-                className="inline-flex justify-center px-4 py-2 ml-3 text-sm font-medium text-white border border-transparent rounded-md shadow-none bg-gold-600 hover:bg-gold-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
+                className="inline-flex items-center justify-center px-4 py-2 ml-3 text-sm font-medium tracking-tight text-white transition duration-300 ease-in-out border border-transparent rounded-none shadow-none bg-gold-600 hover:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
               >
                 Enviar
               </button>

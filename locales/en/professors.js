@@ -176,6 +176,8 @@ const professors = {
   // CHELLO
 
   // Øyvind Gimse
+  oyvind_name: `Øyvind Gimse`,
+  oyvind_image: `/static/profesores/oyvind-gimse.webp`,
   oyvind_role: `Principal Professor`,
   oyvind_chamber_role: `Cello`,
   oyvind_instrument: `Cello`,
@@ -184,6 +186,8 @@ const professors = {
   oyvind_para_3: `Øyvind Gimse has a unique musical ability to move audiences, placing the musical experience at the centre of his work. “He has everything that he has to have to become an international format solo artist,” Anne-Sophie Mutter told the Trondheim newspaper Adresseavisen in May 1999.`,
 
   // Tilman Mahrenholz
+  tilman_name: `Tilman Mahrenholz`,
+  tilman_image: `/static/profesores/tilman-mahrenholz.webp`,
   tilman_role: `Principal Professor`,
   tilman_instrument: `Cello`,
   tilman_para_1: `Tilman Mahrenholz was born in Germany and received his training at the "Hochschule für Musik Saar" in Saarbrücken and at the "Folkwang-Hochschule" in Essen. Later, he moved to New York, receiving a scholarship from the prestigious Juilliard School of Music. His teachers include Ulrich Voss, Prof. Christoph Richter, and Carter Brey.`,
@@ -191,6 +195,8 @@ const professors = {
   tilman_para_3: `Soloist, chamber and symphonic concerts have taken him to countries such as Germany, Austria, France, the USA, Luxembourg, Morocco and Spain. Tilman Mahrenholz is currently a cello soloist with the Malaga Philharmonic Orchestra.`,
 
   // Gabriel Ureña
+  gabriel_name: `Gabriel Ureña`,
+  gabriel_image: `/static/profesores/gabriel-urena.webp`,
   gabriel_role: `Guest Professor`,
   gabriel_instrument: `Cello`,
   gabriel_para_1: `Gabriel Ureña has performed as a soloist with the London City Orchestra, Oviedo Filarmonía and Arteus Orquesta and in prestigious international venues such as the Musikverein (Vienna), Champs-Élysées Theater (Paris), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) and the Teatro de la Maestranza (Seville).`,
@@ -198,6 +204,9 @@ const professors = {
   gabriel_para_3: `Among his recent career milestones is the publication of his first CD, with the Aria Classics label, with works by Prokofiev, Shostakovich and Rachmaninov, together with the pianist Patxi Aizpiri, his solo concert with the Malaga Philharmonic Orchestra and his debut with the National Orchestra of Colombia at the Teatro Colón in Bogotá.`,
 
   // Alberto Martos
+  alberto_name: `Alberto Martos`,
+  alberto_image: `/static/profesores/alberto-martos.webp`,
+  alberto_role: `Guest Professor`,
   alberto_chamber_role: `Cello`,
   alberto_instrument: `Cello`,
   alberto_para_1: `After his successful recordings for the prestigious label Sony Classical, Alberto Martos is a rising star in the current music scene. He has performed at many famous venues such as the Auditorio Nacional of Madrid, Palau de la Música Catalana, Carnegie Hall, Staatsoper Berlin, Teatro Colón of Buenos Aires and the Royal Albert Hall. Personally chosen by Daniel Barenboim as co-principal cellist for the West Eastern Divan Orchestra, he was described by the maestro as “one of the most promising cellists”.`,
@@ -214,6 +223,29 @@ const professors = {
   pablo_para_3: `Pablo frequently appears in the media, where we can find him performing his music for the Spanish TV or the world premiere of the Conrado del Campo’s string trios.`,
   pablo_website: `pablomartos.es`,
   pablo_href: `http://pablomartos.es/`,
+
+  // Kyril Zlotnikov
+  kyril_name: `Kyril Zlotnikov`,
+  kyril_image: `/static/profesores/kyril.jpeg`,
+  kyril_role: `Guest Professor`,
+  kyril_instrument: `Cello`,
+  kyril_para_1: `Born in Minsk, Belarus to a family of professional musicians, Kyril Zlotnikov began his studies at the Belarusian State Music Academy with Prof. Vladimir Perlin. He continued his studies in Israel with Prof. Uzi Wiesel and Hillel Zori, completing his musical education under the direction Prof. Michael Khomitzer in Jerusalem Rubin Academy of Music and Dance. While a student, Kyril Zlotnikov participated in master classes and courses with such prominent musicians as Isaac Stern, Yo-Yo Ma,Natalia Gutman, Boris Pergamenschikov, Aldo Parisot and Georgy Kurtag.`,
+  kyril_para_2: `Since 1991 Kyril Zlotnikov was a recipient of a scholarship for musical achievements from the America-Israel Culture Foundation, won prizes in many contests including the Clairmont Competition, the Braun-Roger Siegl Competition, the Pierre Tarcali Prize is the most recent one.`,
+  kyril_para_3: `He is a founding member of the recognized for its artistic creativity, one of the most dynamic and exciting young quartets currently performing - The Jerusalem Quartet. The musicians have been giving multiply performances all over the world and become the Israel''s leading string quartet. Since 2002 the Jerusalem Quartet records exclusively for Harmonia Mundi.`,
+  kyril_para_4: `Along with his extensive chamber music appearances Kyril Zlotnikov has performed and been broadcast as a soloist with internationally renowned orchestras, such as the Israel Philharmonic Orchestra, Jerusalem Symphony Orchestra, the Ludwigsburg Symphony Orchestra, The Gulbenkian Orchestra, West-Eastern Divan Orchestra, Jerusalem Camerata and enjoys artistic collaboration with acclaimed conductors including Daniel Barenboim, Zubin Mehta, Pierre Boulez, Lawrence Foster, Asher Fish, Simone Young. He has a wide repertoire covering the important cello works of the baroque, the classical period, romantic and the contemporary music.`,
+  kyril_website: `www.jerusalem-quartet.com`,
+  kyril_href: `http://www.jerusalem-quartet.com/index.php/about/kyril-zlotnikov-cello`,
+
+  // Asier Polo
+  asier_name: `Asier Polo`,
+  asier_image: `/static/profesores/asier-polo.jpg`,
+  asier_role: `Guest Professor`,
+  asier_instrument: `Cello`,
+  asier_para_1: `Considered by the specialist music press as one of the most important cellists of his generation, Asier Polo has worked with many of the major international orchestras, such as the Philharmonia Orchestra, London Symphony Orchestra, Danish National Symphony Orchestra, Orchestra Sinfonica Nazionalle della RAI, Dresdner Philharmonie, Orchestre de Paris, BBC Philharmonic, Bergen Filharmoniske Orkester, Israel Philharmonic Orchestra, Berliner Symphoniker, Orquesta Nacional de México, Orquestra Sinfônica de São Paulo, Louisiana Philharmonic, Orquesta Nacional de España and Basel Symphony Orchestra, under the baton of distinguished conductors such as John Axelrod, Pinchas Steinberg, Christian Badea, Rafael Frühbeck de Burgos, Claus Peter Flor, Carlos Miguel Prieto, Günther Herbig, Juanjo Mena, Antoni Wit and Anne Manson.`,
+  asier_para_2: `He is a regular guest at prestigious festivals, such as those held in Schleswig-Holstein, Nantes, Ohrid, Biennale di Venezia, Rome, Lisbon, Gstaad Menuhin Festival, Morelia, Granada and the Quincena Musical in San Sebastián.`,
+  asier_para_3: `He has appeared with great artists such as Silvia Marcovici, Nicolás Chumachenco, Sol Ga­betta, Maxim Rysanov, Isabelle van Keulen, Josep Colom, Eldar Nebolsin, Gerard Caussé, Cuarteto Janácek, Cuarte­to Casals and Alfredo Kraus, who in the last years of his career invited him to perform as soloist at his concerts, with engagements at the Maggio Musicale Fiorentino, Royal Opera House, Covent Garden in London, Tonhalle in Zurich and the prestigious Musikverein in Vienna, as well as a successful tour in the major concerts halls in Japan.`,
+  asier_website: `www.asierpolo.com`,
+  asier_href: `https://www.asierpolo.com/`,
 
   /////////////////////////////////////////////////////////////////////////////
 

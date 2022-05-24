@@ -55,9 +55,9 @@ export default function Voz() {
     },
     {
       name: `${t('common:estudio_list_conciertos_alumnos')}`,
-      modeA: `2`,
-      modeB: `2`,
-      modeC: `2`,
+      modeA: `3`,
+      modeB: `3`,
+      modeC: `3`,
     },
     {
       name: `${t('common:estudio_list_recital_propia')}`,
@@ -493,9 +493,7 @@ export default function Voz() {
                   objectPosition="center"
                 />
               </div>
-              <figcaption>
-                {/* Sagittis scelerisque nulla cursus in enim consectetur quam. */}
-              </figcaption>
+              <figcaption></figcaption>
             </figure>
             <h2 className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_13_part_1')}

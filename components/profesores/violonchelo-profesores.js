@@ -14,51 +14,65 @@ export default function VioloncheloProfesores() {
 
   const people = [
     {
-      name: 'Øyvind Gimse',
+      name: `${t('professors:oyvind_name')}`,
       role: `${t('professors:oyvind_role')}`,
-      imageUrl: '/static/profesores/oyvind-gimse.webp',
+      imageUrl: `${t('professors:oyvind_image')}`,
       instrument: `${t('professors:oyvind_instrument')}`,
       sentence_01: `${t('professors:oyvind_para_1')}`,
       sentence_02: `${t('professors:oyvind_para_2')}`,
       sentence_03: `${t('professors:oyvind_para_3')}`,
     },
     {
-      name: 'Tilman Mahrenholz',
+      name: `${t('professors:tilman_name')}`,
       role: `${t('professors:tilman_role')}`,
-      imageUrl: '/static/profesores/tilman-mahrenholz.webp',
+      imageUrl: `${t('professors:tilman_image')}`,
       instrument: `${t('professors:tilman_instrument')}`,
       sentence_01: `${t('professors:tilman_para_1')}`,
       sentence_02: `${t('professors:tilman_para_2')}`,
       sentence_03: `${t('professors:tilman_para_3')}`,
     },
     {
-      name: 'Gabriel Ureña',
+      name: `${t('professors:gabriel_name')}`,
       role: `${t('professors:gabriel_role')}`,
-      imageUrl: '/static/profesores/gabriel-urena.webp',
+      imageUrl: `${t('professors:gabriel_image')}`,
       instrument: `${t('professors:gabriel_instrument')}`,
       sentence_01: `${t('professors:gabriel_para_1')}`,
       sentence_02: `${t('professors:gabriel_para_2')}`,
       sentence_03: `${t('professors:gabriel_para_3')}`,
     },
     {
-      name: 'Asier Polo',
-      role: 'Profesor Invitado',
-      imageUrl: '/static/profesores/asier-polo.jpg',
-      instrument: 'Violonchelo',
-      sentence_01: `Considerado por la crítica especializada como uno de los violoncellistas más destacados de su generación.`,
-      sentence_02: `Ha colaborado como solista con algunas de las orquestas más importantes del panorama internacional: Philharmonia Orchestra, London Symphony Orchestra, Danish National Symphony Orchestra, Orchestra Sinfonica Nazionalle della RAI, Dresdner Philharmonie, Orchestre de Paris, BBC Philharmonic, Bergen Filharmoniske Orkester, Israel Philharmonic Orchestra, Berliner Symphoniker, Orquesta Nacional de México, Orquesta Sinfónica de Sao Paulo, Louisiana Philharmonic, Orquesta Nacional de España o la Basel Symphony Orchestra, acompañado bajo la dirección de importantes batutas, como: Pinchas Steinberg, Christian Badea, Rafael Frühbeck de Burgos, Claus Peter Flor, Carlos Miguel Prieto, Günther Herbig, Juanjo Mena, Antoni Wit o Anne Manson.`,
-      sentence_03: `Ha sido invitado por importantes festivales de música, como los festivales de Schleswig-Holstein, Nantes, Ohrid, Biennale di Venezia, Roma, Lisboa, Gstaad Menuhin Festival, Morelia, Granada o San Sebastián.`,
-      sentence_04: `Ha compartido escenario con artistas de la talla de Silvia Marcovici, Nicolás Chumachenco, Sol Ga­betta, Isabelle van Keulen, Josep Colom, Eldar Nebolsin, Gerard Caussé, Cuarteto Janácek, Cuarte­to Casals o el gran tenor Alfredo Kraus, quien le invitó en los últimos años de su carrera a colaborar como solista en sus recitales, actuando en el Maggio Fiorentino, Covent Garden, Royal Opera House, Tonhalle de Zürich, Musikverein de Viena, además de una exitosa gira por las más destacadas salas de conciertos en Japón.`,
+      name: `${t('professors:kyril_name')}`,
+      role: `${t('professors:kyril_role')}`,
+      imageUrl: `${t('professors:kyril_image')}`,
+      instrument: `${t('professors:kyril_instrument')}`,
+      sentence_01: `${t('professors:kyril_para_1')}`,
+      sentence_02: `${t('professors:kyril_para_2')}`,
+      sentence_03: `${t('professors:kyril_para_3')}`,
+      sentence_04: `${t('professors:kyril_para_4')}`,
+      website: `${t('professors:kyril_website')}`,
+      href: `${t('professors:kyril_href')}`,
     },
     {
-      name: 'Alberto Martos',
-      role: 'Profesor Invitado',
-      imageUrl: '/static/profesores/alberto-martos.jpg',
-      instrument: 'Violonchelo',
-      sentence_01: `Tras el éxito de sus grabaciones para el sello Sony Classical, Alberto Martos emerge con fuerza en el panorama musical actual.`,
-      sentence_02: `Formado en España y Alemania, su rica actividad concertística le ha llevado a actuar en salas como el Auditorio Nacional, Palau de la Música Catalana, Carnegie Hall, Sala Pleyel, Teatro Colón o Philarmonie de Berlín. Elegido personalmente por Daniel Barenboim para ocupar el primer atril de la West Eastern Divan Orchestra, fue definido por el maestro como “una de las mayores promesas del violonchelo”.`,
-      sentence_03: `Miembro fundador del prestigioso Garnati Ensemble, su trabajo Playing Goldberg registrado en Sony Classical junto a Pablo Martos y Yuval Gotlibovich obtiene las mejores críticas de prensa. En 2013 recibe junto a su hermano el premio Andalucía Joven por su labor solidaria a través de la música. Parte de esta labor fue registrada en el documental The Healing Notes, producido por Mercedes Milá y dirigido por Amparo Mendo.`,
-      sentence_04: `En 2016 fueron invitados a Puerto Rico, donde inauguraron el museo Pilar Defillò (madre de Pau Casals), siendo nombrados “Huéspedes Distinguidos” de la Ciudad de Mayagüez. En 2017 lanza su nuevo álbum para Sony Classical, que incluye el Concierto en Re Mayor de Franz Joseph Haydn y el Adagio del Concierto en Do Mayor, junto a la Orquesta Ciudad de Granada y bajo la dirección del maestro Antoni Ros Marbà. Este mismo año recibe el premio Andaluces del Futuro (Bankia/Grupo Joly) otorgado en la modalidad de cultura por su brillante trayectoria como solista.`,
+      name: `${t('professors:asier_name')}`,
+      role: `${t('professors:asier_role')}`,
+      imageUrl: `${t('professors:asier_image')}`,
+      instrument: `${t('professors:asier_instrument')}`,
+      sentence_01: `${t('professors:asier_para_1')}`,
+      sentence_02: `${t('professors:asier_para_2')}`,
+      sentence_03: `${t('professors:asier_para_3')}`,
+      website: `${t('professors:asier_website')}`,
+      href: `${t('professors:asier_href')}`,
+    },
+    {
+      name: `${t('professors:alberto_name')}`,
+      role: `${t('professors:alberto_role')}`,
+      imageUrl: `${t('professors:alberto_image')}`,
+      instrument: `${t('professors:alberto_instrument')}`,
+      sentence_01: `${t('professors:alberto_para_1')}`,
+      sentence_02: `${t('professors:alberto_para_2')}`,
+      sentence_03: `${t('professors:alberto_para_3')}`,
+      website: `${t('professors:alberto_website')}`,
+      href: `${t('professors:alberto_href')}`,
     },
   ];
 
@@ -190,15 +204,6 @@ export default function VioloncheloProfesores() {
                                             />
                                           </div>
                                         </div>
-                                        {/* <figcaption className="flex mt-3 text-sm text-neutral-500">
-                                          <CameraIcon
-                                            className="flex-none w-5 h-5 text-neutral-400"
-                                            aria-hidden="true"
-                                          />
-                                          <span className="ml-2">
-                                            {person.name}
-                                          </span>
-                                        </figcaption> */}
                                       </figure>
                                     </div>
                                   </div>
