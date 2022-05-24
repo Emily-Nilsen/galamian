@@ -273,7 +273,7 @@ const common = {
   registration_warning: `Warning`,
   registration_warning_text: `Leaving the page before submitting the registration form will clear all filled fields.`,
   // Datos Personales
-  registration_datos_personales: `Personal information`,
+  registration_datos_personales: `Student applicant information`,
   registration_datos_personales_text: `Use a permanent address where you can receive mail.`,
   registration_nombre: `First name`,
   registration_apellidos: `Last name`,
@@ -289,7 +289,7 @@ const common = {
   registration_postcode: `Postal code`,
   registration_mobile: `Mobile phone`,
   // Datos del/la Responsable
-  responsable_title: `Information of person in charge`,
+  responsable_title: `Guardian information`,
   responsable_subtitle: `Applicable only to minors.`,
   responsable_cargo: `Position of responsibility`,
   responsable_cargo_placeholder: `Mother, Father, Tutor...`,
