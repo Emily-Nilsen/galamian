@@ -114,17 +114,21 @@ export default function ProfesoresVoz() {
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-600">
-                <p className="text-lg">{t('common:nils_para_1')}</p>
-                <p className="text-base leading-7">{t('common:nils_para_2')}</p>
-                <p className="text-base leading-7">{t('common:nils_para_3')}</p>
+                <p className="text-lg">{t('professors:nils_para_1')}</p>
+                <p className="text-base leading-7">
+                  {t('professors:nils_para_2')}
+                </p>
+                <p className="text-base leading-7">
+                  {t('professors:nils_para_3')}
+                </p>
                 <div>
                   <a
-                    href={t('common:nils_href')}
+                    href={t('professors:nils_href')}
                     target="_blank"
                     rel="noreferrer"
                     className="text-lg font-semibold leading-7 tracking-normal transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900"
                   >
-                    {t('common:nils_website')}
+                    {t('professors:nils_website')}
                   </a>
                 </div>
               </div>
@@ -183,12 +187,12 @@ export default function ProfesoresVoz() {
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-600">
-                <p className="text-lg">{t('common:sergio_para_1')}</p>
+                <p className="text-lg">{t('professors:sergio_para_1')}</p>
                 <p className="text-base leading-7">
-                  {t('common:sergio_para_2')}
+                  {t('professors:sergio_para_2')}
                 </p>
                 <p className="text-base leading-7">
-                  {t('common:sergio_para_3')}
+                  {t('professors:sergio_para_3')}
                 </p>
               </div>
             </div>

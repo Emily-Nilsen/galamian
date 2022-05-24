@@ -466,36 +466,6 @@ export default function Piano() {
                 </div>
               </div>
             </div>
-
-            <h2 className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl">
-              {t('common:estudio_para_12_part_1')}
-            </h2>
-            <p>{t('common:estudio_para_12_part_2')}</p>
-            <p>{t('common:estudio_para_12_part_3')}</p>
-            <figure>
-              <div className="w-full rounded-none">
-                <Image
-                  src="/static/estudia/piano/piano-study-img-1.webp"
-                  alt="Estudio de violín/viola"
-                  width={4070}
-                  height={2713}
-                  layout="responsive"
-                  objectFit="cover"
-                  objectPosition="center"
-                />
-              </div>
-              <figcaption>
-                {/* Sagittis scelerisque nulla cursus in enim consectetur quam. */}
-              </figcaption>
-            </figure>
-            <h2 className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl">
-              {t('common:estudio_para_13_part_1')}
-            </h2>
-            <p>
-              {t('common:estudio_para_13_part_2')}
-              {t('common:estudio_para_13_part_3')}
-              {t('common:estudio_para_13_part_4')}
-            </p>
           </div>
         </div>
       </div>

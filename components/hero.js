@@ -47,7 +47,7 @@ export default function Hero() {
                     <span className="block font-bold text-gold-500">
                       {t('inicio:title_1')}
                     </span>
-                    <span className="block text-white">
+                    <span className="block tracking-tighter text-white">
                       {t('inicio:title_2')}
                     </span>
                     <span className="block font-bold text-gold-500">

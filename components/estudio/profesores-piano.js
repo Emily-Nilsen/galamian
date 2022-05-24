@@ -34,6 +34,7 @@ export default function ProfesoresPiano() {
                   <ul role="list">
                     <li>Misha Dacić</li>
                     <li>Josu De Solaun</li>
+                    <li>Antonio Ortíz</li>
                   </ul>
                 </div>
                 <div className="sm:col-span-1">
@@ -109,21 +110,21 @@ export default function ProfesoresPiano() {
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-600">
-                <p className="text-lg">{t('common:misha_para_1')}</p>
+                <p className="text-lg">{t('professors:misha_para_1')}</p>
                 <p className="text-base leading-7">
-                  {t('common:misha_para_2')}
+                  {t('professors:misha_para_2')}
                 </p>
                 <p className="text-base leading-7">
-                  {t('common:misha_para_3')}
+                  {t('professors:misha_para_3')}
                 </p>
                 <div>
                   <a
-                    href={t('common:misha_href')}
+                    href={t('professors:misha_href')}
                     target="_blank"
                     rel="noreferrer"
                     className="text-lg font-semibold leading-7 tracking-normal transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900"
                   >
-                    {t('common:misha_website')}
+                    {t('professors:misha_website')}
                   </a>
                 </div>
               </div>
@@ -182,19 +183,86 @@ export default function ProfesoresPiano() {
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-600">
-                <p className="text-lg">{t('common:josu_para_1')}</p>
-                <p className="text-base leading-7">{t('common:josu_para_2')}</p>
-                <p className="text-base leading-7">{t('common:josu_para_3')}</p>
+                <p className="text-lg">{t('professors:josu_para_1')}</p>
+                <p className="text-base leading-7">
+                  {t('professors:josu_para_2')}
+                </p>
+                <p className="text-base leading-7">
+                  {t('professors:josu_para_3')}
+                </p>
                 <div>
                   <a
-                    href={t('common:josu_href')}
+                    href={t('professors:josu_href')}
                     target="_blank"
                     rel="noreferrer"
                     className="text-lg font-semibold leading-7 tracking-normal transition duration-200 ease-in-out text-gold-600 hover:text-neutral-900"
                   >
-                    {t('common:josu_website')}
+                    {t('professors:josu_website')}
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Antonio Ortiz */}
+      <div className="relative pt-2 pb-16 bg-neutral-50 sm:pb-24 sm:pt-6">
+        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+          <div className="relative sm:py-16 lg:py-0">
+            <div
+              aria-hidden="true"
+              className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+            >
+              <div className="absolute inset-y-0 w-full right-1/2 bg-neutral-100 lg:right-72" />
+            </div>
+            <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+              {/* Photo*/}
+              <figure>
+                <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
+                    <Image
+                      src="/static/profesores/antonio-ortiz.webp"
+                      alt="Josu De Solaun"
+                      width={718}
+                      height={419}
+                      layout="responsive"
+                      objectFit="cover"
+                      objectPosition="center"
+                    />
+                  </div>
+                </div>
+                <figcaption className="flex mt-3 text-sm text-neutral-700">
+                  <CameraIcon
+                    className="flex-none w-5 h-5 text-gold-500"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-2">
+                    {t('piano:principal_profesor_male')} Antonio Ortíz
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
+            {/* Content area */}
+            <div className="pt-12 sm:pt-16 lg:pt-20">
+              <div>
+                <h2 className="text-base font-medium tracking-tight uppercase text-gold-600">
+                  {t('piano:principal_profesor_male')}
+                </h2>
+                <h2 className="mt-2 text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
+                  Antonio Ortíz
+                </h2>
+              </div>
+              <div className="mt-6 space-y-6 text-neutral-600">
+                <p className="text-lg">{t('professors:antonio_para_1')}</p>
+                <p className="text-base leading-7">
+                  {t('professors:antonio_para_2')}
+                </p>
+                <p className="text-base leading-7">
+                  {t('professors:antonio_para_3')}
+                </p>
               </div>
             </div>
           </div>

@@ -8,6 +8,8 @@ export default function ProfesoresViolonchelo() {
   const profesoresInvitados = [
     { nombre: `Asier Polo` },
     { nombre: `Alberto Martos` },
+    { nombre: `Gabriel Ureña` },
+    { nombre: `Kyril Zlotnikov` },
   ];
   return (
     <section id="fundadores" className="py-0 overflow-hidden bg-white lg:py-0">
@@ -109,12 +111,12 @@ export default function ProfesoresViolonchelo() {
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-600">
-                <p className="text-lg">{t('common:oyvind_para_1')}</p>
+                <p className="text-lg">{t('professors:oyvind_para_1')}</p>
                 <p className="text-base leading-7">
-                  {t('common:oyvind_para_2')}
+                  {t('professors:oyvind_para_2')}
                 </p>
                 <p className="text-base leading-7">
-                  {t('common:oyvind_para_3')}
+                  {t('professors:oyvind_para_3')}
                 </p>
               </div>
             </div>
@@ -172,12 +174,12 @@ export default function ProfesoresViolonchelo() {
                 </h2>
               </div>
               <div className="mt-6 space-y-6 text-neutral-600">
-                <p className="text-lg">{t('common:tilman_para_1')}</p>
+                <p className="text-lg">{t('professors:tilman_para_1')}</p>
                 <p className="text-base leading-7">
-                  {t('common:tilman_para_2')}
+                  {t('professors:tilman_para_2')}
                 </p>
                 <p className="text-base leading-7">
-                  {t('common:tilman_para_3')}
+                  {t('professors:tilman_para_3')}
                 </p>
               </div>
             </div>

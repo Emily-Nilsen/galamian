@@ -140,7 +140,7 @@ const professors = {
   josu_href: `https://www.josudesolaun.com/`,
 
   // Antonio Ortiz
-  antonio_role: `Profesor Invitado`,
+  antonio_role: `Profesor Principal`,
   antonio_instrument: `Piano`,
   antonio_para_1: `Actualmente Catedrático de Piano en el Conservatorio Superior de Música de Málaga, Antonio Ortiz compagina la docencia con su actividad concertística, siendo regularmente invitado a participar en salas de reconocido prestigio del ámbito nacional e internacional.`,
   antonio_para_2: `Estudió con maestros de la talla de Dimitri Bashkirov y Claudio Martínez Mehner en la Escuela Superior de Música “Reina Sofía” de Madrid, Josep María Colom en la Universidad de Alcalá, Marie Françoise Buquet en París y José Felipe Díaz en Conservatorio Superior de Música de Málaga.`,

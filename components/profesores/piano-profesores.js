@@ -14,6 +14,15 @@ export default function PianoProfesores() {
 
   const people = [
     {
+      name: 'Antonio Ortiz',
+      role: `${t('professors:antonio_role')}`,
+      imageUrl: '/static/profesores/antonio-ortiz.webp',
+      instrument: `${t('professors:antonio_instrument')}`,
+      sentence_01: `${t('professors:antonio_para_1')}`,
+      sentence_02: `${t('professors:antonio_para_2')}`,
+      sentence_03: `${t('professors:antonio_para_3')}`,
+    },
+    {
       name: 'Misha Dacić',
       role: `${t('professors:misha_role')}`,
       imageUrl: '/static/profesores/misha-dacic.jpg',
@@ -34,15 +43,6 @@ export default function PianoProfesores() {
       sentence_03: `${t('professors:josu_para_3')}`,
       website: `${t('professors:josu_website')}`,
       href: `${t('professors:josu_href')}`,
-    },
-    {
-      name: 'Antonio Ortiz',
-      role: `${t('professors:antonio_role')}`,
-      imageUrl: '/static/profesores/antonio-ortiz.webp',
-      instrument: `${t('professors:antonio_instrument')}`,
-      sentence_01: `${t('professors:antonio_para_1')}`,
-      sentence_02: `${t('professors:antonio_para_2')}`,
-      sentence_03: `${t('professors:antonio_para_3')}`,
     },
     {
       name: 'Miguel Ángel Latorre',
