@@ -307,6 +307,42 @@ const common = {
   registration_voz: `Estudio de Voz`,
   registration_mode: `Modalidad`,
   registration_mode_text: `Seleccione un modo de estudio.`,
+  // Video
+  video_title: `Vídeo`,
+  video_subtitle_start: `Debido a la circunstancias socio-sanitarias que vive España, la Academia Internacional Galamian convoca sus audiciones de acceso al curso`,
+  video_subtitle_end: `de manera digital.`,
+  video_text: `Para participar en ellas, se requerirá el envío de un vídeo en el que se evidencie al aspirante interpretando dos obras o movimientos de estilos contrastantes, de libre elección, el cual deberá estar alojado en alguna plataforma digital tipo YouTube o Vímeo.`,
+  video_url_placeholder: `www.ejemplo.com`,
+  // Documentos
+  documentos_title: `Documentos`,
+  documentos_subtitle: `El formulario de inscripción de AIG requiere los siguientes documentos:`,
+  video_motivation_title: `Vídeo de motivación`,
+  video_motivation_text: `El vídeo de motivación deberá ser un monólogo de corta duración en el que el o la aspirante exponga los motivos por los que le gustaría estudiar en la Academia Internacional Galamian. Este vídeo también deberá de alojarse en una plataforma tipo YouTube o Vímeo.`,
+  add_link: `Adjuntase su link`,
+  cv_title: `Biografía/CV`,
+  cv_text: `Cargue una copia de tu biografía o currículum en formato PDF, .doc, .docx o TXT`,
+  attach_cv: `Sube currículum`,
+  upload_cv: `Cargue un archivo`,
+  dragdop_cv: `o arrastrar y soltar`,
+  file_type: `PDF, .doc, .docx, TXT hasta 10 MB`,
+  renta_familiar: `Renta familiar`,
+  renta_familiar_text: `En caso de solicitar una de las becas otorgadas por la Fundación Reina Nilsen cargue una copia de tu renta familiar.`,
+  attach_renta_familiar: `Sube renta familiar`,
+  video_links: `Vídeo links`,
+  video_links_text: `Links a los dos vídeos, alojados en una plataforma online.`,
+  // Becas
+  becas_title: `Becas`,
+  becas_text: `Información sobre las becas y reducciones de matrícula.`,
+  solicito_1: `Solicito optar a una beca de reducción de matrícula ofrecida por la Fundación Reina Nilsen`,
+  solicito_1_text: `Se podrán en valor su situación económica familiar y los méritos artísticos expuestos en su audición de acceso; el porcentaje de reducción de matrícula será comunicado personalmente junto al resultado de las audiciones.`,
+  solicitio_2: `Solicito ser considerado para uno de los Programas de Formación en Prácticas de la Academia Internacional Galamian`,
+  // Reconocimiento
+  reconocimiento: `Reconocimiento`,
+  reconocimiento_text: `Antes de presentar el formulario de inscripción, todas las aspirantes deben reconocer lo siguiente:`,
+  consent: `Reconozco que la información proporcionada con este formulario de inscripción es verdadera y correcta según mi leal saber y entender.`,
+  date: `Fecha`,
+  cancel_button: `Cancelar`,
+  submit_button: `Enviar`,
 };
 
 export default common;

@@ -304,6 +304,42 @@ const common = {
   registration_voz: `Voice Study`,
   registration_mode: `Modality`,
   registration_mode_text: `Select a study mode.`,
+  // Video
+  video_title: `Video`,
+  video_subtitle_start: `Due to the socio-sanitary circumstances that Spain is experiencing, the Galamian International Academy digitally calls its auditions for course access for the`,
+  video_subtitle_end: `academic year.`,
+  video_text: `To participate in the auditions, applicants must create a video that shows the student interpreting two works or movements of contrasting styles of free choice. Applicants must upload the video on a digital platform like YouTube or Vimeo.`,
+  video_url_placeholder: `www.example.com`,
+  // Documentos
+  documentos_title: `Documents`,
+  documentos_subtitle: `The GIA enrollment form requires the following documents:`,
+  video_motivation_title: `Motivational video`,
+  video_motivation_text: `The motivational video should be a short monologue. The applicant should explain why they would like to study at the Galamian International Academy. Applicants must upload the video on a digital platform like YouTube or Vimeo.`,
+  add_link: `Attach your link`,
+  cv_title: `Biography/CV`,
+  cv_text: `Upload a copy of your biography or resume in PDF, .doc, .docx, or TXT format`,
+  attach_cv: `Upload resume`,
+  upload_cv: `Upload resume`,
+  dragdop_cv: `or drag and drop`,
+  file_type: `PDF, .doc, .docx, TXT up to 10MB`,
+  renta_familiar: `Family income`,
+  renta_familiar_text: `If you request one of the scholarships granted by the Reina Nilsen Foundation, upload a copy of your family income.`,
+  attach_renta_familiar: `Upload family income`,
+  video_links: `Video links`,
+  video_links_text: `Links to two videos, hosted on an online platform.`,
+  // Becas
+  becas_title: `Scholarships`,
+  becas_text: `Information about scholarships and tuition reductions.`,
+  solicito_1: `I request a tuition reduction scholarship offered by the Reina Nilsen Foundation`,
+  solicito_1_text: `We will assess your family's economic situation and your artistic merits demonstrated during the course access audition. Afterwards, we will personally communicate the enrollment reduction percentage and the audition result.`,
+  solicitio_2: `I request to be considered for one of the Galamian International Academy Internship Training Programs`,
+  // Reconocimiento
+  reconocimiento: `Acknowledgement`,
+  reconocimiento_text: `Before submitting the registration form, all applicants must acknowledge the following:`,
+  consent: `I acknowledge that the information provided with this registration form is true and correct to the best of my knowledge.`,
+  date: `Date`,
+  cancel_button: `Cancel`,
+  submit_button: `Submit`,
 };
 
 export default common;

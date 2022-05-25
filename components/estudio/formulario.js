@@ -608,20 +608,15 @@ export default function Formulario() {
               <div>
                 <div>
                   <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
-                    Vídeo
+                    {t('common:video_title')}
                   </h3>
                   <p className="mt-1 text-sm text-neutral-600">
-                    Debido a la circunstancias socio-sanitarias que vive España,
-                    la Academia Internacional Galamian convoca sus audiciones de
-                    acceso al curso {new Date().getFullYear()}/
-                    {new Date().getFullYear() + 1} de manera digital.
+                    {t('common:video_subtitle_start')}{' '}
+                    {new Date().getFullYear()}/{new Date().getFullYear() + 1}{' '}
+                    {t('common:video_subtitle_end')}
                   </p>
                   <p className="mt-4 text-sm text-neutral-600">
-                    Para participar en ellas, se requerirá el envío de un vídeo
-                    en el que se evidencie al aspirante interpretando dos obras
-                    o movimientos de estilos contrastantes, de libre elección,
-                    el cual deberá estar alojado en alguna plataforma digital
-                    tipo YouTube o Vímeo.
+                    {t('common:video_text')}
                   </p>
                 </div>
 
@@ -640,7 +635,7 @@ export default function Formulario() {
                         id="link-1"
                         required
                         className="flex-1 block w-full min-w-0 px-3 py-2 rounded-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
-                        placeholder="www.ejemplo.com"
+                        placeholder={t('common:video_url_placeholder')}
                       />
                     </div>
                   </div>
@@ -659,7 +654,7 @@ export default function Formulario() {
                         id="link-2"
                         required
                         className="flex-1 block w-full min-w-0 px-3 py-2 rounded-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
-                        placeholder="www.ejemplo.com"
+                        placeholder={t('common:video_url_placeholder')}
                       />
                     </div>
                   </div>
@@ -672,11 +667,10 @@ export default function Formulario() {
               <div>
                 <div>
                   <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
-                    Documentos
+                    {t('common:documentos_title')}
                   </h3>
                   <p className="mt-1 text-sm text-neutral-600">
-                    El formulario de inscripción de AIG requiere los siguientes
-                    documentos:
+                    {t('common:documentos_subtitle')}
                   </p>
 
                   <fieldset className="mt-6">
@@ -695,15 +689,10 @@ export default function Formulario() {
                             htmlFor="video"
                             className="font-medium tracking-tight text-neutral-700"
                           >
-                            Vídeo de motivación
+                            {t('common:video_motivation_title')}
                           </label>
                           <p className="text-neutral-600">
-                            El vídeo de motivación deberá ser un monólogo de
-                            corta duración en el que el o la aspirante exponga
-                            los motivos por los que le gustaría estudiar en la
-                            Academia Internacional Galamian. Este vídeo también
-                            deberá de alojarse en una plataforma tipo YouTube o
-                            Vímeo.
+                            {t('common:video_motivation_text')}
                           </p>
                           {/* Video de motivación */}
                           <div className="mt-3 sm:col-span-4 md:w-2/3">
@@ -711,7 +700,7 @@ export default function Formulario() {
                               htmlFor="video-motivacion"
                               className="block text-sm font-medium tracking-tight text-neutral-700"
                             >
-                              Adjuntase su link
+                              {t('common:add_link')}
                             </label>
                             <div className="flex mt-1 rounded-none shadow-none">
                               <input
@@ -720,7 +709,7 @@ export default function Formulario() {
                                 id="video-motivacion"
                                 required
                                 className="flex-1 block w-full min-w-0 px-3 py-2 rounded-none focus:ring-gold-500 focus:border-gold-500 sm:text-sm border-neutral-300"
-                                placeholder="www.ejemplo.com"
+                                placeholder={t('common:video_url_placeholder')}
                               />
                             </div>
                           </div>
@@ -742,11 +731,10 @@ export default function Formulario() {
                             htmlFor="biografia"
                             className="font-medium tracking-tight text-neutral-700"
                           >
-                            Biografía/CV
+                            {t('common:cv_title')}
                           </label>
                           <p className="text-neutral-600 sm:col-span-6">
-                            Cargue una copia de tu biografía o currículum en
-                            formato PDF, .doc, .docx o TXT
+                            {t('common:cv_text')}
                           </p>
 
                           <div className="pt-4 sm:col-span-6">
@@ -754,7 +742,7 @@ export default function Formulario() {
                               htmlFor="cv"
                               className="block text-sm font-medium tracking-tight text-neutral-700"
                             >
-                              Sube currículum
+                              {t('common:attach_cv')}
                             </label>
                             <div className="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-dashed rounded-none border-neutral-300 sm:col-span-6">
                               <div className="space-y-1 text-center">
@@ -778,7 +766,7 @@ export default function Formulario() {
                                     className="relative font-medium tracking-tight bg-white rounded-none cursor-pointer text-gold-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gold-500"
                                   >
                                     <span className="transition duration-300 ease-in-out hover:underline">
-                                      Cargue un archivo
+                                      {t('common:upload_cv')}
                                     </span>
                                     <input
                                       id="cv-upload"
@@ -791,11 +779,11 @@ export default function Formulario() {
                                     />
                                   </label>
                                   <h3 className="pl-1 font-normal tracking-tight">
-                                    o arrastrar y soltar
+                                    {t('common:dragdop_cv')}
                                   </h3>
                                 </div>
                                 <p className="text-xs text-neutral-600">
-                                  PDF, .doc, .docx, TXT hasta 10 MB
+                                  {t('common:file_type')}
                                 </p>
                               </div>
                             </div>
@@ -816,11 +804,10 @@ export default function Formulario() {
                             htmlFor="renta"
                             className="font-medium tracking-tight text-neutral-700"
                           >
-                            Renta familiar
+                            {t('common:renta_familiar')}
                           </label>
                           <p className="text-neutral-600">
-                            En caso de solicitar una de las becas otorgadas por
-                            la Fundación Reina Nilsen.
+                            {t('common:renta_familiar_text')}
                           </p>
                           {/* Renta familiar */}
                           <div className="pt-4 sm:col-span-6">
@@ -828,7 +815,7 @@ export default function Formulario() {
                               htmlFor="renta-familiar"
                               className="block text-sm font-medium tracking-tight text-neutral-700"
                             >
-                              Sube renta familiar
+                              {t('common:attach_renta_familiar')}
                             </label>
                             <div className="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-dashed rounded-none border-neutral-300 sm:col-span-6">
                               <div className="space-y-1 text-center">
@@ -852,7 +839,7 @@ export default function Formulario() {
                                     className="relative font-medium tracking-tight transition duration-300 ease-in-out bg-white rounded-none cursor-pointer text-gold-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gold-500"
                                   >
                                     <span className="transition duration-300 ease-in-out hover:underline">
-                                      Cargue un archivo
+                                      {t('common:upload_cv')}
                                     </span>
                                     <input
                                       id="renta-familiar-upload"
@@ -864,11 +851,11 @@ export default function Formulario() {
                                     />
                                   </label>
                                   <h3 className="pl-1 font-normal tracking-tight">
-                                    o arrastrar y soltar
+                                    {t('common:dragdop_cv')}
                                   </h3>
                                 </div>
                                 <p className="text-xs text-neutral-600">
-                                  PDF, .doc, .docx, TXT hasta 10 MB
+                                  {t('common:file_type')}
                                 </p>
                               </div>
                             </div>
@@ -890,11 +877,10 @@ export default function Formulario() {
                             htmlFor="video-links"
                             className="font-medium tracking-tight text-neutral-700"
                           >
-                            Vídeo links
+                            {t('common:video_links')}
                           </label>
                           <p className="text-neutral-600">
-                            Links a los dos vídeos, alojados en una plataforma
-                            online.
+                            {t('common:video_links_text')}
                           </p>
                         </div>
                       </div>
@@ -909,10 +895,10 @@ export default function Formulario() {
               <div>
                 <div>
                   <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
-                    Becas
+                    {t('common:becas_title')}
                   </h3>
                   <p className="mt-1 text-sm text-neutral-600">
-                    Información sobre las becas y reducciones de matrícula.
+                    {t('common:becas_text')}
                   </p>
 
                   <fieldset className="mt-6">
@@ -931,15 +917,10 @@ export default function Formulario() {
                             htmlFor="renta"
                             className="font-medium tracking-tight text-neutral-700"
                           >
-                            Solicito optar a una beca de reducción de matrícula
-                            ofrecida por la Fundación Reina Nilsen
+                            {t('common:solicito_1')}
                           </label>
                           <p className="text-neutral-600">
-                            Se podrán en valor su situación económica familiar y
-                            los méritos artísticos expuestos en su audición de
-                            acceso; el porcentaje de reducción de matrícula será
-                            comunicado personalmente junto al resultado de las
-                            audiciones.
+                            {t('common:solicito_1_text')}
                           </p>
                         </div>
                       </div>
@@ -957,9 +938,7 @@ export default function Formulario() {
                             htmlFor="video-links"
                             className="font-medium tracking-tight text-neutral-700"
                           >
-                            Solicito ser considerado para uno de los Programas
-                            de Formación en Prácticas de la Academia
-                            Internacional Galamian
+                            {t('common:solicitio_2')}
                           </label>
                         </div>
                       </div>
@@ -974,11 +953,10 @@ export default function Formulario() {
               <div>
                 <div>
                   <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
-                    Reconocimiento
+                    {t('common:reconocimiento')}
                   </h3>
                   <p className="mt-1 text-sm text-neutral-600">
-                    Antes de presentar el formulario de inscripción, todas las
-                    aspirantes deben reconocer lo siguiente.
+                    {t('common:reconocimiento_text')}
                   </p>
 
                   <fieldset className="mt-6">
@@ -998,16 +976,14 @@ export default function Formulario() {
                             htmlFor="reconocimiento"
                             className="font-medium tracking-tight text-neutral-700"
                           >
-                            Por la presente certifico que la información
-                            proporcionada en este formulario es completa,
-                            verdadera y correcto a lo mejor de mi conocimiento
+                            {t('common:consent')}
                           </label>
                           <div className="mt-3 sm:w-1/4">
                             <label
                               htmlFor="fecha"
                               className="block text-sm font-medium tracking-tight text-neutral-700"
                             >
-                              Fecha
+                              {t('common:date')}
                             </label>
                             <div className="mt-1">
                               <input
@@ -1035,13 +1011,13 @@ export default function Formulario() {
                 type="button"
                 className="items-center px-4 py-2 text-sm font-medium tracking-tight transition duration-300 ease-in-out bg-white border rounded-none shadow-none border-neutral-300 text-neutral-700 hover:bg-neutral-200 hover:text-neutral-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
               >
-                Cancelar
+                {t('common:cancel_button')}
               </button>
               <button
                 type="submit"
                 className="inline-flex items-center justify-center px-4 py-2 ml-3 text-sm font-medium tracking-tight text-white transition duration-300 ease-in-out border border-transparent rounded-none shadow-none bg-gold-600 hover:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500"
               >
-                Enviar
+                {t('common:submit_button')}
               </button>
             </div>
           </div>
