@@ -238,7 +238,7 @@ export default function Contacto() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <dd className="flex text-base text-neutral-50">
+                      <dd className="flex items-center text-base text-neutral-50">
                         <MailIcon
                           className="flex-shrink-0 w-6 h-6 text-cream-500"
                           aria-hidden="true"

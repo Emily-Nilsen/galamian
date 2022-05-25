@@ -737,8 +737,26 @@ export default function Formulario() {
                           <p className="text-neutral-600 sm:col-span-6">
                             {t('common:cv_text')}
                           </p>
+                          {/* Email address */}
+                          <a
+                            className="group"
+                            href="mailto:secretaria.academiagalamian@gmail.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <dd className="flex items-center mt-2 text-base text-gold-600">
+                              <MailIcon
+                                className="flex-shrink-0 w-6 h-6 transition duration-300 ease-in-out text-cream-500 group-hover:text-gold-600"
+                                aria-hidden="true"
+                              />
+                              <span className="ml-3 overflow-visible tracking-tight transition duration-300 ease-in-out lg:leading-5 xl:leading-normal group-hover:text-neutral-900">
+                                secretaria.academiagalamian@gmail.com
+                              </span>
+                            </dd>
+                          </a>
 
-                          <div className="pt-4 sm:col-span-6">
+                          {/* Upload CV */}
+                          {/* <div className="pt-4 sm:col-span-6">
                             <label
                               htmlFor="cv"
                               className="block text-sm font-medium tracking-tight text-neutral-700"
@@ -788,7 +806,7 @@ export default function Formulario() {
                                 </p>
                               </div>
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                       <div className="relative flex items-start pt-2">
@@ -810,8 +828,25 @@ export default function Formulario() {
                           <p className="text-neutral-600">
                             {t('common:renta_familiar_text')}
                           </p>
+                          {/* Email address */}
+                          <a
+                            className="group"
+                            href="mailto:secretaria.academiagalamian@gmail.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <dd className="flex items-center mt-2 text-base text-gold-600">
+                              <MailIcon
+                                className="flex-shrink-0 w-6 h-6 transition duration-300 ease-in-out text-cream-500 group-hover:text-gold-600"
+                                aria-hidden="true"
+                              />
+                              <span className="ml-3 overflow-visible tracking-tight transition duration-300 ease-in-out lg:leading-5 xl:leading-normal group-hover:text-neutral-900">
+                                secretaria.academiagalamian@gmail.com
+                              </span>
+                            </dd>
+                          </a>
                           {/* Renta familiar */}
-                          <div className="pt-4 sm:col-span-6">
+                          {/* <div className="pt-4 sm:col-span-6">
                             <label
                               htmlFor="renta-familiar"
                               className="block text-sm font-medium tracking-tight text-neutral-700"
@@ -860,7 +895,7 @@ export default function Formulario() {
                                 </p>
                               </div>
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                       <div className="relative flex items-start">
