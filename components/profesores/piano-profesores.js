@@ -47,7 +47,7 @@ export default function PianoProfesores() {
     {
       name: 'Miguel Ángel Latorre',
       role: `${t('professors:miguel_role')}`,
-      imageUrl: '/static/profesores/miguel-latorre.webp',
+      imageUrl: '/static/profesores/miguel-angel.webp',
       instrument: `${t('professors:miguel_instrument')}`,
       sentence_01: `${t('professors:miguel_para_1')}`,
       sentence_02: `${t('professors:miguel_para_2')}`,
