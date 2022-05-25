@@ -37,7 +37,7 @@ export default function Formulario() {
               <span className="font-bold">
                 {t('common:registration_subtitle_4')} {new Date().getFullYear()}
               </span>
-              {t('common:registration_subtitle_5')}.
+              {t('common:registration_subtitle_5')}
             </p>
           </div>
           {/* Warning message */}

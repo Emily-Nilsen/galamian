@@ -271,7 +271,7 @@ const common = {
   registration_subtitle_2: `.`,
   registration_subtitle_3: `Fecha límite para su presentación:`,
   registration_subtitle_4: `30 de junio de`,
-  registration_subtitle_5: `(incluido)`,
+  registration_subtitle_5: ` (incluido).`,
   // Warning
   registration_warning: `Aviso`,
   registration_warning_text: `Si abandona la página antes de enviar el formulario de inscripción, se borrarán todos los campos completados.`,
@@ -339,7 +339,7 @@ const common = {
   // Reconocimiento
   reconocimiento: `Reconocimiento`,
   reconocimiento_text: `Antes de presentar el formulario de inscripción, todas las aspirantes deben reconocer lo siguiente:`,
-  consent: `Reconozco que la información proporcionada con este formulario de inscripción es verdadera y correcta según mi leal saber y entender.`,
+  consent: `Reconozco que la información proporcionada con este formulario de inscripción es verdadera y correcta según mi leal saber y entender`,
   date: `Fecha`,
   cancel_button: `Cancelar`,
   submit_button: `Enviar`,

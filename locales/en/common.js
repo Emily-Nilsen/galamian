@@ -268,7 +268,7 @@ const common = {
   registration_subtitle_2: ` academic year.`,
   registration_subtitle_3: `The deadline for submission is up to and including`,
   registration_subtitle_4: `June 30, `,
-  registration_subtitle_5: ``,
+  registration_subtitle_5: `.`,
   // Warning
   registration_warning: `Warning`,
   registration_warning_text: `Leaving the page before submitting the registration form will clear all filled fields.`,
@@ -336,7 +336,7 @@ const common = {
   // Reconocimiento
   reconocimiento: `Acknowledgement`,
   reconocimiento_text: `Before submitting the registration form, all applicants must acknowledge the following:`,
-  consent: `I acknowledge that the information provided with this registration form is true and correct to the best of my knowledge.`,
+  consent: `I acknowledge that the information provided with this registration form is true and correct to the best of my knowledge`,
   date: `Date`,
   cancel_button: `Cancel`,
   submit_button: `Submit`,
