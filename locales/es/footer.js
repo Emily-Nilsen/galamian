@@ -1,5 +1,5 @@
 const footer = {
-  text: `Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con la estimable colaboración de Fundación Unicaja.`,
+  text: `Una iniciativa liderada por Jesús Reina y Anna Margrethe Nilsen, con la estimable colaboración de la Fundación Unicaja.`,
   copyright: `Academia Internacional Galamian. Todos los derechos reservados.`,
   estudia: `Estudia`,
   estudia_1: `Estudiar en la AIG`,

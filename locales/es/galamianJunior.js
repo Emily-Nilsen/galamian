@@ -12,7 +12,7 @@ const galamianJunior = {
   // Atención
   atencion_title: `Atención`,
   atencion_text_part_1: `Los alumnos que superen las audiciones convocadas para`,
-  atencion_text_part_2: `junio de`,
+  atencion_text_part_2: `julio de`,
   atencion_text_part_3: `comenzarán a estudiar en la Academia Internacional Galamian Junior a partir de`,
   atencion_text_part_4: `septiembre de`,
 

@@ -267,7 +267,7 @@ const common = {
   registration_subtitle_1: `Find the registration form below for the course access auditions for the`,
   registration_subtitle_2: ` academic year.`,
   registration_subtitle_3: `The deadline for submission is up to and including`,
-  registration_subtitle_4: `June 30, `,
+  registration_subtitle_4: `July 15, `,
   registration_subtitle_5: `.`,
   // Warning
   registration_warning: `Warning`,
