@@ -312,7 +312,7 @@ const common = {
   video_subtitle_start: `Debido a la circunstancias socio-sanitarias que vive España, la Academia Internacional Galamian convoca sus audiciones de acceso al curso`,
   video_subtitle_end: `de manera digital.`,
   video_text: `Para participar en ellas, se requerirá el envío de un vídeo en el que se evidencie al aspirante interpretando dos obras o movimientos de estilos contrastantes, de libre elección, el cual deberá estar alojado en alguna plataforma digital tipo YouTube o Vímeo.`,
-  video_url_placeholder: `www.ejemplo.com`,
+  video_url_placeholder: `http://www.ejemplo.com`,
   // Documentos
   documentos_title: `Documentos`,
   documentos_subtitle: `El formulario de inscripción de AIG requiere los siguientes documentos:`,

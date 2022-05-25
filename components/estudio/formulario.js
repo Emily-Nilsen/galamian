@@ -63,7 +63,7 @@ export default function Formulario() {
           </div>
         </div>
         <form
-          action="#"
+          action="/exito"
           subject="Formulario de Inscripcion – Academia Internacional Galamian"
           name="Formulario de Inscripcion AIG"
           data-netlify="true"
@@ -72,7 +72,7 @@ export default function Formulario() {
         >
           <input
             type="hidden"
-            name="Formulario de Inscripcion AIG"
+            name="form-name"
             value="Formulario de Inscripcion AIG"
           />
           <input
@@ -681,6 +681,7 @@ export default function Formulario() {
                             id="video"
                             name="video"
                             type="checkbox"
+                            required
                             className="w-4 h-4 rounded focus:ring-gold-500 text-gold-600 border-neutral-300"
                           />
                         </div>

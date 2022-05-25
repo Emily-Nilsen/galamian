@@ -309,7 +309,7 @@ const common = {
   video_subtitle_start: `Due to the socio-sanitary circumstances that Spain is experiencing, the Galamian International Academy digitally calls its auditions for course access for the`,
   video_subtitle_end: `academic year.`,
   video_text: `To participate in the auditions, applicants must create a video that shows the student interpreting two works or movements of contrasting styles of free choice. Applicants must upload the video on a digital platform like YouTube or Vimeo.`,
-  video_url_placeholder: `www.example.com`,
+  video_url_placeholder: `http://www.example.com`,
   // Documentos
   documentos_title: `Documents`,
   documentos_subtitle: `The GIA enrollment form requires the following documents:`,
