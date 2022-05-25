@@ -63,7 +63,7 @@ export default function Formulario() {
           </div>
         </div>
         <form
-          action="/exito"
+          action="#"
           subject="Formulario de Inscripcion – Academia Internacional Galamian"
           name="Formulario de Inscripcion AIG"
           data-netlify="true"
