@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       {/* Google Analytics */}
-      <Script
+      {/* <Script
         src="https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}"
         strategy="afterInteractive"
       />
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
 
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
         `}
-      </Script>
+      </Script> */}
       <Navbar />
       <Component {...pageProps} />
       <Footer />
