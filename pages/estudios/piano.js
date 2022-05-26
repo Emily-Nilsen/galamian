@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import { ExclamationIcon } from '@heroicons/react/solid';
 import { CheckIcon } from '@heroicons/react/outline';
@@ -79,7 +80,11 @@ export default function Piano() {
   ];
 
   return (
-    <section>
+    <Layout
+      title={t('layout:piano_title')}
+      description={t('layout:piano_description')}
+      keywords={t('layout:piano_keywords')}
+    >
       <div className="bg-white">
         <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -467,6 +472,6 @@ export default function Piano() {
       </div>
       <ProfesoresPiano />
       <PianoRequisitos />
-    </section>
+    </Layout>
   );
 }

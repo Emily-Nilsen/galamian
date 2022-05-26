@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../components/layout';
 import RegistrationFee from '../components/joag/registration-fee';
 import SignUp from '../components/joag/sign-up';
 import { Fragment } from 'react';
@@ -11,7 +12,11 @@ export default function Joag() {
   const { t } = useTranslation();
 
   return (
-    <section>
+    <Layout
+      title={t('layout:joag_title')}
+      description={t('layout:joag_description')}
+      keywords={t('layout:joag_keywords')}
+    >
       <div className="relative overflow-hidden bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -68,6 +73,6 @@ export default function Joag() {
       </div>
       <RegistrationFee />
       <SignUp />
-    </section>
+    </Layout>
   );
 }

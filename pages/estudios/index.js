@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Estudios() {
@@ -33,7 +34,12 @@ export default function Estudios() {
   ];
 
   return (
-    <div className="px-4 py-16 mx-auto bg-white max-w-7xl sm:py-24 sm:px-6 lg:px-8">
+    <Layout
+      title={t('layout:estudios_title')}
+      description={t('layout:estudios_description')}
+      keywords={t('layout:estudios_keywords')}
+      className="px-4 py-16 mx-auto bg-white max-w-7xl sm:py-24 sm:px-6 lg:px-8"
+    >
       <div className="text-center">
         <h2 className="mt-1 text-4xl font-semibold text-neutral-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
           {t('estudios:estudios_title_part_1')}{' '}
@@ -85,6 +91,6 @@ export default function Estudios() {
           ))}
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

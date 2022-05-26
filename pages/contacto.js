@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../components/layout';
 import Map from '../components/map';
 import useTranslation from 'next-translate/useTranslation';
 import { Fragment } from 'react';
@@ -15,7 +16,12 @@ import {
 export default function Contacto() {
   const { t } = useTranslation();
   return (
-    <div className="bg-neutral-50">
+    <Layout
+      title={t('layout:contacto_title')}
+      description={t('layout:contacto_description')}
+      keywords={t('layout:contacto_keywords')}
+      className="bg-neutral-50"
+    >
       <main className="overflow-hidden">
         {/* Header */}
         <div className="bg-neutral-50">
@@ -507,6 +513,6 @@ export default function Contacto() {
           </div>
         </section>
       </main>
-    </div>
+    </Layout>
   );
 }

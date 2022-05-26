@@ -6,6 +6,7 @@ import { Tab } from '@headlessui/react';
 import { ExclamationIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 
 function classNames(...classes) {
@@ -42,7 +43,11 @@ const Estudia = () => {
     },
   ];
   return (
-    <div>
+    <Layout
+      title={t('layout:estudia_title')}
+      description={t('layout:estudia_description')}
+      keywords={t('layout:estudia_keywords')}
+    >
       <div className="relative pb-6 bg-white lg:pb-24">
         <div aria-hidden="true" className="relative">
           <Image
@@ -126,7 +131,7 @@ const Estudia = () => {
           </div>
         </section>
       </div>
-    </div>
+    </Layout>
   );
 };
 

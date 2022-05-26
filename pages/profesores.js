@@ -6,6 +6,7 @@ import GrupalesProfesores from '../components/profesores/grupales-profesores';
 import { Fragment } from 'react';
 import { Tab } from '@headlessui/react';
 import useTranslation from 'next-translate/useTranslation';
+import Layout from '../components/layout';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -57,7 +58,11 @@ const Profesores = () => {
     },
   ];
   return (
-    <div>
+    <Layout
+      title={t('layout:profesores_title')}
+      description={t('layout:profesores_description')}
+      keywords={t('layout:profesores_keywords')}
+    >
       <div className="relative pt-16 bg-white sm:pt-24">
         <div className="relative max-w-xl px-4 pb-0 mx-auto lg:pb-4 sm:px-6 lg:px-8 lg:max-w-7xl">
           <h2 className="text-3xl font-semibold leading-8 tracking-tight text-center text-neutral-900 sm:text-4xl">
@@ -113,7 +118,7 @@ const Profesores = () => {
           </div>
         </section>
       </div>
-    </div>
+    </Layout>
   );
 };
 

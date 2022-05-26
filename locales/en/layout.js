@@ -36,7 +36,7 @@ const layout = {
   academia_description: `The history of the academy: the project, its founders and its headquarters.`,
   academia_keywords: `Pinchas Zukerman, Jesús Reina, Anna Nilsen, Málaga, Madrid, Oslo, London, New York, Ivan Galamian, Patinka Kopec, John Rockwell, Amanda Forsyth, Asier Polo, Paul Neubauer, founded 2014, the Unicaja Foundation, Unicaja María Concert Hall Cristina, Spain`,
   // contacto
-  contacto_title: `GIA | Contact`,
+  contacto_title: `GIA | Contact Us`,
   contacto_description: `Find out how to contact us at the Galamian International Academy.`,
   contacto_keywords: `contact, educational program, enrollment, enrolment, registration, projects, faculty, María Cristina Unicaja Concert Hall, Calle Marqués de Valdecañas, Málaga, Spain, secretaria.academiagalamian@gmail.com`,
   // junior

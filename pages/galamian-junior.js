@@ -6,6 +6,7 @@ import { Fragment } from 'react';
 import { Tab } from '@headlessui/react';
 import { ExclamationIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
+import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 
 function classNames(...classes) {
@@ -49,7 +50,11 @@ const GalamianJunior = () => {
     },
   ];
   return (
-    <div>
+    <Layout
+      title={t('layout:junior_title')}
+      description={t('layout:junior_description')}
+      keywords={t('layout:junior_keywords')}
+    >
       <div className="relative pb-6 bg-white lg:pb-24">
         <div aria-hidden="true" className="relative">
           <Image
@@ -153,7 +158,7 @@ const GalamianJunior = () => {
           </div>
         </section>
       </div>
-    </div>
+    </Layout>
   );
 };
 
