@@ -45,8 +45,8 @@ export default function Testimonial() {
       <div className="relative px-0 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <Carousel
           infiniteLoop
-          // autoPlay
-          // interval="9000"
+          autoPlay
+          interval="12000"
           transitionTime="500"
           useKeyboardArrows
           swipeable={false}

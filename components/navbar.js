@@ -36,34 +36,34 @@ export default function Navbar() {
   // Academy
   const academia = [
     {
-      name: `${t('common:navbar_link_1_title_1_1')}`,
+      name: `${t('navbar:link_1_title_1_1')}`,
       href: '/academia',
       icon: InformationCircleIcon,
     },
     {
-      name: `${t('common:navbar_link_1_title_1_2')}`,
+      name: `${t('navbar:link_1_title_1_2')}`,
       href: '/academia/#fundadores',
       icon: GlobeAltIcon,
     },
     {
-      name: `${t('common:navbar_link_1_title_1_3')}`,
+      name: `${t('navbar:link_1_title_1_3')}`,
       href: '/academia/#salaUnicaja',
       icon: LibraryIcon,
     },
     {
-      name: `${t('common:navbar_link_1_title_1_4')}`,
+      name: `${t('navbar:link_1_title_1_4')}`,
       href: '/contacto',
       icon: MailIcon,
     },
   ];
   const recursos = [
     {
-      name: `${t('common:navbar_link_1_title_2_1')}`,
+      name: `${t('navbar:link_1_title_2_1')}`,
       href: '/#noticias',
       icon: BellIcon,
     },
     {
-      name: `${t('common:navbar_link_1_title_2_3')}`,
+      name: `${t('navbar:link_1_title_2_3')}`,
       href: '/bulletin/',
       icon: NewspaperIcon,
     },
@@ -76,9 +76,9 @@ export default function Navbar() {
   const blogPosts = [
     {
       id: 1,
-      name: `${t('common:blogpost_name_1')}`,
+      name: `${t('navbar:blogpost_name_1')}`,
       href: '/bulletin',
-      preview: `${t('common:blogpost_preview_1')}`,
+      preview: `${t('navbar:blogpost_preview_1')}`,
       imageUrl: '/static/eventos.jpg',
     },
     // {
@@ -94,27 +94,27 @@ export default function Navbar() {
   // Study
   const estudiar = [
     {
-      name: `${t('common:estudiar_name_1')}`,
+      name: `${t('navbar:estudiar_name_1')}`,
       description: `${t(
-        'common:estudiar_description_1_part_1'
+        'navbar:estudiar_description_1_part_1'
       )} ${new Date().getFullYear()}/${new Date().getFullYear() + 1}${t(
-        'common:estudiar_description_1_part_2'
+        'navbar:estudiar_description_1_part_2'
       )}`,
       href: '/estudia',
       icon: AcademicCapIcon,
     },
     {
-      name: `${t('common:estudiar_name_2')}`,
-      description: `${t('common:estudiar_description_2_part_1')}`,
+      name: `${t('navbar:estudiar_name_2')}`,
+      description: `${t('navbar:estudiar_description_2_part_1')}`,
       href: '/estudios',
       icon: ClipboardListIcon,
     },
     {
-      name: `${t('common:estudiar_name_3')}`,
+      name: `${t('navbar:estudiar_name_3')}`,
       description: `${t(
-        'common:estudiar_description_3_part_1'
+        'navbar:estudiar_description_3_part_1'
       )}${new Date().getFullYear()}${t(
-        'common:estudiar_description_3_part_2'
+        'navbar:estudiar_description_3_part_2'
       )}`,
       href: '/estudia/formulario-de-inscripcion',
       icon: PencilAltIcon,
@@ -144,7 +144,7 @@ export default function Navbar() {
   ];
   const callsToAction = [
     {
-      name: `${t('common:callsToAction')}`,
+      name: `${t('navbar:callsToAction')}`,
       href: '/contacto',
       icon: PhoneIcon,
     },
@@ -153,19 +153,19 @@ export default function Navbar() {
   // Mobile Navbar
   const mobileTabs = [
     {
-      name: `${t('common:navbar_violin')}`,
+      name: `${t('navbar:violin')}`,
       href: `/estudios/violin`,
     },
     {
-      name: `${t('common:navbar_piano')}`,
+      name: `${t('navbar:piano')}`,
       href: `/estudios/piano`,
     },
     {
-      name: `${t('common:navbar_cello')}`,
+      name: `${t('navbar:cello')}`,
       href: `/estudios/violonchelo`,
     },
     {
-      name: `${t('common:navbar_voice')}`,
+      name: `${t('navbar:voice')}`,
       href: `/estudios/voz`,
     },
     {
@@ -229,9 +229,7 @@ export default function Navbar() {
                         'group bg-t inline-flex sm:text-left lg:text-center text-sm tracking-tight uppercase hover:text-neutral-900 focus:outline-none focus:ring-0 focus:text-gold-600 transition duration-300 ease-in-out items-center'
                       )}
                     >
-                      <span className="font-base">
-                        {t('common:navbar_link_1')}
-                      </span>
+                      <span className="font-base">{t('navbar:link_1')}</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-neutral-600' : 'text-neutral-400',
@@ -259,7 +257,7 @@ export default function Navbar() {
                           <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div className="self-start">
                               <h3 className="text-base font-bold tracking-tight uppercase text-neutral-600">
-                                {t('common:navbar_link_1_title_1')}
+                                {t('navbar:link_1_title_1')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
                                 {academia.map((item) => (
@@ -283,7 +281,7 @@ export default function Navbar() {
                             </div>
                             <div>
                               <h3 className="text-base font-bold tracking-tight uppercase text-neutral-600">
-                                {t('common:navbar_link_1_title_2')}
+                                {t('navbar:link_1_title_2')}
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
                                 {recursos.map((item) => (
@@ -310,7 +308,7 @@ export default function Navbar() {
                             <div className="px-4 py-8 text-left bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
                                 <h3 className="text-base font-bold tracking-normal uppercase text-neutral-600">
-                                  {t('common:navbar_link_1_title_3')}
+                                  {t('navbar:link_1_title_3')}
                                 </h3>
                                 <ul role="list" className="mt-6 space-y-6">
                                   {blogPosts.map((post) => (
@@ -375,7 +373,7 @@ export default function Navbar() {
                       )}
                     >
                       <span className="uppercase font-base">
-                        {t('common:navbar_link_2')}
+                        {t('navbar:link_2')}
                       </span>
                       <ChevronDownIcon
                         className={classNames(
@@ -451,7 +449,7 @@ export default function Navbar() {
                             <div className="items-stretch px-4 py-8 text-left bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
                                 <h3 className="text-base font-bold tracking-tight uppercase text-neutral-600">
-                                  {t('common:navbar_link_1_title_4')}
+                                  {t('navbar:link_1_title_4')}
                                 </h3>
                                 <ul role="list" className="mt-5 space-y-6">
                                   {callsToAction.map((item) => (
@@ -496,7 +494,7 @@ export default function Navbar() {
               {/* Profesores */}
               <Link href="/profesores" passHref>
                 <a className="self-end text-sm tracking-tight uppercase transition duration-300 ease-in-out text-neutral-500 hover:text-neutral-900">
-                  {t('common:navbar_link_3')}
+                  {t('navbar:link_3')}
                 </a>
               </Link>
               {/* Profesores */}

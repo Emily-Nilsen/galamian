@@ -305,16 +305,12 @@ export default function Piano() {
             </h1>
             <p className="mt-8 text-xl leading-8 text-neutral-600">
               {t('common:estudio_para_01_part_1_piano')}{' '}
-              <span className="font-semibold tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
-                <Link href="/profesores/#" passHref>
-                  {t('common:estudio_para_01_part_2_piano')}
-                </Link>{' '}
+              <span className="font-semibold tracking-tight text-neutral-900">
+                {t('professors:misha_name')}, {t('professors:josu_name')}{' '}
               </span>
               {t('common:estudio_para_01_part_3')}{' '}
-              <span className="font-semibold tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
-                <Link href="/profesores/#" passHref>
-                  {t('common:estudio_para_01_part_4_piano')}
-                </Link>{' '}
+              <span className="font-semibold tracking-tight text-neutral-900">
+                {t('professors:antonio_name')}{' '}
               </span>
               {t('common:estudio_para_01_part_5_piano')}
             </p>

@@ -292,16 +292,12 @@ export default function Voz() {
             </h1>
             <p className="mt-8 text-xl leading-8 text-neutral-600">
               {t('common:estudio_para_01_part_1_voz')}{' '}
-              <span className="tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
-                <Link href="/profesores/#nils" passHref>
-                  {t('common:estudio_para_01_part_2_voz')}
-                </Link>{' '}
+              <span className="font-semibold tracking-tight text-neutral-900">
+                {t('professors:nils_name')}{' '}
               </span>
               {t('common:estudio_para_01_part_3_voz')}{' '}
-              <span className="tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
-                <Link href="/profesores/#sergio" passHref>
-                  {t('common:estudio_para_01_part_4_voz')}
-                </Link>{' '}
+              <span className="font-semibold tracking-tight text-neutral-900">
+                {t('professors:sergio_name')}{' '}
               </span>
               {t('common:estudio_para_01_part_5_voz')}
             </p>

@@ -302,16 +302,12 @@ export default function Violonchelo() {
             </h1>
             <p className="mt-8 text-xl leading-8 text-neutral-600">
               {t('common:estudio_para_01_part_1_violonchelo')}{' '}
-              <span className="font-semibold tracking-tight no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
-                <Link href="/profesores/#jesus" passHref>
-                  {t('common:estudio_para_01_part_2_violonchelo')}
-                </Link>{' '}
+              <span className="font-semibold tracking-tight text-neutral-900 ">
+                {t('professors:oyvind_name')}{' '}
               </span>
               {t('common:estudio_para_01_part_3')}{' '}
-              <span className="font-semibold tracking-tight no-underline transition duration-200 ease-in-out text-gold-600 hover:text-gold-500 hover:underline">
-                <Link href="/profesores/#anna" passHref>
-                  {t('common:estudio_para_01_part_4_violonchelo')}
-                </Link>{' '}
+              <span className="font-semibold tracking-tight text-neutral-900 ">
+                {t('professors:tilman_name')}{' '}
               </span>
               {t('common:estudio_para_01_part_5_violonchelo')}
             </p>

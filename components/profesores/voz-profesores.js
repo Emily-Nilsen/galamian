@@ -14,9 +14,9 @@ export default function VozProfesores() {
 
   const people = [
     {
-      name: 'Nils Georg Nilsen',
+      name: `${t('professors:nils_name')}`,
       role: `${t('professors:nils_role')}`,
-      imageUrl: '/static/profesores/nils-nilsen.webp',
+      imageUrl: `${t('professors:nils_image')}`,
       instrument: `${t('professors:nils_instrument')}`,
       sentence_01: `${t('professors:nils_para_1')}`,
       sentence_02: `${t('professors:nils_para_2')}`,
@@ -25,9 +25,9 @@ export default function VozProfesores() {
       href: `${t('professors:nils_href')}`,
     },
     {
-      name: 'Sergio Montero',
+      name: `${t('professors:sergio_name')}`,
       role: `${t('professors:sergio_role')}`,
-      imageUrl: '/static/profesores/sergio-montero.webp',
+      imageUrl: `${t('professors:sergio_image')}`,
       instrument: `${t('professors:sergio_instrument')}`,
       sentence_01: `${t('professors:sergio_para_1')}`,
       sentence_02: `${t('professors:sergio_para_2')}`,
@@ -36,9 +36,9 @@ export default function VozProfesores() {
       href: `${t('professors:sergio_href')}`,
     },
     {
-      name: 'Mariola Cantarero',
+      name: `${t('professors:mariola_name')}`,
       role: `${t('professors:mariola_role')}`,
-      imageUrl: '/static/profesores/mariola-cantarero.webp',
+      imageUrl: `${t('professors:mariola_image')}`,
       instrument: `${t('professors:mariola_instrument')}`,
       sentence_01: `${t('professors:mariola_para_1')}`,
       sentence_02: `${t('professors:mariola_para_2')}`,
@@ -47,9 +47,9 @@ export default function VozProfesores() {
       href: `${t('professors:mariola_href')}`,
     },
     {
-      name: 'Joel Prieto',
+      name: `${t('professors:joel_name')}`,
       role: `${t('professors:joel_role')}`,
-      imageUrl: '/static/profesores/joel-prieto.jpg',
+      imageUrl: `${t('professors:joel_image')}`,
       instrument: `${t('professors:joel_instrument')}`,
       sentence_01: `${t('professors:joel_para_1')}`,
       sentence_02: `${t('professors:joel_para_2')}`,
@@ -58,9 +58,9 @@ export default function VozProfesores() {
       href: `${t('professors:joel_href')}`,
     },
     {
-      name: 'Francisco Araiza',
+      name: `${t('professors:araiza_name')}`,
       role: `${t('professors:araiza_role')}`,
-      imageUrl: '/static/profesores/francisco-araiza.jpg',
+      imageUrl: `${t('professors:araiza_image')}`,
       instrument: `${t('professors:araiza_instrument')}`,
       sentence_01: `${t('professors:araiza_para_1')}`,
       sentence_02: `${t('professors:araiza_para_2')}`,

@@ -2,7 +2,7 @@
   "locales": ["en", "es"],
   "defaultLocale": "es",
   "pages": {
-    "*": ["common", "professors", "navbar", "footer"],
+    "*": ["common", "professors", "navbar", "footer", "layout"],
     "/": ["inicio"],
     "/bulletin": ["bulletin"],
     "/estudia": ["estudia"],

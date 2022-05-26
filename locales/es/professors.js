@@ -1,6 +1,8 @@
 const professors = {
   // VIOLIN & VIOLA
   // Jesus Reina
+  jesus_name: `Jesus Reina`,
+  jesus_image: `/static/profesores/jesus.jpg`,
   jesus_role: `Profesor Principal`,
   jesus_chamber_role: `Violín & Viola`,
   jesus_instrument: `Violín & Viola`,
@@ -11,6 +13,8 @@ const professors = {
   jesus_href: `https://www.jesusreina.es/`,
 
   // Anna Margrethe Nilsen
+  anna_name: `Anna Nilsen`,
+  anna_image: `/static/profesores/anna.jpg`,
   anna_role: `Profesora Principal`,
   anna_chamber_role: `Violín & Viola`,
   anna_instrument: `Violín & Viola`,
@@ -22,6 +26,8 @@ const professors = {
   anna_href: `https://www.annanilsen-violin.com/`,
 
   // Laura Romero
+  laura_name: `Laura Romero`,
+  laura_image: `/static/profesores/laura-romero.jpeg`,
   laura_role: `Profesora Asistente`,
   laura_instrument: `Violín & Viola`,
   laura_para_1: `Nacida en Málaga, Laura Romero Alba comienza a tocar el violín a la edad de siete años.`,
@@ -29,12 +35,16 @@ const professors = {
   laura_para_3: `Ha ofrecido conciertos en distintos puntos de Europa y Estados Unidos, formando parte de orquestas como Columbus Indiana Philarmonic, Richmond Symphony Orchestra o Terre Haute Symphony Orchestra, la Orquesta Filarmónica de Málaga y la Joven Orquesta Nacional de España. Actualmente es la profesora asistente de violín y viola en la Academia Internacional Galamian en Málaga.`,
 
   // Irene Ortega
+  irene_name: `Irene Ortega`,
+  irene_image: `/static/galamian-junior/irene.jpg`,
   irene_role: `Profesora Residente `,
   irene_para_1: `Violinista nacida en Jerez de la Frontera, recibe sus primeras clases de violín a la edad de cuatro años.`,
   irene_para_2: `Tras recibir consejo de violinistas de la talla de Pinchas Zukerman, Patinka Kopec, Grigory Kalinovsky, Alexander Sitkovetsky o Bretislav Novotný, en el año 2019 obtuvo su licenciatura en la Academia Internacional Galamian a través de The Royal Schools of Music, bajo la tutela de los violinistas Jesús Reina y Anna Nilsen.`,
   irene_para_3: `En el ámbito de la música de cámara se ha formado con músicos de renombre internacional como los integrantes del Cuarteto Casals Abel Tomás y Arnau Tomás, los pianistas Josu de Solaun, Anna Petrova y Misha Dacic, y los violonchelistas Øyvind Gimsey Kyril Zlotnikov.`,
 
   // Alfredo García
+  alfredo_name: `Alfredo García`,
+  alfredo_image: `/static/profesores/alfredo-garcia.jpeg`,
   alfredo_role: `Profesor Invitado`,
   alfredo_instrument: `Violín`,
   alfredo_para_1: `Reconocido por la crítica musical como uno de los violinistas más destacados de su generación, Alfredo García Serrano (León, 1971) disfruta actualmente de una intensa carrera como pedagogo y concertista, la cual le ha llevado por toda la geografía española y mundial a actuar en países como Japón, Corea, Turquía, Italia, Polonia, Austria, Francia, Portugal, E.E.U.U. México, Argentina o España entre otros.`,
@@ -44,12 +54,16 @@ const professors = {
   alfredo_href: `https://www.alfredogarciaserrano.com/`,
 
   // Natalia Kuchaeva
+  natalia_name: `Natalia Kuchaeva`,
+  natalia_image: `/static/galamian-junior/natalia.jpg`,
   natalia_role: `Método Brainin`,
   natalia_para_1: `Procedente de una familia de científicos y de gran tradición musical, la pianista moscovita Natalia Kucháeva reside en España desde el año 2009. Su repertorio abarca el más amplio abanico de estilos desde el barroco hasta el siglo XXI.`,
   natalia_para_2: `Recibe una sólida formación musical en la Escuela de Música afiliada al Conservatorio Estatal P.I. Tchaikovsky de Moscú y en la Academia Gnessin donde se gradúa y realiza los estudios de Posgrado bajo la dirección del maestro Vladimir Tropp.`,
   natalia_para_3: `Se perfecciona en la Escuela Superior de Música de Lucerna (Suiza), con el pianista de reconocido prestigio internacional Konstantin Lifschitz. Actualmente desarrolla su labor como docente aplicando el Método Brainin en su enseñanza.`,
 
   // Vicente Chulía
+  vicente_name: `Vicente Chulía`,
+  vicente_image: `/static/galamian-junior/chulia.jpg`,
   vicente_role: `Principios Fundamentales de la Interpretación Musical`,
   vicente_para_1: `Director de orquesta y compositor español que incorpora ambas facetas inseparables del arte musical a una idea amplia de la interpretación sinfónica, ha estudiado dirección de orquesta en el Conservatorio Superior de Música “Musikene” de San Sebastián con el Maestro Enrique García Asensio y es graduado de dirección en el Real Conservatorio Superior de Madrid con Antonio Moya.`,
   vicente_para_2: `También tiene formación de armonía, contrapunto, fuga, orquestación y composición con Salvador Chuliá Hernández y musicología con José Climent.`,
@@ -58,6 +72,8 @@ const professors = {
   vicente_href: `https://www.vicentechulia.com/`,
 
   // Grigory Kalinovsky
+  grigory_name: `Grigory Kalinovsky`,
+  grigory_image: `/static/profesores/grigory-kalinovsky.jpg`,
   grigory_role: `Profesor Invitado`,
   grigory_instrument: `Violín`,
   grigory_para_1: `Aclamado por la crítica como un “poeta superior” (Vancouver Sun), el violinista Grigory Kalinovsky ha actuado en conciertos en todo el mundo en algunas de las salas más prestigiosas, desde el Carnegie Hall en Nueva York hasta Musikhalle Grosser Saal en Hamburgo.`,
@@ -68,6 +84,8 @@ const professors = {
   grigory_href: `https://www.grigorykalinovsky.com/`,
 
   // Alexander Sitkovetsky
+  alexander_name: `Alexander Sitkovetsky`,
+  alexander_image: `/static/profesores/alexander-sitkovetsky.jpg`,
   alexander_role: `Profesor Invitado`,
   alexander_chamber_role: `Violín`,
   alexander_instrument: `Violín`,
@@ -77,6 +95,10 @@ const professors = {
   alexander_para_4: `Alexander comenzó a formar parte de la prestigiosa Chamber Music Society Two en el Lincoln Center de Nueva York. Junto a la pianista Wu Qian y el cellista Isang Enders, Alexander es miembro del Sitkovetsky Piano Trio, actuando frecuentemente en el Wigmore Hall de Inglaterra al igual que por Europa en salas como el Concertgebouw de Amsterdam y la Frankfurt Alte Oper.`,
 
   // Salvador Esteve
+  salvador_name: `Salvador Esteve`,
+  salvador_image: `/static/profesores/salvador-esteve.jpg`,
+  salvador_name: `Salvador Esteve`,
+  salvador_image: `/static/profesores/salvador-esteve.jpg`,
   salvador_role: `Profesor Invitado`,
   salvador_instrument: `Violín`,
   salvador_para_1: `Ha sido galardonado con el Primer Premio en el Concurso Ciudad de Sóller, VII Concurso Nacional Ruperto Chapí de Villena y en el I Concurso Nacional Ciudad de Xàtiva.`,
@@ -84,6 +106,10 @@ const professors = {
   salvador_para_3: `Salvador Esteve es profesor titular de violín en el Real Conservatorio Profesional de Música de Almería, y es profesor invitado de la Academia Galamian de Málaga.`,
 
   // Koh Gabriel Kameda
+  koh_name: `Koh Gabriel Kameda`,
+  koh_image: `/static/profesores/koh-gabriel-kameda.jpg`,
+  koh_name: `Koh Gabriel Kameda`,
+  koh_image: `/static/profesores/koh-gabriel-kameda.jpg`,
   koh_role: `Profesor Invitado`,
   koh_instrument: `Violín`,
   koh_para_1: `Ganador del concurso internacional de Violín Henry Szering (México), el Sr. Kameda ha actuado como solista con orquestas como la Filarmónica de Israel, Filarmónica de Japón, Filarmónica de Baden-Baden, Staatskapelle Dresden, Sinfónica de Berlín, Sinfónica Austriaca de Radio y Televisión, Orquesta Bélgica de Radio y Televisión, Orquesta de Cámara de Zurich, Sinfónica Nacional de Irlanda, Sinfónica de Tokio, Filarmónica de la Ciudad de México y Sinfónica de Venezuela.`,
@@ -91,6 +117,10 @@ const professors = {
   koh_para_3: `El Sr. Kameda ha sido profesor en la Universidad de las Artes de Zurich, y actualmente es profesor en la Universidad de Música Detmold y la Universidad de Münster en Alemania.`,
 
   // Molly Carr
+  molly_name: `Molly Carr`,
+  molly_image: `/static/profesores/molly-carr.jpg`,
+  molly_name: `Molly Carr`,
+  molly_image: `/static/profesores/molly-carr.jpg`,
   molly_role: `Profesora Invitada`,
   molly_chamber_role: `Viola`,
   molly_instrument: `Viola`,
@@ -101,6 +131,10 @@ const professors = {
   molly_href: `https://molly-carr.com/`,
 
   // Jordán Tejedor
+  jordan_name: `Jordán Tejedor`,
+  jordan_image: `/static/profesores/jordan-tejedor.jpeg`,
+  jordan_name: `Jordán Tejedor`,
+  jordan_image: `/static/profesores/jordan-tejedor.jpeg`,
   jordan_role: `Profesor Invitado`,
   jordan_instrument: `Violín`,
   jordan_para_1: `Premiado en los concursos nacionales más importantes del país, Jordán Tejedor es uno de los violinistas y pedagogos más destacados de su generación en el panorama musical español. Aprobó las oposiciones al Cuerpo de Profesores de Música el año 2006 en la especialidad de violín y viola simultáneamente.`,
@@ -109,6 +143,10 @@ const professors = {
   jordan_para_4: `Tras obtener el primer premio en el «Concurso Permanente 2002» de Juventudes Musicales de España en la modalidad solista de instrumentos de arco y la medalla de plata en «El Primer Palau 2003» del Palau de la Música Catalana, comienza una intensa carrera como solista y músico de cámara. En sus actuaciones destacan la integral de los conciertos para violín de J. S. Bach, W. A. Mozart y J. Brahms junto a orquestas como la ORTVE, Orquesta de Cámara «Gonçal Comellas», JONC y Orquesta Sinfónica de la Musikhochschule Saarland de Saarbrucken. Así mismo realiza grabaciones para “Los conciertos de la 2” de TVE, Radio Clásica de RNE y Catalunya Radio.`,
 
   // Joaquín Riquelme
+  joaquin_name: `Joaquín Riquelme`,
+  joaquin_image: `/static/profesores/joaquin-riquelme.jpg`,
+  joaquin_name: `Joaquín Riquelme`,
+  joaquin_image: `/static/profesores/joaquin-riquelme.jpg`,
   joaquin_role: `Profesor Invitado`,
   joaquin_instrument: `Violín`,
   joaquin_para_1: `Joaquín Riquelme inició sus estudios musicales en su Murcia natal con Pedro Navarro Esteban y Antonio Clares, continuándolos en el Real Conservatorio Superior de Música de Madrid con Emilio Mateu y Alan Kovacs. Posteriormente estudió en la Universidad de las Artes de Berlín (Universität der Künste Berlin), en donde estudió con Hartmut Rohde.`,
@@ -120,6 +158,9 @@ const professors = {
   // PIANO
 
   // Misha Dacić
+  misha_name: `Misha Dacić`,
+  misha_image: `/static/profesores/misha-dacic.jpg`,
+  misha_name: `Misha Dacić`,
   misha_role: `Profesor Invitado Principal`,
   misha_chamber_role: `Piano`,
   misha_instrument: `Piano`,
@@ -130,6 +171,9 @@ const professors = {
   misha_href: `https://www.mishadacic.com/`,
 
   // Josu De Solaun
+  josu_name: `Josu De Solaun`,
+  josu_image: `/static/profesores/josu-de-solaun.jpg`,
+  josu_name: `Josu De Solaun`,
   josu_role: `Profesor Invitado Principal`,
   josu_chamber_role: `Piano`,
   josu_instrument: `Piano`,
@@ -140,6 +184,9 @@ const professors = {
   josu_href: `https://www.josudesolaun.com/`,
 
   // Antonio Ortiz
+  antonio_name: `Antonio Ortíz`,
+  antonio_image: `/static/profesores/antonio-ortiz.webp`,
+  antonio_name: `Antonio Ortíz`,
   antonio_role: `Profesor Principal`,
   antonio_instrument: `Piano`,
   antonio_para_1: `Actualmente Catedrático de Piano en el Conservatorio Superior de Música de Málaga, Antonio Ortiz compagina la docencia con su actividad concertística, siendo regularmente invitado a participar en salas de reconocido prestigio del ámbito nacional e internacional.`,
@@ -147,6 +194,8 @@ const professors = {
   antonio_para_3: `Ha realizado conciertos con las principales orquestas españolas como la Orquesta Sinfónica de Radio Televisión Española, Joven Orquesta Nacional de España y Orquesta Filarmónica de Málaga, bajo la dirección de Aldo Ceccato, Bruno Aprea, Fusao Kajima, Pablo Mielgo, Manuel Hernández-Silva, Roselín Pabón y Blanca Trabalón. Ha obtenido premios en los concursos "Manuel de Falla” y "José Roca” y efectuado diferentes grabaciones para TVE y Radio Clásica de RNE.`,
 
   // Miguel Ángel Latorre
+  miguel_name: `Miguel Ángel Latorre`,
+  miguel_image: `/static/profesores/miguel-angel.webp`,
   miguel_role: `Pianista Acompañante`,
   miguel_instrument: `Piano`,
   miguel_para_1: `Realizó sus estudios de piano en el Conservatorio Profesional Gonzalo Martín Tenllado y en el Conservatorio Superior de Málaga, finalizando en 2018 bajo la tutela de Juan Jesús Peralta.`,
@@ -154,6 +203,8 @@ const professors = {
   miguel_para_3: `Actualmente, continúa su formación con los pianistas Nuria Perles y Javier Herreros. Es finalista en tres ediciones de la Muestra de Jóvenes Intérpretes Málaga Crea, obteniendo el Segundo Premio en el año 2018. Desde 2019, colabora con la Academia Ivan Galamian como pianista acompañante.`,
 
   // Anna Petrova
+  petrova_name: `Anna Petrova`,
+  petrova_image: `/static/profesores/anna-petrova.jpg`,
   petrova_role: `Profesora Invitada`,
   petrova_chamber_role: `Piano`,
   petrova_instrument: `Piano`,
@@ -164,6 +215,8 @@ const professors = {
   petrova_href: `https://www.annapetrovapianist.com/`,
 
   // Francesco Libetta
+  francesco_name: `Francesco Libetta`,
+  francesco_image: `/static/profesores/francesco-libetta.webp`,
   francesco_role: `Profesor Invitado`,
   francesco_instrument: `Piano`,
   francesco_para_1: `Francesco Libetta, a poet-aristocrat of the keyboard with the profile and carriage of a Renaissance prince» (M. Gurewitsch, The New York Times), was claimed to be «important pianist» (H. Schonberg), «un génie du piano comme on en voit peu» (O. Bellamy, Le Monde de la Musique), «Klaviergroßmeister» (T. R. Schulz, Hamburger Abendblatt), «figure-culte»(L. Sabbatini in La Tribune de Geneve). John Ardoin declared that of the new generation of pianists, Francesco Libetta is “the most inspired and creative”. Harold Schonberg wrote that: “master of every period and style, Libetta is the best representative of this modern style (…) who accepts virtuosity not as tightrope walking but as a species of literalism, where musical meaning is more important than knock’-em dead fingerwork (American Record Guide). With his multiform career as a composer, conductor and pianist, Francesco Libetta has given concerts all over the world. He has received commissions from European, Japanese and American associations and festivals for orchestral, chamber and electro-acoustic compositions. His repertoire as a conductor includes symphonic works by Wagner, Debussy and Mozart, as well as his own works, opera and ballet (Sleeping Beauty, Nutcracker).`,
@@ -217,6 +270,8 @@ const professors = {
   alberto_href: `http://www.albertomartos.com/`,
 
   // Pablo Martos
+  pablo_name: `Pablo Martos`,
+  pablo_image: `/static/profesores/pablo_martos.webp`,
   pablo_chamber_role: `Violín`,
   pablo_instrument: `Violín`,
   pablo_para_1: `Su rica actividad musical le ha llevado a tocar en prestigiosas salas de Europa, EEUU, Rusia o Israel. Tras su paso como miembro de la orquesta West-Eastern-Divan dirigida por Daniel Barenboim y fruto de este vínculo con los proyectos del maestro, ha realizado giras e impartido masterclasses en Oriente Medio.`,
@@ -253,6 +308,8 @@ const professors = {
   // VOZ
 
   // Nils Georg
+  nils_name: `Nils Georg`,
+  nils_image: `/static/profesores/nils-nilsen.webp`,
   nils_role: `Profesor Principal`,
   nils_instrument: `Tenor`,
   nils_para_1: `Nils Nilsen, solista, de origen noruego y profesor de voz, ejerce como profesor de técnica vocal en la Academia Internacional Galamian. Debutó en 2012 en el Avery Fisher Hall de Nueva York y ha actuado con las compañías "Opera Tampa" y "Norwegian Opera" y con la orquesta de Cámara de Minsk. Con 13 años cantó junto a Dama Kiribati te Kanawa, formando un dúo artístico en la sala Spectrum de Oslo.`,
@@ -262,6 +319,8 @@ const professors = {
   nils_href: `https://nilsnilsentenor.com/`,
 
   // Sergio Montero
+  sergio_name: `Sergio Montero`,
+  sergio_image: `/static/profesores/sergio-montero.webp`,
   sergio_role: `Maestro Repertorista`,
   sergio_instrument: `Piano`,
   sergio_para_1: `Es profesor superior de piano, música de cámara, solfeo y teoría de la música por el Conservatorio Superior de Música de Málaga, donde ha recibido el Premio de Honor en Piano y Música de Cámara. Además es profesor numerario del Conservatorio Profesional de Música Manuel Carra (Málaga).`,
@@ -269,6 +328,8 @@ const professors = {
   sergio_para_3: `Recibió la insignia de Plata al Mérito Artístico por la Fundación de Cultura del Ayuntamiento de La Línea de la Concepción y ha sido jurado del IX Concurso Internacional de Piano de Campillos. Colabora habitualmente con la Orquesta Filarmónica de Málaga y es maestro repertorista y profesor asistente del tenor noruego Nils Nilsen en la Academia Internacional Galamian.`,
 
   // Mariola Cantarero
+  mariola_name: `Mariola Cantarero`,
+  mariola_image: `/static/profesores/mariola-cantarero.webp`,
   mariola_role: `Profesora Invitada`,
   mariola_instrument: `Soprano`,
   mariola_para_1: `Ha sido premiada en diferentes concursos internacionales de canto como el "Francisco Viñas", "Operalia ́99", "Pedro Lavirgen" y "A.S.L.I.C.O. 2000”, y recibido premios como "Premio ópera Actual", "Revelación del círculo de amigos del Liceo", "Premio Imagen de la Ciudad de Granada", "Ojo Crítico de RNE", "La Mención de Honor de la Diputación de Granada", "La Medalla de Oro de la Ciudad de Granada", así como "La Medalla de Oro de Andalucía”.`,
@@ -278,6 +339,8 @@ const professors = {
   mariola_href: `https://mariola-cantarero.es/`,
 
   // Joel Prieto
+  joel_name: `Joel Prieto`,
+  joel_image: `/static/profesores/joel-prieto.jpg`,
   joel_role: `Profesor Invitado`,
   joel_instrument: `Tenor`,
   joel_para_1: `Desde que le fue otorgado por unanimidad el primer lugar del premio Operalia 2008 patrocinado por Plácido Domingo, Joel Prieto se ha convertido en uno de los artistas más solicitados de su generación, cantando en la mayoría de las más prestigiosas casas de ópera y salas de concierto del mundo. El cantante nacido en España y criado en Puerto Rico aporta profundidad vocal y dramática a sus papeles, infundiéndoles elegancia, vitalidad y belleza.`,
@@ -287,6 +350,8 @@ const professors = {
   joel_href: `https://www.joelprieto.com/`,
 
   // Francisco Araiza
+  araiza_name: `Francisco Araiza`,
+  araiza_image: `/static/profesores/francisco-araiza.jpg`,
   araiza_role: `Profesor Invitado`,
   araiza_instrument: `Tenor`,
   araiza_para_1: `This versatile artist, who had already achieved world fame as the best interpreter of Mozart and Rossini, developed from 1983 into one of the leading representatives of the dramatic Italian, French and German repertoire.`,
@@ -297,6 +362,8 @@ const professors = {
   araiza_href: `http://www.franciscoaraiza.com/`,
 
   // José Vélez
+  velez_name: `José Vélez`,
+  velez_image: `/static/profesores/jose-velez.jpeg`,
   velez_chamber_role: `Cantante`,
   velez_instrument: `Cantante`,
   velez_para_1: `In the late 1960s, a music teacher from the Organización Juvenil Española (Spanish Youth Organisation) had the idea to create the music group Grupo Marabilla with some of his students, among them the Spanish singer José Velázquez. When the group separated, he began his solo career. In 1968 he participated in Madrid's talent contest "Salto a la Fama". He began to get recognition from that point, which led him to establish himself in Madrid.`,
@@ -307,6 +374,8 @@ const professors = {
 
   // CONDUCTORS
   // José Andrés Camacho
+  jose_name: `José Andrés Camacho`,
+  jose_image: `/static/profesores/jose-camacho.webp`,
   jose_role: `Orquesta`,
   jose_group_role: `Orquesta Juvenil y Infantil`,
   jose_instrument: `Orquesta Juvenil y Infantil`,
@@ -315,6 +384,8 @@ const professors = {
   jose_para_3: `Su recorrido como director de orquesta le ha llevado a ser premiado en el I Curso Internacional de Dirección Orquestal en la Serena (Chile) y a dirigir orquestas en España y Suiza, como la Orquesta Juventus Musica Basel, Ensemble de la Hochschule für Musik Basel, Orquesta Málaga Camerata y la Orquesta Universidad de la Serena, entre otras.`,
 
   // Tomás Grau
+  grau_name: `Tomás Grau`,
+  grau_image: `/static/profesores/tomas-grau.jpg`,
   grau_group_role: `Orquesta Academia Galamian`,
   grau_instrument: `Orquesta Academia Galamian`,
   grau_para_1: `Director inspirado y de gran sensibilidad, Tomàs Grau se caracteriza por su gesto preciso y claro y por la sinceridad de sus lecturas musicales, que buscan transmitir de manera diáfana las verdaderas emociones que hay en cada una de las partituras, compartiendo con el público su amor por la música.`,
