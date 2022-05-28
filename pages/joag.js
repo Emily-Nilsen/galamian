@@ -7,6 +7,7 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function Joag() {
   const { t } = useTranslation();
@@ -41,7 +42,7 @@ export default function Joag() {
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-lg font-medium tracking-tight text-neutral-900 sm:text-xl">
                   <span className="block xl:inline">{t('joag:title_1')}</span>{' '}
-                  <span className="block pt-2 text-4xl font-bold sm:text-5xl text-gold-600 xl:inline">
+                  <span className="block pt-2 text-4xl font-bold sm:text-5xl text-gold-600 xl:block">
                     {t('joag:title_2')}
                   </span>
                   <span className="block pt-2 xl:inline">
@@ -60,15 +61,25 @@ export default function Joag() {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <div className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="object-cover w-auto h-56 sm:h-72 md:h-96 lg:w-full lg:h-full bg-gold-600"
+          >
             <Image
-              src="/static/joag-img-1.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/joag-img-1_huo80l.webp"
               alt="JOAG"
               layout="fill"
               objectFit="cover"
               objectPosition="bottom"
+              unoptimized={true}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       <RegistrationFee />

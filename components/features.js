@@ -5,6 +5,7 @@ import {
   UserGroupIcon,
 } from '@heroicons/react/outline';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function Features() {
   const { t } = useTranslation();
@@ -82,8 +83,20 @@ export default function Features() {
             </h2>
           </div>
           <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
-            {features.map((feature) => (
-              <div key={feature.name}>
+            {features.map((feature, i) => (
+              <motion.div
+                initial={{
+                  opacity: 0,
+                }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  initialDelay: 0.3,
+                  duration: 0.7,
+                  delay: i * 0.3,
+                  type: 'fade',
+                }}
+                key={i}
+              >
                 <dt>
                   <div className="flex items-center justify-center w-12 h-12 bg-neutral-50 text-gold-500">
                     <feature.icon className="w-6 h-6" aria-hidden="true" />
@@ -95,7 +108,7 @@ export default function Features() {
                 <dd className="mt-2 text-base text-neutral-600">
                   {feature.description}
                 </dd>
-              </div>
+              </motion.div>
             ))}
           </dl>
         </div>

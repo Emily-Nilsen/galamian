@@ -10,31 +10,31 @@ export default function Testimonial() {
 
   const testimonials = [
     {
-      image: `/static/testimonial-1.webp`,
+      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712311/Galamian/general/testimonial-1_nyd1u4.webp`,
       text: `${t('inicio:testimonial_text_1')}`,
       author: `${t('inicio:testimonial_author_1')}`,
       position: `${t('inicio:testimonial_source_1')}`,
     },
     {
-      image: `/static/testimonial-2.webp`,
+      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712311/Galamian/general/testimonial-2_wezoks.webp`,
       text: `${t('inicio:testimonial_text_2')}`,
       author: `${t('inicio:testimonial_author_2')}`,
       position: `${t('inicio:testimonial_source_2')}`,
     },
     {
-      image: `/static/estudia/violin/violin-photo-02.webp`,
+      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-photo-02_cmm2lu.webp`,
       text: `${t('inicio:testimonial_text_3')}`,
       author: `${t('inicio:testimonial_author_3')}`,
       position: `${t('inicio:testimonial_source_3')}`,
     },
     {
-      image: `/static/testimonial-2.webp`,
+      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/testimonial-3_tblpe0.webp`,
       text: `${t('inicio:testimonial_text_4')}`,
       author: `${t('inicio:testimonial_author_4')}`,
       position: `${t('inicio:testimonial_source_4')}`,
     },
     {
-      image: `/static/testimonial-4.webp`,
+      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/testimonial-4_lkcerl.webp`,
       text: `${t('inicio:testimonial_text_5')}`,
       author: `${t('inicio:testimonial_author_5')}`,
       position: `${t('inicio:testimonial_source_5')}`,
@@ -81,18 +81,16 @@ export default function Testimonial() {
             );
           }}
         >
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, i) => (
             <div
-              key={testimonial.author}
+              key={i}
               className="relative h-full px-8 py-24 bg-gold-600 lg:px-16 lg:grid lg:grid-cols-2 lg:gap-x-8"
             >
               <div className="absolute inset-0 object-cover w-full h-full opacity-50 filter saturate-0 mix-blend-multiply">
                 <Image
-                  width={1000}
-                  height={600}
                   src={testimonial.image}
                   alt={testimonial.author}
-                  className=""
+                  unoptimized={true}
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"

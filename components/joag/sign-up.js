@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function SignUp() {
   const { t } = useTranslation();
@@ -9,15 +10,24 @@ export default function SignUp() {
     <div className="relative bg-neutral-50">
       <div className="lg:absolute lg:inset-0">
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <div className="relative object-cover w-full h-72 lg:absolute lg:h-full">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.8,
+              type: 'fade',
+            }}
+            className="relative object-cover w-full h-72 lg:absolute lg:h-full"
+          >
             <Image
-              src="/static/joag-img-2.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712310/Galamian/general/joag-img-2_cqwoqo.webp"
               alt="JOAG"
               layout="fill"
               objectFit="cover"
               objectPosition="top"
+              unoptimized={true}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
@@ -172,7 +182,7 @@ export default function SignUp() {
                     />
                     <label htmlFor="opcion-una-clase" className="ml-3">
                       <span className="block text-sm tracking-tight text-neutral-700">
-                        {t('joag:one_class')}
+                        {t('joag:option_standard')}
                       </span>
                     </label>
                   </div>
@@ -186,7 +196,7 @@ export default function SignUp() {
                     />
                     <label htmlFor="opcion-dos-clases" className="ml-3">
                       <span className="block text-sm tracking-tight text-neutral-700">
-                        {t('joag:two_classes')}
+                        {t('joag:option_intensive')}
                       </span>
                     </label>
                   </div>

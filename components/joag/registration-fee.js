@@ -1,5 +1,6 @@
 import { CheckIcon, PlusIcon } from '@heroicons/react/outline';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function RegistrationFee() {
   const { t } = useTranslation();
@@ -11,11 +12,7 @@ export default function RegistrationFee() {
       description_start: `${t('joag:option_one_start')}`,
       description_middle: `${t('joag:option_one_middle')}`,
       description_end: `${t('joag:option_one_end')}`,
-      features: [
-        `${t('joag:one_class')}`,
-        `${t('joag:class_duration')}`,
-        `${t('joag:tailored_classes')}`,
-      ],
+      features: [`${t('joag:participation')}`],
     },
     {
       name: `${t('joag:pricing_intensive')}`,
@@ -24,7 +21,7 @@ export default function RegistrationFee() {
       description_middle: `${t('joag:option_two_middle')}`,
       description_end: `${t('joag:option_two_end')}`,
       features: [
-        `${t('joag:two_classes')}`,
+        `${t('joag:participation')}`,
         `${t('joag:class_duration')}`,
         `${t('joag:tailored_classes')}`,
       ],
@@ -53,9 +50,21 @@ export default function RegistrationFee() {
           <div className="absolute inset-0 h-3/4 bg-gold-600" />
           <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
-              {tiers.map((tier) => (
-                <div
-                  key={tier.name}
+              {tiers.map((tier, i) => (
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: 50,
+                  }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    initialDelay: 2,
+                    duration: 0.7,
+                    delay: i * 0.3,
+                    ease: 'easeOut',
+                  }}
+                  key={i}
                   className="flex flex-col overflow-hidden rounded-none shadow"
                 >
                   <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
@@ -131,7 +140,7 @@ export default function RegistrationFee() {
                       ))}
                     </ul>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

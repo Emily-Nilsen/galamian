@@ -1,5 +1,6 @@
 import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function Noticias() {
   const { t } = useTranslation();
@@ -46,8 +47,20 @@ export default function Noticias() {
           <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center"></div>
         </div>
         <div className="grid gap-16 pt-10 mt-6 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
-          {posts.map((post) => (
-            <div key={post.title}>
+          {posts.map((post, i) => (
+            <motion.div
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                initialDelay: 0.3,
+                duration: 0.7,
+                delay: i * 0.3,
+                type: 'fade',
+              }}
+              key={i}
+            >
               <p className="pb-2 text-sm font-semibold text-gold-600">
                 {post.date}
               </p>
@@ -76,7 +89,7 @@ export default function Noticias() {
                   </Link>
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
