@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 import { CameraIcon } from '@heroicons/react/solid';
+import { motion } from 'framer-motion';
 
 export default function ProfesoresViolonchelo() {
   const { t } = useTranslation();
@@ -74,17 +75,27 @@ export default function ProfesoresViolonchelo() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      type: 'fade',
+                      ease: 'easeIn',
+                    }}
+                    className="object-cover object-center overflow-hidden rounded-none shadow-none"
+                  >
                     <Image
-                      src="/static/profesores/oyvind-gimse.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/oyvind-gimse_u7ktmx.webp"
                       alt="Øyvind Gimse"
                       width={2854}
                       height={1665}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
+                      unoptimized={true}
                     />
-                  </div>
+                  </motion.div>
                 </div>
                 <figcaption className="flex mt-3 text-sm text-neutral-700">
                   <CameraIcon
@@ -137,17 +148,27 @@ export default function ProfesoresViolonchelo() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      type: 'fade',
+                      ease: 'easeIn',
+                    }}
+                    className="object-cover object-center overflow-hidden rounded-none shadow-none"
+                  >
                     <Image
-                      src="/static/profesores/tilman-mahrenholz.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/tilman-mahrenholz_tfa1le.webp"
                       alt="Tilman Mahrenholz"
                       width={1234}
                       height={720}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
+                      unoptimized={true}
                     />
-                  </div>
+                  </motion.div>
                 </div>
                 <figcaption className="flex mt-3 text-sm text-neutral-700">
                   <CameraIcon

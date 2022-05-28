@@ -143,60 +143,55 @@ export default function Piano() {
         </div>
       </div>
       <div className="relative bg-neutral-50">
-        <div className="lg:absolute lg:inset-0">
-          <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
-            <motion.div
-              whileInView={{ opacity: 1 }}
-              initial={{ opacity: 0 }}
-              transition={{
-                duration: 0.8,
-                type: 'fade',
-                ease: 'easeIn',
-              }}
-              className="relative object-cover w-full h-56 lg:absolute lg:h-full"
-            >
-              <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712566/Galamian/piano/piano-study-img-2_b0kty5.webp"
-                alt="Estudio de Piano"
-                unoptimized={true}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="left"
-              />
-            </motion.div>
-          </div>
-        </div>
-        <div className="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
-          <div className="lg:col-start-2 lg:pl-8">
-            <div className="mx-auto text-base max-w-prose lg:max-w-lg lg:ml-auto lg:mr-0">
-              <h2 className="font-medium leading-6 tracking-tight uppercase text-neutral-900">
-                {t('common:estudiar_subtitle')}
-              </h2>
-              <h2 className="text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
-                <span className="block font-bold text-gold-600">
-                  {t('common:title_1')}
-                </span>
-                {t('common:title_2')}{' '}
-                <span className="font-bold text-gold-600">
-                  {t('common:title_3')}
-                </span>
-              </h2>
-              <p className="mt-8 text-lg text-neutral-600">
-                {t('common:estudiar_para_01')}
-              </p>
-              <div className="mt-5 prose text-neutral-600 prose-gold">
-                <p>{t('common:estudiar_para_02')}</p>
-                <p>{t('common:estudiar_para_03')}</p>
-                <h3 className="font-semibold tracking-tight">
-                  {t('common:permite_title')}
-                </h3>
-                <ul role="list">
-                  <li>{t('common:permite_list_item_01')}</li>
-                  <li>{t('common:permite_list_item_02')}</li>
-                  <li>{t('common:permite_list_item_03')}</li>
-                  <li>{t('common:permite_list_item_04')}</li>
-                </ul>
-              </div>
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 0.8,
+            type: 'fade',
+            ease: 'easeIn',
+          }}
+          className="relative object-cover w-full h-56"
+        >
+          <Image
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712566/Galamian/piano/piano-study-img-2_b0kty5.webp"
+            alt="Estudio de Piano"
+            unoptimized={true}
+            layout="fill"
+            objectFit="cover"
+            objectPosition="left"
+          />
+        </motion.div>
+
+        <div className="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6">
+          <div className="mx-auto text-base max-w-prose">
+            <h2 className="font-medium leading-6 tracking-tight uppercase text-neutral-900">
+              {t('common:estudiar_subtitle')}
+            </h2>
+            <h2 className="text-3xl font-semibold leading-8 tracking-tight text-neutral-900 sm:text-4xl">
+              <span className="block font-bold text-gold-600">
+                {t('common:title_1')}
+              </span>
+              {t('common:title_2')}{' '}
+              <span className="font-bold text-gold-600">
+                {t('common:title_3')}
+              </span>
+            </h2>
+            <p className="mt-8 text-lg text-neutral-600">
+              {t('common:estudiar_para_01')}
+            </p>
+            <div className="mt-5 prose text-neutral-600 prose-gold">
+              <p>{t('common:estudiar_para_02')}</p>
+              <p>{t('common:estudiar_para_03')}</p>
+              <h3 className="font-semibold tracking-tight">
+                {t('common:permite_title')}
+              </h3>
+              <ul role="list">
+                <li>{t('common:permite_list_item_01')}</li>
+                <li>{t('common:permite_list_item_02')}</li>
+                <li>{t('common:permite_list_item_03')}</li>
+                <li>{t('common:permite_list_item_04')}</li>
+              </ul>
             </div>
           </div>
         </div>

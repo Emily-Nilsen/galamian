@@ -3,6 +3,7 @@ import FAQs from '../galamian-junior/faqs';
 import useTranslation from 'next-translate/useTranslation';
 import { CheckIcon } from '@heroicons/react/outline';
 import VioloncheloGalleryTwo from './violonchelo-gallery-2';
+import { motion } from 'framer-motion';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -19,8 +20,9 @@ export default function VioloncheloRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/estudia/cello/cello-img-5.webp',
-      imageAlt: 'Estudio de Piano',
+      imageSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-img-5_zlk93b.webp',
+      imageAlt: 'Estudio de Violonchelo',
     },
     {
       name: `${t('common:practicas_title')}`,
@@ -36,16 +38,18 @@ export default function VioloncheloRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc: '/static/estudia/cello/cello-img-2.webp',
-      imageAlt: 'Estudio de Piano',
+      imageSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-img-2_eztf5m.webp',
+      imageAlt: 'Estudio de Violonchelo',
     },
     {
       name: `${t('common:titulacion_title')}`,
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/estudia/cello/cello-img-4.webp',
-      imageAlt: 'Estudio de Piano',
+      imageSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-img-4_vowdo9.webp',
+      imageAlt: 'Estudio de Violonchelo',
     },
   ];
 
@@ -135,19 +139,30 @@ export default function VioloncheloRequisitos() {
                   'flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8'
                 )}
               >
-                <div className="overflow-hidden aspect-w-5 aspect-h-2 bg-neutral-100">
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                  }}
+                  whileInView={{ opacity: 1 }}
+                  // viewport={{ once: true }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.3,
+                    ease: 'easeIn',
+                  }}
+                  className="overflow-hidden aspect-w-5 aspect-h-2 bg-neutral-100"
+                >
                   <div className="overflow-hidden">
                     <Image
                       src={feature.imageSrc}
                       alt={feature.imageAlt}
-                      width={1500}
-                      height={590}
+                      unoptimized={true}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           ))}

@@ -8,6 +8,7 @@ import ProfesoresViolonchelo from '../../components/estudio/profesores-violonche
 import VioloncheloRequisitos from '../../components/estudio/violonchelo-requisitos';
 import VioloncheloGalleryOne from '../../components/estudio/violonchelo-gallery-1';
 import JoagCTA from '../../components/joag/cta';
+import { motion } from 'framer-motion';
 
 export default function Violonchelo() {
   const { t } = useTranslation();
@@ -144,17 +145,25 @@ export default function Violonchelo() {
         </div>
       </div>
       <div className="relative bg-neutral-50">
-        <div className="relative object-cover w-full h-56">
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 0.8,
+            type: 'fade',
+            ease: 'easeIn',
+          }}
+          className="relative object-cover w-full h-56"
+        >
           <Image
-            src="/static/estudia/cello/group-photo-01.webp"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712398/Galamian/cello/group-photo-01_nsd7dg.webp"
             alt="Estudio de Violonchelo"
-            width={2000}
-            height={1000}
+            unoptimized={true}
             layout="fill"
             objectFit="cover"
             objectPosition="top"
           />
-        </div>
+        </motion.div>
         <div className="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6">
           <div className="mx-auto text-base max-w-prose">
             <h2 className="font-medium leading-6 tracking-tight uppercase text-neutral-900">
@@ -459,23 +468,34 @@ export default function Violonchelo() {
               </div>
             </div>
 
+            {/* Galamian Academy Orchestra */}
             <h2 className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl">
               {t('common:estudio_para_12_part_1')}
             </h2>
             <p>{t('common:estudio_para_12_part_2')}</p>
             <p>{t('common:estudio_para_12_part_3')}</p>
             <figure>
-              <div className="w-full rounded-none">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.5,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="w-full rounded-none"
+              >
                 <Image
-                  src="/static/estudia/cello/cello-img-1.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-img-1_wqxtoa.webp"
                   alt="Estudio de Violonchelo"
                   width={1500}
                   height={1000}
                   layout="responsive"
                   objectFit="cover"
                   objectPosition="center"
+                  unoptimized={true}
                 />
-              </div>
+              </motion.div>
               <figcaption>
                 {/* Sagittis scelerisque nulla cursus in enim consectetur quam. */}
               </figcaption>
@@ -490,7 +510,21 @@ export default function Violonchelo() {
               </span>
               {t('common:estudio_para_13_part_4')}
             </p>
-            <JoagCTA />
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.7,
+                delay: 0.3,
+                ease: 'easeIn',
+              }}
+            >
+              <JoagCTA />
+            </motion.div>
           </div>
         </div>
       </div>
