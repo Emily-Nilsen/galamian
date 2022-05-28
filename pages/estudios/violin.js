@@ -8,6 +8,7 @@ import ProfesoresViolin from '../../components/estudio/profesores-violin';
 import ViolinRequisitos from '../../components/estudio/violin-requisitos';
 import ViolinGalleryOne from '../../components/estudio/violin-gallery-1';
 import JoagCTA from '../../components/joag/cta';
+import { motion } from 'framer-motion';
 
 export default function Violin() {
   const { t } = useTranslation();
@@ -144,17 +145,25 @@ export default function Violin() {
         </div>
       </div>
       <div className="relative bg-neutral-50">
-        <div className="relative object-cover w-full h-56">
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 0.8,
+            type: 'fade',
+            ease: 'easeIn',
+          }}
+          className="relative object-cover w-full h-56"
+        >
           <Image
-            src="/static/estudia/violin/group-photo-06.webp"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/group-photo-06_amz0oq.webp"
             alt="Estudio de violín/viola"
-            width={1921}
-            height={984}
+            unoptimized={true}
             layout="fill"
             objectFit="cover"
             objectPosition="center"
           />
-        </div>
+        </motion.div>
         <div className="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6">
           <div className="mx-auto text-base max-w-prose">
             <h2 className="font-normal leading-6 tracking-tight uppercase text-neutral-900">
@@ -172,7 +181,9 @@ export default function Violin() {
             <div className="mt-5 prose text-neutral-600 prose-gold">
               <p>{t('common:estudiar_para_02')}</p>
               <p>{t('common:estudiar_para_03')}</p>
-              <h3>{t('common:permite_title')}</h3>
+              <h3 className="tracking-tight text-neutral-900">
+                {t('common:permite_title')}
+              </h3>
               <ul role="list">
                 <li>{t('common:permite_list_item_01')}</li>
                 <li>{t('common:permite_list_item_02')}</li>
@@ -469,17 +480,27 @@ export default function Violin() {
             <p>{t('common:estudio_para_12_part_2')}</p>
             <p>{t('common:estudio_para_12_part_3')}</p>
             <figure>
-              <div className="w-full rounded-none">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.5,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="w-full rounded-none"
+              >
                 <Image
-                  src="/static/estudia/violin/violin-photo-08.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-photo-08_a81srr.webp"
                   alt="Estudio de violín/viola"
                   width={1500}
                   height={1000}
                   layout="responsive"
                   objectFit="cover"
                   objectPosition="center"
+                  unoptimized={true}
                 />
-              </div>
+              </motion.div>
               <figcaption>
                 {/* Sagittis scelerisque nulla cursus in enim consectetur quam. */}
               </figcaption>
@@ -495,7 +516,21 @@ export default function Violin() {
               </span>
               {t('common:estudio_para_13_part_4')}
             </p>
-            <JoagCTA />
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.7,
+                delay: 0.3,
+                ease: 'easeIn',
+              }}
+            >
+              <JoagCTA />
+            </motion.div>
           </div>
         </div>
       </div>

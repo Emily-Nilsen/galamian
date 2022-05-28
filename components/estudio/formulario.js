@@ -13,7 +13,7 @@ export default function Formulario() {
           <div className="text-center">
             <div>
               <Image
-                src="/static/galamian-gold-dark.svg"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold-dark_fcxszf.svg"
                 alt="Galamian logo"
                 width={60}
                 height={60}

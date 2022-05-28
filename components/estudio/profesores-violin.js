@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 import { CameraIcon } from '@heroicons/react/solid';
+import { motion } from 'framer-motion';
 
 export default function ProfesoresViolin() {
   const { t } = useTranslation();
@@ -84,17 +85,27 @@ export default function ProfesoresViolin() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      type: 'fade',
+                      ease: 'easeIn',
+                    }}
+                    className="object-cover object-center overflow-hidden rounded-none shadow-none"
+                  >
                     <Image
-                      src="/static/estudia/violin/jesus-photo-01.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/professors/jesus-photo-01_loefpu.webp"
                       alt="Jesús Reina"
                       width={2367}
                       height={1381}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
+                      unoptimized={true}
                     />
-                  </div>
+                  </motion.div>
                 </div>
                 <figcaption className="flex mt-3 text-sm text-neutral-700">
                   <CameraIcon
@@ -157,17 +168,27 @@ export default function ProfesoresViolin() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      type: 'fade',
+                      ease: 'easeIn',
+                    }}
+                    className="object-cover object-center overflow-hidden rounded-none shadow-none"
+                  >
                     <Image
-                      src="/static/profesores/anna.jpg"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/anna_oges5p.jpg"
                       alt="Anna Margrethe Nilsen"
                       width={1497}
                       height={873}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
+                      unoptimized={true}
                     />
-                  </div>
+                  </motion.div>
                 </div>
                 <figcaption className="flex mt-3 text-sm text-neutral-700">
                   <CameraIcon
@@ -231,17 +252,27 @@ export default function ProfesoresViolin() {
               {/* Photo*/}
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      type: 'fade',
+                      ease: 'easeIn',
+                    }}
+                    className="object-cover object-center overflow-hidden rounded-none shadow-none"
+                  >
                     <Image
-                      src="/static/profesores/laura-romero.jpeg"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/laura-romero_mf0vvn.jpg"
                       alt="Laura Romero"
                       width={1497}
                       height={873}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
+                      unoptimized={true}
                     />
-                  </div>
+                  </motion.div>
                 </div>
                 <figcaption className="flex mt-3 text-sm text-neutral-700">
                   <CameraIcon

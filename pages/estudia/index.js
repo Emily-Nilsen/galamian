@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../../components/layout';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -49,9 +50,19 @@ const Estudia = () => {
       keywords={t('layout:estudia_keywords')}
     >
       <div className="relative pb-6 bg-white lg:pb-24">
-        <div aria-hidden="true" className="relative">
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 0.5,
+            type: 'fade',
+            ease: 'easeIn',
+          }}
+          aria-hidden="true"
+          className="relative"
+        >
           <Image
-            src="/static/estudia/estudia.jpg"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/estudia_eabbpn.jpg"
             alt="Jesús Reina"
             className="relative object-cover object-center w-full h-96"
             width={1920}
@@ -59,9 +70,10 @@ const Estudia = () => {
             layout="responsive"
             objectFit="cover"
             objectPosition="center"
+            unoptimized={true}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-white" />
-        </div>
+        </motion.div>
 
         <div className="relative max-w-xl px-4 py-6 mx-auto text-center sm:px-6 lg:px-8 lg:max-w-7xl">
           <h2 className="font-normal tracking-tight text-neutral-900">

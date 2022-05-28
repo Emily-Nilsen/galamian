@@ -46,7 +46,17 @@ export default function Noticias() {
           </h2>
           <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center"></div>
         </div>
-        <div className="grid gap-16 pt-10 mt-6 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.5,
+            type: 'fade',
+            ease: 'easeIn',
+          }}
+          className="grid gap-16 pt-10 mt-6 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12"
+        >
           {posts.map((post, i) => (
             <motion.div
               initial={{
@@ -91,7 +101,7 @@ export default function Noticias() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

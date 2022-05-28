@@ -79,7 +79,8 @@ export default function Navbar() {
       name: `${t('navbar:blogpost_name_1')}`,
       href: '/bulletin',
       preview: `${t('navbar:blogpost_preview_1')}`,
-      imageUrl: '/static/eventos.jpg',
+      imageUrl:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/eventos_o0lmj9.jpg',
     },
     // {
     //   id: 2,
@@ -199,7 +200,7 @@ export default function Navbar() {
               <span className="sr-only">Academia Internacional Galamian</span>
               <div className="transition duration-300 ease-in hover:scale-105">
                 <Image
-                  src="/static/galamian-gold-dark.svg"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold-dark_fcxszf.svg"
                   alt="Galamian logo"
                   width={40}
                   height={40}
@@ -316,17 +317,25 @@ export default function Navbar() {
                                       <Link href={post.href} passHref>
                                         <a className="flex w-full p-3 -m-3 transition duration-500 ease-in-out hover:bg-neutral-100">
                                           <div className="flex-shrink-0 hidden sm:block">
-                                            <div className="relative object-cover w-32 h-20">
+                                            <motion.div
+                                              whileInView={{ opacity: 1 }}
+                                              initial={{ opacity: 0 }}
+                                              transition={{
+                                                duration: 0.5,
+                                                type: 'fade',
+                                                ease: 'easeIn',
+                                              }}
+                                              className="relative object-cover w-32 h-20"
+                                            >
                                               <Image
-                                                width={128}
-                                                height={80}
+                                                unoptimized={true}
                                                 src={post.imageUrl}
                                                 alt={post.name}
                                                 layout="fill"
                                                 objectFit="cover"
                                                 objectPosition="center"
                                               />
-                                            </div>
+                                            </motion.div>
                                           </div>
                                           <div className="flex-1 w-0 sm:ml-8">
                                             <h4 className="text-base font-semibold tracking-tight truncate text-neutral-900">
@@ -533,7 +542,7 @@ export default function Navbar() {
                     <Link href="/" passHref>
                       <div className="cursor-pointer">
                         <Image
-                          src="/static/galamian-gold-dark.svg"
+                          src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold-dark_fcxszf.svg"
                           alt="Galamian logo"
                           width={40}
                           height={40}

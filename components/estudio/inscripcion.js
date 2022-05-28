@@ -4,6 +4,7 @@ import CTA from '../../components/estudio/cta';
 import { CheckIcon } from '@heroicons/react/outline';
 import { CameraIcon } from '@heroicons/react/solid';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function Inscripcion() {
   const { t } = useTranslation();
@@ -87,17 +88,27 @@ export default function Inscripcion() {
               <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                    <div className="object-cover object-center overflow-hidden shadow-none">
+                    <motion.div
+                      whileInView={{ opacity: 1 }}
+                      initial={{ opacity: 0 }}
+                      transition={{
+                        duration: 0.5,
+                        type: 'fade',
+                        ease: 'easeIn',
+                      }}
+                      className="object-cover object-center overflow-hidden shadow-none"
+                    >
                       <Image
-                        src="/static/estudia/inscripcion.jpeg"
+                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/inscripcion_amynfl.jpg"
                         alt="Sala Unicaja de Conciertos María Cristina"
                         width={1720}
                         height={1147}
                         layout="responsive"
                         objectFit="cover"
                         objectPosition="bottom"
+                        unoptimized={true}
                       />
-                    </div>
+                    </motion.div>
                   </div>
                   <figcaption className="flex mt-3 text-sm text-neutral-700">
                     <CameraIcon

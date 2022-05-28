@@ -2,6 +2,7 @@ import Image from 'next/image';
 import FAQs from '../galamian-junior/faqs';
 import useTranslation from 'next-translate/useTranslation';
 import { CheckIcon } from '@heroicons/react/outline';
+import { motion } from 'framer-motion';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -18,7 +19,8 @@ export default function PianoRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/estudia/piano/piano-photo-02.webp',
+      imageSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712566/Galamian/piano/piano-photo-02_ik48aq.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -35,7 +37,8 @@ export default function PianoRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc: '/static/estudia/piano/piano-study-img-3.webp',
+      imageSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712566/Galamian/piano/piano-study-img-3_ukwzwh.webp',
       imageAlt: 'Estudio de Piano',
     },
     {
@@ -43,7 +46,8 @@ export default function PianoRequisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/estudia/piano/violin-study-img-1.webp',
+      imageSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712566/Galamian/piano/violin-study-img-1_o1546l.webp',
       imageAlt: 'Estudio de Piano',
     },
   ];
@@ -134,19 +138,31 @@ export default function PianoRequisitos() {
                   'flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8'
                 )}
               >
-                <div className="overflow-hidden aspect-w-5 aspect-h-2 bg-neutral-100">
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: 50,
+                  }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.3,
+                    ease: 'easeIn',
+                  }}
+                  className="overflow-hidden aspect-w-5 aspect-h-2 bg-neutral-100"
+                >
                   <div className="overflow-hidden">
                     <Image
                       src={feature.imageSrc}
                       alt={feature.imageAlt}
-                      width={4088}
-                      height={2725}
+                      unoptimized={true}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           ))}

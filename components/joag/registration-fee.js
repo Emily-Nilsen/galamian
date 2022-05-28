@@ -59,7 +59,6 @@ export default function RegistrationFee() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{
-                    initialDelay: 2,
                     duration: 0.7,
                     delay: i * 0.3,
                     ease: 'easeOut',
@@ -70,7 +69,7 @@ export default function RegistrationFee() {
                   <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                     <div>
                       <h3
-                        className="inline-flex px-4 py-1 text-sm font-semibold tracking-wide uppercase rounded-full bg-cream-400 text-gold-600"
+                        className="inline-flex px-4 py-1 text-sm font-semibold tracking-wide uppercase rounded-full text-gold-600 bg-cream-400"
                         id="tier-standard"
                       >
                         {tier.name}

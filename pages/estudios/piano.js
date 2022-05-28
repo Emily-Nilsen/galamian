@@ -6,6 +6,7 @@ import { ExclamationIcon } from '@heroicons/react/solid';
 import { CheckIcon } from '@heroicons/react/outline';
 import ProfesoresPiano from '../../components/estudio/profesores-piano';
 import PianoRequisitos from '../../components/estudio/piano-requisitos';
+import { motion } from 'framer-motion';
 
 export default function Piano() {
   const { t } = useTranslation();
@@ -144,17 +145,25 @@ export default function Piano() {
       <div className="relative bg-neutral-50">
         <div className="lg:absolute lg:inset-0">
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
-            <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.8,
+                type: 'fade',
+                ease: 'easeIn',
+              }}
+              className="relative object-cover w-full h-56 lg:absolute lg:h-full"
+            >
               <Image
-                src="/static/estudia/piano/piano-study-img-2.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712566/Galamian/piano/piano-study-img-2_b0kty5.webp"
                 alt="Estudio de Piano"
-                width={4880}
-                height={3253}
+                unoptimized={true}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="left"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">

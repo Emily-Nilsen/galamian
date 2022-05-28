@@ -1,135 +1,242 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+const image_1 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-photo-03_iuqug2.webp`;
+const image_2 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/anna-violin-3_nzjm2v.webp`;
+const image_3 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-gallery-img-2_h9qctq.webp`;
+const image_4 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/violin-gallery-img-1_d2tip6.webp`;
+const image_5 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-photo-01_tbuc05.webp`;
+const image_6 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/violin-gallery-img-3_qbt2bs.webp`;
 
 export default function ViolinGalleryTwo() {
   return (
-    <section className="overflow-hidden bg-neutral-50 md:pb-6">
+    <section className="overflow-hidden">
       {/* Large screens */}
-      <div className="hidden md:flex flex-wrap -m-1 md:-m-2">
+      <div className="flex-wrap hidden -m-1 md:flex md:-m-2">
         <div className="flex flex-wrap w-1/2">
-          <div className="w-1/2 p-1 md:p-2">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="w-1/2 p-1 md:p-2"
+          >
             <div className="block object-cover object-center w-full h-full rounded-lg">
               <Image
                 width={1500}
                 height={1000}
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-photo-03.webp"
+                src={image_1}
               />
             </div>
-          </div>
-          <div className="w-1/2 p-1 md:p-2">
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="w-1/2 p-1 md:p-2"
+          >
             <div className="block object-cover object-center w-full h-full rounded-lg">
               <Image
                 width={1500}
                 height={1000}
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/anna-violin-3.webp"
+                src={image_2}
               />
             </div>
-          </div>
-          <div className="w-full p-1 md:p-2">
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="w-full p-1 md:p-2"
+          >
             <div className="block object-cover object-center w-full h-full rounded-lg">
               <Image
                 width={1500}
                 height={1000}
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-gallery-img-2.webp"
+                src={image_3}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-wrap w-1/2">
-          <div className="w-full p-1 md:p-2">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 0.7,
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="w-full p-1 md:p-2"
+          >
             <div className="block object-cover object-center w-full h-full rounded-lg">
               <Image
                 width={1500}
                 height={1000}
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-gallery-img-1.webp"
+                src={image_4}
               />
             </div>
-          </div>
-          <div className="w-1/2 p-1 md:p-2">
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 0.9,
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="w-1/2 p-1 md:p-2"
+          >
             <div className="block object-cover object-center w-full h-full rounded-lg">
               <Image
                 width={1500}
                 height={1000}
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-photo-01.webp"
+                src={image_5}
               />
             </div>
-          </div>
-          <div className="w-1/2 p-1 md:p-2">
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 1.1,
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="w-1/2 p-1 md:p-2"
+          >
             <div className="block object-cover object-center w-full h-full rounded-lg">
               <Image
                 width={1500}
                 height={1000}
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-gallery-img-3.webp"
+                src={image_6}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* Small screens */}
-      <div className="md:hidden flex flex-wrap -m-1 md:-m-2">
+      <div className="flex flex-wrap -m-1 md:hidden md:-m-2">
         <div className="flex flex-wrap w-full">
-          <div className="w-1/2 p-1 md:p-2">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="w-1/2 p-1 md:p-2"
+          >
             <div className="block object-cover object-center w-full h-full rounded-none">
               <Image
                 width={1500}
                 height={1000}
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-photo-03.webp"
+                src={image_1}
               />
             </div>
-          </div>
-          <div className="w-1/2 p-1 md:p-2">
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="w-1/2 p-1 md:p-2"
+          >
             <div className="block object-cover object-center w-full h-full rounded-lg">
               <Image
                 width={1500}
                 height={1000}
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/anna-violin-3.webp"
+                src={image_2}
               />
             </div>
-          </div>
-          <div className="w-full p-1 md:p-2">
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="w-full p-1 md:p-2"
+          >
             <div className="block object-cover object-center w-full h-full rounded-lg">
               <Image
                 width={1500}
                 height={1000}
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
                 alt="gallery"
-                src="/static/estudia/violin/violin-gallery-img-2.webp"
+                src={image_3}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import { ExclamationIcon } from '@heroicons/react/solid';
 import Requisitos from '../../components/estudio/requisitos';
 import CTA from '../../components/estudio/cta';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 const Audiciones = () => {
   const { t } = useTranslation();
@@ -43,18 +44,26 @@ const Audiciones = () => {
           </div>
         </div>
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <div className="absolute inset-0 object-cover w-full h-full">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.5,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="absolute inset-0 object-cover w-full h-full"
+          >
             <Image
-              src="/static/estudia/audiciones.jpg"
-              alt=""
-              width={1280}
-              height={853}
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/audiciones_d48ubx.jpg"
+              alt="Audiciones"
+              unoptimized={true}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
               className="absolute inset-0 object-cover w-full h-full"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* Attention! */}

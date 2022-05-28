@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function Requisitos() {
   const { t } = useTranslation();
@@ -42,10 +43,11 @@ export default function Requisitos() {
               layout="responsive"
               objectFit="cover"
               objectPosition="center"
-              src="/static/estudia/requisitos.jpg"
-              alt=""
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/requisitos_wbwhmu.jpg"
+              alt="Reuisitos"
               width={1920}
               height={1280}
+              unoptimized={true}
             />
           </div>
           <div
@@ -72,9 +74,20 @@ export default function Requisitos() {
           {t('estudia:requisitos_sr')}
         </h2>
         <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
-          {requisitos.map((requisito) => (
-            <div
-              key={requisito.name}
+          {requisitos.map((requisito, i) => (
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 50,
+              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.7,
+                delay: i * 0.4,
+                ease: 'easeIn',
+              }}
+              key={i}
               className="flex flex-col pb-6 rounded-none shadow-none bg-gradient-to-b from-neutral-50 to-neutral-100"
             >
               <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
@@ -96,7 +109,7 @@ export default function Requisitos() {
                   {requisito.description_03}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>

@@ -60,7 +60,7 @@ export default function Hero() {
                       duration: 0.8,
                       type: 'fade',
                     }}
-                    className="text-4xl font-normal tracking-tight text-center sm:text-5xl lg:text-6xl"
+                    className="text-4xl font-semibold tracking-tight text-center sm:text-5xl lg:text-6xl"
                   >
                     <span className="block font-bold text-gold-500">
                       {t('inicio:title_1')}
