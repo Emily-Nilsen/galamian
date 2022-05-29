@@ -2,7 +2,7 @@ const professors = {
   // VIOLIN & VIOLA
   // Jesus Reina
   jesus_name: `Jesus Reina`,
-  jesus_image: `/static/profesores/jesus.jpg`,
+  jesus_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jesus_gmkfut.jpg`,
   jesus_role: `Principal Professor`,
   jesus_chamber_role: `Violin & Viola`,
   jesus_instrument: `Violin & Viola`,
@@ -14,7 +14,7 @@ const professors = {
 
   // Anna Margrethe Nilsen
   anna_name: `Anna Nilsen`,
-  anna_image: `/static/profesores/anna.jpg`,
+  anna_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/anna_oges5p.jpg`,
   anna_role: `Principal Professor`,
   anna_chamber_role: `Violin & Viola`,
   anna_instrument: `Violin & Viola`,
@@ -26,7 +26,7 @@ const professors = {
 
   // Laura Romero
   laura_name: `Laura Romero`,
-  laura_image: `/static/profesores/laura-romero.jpeg`,
+  laura_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713701/Galamian/professors/laura_yevyeq.jpg`,
   laura_role: `Assistant Professor`,
   laura_instrument: `Violin & Viola`,
   laura_para_1: `Born in Malaga, Laura Romero Alba began playing the violin at age seven.`,
@@ -35,7 +35,7 @@ const professors = {
 
   // Irene Ortega
   irene_name: `Irene Ortega`,
-  irene_image: `/static/galamian-junior/irene.jpg`,
+  irene_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/irene_nhrwkw.jpg`,
   irene_role: `Resident Professor`,
   irene_para_1: `The violinist was born in Jerez de la Frontera, and she received her first violin lessons at age four.`,
   irene_para_2: `After receiving advice from violinists of the stature of Pinchas Zukerman, Patinka Kopec, Grigory Kalinovsky, Alexander Sitkovetsky and Bretislav Novotný, in 2019, Irene Ortega obtained her degree from the Galamian International Academy through The Royal Schools of Music, under the tutelage of the violinists Jesús Reina and Anna Nilsen.`,
@@ -43,7 +43,7 @@ const professors = {
 
   // Alfredo García
   alfredo_name: `Alfredo García`,
-  alfredo_image: `/static/profesores/alfredo-garcia.jpeg`,
+  alfredo_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/alfredo-garcia_xnmhie.jpg`,
   alfredo_role: `Guest Professor`,
   alfredo_instrument: `Violin`,
   alfredo_para_1: `Recognized by music critics as one of the best and most distinguished violinists of his generation, Alfredo García Serrano (León, 1971) has had an impassioned career as a teacher, soloist and performer, which has taken him throughout Spain and the world.The countries where he has played concerts include Japan, Korea, Turkey, Italy, Poland, Austria, France, Portugal, the United States, Mexico, Argentina and Spain.`,
@@ -54,7 +54,7 @@ const professors = {
 
   // Natalia Kuchaeva
   natalia_name: `Natalia Kuchaeva`,
-  natalia_image: `/static/galamian-junior/natalia.jpg`,
+  natalia_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/natalia_cd19rz.jpg`,
   natalia_role: `Brainin Method`,
   natalia_para_1: `Coming from a family of scientists and with a deep musical tradition, the Moscow pianist Natalia Kucháeva has lived in Spain since 2009. Her repertoire covers a wide range of styles, from the Baroque to the 21st century.`,
   natalia_para_2: `Natalia Kucháeva received solid musical training at the School of Music affiliated with the P.I. Tchaikovsky in Moscow. Later, she graduated and completed postgraduate studies at the Gnessin Academy under the direction of Master Vladimir Tropp.`,
@@ -62,7 +62,7 @@ const professors = {
 
   // Vicente Chulía
   vicente_name: `Vicente Chulía`,
-  vicente_image: `/static/galamian-junior/chulia.jpg`,
+  vicente_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/chulia_wjo4jb.jpg`,
   vicente_role: `Fundamental Principles of Musical Interpretation`,
   vicente_para_1: `Born in Spain, the conductor and composer Vicente Chulía incorporates both inseparable facets of musical art into a broad idea of ​​symphonic interpretation. He has studied conducting at the “Musikene” Superior Conservatory of Music in San Sebastián with Maestro Enrique García Asensio. He is a graduate conductor at the Royal Superior Conservatory of Madrid with Antonio Moya.`,
   vicente_para_2: `He also has training in harmony, counterpoint, fugue, orchestration and composition with Salvador Chuliá Hernández and musicology with José Climent.`,
@@ -72,7 +72,7 @@ const professors = {
 
   // Grigory Kalinovsky
   grigory_name: `Grigory Kalinovsky`,
-  grigory_image: `/static/profesores/grigory-kalinovsky.jpg`,
+  grigory_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/grigory-kalinovsky_d4izvb.jpg`,
   grigory_role: `Guest Professor`,
   grigory_instrument: `Violin`,
   grigory_para_1: `Hailed by critics as a “superior poet” (Vancouver Sun) and praised for his “heart and indomitable will” (Gramophone), Grigory Kalinovsky has performed at some of the world’s major venues, from all three stages of Carnegie Hall in New York to Musikhalle Grosser Saal in Hamburg. As a recitalist and avid chamber musician, he has appeared at numerous concert series and festivals, including the Asheville Chamber Music Series, Lyric Chamber Music Society of New York, Lucas Foss’s Festival at the Hamptons, Newport Music Festival, and Pavel Vernikov's festival, “Il Violino Magico” in Italy, collaborating with such renowned musicians as Pinchas Zukerman, Shmuel Ashkeniasi, Ralph Kirshbaum, Miriam Fried, James Buswell, Dora Schwarzberg, and Paul Coletti, among others.`,
@@ -84,7 +84,7 @@ const professors = {
 
   // Alexander Sitkovetsky
   alexander_name: `Alexander Sitkovetsky`,
-  alexander_image: `/static/profesores/alexander-sitkovetsky.jpg`,
+  alexander_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/alexander-sitkovetsky_rahmme.jpg`,
   alexander_role: `Guest Professor`,
   alexander_chamber_role: `Violin`,
   alexander_instrument: `Violin`,
@@ -95,7 +95,7 @@ const professors = {
 
   // Salvador Esteve
   salvador_name: `Salvador Esteve`,
-  salvador_image: `/static/profesores/salvador-esteve.jpg`,
+  salvador_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/salvador-esteve_ekwqdh.jpg`,
   salvador_role: `Guest Professor`,
   salvador_instrument: `Violin`,
   salvador_para_1: `Salvador Esteve has received the First Prize in the City of Sóller Contest, VII Ruperto Chapí de Villena National Contest, and the I National City of Xàtiva Contest.`,
@@ -104,7 +104,7 @@ const professors = {
 
   // Koh Gabriel Kameda
   koh_name: `Koh Gabriel Kameda`,
-  koh_image: `/static/profesores/koh-gabriel-kameda.jpg`,
+  koh_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/koh-gabriel-kameda_hxdytl.jpg`,
   koh_role: `Guest Professor`,
   koh_instrument: `Violin`,
   koh_para_1: `Winner of the Henry Szering International Violin Competition (Mexico), Mr Kameda has performed as a soloist with orchestras such as the Israel Philharmonic, Japan Philharmonic, Baden-Baden Philharmonic, Staatskapelle Dresden, Berlin Symphony, Austrian Radio Symphony and Television, Belgium Radio and Television Orchestra, Zurich Chamber Orchestra, Irish National Symphony, Tokyo Symphony, Mexico City Philharmonic and Venezuela Symphony.`,
@@ -113,7 +113,7 @@ const professors = {
 
   // Molly Carr
   molly_name: `Molly Carr`,
-  molly_image: `/static/profesores/molly-carr.jpg`,
+  molly_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/molly-carr_zrrcur.jpg`,
   molly_role: `Guest Professor`,
   molly_chamber_role: `Viola`,
   molly_instrument: `Viola`,
@@ -125,7 +125,7 @@ const professors = {
 
   // Jordán Tejedor
   jordan_name: `Jordán Tejedor`,
-  jordan_image: `/static/profesores/jordan-tejedor.jpeg`,
+  jordan_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jordan-tejedor_tqlpwl.jpg`,
   jordan_role: `Guest Professor`,
   jordan_instrument: `Violin`,
   jordan_para_1: `Prize winner in the most important national competitions in the country, Jordán Tejedor is one of the most outstanding violinists and pedagogues of his generation on the Spanish musical scene. He approved the opposition to the Body of Music Teachers in 2006 in the specialty of violin and viola simultaneously.`,
@@ -135,7 +135,7 @@ const professors = {
 
   // Joaquín Riquelme
   joaquin_name: `Joaquín Riquelme`,
-  joaquin_image: `/static/profesores/joaquin-riquelme.jpg`,
+  joaquin_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/joaquin-riquelme_yg4fno.webp`,
   joaquin_role: `Guest Professor`,
   joaquin_instrument: `Violin`,
   joaquin_para_1: `Born in Murcia (Spain), Joaquín started his music studies in Murcia, before moving to Madrid to study at the Madrid Royal Conservatory. Later he studied at the Berlin University of the Arts, where he was a student of Hartmut Rohde.`,
@@ -148,7 +148,7 @@ const professors = {
 
   // Misha Dacić
   misha_name: `Misha Dacić`,
-  misha_image: `/static/profesores/misha-dacic.jpg`,
+  misha_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/misha-dacic_dzbvuh.jpg`,
   misha_role: `Principal Guest Professor`,
   misha_chamber_role: `Piano`,
   misha_instrument: `Piano`,
@@ -160,7 +160,7 @@ const professors = {
 
   // Josu De Solaun
   josu_name: `Josu De Solaun`,
-  josu_image: `/static/profesores/josu-de-solaun.jpg`,
+  josu_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/josu-de-solaun_f2ssfq.jpg`,
   josu_role: `Principal Guest Professor`,
   josu_chamber_role: `Piano`,
   josu_instrument: `Piano`,
@@ -172,7 +172,7 @@ const professors = {
 
   // Antonio Ortiz
   antonio_name: `Antonio Ortíz`,
-  antonio_image: `/static/profesores/antonio-ortiz.webp`,
+  antonio_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/antonio-ortiz_xgrpit.webp`,
   antonio_role: `Principal Professor`,
   antonio_instrument: `Piano`,
   antonio_para_1: `Currently Professor of Piano at the Conservatorio Superior de Música de Málaga, Antonio Ortiz combines teaching with his concert activity, regularly being invited to participate in renowned national and international venues.`,
@@ -181,7 +181,7 @@ const professors = {
 
   // Miguel Ángel Latorre
   miguel_name: `Miguel Ángel Latorre`,
-  miguel_image: `/static/profesores/miguel-angel.webp`,
+  miguel_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/miguel-angel_nyujnm.webp`,
   miguel_role: `Accompanying Pianist`,
   miguel_instrument: `Piano`,
   miguel_para_1: `He studied piano at the Gonzalo Martín Tenllado Professional Conservatory and the Superior Conservatory of Music of Malaga, finishing in 2018 under the tutelage of Juan Jesús Peralta.`,
@@ -190,7 +190,7 @@ const professors = {
 
   // Anna Petrova
   petrova_name: `Anna Petrova`,
-  petrova_image: `/static/profesores/anna-petrova.jpg`,
+  petrova_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/anna-petrova_emw5as.jpg`,
   petrova_role: `Guest Professor`,
   petrova_chamber_role: `Piano`,
   petrova_instrument: `Piano`,
@@ -202,7 +202,7 @@ const professors = {
 
   // Francesco Libetta
   francesco_name: `Francesco Libetta`,
-  francesco_image: `/static/profesores/francesco-libetta.webp`,
+  francesco_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/francesco-libetta_fptv6p.webp`,
   francesco_role: `Guest Professor`,
   francesco_instrument: `Piano`,
   francesco_para_1: `Francesco Libetta, a poet-aristocrat of the keyboard with the profile and carriage of a Renaissance prince» (M. Gurewitsch, The New York Times), was claimed to be «important pianist» (H. Schonberg), «un génie du piano comme on en voit peu» (O. Bellamy, Le Monde de la Musique), «Klaviergroßmeister» (T. R. Schulz, Hamburger Abendblatt), «figure-culte»(L. Sabbatini in La Tribune de Geneve). John Ardoin declared that of the new generation of pianists, Francesco Libetta is “the most inspired and creative”. Harold Schonberg wrote that: “master of every period and style, Libetta is the best representative of this modern style (…) who accepts virtuosity not as tightrope walking but as a species of literalism, where musical meaning is more important than knock’-em dead fingerwork (American Record Guide). With his multiform career as a composer, conductor and pianist, Francesco Libetta has given concerts all over the world. He has received commissions from European, Japanese and American associations and festivals for orchestral, chamber and electro-acoustic compositions. His repertoire as a conductor includes symphonic works by Wagner, Debussy and Mozart, as well as his own works, opera and ballet (Sleeping Beauty, Nutcracker).`,
@@ -217,7 +217,7 @@ const professors = {
 
   // Øyvind Gimse
   oyvind_name: `Øyvind Gimse`,
-  oyvind_image: `/static/profesores/oyvind-gimse.webp`,
+  oyvind_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/oyvind-gimse_u7ktmx.webp`,
   oyvind_role: `Principal Professor`,
   oyvind_chamber_role: `Cello`,
   oyvind_instrument: `Cello`,
@@ -227,7 +227,7 @@ const professors = {
 
   // Tilman Mahrenholz
   tilman_name: `Tilman Mahrenholz`,
-  tilman_image: `/static/profesores/tilman-mahrenholz.webp`,
+  tilman_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/tilman-mahrenholz_tfa1le.webp`,
   tilman_role: `Principal Professor`,
   tilman_instrument: `Cello`,
   tilman_para_1: `Tilman Mahrenholz was born in Germany and received his training at the "Hochschule für Musik Saar" in Saarbrücken and at the "Folkwang-Hochschule" in Essen. Later, he moved to New York, receiving a scholarship from the prestigious Juilliard School of Music. His teachers include Ulrich Voss, Prof. Christoph Richter, and Carter Brey.`,
@@ -236,7 +236,7 @@ const professors = {
 
   // Gabriel Ureña
   gabriel_name: `Gabriel Ureña`,
-  gabriel_image: `/static/profesores/gabriel-urena.webp`,
+  gabriel_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/gabriel-urena_s8vuzd.webp`,
   gabriel_role: `Guest Professor`,
   gabriel_instrument: `Cello`,
   gabriel_para_1: `Gabriel Ureña has performed as a soloist with the London City Orchestra, Oviedo Filarmonía and Arteus Orquesta and in prestigious international venues such as the Musikverein (Vienna), Champs-Élysées Theater (Paris), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) and the Teatro de la Maestranza (Seville).`,
@@ -245,7 +245,7 @@ const professors = {
 
   // Alberto Martos
   alberto_name: `Alberto Martos`,
-  alberto_image: `/static/profesores/alberto-martos.webp`,
+  alberto_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/alberto-martos_jc7nvs.webp`,
   alberto_role: `Guest Professor`,
   alberto_chamber_role: `Cello`,
   alberto_instrument: `Cello`,
@@ -257,7 +257,7 @@ const professors = {
 
   // Pablo Martos
   pablo_name: `Pablo Martos`,
-  pablo_image: `/static/profesores/pablo_martos.webp`,
+  pablo_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/pablo_martos_hmixe3.webp`,
   pablo_chamber_role: `Violin`,
   pablo_instrument: `Violin`,
   pablo_para_1: `His wealth of activity as a soloist and chamber musician has taken him to play in prestigious concert halls in Europe, EEUU, Russia and Israel. He was a member of the West-Eastern-Divan orchestra directed by Daniel Barenboim. One of the fruits of this collaboration in projects with the maestro Barenboim and the Barenboim-Said Foundation is that Pablo Martos has been invited to carry out tours. He has also given masterclasses in the Middle East.`,
@@ -268,7 +268,7 @@ const professors = {
 
   // Kyril Zlotnikov
   kyril_name: `Kyril Zlotnikov`,
-  kyril_image: `/static/profesores/kyril.jpeg`,
+  kyril_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/kyril_ahwjpe.jpg`,
   kyril_role: `Guest Professor`,
   kyril_instrument: `Cello`,
   kyril_para_1: `Born in Minsk, Belarus to a family of professional musicians, Kyril Zlotnikov began his studies at the Belarusian State Music Academy with Prof. Vladimir Perlin. He continued his studies in Israel with Prof. Uzi Wiesel and Hillel Zori, completing his musical education under the direction Prof. Michael Khomitzer in Jerusalem Rubin Academy of Music and Dance. While a student, Kyril Zlotnikov participated in master classes and courses with such prominent musicians as Isaac Stern, Yo-Yo Ma,Natalia Gutman, Boris Pergamenschikov, Aldo Parisot and Georgy Kurtag.`,
@@ -280,7 +280,7 @@ const professors = {
 
   // Asier Polo
   asier_name: `Asier Polo`,
-  asier_image: `/static/profesores/asier-polo.jpg`,
+  asier_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/asier-polo_npyw6w.jpg`,
   asier_role: `Guest Professor`,
   asier_instrument: `Cello`,
   asier_para_1: `Considered by the specialist music press as one of the most important cellists of his generation, Asier Polo has worked with many of the major international orchestras, such as the Philharmonia Orchestra, London Symphony Orchestra, Danish National Symphony Orchestra, Orchestra Sinfonica Nazionalle della RAI, Dresdner Philharmonie, Orchestre de Paris, BBC Philharmonic, Bergen Filharmoniske Orkester, Israel Philharmonic Orchestra, Berliner Symphoniker, Orquesta Nacional de México, Orquestra Sinfônica de São Paulo, Louisiana Philharmonic, Orquesta Nacional de España and Basel Symphony Orchestra, under the baton of distinguished conductors such as John Axelrod, Pinchas Steinberg, Christian Badea, Rafael Frühbeck de Burgos, Claus Peter Flor, Carlos Miguel Prieto, Günther Herbig, Juanjo Mena, Antoni Wit and Anne Manson.`,
@@ -295,7 +295,7 @@ const professors = {
 
   // Nils Georg
   nils_name: `Nils Georg`,
-  nils_image: `/static/profesores/nils-nilsen.webp`,
+  nils_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/nils-nilsen_vzbeo6.webp`,
   nils_role: `Principal Professor `,
   nils_instrument: `Tenor`,
   nils_para_1: `Norwegian soloist and voice teacher Nils Nilsen works as a vocal technique teacher at the Galamian International Academy. He made his debut in 2012 at the Avery Fisher Hall in New York and has performed with the "Opera Tampa" and "Norwegian Opera" companies and with the Minsk Chamber Orchestra. At age 13, he sang with Dama Kiribati te Kanawa, forming an artistic duo at the Spectrum venue in Oslo.`,
@@ -306,7 +306,7 @@ const professors = {
 
   // Sergio Montero
   sergio_name: `Sergio Montero`,
-  sergio_image: `/static/profesores/sergio-montero.webp`,
+  sergio_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/sergio-montero_eyqt5t.webp`,
   sergio_role: `Principal Pianist`,
   sergio_instrument: `Piano`,
   sergio_para_1: `He is a piano, chamber music, solfeggio, and music theory professor at the Superior Conservatory of Music of Málaga, where he has received the Honor Award in Piano and Chamber Music. He is also a tenured professor at the Manuel Carra Professional Conservatory of Music (Málaga).`,
@@ -317,7 +317,7 @@ const professors = {
 
   // Mariola Cantarero
   mariola_name: `Mariola Cantarero`,
-  mariola_image: `/static/profesores/mariola-cantarero.webp`,
+  mariola_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/mariola-cantarero_gm77j4.webp`,
   mariola_role: `Guest Professor`,
   mariola_instrument: `Soprano`,
   mariola_para_1: `Mariola Cantarero has been awarded in different international singing competitions such as "Francisco Viñas", "Operalia ́99", "Pedro Lavirgen", and "A.S.L.I.C.O. 2000", and received awards such as "Current Opera Award", "Revelation of the circle of friends of the Liceo", "Image Award of the City of Granada", "Critical Eye of RNE", "The Honorable Mention of the Diputación de Granada", "The Gold Medal of the City of Granada", as well as "The Gold Medal of Andalusia".`,
@@ -328,7 +328,7 @@ const professors = {
 
   // Joel Prieto
   joel_name: `Joel Prieto`,
-  joel_image: `/static/profesores/joel-prieto.jpg`,
+  joel_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/joel-prieto_ms4mgu.jpg`,
   joel_role: `Guest Professor`,
   joel_instrument: `Tenor`,
   joel_para_1: `Tenor Joel Prieto has become one of the most sought-after and exciting artists of his generation since he was unanimously awarded the highly coveted distinction of first prize in Plácido Domingo’s Operalia Competition in 2008.  The Spanish-born tenor, raised in Puerto Rico, continually captivates audiences, bringing depth and subtlety to leading roles, infusing characters with vitality, elegance, and beauty.`,
@@ -339,7 +339,7 @@ const professors = {
 
   // Francisco Araiza
   araiza_name: `Francisco Araiza`,
-  araiza_image: `/static/profesores/francisco-araiza.jpg`,
+  araiza_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/francisco-araiza_gkhap4.jpg`,
   araiza_role: `Guest Professor`,
   araiza_instrument: `Tenor`,
   araiza_para_1: `This versatile artist, who had already achieved world fame as the best interpreter of Mozart and Rossini, developed from 1983 into one of the leading representatives of the dramatic Italian, French and German repertoire.`,
@@ -351,7 +351,7 @@ const professors = {
 
   // José Vélez
   velez_name: `José Vélez`,
-  velez_image: `/static/profesores/jose-velez.jpeg`,
+  velez_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jose-velez_hsl7yg.jpg`,
   velez_chamber_role: `Singer`,
   velez_instrument: `Singer`,
   velez_para_1: `In the late 1960s, a music teacher from the Organización Juvenil Española (Spanish Youth Organisation) had the idea to create the music group Grupo Marabilla with some of his students, among them the Spanish singer José Velázquez. When the group separated, he began his solo career. In 1968 he participated in Madrid's talent contest "Salto a la Fama". He began to get recognition from that point, which led him to establish himself in Madrid.`,
@@ -363,7 +363,7 @@ const professors = {
   // CONDUCTORS
   // José Andrés Camacho
   jose_name: `José Andrés Camacho`,
-  jose_image: `/static/profesores/jose-camacho.webp`,
+  jose_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jose-camacho_dmphoq.webp`,
   jose_role: `Orchestra`,
   jose_group_role: `Youth and Children's Orchestra`,
   jose_instrument: `Youth and Children's Orchestra`,
@@ -373,7 +373,7 @@ const professors = {
 
   // Tomás Grau
   grau_name: `Tomás Grau`,
-  grau_image: `/static/profesores/tomas-grau.jpg`,
+  grau_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/tomas-grau_abfzg4.jpg`,
   grau_group_role: `Galamian Academy Orchestra`,
   grau_instrument: `Galamian Academy Orchestra`,
   grau_para_1: `Tomàs Grau is an inspired and highly sensitive conductor, sharing his love for the music with the audience. His precise and clear gestures and the sincerity of his musical readings distinguish him as they seek to transmit each score's light and delicate emotions.`,

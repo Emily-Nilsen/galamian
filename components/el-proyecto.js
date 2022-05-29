@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Schools from './schools';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function ElProyecto() {
   const { t } = useTranslation();
@@ -73,16 +74,24 @@ export default function ElProyecto() {
 
           <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
-            <div className="relative pt-64 pb-10 overflow-hidden shadow-none">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.8,
+                type: 'fade',
+                ease: 'easeIn',
+              }}
+              className="relative pt-64 pb-10 overflow-hidden shadow-none"
+            >
               <div className="absolute inset-0 object-cover w-full h-full">
                 <Image
-                  src="/static/group-photo-07.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/group-photo-07_syk94n.webp"
                   alt="El Proyecto"
-                  width={1600}
-                  height={1067}
                   layout="fill"
                   objectFit="cover"
                   objectPosition="bottom"
+                  unoptimized={true}
                 />
               </div>
               <div className="absolute inset-0 bg-gold-500 mix-blend-multiply" />
@@ -90,7 +99,7 @@ export default function ElProyecto() {
               <div className="relative px-8">
                 <div className="">
                   <Image
-                    src="/static/galamian-gold-dark.svg"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold_jnqahz.svg"
                     alt="Galamian logo"
                     width={60}
                     height={60}
@@ -108,7 +117,7 @@ export default function ElProyecto() {
                   </footer>
                 </blockquote>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 

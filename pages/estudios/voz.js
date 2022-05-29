@@ -7,6 +7,7 @@ import { CheckIcon } from '@heroicons/react/outline';
 import ProfesoresVoz from '../../components/estudio/profesores-voz';
 import VozRequisitos from '../../components/estudio/voz-requisitos';
 import JoagCTA from '../../components/joag/cta';
+import { motion } from 'framer-motion';
 
 export default function Voz() {
   const { t } = useTranslation();
@@ -136,17 +137,25 @@ export default function Voz() {
       <div className="relative bg-neutral-50">
         <div className="lg:absolute lg:inset-0">
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
-            <div className="relative object-cover w-full h-56 lg:absolute lg:h-full">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.8,
+                type: 'fade',
+                ease: 'easeIn',
+              }}
+              className="relative object-cover w-full h-56 lg:absolute lg:h-full"
+            >
               <Image
-                src="/static/estudia/voice/voice-photo-img-02.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voice-photo-img-02_g05tgl.webp"
                 alt="Estudio de Voz"
-                width={2400}
-                height={1383}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="left top"
+                unoptimized={true}
               />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="relative px-4 pt-12 pb-16 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
@@ -483,17 +492,27 @@ export default function Voz() {
             <p>{t('common:estudio_para_12_part_2')}</p>
             <p>{t('common:estudio_para_12_part_3')}</p>
             <figure>
-              <div className="w-full rounded-none">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.8,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="w-full rounded-none"
+              >
                 <Image
-                  src="/static/estudia/voice/voice-photo-01.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voice-photo-01_gxz1u9.webp"
                   alt="Estudio de Voz"
                   width={1080}
                   height={803}
                   layout="responsive"
                   objectFit="cover"
                   objectPosition="center"
+                  unoptimized={true}
                 />
-              </div>
+              </motion.div>
               <figcaption></figcaption>
             </figure>
             <h2 className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl">
@@ -506,7 +525,21 @@ export default function Voz() {
               </span>
               {t('common:estudio_para_13_part_4')}
             </p>
-            <JoagCTA />
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.7,
+                delay: 0.3,
+                ease: 'easeIn',
+              }}
+            >
+              <JoagCTA />
+            </motion.div>
           </div>
         </div>
       </div>

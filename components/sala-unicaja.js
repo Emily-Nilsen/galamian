@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function SalaUnicaja() {
   const { t } = useTranslation();
@@ -59,46 +60,73 @@ export default function SalaUnicaja() {
           </div>
 
           <div>
-            <div className="overflow-hidden shadow-none aspect-w-1 aspect-h-1 bg-neutral-100">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                delay: 0.1,
+                duration: 0.5,
+                type: 'fade',
+                ease: 'easeIn',
+              }}
+              className="overflow-hidden shadow-none aspect-w-1 aspect-h-1 bg-neutral-100"
+            >
               <div className="object-cover object-center w-full h-full">
                 <Image
-                  width={540}
-                  height={560}
-                  src="/static/unicaja-2.webp"
+                  unoptimized={true}
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-2_f8u4e2.webp"
                   alt="Sala Unicaja de Conciertos María Cristina"
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
                 />
               </div>
-            </div>
+            </motion.div>
             <div className="grid grid-cols-2 gap-4 mt-4 sm:gap-6 sm:mt-6 lg:gap-8 lg:mt-8">
-              <div className="overflow-hidden shadow-none aspect-w-1 aspect-h-1 bg-neutral-100">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  delay: 0.3,
+                  duration: 0.5,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="overflow-hidden shadow-none aspect-w-1 aspect-h-1 bg-neutral-100"
+              >
                 <div className="object-cover object-center w-full h-full">
                   <Image
-                    width={540}
-                    height={560}
-                    src="/static/unicaja-3.webp"
+                    unoptimized={true}
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-3_gcatci.webp"
                     alt="Sala Unicaja de Conciertos María Cristina"
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center"
                   />
                 </div>
-              </div>
-              <div className="overflow-hidden shadow-none aspect-w-1 aspect-h-1 bg-neutral-100">
+              </motion.div>
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="overflow-hidden shadow-none aspect-w-1 aspect-h-1 bg-neutral-100"
+              >
                 <div className="object-cover object-center w-full h-full">
                   <Image
-                    width={540}
-                    height={560}
-                    src="/static/unicaja-1.webp"
+                    unoptimized={true}
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-1_qmlb6b.webp"
                     alt="Sala Unicaja de Conciertos María Cristina"
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center"
                   />
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

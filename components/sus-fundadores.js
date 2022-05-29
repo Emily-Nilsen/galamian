@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function SusFundadores() {
   const { t } = useTranslation();
@@ -98,17 +99,27 @@ export default function SusFundadores() {
                 fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)"
               />
             </svg>
-            <div className="relative mx-auto shadow-none w-[410px]">
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.8,
+                type: 'fade',
+                ease: 'easeIn',
+              }}
+              className="relative mx-auto shadow-none w-[410px]"
+            >
               <Image
                 width={1024}
                 height={1200}
-                src="/static/profesores/jesus.jpg"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jesus_gmkfut.jpg"
                 alt="Jesús Reina"
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center"
+                unoptimized={true}
               />
-            </div>
+            </motion.div>
           </div>
         </div>
 
@@ -194,17 +205,27 @@ export default function SusFundadores() {
                   fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"
                 />
               </svg>
-              <div className="relative mx-auto shadow-none w-[410px]">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.8,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="relative mx-auto shadow-none w-[410px]"
+              >
                 <Image
                   width={1024}
                   height={1200}
-                  src="/static/profesores/anna.jpg"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/anna_oges5p.jpg"
                   alt="Anna Margrethe Nilsen"
                   layout="responsive"
                   objectFit="cover"
                   objectPosition="center"
+                  unoptimized={true}
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

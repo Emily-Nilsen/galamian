@@ -8,6 +8,7 @@ import { ExclamationIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
 import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -56,9 +57,19 @@ const GalamianJunior = () => {
       keywords={t('layout:junior_keywords')}
     >
       <div className="relative pb-6 bg-white lg:pb-24">
-        <div aria-hidden="true" className="relative">
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 0.8,
+            type: 'fade',
+            ease: 'easeIn',
+          }}
+          aria-hidden="true"
+          className="relative"
+        >
           <Image
-            src="/static/galamian-junior/teachers.jpg"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713701/Galamian/Galamian%20Junior/teachers_ipnvcp.jpg"
             alt="Jesús Reina"
             className="relative object-cover object-center w-full h-96"
             width={1920}
@@ -66,9 +77,10 @@ const GalamianJunior = () => {
             layout="responsive"
             objectFit="cover"
             objectPosition="top"
+            unoptimized={true}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-white" />
-        </div>
+        </motion.div>
 
         <div className="relative max-w-xl px-4 py-6 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
           <h2 className="text-4xl font-semibold leading-8 tracking-tight text-center text-neutral-900 sm:text-5xl lg:text-6xl">

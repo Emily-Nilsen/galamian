@@ -4,6 +4,7 @@ import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { CameraIcon } from '@heroicons/react/solid';
 import { XIcon, ArrowNarrowRightIcon } from '@heroicons/react/outline';
+import { motion } from 'framer-motion';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -93,17 +94,26 @@ export default function PianoProfesores() {
               role="list"
               className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:gap-x-8"
             >
-              {people.map((person) => (
-                <li key={person.name}>
-                  <div
-                    id={person.id}
-                    className="flex items-center space-x-4 transition duration-200 ease-in-out rounded-l-full cursor-pointer lg:space-x-6 hover:bg-neutral-50"
+              {people.map((person, i) => (
+                <li key={i}>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      y: 50,
+                    }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.5,
+                      delay: i * 0.2,
+                      ease: 'easeInOut',
+                    }}
+                    className="flex items-center space-x-4 rounded-l-full lg:space-x-6 hover:bg-neutral-50"
                   >
                     <div className="relative w-16 h-16 lg:w-20 lg:h-20">
                       <Image
                         className="rounded-full"
-                        width={1000}
-                        height={1000}
+                        unoptimized={true}
                         src={person.imageUrl}
                         alt={person.name}
                         layout="fill"
@@ -192,7 +202,16 @@ export default function PianoProfesores() {
                                     <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                                       <figure>
                                         <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                                          <div className="object-cover object-center overflow-hidden shadow-none">
+                                          <motion.div
+                                            whileInView={{ opacity: 1 }}
+                                            initial={{ opacity: 0 }}
+                                            transition={{
+                                              duration: 0.6,
+                                              type: 'fade',
+                                              ease: 'easeIn',
+                                            }}
+                                            className="object-cover object-center overflow-hidden shadow-none"
+                                          >
                                             <Image
                                               src={person.imageUrl}
                                               alt={person.name}
@@ -201,8 +220,9 @@ export default function PianoProfesores() {
                                               layout="responsive"
                                               objectFit="cover"
                                               objectPosition="center"
+                                              unoptimized={true}
                                             />
-                                          </div>
+                                          </motion.div>
                                         </div>
                                       </figure>
                                     </div>
@@ -229,7 +249,7 @@ export default function PianoProfesores() {
                                       </div>
 
                                       <Menu.Item>
-                                        <h3 className="pt-4 text-lg font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900 group">
+                                        <h3 className="pt-4 text-lg font-semibold tracking-tight transition duration-300 ease-in-out cursor-pointer text-gold-600 hover:text-neutral-900 group">
                                           {t('common:button_back')}{' '}
                                           <span aria-hidden="true">
                                             <ArrowNarrowRightIcon
@@ -248,7 +268,7 @@ export default function PianoProfesores() {
                         </Menu>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </li>
               ))}
             </ul>

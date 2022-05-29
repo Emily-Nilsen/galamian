@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import { CameraIcon } from '@heroicons/react/solid';
 import { XIcon, ArrowNarrowRightIcon } from '@heroicons/react/outline';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -97,14 +98,26 @@ export default function ProfesoresJunior() {
             role="list"
             className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
           >
-            {people.map((person) => (
-              <li key={person.name}>
-                <div className="space-y-6">
+            {people.map((person, i) => (
+              <li key={i}>
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: 50,
+                  }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.7,
+                    delay: i * 0.3,
+                    ease: 'easeInOut',
+                  }}
+                  className="space-y-6"
+                >
                   <div className="relative w-40 h-40 mx-auto rounded-full xl:w-56 xl:h-56">
                     <Image
                       className="rounded-full"
-                      width={500}
-                      height={500}
+                      unoptimized={true}
                       src={person.imageUrl}
                       alt={person.name}
                       layout="fill"
@@ -194,7 +207,16 @@ export default function ProfesoresJunior() {
                                   <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                                     <figure>
                                       <div className="aspect-w-12 aspect-h-10 lg:aspect-none">
-                                        <div className="object-cover object-center overflow-hidden shadow-none">
+                                        <motion.div
+                                          whileInView={{ opacity: 1 }}
+                                          initial={{ opacity: 0 }}
+                                          transition={{
+                                            duration: 0.8,
+                                            type: 'fade',
+                                            ease: 'easeIn',
+                                          }}
+                                          className="object-cover object-center overflow-hidden shadow-none"
+                                        >
                                           <Image
                                             src={person.imageUrl}
                                             alt={person.name}
@@ -203,8 +225,9 @@ export default function ProfesoresJunior() {
                                             layout="responsive"
                                             objectFit="cover"
                                             objectPosition="center"
+                                            unoptimized={true}
                                           />
-                                        </div>
+                                        </motion.div>
                                       </div>
                                       {/* <figcaption className="flex mt-3 text-sm text-neutral-500">
                                           <CameraIcon
@@ -258,7 +281,7 @@ export default function ProfesoresJunior() {
                       </Menu>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </li>
             ))}
           </ul>

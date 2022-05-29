@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Lecciones from './lecciones';
 import useTranslation from 'next-translate/useTranslation';
 import { CameraIcon } from '@heroicons/react/solid';
+import { motion } from 'framer-motion';
 
 export default function EstudioJunior() {
   const { t } = useTranslation();
@@ -59,17 +60,27 @@ export default function EstudioJunior() {
             <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <div className="object-cover object-center overflow-hidden shadow-none">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      duration: 0.8,
+                      type: 'fade',
+                      ease: 'easeIn',
+                    }}
+                    className="object-cover object-center overflow-hidden shadow-none"
+                  >
                     <Image
-                      src="/static/galamian-junior/estudio.jpg"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/Galamian%20Junior/estudio_cfejpd.jpg"
                       alt="Sala Unicaja de Conciertos María Cristina"
                       width={1720}
                       height={1147}
                       layout="responsive"
                       objectFit="cover"
                       objectPosition="center"
+                      unoptimized={true}
                     />
-                  </div>
+                  </motion.div>
                 </div>
                 <figcaption className="flex mt-3 text-sm text-neutral-600">
                   <CameraIcon

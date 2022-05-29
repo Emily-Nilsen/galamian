@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import FAQs from './faqs';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -14,7 +15,8 @@ export default function Requisitos() {
       name: `${t('galamianJunior:matricula_title')}`,
       description_01: `${t('galamianJunior:matricula_text_1')}`,
       description_02: `${t('galamianJunior:matricula_text_2')}`,
-      imageSrc: '/static/galamian-junior/admission.jpg',
+      imageSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/Galamian%20Junior/admission_w2zmns.jpg',
       imageAlt: 'La matrícula de la Academia Galamian',
     },
     {
@@ -24,7 +26,8 @@ export default function Requisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc: '/static/galamian-junior/becas.jpg',
+      imageSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/Galamian%20Junior/becas_a88cp2.jpg',
       imageAlt: 'La Academia Galamian y su Joven Orquesta',
     },
     {
@@ -32,7 +35,8 @@ export default function Requisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc: '/static/galamian-junior/titulacion.jpg',
+      imageSrc:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713701/Galamian/Galamian%20Junior/titulacion_f2rm0m.jpg',
       imageAlt: 'Joven Orquesta de la Academia Galamian',
     },
   ];
@@ -90,19 +94,30 @@ export default function Requisitos() {
                   'flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8'
                 )}
               >
-                <div className="overflow-hidden aspect-w-5 aspect-h-2 bg-neutral-100">
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                  }}
+                  whileInView={{ opacity: 1 }}
+                  // viewport={{ once: true }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.3,
+                    ease: 'easeIn',
+                  }}
+                  className="overflow-hidden aspect-w-5 aspect-h-2 bg-neutral-100"
+                >
                   <div className="overflow-hidden">
                     <Image
                       src={feature.imageSrc}
                       alt={feature.imageAlt}
-                      width={500}
-                      height={200}
+                      unoptimized={true}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           ))}

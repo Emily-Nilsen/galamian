@@ -15,7 +15,7 @@ export default function JoagCTA() {
           {t('common:joag_cta_text')}
         </p>
         <Link href="/joag" passHref>
-          <a className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-medium no-underline transition duration-300 ease-in-out bg-white border border-transparent rounded-none text-neutral-900 hover:bg-neutral-900 hover:text-white sm:w-auto">
+          <a className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-semibold no-underline transition duration-300 ease-in-out bg-white border border-transparent rounded-none text-neutral-900 hover:bg-neutral-900 hover:text-white sm:w-auto">
             {t('common:joag_cta_button')}
           </a>
         </Link>
