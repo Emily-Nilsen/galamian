@@ -80,7 +80,7 @@ export default function Hero() {
           {/* Logo cloud */}
           <div className="flex items-center justify-center bg-neutral-100">
             <div className="px-6 py-16 mx-auto max-w-7xl sm:px-8 lg:px-10">
-              <div className="grid grid-cols-2 gap-6 md:gap-14">
+              <div className="grid grid-cols-2 gap-20 md:gap-40">
                 <motion.div
                   initial={{
                     opacity: 0,
@@ -93,13 +93,13 @@ export default function Hero() {
                     delay: 1,
                     ease: 'easeOut',
                   }}
-                  className="flex col-span-1 justify-self-start"
+                  className="flex justify-center col-span-1"
                 >
-                  <div className="h-1/2">
+                  <div className="h-1/4">
                     <Image
-                      width={255}
-                      height={69}
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712310/Galamian/general/reina-nilsen-grey_jds7oo.svg"
+                      width={77}
+                      height={101}
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1661320932/Galamian/general/Fundacion_Reina-Nilsen_jlm5kx.svg"
                       alt="Fundación Reina Nilsen"
                       unoptimized={true}
                     />
@@ -119,11 +119,11 @@ export default function Hero() {
                   }}
                   className="flex justify-center col-span-1"
                 >
-                  <div className="h-1/2">
+                  <div className="h-1/4">
                     <Image
-                      width={204}
-                      height={55}
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-grey_jvqdqp.svg"
+                      width={87}
+                      height={101}
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1661321274/Galamian/general/unicaja_tsxjhv.svg"
                       alt="Unicaja Fundación"
                       unoptimized={true}
                     />
