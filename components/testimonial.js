@@ -44,6 +44,7 @@ export default function Testimonial() {
     <div className="pt-16 bg-white lg:pt-24">
       <div className="relative px-0 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <Carousel
+          showThumbs={false}
           infiniteLoop
           autoPlay
           interval="12000"
