@@ -46,13 +46,10 @@ export default function PianoProfesores() {
       href: `${t('professors:josu_href')}`,
     },
     {
-      name: `${t('professors:miguel_name')}`,
-      role: `${t('professors:miguel_role')}`,
-      imageUrl: `${t('professors:miguel_image')}`,
-      instrument: `${t('professors:miguel_instrument')}`,
-      sentence_01: `${t('professors:miguel_para_1')}`,
-      sentence_02: `${t('professors:miguel_para_2')}`,
-      sentence_03: `${t('professors:miguel_para_3')}`,
+      name: `${t('professors:margarita_name')}`,
+      role: `${t('professors:margarita_role')}`,
+      imageUrl: `${t('professors:margarita_image')}`,
+      instrument: `${t('professors:margarita_instrument')}`,
     },
     {
       name: `${t('professors:petrova_name')}`,

@@ -157,6 +157,17 @@ export default function GrupalesProfesores() {
       website: `${t('professors:grau_website')}`,
       href: `${t('professors:grau_href')}`,
     },
+    {
+      name: `${t('professors:vicente_name')}`,
+      role: `${t('professors:vicente_group_role')}`,
+      imageUrl: `${t('professors:vicente_image')}`,
+      instrument: `${t('professors:vicente_instrument')}`,
+      sentence_01: `${t('professors:vicente_para_1')}`,
+      sentence_02: `${t('professors:vicente_para_2')}`,
+      sentence_03: `${t('professors:vicente_para_3')}`,
+      website: `${t('professors:vicente_website')}`,
+      href: `${t('professors:vicente_href')}`,
+    },
   ];
 
   return (

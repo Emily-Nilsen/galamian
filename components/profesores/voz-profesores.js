@@ -25,27 +25,17 @@ export default function VozProfesores() {
       website: `${t('professors:nils_website')}`,
       href: `${t('professors:nils_href')}`,
     },
+
     {
-      name: `${t('professors:sergio_name')}`,
-      role: `${t('professors:sergio_role')}`,
-      imageUrl: `${t('professors:sergio_image')}`,
-      instrument: `${t('professors:sergio_instrument')}`,
-      sentence_01: `${t('professors:sergio_para_1')}`,
-      sentence_02: `${t('professors:sergio_para_2')}`,
-      sentence_03: `${t('professors:sergio_para_3')}`,
-      website: `${t('professors:sergio_website')}`,
-      href: `${t('professors:sergio_href')}`,
-    },
-    {
-      name: `${t('professors:mariola_name')}`,
-      role: `${t('professors:mariola_role')}`,
-      imageUrl: `${t('professors:mariola_image')}`,
-      instrument: `${t('professors:mariola_instrument')}`,
-      sentence_01: `${t('professors:mariola_para_1')}`,
-      sentence_02: `${t('professors:mariola_para_2')}`,
-      sentence_03: `${t('professors:mariola_para_3')}`,
-      website: `${t('professors:mariola_website')}`,
-      href: `${t('professors:mariola_href')}`,
+      name: `${t('professors:natalia_name')}`,
+      alternativeRole: `${t('professors:natalia_alternativeRole')}`,
+      imageUrl: `${t('professors:natalia_image')}`,
+      instrument: `${t('professors:natalia_instrument')}`,
+      sentence_01: `${t('professors:natalia_para_1')}`,
+      sentence_02: `${t('professors:natalia_para_2')}`,
+      sentence_03: `${t('professors:natalia_para_3')}`,
+      website: `${t('professors:natalia_website')}`,
+      href: `${t('professors:natalia_href')}`,
     },
     {
       name: `${t('professors:joel_name')}`,
@@ -123,7 +113,9 @@ export default function VozProfesores() {
                             <Menu.Button>
                               <div className="space-y-1 text-lg font-medium leading-6 tracking-tight text-left text-neutral-900 focus:outline-none focus:ring-0 ring-0 ring-transparent focus:ring-transparent">
                                 <h3>{person.name}</h3>
-                                <p className="text-gold-600">{person.role}</p>
+                                <p className="text-gold-600">
+                                  {person.alternativeRole || person.role}
+                                </p>
                               </div>
                             </Menu.Button>
                           </div>
@@ -143,7 +135,9 @@ export default function VozProfesores() {
                                   <div className="flex items-start justify-between">
                                     <div>
                                       <h3 className="text-base font-normal tracking-tight text-neutral-900">
-                                        {person.instrument}
+                                        {person.instrument
+                                          ? person.instrument
+                                          : person.alternativeRole}
                                       </h3>
                                       <h2 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gold-600 sm:text-4xl">
                                         {person.name}
@@ -241,16 +235,20 @@ export default function VozProfesores() {
                                       <p>{person.sentence_02}</p>
                                       <p>{person.sentence_03}</p>
                                       <p>{person.sentence_04}</p>
-                                      <div className="mt-6">
-                                        <a
-                                          href={person.href}
-                                          target="_blank"
-                                          rel="noreferrer"
-                                          className="text-xl font-semibold leading-7 tracking-tight no-underline transition duration-200 ease-in-out text-neutral-500 hover:text-gold-600"
-                                        >
-                                          {person.website}
-                                        </a>
-                                      </div>
+                                      {person.website ? (
+                                        <>
+                                          <div className="mt-6">
+                                            <a
+                                              href={person.href}
+                                              target="_blank"
+                                              rel="noreferrer"
+                                              className="text-xl font-semibold leading-7 tracking-tight no-underline transition duration-200 ease-in-out text-neutral-500 hover:text-gold-600"
+                                            >
+                                              {person.website}
+                                            </a>
+                                          </div>
+                                        </>
+                                      ) : null}
 
                                       <Menu.Item>
                                         <h3 className="pt-4 text-lg font-semibold tracking-tight transition duration-300 ease-in-out cursor-pointer text-gold-600 hover:text-neutral-900 group">

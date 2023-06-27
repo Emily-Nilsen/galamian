@@ -15,15 +15,6 @@ export default function VioloncheloProfesores() {
 
   const people = [
     {
-      name: `${t('professors:oyvind_name')}`,
-      role: `${t('professors:oyvind_role')}`,
-      imageUrl: `${t('professors:oyvind_image')}`,
-      instrument: `${t('professors:oyvind_instrument')}`,
-      sentence_01: `${t('professors:oyvind_para_1')}`,
-      sentence_02: `${t('professors:oyvind_para_2')}`,
-      sentence_03: `${t('professors:oyvind_para_3')}`,
-    },
-    {
       name: `${t('professors:tilman_name')}`,
       role: `${t('professors:tilman_role')}`,
       imageUrl: `${t('professors:tilman_image')}`,
@@ -32,6 +23,16 @@ export default function VioloncheloProfesores() {
       sentence_02: `${t('professors:tilman_para_2')}`,
       sentence_03: `${t('professors:tilman_para_3')}`,
     },
+    {
+      name: `${t('professors:oyvind_name')}`,
+      role: `${t('professors:oyvind_role')}`,
+      imageUrl: `${t('professors:oyvind_image')}`,
+      instrument: `${t('professors:oyvind_instrument')}`,
+      sentence_01: `${t('professors:oyvind_para_1')}`,
+      sentence_02: `${t('professors:oyvind_para_2')}`,
+      sentence_03: `${t('professors:oyvind_para_3')}`,
+    },
+
     {
       name: `${t('professors:gabriel_name')}`,
       role: `${t('professors:gabriel_role')}`,
@@ -65,15 +66,16 @@ export default function VioloncheloProfesores() {
       href: `${t('professors:asier_href')}`,
     },
     {
-      name: `${t('professors:alberto_name')}`,
-      role: `${t('professors:alberto_role')}`,
-      imageUrl: `${t('professors:alberto_image')}`,
-      instrument: `${t('professors:alberto_instrument')}`,
-      sentence_01: `${t('professors:alberto_para_1')}`,
-      sentence_02: `${t('professors:alberto_para_2')}`,
-      sentence_03: `${t('professors:alberto_para_3')}`,
-      website: `${t('professors:alberto_website')}`,
-      href: `${t('professors:alberto_href')}`,
+      name: `${t('professors:adolfo_name')}`,
+      role: `${t('professors:adolfo_role')}`,
+      imageUrl: `${t('professors:adolfo_image')}`,
+      instrument: `${t('professors:adolfo_instrument')}`,
+      sentence_01: `${t('professors:adolfo_para_1')}`,
+      sentence_02: `${t('professors:adolfo_para_2')}`,
+      sentence_03: `${t('professors:adolfo_para_3')}`,
+      sentence_04: `${t('professors:adolfo_para_4')}`,
+      website: `${t('professors:adolfo_website')}`,
+      href: `${t('professors:adolfo_href')}`,
     },
   ];
 

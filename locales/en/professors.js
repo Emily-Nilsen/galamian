@@ -54,16 +54,20 @@ const professors = {
 
   // Natalia Kuchaeva
   natalia_name: `Natalia Kuchaeva`,
-  natalia_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/natalia_cd19rz.jpg`,
+  natalia_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Natalia_Kuchaeva_ppzy71.webp`,
+  natalia_instrument: '',
+  natalia_alternativeRole: `Accompanist`,
   natalia_role: `Brainin Method`,
   natalia_para_1: `Coming from a family of scientists and with a deep musical tradition, the Moscow pianist Natalia Kucháeva has lived in Spain since 2009. Her repertoire covers a wide range of styles, from the Baroque to the 21st century.`,
   natalia_para_2: `Natalia Kucháeva received solid musical training at the School of Music affiliated with the P.I. Tchaikovsky in Moscow. Later, she graduated and completed postgraduate studies at the Gnessin Academy under the direction of Master Vladimir Tropp.`,
   natalia_para_3: `She perfects herself at the Superior School of Music in Lucerne (Switzerland) with the internationally renowned pianist Konstantin Lifschitz. She currently develops her work as a teacher by applying the Brainin Method in her teaching.`,
+  natalia_website: '',
 
   // Vicente Chulía
   vicente_name: `Vicente Chulía`,
   vicente_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/chulia_wjo4jb.jpg`,
   vicente_role: `Fundamental Principles of Musical Interpretation`,
+  vicente_group_role: `Galamian Academy Orchestra`,
   vicente_para_1: `Born in Spain, the conductor and composer Vicente Chulía incorporates both inseparable facets of musical art into a broad idea of ​​symphonic interpretation. He has studied conducting at the “Musikene” Superior Conservatory of Music in San Sebastián with Maestro Enrique García Asensio. He is a graduate conductor at the Royal Superior Conservatory of Madrid with Antonio Moya.`,
   vicente_para_2: `He also has training in harmony, counterpoint, fugue, orchestration and composition with Salvador Chuliá Hernández and musicology with José Climent.`,
   vicente_para_3: `Vicente Chulía currently has a comprehensive catalogue of publications of more than seventy symphonic, chamber and solo works that he performed nationally and internationally.`,
@@ -179,14 +183,14 @@ const professors = {
   antonio_para_2: `He studied with masters such as Dimitri Bashkirov and Claudio Martínez Mehner at the "Reina Sofía" Higher School of Music in Madrid, Josep María Colom at the University of Alcalá, Marie Françoise Buquet in Paris and José Felipe Díaz at the Superior Conservatory of Music of Malaga.`,
   antonio_para_3: `Antonio Ortiz has performed concerts with leading Spanish orchestras such as the Spanish Radio Television Symphony Orchestra, the National Youth Orchestra of Spain and the Malaga Philharmonic Orchestra, under the direction of Aldo Ceccato, Bruno Aprea, Fusao Kajima, Pablo Mielgo, Manuel Hernández-Silva, Roselín Pabón and Blanca Trabalón. He has won prizes in the contests "Manuel de Falla" and "José Roca" and made different recordings for TVE and Radio Clásica of RNE.`,
 
-  // Miguel Ángel Latorre
-  miguel_name: `Miguel Ángel Latorre`,
-  miguel_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/miguel-angel_nyujnm.webp`,
-  miguel_role: `Accompanying Pianist`,
-  miguel_instrument: `Piano`,
-  miguel_para_1: `He studied piano at the Gonzalo Martín Tenllado Professional Conservatory and the Superior Conservatory of Music of Malaga, finishing in 2018 under the tutelage of Juan Jesús Peralta.`,
-  miguel_para_2: `In 2015, he did an Erasmus stay at the Royal Irish Academy of Music to study with Professor Therese Fahy. Miguel Ángel Latorre holds a Master's degree in Musical Heritage from the University of Granada.`,
-  miguel_para_3: `He continues his training with the pianists Nuria Perles and Javier Herreros. He is also a finalist in three editions of the Málaga Crea Festival of Young Performers, obtaining the Second Prize in 2018. Since 2019, he has collaborated with the Ivan Galamian International Academy as an accompanying pianist.`,
+  // Margarita Kozlowska
+  margarita_name: `Margarita Kozlowska`,
+  margarita_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Margarita_xbxwh7.webp`,
+  margarita_role: `Accompanying Pianist`,
+  margarita_instrument: `Piano`,
+  margarita_para_1: ``,
+  margarita_para_2: ``,
+  margarita_para_3: ``,
 
   // Anna Petrova
   petrova_name: `Anna Petrova`,
@@ -218,7 +222,7 @@ const professors = {
   // Øyvind Gimse
   oyvind_name: `Øyvind Gimse`,
   oyvind_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/oyvind-gimse_u7ktmx.webp`,
-  oyvind_role: `Principal Professor`,
+  oyvind_role: `Guest Professor`,
   oyvind_chamber_role: `Cello`,
   oyvind_instrument: `Cello`,
   oyvind_para_1: `The Trondheim Soloists appointed Cellist Øyvind Gimse as Artistic Director in 2002, continuing the broad profile and musical versatility that characterizes the group. Having studied in Munich, Salzburg and Vienna with professors such as Walter Nothas, Frans Helmersen and William Pleeth, he became the principal cellist of the Trondheim Symphony Orchestra from 1991 to 1997.`,
@@ -243,17 +247,18 @@ const professors = {
   gabriel_para_2: `He has shared the stage with artists such as Leo Nucci, Edita Gruberová, Ainhoa ​​Arteta, Ruggero Raimondi, Anna Netrebko, Ilya Gringolts, Benjamin Schmid, the Labèque sisters, Natalia Gutman and Midori. Furthermore, Gabriel Ureña has won the First Prize at the Cello de Arquillos Competition (Jaén ) and the "Ciudad de Manresa" International Chamber Music Competition.`,
   gabriel_para_3: `Among his recent career milestones is the publication of his first CD, with the Aria Classics label, with works by Prokofiev, Shostakovich and Rachmaninov, together with the pianist Patxi Aizpiri, his solo concert with the Malaga Philharmonic Orchestra and his debut with the National Orchestra of Colombia at the Teatro Colón in Bogotá.`,
 
-  // Alberto Martos
-  alberto_name: `Alberto Martos`,
-  alberto_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/alberto-martos_jc7nvs.webp`,
-  alberto_role: `Guest Professor`,
-  alberto_chamber_role: `Cello`,
-  alberto_instrument: `Cello`,
-  alberto_para_1: `After his successful recordings for the prestigious label Sony Classical, Alberto Martos is a rising star in the current music scene. He has performed at many famous venues such as the Auditorio Nacional of Madrid, Palau de la Música Catalana, Carnegie Hall, Staatsoper Berlin, Teatro Colón of Buenos Aires and the Royal Albert Hall. Personally chosen by Daniel Barenboim as co-principal cellist for the West Eastern Divan Orchestra, he was described by the maestro as “one of the most promising cellists”.`,
-  alberto_para_2: `He is co-founder of the prestigious Garnati Ensemble and his work Playing Goldberg recorded on Sony Classical together with Pablo Martos and Yuval Gotlibovich gained critical acclaim from the music press. In 2013 he was awarded together with his brother the Andalucia Joven prize for his voluntary work in the field of music. Part of this work was recorded in a documentary produced by Mercedes Milá and directed by Amparo Mendo, called The Healing Notes. In 2016 they were invited to Puerto Rico to the inauguration of the Pilar Defilló museum named after the mother of Pau Casals and were given the award of honorary freedom of the city of Mayagüez.`,
-  alberto_para_3: `Despite covering all types of repertoires, Mr Martos is a strong defender of the contemporary music. Many great composers as José Luís Greco, Ramón Paús, Pedro Guajardo, Yuval Gotlibovich or Juan Cruz have written works for him. Some of the recent premieres include Audax and Ciudadano Sombra by Ramón Paús, Cuento by Yuval Gotlibovich, the absolute premiere of  Conrado del Campo´s string trios (recovery of historical heritage) and Woman at a Window by José Luís Greco.`,
-  alberto_website: `www.albertomartos.com`,
-  alberto_href: `http://www.albertomartos.com/`,
+  // Adolfo Gutiérrez
+  adolfo_name: `Adolfo Gutiérrez`,
+  adolfo_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
+  adolfo_role: `Guest Professor`,
+  adolfo_chamber_role: `Cello`,
+  adolfo_instrument: `Cello`,
+  adolfo_para_1: `Adolfo Gutiérrez, the winner of the Ravel prize 2012, made his debut with the London Symphony Orchestra in the prestigious Ibermusica series, in Madrid, performing Elgar’s Cello Concerto and following was invited to perform with the Royal Philharmonic Orchestra (Charles Dutoit), Orquesta Nacional de España (Ton Koopman) and at the Mendelssohn Festival at Leipzig’s Gewandhaus.`,
+  adolfo_para_2: `Current highlights include performances as a soloist with the London Philharmonic Orchestra (Vladimir Jurowski), Orquesta Nacional de España (Krzysztof Penderecki), Fort Worth Symphony under Miguel Harth-Bedoya, Orquesta Sinfónica Nacional de Colombia and performances at the Ravinia Festival and Montreal Symphony’s Summer Festival.`,
+  adolfo_para_3: `Adolfo has performed at major venues such as Amsterdam’s Concertgebouw, Auditorio Nacional de Música in Madrid, Ford Theatre in Los Angeles, l’Auditori and Palau de la Música in Barcelona, Bulgaria Hall in Sofia and Palacio Euskalduna in Bilbao, and collaborated with conductors such as Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali and Antoni Ros-Marbà.`,
+  adolfo_para_4: `Adolfo has recorded Barber, Rachmaninov, Piazzolla and the complete cycle of the cello suites by J.S. Bach on the Verso label. His recent recording of the complete Beethoven Sonatas with pianist Christopher Park received great critical acclaim. Adolfo plays a Francesco Ruggieri, handcrafted in Cremona in 1673.`,
+  adolfo_website: ``,
+  adolfo_href: ``,
 
   // Pablo Martos
   pablo_name: `Pablo Martos`,

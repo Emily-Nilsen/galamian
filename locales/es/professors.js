@@ -55,16 +55,20 @@ const professors = {
 
   // Natalia Kuchaeva
   natalia_name: `Natalia Kuchaeva`,
-  natalia_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/natalia_cd19rz.jpg`,
+  natalia_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Natalia_Kuchaeva_ppzy71.webp`,
+  natalia_instrument: '',
+  natalia_alternativeRole: `Repertorista`,
   natalia_role: `Método Brainin`,
   natalia_para_1: `Procedente de una familia de científicos y de gran tradición musical, la pianista moscovita Natalia Kucháeva reside en España desde el año 2009. Su repertorio abarca el más amplio abanico de estilos desde el barroco hasta el siglo XXI.`,
   natalia_para_2: `Recibe una sólida formación musical en la Escuela de Música afiliada al Conservatorio Estatal P.I. Tchaikovsky de Moscú y en la Academia Gnessin donde se gradúa y realiza los estudios de Posgrado bajo la dirección del maestro Vladimir Tropp.`,
   natalia_para_3: `Se perfecciona en la Escuela Superior de Música de Lucerna (Suiza), con el pianista de reconocido prestigio internacional Konstantin Lifschitz. Actualmente desarrolla su labor como docente aplicando el Método Brainin en su enseñanza.`,
+  natalia_website: '',
 
   // Vicente Chulía
   vicente_name: `Vicente Chulía`,
   vicente_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/chulia_wjo4jb.jpg`,
   vicente_role: `Principios Fundamentales de la Interpretación Musical`,
+  vicente_group_role: `Orquesta Academia Galamian`,
   vicente_para_1: `Director de orquesta y compositor español que incorpora ambas facetas inseparables del arte musical a una idea amplia de la interpretación sinfónica, ha estudiado dirección de orquesta en el Conservatorio Superior de Música “Musikene” de San Sebastián con el Maestro Enrique García Asensio y es graduado de dirección en el Real Conservatorio Superior de Madrid con Antonio Moya.`,
   vicente_para_2: `También tiene formación de armonía, contrapunto, fuga, orquestación y composición con Salvador Chuliá Hernández y musicología con José Climent.`,
   vicente_para_3: `En la actualidad posee un amplio catálogo de publicaciones de más de setenta obras sinfónicas, de cámara y para solista que son interpretadas a nivel nacional e internacional.`,
@@ -193,14 +197,14 @@ const professors = {
   antonio_para_2: `Estudió con maestros de la talla de Dimitri Bashkirov y Claudio Martínez Mehner en la Escuela Superior de Música “Reina Sofía” de Madrid, Josep María Colom en la Universidad de Alcalá, Marie Françoise Buquet en París y José Felipe Díaz en Conservatorio Superior de Música de Málaga.`,
   antonio_para_3: `Ha realizado conciertos con las principales orquestas españolas como la Orquesta Sinfónica de Radio Televisión Española, Joven Orquesta Nacional de España y Orquesta Filarmónica de Málaga, bajo la dirección de Aldo Ceccato, Bruno Aprea, Fusao Kajima, Pablo Mielgo, Manuel Hernández-Silva, Roselín Pabón y Blanca Trabalón. Ha obtenido premios en los concursos "Manuel de Falla” y "José Roca” y efectuado diferentes grabaciones para TVE y Radio Clásica de RNE.`,
 
-  // Miguel Ángel Latorre
-  miguel_name: `Miguel Ángel Latorre`,
-  miguel_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/miguel-angel_nyujnm.webp`,
-  miguel_role: `Pianista Acompañante`,
-  miguel_instrument: `Piano`,
-  miguel_para_1: `Realizó sus estudios de piano en el Conservatorio Profesional Gonzalo Martín Tenllado y en el Conservatorio Superior de Málaga, finalizando en 2018 bajo la tutela de Juan Jesús Peralta.`,
-  miguel_para_2: `En 2015, realiza una estancia Erasmus en la Royal Irish Academy of Music, para estudiar con la profesora Therese Fahy. Posee el título de Máster en Patrimonio Musical por la Universidad de Granada.`,
-  miguel_para_3: `Actualmente, continúa su formación con los pianistas Nuria Perles y Javier Herreros. Es finalista en tres ediciones de la Muestra de Jóvenes Intérpretes Málaga Crea, obteniendo el Segundo Premio en el año 2018. Desde 2019, colabora con la Academia Ivan Galamian como pianista acompañante.`,
+  // Margarita Kozlowska
+  margarita_name: `Margarita Kozlowska`,
+  margarita_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Margarita_xbxwh7.webp`,
+  margarita_role: `Pianista Acompañante`,
+  margarita_instrument: `Piano`,
+  margarita_para_1: ``,
+  margarita_para_2: ``,
+  margarita_para_3: ``,
 
   // Anna Petrova
   petrova_name: `Anna Petrova`,
@@ -232,7 +236,7 @@ const professors = {
   // Øyvind Gimse
   oyvind_name: `Øyvind Gimse`,
   oyvind_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/oyvind-gimse_u7ktmx.webp`,
-  oyvind_role: `Profesor Principal`,
+  oyvind_role: `Profesor Invitado`,
   oyvind_chamber_role: `Violonchelo`,
   oyvind_instrument: `Violonchelo`,
   oyvind_para_1: `El cellista Øyvind Gimse fue designado Director Artístico de los Trondheim Soloists en 2002, continuando con el amplio perfil y versatilidad musical que caracteriza al grupo. Habiendo estudiado en Munich, Salzburg y Vienna, con profesores como Walter Nothas, Frans Helmersen and William Pleeth, llegó a ser el principal cellista de la Orquesta Sinfónica de Trondheim de 1991 a 1997.`,
@@ -257,17 +261,18 @@ const professors = {
   gabriel_para_2: `Ha compartido escenario con artistas como Leo Nucci, Edita Gruberová, Ainhoa Arteta, Ruggero Raimondi, Anna Netrebko, Ilya Gringolts, Benjamin Schmid, las hermanas Labèque, Natalia Gutman o Midori, y ha ganado el Primer Premio del Concurso de Cello de Arquillos (Jaén) y del Concurso Internacional de Música de Cámara "Ciudad de Manresa”.`,
   gabriel_para_3: `Entre los hitos más recientes de su carrera figuran la publicación de su primer CD, con el sello Aria Classics, con obras de Prokofiev, Shostakovich y Rachmaninov, junto al pianista Patxi Aizpiri, su concierto como solista con la Orquesta Filarmónica de Málaga o su debut con la Orquesta Nacional de Colombia en el Teatro Colón de Bogotá.`,
 
-  // Alberto Martos
-  alberto_name: `Alberto Martos`,
-  alberto_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/alberto-martos_jc7nvs.webp`,
-  alberto_role: `Profesor Invitado`,
-  alberto_chamber_role: `Violonchelo`,
-  alberto_instrument: `Violonchelo`,
-  alberto_para_1: `Tras el éxito de sus grabaciones para el sello Sony Classical, Alberto Martos emerge con fuerza en el panorama musical actual. Formado en España y Alemania, su rica actividad concertística le ha llevado a actuar en salas como el Auditorio Nacional, Palau de la Música Catalana, Carnegie Hall, Sala Pleyel, Teatro Colón o Philarmonie de Berlín. Elegido personalmente por Daniel Barenboim para ocupar el primer atril de la West Eastern Divan Orchestra, fue definido por el maestro como “una de las mayores promesas del violonchelo”.`,
-  alberto_para_2: `Miembro fundador del prestigioso Garnati Ensemble, su trabajo Playing Goldberg registrado en Sony Classical junto a Pablo Martos y Yuval Gotlibovich obtiene las mejores críticas de la prensa especializada. En 2013 recibe junto a su hermano el premio Andalucía Joven por su labor solidaria a través de la música. Parte de esta labor fue registrada en el documental The Healing Notes, producido por Mercedes Milá y dirigido por Amparo Mendo. En 2016 fueron invitados a Puerto Rico, donde inauguraron el museo Pilar Defillò (madre de Pau Casals), siendo nombrados “Huéspedes Distinguidos” de la Ciudad de Mayagüez.`,
-  alberto_para_3: `A pesar de abarcar todo tipo de repertorios, Alberto Martos es un gran defensor de la música contemporánea. Le han dedicado obras compositores de la talla de José Luís Greco, Ramón Paús, Pedro Guajardo, Yuval Gotlibovich o Juan Cruz. Algunos de los últimos estrenos incluyen Audax y Ciudadano Sombra de Ramón Paús, Cuento de Yuval Gotlibovich, el estreno absoluto de los tríos de Conrado del Campo (recuperación de patrimonio) y Woman at a Window de José Luís Greco.`,
-  alberto_website: `www.albertomartos.com`,
-  alberto_href: `http://www.albertomartos.com/`,
+  // Adolfo Gutiérrez
+  adolfo_name: `Adolfo Gutiérrez`,
+  adolfo_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
+  adolfo_role: `Profesor Invitado`,
+  adolfo_chamber_role: `Violonchelo`,
+  adolfo_instrument: `Violonchelo`,
+  adolfo_para_1: `Adolfo Gutiérrez, ganador del premio Ravel 2012, debutó con la London Symphony Orchestra en el prestigioso ciclo Ibermusica, en Madrid, interpretando el Concierto para violonchelo de Elgar y enseguida fue invitado a actuar con la Royal Philharmonic Orchestra (Charles Dutoit) , Orquesta Nacional de España (Ton Koopman) y en el Festival Mendelssohn en la Gewandhaus de Leipzig.`,
+  adolfo_para_2: `Entre sus compromisos caben a destacar actuaciones como solista con la Orquesta Filarmónica de Londres (Vladimir Jurowski), la Orquesta Nacional de España (Krzysztof Penderecki), la Sinfónica de Fort Worth bajo la dirección de Miguel Harth-Bedoya, la Orquesta Sinfónica Nacional de Colombia y actuaciones en el Festival de Ravinia y el Festival de Verano de la Sinfónica de Montreal.`,
+  adolfo_para_3: `Adolfo ha actuado en escenarios importantes como el Concertgebouw de Ámsterdam, el Auditorio Nacional de Música de Madrid, el Ford Theatre de Los Ángeles, l'Auditori y Palau de la Música de Barcelona, ​​la Sala Bulgaria de Sofía o el Palacio Euskalduna de Bilbao, y ha colaborado con directores como como Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali y Antoni Ros-Marbà.`,
+  adolfo_para_4: `Adolfo ha grabado Barber, Rachmaninov, Piazzolla y el ciclo completo de las suites para violonchelo de J.S. Bach con el sello Verso. Su grabación reciente de las sonatas completas de Beethoven con el pianista Christopher Park ha recibido excelentes críticas. Adolfo toca un Francesco Ruggieri, hecho a mano en Cremona en 1673.`,
+  adolfo_website: ``,
+  adolfo_href: ``,
 
   // Pablo Martos
   pablo_name: `Pablo Martos`,
