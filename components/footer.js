@@ -33,7 +33,7 @@ export default function Footer() {
     ],
     recursos: [
       { name: `${t('footer:recursos_1')}`, href: '/#noticias' },
-      { name: `${t('footer:recursos_3')}`, href: '/bulletin' },
+      // { name: `${t('footer:recursos_3')}`, href: '/bulletin' },
       { name: `${t('common:joag')}`, href: '/joag' },
     ],
     social: [

@@ -10,32 +10,38 @@ export default function Estudios() {
   const estudios = [
     {
       id: 1,
-      name: `${t('estudios:estudio_violin')}`,
+      name: `Estudio de violin, viola, violonchelo, piano y voz`,
       href: '/estudios/violin',
+      instrumento: `Violín, viola, violonchelo, piano y voz`,
+      edad: `Todas las edades`,
+      extraInfo: `Opción de elegir modalidades A, B o C`,
       imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653733507/Galamian/general/violin_qbjl9q.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/violin-study-img-1_kqtcng.webp',
     },
     {
       id: 2,
-      name: `${t('estudios:estudio_piano')}`,
-      href: '/estudios/piano',
+      name: `Artist Diploma`,
+      href: '/estudios/artist-diploma',
+      instrumento: `Violín, viola y violonchelo`,
+      edad: `Haber terminado el Superior o nivel similar`,
+      extraInfo: ``,
       imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712480/Galamian/general/piano_02_mlnoft.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/violin_qbjl9q.jpg',
     },
-    {
-      id: 3,
-      name: `${t('estudios:estudio_violonchelo')}`,
-      href: '/estudios/violonchelo',
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/audiciones_d48ubx.jpg',
-    },
-    {
-      id: 4,
-      name: `${t('estudios:estudio_voz')}`,
-      href: '/estudios/voz',
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voz_awkm23.jpg',
-    },
+    // {
+    //   id: 3,
+    //   name: `${t('estudios:estudio_violonchelo')}`,
+    //   href: '/estudios/violonchelo',
+    //   imageSrc:
+    //     'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/audiciones_d48ubx.jpg',
+    // },
+    // {
+    //   id: 4,
+    //   name: `${t('estudios:estudio_voz')}`,
+    //   href: '/estudios/voz',
+    //   imageSrc:
+    //     'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voz_awkm23.jpg',
+    // },
   ];
 
   return (
@@ -89,22 +95,55 @@ export default function Estudios() {
                       objectPosition="top"
                     />
                   </div>
-                  <div
+                  {/* <div
                     className="flex items-start p-4 transition duration-300 ease-in-out opacity-0 group-hover:opacity-100"
                     aria-hidden="true"
                   >
                     <div className="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-50 rounded-none text-neutral-900 backdrop-filter backdrop-blur">
                       {t('estudios:estudio_ver')}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
-                <div className="flex items-center justify-between mt-4 space-x-8 text-lg font-bold tracking-tight text-neutral-900">
-                  <h3>
-                    <a href={estudio.href}>
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      {estudio.name}
-                    </a>
-                  </h3>
+                <div className="flex items-center justify-between mt-4 space-x-8 tracking-tight text-neutral-900">
+                  <ul
+                    role="list"
+                    className="max-w-xl mt-0 space-y-2 text-sm text-neutral-600"
+                  >
+                    <h3>
+                      <li className="text-lg font-bold text-neutral-900">
+                        {estudio.name}
+                      </li>
+                    </h3>
+                    <li className="flex gap-x-3">
+                      <strong className="font-semibold text-neutral-900">
+                        Instrumento{' '}
+                      </strong>{' '}
+                    </li>
+                    <li className="pb-1.5">{estudio.instrumento}</li>
+                    <li className="flex gap-x-3">
+                      <strong className="font-semibold text-neutral-900">
+                        Edad recommendada{' '}
+                      </strong>{' '}
+                    </li>
+                    <li className="pb-1.5">{estudio.edad}</li>
+                    {estudio.extraInfo ? (
+                      <>
+                        <li className="flex gap-x-3">
+                          <strong className="font-semibold text-neutral-900">
+                            Otros datos{' '}
+                          </strong>{' '}
+                        </li>
+                        <li className="flex gap-x-3">{estudio.extraInfo}</li>
+                      </>
+                    ) : null}
+                    <div className="flex pt-3">
+                      <Link href={estudio.href} passHref>
+                        <a className="group text-base font-semibold leading-7 transition duration-150 py-1.5 px-2.5 ease-in-out bg-gold-600 text-white  group-hover:bg-neutral-900">
+                          Leer más <span aria-hidden="true">&rarr;</span>
+                        </a>
+                      </Link>
+                    </div>
+                  </ul>
                 </div>
               </motion.div>
             ))}

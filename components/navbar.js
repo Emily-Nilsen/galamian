@@ -62,11 +62,11 @@ export default function Navbar() {
       href: '/#noticias',
       icon: BellIcon,
     },
-    {
-      name: `${t('navbar:link_1_title_2_3')}`,
-      href: '/bulletin/',
-      icon: NewspaperIcon,
-    },
+    // {
+    //   name: `${t('navbar:link_1_title_2_3')}`,
+    //   href: '/bulletin/',
+    //   icon: NewspaperIcon,
+    // },
     {
       name: `${t('common:joag')}`,
       href: '/joag',
@@ -76,20 +76,39 @@ export default function Navbar() {
   const blogPosts = [
     {
       id: 1,
-      name: `${t('navbar:blogpost_name_1')}`,
-      href: '/bulletin',
-      preview: `${t('navbar:blogpost_preview_1')}`,
+      name: `Estudio de Violín/Viola`,
+      href: '/estudios/violin',
+      preview: `Profesores principales Jesús Reina y Anna Margrethe Nilsen. Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
       imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/eventos_o0lmj9.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/violin_qbjl9q.jpg',
     },
-    // {
-    //   id: 2,
-    //   name: 'Joaquín Riquelme, recital de viola',
-    //   href: '/bulletin',
-    //   preview:
-    //     'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-    //   imageUrl: '/static/joaquin.jpg',
-    // },
+    {
+      id: 2,
+      name: 'Estudio de Piano',
+      href: '/estudios/piano',
+      preview:
+        'Profesores principales Dacić, De Solaun y Ortíz. Clases, eventos, conciertos, proyectos y prácticas.',
+      imageUrl:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/piano_02_mlnoft.jpg',
+    },
+    {
+      id: 3,
+      name: 'Estudio de Violonchelo',
+      href: '/estudios/violonchelo',
+      preview:
+        'Profesor principal Tilman Mahrenholz. Con clases individuales, música de cámara y conciertos.',
+      imageUrl:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/audiciones_d48ubx.jpg',
+    },
+    {
+      id: 4,
+      name: 'Estudio de Voz',
+      href: '/estudios/voz',
+      preview:
+        'Profesor principal Nils Nilsen. Alumnos reciben instrucción dedicada a través de clases magistrales, talleres y eventos.',
+      imageUrl:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/voice/voz_awkm23.jpg',
+    },
   ];
 
   // Study
@@ -141,6 +160,10 @@ export default function Navbar() {
     {
       name: `${t('footer:academia_3')}`,
       href: `/galamian-junior`,
+    },
+    {
+      name: `Artist Diploma`,
+      href: `/artist-diploma`,
     },
   ];
   const callsToAction = [
@@ -309,7 +332,7 @@ export default function Navbar() {
                             <div className="px-4 py-8 text-left bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
                                 <h3 className="text-base font-bold tracking-normal uppercase text-neutral-600">
-                                  {t('navbar:link_1_title_3')}
+                                  Estudios
                                 </h3>
                                 <ul role="list" className="mt-6 space-y-6">
                                   {blogPosts.map((post) => (
@@ -352,10 +375,10 @@ export default function Navbar() {
                                 </ul>
                               </div>
                               <div className="mt-6">
-                                <Link href="/bulletin/">
+                                <Link href="/estudios">
                                   <a className="text-sm font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                                     {' '}
-                                    {t('common:button_publicaciones')}{' '}
+                                    Ver todos los estudios{' '}
                                     <span aria-hidden="true">&rarr;</span>
                                   </a>
                                 </Link>
