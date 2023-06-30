@@ -76,38 +76,28 @@ export default function Navbar() {
   const blogPosts = [
     {
       id: 1,
-      name: `Estudio de Violín/Viola`,
+      name: `Estudio de Violín y Viola`,
       href: '/estudios/violin',
-      preview: `Profesores principales Jesús Reina y Anna Margrethe Nilsen. Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
+      preview: `Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
       imageUrl:
         'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/violin_qbjl9q.jpg',
     },
     {
       id: 2,
-      name: 'Estudio de Piano',
-      href: '/estudios/piano',
+      name: 'Galamian Junior',
+      href: '/galamian-junior',
       preview:
-        'Profesores principales Dacić, De Solaun y Ortíz. Clases, eventos, conciertos, proyectos y prácticas.',
+        'Para los mas jóvenes desde los inicios hasta un nivel mas avanzado.',
       imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/piano_02_mlnoft.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/Galamian%20Junior/titulacion_f2rm0m.jpg',
     },
     {
       id: 3,
-      name: 'Estudio de Violonchelo',
-      href: '/estudios/violonchelo',
-      preview:
-        'Profesor principal Tilman Mahrenholz. Con clases individuales, música de cámara y conciertos.',
+      name: 'Artist Diploma',
+      href: '/estudios/artista-diploma',
+      preview: `Diploma para músicos profesionales. Enfoque en repertorio, clases, recitales y actividades adicionales opcionales.`,
       imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/audiciones_d48ubx.jpg',
-    },
-    {
-      id: 4,
-      name: 'Estudio de Voz',
-      href: '/estudios/voz',
-      preview:
-        'Profesor principal Nils Nilsen. Alumnos reciben instrucción dedicada a través de clases magistrales, talleres y eventos.',
-      imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/voice/voz_awkm23.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-photo-08_a81srr.webp',
     },
   ];
 
