@@ -136,8 +136,11 @@ export default function Estudios() {
                 </div>
                 <div className="max-w-xl">
                   <div className="flex items-center mt-8 text-xs gap-x-1">
-                    {estudio.category.map((cat) => (
-                      <div className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600">
+                    {estudio.category.map((cat, i) => (
+                      <div
+                        key={i}
+                        className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600"
+                      >
                         {cat.title}
                       </div>
                     ))}
