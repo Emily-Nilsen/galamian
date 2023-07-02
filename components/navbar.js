@@ -152,8 +152,12 @@ export default function Navbar() {
       href: `/galamian-junior`,
     },
     {
+      name: `Jóvenes Artistas`,
+      href: `/estudios/jovenes-artistas`,
+    },
+    {
       name: `Artist Diploma`,
-      href: `/artist-diploma`,
+      href: `/estudios/artist-diploma`,
     },
   ];
   const callsToAction = [

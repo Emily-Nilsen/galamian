@@ -12,38 +12,13 @@ import { Fragment } from 'react';
 
 const courseDescription = [
   {
-    description: `El enfoque principal es trabajar y revisar a fondo el gran
-    repertorio.`,
+    description: `Seguimiento bimensual de clases particulares.`,
   },
   {
-    description: `El objetivo es preparar a los alumnos para enfrentar
-    desafíos profesionales como recitales, concursos, pruebas o
-    conciertos.`,
+    description: `Clases magistrales a lo largo del año.`,
   },
   {
-    description: `Las clases particulares tienen una duración extendida para
-    abarcar todo el material necesario.`,
-  },
-  {
-    description: `Se programan clases y encuentros frecuentes para facilitar
-    el trabajo individual del alumno y tener flexibilidad para
-    posibles compromisos adquiridos.`,
-  },
-  {
-    description: `Se dedican sesiones especiales a la revisión y planteamiento
-    de aspectos técnicos.`,
-  },
-  {
-    description: `El alumno trabajará de forma continua con un pianista para
-    las obras.`,
-  },
-  {
-    description: `Se ofrecen clases magistrales con profesores invitados.`,
-  },
-  {
-    description: `Al final del curso, se llevará a cabo un recital completo en
-    el que se interpretará el repertorio trabajado a lo largo
-    del programa.`,
+    description: `Clases de interpretación en grupo.`,
   },
 ];
 
@@ -53,28 +28,23 @@ const courseDetails = [
     specificDetails: [
       {
         especificaciones: 'Clases particulares',
-        cantidad: '2 clases de 1 h. 30 min. al mes',
+        cantidad: '1 clase de 1 h. cada dos semanas',
         total: '16 clases',
       },
       {
-        especificaciones: 'Clases magistrales con profesores invitados',
-        cantidad: '1 clase de 1 h. 30 min. cada semestre',
-        total: '2 clases',
-      },
-      {
-        especificaciones: 'Pianista acompañante',
-        cantidad: '3 h. al mes',
-        total: '24 horas',
-      },
-      {
-        especificaciones: 'Clases de seguimiento de técnica del instrumento',
-        cantidad: '1 clase de 1 h. cada segundo mes',
+        especificaciones: 'Clases magistrales',
+        cantidad: '1 clase de 1 h. cada dos meses',
         total: '4 clases',
       },
       {
-        especificaciones: 'Clases de interpretación',
-        cantidad: '2 clases cada 2 semanas',
-        total: '12 clases',
+        especificaciones: 'Pianista acompañante para clases magistrales',
+        cantidad: '1h. cada dos meses',
+        total: '4 horas',
+      },
+      {
+        especificaciones: 'Orquesta JOAG',
+        cantidad: 'Ensayos cada 2 semanas, 2 conciertos al año',
+        total: 'Ensayos cada 2 semanas, 2 conciertos al año',
       },
     ],
   },
@@ -83,14 +53,8 @@ const courseDetails = [
     specificDetails: [
       {
         especificaciones:
-          'Llevar a cabo tu propio recital (con pianista), en unas de las salas de cámara de la academia',
-        cantidad: '1 al año',
-        total: '1 al año',
-      },
-      {
-        especificaciones:
           'Conciertos de alumnos en las salas de cámara, o en la sala principal',
-        cantidad: '1 concierto cada semestre',
+        cantidad: '1 cada semestre',
         total: '2 conciertos',
       },
       {
@@ -99,13 +63,12 @@ const courseDetails = [
         total: '6 encuentros',
       },
       {
-        especificaciones:
-          'Participación en la orquesta OAG - * Como líder/co-líder en al menos un encuentro',
-        cantidad: '1 encuentro cada semestre',
-        total: '2 conciertos',
+        especificaciones: 'Uso libre de las cabinas de estudio',
+        cantidad: '',
+        total: '',
       },
       {
-        especificaciones: 'Uso libre de las cabinas de estudio',
+        especificaciones: 'Opción de añadir clases del Metodo Brainin',
         cantidad: '',
         total: '',
       },
@@ -121,22 +84,22 @@ const courseDetails = [
     specificDetails: [
       {
         especificaciones: 'Profesores principales - violín/viola',
-        cantidad: 'Jesús Reina, Anna Margrethe Nilsen',
+        cantidad: 'Laura Romero Alba',
         total: '',
       },
       {
         especificaciones: 'Profesores clases magistrales - violín/viola',
-        cantidad: 'Grigory Kalinovsky, Alexander Sitkovetsky, Robert Kowalski',
+        cantidad: 'Jesús Reina, Anna Margrethe Nilsen',
         total: '',
       },
       {
         especificaciones: 'Profesores principales - violonchelo',
-        cantidad: 'Adolfo Gutiérrez',
+        cantidad: 'Tilman Mahrenholz',
         total: '',
       },
       {
         especificaciones: 'Profesores clases magistrales - violonchelo',
-        cantidad: 'Øyvind Gimse, Gabriel Ureña',
+        cantidad: 'Adolfo Gutiérrez, Øyvind Gimse',
         total: '',
       },
     ],
@@ -147,7 +110,7 @@ const courseDetails = [
       {
         especificaciones: 'Precio del curso',
         cantidad: '',
-        total: '3.700 €',
+        total: `1.800 €`,
       },
     ],
   },
@@ -157,7 +120,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function AritistDiploma() {
+export default function JovenesArtistas() {
   return (
     <div className="py-6 bg-white sm:py-24">
       <div className="py-24 overflow-hidden bg-white sm:py-32">
@@ -169,19 +132,20 @@ export default function AritistDiploma() {
                   Violín, viola y violonchelo
                 </p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Artist Diploma
+                  Jóvenes Artistas
                 </h1>
                 <p className="mt-8">
                   {' '}
                   <strong className="font-semibold text-neutral-900">
                     Edad recomendada:
                   </strong>{' '}
-                  haber terminado el Superior o nivel similar
+                  approx. 8-16 años
                 </p>
                 <p className="mt-8 text-lg leading-8 text-gray-600">
-                  El programa del Artist Diploma está diseñado para alumnos en
-                  proceso de profesionalización de sus carreras musicales. Aquí
-                  se presentan las características principales de este programa:
+                  Con la participación en la orquesta sinfónica como foco
+                  central de actividades, el programa de Jóvenes Artistas
+                  complementa la formación de jóvenes instrumentalistas a través
+                  de:
                 </p>
                 <dl className="max-w-xl mt-10 space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   {courseDescription.map((feature) => (
@@ -200,9 +164,10 @@ export default function AritistDiploma() {
                   ))}
                 </dl>
                 <p className="mt-6 text-base leading-8 text-gray-600">
-                  Opcionalmente, el alumno seleccionado puede asistir a otras
-                  actividades organizadas por la Academia Galamian, como cursos,
-                  simposios, orquesta y clases de interpretación.
+                  Esto brinda a los alumnos una oportunidad idónea para
+                  alimentar su inspiración musical, ya que pueden compartir la
+                  música con sus compañeros y recibir orientación en sus
+                  estudios de cara al futuro.
                 </p>
               </div>
               <div className="flex pt-6 lg:mt-0">
@@ -215,7 +180,7 @@ export default function AritistDiploma() {
               </div>
             </div>
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712687/Galamian/violin/violin-study-img-6_wii1hh.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-7_svfvnd.webp"
               alt="Academia Galamian Internacional"
               className="object-cover w-[48rem] max-w-none rounded-none shadow-none ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
@@ -231,7 +196,7 @@ export default function AritistDiploma() {
           <div className="sm:flex sm:items-center">
             <div className="sm:flex-auto">
               <h1 className="text-lg font-bold leading-6 text-neutral-900">
-                Artist Diploma
+                Jóvenes Artistas
               </h1>
               <p className="mt-2 text-sm text-neutral-700">
                 Violín, viola y violonchelo
