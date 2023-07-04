@@ -149,6 +149,11 @@ const courseDetails = [
         cantidad: '',
         total: '3.700 €',
       },
+      {
+        especificaciones: 'Reserva de plaza',
+        cantidad: '',
+        total: '80 €',
+      },
     ],
   },
 ];
@@ -169,7 +174,7 @@ export default function AritistDiploma() {
                   Violín, viola y violonchelo
                 </p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Artist Diploma
+                  Artist Diploma «Yehudi Menuhin»
                 </h1>
                 <p className="mt-8">
                   {' '}

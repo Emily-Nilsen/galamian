@@ -89,15 +89,15 @@ export default function Navbar() {
       preview:
         'Para los mas jóvenes desde los inicios hasta un nivel mas avanzado.',
       imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/Galamian%20Junior/titulacion_f2rm0m.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp',
     },
     {
       id: 3,
-      name: 'Artist Diploma',
-      href: '/estudios/artista-diploma',
-      preview: `Diploma para músicos profesionales. Enfoque en repertorio, clases, recitales y actividades adicionales opcionales.`,
+      name: 'Jóvenos Artistas',
+      href: '/estudios/jovenes-artistas',
+      preview: `Clases particulares y magistrales, interpretación en grupo. Incluye participación en la Joven Orquesta Academia Galamian.`,
       imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-photo-08_a81srr.webp',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOVEN_ARTISTA_tn6m6w.webp',
     },
   ];
 
@@ -158,6 +158,10 @@ export default function Navbar() {
     {
       name: `Artist Diploma`,
       href: `/estudios/artist-diploma`,
+    },
+    {
+      name: `Programa de Sonatas`,
+      href: `/estudios/programa-de-sonatas`,
     },
   ];
   const callsToAction = [

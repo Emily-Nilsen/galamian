@@ -67,7 +67,7 @@ const estudios = [
     href: '/galamian-junior',
     description: `Para los mas jóvenes desde los inicios hasta un nivel mas avanzado.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/Galamian%20Junior/titulacion_f2rm0m.jpg',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp',
     category: [{ title: 'Violín' }, { title: `Viola` }],
     details: {
       age: 'Approx. 4-10 años',
@@ -76,12 +76,12 @@ const estudios = [
     },
   },
   {
-    id: 7,
+    id: 6,
     title: 'Jóvenos Artistas',
     href: '/estudios/jovenes-artistas',
     description: `Clases particulares y magistrales, interpretación en grupo. Incluye participación en la Joven Orquesta Academia Galamian.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-6_wii1hh.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOVEN_ARTISTA_tn6m6w.webp',
     category: [
       { title: 'Violín' },
       { title: `Viola` },
@@ -94,8 +94,8 @@ const estudios = [
     },
   },
   {
-    id: 6,
-    title: 'Artist Diploma',
+    id: 7,
+    title: 'Artist Diploma «Yehudi Menuhin»',
     href: '/estudios/artist-diploma',
     description: `Diploma para músicos profesionales. Enfoque en repertorio, clases, recitales y actividades adicionales opcionales.`,
     imageUrl:
@@ -107,6 +107,20 @@ const estudios = [
     ],
     details: {
       age: 'Haber terminado el Superior o nivel similar',
+      imageUrl:
+        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    id: 8,
+    title: 'Programa de Sonatas «George Enescu» para pianistas',
+    href: '/estudios/programa-de-sonatas',
+    description: `Programa para pianistas que exploran el repertorio de sonatas a dúo con clases colaborativas y conciertos públicos.`,
+    imageUrl:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/piano/piano-study-img-1_raeugc.webp',
+    category: [{ title: 'Piano' }],
+    details: {
+      age: 'Edad libre',
       imageUrl:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },

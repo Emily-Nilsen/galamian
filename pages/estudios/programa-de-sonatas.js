@@ -10,41 +10,20 @@ import { motion } from 'framer-motion';
 
 import { Fragment } from 'react';
 
-const courseDescription = [
-  {
-    description: `Seguimiento bimensual de clases particulares.`,
-  },
-  {
-    description: `Clases magistrales a lo largo del año.`,
-  },
-  {
-    description: `Clases de interpretación en grupo.`,
-  },
-];
-
 const courseDetails = [
   {
     name: 'Clases',
     specificDetails: [
       {
-        especificaciones: 'Clases particulares',
-        cantidad: '1 clase de 1 h. cada dos semanas',
+        especificaciones:
+          'Clases de sonatas en colaboración con profesores de la Academia Galamian',
+        cantidad: '2 clases de 1 h. 30 min. al mes',
         total: '16 clases',
       },
       {
-        especificaciones: 'Clases magistrales',
-        cantidad: '1 clase de 1 h. cada dos meses',
+        especificaciones: 'Clases particulares de profesor invitado',
+        cantidad: '1 clase de 1 h. 30 min. cada segundo mes',
         total: '4 clases',
-      },
-      {
-        especificaciones: 'Pianista acompañante para clases magistrales',
-        cantidad: '1h. cada dos meses',
-        total: '4 horas',
-      },
-      {
-        especificaciones: 'Orquesta JOAG',
-        cantidad: 'Ensayos cada 2 semanas, 2 conciertos al año',
-        total: 'Ensayos cada 2 semanas, 2 conciertos al año',
       },
     ],
   },
@@ -53,8 +32,8 @@ const courseDetails = [
     specificDetails: [
       {
         especificaciones:
-          'Conciertos de alumnos en las salas de cámara, o en la sala principal',
-        cantidad: '1 cada semestre',
+          'Conciertos compartidos en las salas de cámara, o en la sala principal',
+        cantidad: '1 concierto cada semestre',
         total: '2 conciertos',
       },
       {
@@ -68,7 +47,7 @@ const courseDetails = [
         total: '',
       },
       {
-        especificaciones: 'Opción de añadir clases del Metodo Brainin',
+        especificaciones: 'Opción de añadir clases particulares',
         cantidad: '',
         total: '',
       },
@@ -83,23 +62,13 @@ const courseDetails = [
     name: 'Profesores',
     specificDetails: [
       {
-        especificaciones: 'Profesores principales - violín/viola',
-        cantidad: 'Laura Romero Alba',
+        especificaciones: 'Profesores principales',
+        cantidad: 'Profesores de la Academia Galamian',
         total: '',
       },
       {
-        especificaciones: 'Profesores clases magistrales - violín/viola',
-        cantidad: 'Jesús Reina, Anna Nilsen',
-        total: '',
-      },
-      {
-        especificaciones: 'Profesores principales - violonchelo',
-        cantidad: 'Tilman Mahrenholz',
-        total: '',
-      },
-      {
-        especificaciones: 'Profesores clases magistrales - violonchelo',
-        cantidad: 'Adolfo Gutiérrez, Øyvind Gimse',
+        especificaciones: 'Profesores clases particulares',
+        cantidad: 'Misha Dacic, Josu de Solaun',
         total: '',
       },
     ],
@@ -110,12 +79,12 @@ const courseDetails = [
       {
         especificaciones: 'Precio del curso',
         cantidad: '',
-        total: `1.800 €`,
+        total: `2.500 €`,
       },
       {
         especificaciones: 'Reserva de plaza',
         cantidad: '',
-        total: '80 €',
+        total: `80 €`,
       },
     ],
   },
@@ -125,7 +94,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function JovenesArtistas() {
+export default function ProgramaDeSonatas() {
   return (
     <div className="py-6 bg-white sm:py-24">
       <div className="py-24 overflow-hidden bg-white sm:py-32">
@@ -134,45 +103,45 @@ export default function JovenesArtistas() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <p className="text-base font-semibold leading-7 text-gold-600">
-                  Violín, viola y violonchelo
+                  Piano
                 </p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Jóvenes Artistas
+                  Programa de Sonatas «George Enescu» para pianistas
                 </h1>
                 <p className="mt-8">
                   {' '}
                   <strong className="font-semibold text-neutral-900">
                     Edad recomendada:
                   </strong>{' '}
-                  approx. 8-16 años
+                  Edad libre
                 </p>
                 <p className="mt-8 text-lg leading-8 text-gray-600">
-                  Con la participación en la orquesta sinfónica como foco
-                  central de actividades, el programa de Jóvenes Artistas
-                  complementa la formación de jóvenes instrumentalistas a través
-                  de:
+                  Este programa está destinado a pianistas que deseen explorar
+                  el amplio repertorio de sonatas a duo. Como elemento esencial,
+                  los profesores toman un papel colaborativo, impartiendo las
+                  clases desde el instrumento.
                 </p>
-                <dl className="max-w-xl mt-10 space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                  {courseDescription.map((feature) => (
-                    <div
-                      key={feature.description}
-                      className="relative flex pl-3 gap-x-3"
-                    >
-                      <dt className="inline font-semibold text-gray-900">
-                        <div
-                          className="flex-none w-1.5 h-1.5 mt-3 rounded-full bg-gold-600"
-                          aria-hidden="true"
-                        />
-                      </dt>{' '}
-                      <dd className="inline">{feature.description}</dd>
-                    </div>
-                  ))}
-                </dl>
                 <p className="mt-6 text-base leading-8 text-gray-600">
-                  Esto brinda a los alumnos una oportunidad idónea para
-                  alimentar su inspiración musical, ya que pueden compartir la
-                  música con sus compañeros y recibir orientación en sus
-                  estudios de cara al futuro.
+                  Así, los dúos serán formados entre los alumnos que tomen parte
+                  en esta actividad y los profesores de la Academia Galamian,
+                  ofreciendo de este modo una metodología distintiva y única a
+                  día de hoy.
+                </p>
+                <p className="mt-6 text-base leading-8 text-gray-600">
+                  El proyecto nace por el deseo del profesorado en estar
+                  involucrados desde lo práctico en los procesos de desarrollo
+                  de los participantes, y de la experiencia de los mismos en sus
+                  propias carreras, las cuales han estado enormemente
+                  enriquecidas a través de la música de cámara y la colaboración
+                  continua con diversos artistas.
+                </p>
+                <p className="mt-6 text-base leading-8 text-gray-600">
+                  El itinerario de trabajo se centra en extensas clases-ensayo
+                  con los profesores de la academia, clases magistrales para
+                  aportar al desarrollo interpretativo a través del instrumento
+                  y un repertorio que abarcará al menos dos sonatas para ser
+                  interpretadas en público en los dos conciertos organizados por
+                  la academia.
                 </p>
               </div>
               <div className="flex pt-6 lg:mt-0">
@@ -185,7 +154,7 @@ export default function JovenesArtistas() {
               </div>
             </div>
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-7_svfvnd.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/piano/piano-study-img-1_raeugc.webp"
               alt="Academia Galamian Internacional"
               className="object-cover w-[48rem] max-w-none rounded-none shadow-none ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
@@ -201,11 +170,9 @@ export default function JovenesArtistas() {
           <div className="sm:flex sm:items-center">
             <div className="sm:flex-auto">
               <h1 className="text-lg font-bold leading-6 text-neutral-900">
-                Jóvenes Artistas
+                Programa de Sonatas «George Enescu» para pianistas
               </h1>
-              <p className="mt-2 text-sm text-neutral-700">
-                Violín, viola y violonchelo
-              </p>
+              <p className="mt-2 text-sm text-neutral-700">Piano</p>
             </div>
           </div>
           <div className="flow-root mt-8">
