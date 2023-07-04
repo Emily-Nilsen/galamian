@@ -137,6 +137,17 @@ export default function Estudios() {
                 {t('estudios:estudios_text')}
               </p>
             </div>
+            <div className="flex justify-center mt-10 group">
+              <a
+                download
+                href="/Programas-de-estudio-Academia-Galamian-2023-2024.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gold-500/20 py-1.5 px-3 rounded-full font-semibold text-neutral-700 group-hover:bg-gold-500/30 group-hover:text-neutral-900 transition-all duration-150 ease-in-out"
+              >
+                Descarga PDF
+              </a>
+            </div>
           </div>
           <div className="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {estudios.map((estudio) => (

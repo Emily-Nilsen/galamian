@@ -50,7 +50,7 @@ const estudia = {
   auditions_attention: `Atención`,
   auditions_attention_text_1: `Fecha límite de recepción de inscripciones en las
   audiciones:`,
-  auditions_attention_text_2: `15 de julio de `,
+  auditions_attention_text_2: `10 de agosto de `,
 
   // Access Auditions
   access_title_1: `Audiciones de acceso`,
@@ -67,7 +67,7 @@ const estudia = {
   AIG se llevarán a cabo de forma online, a través de vídeo.`,
   access_para_3_1: `Para participar en ellas, deberás inscribirte siguiendo los
   criterios que las fundamentan antes del`,
-  access_para_3_2: `15 de julio`,
+  access_para_3_2: `10 de agosto`,
   access_para_3_3: ` completando y
   enviando`,
   access_para_3_4: `este formulario`,
@@ -87,7 +87,7 @@ const estudia = {
   requirement_2_para_2: `Tanto la duración de estas obras como la de la totalidad del vídeo es libre.`,
   requirement_2_para_3: `Los/las aspirantes podrán realizar este vídeo sin acompañamiento de piano u orquesta, a pesar de que la obra esté escrita originalmente contando con ese acompañamiento.`,
   requirement_3_title: `Documentación y plazos`,
-  requirement_3_para_1: `El/la aspirante deberá haber enviado su formulario de inscripción dentro del plazo de aplicación, estando este abierto hasta el 15 de julio.`,
+  requirement_3_para_1: `El/la aspirante deberá haber enviado su formulario de inscripción dentro del plazo de aplicación, estando este abierto hasta el 10 de agosto.`,
   requirement_3_para_2_1: `El vídeo necesario para auditar al curso `,
   requirement_3_para_2_2: ` será adjuntado a través de uno o varios links que dirijan a un repositorio digital en el que estos estén alojados (YouTube o Vimeo).`,
   requirement_3_para_3: `Los resultados de las audiciones se darán a conocer en los diez días posteriores al cierre del plazo, a través de un contacto privado con los/las aspirantes.`,
@@ -111,7 +111,7 @@ const estudia = {
   enrolment_para_2_2: `través de vídeo`,
   enrolment_para_3_1: `El periodo de inscripción en las audiciones ya está abierto, y
   los aspirantes pueden inscribirse en él hasta el`,
-  enrolment_para_3_2: `15 de julio de `,
+  enrolment_para_3_2: `10 de agosto de `,
   enrolment_para_4: `En esta página podrás conocer cómo participar en las
   audiciones de acceso al próximo curso.`,
   enrolment_subtitle: `Documentos necesarios para la inscripción`,

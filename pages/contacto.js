@@ -473,7 +473,7 @@ export default function Contacto() {
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                       <button
                         type="submit"
-                        className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-lg font-semibold tracking-tight text-white transition duration-300 ease-in-out border border-transparent rounded-none bg-gold-500 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto"
+                        className="inline-flex items-center justify-center w-full py-1.5 px-4 mt-2 text-base font-semibold tracking-tight text-white transition duration-300 ease-in-out border border-transparent rounded-none bg-gold-500 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto"
                       >
                         {t('common:contactform_send')}
                       </button>

@@ -30,7 +30,7 @@ const estudia = {
   auditions_subtitle_2: ` academic year`,
   auditions_attention: `Attention`,
   auditions_attention_text_1: `The deadline for receiving registrations for the auditions is `,
-  auditions_attention_text_2: `July 15, `,
+  auditions_attention_text_2: `August 10, `,
 
   // Access Auditions
   access_title_1: `Course Access Auditions`,
@@ -46,7 +46,7 @@ const estudia = {
   access_para_3_3: ` `,
   access_para_3_4: `this form`,
   access_para_3_5: ` before `,
-  access_para_3_6: `July 15`,
+  access_para_3_6: `August 10`,
 
   // Requisitos
   requisitos_title: `Requirements`,
@@ -60,7 +60,7 @@ const estudia = {
   requirement_2_para_2: `The duration of either performance is unlimited.`,
   requirement_2_para_3: `Despite how the work was originally written, applicants may record the video with or without piano or orchestral accompaniment.`,
   requirement_3_title: `Documentation and deadlines`,
-  requirement_3_para_1: `The applicant must submit their registration form within the application period, open until July 15.`,
+  requirement_3_para_1: `The applicant must submit their registration form within the application period, open until August 10.`,
   requirement_3_para_2_1: `To apply for the `,
   requirement_3_para_2_2: ` academic year, students must upload their video through one or more links hosted by a digital repository  (YouTube or Vimeo).`,
   requirement_3_para_3: `The audition result will be announced within ten days after the deadline through direct contact with the applicant.`,
@@ -81,7 +81,7 @@ const estudia = {
   enrolment_para_2_1: `Given the current pandemic circumstances, the Academy holds auditions`,
   enrolment_para_2_2: `via video`,
   enrolment_para_3_1: `The audition registration period is now open, and applicants can register until `,
-  enrolment_para_3_2: `July 15, `,
+  enrolment_para_3_2: `August 10, `,
   enrolment_para_4: `Learn how to register for auditions for the next GIA study course below.`,
   enrolment_subtitle: `Required documents for registration`,
   enrolment_list_title_1: `Registration form`,

@@ -27,9 +27,9 @@ const inicio = {
   post_1_date: `Until July 15, `,
   post_2_title: `Registration for study course auditions`,
   post_2_sent_1: `The Galamian International Academy opens the registration period for the auditions for access to the next course, `,
-  post_2_sent_2: `The GIA holds auditions via video due to the current pandemic situation. Registration is open until July 15.`,
+  post_2_sent_2: `The GIA holds auditions via video due to the current pandemic situation. Registration is open until August 10.`,
   post_2_sent_3: `You can find all the details about how to participate in the auditions below.`,
-  post_2_date: `Until July 15, `,
+  post_2_date: `Until August 10, `,
 
   // Testimonials
   testimonial_text_1: `I always look forward to my annual visits to the Galamian Academy. There is such a wonderful atmosphere here – the school is obviously dedicated to caring for and educating students to help them become the best musicians they can be – it's truly inspiring!`,

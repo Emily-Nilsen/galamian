@@ -46,7 +46,7 @@ const layout = {
   // inicio
   inicio_title: `GIA | Home`,
   inicio_description: `Find information about the international music academy in Malaga, Spain, including world-renowned teachers for students of exceptional talent and violin, viola, cello, piano, and voice studies.`,
-  inicio_keywords: `The Academy, Study at the AIG, the Professors, Galamian Junior, news, July 15, registration for access auditions, until July 15, Grigory Kalinovsky, Luis Auñón, National Opera Theater, Alexander Sitkovetsky, Sitkovetsky Trio, Eric Silberger, Hawaii Chamber Music Festival, Sergio Montero, Montserrat Caballé`,
+  inicio_keywords: `The Academy, Study at the AIG, the Professors, Galamian Junior, news, August 10, registration for access auditions, until August 10, Grigory Kalinovsky, Luis Auñón, National Opera Theater, Alexander Sitkovetsky, Sitkovetsky Trio, Eric Silberger, Hawaii Chamber Music Festival, Sergio Montero, Montserrat Caballé`,
   // joag
   joag_title: `GIA | Galamian Academy Youth Orchestra`,
   joag_description: `Information about the Galamian Academy Youth Orchestra (JOAG).`,

@@ -3,6 +3,13 @@ import Image from 'next/image';
 import Layout from '../../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
+import {
+  MailIcon,
+  MenuIcon,
+  PhoneIcon,
+  XIcon,
+  LocationMarkerIcon,
+} from '@heroicons/react/outline';
 
 const FormularioDeInscripcion = () => {
   const { t } = useTranslation();
@@ -17,6 +24,38 @@ const FormularioDeInscripcion = () => {
         <div className="max-w-3xl mx-auto">
           <Formulario />
         </div>
+        <div className="flex justify-center mb-16 group">
+          <a
+            download
+            href="/Formulario-de-inscripcion-Academia-Galamian.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gold-500/20 py-1.5 px-3 rounded-full font-semibold text-neutral-700 group-hover:bg-gold-500/30 group-hover:text-neutral-900 transition-all duration-150 ease-in-out"
+          >
+            Descarga Formulario de Inscripción
+          </a>
+        </div>
+        <p className="my-10 text-center">
+          Descargue y rellene el Formulario de Inscripción y envíelo a:
+        </p>
+        <div></div>
+        <a
+          className=" hover:text-neutral-900 hover:underline"
+          href="mailto:secretaria.academiagalamian@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <dd className="flex items-center justify-center text-base text-neutral-700">
+            <MailIcon
+              className="flex-shrink-0 w-6 h-6 text-cream-500"
+              aria-hidden="true"
+            />
+            <span className="ml-3 overflow-visible tracking-tight lg:leading-5 xl:leading-normal">
+              secretaria.academiagalamian
+              <span className="lg:block xl:inline">@gmail.com</span>
+            </span>
+          </dd>
+        </a>
       </div>
       {/* Logo cloud */}
       <div className="flex items-center justify-center mt-16 sm:mt-20 bg-neutral-100">

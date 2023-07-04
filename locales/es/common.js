@@ -236,7 +236,7 @@ const common = {
   curso`,
   registration_subtitle_2: `.`,
   registration_subtitle_3: `Fecha límite para su presentación:`,
-  registration_subtitle_4: `15 de julio de `,
+  registration_subtitle_4: `10 de agosto de `,
   registration_subtitle_5: ` (incluido).`,
   // Warning
   registration_warning: `Aviso`,

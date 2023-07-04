@@ -41,7 +41,7 @@ export default function Formulario() {
             </p>
           </div>
           {/* Warning message */}
-          <div className="pt-16">
+          {/* <div className="pt-16">
             <div className="p-4 rounded-md bg-yellow-50">
               <div className="flex">
                 <div className="flex-shrink-0">
@@ -60,9 +60,9 @@ export default function Formulario() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
-        <form
+        {/* <form
           action="/exito"
           subject="Formulario de Inscripcion – Academia Internacional Galamian"
           name="Formulario de Inscripcion AIG"
@@ -129,7 +129,7 @@ export default function Formulario() {
                   </div>
                 </div>
 
-                {/* Identification documents */}
+                
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="tipo-de-documento"
@@ -207,7 +207,7 @@ export default function Formulario() {
                   </div>
                 </div>
 
-                {/* Country of birth */}
+                
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="pais-de-nacimiento"
@@ -345,7 +345,7 @@ export default function Formulario() {
               </div>
             </div>
 
-            {/* Datos del/la responsable */}
+            
             <div className="pt-8">
               <div>
                 <h3 className="text-lg font-medium leading-6 tracking-tight text-neutral-900">
@@ -392,7 +392,7 @@ export default function Formulario() {
                   </div>
                 </div>
 
-                {/* Cargo */}
+                
                 <div className="sm:col-span-6">
                   <label
                     htmlFor="cargo-de-responsabilidad"
@@ -603,7 +603,7 @@ export default function Formulario() {
               </div>
             </div>
 
-            {/* Video */}
+            
             <div className="pt-8">
               <div>
                 <div>
@@ -662,7 +662,7 @@ export default function Formulario() {
               </div>
             </div>
 
-            {/* Documents & motivational video */}
+            
             <div className="pt-8">
               <div>
                 <div>
@@ -695,7 +695,7 @@ export default function Formulario() {
                           <p className="text-neutral-600">
                             {t('common:video_motivation_text')}
                           </p>
-                          {/* Video de motivación */}
+                          
                           <div className="mt-3 sm:col-span-4 md:w-2/3">
                             <label
                               htmlFor="video-motivacion"
@@ -716,7 +716,7 @@ export default function Formulario() {
                           </div>
                         </div>
                       </div>
-                      {/* Biografia */}
+                      
                       <div className="relative flex items-start">
                         <div className="flex items-center h-5">
                           <input
@@ -737,7 +737,7 @@ export default function Formulario() {
                           <p className="text-neutral-600 sm:col-span-6">
                             {t('common:cv_text')}
                           </p>
-                          {/* Email address */}
+                          
                           <a
                             className="group"
                             href="mailto:secretaria.academiagalamian@gmail.com"
@@ -755,58 +755,7 @@ export default function Formulario() {
                             </dd>
                           </a>
 
-                          {/* Upload CV */}
-                          {/* <div className="pt-4 sm:col-span-6">
-                            <label
-                              htmlFor="cv"
-                              className="block text-sm font-medium tracking-tight text-neutral-700"
-                            >
-                              {t('common:attach_cv')}
-                            </label>
-                            <div className="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-dashed rounded-none border-neutral-300 sm:col-span-6">
-                              <div className="space-y-1 text-center">
-                                <svg
-                                  className="w-12 h-12 mx-auto text-neutral-400"
-                                  stroke="currentColor"
-                                  fill="none"
-                                  viewBox="0 0 48 48"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-                                    strokeWidth={2}
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                </svg>
-                                <div className="flex text-sm text-neutral-600">
-                                  <label
-                                    htmlFor="cv-upload"
-                                    className="relative font-medium tracking-tight bg-white rounded-none cursor-pointer text-gold-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gold-500"
-                                  >
-                                    <span className="transition duration-300 ease-in-out hover:underline">
-                                      {t('common:upload_cv')}
-                                    </span>
-                                    <input
-                                      id="cv-upload"
-                                      name="cv-upload"
-                                      type="file"
-                                      required
-                                      accept=".doc,.pdf,.docx,.txt,.jpg,.jpeg,"
-                                      multiple
-                                      className="sr-only"
-                                    />
-                                  </label>
-                                  <h3 className="pl-1 font-normal tracking-tight">
-                                    {t('common:dragdop_cv')}
-                                  </h3>
-                                </div>
-                                <p className="text-xs text-neutral-600">
-                                  {t('common:file_type')}
-                                </p>
-                              </div>
-                            </div>
-                          </div> */}
+                          
                         </div>
                       </div>
                       <div className="relative flex items-start pt-2">
@@ -828,7 +777,7 @@ export default function Formulario() {
                           <p className="text-neutral-600">
                             {t('common:renta_familiar_text')}
                           </p>
-                          {/* Email address */}
+                          
                           <a
                             className="group"
                             href="mailto:secretaria.academiagalamian@gmail.com"
@@ -845,57 +794,7 @@ export default function Formulario() {
                               </span>
                             </dd>
                           </a>
-                          {/* Renta familiar */}
-                          {/* <div className="pt-4 sm:col-span-6">
-                            <label
-                              htmlFor="renta-familiar"
-                              className="block text-sm font-medium tracking-tight text-neutral-700"
-                            >
-                              {t('common:attach_renta_familiar')}
-                            </label>
-                            <div className="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-dashed rounded-none border-neutral-300 sm:col-span-6">
-                              <div className="space-y-1 text-center">
-                                <svg
-                                  className="w-12 h-12 mx-auto text-neutral-400"
-                                  stroke="currentColor"
-                                  fill="none"
-                                  viewBox="0 0 48 48"
-                                  aria-hidden="true"
-                                >
-                                  <path
-                                    d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-                                    strokeWidth={2}
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                </svg>
-                                <div className="flex text-sm text-neutral-600">
-                                  <label
-                                    htmlFor="renta-familiar-upload"
-                                    className="relative font-medium tracking-tight transition duration-300 ease-in-out bg-white rounded-none cursor-pointer text-gold-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gold-500"
-                                  >
-                                    <span className="transition duration-300 ease-in-out hover:underline">
-                                      {t('common:upload_cv')}
-                                    </span>
-                                    <input
-                                      id="renta-familiar-upload"
-                                      name="renta-familiar-upload"
-                                      type="file"
-                                      accept=".doc,.pdf,.docx,.txt,.jpg,.jpeg,"
-                                      multiple
-                                      className="sr-only"
-                                    />
-                                  </label>
-                                  <h3 className="pl-1 font-normal tracking-tight">
-                                    {t('common:dragdop_cv')}
-                                  </h3>
-                                </div>
-                                <p className="text-xs text-neutral-600">
-                                  {t('common:file_type')}
-                                </p>
-                              </div>
-                            </div>
-                          </div> */}
+                          
                         </div>
                       </div>
                       <div className="relative flex items-start">
@@ -926,7 +825,7 @@ export default function Formulario() {
               </div>
             </div>
 
-            {/* Becas y reducciones de matrícula */}
+            
             <div className="pt-8">
               <div>
                 <div>
@@ -984,7 +883,7 @@ export default function Formulario() {
               </div>
             </div>
 
-            {/* Reconocimiento */}
+            
             <div className="pt-8">
               <div>
                 <div>
@@ -1057,7 +956,7 @@ export default function Formulario() {
               </button>
             </div>
           </div>
-        </form>
+        </form> */}
       </div>
     </section>
   );
