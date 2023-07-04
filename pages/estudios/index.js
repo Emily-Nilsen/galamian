@@ -125,6 +125,20 @@ const estudios = [
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
+  {
+    id: 9,
+    title: 'Programa de Música de Cámara «Lucien Capet» - para grupos formados',
+    href: '/estudios/programa-de-musica-de-camara',
+    description: `Música de cámara destaca en formación de Academia Galamian. Programa con clases magistrales y conciertos.`,
+    imageUrl:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/estudia_eabbpn.jpg',
+    category: [{ title: 'Dúos' }, { title: 'Tríos' }, { title: 'Cuartetos' }],
+    details: {
+      age: 'Edad libre',
+      imageUrl:
+        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
 ];
 
 export default function Estudios() {

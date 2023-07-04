@@ -156,12 +156,16 @@ export default function Navbar() {
       href: `/estudios/jovenes-artistas`,
     },
     {
+      name: `Programa de Sonatas`,
+      href: `/estudios/programa-de-sonatas`,
+    },
+    {
       name: `Artist Diploma`,
       href: `/estudios/artist-diploma`,
     },
     {
-      name: `Programa de Sonatas`,
-      href: `/estudios/programa-de-sonatas`,
+      name: `Programa de Música de Cámara`,
+      href: `/estudios/programa-de-musica-de-camara`,
     },
   ];
   const callsToAction = [
