@@ -76,7 +76,7 @@ export default function Navbar() {
       href: '/estudios/violin',
       preview: `Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
       imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/violin_qbjl9q.jpg',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-3_cnh2ey.webp',
     },
     {
       id: 2,
@@ -189,19 +189,19 @@ export default function Navbar() {
   // Mobile Navbar
   const mobileTabs = [
     {
-      name: `${t('navbar:violin')}`,
+      name: `${t('footer:estudios_1')}`,
       href: `/estudios/violin`,
     },
     {
-      name: `${t('navbar:piano')}`,
+      name: `${t('footer:estudios_3')}`,
       href: `/estudios/piano`,
     },
     {
-      name: `${t('navbar:cello')}`,
+      name: `${t('footer:estudios_2')}`,
       href: `/estudios/violonchelo`,
     },
     {
-      name: `${t('navbar:voice')}`,
+      name: `${t('footer:estudios_4')}`,
       href: `/estudios/voz`,
     },
     {
@@ -209,16 +209,32 @@ export default function Navbar() {
       href: `/galamian-junior`,
     },
     {
-      name: `${t('footer:recursos_3')}`,
-      href: `/bulletin`,
+      name: `Jóvenes Artistas`,
+      href: `/estudios/jovenes-artistas`,
+    },
+    {
+      name: `Programa de Sonatas`,
+      href: `/estudios/programa-de-sonatas`,
+    },
+    {
+      name: `Artist Diploma`,
+      href: `/estudios/artist-diploma`,
+    },
+    {
+      name: `Programa de Música de Cámara`,
+      href: `/estudios/programa-de-musica-de-camara`,
+    },
+    {
+      name: `JOAG`,
+      href: `/estudios/joag`,
+    },
+    {
+      name: `OAG`,
+      href: `/estudios/oag`,
     },
     {
       name: `${t('footer:academia_4')}`,
       href: `/contacto`,
-    },
-    {
-      name: `${t('common:joag')}`,
-      href: `/joag`,
     },
   ];
 

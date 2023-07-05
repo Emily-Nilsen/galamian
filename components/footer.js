@@ -11,20 +11,60 @@ export default function Footer() {
     estudiar: [
       { name: `${t('footer:estudia_1')}`, href: '/estudia' },
       {
+        name: `Formación musical integral`,
+        href: '/estudia/formacion-musical-integral',
+      },
+      {
         name: `${t('footer:estudia_2')}`,
         href: '/estudia/formulario-de-inscripcion',
       },
       { name: `${t('footer:estudia_3')}`, href: '/estudios' },
     ],
     estudios: [
-      { name: `${t('footer:estudios_1')}`, href: '/estudios/violin' },
+      {
+        name: `${t('footer:estudios_1')}`,
+        href: `/estudios/violin`,
+      },
+      {
+        name: `${t('footer:estudios_3')}`,
+        href: `/estudios/piano`,
+      },
       {
         name: `${t('footer:estudios_2')}`,
-        href: '/estudios/violonchelo',
+        href: `/estudios/violonchelo`,
       },
-      { name: `${t('footer:estudios_3')}`, href: '/estudios/piano' },
-      { name: `${t('footer:estudios_4')}`, href: '/estudios/voz' },
-      { name: `${t('footer:academia_3')}`, href: '/galamian-junior' },
+      {
+        name: `${t('footer:estudios_4')}`,
+        href: `/estudios/voz`,
+      },
+      {
+        name: `${t('footer:academia_3')}`,
+        href: `/galamian-junior`,
+      },
+      {
+        name: `Jóvenes Artistas`,
+        href: `/estudios/jovenes-artistas`,
+      },
+      {
+        name: `Programa de Sonatas`,
+        href: `/estudios/programa-de-sonatas`,
+      },
+      {
+        name: `Artist Diploma`,
+        href: `/estudios/artist-diploma`,
+      },
+      {
+        name: `Programa de Música de Cámara`,
+        href: `/estudios/programa-de-musica-de-camara`,
+      },
+      {
+        name: `JOAG`,
+        href: `/estudios/joag`,
+      },
+      {
+        name: `OAG`,
+        href: `/estudios/oag`,
+      },
     ],
     academia: [
       { name: `${t('footer:academia_1')}`, href: '/academia' },
@@ -33,8 +73,10 @@ export default function Footer() {
     ],
     recursos: [
       { name: `${t('footer:recursos_1')}`, href: '/#noticias' },
-      // { name: `${t('footer:recursos_3')}`, href: '/bulletin' },
-      { name: `${t('common:joag')}`, href: '/joag' },
+      {
+        name: `Preguntas frecuentes`,
+        href: '/estudia/formacion-musical-integral',
+      },
     ],
     social: [
       {
