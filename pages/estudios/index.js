@@ -11,7 +11,7 @@ const estudios = [
     href: '/estudios/violin',
     description: `Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/violin_qbjl9q.jpg',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-3_cnh2ey.webp',
     category: [{ title: 'Violín' }, { title: `Viola` }],
     details: {
       age: 'Todas las edades',
@@ -25,7 +25,7 @@ const estudios = [
     href: '/estudios/piano',
     description: `Lecciones individuales, clases magistrales, música de cámara, conciertos y prácticas de desarrollo de proyectos.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/piano/piano_02_srve6z.jpg',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/Piano_thumbnail_rd3cg7.webp',
     category: [{ title: 'Piano' }],
     details: {
       age: 'Todas las edades',
@@ -39,7 +39,7 @@ const estudios = [
     href: '/estudios/violonchelo',
     description: `Formación integral: clases individuales, clases grupales, profesores invitados, música de cámara, conciertos y más.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/audiciones_d48ubx.jpg',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/Violonchelo_thumbnail_ujeqen.webp',
     category: [{ title: `Violonchelo` }],
     details: {
       age: 'Todas las edades',
@@ -77,7 +77,7 @@ const estudios = [
   },
   {
     id: 6,
-    title: 'Jóvenos Artistas',
+    title: 'Jóvenes Artistas',
     href: '/estudios/jovenes-artistas',
     description: `Clases particulares y magistrales, interpretación en grupo. Incluye participación en la Joven Orquesta Academia Galamian.`,
     imageUrl:
@@ -135,6 +135,34 @@ const estudios = [
     category: [{ title: 'Dúos' }, { title: 'Tríos' }, { title: 'Cuartetos' }],
     details: {
       age: 'Edad libre',
+      imageUrl:
+        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    id: 10,
+    title: 'Joven Orquesta Academia Galamian',
+    href: '/estudios/joag',
+    description: `La JOAG ofrece oportunidades sinfónicas a jóvenes músicos, fomentando capacidades y experiencias profesionales.`,
+    imageUrl:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOAG_igc3qm.webp',
+    category: [{ title: 'JOAG' }],
+    details: {
+      age: '10-17 años',
+      imageUrl:
+        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    id: 11,
+    title: 'Orquesta Academia Galamian',
+    href: '/estudios/oag',
+    description: `La OAG promueve la interpretación orquestal con ensayos meticulosos, profesionales destacados y exigentes conciertos.`,
+    imageUrl:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/OAG_orquesta_2_xj67es.webp',
+    category: [{ title: 'OAG' }],
+    details: {
+      age: '18 años en adelante',
       imageUrl:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },

@@ -17,6 +17,7 @@ import {
   MailIcon,
   UserCircleIcon,
   CalendarIcon,
+  MusicNoteIcon,
   ExternalLinkIcon,
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
@@ -62,14 +63,9 @@ export default function Navbar() {
       href: '/#noticias',
       icon: BellIcon,
     },
-    // {
-    //   name: `${t('navbar:link_1_title_2_3')}`,
-    //   href: '/bulletin/',
-    //   icon: NewspaperIcon,
-    // },
     {
-      name: `${t('common:joag')}`,
-      href: '/joag',
+      name: `Preguntas frecuentes`,
+      href: '/estudia/formacion-musical-integral',
       icon: ExternalLinkIcon,
     },
   ];
@@ -93,7 +89,7 @@ export default function Navbar() {
     },
     {
       id: 3,
-      name: 'Jóvenos Artistas',
+      name: 'Jóvenes Artistas',
       href: '/estudios/jovenes-artistas',
       preview: `Clases particulares y magistrales, interpretación en grupo. Incluye participación en la Joven Orquesta Academia Galamian.`,
       imageUrl:
@@ -112,6 +108,12 @@ export default function Navbar() {
       )}`,
       href: '/estudia',
       icon: AcademicCapIcon,
+    },
+    {
+      name: `Formación musical integral`,
+      description: `fd`,
+      href: '/estudia/formacion-musical-integral',
+      icon: MusicNoteIcon,
     },
     {
       name: `${t('navbar:estudiar_name_2')}`,
@@ -166,6 +168,14 @@ export default function Navbar() {
     {
       name: `Programa de Música de Cámara`,
       href: `/estudios/programa-de-musica-de-camara`,
+    },
+    {
+      name: `JOAG`,
+      href: `/estudios/joag`,
+    },
+    {
+      name: `OAG`,
+      href: `/estudios/oag`,
     },
   ];
   const callsToAction = [
@@ -509,7 +519,7 @@ export default function Navbar() {
                                 </ul>
                               </div>
                               <div className="mt-6 text-sm tracking-tight">
-                                <Link href="/estudios/violin/#faqs">
+                                <Link href="/estudia/formacion-musical-integral#faqs">
                                   <a className="font-semibold transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                                     {' '}
                                     {t('common:button_faq')}{' '}

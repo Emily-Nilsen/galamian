@@ -10,126 +10,38 @@ import { motion } from 'framer-motion';
 
 import { Fragment } from 'react';
 
-const courseDescription = [
-  {
-    description: `Repertorio solista.`,
-  },
-  {
-    description: `Música de cámara.`,
-  },
-  {
-    description: `Música
-    orquestal.`,
-  },
-  {
-    description: `Clases de interpretación.`,
-  },
-];
-
 const courseDetails = [
   {
-    name: 'Modalidad A',
+    name: 'Clases',
     specificDetails: [
       {
-        especificaciones: 'Clases particulares',
-        cantidad: '2 clases de 1 h. a la semana',
-        total: '64 clases (*4 de ellas son clases magistrales)',
+        especificaciones: '* Ensayos Orquesta Tutti',
+
+        total:
+          'Ensayos previamente a los conciertos, approx. 4 días de ensayos',
       },
       {
-        especificaciones: 'Clases magistrales con profesores invitados',
-        cantidad: '2 clases de 1 h. en cada encuentro',
-        total: '4 clases',
+        especificaciones: '* Parciales con profesores',
+        total: 'A concretar para cada encuentro',
+      },
+      {
+        especificaciones: '* Taller de interpretación orquestal',
+        total: 'A concretar para cada encuentro',
+      },
+      {
+        especificaciones: '* Conciertos',
+        total: '2 conciertos al año',
       },
     ],
   },
+
   {
-    name: 'Modalidad B',
-    specificDetails: [
-      {
-        especificaciones: 'Clases particulares',
-        cantidad: '1,5 clases de 1 h. a la semana',
-        total: '48 clases (*4 de ellas son clases magistrales)',
-      },
-      {
-        especificaciones: 'Clases magistrales con profesores invitados',
-        cantidad: '2 clases de 1 h. cada encuentro',
-        total: '4 clases',
-      },
-    ],
-  },
-  {
-    name: 'Modalidad C',
-    specificDetails: [
-      {
-        especificaciones: 'Clases particulares',
-        cantidad: '1 clase de 1 h. a la semana',
-        total: '32 clases (*2 de ellas son clases magistrales)',
-      },
-      {
-        especificaciones: 'Clases magistrales con profesores invitados',
-        cantidad: '1 clase de 1 h. cada encuentro',
-        total: '2 clases',
-      },
-    ],
-  },
-  {
-    name: 'Incluye',
-    specificDetails: [
-      {
-        especificaciones: 'Clases de música de cámara',
-        cantidad: '1 clase de 1h. aprox. cada 2 semanas',
-        total: '14 clases',
-      },
-      {
-        especificaciones: 'Clases de interpretación',
-        cantidad: '1 clase aprox. cada 2 semanas',
-        total: '12 clases',
-      },
-      {
-        especificaciones: 'Encuentros de simposium',
-        cantidad: '',
-        total: '6 encuentros',
-      },
-      {
-        especificaciones:
-          'Conciertos de alumnos en las salas de cámara,o en la sala principal',
-        cantidad: '1 o 2 cada semestre',
-        total: '3 conciertos',
-      },
-      {
-        especificaciones: 'Posibilidad de llevar a cabo tu propio recital',
-        cantidad: '',
-        total: '',
-      },
-      {
-        especificaciones: 'Uso libre de las cabinas de estudio',
-        cantidad: '',
-        total: '',
-      },
-      {
-        especificaciones: 'Aprendizaje a distancia',
-        cantidad: '',
-        total: '',
-      },
-      {
-        especificaciones: 'Opción de añadir clases del Metodo Brainin',
-        cantidad: '',
-        total: '',
-      },
-    ],
-  },
-  {
-    name: 'Profesores',
+    name: 'Directores',
     specificDetails: [
       {
         especificaciones: 'Profesores principales',
-        cantidad: 'Misha Dacic, Antonio Ortiz',
-        total: '',
-      },
-      {
-        especificaciones: 'Profesores invitados',
-        cantidad: 'Josu de Solaun',
-        total: '',
+
+        total: 'Por confirmar',
       },
     ],
   },
@@ -137,25 +49,16 @@ const courseDetails = [
     name: 'Precio',
     specificDetails: [
       {
-        especificaciones: 'Precio del curso - Modalidad A',
-        cantidad: '',
-        total: `7.890 €`,
+        especificaciones:
+          'Por encuentro (* becas parciales y completas disponibles para los encuentros)',
+
+        total: `35 €`,
       },
-      {
-        especificaciones: 'Precio del curso - Modalidad B',
-        cantidad: '',
-        total: `6.590 €`,
-      },
-      {
-        especificaciones: 'Precio del curso - Modalidad C',
-        cantidad: '',
-        total: `5.190 €`,
-      },
-      {
-        especificaciones: 'Reserva de plaza',
-        cantidad: '',
-        total: '80 €',
-      },
+      // {
+      //   especificaciones: 'Reserva de plaza',
+
+      //   total: '30 €',
+      // },
     ],
   },
 ];
@@ -164,7 +67,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Piano() {
+export default function OAG() {
   return (
     <div className="py-6 bg-white sm:py-24">
       <div className="py-24 overflow-hidden bg-white sm:py-32">
@@ -173,46 +76,36 @@ export default function Piano() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <p className="text-base font-semibold leading-7 text-gold-600">
-                  Piano
+                  OAG
                 </p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Estudio de Piano
+                  Orquesta Academia Galamian
                 </h1>
                 <p className="mt-8">
                   {' '}
                   <strong className="font-semibold text-neutral-900">
                     Edad recomendada:
                   </strong>{' '}
-                  Todas las edades
+                  18 años en adelante
                 </p>
                 <p className="mt-8 text-lg leading-8 text-gray-600">
-                  Los estudios de formación permanente ofrecen un entorno en el
-                  cual desarrollar las capacidades musicales del alumno a través
-                  de un programa de diverso contenido, centrado principalmente
-                  en lo práctico e interpretativo en todos sus ámbitos:
+                  La orquesta de la academia es un marco para el desarrollo de
+                  la interpretación orquestal basado en el trabajo meticuloso de
+                  ensayo y preparación y en la participación activa de los
+                  miembros de la orquesta, guiados siempre por profesionales que
+                  son una referencia en el género.
                 </p>
-                <dl className="max-w-xl mt-10 space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                  {courseDescription.map((feature) => (
-                    <div
-                      key={feature.description}
-                      className="relative flex pl-3 gap-x-3"
-                    >
-                      <dt className="inline font-semibold text-gray-900">
-                        <div
-                          className="flex-none w-1.5 h-1.5 mt-3 rounded-full bg-gold-600"
-                          aria-hidden="true"
-                        />
-                      </dt>{' '}
-                      <dd className="inline">{feature.description}</dd>
-                    </div>
-                  ))}
-                </dl>
                 <p className="mt-6 text-base leading-8 text-gray-600">
-                  Este programa está suplementado por cursos o simposiums de
-                  improvisación musical, contrapunto, composición y talleres de
-                  dirección orquestal, para que al realizar los estudios en la
-                  Academia Galamian, los alumnos puedan tener una formación
-                  completa en las artes musicales.
+                  Ya destinado a alumnos con formación previa y de más avanzada
+                  edad, la OAG parte con el concepto de música de cámara a gran
+                  escala como base fundamental.
+                </p>
+
+                <p className="mt-6 text-base leading-8 text-gray-600">
+                  Se realizan diversos encuentros en formato de cámara y de
+                  cámara-sinfónico de gran exigencia, donde se conocerá en
+                  profundidad el repertorio que se interpretará en público en
+                  los conciertos de la academia.
                 </p>
               </div>
               <div className="flex pt-6 lg:mt-0">
@@ -225,7 +118,7 @@ export default function Piano() {
               </div>
             </div>
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/Piano_thumbnail_rd3cg7.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/OAG_orquesta_2_xj67es.webp"
               alt="Academia Galamian Internacional"
               className="object-cover w-[48rem] max-w-none rounded-none shadow-none ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
@@ -241,9 +134,9 @@ export default function Piano() {
           <div className="sm:flex sm:items-center">
             <div className="sm:flex-auto">
               <h1 className="text-lg font-bold leading-6 text-neutral-900">
-                Estudio de Piano
+                Orquesta Academia Galamian
               </h1>
-              <p className="mt-2 text-sm text-neutral-700">Piano</p>
+              <p className="mt-2 text-sm text-neutral-700">OAG</p>
             </div>
           </div>
           <div className="flow-root mt-8">
@@ -258,17 +151,12 @@ export default function Piano() {
                       >
                         Especificaciones del curso
                       </th>
+
                       <th
                         scope="col"
                         className="px-3 py-3.5 text-left text-sm font-semibold text-neutral-900"
                       >
-                        Cantidad de clases/horas
-                      </th>
-                      <th
-                        scope="col"
-                        className="px-3 py-3.5 text-left text-sm font-semibold text-neutral-900"
-                      >
-                        Total en el curso
+                        Cantidad de actividad durante el curso
                       </th>
                     </tr>
                   </thead>
@@ -298,9 +186,7 @@ export default function Piano() {
                               <td className="py-4 pl-4 pr-3 text-sm font-medium text-neutral-900 whitespace-nowrap sm:pl-3">
                                 {specificDetail.especificaciones}
                               </td>
-                              <td className="px-3 py-4 text-sm text-neutral-500 whitespace-nowrap">
-                                {specificDetail.cantidad}
-                              </td>
+
                               {specificDetail.total.includes('€') ? (
                                 <td className="px-3 py-4 text-sm font-bold text-neutral-900 whitespace-nowrap">
                                   {specificDetail.total}

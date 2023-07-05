@@ -121,7 +121,7 @@ const courseDetails = [
     specificDetails: [
       {
         especificaciones: 'Profesores principales - violín/viola',
-        cantidad: 'Jesús Reina, Anna Margrethe Nilsen',
+        cantidad: 'Jesús Reina, Anna Nilsen',
         total: '',
       },
       {
@@ -236,7 +236,7 @@ export default function AritistDiploma() {
           <div className="sm:flex sm:items-center">
             <div className="sm:flex-auto">
               <h1 className="text-lg font-bold leading-6 text-neutral-900">
-                Artist Diploma
+                Artist Diploma «Yehudi Menuhin»
               </h1>
               <p className="mt-2 text-sm text-neutral-700">
                 Violín, viola y violonchelo
