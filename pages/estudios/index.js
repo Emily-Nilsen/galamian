@@ -51,9 +51,9 @@ const estudios = [
     id: 4,
     title: 'Estudio de Voz',
     href: '/estudios/voz',
-    description: `Alumnos reciben instrucción dedicada a través de clases magistrales, talleres y eventos.`,
+    description: `Opción de formación vocal para acceso a la profesionalización con técnicas prácticas, correpetición y especialización.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/voice/voice-photo-img-05_acbsra.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/voice/voice-photo-img-02_g05tgl.webp',
     category: [{ title: `Voz` }],
     details: {
       age: 'Todas las edades',
