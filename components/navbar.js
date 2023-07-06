@@ -81,7 +81,7 @@ export default function Navbar() {
     {
       id: 2,
       name: 'Galamian Junior',
-      href: '/galamian-junior',
+      href: '/estudios/galamian-junior',
       preview:
         'Para los mas jóvenes desde los inicios hasta un nivel mas avanzado.',
       imageUrl:
@@ -151,7 +151,7 @@ export default function Navbar() {
     },
     {
       name: `${t('footer:academia_3')}`,
-      href: `/galamian-junior`,
+      href: `/estudios/galamian-junior`,
     },
     {
       name: `Jóvenes Artistas`,
@@ -206,7 +206,7 @@ export default function Navbar() {
     },
     {
       name: `${t('footer:academia_3')}`,
-      href: `/galamian-junior`,
+      href: `/estudios/galamian-junior`,
     },
     {
       name: `Jóvenes Artistas`,

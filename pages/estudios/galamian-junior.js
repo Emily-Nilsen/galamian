@@ -12,62 +12,42 @@ import { Fragment } from 'react';
 
 const courseDescription = [
   {
-    description: `Módulo de Formación`,
+    description: `El programa de Galamian Junior combina el desarrollo del oído, el lenguaje musical y la relación con el instrumento.`,
   },
   {
-    description: `Módulo de Perfeccionamiento`,
+    description: `El objetivo es que los más pequeños tengan una experiencia divertida y cercana con la música y sus compañeros.`,
   },
   {
-    description: `Módulo de Seguimiento`,
+    description: `Aunque sigue siendo un desafío, se busca que los niños se diviertan y establezcan las bases para el pleno desarrollo de sus capacidades.`,
+  },
+  {
+    description: `Galamian Junior busca crear una base sólida para que los niños puedan desarrollar todo su potencial musical.`,
   },
 ];
 
 const courseDetails = [
   {
-    name: 'Módulo de Formación',
+    name: 'Clases',
     specificDetails: [
       {
-        especificaciones: `Clases particulares con profesor/a de voz
-        + Profesor/a de correpetición`,
-        cantidad: `6 clases de 1 h. al mes`,
-        total: `48 clases (4 de ellas son clases magistrales)`,
+        especificaciones: 'Clases particulares',
+        cantidad: `1 clase de 45 min. a la semana`,
+        total: `32 clases`,
       },
       {
-        especificaciones: `Clases de correpetición`,
+        especificaciones: `Clases de formación musical en grupo reducido`,
         cantidad: `1 clase de 1 h. al mes`,
-        total: `8 clases (4 de ellas son clases magistrales)`,
-      },
-    ],
-  },
-  {
-    name: 'Módulo de Perfeccionamento*',
-    specificDetails: [
-      {
-        especificaciones: `Clases particulares con profesor/a de voz
-        + Profesor/a de correpetición`,
-        cantidad: `6 clases de 1 h. al mes`,
-        total: `48 clases (4 de ellas son clases magistrales)`,
+        total: `8 clases`,
       },
       {
-        especificaciones: `Clases de correpetición`,
+        especificaciones: `Clases en grupo de técnica`,
         cantidad: `1 clase de 1 h. al mes`,
-        total: `8 clases (4 de ellas son clases magistrales)`,
-      },
-    ],
-  },
-  {
-    name: 'Módulo de Seguimiento**',
-    specificDetails: [
-      {
-        especificaciones: `Clases particulares con profesor/a de voz
-        + Profesor/a de correpetición`,
-        cantidad: `a concretar`,
-        total: `a concretar`,
+        total: `8 clases`,
       },
       {
-        especificaciones: `Clases de correpetición`,
-        cantidad: `a concretar`,
-        total: `a concretar`,
+        especificaciones: `Pianista acompañante`,
+        cantidad: `1 h. al mes`,
+        total: `8 horas`,
       },
     ],
   },
@@ -75,32 +55,17 @@ const courseDetails = [
     name: 'Incluye',
     specificDetails: [
       {
-        especificaciones: `Clases magistrales con profesores invitados`,
+        especificaciones: `Participación en conciertos de alumnos en una de las salas de cámara`,
+        cantidad: '1 cada semestre',
+        total: '2 conciertos',
+      },
+      {
+        especificaciones: 'Uso libre de las cabinas de estudio',
         cantidad: '',
         total: '',
       },
       {
-        especificaciones: `Encuentros de simposium`,
-        cantidad: '',
-        total: `6 encuentros`,
-      },
-      {
-        especificaciones: `Conciertos de alumnos en las salas de cámara, o en la sala principal`,
-        cantidad: `1 o 2 cada semestre`,
-        total: `3 conciertos`,
-      },
-      {
-        especificaciones: `Posibilidad de llevar a cabo tu propio recital`,
-        cantidad: '',
-        total: '',
-      },
-      {
-        especificaciones: `Uso libre de las cabinas de estudio`,
-        cantidad: '',
-        total: '',
-      },
-      {
-        especificaciones: `Aprendizaje a distancia`,
+        especificaciones: 'Opción de añadir clases del Metodo Brainin',
         cantidad: '',
         total: '',
       },
@@ -110,13 +75,8 @@ const courseDetails = [
     name: 'Profesores',
     specificDetails: [
       {
-        especificaciones: `Profesores principales`,
-        cantidad: 'Carlos Álvarez, Valle Duque',
-        total: '',
-      },
-      {
-        especificaciones: `Profesora de correpetición`,
-        cantidad: 'Natalia Kuchaeva',
+        especificaciones: 'Profesores principales',
+        cantidad: 'Laura Romero Alba',
         total: '',
       },
     ],
@@ -125,19 +85,9 @@ const courseDetails = [
     name: 'Precio',
     specificDetails: [
       {
-        especificaciones: `Precio del curso - Módulo de Formación`,
+        especificaciones: 'Precio del curso',
         cantidad: '',
-        total: `4.800 €`,
-      },
-      {
-        especificaciones: `Precio del curso - Módulo de Perfeccionamento`,
-        cantidad: '',
-        total: `4.800 €`,
-      },
-      {
-        especificaciones: `Precio del curso - Módulo de Seguimento`,
-        cantidad: '',
-        total: `A concretar`,
+        total: `2.500 €`,
       },
       {
         especificaciones: 'Reserva de plaza',
@@ -152,7 +102,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Voz() {
+export default function GalamianJunior() {
   return (
     <div className="py-6 bg-white sm:py-24">
       <div className="py-24 overflow-hidden bg-white sm:py-32">
@@ -161,30 +111,25 @@ export default function Voz() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <p className="text-base font-semibold leading-7 text-gold-600">
-                  Voz
+                  Violín y viola
                 </p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Estudio de Voz
+                  Galamian Junior
                 </h1>
                 <p className="mt-8">
                   {' '}
                   <strong className="font-semibold text-neutral-900">
                     Edad recomendada:
                   </strong>{' '}
-                  Todas las edades
+                  approx. 4-10 años
                 </p>
                 <p className="mt-8 text-lg leading-8 text-gray-600">
-                  El estudio de formación permanente de voz ofrece al alumnado
-                  de la Academia Galamian las herramientas que ayudan a
-                  conseguir los niveles exigidos para acceder a la
-                  profesionalización.
+                  En Galamian Junior, la Academia Galamian acompaña a los más
+                  jóvenes en sus primeros pasos con la música y el instrumento.
+                  Para hacer el texto más amigable para el lector, podemos
+                  agregar algunos puntos después de esta oración:
                 </p>
-                <p className="mt-6 text-base leading-8 text-gray-600">
-                  <strong className="font-semibold text-neutral-900">
-                    Opción de elegir:
-                  </strong>{' '}
-                </p>
-                <dl className="max-w-xl mt-6 space-y-6 text-base leading-7 text-gray-600 lg:max-w-none">
+                <dl className="max-w-xl mt-10 space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   {courseDescription.map((feature) => (
                     <div
                       key={feature.description}
@@ -200,25 +145,6 @@ export default function Voz() {
                     </div>
                   ))}
                 </dl>
-                <p className="mt-10 text-base leading-8 text-gray-600">
-                  Este estudio se basa en un proceso de aprendizaje
-                  práctico-teórico, que es el eje esencial del trabajo a
-                  realizar.
-                </p>
-                <p className="mt-6 text-base leading-8 text-gray-600">
-                  Se abarcan aspectos como el trabajo técnico y la correpetición
-                  en cada clase, así como el conocimiento de las distintas ramas
-                  del canto lírico.
-                </p>
-                <p className="mt-6 text-base leading-8 text-gray-600">
-                  Además, se ofrece la especialización según la vocalidad de
-                  cada alumno y la adaptación al mundo profesional.
-                </p>
-                <p className="mt-6 text-base leading-8 text-gray-600">
-                  Esto ayuda a los cantantes a mantener su instrumento en
-                  condiciones óptimas y reciben asesoramiento para el estudio de
-                  los roles que deben interpretar.
-                </p>
               </div>
               <div className="flex pt-6 lg:mt-0">
                 <Link href="/estudia/formulario-de-inscripcion" passHref>
@@ -229,9 +155,8 @@ export default function Voz() {
                 </Link>
               </div>
             </div>
-
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/voice/voice-photo-img-04_orubx6.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp"
               alt="Academia Galamian Internacional"
               className="object-cover w-[48rem] max-w-none rounded-none shadow-none ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
@@ -247,9 +172,9 @@ export default function Voz() {
           <div className="sm:flex sm:items-center">
             <div className="sm:flex-auto">
               <h1 className="text-lg font-bold leading-6 text-neutral-900">
-                Estudio de Voz
+                Galamian Junior
               </h1>
-              <p className="mt-2 text-sm text-neutral-700">Voz</p>
+              <p className="mt-2 text-sm text-neutral-700">Violín y viola</p>
             </div>
           </div>
           <div className="flow-root mt-8">
@@ -322,27 +247,6 @@ export default function Voz() {
                       </Fragment>
                     ))}
                   </tbody>
-                  <div className="flex flex-col gap-6 p-6 text-sm bg-neutral-50">
-                    <p>
-                      <strong className="font-semibold text-neutral-900">
-                        *
-                      </strong>{' '}
-                      Debido a la necesidad que se puede presentar en estos
-                      alumnos de más tiempo de correpetición por la amplitud de
-                      los roles, se podrán intercambiar las horas de
-                      correpetición y técnica (clases particulares) si se viera
-                      necesario.
-                    </p>
-                    <p>
-                      <strong className="font-semibold text-neutral-900">
-                        **
-                      </strong>{' '}
-                      Debido a la necesidad se concretarán el numero de horas y
-                      su organización en función de las necesidades del
-                      profesional, compaginando con el/la profesor/a de técnica
-                      vocal y el/la de correpetición
-                    </p>
-                  </div>
                 </table>
               </div>
             </div>

@@ -39,7 +39,7 @@ export default function Footer() {
       },
       {
         name: `${t('footer:academia_3')}`,
-        href: `/galamian-junior`,
+        href: `/estudios/galamian-junior`,
       },
       {
         name: `Jóvenes Artistas`,
