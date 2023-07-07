@@ -64,7 +64,7 @@ const estudios = [
   {
     id: 5,
     title: 'Galamian Junior',
-    href: '/galamian-junior',
+    href: '/estudios/galamian-junior',
     description: `Para los mas jóvenes desde los inicios hasta un nivel mas avanzado.`,
     imageUrl:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp',
