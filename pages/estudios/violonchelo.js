@@ -247,7 +247,7 @@ export default function Violonchelo() {
               </div>
             </div>
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/Violonchelo_thumbnail_ujeqen.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/cello-img-1_wqxtoa.webp"
               alt="Academia Galamian Internacional"
               className="object-cover w-[48rem] max-w-none rounded-none shadow-none ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}

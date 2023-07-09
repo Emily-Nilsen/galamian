@@ -231,7 +231,7 @@ export default function Voz() {
             </div>
 
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/voice/voice-photo-img-04_orubx6.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/estudio_de_voz-_thumnail_just_the_two_singers_or36jk.webp"
               alt="Academia Galamian Internacional"
               className="object-cover w-[48rem] max-w-none rounded-none shadow-none ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}

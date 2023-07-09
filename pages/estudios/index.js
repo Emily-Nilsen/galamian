@@ -11,7 +11,7 @@ const estudios = [
     href: '/estudios/violin',
     description: `Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-3_cnh2ey.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-2_ypgthu.webp',
     category: [{ title: 'Violín' }, { title: `Viola` }],
     details: {
       age: 'Todas las edades',
@@ -25,7 +25,7 @@ const estudios = [
     href: '/estudios/piano',
     description: `Lecciones individuales, clases magistrales, música de cámara, conciertos y prácticas de desarrollo de proyectos.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/Piano_thumbnail_rd3cg7.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/piano_studio_k67fog.webp',
     category: [{ title: 'Piano' }],
     details: {
       age: 'Todas las edades',
@@ -67,7 +67,7 @@ const estudios = [
     href: '/estudios/galamian-junior',
     description: `Para los mas jóvenes desde los inicios hasta un nivel mas avanzado.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/Galamian_Junior_2_d9wq8w.webp',
     category: [{ title: 'Violín' }, { title: `Viola` }],
     details: {
       age: 'Approx. 4-10 años',
@@ -99,7 +99,7 @@ const estudios = [
     href: '/estudios/artist-diploma',
     description: `Diploma para músicos profesionales. Enfoque en repertorio, clases, recitales y actividades adicionales opcionales.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-photo-08_a81srr.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/Artist_diploma_2_hue9cm.webp',
     category: [
       { title: 'Violín' },
       { title: `Viola` },
@@ -117,7 +117,7 @@ const estudios = [
     href: '/estudios/programa-de-sonatas',
     description: `Programa para pianistas que exploran el repertorio de sonatas a dúo con clases colaborativas y conciertos públicos.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/piano/piano-study-img-1_raeugc.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Sonata_program_thumbnail_ti3gcy.webp',
     category: [{ title: 'Piano' }],
     details: {
       age: 'Edad libre',
@@ -131,7 +131,7 @@ const estudios = [
     href: '/estudios/programa-de-musica-de-camara',
     description: `Música de cámara destaca en formación de Academia Galamian. Programa con clases magistrales y conciertos.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/estudia_eabbpn.jpg',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/musica_de_camara_2_rgpgiy.webp',
     category: [{ title: 'Dúos' }, { title: 'Tríos' }, { title: 'Cuartetos' }],
     details: {
       age: 'Edad libre',
@@ -159,7 +159,7 @@ const estudios = [
     href: '/estudios/oag',
     description: `La OAG promueve la interpretación orquestal con ensayos meticulosos, profesionales destacados y exigentes conciertos.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/OAG_orquesta_2_xj67es.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/OAGorquesta_3_haqeuw.webp',
     category: [{ title: 'OAG' }],
     details: {
       age: '18 años en adelante',
