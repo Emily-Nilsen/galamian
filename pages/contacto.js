@@ -329,7 +329,7 @@ export default function Contacto() {
                   </h3>
                   <form
                     action="/exito"
-                    subject="Envío de formulario para la Academia Internacional Galamian"
+                    // subject="Envío de formulario para la Academia Internacional Galamian"
                     name="Contacta con la Academia Galamian"
                     data-netlify="true"
                     method="POST"
