@@ -7,7 +7,6 @@ import { CheckIcon } from '@heroicons/react/outline';
 import ProfesoresViolin from '../../components/estudio/profesores-violin';
 import ViolinRequisitos from '../../components/estudio/violin-requisitos';
 import ViolinGalleryOne from '../../components/estudio/violin-gallery-1';
-import JoagCTA from '../../components/joag/cta';
 import { motion } from 'framer-motion';
 
 export default function FormacioMusicalIntegral() {
