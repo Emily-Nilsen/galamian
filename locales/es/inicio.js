@@ -28,7 +28,7 @@ const inicio = {
   post_1_date: `Hasta el 15 de julio, `,
   post_2_title: `Inscripción a las audiciones de acceso`,
   post_2_sent_1: `La Academia Internacional Galamian abre el periodo de inscripción a las audiciones de acceso al próximo curso, `,
-  post_2_sent_2: `Debido a la situación causada por la pandemia, estas audiciones se llevarán a cabo a través de vídeo. La inscripción está abierta hasta el 10 de agosto.`,
+  post_2_sent_2: `La inscripción está abierta hasta el 10 de agosto.`,
   post_2_sent_3: `Abajo puedes conocer todos los detalles para participar en las audiciones.`,
   post_2_date: `Hasta el 10 de agosto, `,
 

@@ -6,21 +6,21 @@ export default function Noticias() {
   const { t } = useTranslation();
 
   const posts = [
-    {
-      title: `${t('inicio:post_1_title')}`,
-      href: '/galamian-junior',
-      sentence01: `${t(
-        'inicio:post_1_sent_1_part_1'
-      )}${new Date().getFullYear()}/${new Date().getFullYear() + 1} ${t(
-        'inicio:post_1_sent_1_part_2'
-      )}`,
-      sentence02: `${t(
-        'inicio:post_1_sent_2_part_1'
-      )}${new Date().getFullYear()} ${t(
-        'inicio:post_1_sent_2_part_2'
-      )}${new Date().getFullYear()}.`,
-      date: `${t('inicio:post_1_date')}${new Date().getFullYear()}`,
-    },
+    // {
+    //   title: `${t('inicio:post_1_title')}`,
+    //   href: '/galamian-junior',
+    //   sentence01: `${t(
+    //     'inicio:post_1_sent_1_part_1'
+    //   )}${new Date().getFullYear()}/${new Date().getFullYear() + 1} ${t(
+    //     'inicio:post_1_sent_1_part_2'
+    //   )}`,
+    //   sentence02: `${t(
+    //     'inicio:post_1_sent_2_part_1'
+    //   )}${new Date().getFullYear()} ${t(
+    //     'inicio:post_1_sent_2_part_2'
+    //   )}${new Date().getFullYear()}.`,
+    //   date: `${t('inicio:post_1_date')}${new Date().getFullYear()}`,
+    // },
     {
       title: `${t('inicio:post_2_title')}`,
       href: '/estudia',
