@@ -34,6 +34,12 @@ export default function VozProfesores() {
       sentence_01: `${t('professors:natalia_para_1')}`,
       sentence_02: `${t('professors:natalia_para_2')}`,
       sentence_03: `${t('professors:natalia_para_3')}`,
+      sentence_04: `${t('professors:natalia_para_4')}`,
+      sentence_05: `${t('professors:natalia_para_5')}`,
+      sentence_06: `${t('professors:natalia_para_6')}`,
+      sentence_07: `${t('professors:natalia_para_7')}`,
+      sentence_08: `${t('professors:natalia_para_8')}`,
+      sentence_09: `${t('professors:natalia_para_9')}`,
       website: `${t('professors:natalia_website')}`,
       href: `${t('professors:natalia_href')}`,
     },
@@ -235,6 +241,21 @@ export default function VozProfesores() {
                                       <p>{person.sentence_02}</p>
                                       <p>{person.sentence_03}</p>
                                       <p>{person.sentence_04}</p>
+                                      {person.sentence_05 && (
+                                        <p>{person.sentence_05}</p>
+                                      )}
+                                      {person.sentence_06 && (
+                                        <p>{person.sentence_06}</p>
+                                      )}
+                                      {person.sentence_07 && (
+                                        <p>{person.sentence_07}</p>
+                                      )}
+                                      {person.sentence_08 && (
+                                        <p>{person.sentence_08}</p>
+                                      )}
+                                      {person.sentence_09 && (
+                                        <p>{person.sentence_09}</p>
+                                      )}
                                       {person.website ? (
                                         <>
                                           <div className="mt-6">

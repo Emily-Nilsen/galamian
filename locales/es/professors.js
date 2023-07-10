@@ -59,9 +59,15 @@ const professors = {
   natalia_instrument: '',
   natalia_alternativeRole: `Repertorista`,
   natalia_role: `Método Brainin`,
-  natalia_para_1: `Procedente de una familia de científicos y de gran tradición musical, la pianista moscovita Natalia Kucháeva reside en España desde el año 2009. Su repertorio abarca el más amplio abanico de estilos desde el barroco hasta el siglo XXI.`,
-  natalia_para_2: `Recibe una sólida formación musical en la Escuela de Música afiliada al Conservatorio Estatal P.I. Tchaikovsky de Moscú y en la Academia Gnessin donde se gradúa y realiza los estudios de Posgrado bajo la dirección del maestro Vladimir Tropp.`,
-  natalia_para_3: `Se perfecciona en la Escuela Superior de Música de Lucerna (Suiza), con el pianista de reconocido prestigio internacional Konstantin Lifschitz. Actualmente desarrolla su labor como docente aplicando el Método Brainin en su enseñanza.`,
+  natalia_para_1: `Destacada por la crítica por “una técnica formidable, delicadeza y una sensibilidad exquisita” la pianista moscovita Natalia Kucháeva reside en España desde 2009.`,
+  natalia_para_2: `Se formó en la Escuela de Música afiliada al Conservatorio Estatal P.I. Tchaikovsky de Moscú y en la Academia Gnessin, posteriormente en la Escuela Superior de Música de Lucerna (Suiza), con maestros de reconocido prestigio internacional como Vladimir Tropp y Konstantin Lifschitz.`,
+  natalia_para_3: `Recientemente ha terminado el Máster de Lied “Victoria de los Ángeles” en la ESMUC de Barcelona recibiendo Matrícula de Honor.`,
+  natalia_para_4: `En numerosas ocasiones ha sido galardonada en concursos internacionales, como “Anton Rubinstein” Paris 1998, "José Iturbi", Valencia 2006, “Alexandr Scriabin", Grosetto, Italia 2008, “Ettlingen” y “Pianale” en Alemania, entre otros.`,
+  natalia_para_5: `Durante 10 años ha sido maestra repetidora de la ópera en el Teatro de la Maestranza de Sevilla, colaborando en mas de 40 producciones con maestros como M. Benini, R. Balsadonna, C. Rovaris, I. Abel, I.Sampil, J. Lacombe, A. Spering, J. Axelrod, I. López-Reynoso, J.M.Perez-Sierra, O.Diaz, P. Halffter , S.Serrate, J.M. Busto, y cantantes como J.Bros, A.Mead, A. Arteta, N.Fabiola, J.Prats, P. Yende, J.J.Rodriguez, L. Nucci, M. Gantner, G. Kunde, P. Seiffert, entre otros.`,
+  natalia_para_6: `Paralelamente ha desarrollado una intensa actividad concertística en ciclos y festivales internacionales como: “Bienal de Flamenco 2020”, Sevilla, Festival “Rafael Orozco”, Córdoba , “Festival Otoño Clásico” (Centro Cultural de Belén, Lisboa),  “Málaga Clásica” 2023, Festival Internacional de Danza “Italica”, Sevilla 2023, Casa Bösendorfer (Montreux, Suiza), Casa Steingräber (Bayreuth, Alemania), Teatro Petruzelli (Bari, Italia), Teatro de la Maestranza de Sevilla, Auditorio Nacional Madrid, Auditorio de Tenerife, Sala Bolshoi del Conservatorio Tchaikovsky de Moscú, Act City, Concert Hall (Hamamatsu, Japón), etc.`,
+  natalia_para_7: `Desde el año 2021 es profesora invitada en la Academia Galamian en Málaga, donde imparte clases del Método Brainin: “Desarollo de intelecto musical“.`,
+  natalia_para_8: `Desde el año 2022 es profesora de repertorio en la Cátedra de canto en la Escuela Superior de Música Reina Sofía en Madrid.`,
+  natalia_para_9: `Forma dúo pianístico con su marido el catedrático de piano Jorge Lechado. Entre las actuaciones del dúo “Lechado-Kucháeva” destaca el concierto en la entrega del Premio Internacional de Poesía Federico García Lorca en el Auditorio "Manuel de Falla" de Granada con la presencia de sus Altezas Reales Príncipes de Asturias.`,
   natalia_website: '',
 
   // Vicente Chulía
@@ -315,7 +321,7 @@ const professors = {
   // Nils Georg
   nils_name: `Nils Georg`,
   nils_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/nils-nilsen_vzbeo6.webp`,
-  nils_role: `Profesor Principal`,
+  nils_role: `Profesor Invitado`,
   nils_instrument: `Tenor`,
   nils_para_1: `Nils Nilsen, solista, de origen noruego y profesor de voz, ejerce como profesor de técnica vocal en la Academia Internacional Galamian. Debutó en 2012 en el Avery Fisher Hall de Nueva York y ha actuado con las compañías "Opera Tampa" y "Norwegian Opera" y con la orquesta de Cámara de Minsk. Con 13 años cantó junto a Dama Kiribati te Kanawa, formando un dúo artístico en la sala Spectrum de Oslo.`,
   nils_para_2: `Entre los méritos de Nils se encuentra el haber ganado el premio Solveig en el concurso Edvard Grieg. También ha obtenido otros éxitos en su carrera profesional, entre los que se encuentran el haber conseguido numerosos premios del público durante el Festival LidalNorth o ser el ganador del concurso "Música Juvenil" de Noruega.`,

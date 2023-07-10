@@ -58,9 +58,15 @@ const professors = {
   natalia_instrument: '',
   natalia_alternativeRole: `Accompanist`,
   natalia_role: `Brainin Method`,
-  natalia_para_1: `Coming from a family of scientists and with a deep musical tradition, the Moscow pianist Natalia Kucháeva has lived in Spain since 2009. Her repertoire covers a wide range of styles, from the Baroque to the 21st century.`,
-  natalia_para_2: `Natalia Kucháeva received solid musical training at the School of Music affiliated with the P.I. Tchaikovsky in Moscow. Later, she graduated and completed postgraduate studies at the Gnessin Academy under the direction of Master Vladimir Tropp.`,
-  natalia_para_3: `She perfects herself at the Superior School of Music in Lucerne (Switzerland) with the internationally renowned pianist Konstantin Lifschitz. She currently develops her work as a teacher by applying the Brainin Method in her teaching.`,
+  natalia_para_1: `Noted by critics for "a formidable technique, delicacy and exquisite sensitivity", the Moscow pianist Natalia Kucháeva has lived in Spain since 2009.`,
+  natalia_para_2: `She trained at the School of Music affiliated with the State Conservatory P.I. Tchaikovsky in Moscow and at the Gnessin Academy, later at the Lucerne Higher School of Music (Switzerland), with internationally renowned teachers such as Vladimir Tropp and Konstantin Lifschitz.`,
+  natalia_para_3: `She recently finished the Master of Lied "Victoria de los Ángeles" at the ESMUC in Barcelona, receiving Honors.`,
+  natalia_para_4: `She has been awarded numerous times in international competitions, such as "Anton Rubinstein" Paris 1998, "José Iturbi", Valencia 2006, "Alexandr Scriabin", Grosetto, Italy 2008, "Ettlingen" and "Pianale" in Germany, among others.`,
+  natalia_para_5: `For 10 years, she has been a repetitive opera teacher at the Teatro de la Maestranza in Seville, collaborating in more than 40 productions with teachers such as M. Benini, R. Balsadonna, C. Rovaris, I. Abel, I.Sampil, J. Lacombe, A. Spering, J. Axelrod, I. López-Reynoso, J.M.Perez-Sierra, O.Diaz, P. Halffter, S.Serrate, J.M. Bust, and singers like J.Bros, A.Mead, A. Arteta, N.Fabiola, J.Prats, P. Yende, J.J.Rodriguez, L. Nucci, M. Gantner, G. Kunde, P. Seiffert, among others.`,
+  natalia_para_6: `At the same time, she has developed an intense concert activity in international cycles and festivals such as: "Bienal de Flamenco 2020", Seville, "Rafael Orozco" Festival, Córdoba, "Classic Autumn Festival" (Centro Cultural de Belén, Lisbon), "Málaga Clásica" 2023, International Dance Festival "Italica", Seville 2023, Bösendorfer House (Montreux, Switzerland), Steingräber House (Bayreuth, Germany), Petruzelli Theater (Bari, Italy), Maestranza Theater in Seville, Madrid National Auditorium, Tenerife Auditorium, Bolshoi Hall of the Moscow Tchaikovsky Conservatory, Act City, Concert Hall (Hamamatsu, Japan), etc.`,
+  natalia_para_7: `Since 2021 she has been a visiting professor at the Galamian Academy in Malaga, where she teaches the Brainin Method: "Development of musical intellect".`,
+  natalia_para_8: `Since 2022 she has been a repertoire teacher at the Chair of Singing at the Reina Sofía Superior School of Music in Madrid.`,
+  natalia_para_9: `She forms a piano duo with her husband, piano professor Jorge Lechado. Among the performances of the duo "Lechado-Kucháeva" stands out the concert at the delivery of the Federico García Lorca International Poetry Prize in the "Manuel de Falla" Auditorium in Granada with the presence of Their Royal Highnesses Princes of Asturias.`,
   natalia_website: '',
 
   // Vicente Chulía
@@ -301,7 +307,7 @@ const professors = {
   // Nils Georg
   nils_name: `Nils Georg`,
   nils_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/nils-nilsen_vzbeo6.webp`,
-  nils_role: `Principal Professor `,
+  nils_role: `Guest Professor `,
   nils_instrument: `Tenor`,
   nils_para_1: `Norwegian soloist and voice teacher Nils Nilsen works as a vocal technique teacher at the Galamian International Academy. He made his debut in 2012 at the Avery Fisher Hall in New York and has performed with the "Opera Tampa" and "Norwegian Opera" companies and with the Minsk Chamber Orchestra. At age 13, he sang with Dama Kiribati te Kanawa, forming an artistic duo at the Spectrum venue in Oslo.`,
   nils_para_2: `Some of his merits include winning the Solveig prize in the Edvard Grieg competition. Nils Nilsen has also had other successes in his professional career, including winning numerous audience awards during the LidalNorth Festival and being the winner of Norway's "Youth Music" contest.`,
