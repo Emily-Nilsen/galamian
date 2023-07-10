@@ -19,6 +19,7 @@ import {
   CalendarIcon,
   MusicNoteIcon,
   ExternalLinkIcon,
+  DocumentIcon,
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { useRouter } from 'next/router';
@@ -68,6 +69,11 @@ export default function Navbar() {
       name: `Preguntas frecuentes`,
       href: '/estudia/formacion-musical-integral',
       icon: ExternalLinkIcon,
+    },
+    {
+      name: `Política de Privacidad`,
+      href: '/politica-de-privacidad',
+      icon: DocumentIcon,
     },
   ];
   const blogPosts = [
@@ -222,7 +228,7 @@ export default function Navbar() {
       href: `/estudios/artist-diploma`,
     },
     {
-      name: `Programa de Música de Cámara`,
+      name: `Música de Cámara`,
       href: `/estudios/programa-de-musica-de-camara`,
     },
     {
@@ -236,6 +242,10 @@ export default function Navbar() {
     {
       name: `${t('footer:academia_4')}`,
       href: `/contacto`,
+    },
+    {
+      name: `Política de Privacidad`,
+      href: `/politica-de-privacidad`,
     },
   ];
 

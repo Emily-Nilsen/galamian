@@ -77,6 +77,10 @@ export default function Footer() {
         name: `Preguntas frecuentes`,
         href: '/estudia/formacion-musical-integral',
       },
+      {
+        name: `Política de Privacidad`,
+        href: '/politica-de-privacidad',
+      },
     ],
     social: [
       {
