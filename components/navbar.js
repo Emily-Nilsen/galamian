@@ -31,19 +31,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const MyLink = forwardRef((props, ref) => {
-  let { href, children, ...rest } = props;
-  return (
-    <Link href={href}>
-      <a ref={ref} {...rest}>
-        {children}
-      </a>
-    </Link>
-  );
-});
-
 export default function Navbar() {
   const { t } = useTranslation();
+
+  const MyLink = forwardRef((props, ref) => {
+    let { href, children, ...rest } = props;
+    return (
+      <Link href={href}>
+        <a ref={ref} {...rest}>
+          {children}
+        </a>
+      </Link>
+    );
+  });
 
   // Academy
   const academia = [
