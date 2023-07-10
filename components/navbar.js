@@ -26,6 +26,7 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
 import Language from './language';
+import MyLink from './my-link';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -33,17 +34,6 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const { t } = useTranslation();
-
-  const MyLink = forwardRef((props, ref) => {
-    let { href, children, ...rest } = props;
-    return (
-      <Link href={href}>
-        <a ref={ref} {...rest}>
-          {children}
-        </a>
-      </Link>
-    );
-  });
 
   // Academy
   const academia = [
