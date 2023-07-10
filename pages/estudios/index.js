@@ -212,12 +212,14 @@ export default function Estudios() {
                 className="flex flex-col items-start justify-between"
               >
                 <div className="relative w-full">
-                  <img
+                  <Image
                     src={estudio.imageUrl}
                     alt={estudio.title}
+                    width={1000}
+                    height={750}
                     className="aspect-[16/9] w-full rounded-none bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                   />
-                  <div className="absolute inset-0 rounded-none ring-1 ring-inset ring-gray-900/10" />
+                  <div className="absolute inset-0 rounded-none" />
                 </div>
                 <div className="max-w-xl">
                   <div className="flex items-center mt-8 text-xs gap-x-1">
