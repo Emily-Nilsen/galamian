@@ -470,10 +470,45 @@ export default function Contacto() {
                         />
                       </div>
                     </div>
+                    {/* Agree */}
+
+                    <fieldset className="w-full mt-6 sm:col-span-2">
+                      <div className="space-y-8">
+                        <div className="relative flex items-start">
+                          <div className="flex items-center h-5">
+                            <input
+                              id="samtykke"
+                              name="samtykke"
+                              type="checkbox"
+                              required
+                              className="w-4 h-4 rounded border-stone-300 text-gold-600 focus:ring-gold-500"
+                            />
+                          </div>
+                          <div className="ml-3 -mt-1 text-base ">
+                            <label
+                              htmlFor="samtykke"
+                              className="font-medium tracking-normal text-stone-600"
+                            >
+                              Al seleccionar esto, acepta nuestra{' '}
+                              <Link href="/politica-de-privacidad">
+                                <a
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="font-semibold text-gold-600"
+                                >
+                                  Política&nbsp;de&nbsp;Privacidad
+                                </a>
+                              </Link>
+                              .
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                       <button
                         type="submit"
-                        className="inline-flex items-center justify-center w-full py-1.5 px-4 mt-2 text-base font-semibold tracking-tight text-white transition duration-300 ease-in-out border border-transparent rounded-none bg-gold-500 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto"
+                        className="inline-flex items-center justify-center w-full py-2.5 px-4 mt-2 text-base font-semibold tracking-tight text-white transition duration-300 ease-in-out border border-transparent rounded-none bg-gold-500 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500 sm:w-auto"
                       >
                         {t('common:contactform_send')}
                       </button>
