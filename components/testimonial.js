@@ -16,19 +16,19 @@ export default function Testimonial() {
       position: `${t('inicio:testimonial_source_1')}`,
     },
     {
-      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712311/Galamian/general/testimonial-2_wezoks.webp`,
+      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOAG_igc3qm.webp`,
       text: `${t('inicio:testimonial_text_2')}`,
       author: `${t('inicio:testimonial_author_2')}`,
       position: `${t('inicio:testimonial_source_2')}`,
     },
     {
-      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-photo-02_cmm2lu.webp`,
+      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Programa_Musica_de_camara_qcxbt8.webp`,
       text: `${t('inicio:testimonial_text_3')}`,
       author: `${t('inicio:testimonial_author_3')}`,
       position: `${t('inicio:testimonial_source_3')}`,
     },
     {
-      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/testimonial-3_tblpe0.webp`,
+      image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOVEN_ARTISTA_tn6m6w.webp`,
       text: `${t('inicio:testimonial_text_4')}`,
       author: `${t('inicio:testimonial_author_4')}`,
       position: `${t('inicio:testimonial_source_4')}`,

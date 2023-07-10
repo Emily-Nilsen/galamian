@@ -21,7 +21,7 @@ export default function ViolinRequisitos() {
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
       imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/scholarships-violin_ksuldz.webp',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp',
       imageAlt: 'Estudio de Violín/Viola',
     },
     {
@@ -48,7 +48,7 @@ export default function ViolinRequisitos() {
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
       imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/title_tjgxou.webp',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/group-photo-01_nsd7dg.webp',
       imageAlt: 'Estudio de Violín/Viola',
     },
   ];

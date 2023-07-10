@@ -2,11 +2,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const image_1 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-photo-07_nb890p.webp`;
-const image_2 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-photo-04_am9d1r.webp`;
-const image_3 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-photo-02_cmm2lu.webp`;
+const image_2 = `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/group-photo-07_gsmtf0.webp`;
+const image_3 = `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/cello-photo-07_tyoruh.webp`;
 const image_4 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-study-img-2_ypgthu.webp`;
 const image_5 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712686/Galamian/violin/violin-study-img-3_cnh2ey.webp`;
-const image_6 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/anna-violin-2_jtpvqd.webp`;
+const image_6 = `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/cello-img-5_zlk93b.webp`;
 
 export default function ViolinGalleryOne() {
   return (
