@@ -304,6 +304,23 @@ const professors = {
 
   // VOZ
 
+  // Carlos Alvarez
+  carlos_name: `Carlos Alvarez`,
+  carlos_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Carlos_Alvarez_zzwaeu.webp`,
+  carlos_role: `Principal Professor`,
+  carlos_instrument: `Singer`,
+  carlos_para_1: `Born in Málaga in 1966, Carlos Alvarez combined his studies at the Conservatory and the Faculty of Medicine of the University of Málaga until he became a professional singer in 1989.`,
+  carlos_para_2: `Since its debut, it has been part of the programs and seasons of the most important festivals and opera houses in the world, including the Liceu in Barcelona, the ROH Covent Garden in London, the Teatro Real in Madrid, the Teatro alla Scala in Milan, the Metropolitan Opera House in New York, the Thêátre de la Bastille in Paris, the Salzburg Festival, the Wiener Staatsoper and the National Opera in Tokyo, working with international casts directed by, among others: Riccardo Chailly, Sir Colin Davis, Gustavo Dudamel, Valery Gergiev, James Levine, Lorin Maazel, Zubin Metah, Riccardo Muti and Sergi Ozawa.`,
+  carlos_para_3: `Jury in the program "Tierra de Talento" of Canal Sur Televisión. Some important distinctions: Doctor Honoris Causa from the University of Malaga, National Music Award 2003, Medal of Merit in Fine Arts 2002, Kammersänger of the Wiener Staatsoper since 2007, 2 Grammy Awards (2001 and 2006), Gold Medal of Andalusia 2003, Honorary Member of the Academy of Fine Arts of San Telmo in Malaga, Member of the Academy of Performing Arts of Spain.`,
+
+  // Valle Duque
+  valle_name: `Valle Duque`,
+  valle_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Valle_Duque_jx32am.webp`,
+  valle_role: `Principal Professor`,
+  valle_instrument: `Soprano`,
+  valle_para_1: `Born in Seville (1963), she has been a singing teacher since 1991 (Seville Conservatory of Music), and her training has been aimed at achieving the necessary tools for the best vocal artistic expression and the teaching of professional singing: Lyrical, Music Baroque and Rococo, Update of Musical Theory, Computer Science and Musical Electronics, Theater and Orthophony, Vocal Expression for educators, Interpretation for singers and pianists, Pedagogy and Methodology of Music, Psychomotricity and Dance, Voice Care (Disorders and Rehabilitation), receiving guidance classes from influential music personalities, such as Alfredo Kraus, Carmen Martínez Lluna, José Luis Temes, Alberto Zedda, Gilberto Escobar or Carlos Hacar, among others.`,
+  valle_para_2: `Her professional facet consists of two major activities: On stage (soprano), performing recitals, concerts and opera interventions from 1988 to 1993, mainly in western Andalusia, knowing first-hand the needs of the use of the professional voice and Institutional Pedagogical, developed in the Andalusian region (singing teacher at the Granada, Seville and Malaga conservatories from 1995 to 2006; vocal technique teacher for teachers and choirs; vocal coach for different groups in collaboration with the Teatro de la Maestranza in Seville; trainer of trainers), combining it with individual training, rehabilitation and vocal counselling for professional singers.`,
+
   // Nils Georg
   nils_name: `Nils Georg`,
   nils_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/nils-nilsen_vzbeo6.webp`,

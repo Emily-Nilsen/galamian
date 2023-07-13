@@ -15,6 +15,23 @@ export default function VozProfesores() {
 
   const people = [
     {
+      name: `${t('professors:carlos_name')}`,
+      role: `${t('professors:carlos_role')}`,
+      imageUrl: `${t('professors:carlos_image')}`,
+      instrument: `${t('professors:carlos_instrument')}`,
+      sentence_01: `${t('professors:carlos_para_1')}`,
+      sentence_02: `${t('professors:carlos_para_2')}`,
+      sentence_03: `${t('professors:carlos_para_3')}`,
+    },
+    {
+      name: `${t('professors:valle_name')}`,
+      role: `${t('professors:valle_role')}`,
+      imageUrl: `${t('professors:valle_image')}`,
+      instrument: `${t('professors:valle_instrument')}`,
+      sentence_01: `${t('professors:valle_para_1')}`,
+      sentence_02: `${t('professors:valle_para_2')}`,
+    },
+    {
       name: `${t('professors:nils_name')}`,
       role: `${t('professors:nils_role')}`,
       imageUrl: `${t('professors:nils_image')}`,

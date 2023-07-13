@@ -53,7 +53,7 @@ const estudios = [
     href: '/estudios/voz',
     description: `Opción de formación vocal para acceso a la profesionalización con técnicas prácticas, correpetición y especialización.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/voice/voice-photo-img-02_g05tgl.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/estudio_de_voz-_thumnail_just_the_two_singers_or36jk.webp',
     category: [{ title: `Voz` }],
     details: {
       age: 'Todas las edades',

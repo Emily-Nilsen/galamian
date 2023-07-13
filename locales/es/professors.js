@@ -318,6 +318,26 @@ const professors = {
 
   // VOZ
 
+  // Carlos Alvarez
+  carlos_name: `Carlos Alvarez`,
+  carlos_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Carlos_Alvarez_zzwaeu.webp`,
+  carlos_role: `Profesor Principal`,
+  carlos_instrument: `Cantante`,
+  carlos_para_1: `Nacido en Málaga en 1966, compaginó sus estudios tanto en el Conservatorio como en la Facultad de Medicina de la Universidad de Málaga hasta que se convirtió en cantante profesional en 1989.`,
+  carlos_para_2: `Desde su debut, ha formado parte de las programaciones y temporadas de los más importantes festivales y teatros de ópera del mundo, entre los que cave destacar el Liceu de Barcelona, la ROH Covent Garden de Londres, el Teatro Real de Madrid, el Teatro alla Scala de Milán, la Metropolitan Ópera House de Nueva York, el Thêátre de la Bastille en Paris, el Festival de Salzburgo, la Wiener Staatsoper y la National Ópera de Tokyo, trabajando con repartos internacionales dirigidos por, entre otros: Riccardo Chailly, Sir Colin Davis, Gustavo Dudamel, Valery Gergiev, James Levine, Lorin Maazel, Zubin Metah, Riccardo Muti o Sergi Ozawa.`,
+  carlos_para_3: `Jurado en el programa “Tierra de Talento” de Canal Sur Televisión.  Algunas distinciones importantes: Doctor Honoris Causa por la Universidad de Málaga, Premio Nacional de Música 2003, Medalla al Mérito en las Bellas Artes 2002, Kammersänger de la Wiener Staatsoper desde 2007, 2 Grammy Awards (2001 y 2006), Medalla de Oro de Andalucía 2003, Académico de Honor de la Academia de Bellas Artes de San Telmo de Málaga, Académico de la Academia de Artes Escénicas de España.`,
+
+  // Valle Duque
+  valle_name: `Valle Duque`,
+  valle_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Valle_Duque_jx32am.webp`,
+  valle_role: `Profesora Principal`,
+  valle_instrument: `Soprano`,
+  valle_para_1: `Nacida en Sevilla (1963), es profesora de canto desde 1991 (Conservatorio Superior de Música de Sevilla) y su formación ha estado dirigida a la consecución de las herramientas necesarias para la mejor expresión artística vocal y la enseñanza del canto profesional: 
+  Lírica, Música Barroca y Rococó, Actualización de la Teoría Musical, Informática y Electrónica Musical, Teatro y Ortofonía, Expresión Vocal para educadores, Interpretación para cantantes y pianistas, Pedagogía y Metodología de la Música, Psicomotricidad y Danza, Cuidado de la Voz (Transtornos y Rehabilitación), recibiendo clases de orientación de importantes personalidades de la música, tales como Alfredo Kraus, Carmen Martínez Lluna, José Luis Temes, Alberto Zedda, Gilberto Escobar o Carlos Hacar, entre otros.`,
+  valle_para_2: `Su faceta profesional consta de dos grandes actividades:
+  Sobre el escenario (soprano), realizando recitales, conciertos e intervenciones operísticas desde 1988 hasta 1993, fundamentalmente en la Andalucía occidental, conociendo de primera mano las necesidades del uso de la voz profesional, y
+  Pedagógica institucional, desarrollada en el ámbito regional andaluz (profesora de canto en los conservatorios de Granada, Sevilla y Málaga desde 1995 hasta 2006; docente de técnica vocal para profesorado y coros; preparadora vocal de distintas agrupaciones en colaboración con el Teatro de la Maestranza de Sevilla; formadora de formadores), combinándola con la formación, rehabilitación y asesoramiento vocal de cantantes profesionales de modo individual.`,
+
   // Nils Georg
   nils_name: `Nils Georg`,
   nils_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/nils-nilsen_vzbeo6.webp`,
