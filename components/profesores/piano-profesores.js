@@ -51,27 +51,6 @@ export default function PianoProfesores() {
       imageUrl: `${t('professors:margarita_image')}`,
       instrument: `${t('professors:margarita_instrument')}`,
     },
-    {
-      name: `${t('professors:petrova_name')}`,
-      role: `${t('professors:petrova_role')}`,
-      imageUrl: `${t('professors:petrova_image')}`,
-      instrument: `${t('professors:petrova_instrument')}`,
-      sentence_01: `${t('professors:petrova_para_1')}`,
-      sentence_02: `${t('professors:petrova_para_2')}`,
-      sentence_03: `${t('professors:petrova_para_3')}`,
-      website: `${t('professors:petrova_website')}`,
-      href: `${t('professors:petrova_href')}`,
-    },
-    {
-      name: `${t('professors:francesco_name')}`,
-      role: `${t('professors:francesco_role')}`,
-      imageUrl: `${t('professors:francesco_image')}`,
-      instrument: `${t('professors:francesco_instrument')}`,
-      sentence_01: `${t('professors:francesco_para_1')}`,
-      sentence_02: `${t('professors:francesco_para_2')}`,
-      sentence_03: `${t('professors:francesco_para_3')}`,
-      sentence_04: `${t('professors:francesco_para_4')}`,
-    },
   ];
 
   return (

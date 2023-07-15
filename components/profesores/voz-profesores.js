@@ -60,29 +60,6 @@ export default function VozProfesores() {
       website: `${t('professors:natalia_website')}`,
       href: `${t('professors:natalia_href')}`,
     },
-    {
-      name: `${t('professors:joel_name')}`,
-      role: `${t('professors:joel_role')}`,
-      imageUrl: `${t('professors:joel_image')}`,
-      instrument: `${t('professors:joel_instrument')}`,
-      sentence_01: `${t('professors:joel_para_1')}`,
-      sentence_02: `${t('professors:joel_para_2')}`,
-      sentence_03: `${t('professors:joel_para_3')}`,
-      website: `${t('professors:joel_website')}`,
-      href: `${t('professors:joel_href')}`,
-    },
-    {
-      name: `${t('professors:araiza_name')}`,
-      role: `${t('professors:araiza_role')}`,
-      imageUrl: `${t('professors:araiza_image')}`,
-      instrument: `${t('professors:araiza_instrument')}`,
-      sentence_01: `${t('professors:araiza_para_1')}`,
-      sentence_02: `${t('professors:araiza_para_2')}`,
-      sentence_03: `${t('professors:araiza_para_3')}`,
-      sentence_04: `${t('professors:araiza_para_4')}`,
-      website: `${t('professors:araiza_website')}`,
-      href: `${t('professors:araiza_href')}`,
-    },
   ];
 
   return (

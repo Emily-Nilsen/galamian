@@ -220,7 +220,18 @@ export default function Voz() {
                   los roles que deben interpretar.
                 </p>
               </div>
-              <div className="flex pt-6 lg:mt-0">
+              <div className="flex mt-10 group">
+                <a
+                  download
+                  href="/Estudio-de-voz.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gold-500/20 py-1.5 px-3 rounded-full font-semibold text-neutral-700 group-hover:bg-gold-500/30 group-hover:text-neutral-900 transition-all duration-150 ease-in-out"
+                >
+                  Descargar más info
+                </a>
+              </div>
+              <div className="flex pt-10 lg:mt-0">
                 <Link href="/estudia/formulario-de-inscripcion" passHref>
                   <a className="text-base font-semibold leading-7 transition duration-150 ease-in-out text-gold-600 hover:text-gold-500">
                     Formulario de inscripción{' '}
