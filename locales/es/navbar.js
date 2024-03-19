@@ -4,7 +4,7 @@ const navbar = {
   link_1_title_1: `La Academia`,
   link_1_title_1_1: `El Proyecto`,
   link_1_title_1_2: `Sus Fundadores`,
-  link_1_title_1_3: `Sala Unicaja`,
+  link_1_title_1_3: `Sala Fundación Unicaja`,
   link_1_title_1_4: `Contacto`,
   link_1_title_2: `Recursos`,
   link_1_title_2_1: `Noticias`,

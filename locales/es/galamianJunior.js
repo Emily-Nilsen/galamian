@@ -65,7 +65,7 @@ const galamianJunior = {
   leccion_title_7_text_3: `3 sesiones intensivas al año.`,
   leccion_title_8: `Conciertos`,
   leccion_title_8_text_1: `Conciertos en la sala principal y otros espacios de la Academia.
-  La icónica Sala María Cristina aloja la gran mayoría de los eventos de la Academia Internacional Galamian.`,
+  La icónica Sala Fundación Unicaja Mª Cristina aloja la gran mayoría de los eventos de la Academia Internacional Galamian.`,
   leccion_title_8_text_2: `Una localización con una acústica y estética alabadas por los grandes artistas que cada temporada pasan por ella.`,
   leccion_title_8_text_3: `Un concierto de violín/viola al trimestre y un concierto de orquesta con la JOAG.`,
 

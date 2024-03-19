@@ -64,7 +64,7 @@ const galamianJunior = {
   leccion_title_7_text_2: `These sessions will serve as a complement to the weekly Brainin Method classes.`,
   leccion_title_7_text_3: `3 intensive sessions per year.`,
   leccion_title_8: `Concerts`,
-  leccion_title_8_text_1: `Concerts in the main hall and other spaces of the Academy. The iconic Unicaja Concert Hall María Cristina hosts the vast majority of the events of the Galamian International Academy.`,
+  leccion_title_8_text_1: `Concerts in the main hall and other spaces of the Academy. The iconic Unicaja Concert Hall María Cristina (Sala Fundación Unicaja Mª Cristina) hosts the vast majority of the events of the Galamian International Academy.`,
   leccion_title_8_text_2: `A location with acoustics and aesthetics praised by the great artists who pass through it every season.`,
   leccion_title_8_text_3: `A violin/viola concert per quarter and an orchestra concert with the JOAG.`,
 

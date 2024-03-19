@@ -21,7 +21,7 @@ const estudia = {
   estudiar_list_6: `Orchestral meetings with the director of the academy and invited conductors, with the option of developing orchestral activity as the main subject.`,
   estudiar_list_7: `Group classes on repertoire, study techniques and performative practice.`,
   estudiar_list_8: `The academy teachers guide the development of project practices and accompaniment to musicians.`,
-  estudiar_list_9: `Concerts held in the María Cristina Unicaja Concert Hall and other venues.`,
+  estudiar_list_9: `Concerts held in the María Cristina Unicaja Concert Hall (Sala Fundación Unicaja Mª Cristina) and other venues.`,
 
   // Audiciones
   auditions_title_1: `Course Access`,

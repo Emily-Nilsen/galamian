@@ -32,11 +32,11 @@ const academia = {
   anna_para_1: `Anna Margrethe Nilsen is a Centaur Records artist and winner of the Sparre Olsen, Eisenberg-Fried and Norwegian National competitions. She has studied with Isaac Schuldman, Patinka Kopec and Pinchas Zukerman. She has also performed in venues such as Wiener Konzerthaus, Oslo Auditorium, Saint Petersburg Philharmonic, Carnegie Hall, and orchestras such as the Bergen Philharmonic and Kaliningrad Chamber Orchestra, and the Trondheim Symphony, Juenesses Musicales, Novgorod Chamber Opera, Norwegian Opera, Saint Petersburg Symphony and Belarus Chamber Opera.`,
   anna_para_2: `She has collaborated with artists such as Pinchas Zukerman, Paul Neubauer, Liza Fershtman, Amanda Forsyth, and Guy Braunstein. She is a professor at the Galamian Academy and co-founder and director of the Malága Clasíca Festival.`,
 
-  // Sala Unicaja de Conciertos María Cristina
+  // Sala Fundación Unicaja Mª Cristina
   unicaja_title_1: `Unicaja Concert Hall`,
   unicaja_title_2: `María Cristina`,
   unicaja_subtitle: `Galamian Academy Headquarters`,
-  unicaja_text_1: `As of the 2018/2019 academic year and through a collaboration agreement with the Unicaja Foundation, the Galamian Academy operates from the Unicaja María Cristina Concert Hall in Malaga.`,
+  unicaja_text_1: `As of the 2018/2019 academic year and through a collaboration agreement with the Unicaja Foundation, the Galamian Academy operates from the Unicaja María Cristina Concert Hall (Sala Fundación Unicaja Mª Cristina) in Malaga.`,
   unicaja_text_2: `The buildings that make up this concert hall originated in the 15th century as a stay for a Franciscan group. However, in 1843, the functionality of the complex changed, and it became one of the first conservatories promoted in Spain during the 19th century.`,
   unicaja_text_3: `Since its recovery by the Unicaja Foundation in 2009, the complex has become one of the most emblematic buildings in Malaga. Ten years on, the hall once again houses an academic institution. The international significance of the Academy seeks to return this historic conservatory to its functionality as an educational centre and the dissemination of quality culture.`,
 };

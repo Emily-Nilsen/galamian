@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "School",
   "description": [
-    "Escuela internacional de música en Málaga, España", 
+    "Escuela internacional de música en Málaga, España",
     "International music school in Malaga, Spain"
   ],
   "keywords": [
@@ -10,10 +10,10 @@
     "violin, viola, piano, cello, singing, voice, orchestra"
   ],
   "logo": [
-  "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712257/Galamian/general/galamian-black_yf0nfd.svg",
-  "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold-dark_fcxszf.svg",
-  "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712310/Galamian/general/reina-nilsen-grey_jds7oo.svg"
-],
+    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712257/Galamian/general/galamian-black_yf0nfd.svg",
+    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold-dark_fcxszf.svg",
+    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712310/Galamian/general/reina-nilsen-grey_jds7oo.svg"
+  ],
   "image": [
     "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/estudiar_lwzhsh.jpg",
     "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/group-photo-06_amz0oq.webp",
@@ -23,13 +23,10 @@
   "@id": "https://www.academiagalamian.com/",
   "name": "Academia Internacional Galamian",
   "alternateName": "Galamian International Academy",
-  "founder": [
-    "Jesús Reina",
-    "Anna Margrethe Nilsen"
-  ],
+  "founder": ["Jesús Reina", "Anna Margrethe Nilsen"],
   "foundingDate": "2014",
   "foundingLocation": [
-    "Sala Unicaja de Conciertos María Cristina‍",
+    "Sala Fundación Unicaja Mª Cristina",
     "Unicaja Concert Hall María Cristina"
   ],
   "funding": "Unicaja Fundación",
@@ -50,16 +47,12 @@
   "url": "https://www.academiagalamian.com/",
   "telephone": "+34699067452",
   "email": "secretaria.academiagalamian@gmail.com",
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Mo",
-      "Tu",
-      "We",
-      "Th",
-      "Fr"
-    ],
-    "opens": "10:00",
-    "closes": "18:00"
-  }]
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Mo", "Tu", "We", "Th", "Fr"],
+      "opens": "10:00",
+      "closes": "18:00"
+    }
+  ]
 }

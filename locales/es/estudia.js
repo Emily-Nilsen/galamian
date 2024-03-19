@@ -38,7 +38,7 @@ const estudia = {
   performativa.`,
   estudiar_list_8: `Prácticas de desarrollo de proyectos y acompañamiento a
   músicos guiados por el profesorado de la academia.`,
-  estudiar_list_9: `Conciertos en la Sala Unicaja de Conciertos María Cristina y
+  estudiar_list_9: `Conciertos en la Sala Fundación Unicaja Mª Cristina y
   otros espacios.`,
 
   // Audiciones

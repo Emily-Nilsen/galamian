@@ -75,7 +75,7 @@ export default function SalaUnicaja() {
                 <Image
                   unoptimized={true}
                   src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-2_f8u4e2.webp"
-                  alt="Sala Unicaja de Conciertos María Cristina"
+                  alt="Sala Fundación Unicaja Mª Cristina"
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
@@ -98,7 +98,7 @@ export default function SalaUnicaja() {
                   <Image
                     unoptimized={true}
                     src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-3_gcatci.webp"
-                    alt="Sala Unicaja de Conciertos María Cristina"
+                    alt="Sala Fundación Unicaja Mª Cristina"
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center"
@@ -120,7 +120,7 @@ export default function SalaUnicaja() {
                   <Image
                     unoptimized={true}
                     src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-1_qmlb6b.webp"
-                    alt="Sala Unicaja de Conciertos María Cristina"
+                    alt="Sala Fundación Unicaja Mª Cristina"
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center"

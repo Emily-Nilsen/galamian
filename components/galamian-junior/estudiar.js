@@ -74,7 +74,7 @@ export default function EstudiarJunior() {
                   >
                     <Image
                       src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713701/Galamian/Galamian%20Junior/sala-unicaja_zq6uzy.jpg"
-                      alt="Sala Unicaja de Conciertos María Cristina"
+                      alt="Sala Fundación Unicaja Mª Cristina"
                       width={1720}
                       height={1147}
                       layout="responsive"

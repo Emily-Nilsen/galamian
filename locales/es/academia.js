@@ -72,11 +72,11 @@ const academia = {
   la Academia Galamian, y cofundadora y directora del Festival
   Málaga Clásica.`,
 
-  // Sala Unicaja de Conciertos María Cristina
-  unicaja_title_1: `Sala Unicaja de Conciertos`,
-  unicaja_title_2: `María Cristina`,
+  // Sala Fundación Unicaja Mª Cristina
+  unicaja_title_1: `Sala Fundación Unicaja`,
+  unicaja_title_2: `Mª Cristina`,
   unicaja_subtitle: `Sede de la Academia Galamian`,
-  unicaja_text_1: `A partir del curso 2018/2019 y por un acuerdo de colaboración con la Fundación Unicaja, la Academia Galamian realizará sus actividades en el complejo de la Sala Unicaja de Conciertos María Cristina de Málaga.`,
+  unicaja_text_1: `A partir del curso 2018/2019 y por un acuerdo de colaboración con la Fundación Unicaja, la Academia Galamian realizará sus actividades en el complejo de la Sala Fundación Unicaja Mª Cristina de Málaga.`,
   unicaja_text_2: `Aunque los edificios que componen esta sala de conciertos fueron concebidos en el siglo XV como estancia para un colectivo franciscano, en 1843 cambiaron su funcionalidad, convirtiéndose en uno de los primeros conservatorios que se promovieron en España durante el siglo XIX.`,
   unicaja_text_3: `Tras su recuperación por la Fundación Unicaja en 2009, el complejo se ha convertido en una de las estancias más emblemáticas de Málaga y diez años más tarde vuelven a alojar una institución académica, cuya trascendencia internacional busca devolver a este histórico conservatorio su funcionalidad como centro educativo y de difusión cultural de calidad.`,
 };

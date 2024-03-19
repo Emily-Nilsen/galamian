@@ -34,11 +34,11 @@ const layout = {
   // academia
   academia_title: `AIG | Academia`,
   academia_description: `La historia de la academia: el proyecto, sus fundadores y la sede.`,
-  academia_keywords: `Pinchas Zukerman, Jesús Reina, Anna Nilsen, Málaga, Madrid, Oslo, Londres, Nueva York, Ivan Galamian, Patinka Kopec, John Rockwell, Amanda Forsyth, Asier Polo, Paul Neubauer, fundado 2014, la Fundación Unicaja, Sala Unicaja de Conciertos María Cristina, España`,
+  academia_keywords: `Pinchas Zukerman, Jesús Reina, Anna Nilsen, Málaga, Madrid, Oslo, Londres, Nueva York, Ivan Galamian, Patinka Kopec, John Rockwell, Amanda Forsyth, Asier Polo, Paul Neubauer, fundado 2014, la Fundación Unicaja, Sala Fundación Unicaja Mª Cristina, España`,
   // contacto
   contacto_title: `AIG | Contactar la AIG`,
   contacto_description: `Cómo contactar con nosotros en la Academia Internacional Galamian.`,
-  contacto_keywords: `contacta, programa educativo, matriculación, proyectos, el profesorado, Sala Unicaja de Conciertos María Cristina‍, Calle Marqués de Valdecañas, Málaga, España, secretaria.academiagalamian@gmail.com`,
+  contacto_keywords: `contacta, programa educativo, matriculación, proyectos, el profesorado, Sala Fundación Unicaja Mª Cristina, Calle Marqués de Valdecañas, Málaga, España, secretaria.academiagalamian@gmail.com`,
   // junior
   junior_title: `AIG | Galamian Junior`,
   junior_description: `Programa especial para jóvenes talentos desde el inicio, desarrollo y nivel avanzado.`,

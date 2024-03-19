@@ -78,7 +78,7 @@ export default function Estudiar() {
                   >
                     <Image
                       src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712311/Galamian/general/sala-unicaja_y7yrjh.jpg"
-                      alt="Sala Unicaja de Conciertos María Cristina"
+                      alt="Sala Fundación Unicaja Mª Cristina"
                       width={1720}
                       height={1147}
                       layout="responsive"
