@@ -38,15 +38,15 @@ export default function ViolinProfesores() {
       website: `${t('professors:anna_website')}`,
       href: `${t('professors:anna_href')}`,
     },
-    {
-      name: `${t('professors:laura_name')}`,
-      role: `${t('professors:laura_role')}`,
-      imageUrl: `${t('professors:laura_image')}`,
-      instrument: `${t('professors:laura_instrument')}`,
-      sentence_01: `${t('professors:laura_para_1')}`,
-      sentence_02: `${t('professors:laura_para_2')}`,
-      sentence_03: `${t('professors:laura_para_3')}`,
-    },
+    // {
+    //   name: `${t('professors:laura_name')}`,
+    //   role: `${t('professors:laura_role')}`,
+    //   imageUrl: `${t('professors:laura_image')}`,
+    //   instrument: `${t('professors:laura_instrument')}`,
+    //   sentence_01: `${t('professors:laura_para_1')}`,
+    //   sentence_02: `${t('professors:laura_para_2')}`,
+    //   sentence_03: `${t('professors:laura_para_3')}`,
+    // },
 
     {
       name: `${t('professors:grigory_name')}`,

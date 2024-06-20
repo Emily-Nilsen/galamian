@@ -87,18 +87,18 @@ export default function Navbar() {
     },
     {
       id: 2,
-      name: 'Galamian Junior',
-      href: '/estudios/galamian-junior',
+      name: 'Programa de Sonatas «George Enescu» para pianistas',
+      href: '/estudios/programa-de-sonatas',
       preview:
-        'Para los mas jóvenes desde los inicios hasta un nivel mas avanzado.',
+        'Programa para pianistas que exploran el repertorio de sonatas a dúo con clases colaborativas y conciertos públicos.',
       imageUrl:
         'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp',
     },
     {
       id: 3,
-      name: 'Jóvenes Artistas',
-      href: '/estudios/jovenes-artistas',
-      preview: `Clases particulares y magistrales, interpretación en grupo. Incluye participación en la Joven Orquesta Academia Galamian.`,
+      name: 'Joven Orquesta Academia Galamian',
+      href: '/estudios/joag',
+      preview: `La JOAG ofrece oportunidades sinfónicas a jóvenes músicos, fomentando capacidades y experiencias profesionales.`,
       imageUrl:
         'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOVEN_ARTISTA_tn6m6w.webp',
     },
@@ -156,14 +156,14 @@ export default function Navbar() {
       name: `${t('footer:estudios_4')}`,
       href: `/estudios/voz`,
     },
-    {
-      name: `${t('footer:academia_3')}`,
-      href: `/estudios/galamian-junior`,
-    },
-    {
-      name: `Jóvenes Artistas`,
-      href: `/estudios/jovenes-artistas`,
-    },
+    // {
+    //   name: `${t('footer:academia_3')}`,
+    //   href: `/estudios/galamian-junior`,
+    // },
+    // {
+    //   name: `Jóvenes Artistas`,
+    //   href: `/estudios/jovenes-artistas`,
+    // },
     {
       name: `Programa de Sonatas`,
       href: `/estudios/programa-de-sonatas`,
@@ -211,14 +211,14 @@ export default function Navbar() {
       name: `${t('footer:estudios_4')}`,
       href: `/estudios/voz`,
     },
-    {
-      name: `${t('footer:academia_3')}`,
-      href: `/estudios/galamian-junior`,
-    },
-    {
-      name: `Jóvenes Artistas`,
-      href: `/estudios/jovenes-artistas`,
-    },
+    // {
+    //   name: `${t('footer:academia_3')}`,
+    //   href: `/estudios/galamian-junior`,
+    // },
+    // {
+    //   name: `Jóvenes Artistas`,
+    //   href: `/estudios/jovenes-artistas`,
+    // },
     {
       name: `Programa de Sonatas`,
       href: `/estudios/programa-de-sonatas`,
