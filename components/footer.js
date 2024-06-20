@@ -37,14 +37,14 @@ export default function Footer() {
         name: `${t('footer:estudios_4')}`,
         href: `/estudios/voz`,
       },
-      {
-        name: `${t('footer:academia_3')}`,
-        href: `/estudios/galamian-junior`,
-      },
-      {
-        name: `Jóvenes Artistas`,
-        href: `/estudios/jovenes-artistas`,
-      },
+      // {
+      //   name: `${t('footer:academia_3')}`,
+      //   href: `/estudios/galamian-junior`,
+      // },
+      // {
+      //   name: `Jóvenes Artistas`,
+      //   href: `/estudios/jovenes-artistas`,
+      // },
       {
         name: `Programa de Sonatas`,
         href: `/estudios/programa-de-sonatas`,

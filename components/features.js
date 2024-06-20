@@ -26,11 +26,11 @@ export default function Features() {
       description: `${t('inicio:feature_description_3')}`,
       icon: UserCircleIcon,
     },
-    {
-      name: `${t('inicio:feature_name_4')}`,
-      description: `${t('inicio:feature_description_4')}`,
-      icon: UserGroupIcon,
-    },
+    // {
+    //   name: `${t('inicio:feature_name_4')}`,
+    //   description: `${t('inicio:feature_description_4')}`,
+    //   icon: UserGroupIcon,
+    // },
   ];
 
   return (
