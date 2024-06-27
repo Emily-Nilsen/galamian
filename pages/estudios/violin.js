@@ -112,7 +112,7 @@ const courseDetails = [
       },
       {
         especificaciones:
-          'Participación en la orquesta JOAG o OAG(dependiendo de la edad del alumno)',
+          'Participación en la orquesta JOAG o OAG (dependiendo de la edad del alumno)',
         cantidad:
           '*OAG - 1 encuentro cada semestre y concierto, *JOAG - ensayos cada 2 semanas y 2 conciertos al año',
         total: '* 2 encuentros, * Ensayos cada 2 semanas y 2 conciertos al año',
