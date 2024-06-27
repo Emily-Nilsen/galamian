@@ -148,7 +148,7 @@ const estudios = [
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOAG_igc3qm.webp',
     category: [{ title: 'JOAG' }],
     details: {
-      age: '10-17 años',
+      age: '10-18 años',
       imageUrl:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
