@@ -196,7 +196,7 @@ export default function Estudios() {
             <div className="flex justify-center mt-10 group">
               <a
                 download
-                href="/Programas-de-estudio-Academia-Galamian-2023-2024.pdf"
+                href="/Programas-de-estudio-Academia-Galamian-2024-2025.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gold-500/20 py-1.5 px-3 rounded-full font-semibold text-neutral-700 group-hover:bg-gold-500/30 group-hover:text-neutral-900 transition-all duration-150 ease-in-out"
