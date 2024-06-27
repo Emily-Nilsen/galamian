@@ -77,7 +77,7 @@ export default function JOAG() {
                   <strong className="font-semibold text-neutral-900">
                     Edad recomendada:
                   </strong>{' '}
-                  10-17 años
+                  10-18 años
                 </p>
                 <p className="mt-8 text-lg leading-8 text-gray-600">
                   La joven orquesta ofrece la oportunidad a los más jóvenes de
