@@ -57,7 +57,7 @@ const professors = {
   natalia_name: `Natalia Kuchaeva`,
   natalia_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Natalia_Kuchaeva_ppzy71.webp`,
   natalia_instrument: '',
-  natalia_alternativeRole: `Repertorista`,
+  natalia_alternativeRole: `Pianista Acompañante`,
   natalia_role: `Método Brainin`,
   natalia_para_1: `Destacada por la crítica por “una técnica formidable, delicadeza y una sensibilidad exquisita” la pianista moscovita Natalia Kucháeva reside en España desde 2009.`,
   natalia_para_2: `Se formó en la Escuela de Música afiliada al Conservatorio Estatal P.I. Tchaikovsky de Moscú y en la Academia Gnessin, posteriormente en la Escuela Superior de Música de Lucerna (Suiza), con maestros de reconocido prestigio internacional como Vladimir Tropp y Konstantin Lifschitz.`,
