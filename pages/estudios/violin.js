@@ -42,8 +42,8 @@ const courseDetails = [
       },
       {
         especificaciones: 'Pianista acompañante',
-        cantidad: '4 h. al mes',
-        total: '32 horas',
+        cantidad: '3 h. al mes',
+        total: '24 horas',
       },
     ],
   },
@@ -62,8 +62,8 @@ const courseDetails = [
       },
       {
         especificaciones: 'Pianista acompañante',
-        cantidad: '3 h. al mes',
-        total: '24 horas',
+        cantidad: '2.5 h. al mes',
+        total: '20 horas',
       },
     ],
   },
@@ -82,8 +82,8 @@ const courseDetails = [
       },
       {
         especificaciones: 'Pianista acompañante',
-        cantidad: '3 h. al mes',
-        total: '24 horas',
+        cantidad: '2 h. al mes',
+        total: '16 horas',
       },
     ],
   },
@@ -148,11 +148,11 @@ const courseDetails = [
         cantidad: 'Jesús Reina, Anna Nilsen',
         total: '',
       },
-      {
-        especificaciones: 'Profesora asistenta',
-        cantidad: 'Laura Romero Alba',
-        total: '',
-      },
+      // {
+      //   especificaciones: 'Profesora asistenta',
+      //   cantidad: 'Laura Romero Alba',
+      //   total: '',
+      // },
       {
         especificaciones: 'Profesores invitados',
         cantidad: 'Grigory Kalinovsky, Alexander Sitkovetsky, Robert Kowalski',
