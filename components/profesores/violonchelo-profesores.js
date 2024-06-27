@@ -55,6 +55,23 @@ export default function VioloncheloProfesores() {
       website: `${t('professors:adolfo_website')}`,
       href: `${t('professors:adolfo_href')}`,
     },
+    {
+      name: `${t('professors:natalia_name')}`,
+      alternativeRole: `${t('professors:natalia_alternativeRole')}`,
+      imageUrl: `${t('professors:natalia_image')}`,
+      instrument: `${t('professors:natalia_instrument')}`,
+      sentence_01: `${t('professors:natalia_para_1')}`,
+      sentence_02: `${t('professors:natalia_para_2')}`,
+      sentence_03: `${t('professors:natalia_para_3')}`,
+      sentence_04: `${t('professors:natalia_para_4')}`,
+      sentence_05: `${t('professors:natalia_para_5')}`,
+      sentence_06: `${t('professors:natalia_para_6')}`,
+      sentence_07: `${t('professors:natalia_para_7')}`,
+      sentence_08: `${t('professors:natalia_para_8')}`,
+      sentence_09: `${t('professors:natalia_para_9')}`,
+      website: `${t('professors:natalia_website')}`,
+      href: `${t('professors:natalia_href')}`,
+    },
   ];
 
   return (
@@ -108,7 +125,7 @@ export default function VioloncheloProfesores() {
                             <Menu.Button>
                               <div className="space-y-1 text-lg font-medium leading-6 tracking-tight text-left text-neutral-900 focus:outline-none focus:ring-0 ring-0 ring-transparent focus:ring-transparent">
                                 <h3>{person.name}</h3>
-                                <p className="text-gold-600">{person.role}</p>
+                                <p className="text-gold-600">{person.alternativeRole ||person.role}</p>
                               </div>
                             </Menu.Button>
                           </div>
