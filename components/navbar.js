@@ -160,10 +160,10 @@ export default function Navbar() {
     //   name: `${t('footer:academia_3')}`,
     //   href: `/estudios/galamian-junior`,
     // },
-    // {
-    //   name: `Jóvenes Artistas`,
-    //   href: `/estudios/jovenes-artistas`,
-    // },
+    {
+      name: `Jóvenes Artistas`,
+      href: `/estudios/jovenes-artistas`,
+    },
     {
       name: `Programa de Sonatas`,
       href: `/estudios/programa-de-sonatas`,

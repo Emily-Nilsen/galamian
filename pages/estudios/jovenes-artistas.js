@@ -83,8 +83,8 @@ const courseDetails = [
     name: 'Profesores',
     specificDetails: [
       {
-        especificaciones: 'Profesores principales - violín/viola',
-        cantidad: 'Laura Romero Alba',
+        especificaciones: 'Profesores principales - clarinete',
+        cantidad: 'José Andrés Fernández Camacho',
         total: '',
       },
       {
@@ -134,7 +134,7 @@ export default function JovenesArtistas() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <p className="text-base font-semibold leading-7 text-gold-600">
-                  Violín, viola y violonchelo
+                  Violonchelo y clarinete
                 </p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                   Jóvenes Artistas
@@ -204,7 +204,7 @@ export default function JovenesArtistas() {
                 Jóvenes Artistas
               </h1>
               <p className="mt-2 text-sm text-neutral-700">
-                Violín, viola y violonchelo
+              Violonchelo y clarinete
               </p>
             </div>
           </div>

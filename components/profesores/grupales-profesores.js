@@ -364,7 +364,7 @@ export default function GrupalesProfesores() {
 
         <div
           id="conductors"
-          className="pt-16 pb-2 mx-auto border-t max-w-7xl border-neutral-200"
+          className="pt-16 pb-16 mx-auto border-t max-w-7xl border-neutral-200"
         >
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
             <div className="space-y-5 sm:space-y-4">
