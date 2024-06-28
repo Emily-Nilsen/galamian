@@ -76,9 +76,14 @@ const courseDetails = [
     name: 'Incluye',
     specificDetails: [
       {
-        especificaciones: 'Clases de música de cámara',
+        especificaciones: 'Clases de música de cámara (Desde la edad de 16 años)',
         cantidad: '1 clase de 1h. aprox. cada 2 semanas',
         total: '14 clases',
+      },
+      {
+        especificaciones: 'Clases de Metodo Brainin (Hasta la edad de 16 años)',
+        cantidad: '1 clase cada semana',
+        total: '32 clases',
       },
       {
         especificaciones: 'Clases de interpretación',
