@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const image_1 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-photo-03_kl0m0h.webp`;
-const image_2 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-photo-01_nkjnwv.webp`;
-const image_3 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-photo-02_y2wa9e.webp`;
-const image_4 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712398/Galamian/cello/cello-violin-photo-01_od59lh.webp`;
-const image_5 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712398/Galamian/cello/cello-violin-photo-07_g7r1sp.webp`;
-const image_6 = `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712398/Galamian/cello/cello-violin-photo-04_yye0mc.webp`;
+const image_1 = `/media/estudia/cello/cello-photo-03.webp`;
+const image_2 = `/media/estudia/cello/cello-photo-01.webp`;
+const image_3 = `/media/estudia/cello/cello-photo-02.webp`;
+const image_4 = `/media/estudia/cello/cello-violin-photo-01.webp`;
+const image_5 = `/media/estudia/cello/cello-violin-photo-07.webp`;
+const image_6 = `/media/estudia/cello/cello-violin-photo-04.webp`;
 
 export default function VioloncheloGalleryOne() {
   return (
