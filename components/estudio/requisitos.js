@@ -43,7 +43,7 @@ export default function Requisitos() {
               layout="responsive"
               objectFit="cover"
               objectPosition="center"
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/requisitos_wbwhmu.jpg"
+              src="/media/requisitos_wbwhmu.jpg"
               alt="Reuisitos"
               width={1920}
               height={1280}
