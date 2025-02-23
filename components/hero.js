@@ -1,21 +1,6 @@
 import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
-import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  InboxIcon,
-  MenuIcon,
-  QuestionMarkCircleIcon,
-  XIcon,
-} from '@heroicons/react/outline';
-import { ChevronDownIcon } from '@heroicons/react/solid';
 import { motion } from 'framer-motion';
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -42,7 +27,7 @@ export default function Hero() {
                   >
                     <Image
                       unoptimized={true}
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/estudiar_lwzhsh.jpg"
+                      src="/media/estudiar.jpg"
                       alt="Sala Unicaja Maria Christina"
                       layout="fill"
                       objectFit="cover"
@@ -99,7 +84,7 @@ export default function Hero() {
                     <Image
                       width={77}
                       height={101}
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1661320932/Galamian/general/Fundacion_Reina-Nilsen_jlm5kx.svg"
+                      src="/media/Fundacion_Reina-Nilsen_jlm5kx.svg"
                       alt="Fundación Reina Nilsen"
                       unoptimized={true}
                     />
@@ -123,7 +108,7 @@ export default function Hero() {
                     <Image
                       width={87}
                       height={101}
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1661321274/Galamian/general/unicaja_tsxjhv.svg"
+                      src="/media/unicaja_tsxjhv.svg"
                       alt="Unicaja Fundación"
                       unoptimized={true}
                     />
