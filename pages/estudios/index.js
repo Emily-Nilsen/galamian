@@ -9,13 +9,10 @@ const estudios = [
     title: 'Estudio de Violín y Viola',
     href: '/estudios/violin',
     description: `Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-2_ypgthu.webp',
+    imageUrl: '/media/estudia/violin/violin-study-img-2.webp',
     category: [{ title: 'Violín' }, { title: `Viola` }],
     details: {
       age: 'Todas las edades',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
@@ -23,13 +20,10 @@ const estudios = [
     title: 'Estudio de Piano',
     href: '/estudios/piano',
     description: `Lecciones individuales, clases magistrales, música de cámara, conciertos y prácticas de desarrollo de proyectos.`,
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/piano_studio_k67fog.webp',
+    imageUrl: '/media/estudia/piano/piano_studio_k67fog.webp',
     category: [{ title: 'Piano' }],
     details: {
       age: 'Todas las edades',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
@@ -42,8 +36,6 @@ const estudios = [
     category: [{ title: `Violonchelo` }],
     details: {
       age: 'Todas las edades',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
@@ -56,8 +48,6 @@ const estudios = [
     category: [{ title: `Voz` }],
     details: {
       age: 'Todas las edades',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
@@ -70,8 +60,6 @@ const estudios = [
     category: [{ title: `Violonchelo` }, { title: `Clarinete` }],
     details: {
       age: 'Approx. 8-16 años',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
@@ -88,8 +76,6 @@ const estudios = [
     ],
     details: {
       age: 'Haber terminado el Superior o nivel similar',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
@@ -102,8 +88,6 @@ const estudios = [
     category: [{ title: 'Piano' }],
     details: {
       age: 'Edad libre',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
@@ -116,8 +100,6 @@ const estudios = [
     category: [{ title: 'Dúos' }, { title: 'Tríos' }, { title: 'Cuartetos' }],
     details: {
       age: 'Edad libre',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
@@ -130,8 +112,6 @@ const estudios = [
     category: [{ title: 'JOAG' }],
     details: {
       age: '10-18 años',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
@@ -144,8 +124,6 @@ const estudios = [
     category: [{ title: 'OAG' }],
     details: {
       age: '18 años en adelante',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
 ];
