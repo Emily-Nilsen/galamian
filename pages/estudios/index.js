@@ -65,8 +65,7 @@ const estudios = [
     title: 'Artist Diploma «Yehudi Menuhin»',
     href: '/estudios/artist-diploma',
     description: `Diploma para músicos profesionales. Enfoque en repertorio, clases, recitales y actividades adicionales opcionales.`,
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/Artist_diploma_2_hue9cm.webp',
+    imageUrl: '/media/Artist_diploma_2_hue9cm.webp',
     category: [
       { title: 'Violín' },
       { title: `Viola` },
@@ -81,8 +80,7 @@ const estudios = [
     title: 'Programa de Sonatas «George Enescu» para pianistas',
     href: '/estudios/programa-de-sonatas',
     description: `Programa para pianistas que exploran el repertorio de sonatas a dúo con clases colaborativas y conciertos públicos.`,
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Sonata_program_thumbnail_ti3gcy.webp',
+    imageUrl: '/media/Sonata_program_thumbnail_ti3gcy.webp',
     category: [{ title: 'Piano' }],
     details: {
       age: 'Edad libre',
@@ -93,8 +91,7 @@ const estudios = [
     title: 'Programa de Música de Cámara «Lucien Capet» - para grupos formados',
     href: '/estudios/programa-de-musica-de-camara',
     description: `Música de cámara destaca en formación de Academia Galamian. Programa con clases magistrales y conciertos.`,
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/musica_de_camara_2_rgpgiy.webp',
+    imageUrl: '/media/estudia/cello/cello-photo-06.webp',
     category: [{ title: 'Dúos' }, { title: 'Tríos' }, { title: 'Cuartetos' }],
     details: {
       age: 'Edad libre',
@@ -105,8 +102,7 @@ const estudios = [
     title: 'Joven Orquesta Academia Galamian',
     href: '/estudios/joag',
     description: `La JOAG ofrece oportunidades sinfónicas a jóvenes músicos, fomentando capacidades y experiencias profesionales.`,
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOAG_igc3qm.webp',
+    imageUrl: '/media/JOAG_igc3qm.webp',
     category: [{ title: 'JOAG' }],
     details: {
       age: '10-18 años',
@@ -117,8 +113,7 @@ const estudios = [
     title: 'Orquesta Academia Galamian',
     href: '/estudios/oag',
     description: `La OAG promueve la interpretación orquestal con ensayos meticulosos, profesionales destacados y exigentes conciertos.`,
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/OAGorquesta_3_haqeuw.webp',
+    imageUrl: '/media/estudia/violin/violin-photo-07.webp',
     category: [{ title: 'OAG' }],
     details: {
       age: '18 años en adelante',
