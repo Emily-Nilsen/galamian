@@ -112,7 +112,7 @@ export default function FormacioMusicalIntegral() {
           className="relative object-cover w-full h-56"
         >
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/group-photo-06_amz0oq.webp"
+            src="/media/estudia/violin/group-photo-06.webp"
             alt="Estudio de violín/viola"
             unoptimized={true}
             layout="fill"

@@ -79,7 +79,7 @@ const FormularioDeInscripcion = () => {
                 <Image
                   width={255}
                   height={69}
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712310/Galamian/general/reina-nilsen-grey_jds7oo.svg"
+                  src="/media/reina-nilsen-grey.svg"
                   alt="Fundación Reina Nilsen"
                   unoptimized={true}
                 />
@@ -103,7 +103,7 @@ const FormularioDeInscripcion = () => {
                 <Image
                   width={204}
                   height={55}
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-grey_jvqdqp.svg"
+                  src="/media/unicaja-grey.svg"
                   alt="Unicaja Fundación"
                   unoptimized={true}
                 />
