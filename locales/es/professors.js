@@ -241,7 +241,7 @@ const professors = {
 
   // Øyvind Gimse
   oyvind_name: `Øyvind Gimse`,
-  oyvind_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/oyvind-gimse_u7ktmx.webp`,
+  oyvind_image: `/media/profesores/oyvind-gimse.webp`,
   oyvind_role: `Profesor Invitado`,
   oyvind_chamber_role: `Violonchelo`,
   oyvind_instrument: `Violonchelo`,
@@ -251,7 +251,7 @@ const professors = {
 
   // Tilman Mahrenholz
   tilman_name: `Tilman Mahrenholz`,
-  tilman_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/tilman-mahrenholz_tfa1le.webp`,
+  tilman_image: `/media/profesores/tilman-mahrenholz.webp`,
   tilman_role: `Profesor Principal`,
   tilman_instrument: `Violonchelo`,
   tilman_para_1: `Tilman Mahrenholz, nacido en Alemania, recibe su formación en la «Hochschule für Musik Saar» en Saarbrücken y en la «Folkwang-Hochschule» en Essen. Posteriormente se traslada a Nueva York, siendo becado por la prestigiosa Juilliard School of Music Entre sus Profesores figuran Ulrich Voss, Prof. Christoph Richter, y Carter Brey.`,
@@ -260,7 +260,7 @@ const professors = {
 
   // Gabriel Ureña
   gabriel_name: `Gabriel Ureña`,
-  gabriel_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/gabriel-urena_s8vuzd.webp`,
+  gabriel_image: `/media/profesores/gabriel-urena.webp`,
   gabriel_role: `Profesor Invitado`,
   gabriel_instrument: `Violonchelo`,
   gabriel_para_1: `Gabriel Ureña ha tocado como solista con la London City Orchestra, Oviedo Filarmonía o Arteus Orquesta y en salas internacionales prestigiosas como el Musikverein (Viena), Teatro de los Campos Elíseos (París), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) o el Teatro de la Maestranza (Sevilla).`,
@@ -269,7 +269,7 @@ const professors = {
 
   // Adolfo Gutiérrez
   adolfo_name: `Adolfo Gutiérrez`,
-  adolfo_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
+  adolfo_image: `/media/profesores/adolfo-gutierrez_fkv4oe.webp`,
   adolfo_role: `Profesor Invitado`,
   adolfo_chamber_role: `Violonchelo`,
   adolfo_instrument: `Violonchelo`,
@@ -282,7 +282,7 @@ const professors = {
 
   // Pablo Martos
   pablo_name: `Pablo Martos`,
-  pablo_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/pablo_martos_hmixe3.webp`,
+  pablo_image: `/media/profesores/pablo_martos.webp`,
   pablo_chamber_role: `Violín`,
   pablo_instrument: `Violín`,
   pablo_para_1: `Su rica actividad musical le ha llevado a tocar en prestigiosas salas de Europa, EEUU, Rusia o Israel. Tras su paso como miembro de la orquesta West-Eastern-Divan dirigida por Daniel Barenboim y fruto de este vínculo con los proyectos del maestro, ha realizado giras e impartido masterclasses en Oriente Medio.`,
@@ -293,7 +293,7 @@ const professors = {
 
   // Kyril Zlotnikov
   kyril_name: `Kyril Zlotnikov`,
-  kyril_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/kyril_ahwjpe.jpg`,
+  kyril_image: `/media/profesores/kyril.jpeg`,
   kyril_role: `Profesor Invitado`,
   kyril_instrument: `Violonchelo`,
   kyril_para_1: `Born in Minsk, Belarus to a family of professional musicians, Kyril Zlotnikov began his studies at the Belarusian State Music Academy with Prof. Vladimir Perlin. He continued his studies in Israel with Prof. Uzi Wiesel and Hillel Zori, completing his musical education under the direction Prof. Michael Khomitzer in Jerusalem Rubin Academy of Music and Dance. While a student, Kyril Zlotnikov participated in master classes and courses with such prominent musicians as Isaac Stern, Yo-Yo Ma,Natalia Gutman, Boris Pergamenschikov, Aldo Parisot and Georgy Kurtag.`,
@@ -305,7 +305,7 @@ const professors = {
 
   // Asier Polo
   asier_name: `Asier Polo`,
-  asier_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/asier-polo_npyw6w.jpg`,
+  asier_image: `/media/profesores/asier-polo_npyw6w.jpg`,
   asier_role: `Profesor Invitado`,
   asier_instrument: `Violonchelo`,
   asier_para_1: `Considerado por la crítica especializada como uno de los violonchelistas más destacados de su generación, Asier Polo ha colaborado como solista con algunas de las orquestas más importantes del panorama internacional: Philharmonia Orchestra, London Symphony Orchestra, Danish National Symphony Orchestra, Orchestra Sinfonica Nazionalle della RAI, Dresdner Philharmonie, Orchestre de Paris, BBC Philharmonic, Bergen Filharmoniske Orkester, Israel Philharmonic Orchestra, Berliner Symphoniker, Orquesta Nacional de México, Orquesta Sinfónica de Sao Paulo, Louisiana Philharmonic, Malaysian Philharmonic Orchestra, Orquesta Nacional de España o la Basel Symphony Orchestra, acompañado bajo la dirección de importantes batutas, como John Axelrod, Pinchas Steinberg, Christian Badea, Rafael Frühbeck de Burgos, Claus Peter Flor, Carlos Miguel Prieto, Günther Herbig, Juanjo Mena, Antoni Wit o Anne Manson.`,

@@ -227,7 +227,7 @@ const professors = {
 
   // Øyvind Gimse
   oyvind_name: `Øyvind Gimse`,
-  oyvind_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/oyvind-gimse_u7ktmx.webp`,
+  oyvind_image: `/media/profesores/oyvind-gimse.webp`,
   oyvind_role: `Guest Professor`,
   oyvind_chamber_role: `Cello`,
   oyvind_instrument: `Cello`,
@@ -237,7 +237,7 @@ const professors = {
 
   // Tilman Mahrenholz
   tilman_name: `Tilman Mahrenholz`,
-  tilman_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/tilman-mahrenholz_tfa1le.webp`,
+  tilman_image: `/media/profesores/tilman-mahrenholz.webp`,
   tilman_role: `Principal Professor`,
   tilman_instrument: `Cello`,
   tilman_para_1: `Tilman Mahrenholz was born in Germany and received his training at the "Hochschule für Musik Saar" in Saarbrücken and at the "Folkwang-Hochschule" in Essen. Later, he moved to New York, receiving a scholarship from the prestigious Juilliard School of Music. His teachers include Ulrich Voss, Prof. Christoph Richter, and Carter Brey.`,
@@ -246,7 +246,7 @@ const professors = {
 
   // Gabriel Ureña
   gabriel_name: `Gabriel Ureña`,
-  gabriel_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/gabriel-urena_s8vuzd.webp`,
+  gabriel_image: `/media/profesores/gabriel-urena.webp`,
   gabriel_role: `Guest Professor`,
   gabriel_instrument: `Cello`,
   gabriel_para_1: `Gabriel Ureña has performed as a soloist with the London City Orchestra, Oviedo Filarmonía and Arteus Orquesta and in prestigious international venues such as the Musikverein (Vienna), Champs-Élysées Theater (Paris), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) and the Teatro de la Maestranza (Seville).`,
@@ -255,7 +255,7 @@ const professors = {
 
   // Adolfo Gutiérrez
   adolfo_name: `Adolfo Gutiérrez`,
-  adolfo_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
+  adolfo_image: `/media/profesores/adolfo-gutierrez_fkv4oe.webp`,
   adolfo_role: `Guest Professor`,
   adolfo_chamber_role: `Cello`,
   adolfo_instrument: `Cello`,
@@ -268,7 +268,7 @@ const professors = {
 
   // Pablo Martos
   pablo_name: `Pablo Martos`,
-  pablo_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/pablo_martos_hmixe3.webp`,
+  pablo_image: `/media/profesores/pablo_martos.webp`,
   pablo_chamber_role: `Violin`,
   pablo_instrument: `Violin`,
   pablo_para_1: `His wealth of activity as a soloist and chamber musician has taken him to play in prestigious concert halls in Europe, EEUU, Russia and Israel. He was a member of the West-Eastern-Divan orchestra directed by Daniel Barenboim. One of the fruits of this collaboration in projects with the maestro Barenboim and the Barenboim-Said Foundation is that Pablo Martos has been invited to carry out tours. He has also given masterclasses in the Middle East.`,
@@ -279,7 +279,7 @@ const professors = {
 
   // Kyril Zlotnikov
   kyril_name: `Kyril Zlotnikov`,
-  kyril_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/kyril_ahwjpe.jpg`,
+  kyril_image: `/media/profesores/kyril.jpeg`,
   kyril_role: `Guest Professor`,
   kyril_instrument: `Cello`,
   kyril_para_1: `Born in Minsk, Belarus to a family of professional musicians, Kyril Zlotnikov began his studies at the Belarusian State Music Academy with Prof. Vladimir Perlin. He continued his studies in Israel with Prof. Uzi Wiesel and Hillel Zori, completing his musical education under the direction Prof. Michael Khomitzer in Jerusalem Rubin Academy of Music and Dance. While a student, Kyril Zlotnikov participated in master classes and courses with such prominent musicians as Isaac Stern, Yo-Yo Ma,Natalia Gutman, Boris Pergamenschikov, Aldo Parisot and Georgy Kurtag.`,
@@ -291,7 +291,7 @@ const professors = {
 
   // Asier Polo
   asier_name: `Asier Polo`,
-  asier_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/asier-polo_npyw6w.jpg`,
+  asier_image: `/media/profesores/asier-polo_npyw6w.jpg`,
   asier_role: `Guest Professor`,
   asier_instrument: `Cello`,
   asier_para_1: `Considered by the specialist music press as one of the most important cellists of his generation, Asier Polo has worked with many of the major international orchestras, such as the Philharmonia Orchestra, London Symphony Orchestra, Danish National Symphony Orchestra, Orchestra Sinfonica Nazionalle della RAI, Dresdner Philharmonie, Orchestre de Paris, BBC Philharmonic, Bergen Filharmoniske Orkester, Israel Philharmonic Orchestra, Berliner Symphoniker, Orquesta Nacional de México, Orquestra Sinfônica de São Paulo, Louisiana Philharmonic, Orquesta Nacional de España and Basel Symphony Orchestra, under the baton of distinguished conductors such as John Axelrod, Pinchas Steinberg, Christian Badea, Rafael Frühbeck de Burgos, Claus Peter Flor, Carlos Miguel Prieto, Günther Herbig, Juanjo Mena, Antoni Wit and Anne Manson.`,
