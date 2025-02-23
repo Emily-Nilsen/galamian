@@ -71,7 +71,7 @@ const professors = {
 
   // Vicente Chulía
   vicente_name: `Vicente Chulía`,
-  vicente_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/chulia_wjo4jb.jpg`,
+  vicente_image: `/media/profesores/chulia_wjo4jb.jpg`,
   vicente_role: `Fundamental Principles of Musical Interpretation`,
   vicente_group_role: `Galamian Academy Orchestra`,
   vicente_para_1: `Born in Spain, the conductor and composer Vicente Chulía incorporates both inseparable facets of musical art into a broad idea of ​​symphonic interpretation. He has studied conducting at the “Musikene” Superior Conservatory of Music in San Sebastián with Maestro Enrique García Asensio. He is a graduate conductor at the Royal Superior Conservatory of Madrid with Antonio Moya.`,
@@ -82,7 +82,7 @@ const professors = {
 
   // Grigory Kalinovsky
   grigory_name: `Grigory Kalinovsky`,
-  grigory_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/grigory-kalinovsky_d4izvb.jpg`,
+  grigory_image: `/media/profesores/grigory-kalinovsky.jpg`,
   grigory_role: `Guest Professor`,
   grigory_instrument: `Violin`,
   grigory_para_1: `Hailed by critics as a “superior poet” (Vancouver Sun) and praised for his “heart and indomitable will” (Gramophone), Grigory Kalinovsky has performed at some of the world’s major venues, from all three stages of Carnegie Hall in New York to Musikhalle Grosser Saal in Hamburg. As a recitalist and avid chamber musician, he has appeared at numerous concert series and festivals, including the Asheville Chamber Music Series, Lyric Chamber Music Society of New York, Lucas Foss’s Festival at the Hamptons, Newport Music Festival, and Pavel Vernikov's festival, “Il Violino Magico” in Italy, collaborating with such renowned musicians as Pinchas Zukerman, Shmuel Ashkeniasi, Ralph Kirshbaum, Miriam Fried, James Buswell, Dora Schwarzberg, and Paul Coletti, among others.`,
@@ -94,7 +94,7 @@ const professors = {
 
   // Alexander Sitkovetsky
   alexander_name: `Alexander Sitkovetsky`,
-  alexander_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/alexander-sitkovetsky_rahmme.jpg`,
+  alexander_image: `/media/profesores/alexander-sitkovetsky.jpg`,
   alexander_role: `Guest Professor`,
   alexander_chamber_role: `Violin`,
   alexander_instrument: `Violin`,
@@ -105,7 +105,7 @@ const professors = {
 
   // Salvador Esteve
   salvador_name: `Salvador Esteve`,
-  salvador_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/salvador-esteve_ekwqdh.jpg`,
+  salvador_image: `/media/profesores/salvador-esteve.jpg`,
   salvador_role: `Guest Professor`,
   salvador_instrument: `Violin`,
   salvador_para_1: `Salvador Esteve has received the First Prize in the City of Sóller Contest, VII Ruperto Chapí de Villena National Contest, and the I National City of Xàtiva Contest.`,
@@ -114,7 +114,7 @@ const professors = {
 
   // Koh Gabriel Kameda
   koh_name: `Koh Gabriel Kameda`,
-  koh_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/koh-gabriel-kameda_hxdytl.jpg`,
+  koh_image: `/media/profesores/koh-gabriel-kameda.jpg`,
   koh_role: `Guest Professor`,
   koh_instrument: `Violin`,
   koh_para_1: `Winner of the Henry Szering International Violin Competition (Mexico), Mr Kameda has performed as a soloist with orchestras such as the Israel Philharmonic, Japan Philharmonic, Baden-Baden Philharmonic, Staatskapelle Dresden, Berlin Symphony, Austrian Radio Symphony and Television, Belgium Radio and Television Orchestra, Zurich Chamber Orchestra, Irish National Symphony, Tokyo Symphony, Mexico City Philharmonic and Venezuela Symphony.`,
@@ -123,7 +123,7 @@ const professors = {
 
   // Molly Carr
   molly_name: `Molly Carr`,
-  molly_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/molly-carr_zrrcur.jpg`,
+  molly_image: `/media/profesores/molly-carr.jpg`,
   molly_role: `Guest Professor`,
   molly_chamber_role: `Viola`,
   molly_instrument: `Viola`,
@@ -135,7 +135,7 @@ const professors = {
 
   // Jordán Tejedor
   jordan_name: `Jordán Tejedor`,
-  jordan_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jordan-tejedor_tqlpwl.jpg`,
+  jordan_image: `/media/profesores/jordan-tejedor.jpeg`,
   jordan_role: `Guest Professor`,
   jordan_instrument: `Violin`,
   jordan_para_1: `Prize winner in the most important national competitions in the country, Jordán Tejedor is one of the most outstanding violinists and pedagogues of his generation on the Spanish musical scene. He approved the opposition to the Body of Music Teachers in 2006 in the specialty of violin and viola simultaneously.`,
@@ -145,7 +145,7 @@ const professors = {
 
   // Joaquín Riquelme
   joaquin_name: `Joaquín Riquelme`,
-  joaquin_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/joaquin-riquelme_yg4fno.webp`,
+  joaquin_image: `/media/profesores/joaquin-riquelme.jpg`,
   joaquin_role: `Guest Professor`,
   joaquin_instrument: `Violin`,
   joaquin_para_1: `Born in Murcia (Spain), Joaquín started his music studies in Murcia, before moving to Madrid to study at the Madrid Royal Conservatory. Later he studied at the Berlin University of the Arts, where he was a student of Hartmut Rohde.`,

@@ -72,7 +72,7 @@ const professors = {
 
   // Vicente Chulía
   vicente_name: `Vicente Chulía`,
-  vicente_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/chulia_wjo4jb.jpg`,
+  vicente_image: `/media/profesores/chulia_wjo4jb.jpg`,
   vicente_role: `Principios Fundamentales de la Interpretación Musical`,
   vicente_group_role: `Orquesta Academia Galamian`,
   vicente_para_1: `Director de orquesta y compositor español que incorpora ambas facetas inseparables del arte musical a una idea amplia de la interpretación sinfónica, ha estudiado dirección de orquesta en el Conservatorio Superior de Música “Musikene” de San Sebastián con el Maestro Enrique García Asensio y es graduado de dirección en el Real Conservatorio Superior de Madrid con Antonio Moya.`,
@@ -83,7 +83,7 @@ const professors = {
 
   // Grigory Kalinovsky
   grigory_name: `Grigory Kalinovsky`,
-  grigory_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/grigory-kalinovsky_d4izvb.jpg`,
+  grigory_image: `/media/profesores/grigory-kalinovsky.jpg`,
   grigory_role: `Profesor Invitado`,
   grigory_instrument: `Violín`,
   grigory_para_1: `Aclamado por la crítica como un “poeta superior” (Vancouver Sun), el violinista Grigory Kalinovsky ha actuado en conciertos en todo el mundo en algunas de las salas más prestigiosas, desde el Carnegie Hall en Nueva York hasta Musikhalle Grosser Saal en Hamburgo.`,
@@ -95,7 +95,7 @@ const professors = {
 
   // Alexander Sitkovetsky
   alexander_name: `Alexander Sitkovetsky`,
-  alexander_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/alexander-sitkovetsky_rahmme.jpg`,
+  alexander_image: `/media/profesores/alexander-sitkovetsky.jpg`,
   alexander_role: `Profesor Invitado`,
   alexander_chamber_role: `Violín`,
   alexander_instrument: `Violín`,
@@ -106,7 +106,7 @@ const professors = {
 
   // Salvador Esteve
   salvador_name: `Salvador Esteve`,
-  salvador_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/salvador-esteve_ekwqdh.jpg`,
+  salvador_image: `/media/profesores/salvador-esteve.jpg`,
   salvador_name: `Salvador Esteve`,
   salvador_image: `/static/profesores/salvador-esteve.jpg`,
   salvador_role: `Profesor Invitado`,
@@ -117,7 +117,7 @@ const professors = {
 
   // Koh Gabriel Kameda
   koh_name: `Koh Gabriel Kameda`,
-  koh_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/koh-gabriel-kameda_hxdytl.jpg`,
+  koh_image: `/media/profesores/koh-gabriel-kameda.jpg`,
   koh_name: `Koh Gabriel Kameda`,
   koh_image: `/static/profesores/koh-gabriel-kameda.jpg`,
   koh_role: `Profesor Invitado`,
@@ -130,7 +130,7 @@ const professors = {
   molly_name: `Molly Carr`,
   molly_image: `/static/profesores/molly-carr.jpg`,
   molly_name: `Molly Carr`,
-  molly_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/molly-carr_zrrcur.jpg`,
+  molly_image: `/media/profesores/molly-carr.jpg`,
   molly_role: `Profesora Invitada`,
   molly_chamber_role: `Viola`,
   molly_instrument: `Viola`,
@@ -142,7 +142,7 @@ const professors = {
 
   // Jordán Tejedor
   jordan_name: `Jordán Tejedor`,
-  jordan_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jordan-tejedor_tqlpwl.jpg`,
+  jordan_image: `/media/profesores/jordan-tejedor.jpeg`,
   jordan_name: `Jordán Tejedor`,
   jordan_image: `/static/profesores/jordan-tejedor.jpeg`,
   jordan_role: `Profesor Invitado`,
@@ -154,7 +154,7 @@ const professors = {
 
   // Joaquín Riquelme
   joaquin_name: `Joaquín Riquelme`,
-  joaquin_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/joaquin-riquelme_yg4fno.webp`,
+  joaquin_image: `/media/profesores/joaquin-riquelme.jpg`,
   joaquin_name: `Joaquín Riquelme`,
   joaquin_image: `/static/profesores/joaquin-riquelme.jpg`,
   joaquin_role: `Profesor Invitado`,
