@@ -55,7 +55,7 @@ const professors = {
 
   // Natalia Kuchaeva
   natalia_name: `Natalia Kuchaeva`,
-  natalia_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Natalia_Kuchaeva_ppzy71.webp`,
+  natalia_image: `/media/profesores/Natalia_Kuchaeva_ppzy71.webp`,
   natalia_instrument: '',
   natalia_alternativeRole: `Pianista Acompañante`,
   natalia_role: `Método Brainin`,
