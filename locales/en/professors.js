@@ -306,7 +306,7 @@ const professors = {
 
   // Carlos Alvarez
   carlos_name: `Carlos Alvarez`,
-  carlos_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Carlos_Alvarez_zzwaeu.webp`,
+  carlos_image: `/media/profesores/Carlos_Alvarez_zzwaeu.webp`,
   carlos_role: `Principal Professor`,
   carlos_instrument: `Singer`,
   carlos_para_1: `Born in Málaga in 1966, Carlos Alvarez combined his studies at the Conservatory and the Faculty of Medicine of the University of Málaga until he became a professional singer in 1989.`,
@@ -315,7 +315,7 @@ const professors = {
 
   // Valle Duque
   valle_name: `Valle Duque`,
-  valle_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Valle_Duque_jx32am.webp`,
+  valle_image: `/media/profesores/Valle_Duque_jx32am.webp`,
   valle_role: `Principal Professor`,
   valle_instrument: `Soprano`,
   valle_para_1: `Born in Seville (1963), she has been a singing teacher since 1991 (Seville Conservatory of Music), and her training has been aimed at achieving the necessary tools for the best vocal artistic expression and the teaching of professional singing: Lyrical, Music Baroque and Rococo, Update of Musical Theory, Computer Science and Musical Electronics, Theater and Orthophony, Vocal Expression for educators, Interpretation for singers and pianists, Pedagogy and Methodology of Music, Psychomotricity and Dance, Voice Care (Disorders and Rehabilitation), receiving guidance classes from influential music personalities, such as Alfredo Kraus, Carmen Martínez Lluna, José Luis Temes, Alberto Zedda, Gilberto Escobar or Carlos Hacar, among others.`,
@@ -323,7 +323,7 @@ const professors = {
 
   // Nils Georg
   nils_name: `Nils Georg`,
-  nils_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/nils-nilsen_vzbeo6.webp`,
+  nils_image: `/media/profesores/nils-nilsen.webp`,
   nils_role: `Guest Professor `,
   nils_instrument: `Tenor`,
   nils_para_1: `Norwegian soloist and voice teacher Nils Nilsen works as a vocal technique teacher at the Galamian International Academy. He made his debut in 2012 at the Avery Fisher Hall in New York and has performed with the "Opera Tampa" and "Norwegian Opera" companies and with the Minsk Chamber Orchestra. At age 13, he sang with Dama Kiribati te Kanawa, forming an artistic duo at the Spectrum venue in Oslo.`,
@@ -334,7 +334,7 @@ const professors = {
 
   // Sergio Montero
   sergio_name: `Sergio Montero`,
-  sergio_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/sergio-montero_eyqt5t.webp`,
+  sergio_image: `/media/profesores/sergio-montero.webp`,
   sergio_role: `Principal Pianist`,
   sergio_instrument: `Piano`,
   sergio_para_1: `He is a piano, chamber music, solfeggio, and music theory professor at the Superior Conservatory of Music of Málaga, where he has received the Honor Award in Piano and Chamber Music. He is also a tenured professor at the Manuel Carra Professional Conservatory of Music (Málaga).`,
@@ -345,7 +345,7 @@ const professors = {
 
   // Mariola Cantarero
   mariola_name: `Mariola Cantarero`,
-  mariola_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/mariola-cantarero_gm77j4.webp`,
+  mariola_image: `/media/profesores/mariola-cantarero.webp`,
   mariola_role: `Guest Professor`,
   mariola_instrument: `Soprano`,
   mariola_para_1: `Mariola Cantarero has been awarded in different international singing competitions such as "Francisco Viñas", "Operalia ́99", "Pedro Lavirgen", and "A.S.L.I.C.O. 2000", and received awards such as "Current Opera Award", "Revelation of the circle of friends of the Liceo", "Image Award of the City of Granada", "Critical Eye of RNE", "The Honorable Mention of the Diputación de Granada", "The Gold Medal of the City of Granada", as well as "The Gold Medal of Andalusia".`,
@@ -356,7 +356,7 @@ const professors = {
 
   // Joel Prieto
   joel_name: `Joel Prieto`,
-  joel_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/joel-prieto_ms4mgu.jpg`,
+  joel_image: `/media/profesores/joel-prieto.jpg`,
   joel_role: `Guest Professor`,
   joel_instrument: `Tenor`,
   joel_para_1: `Tenor Joel Prieto has become one of the most sought-after and exciting artists of his generation since he was unanimously awarded the highly coveted distinction of first prize in Plácido Domingo’s Operalia Competition in 2008.  The Spanish-born tenor, raised in Puerto Rico, continually captivates audiences, bringing depth and subtlety to leading roles, infusing characters with vitality, elegance, and beauty.`,
@@ -367,7 +367,7 @@ const professors = {
 
   // Francisco Araiza
   araiza_name: `Francisco Araiza`,
-  araiza_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/francisco-araiza_gkhap4.jpg`,
+  araiza_image: `/media/profesores/francisco-araiza.jpg`,
   araiza_role: `Guest Professor`,
   araiza_instrument: `Tenor`,
   araiza_para_1: `This versatile artist, who had already achieved world fame as the best interpreter of Mozart and Rossini, developed from 1983 into one of the leading representatives of the dramatic Italian, French and German repertoire.`,
@@ -379,7 +379,7 @@ const professors = {
 
   // José Vélez
   velez_name: `José Vélez`,
-  velez_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jose-velez_hsl7yg.jpg`,
+  velez_image: `/media/profesores/jose-velez.jpeg`,
   velez_chamber_role: `Singer`,
   velez_instrument: `Singer`,
   velez_para_1: `In the late 1960s, a music teacher from the Organización Juvenil Española (Spanish Youth Organisation) had the idea to create the music group Grupo Marabilla with some of his students, among them the Spanish singer José Velázquez. When the group separated, he began his solo career. In 1968 he participated in Madrid's talent contest "Salto a la Fama". He began to get recognition from that point, which led him to establish himself in Madrid.`,
@@ -391,7 +391,7 @@ const professors = {
   // CONDUCTORS
   // José Andrés Camacho
   jose_name: `José Andrés Camacho`,
-  jose_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jose-camacho_dmphoq.webp`,
+  jose_image: `/media/profesores/jose-camacho.webp`,
   jose_role: `Orchestra`,
   jose_group_role: `Youth and Children's Orchestra`,
   jose_instrument: `Youth and Children's Orchestra`,
@@ -401,7 +401,7 @@ const professors = {
 
   // Tomás Grau
   grau_name: `Tomás Grau`,
-  grau_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/tomas-grau_abfzg4.jpg`,
+  grau_image: `/media/profesores/tomas-grau.jpg`,
   grau_group_role: `Galamian Academy Orchestra`,
   grau_instrument: `Galamian Academy Orchestra`,
   grau_para_1: `Tomàs Grau is an inspired and highly sensitive conductor, sharing his love for the music with the audience. His precise and clear gestures and the sincerity of his musical readings distinguish him as they seek to transmit each score's light and delicate emotions.`,

@@ -320,7 +320,7 @@ const professors = {
 
   // Carlos Alvarez
   carlos_name: `Carlos Alvarez`,
-  carlos_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Carlos_Alvarez_zzwaeu.webp`,
+  carlos_image: `/media/profesores/Carlos_Alvarez_zzwaeu.webp`,
   carlos_role: `Profesor Principal`,
   carlos_instrument: `Cantante`,
   carlos_para_1: `Nacido en Málaga en 1966, compaginó sus estudios tanto en el Conservatorio como en la Facultad de Medicina de la Universidad de Málaga hasta que se convirtió en cantante profesional en 1989.`,
@@ -329,7 +329,7 @@ const professors = {
 
   // Valle Duque
   valle_name: `Valle Duque`,
-  valle_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Valle_Duque_jx32am.webp`,
+  valle_image: `/media/profesores/Valle_Duque_jx32am.webp`,
   valle_role: `Profesora Principal`,
   valle_instrument: `Soprano`,
   valle_para_1: `Nacida en Sevilla (1963), es profesora de canto desde 1991 (Conservatorio Superior de Música de Sevilla) y su formación ha estado dirigida a la consecución de las herramientas necesarias para la mejor expresión artística vocal y la enseñanza del canto profesional: 
@@ -340,7 +340,7 @@ const professors = {
 
   // Nils Georg
   nils_name: `Nils Georg`,
-  nils_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/nils-nilsen_vzbeo6.webp`,
+  nils_image: `/media/profesores/nils-nilsen.webp`,
   nils_role: `Profesor Invitado`,
   nils_instrument: `Tenor`,
   nils_para_1: `Nils Nilsen, solista, de origen noruego y profesor de voz, ejerce como profesor de técnica vocal en la Academia Internacional Galamian. Debutó en 2012 en el Avery Fisher Hall de Nueva York y ha actuado con las compañías "Opera Tampa" y "Norwegian Opera" y con la orquesta de Cámara de Minsk. Con 13 años cantó junto a Dama Kiribati te Kanawa, formando un dúo artístico en la sala Spectrum de Oslo.`,
@@ -351,7 +351,7 @@ const professors = {
 
   // Sergio Montero
   sergio_name: `Sergio Montero`,
-  sergio_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/sergio-montero_eyqt5t.webp`,
+  sergio_image: `/media/profesores/sergio-montero.webp`,
   sergio_role: `Maestro Repertorista`,
   sergio_instrument: `Piano`,
   sergio_para_1: `Es profesor superior de piano, música de cámara, solfeo y teoría de la música por el Conservatorio Superior de Música de Málaga, donde ha recibido el Premio de Honor en Piano y Música de Cámara. Además es profesor numerario del Conservatorio Profesional de Música Manuel Carra (Málaga).`,
@@ -360,7 +360,7 @@ const professors = {
 
   // Mariola Cantarero
   mariola_name: `Mariola Cantarero`,
-  mariola_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/mariola-cantarero_gm77j4.webp`,
+  mariola_image: `/media/profesores/mariola-cantarero.webp`,
   mariola_role: `Profesora Invitada`,
   mariola_instrument: `Soprano`,
   mariola_para_1: `Ha sido premiada en diferentes concursos internacionales de canto como el "Francisco Viñas", "Operalia ́99", "Pedro Lavirgen" y "A.S.L.I.C.O. 2000”, y recibido premios como "Premio ópera Actual", "Revelación del círculo de amigos del Liceo", "Premio Imagen de la Ciudad de Granada", "Ojo Crítico de RNE", "La Mención de Honor de la Diputación de Granada", "La Medalla de Oro de la Ciudad de Granada", así como "La Medalla de Oro de Andalucía”.`,
@@ -371,7 +371,7 @@ const professors = {
 
   // Joel Prieto
   joel_name: `Joel Prieto`,
-  joel_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/joel-prieto_ms4mgu.jpg`,
+  joel_image: `/media/profesores/joel-prieto.jpg`,
   joel_role: `Profesor Invitado`,
   joel_instrument: `Tenor`,
   joel_para_1: `Desde que le fue otorgado por unanimidad el primer lugar del premio Operalia 2008 patrocinado por Plácido Domingo, Joel Prieto se ha convertido en uno de los artistas más solicitados de su generación, cantando en la mayoría de las más prestigiosas casas de ópera y salas de concierto del mundo. El cantante nacido en España y criado en Puerto Rico aporta profundidad vocal y dramática a sus papeles, infundiéndoles elegancia, vitalidad y belleza.`,
@@ -382,7 +382,7 @@ const professors = {
 
   // Francisco Araiza
   araiza_name: `Francisco Araiza`,
-  araiza_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/francisco-araiza_gkhap4.jpg`,
+  araiza_image: `/media/profesores/francisco-araiza.jpg`,
   araiza_role: `Profesor Invitado`,
   araiza_instrument: `Tenor`,
   araiza_para_1: `This versatile artist, who had already achieved world fame as the best interpreter of Mozart and Rossini, developed from 1983 into one of the leading representatives of the dramatic Italian, French and German repertoire.`,
@@ -394,7 +394,7 @@ const professors = {
 
   // José Vélez
   velez_name: `José Vélez`,
-  velez_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jose-velez_hsl7yg.jpg`,
+  velez_image: `/media/profesores/jose-velez.jpeg`,
   velez_chamber_role: `Cantante`,
   velez_instrument: `Cantante`,
   velez_para_1: `In the late 1960s, a music teacher from the Organización Juvenil Española (Spanish Youth Organisation) had the idea to create the music group Grupo Marabilla with some of his students, among them the Spanish singer José Velázquez. When the group separated, he began his solo career. In 1968 he participated in Madrid's talent contest "Salto a la Fama". He began to get recognition from that point, which led him to establish himself in Madrid.`,
@@ -406,7 +406,7 @@ const professors = {
   // CONDUCTORS
   // José Andrés Camacho
   jose_name: `José Andrés Camacho`,
-  jose_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jose-camacho_dmphoq.webp`,
+  jose_image: `/media/profesores/jose-camacho.webp`,
   jose_role: `Orquesta`,
   jose_group_role: `Orquesta Juvenil y Infantil`,
   jose_instrument: `Orquesta Juvenil y Infantil`,
@@ -416,7 +416,7 @@ const professors = {
 
   // Tomás Grau
   grau_name: `Tomás Grau`,
-  grau_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/tomas-grau_abfzg4.jpg`,
+  grau_image: `/media/profesores/tomas-grau.jpg`,
   grau_group_role: `Orquesta Academia Galamian`,
   grau_instrument: `Orquesta Academia Galamian`,
   grau_para_1: `Director inspirado y de gran sensibilidad, Tomàs Grau se caracteriza por su gesto preciso y claro y por la sinceridad de sus lecturas musicales, que buscan transmitir de manera diáfana las verdaderas emociones que hay en cada una de las partituras, compartiendo con el público su amor por la música.`,
