@@ -169,7 +169,7 @@ const professors = {
 
   // Misha Dacić
   misha_name: `Misha Dacić`,
-  misha_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/misha-dacic_dzbvuh.jpg`,
+  misha_image: `/media/profesores/misha-dacic.jpg`,
   misha_name: `Misha Dacić`,
   misha_role: `Profesor Invitado Principal`,
   misha_chamber_role: `Piano`,
@@ -182,7 +182,7 @@ const professors = {
 
   // Josu De Solaun
   josu_name: `Josu De Solaun`,
-  josu_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/josu-de-solaun_f2ssfq.jpg`,
+  josu_image: `/media/profesores/josu-de-solaun.jpg`,
   josu_name: `Josu De Solaun`,
   josu_role: `Profesor Invitado Principal`,
   josu_chamber_role: `Piano`,
@@ -195,7 +195,7 @@ const professors = {
 
   // Antonio Ortiz
   antonio_name: `Antonio Ortíz`,
-  antonio_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/antonio-ortiz_xgrpit.webp`,
+  antonio_image: `/media/profesores/antonio-ortiz.webp`,
   antonio_name: `Antonio Ortíz`,
   antonio_role: `Profesor Principal`,
   antonio_instrument: `Piano`,
@@ -205,7 +205,7 @@ const professors = {
 
   // Margarita Kozlowska
   margarita_name: `Margarita Kozlowska`,
-  margarita_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/professors/Margarita_xbxwh7.webp`,
+  margarita_image: `/media/profesores/Margarita_xbxwh7.webp`,
   margarita_role: `Pianista Acompañante`,
   margarita_instrument: `Piano`,
   margarita_para_1: ``,
@@ -214,7 +214,7 @@ const professors = {
 
   // Anna Petrova
   petrova_name: `Anna Petrova`,
-  petrova_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/anna-petrova_emw5as.jpg`,
+  petrova_image: `/media/profesores/anna-petrova.jpg`,
   petrova_role: `Profesora Invitada`,
   petrova_chamber_role: `Piano`,
   petrova_instrument: `Piano`,
@@ -226,7 +226,7 @@ const professors = {
 
   // Francesco Libetta
   francesco_name: `Francesco Libetta`,
-  francesco_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/francesco-libetta_fptv6p.webp`,
+  francesco_image: `/media/profesores/francesco-libetta.webp`,
   francesco_role: `Profesor Invitado`,
   francesco_instrument: `Piano`,
   francesco_para_1: `Francesco Libetta, a poet-aristocrat of the keyboard with the profile and carriage of a Renaissance prince» (M. Gurewitsch, The New York Times), was claimed to be «important pianist» (H. Schonberg), «un génie du piano comme on en voit peu» (O. Bellamy, Le Monde de la Musique), «Klaviergroßmeister» (T. R. Schulz, Hamburger Abendblatt), «figure-culte»(L. Sabbatini in La Tribune de Geneve). John Ardoin declared that of the new generation of pianists, Francesco Libetta is “the most inspired and creative”. Harold Schonberg wrote that: “master of every period and style, Libetta is the best representative of this modern style (…) who accepts virtuosity not as tightrope walking but as a species of literalism, where musical meaning is more important than knock’-em dead fingerwork (American Record Guide). With his multiform career as a composer, conductor and pianist, Francesco Libetta has given concerts all over the world. He has received commissions from European, Japanese and American associations and festivals for orchestral, chamber and electro-acoustic compositions. His repertoire as a conductor includes symphonic works by Wagner, Debussy and Mozart, as well as his own works, opera and ballet (Sleeping Beauty, Nutcracker).`,
