@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../../components/layout';
 import useTranslation from 'next-translate/useTranslation';
-import { motion } from 'framer-motion';
 
 const estudios = [
   {
@@ -61,20 +60,6 @@ const estudios = [
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
-  // {
-  //   id: 5,
-  //   title: 'Galamian Junior',
-  //   href: '/estudios/galamian-junior',
-  //   description: `Para los mas jóvenes desde los inicios hasta un nivel mas avanzado.`,
-  //   imageUrl:
-  //     'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/Galamian_Junior_2_d9wq8w.webp',
-  //   category: [{ title: 'Violín' }, { title: `Viola` }],
-  //   details: {
-  //     age: 'Approx. 4-10 años',
-  //     imageUrl:
-  //       'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  //   },
-  // },
   {
     id: 6,
     title: 'Jóvenes Artistas',
@@ -82,12 +67,7 @@ const estudios = [
     description: `Clases particulares y magistrales, interpretación en grupo. Incluye participación en la Joven Orquesta Academia Galamian.`,
     imageUrl:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOVEN_ARTISTA_tn6m6w.webp',
-    category: [
-      // { title: 'Violín' },
-      // { title: `Viola` },
-      { title: `Violonchelo` },
-      { title: `Clarinete` },
-    ],
+    category: [{ title: `Violonchelo` }, { title: `Clarinete` }],
     details: {
       age: 'Approx. 8-16 años',
       imageUrl:
