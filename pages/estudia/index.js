@@ -62,7 +62,7 @@ const Estudia = () => {
           className="relative"
         >
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/estudia_eabbpn.jpg"
+            src="/media/estudia_eabbpn.jpg"
             alt="Jesús Reina"
             className="relative object-cover object-center w-full h-96"
             width={1920}
