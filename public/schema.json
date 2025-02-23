@@ -10,15 +10,15 @@
     "violin, viola, piano, cello, singing, voice, orchestra"
   ],
   "logo": [
-    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712257/Galamian/general/galamian-black_yf0nfd.svg",
-    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold-dark_fcxszf.svg",
-    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712310/Galamian/general/reina-nilsen-grey_jds7oo.svg"
+    "/media/galamian-black.svg",
+    "/media/galamian-gold-dark.svg",
+    "/media/reina-nilsen-grey.svg"
   ],
   "image": [
-    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/estudiar_lwzhsh.jpg",
-    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/group-photo-06_amz0oq.webp",
-    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/professors/jesus-photo-01_loefpu.webp",
-    "https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/anna_oges5p.jpg"
+    "/media/estudiar.jpg",
+    "/media/estudia/violin/group-photo-06.webp",
+    "/media/profesores/jesus-photo-01_loefpu.webp",
+    "/media/profesores/anna.jpg"
   ],
   "@id": "https://www.academiagalamian.com/",
   "name": "Academia Internacional Galamian",
