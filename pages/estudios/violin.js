@@ -91,7 +91,8 @@ const courseDetails = [
     name: 'Incluye',
     specificDetails: [
       {
-        especificaciones: 'Clases de música de cámara (Desde la edad de 16 años)',
+        especificaciones:
+          'Clases de música de cámara (Desde la edad de 16 años)',
         cantidad: '1 clase de 1h. aprox. cada 2 semanas',
         total: '14 clases',
       },
@@ -257,7 +258,7 @@ export default function ViolinYViola() {
               </div>
             </div>
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-3_cnh2ey.webp"
+              src="/media/estudia/violin/violin-study-img-3.webp"
               alt="Academia Galamian Internacional"
               className="object-cover w-[48rem] max-w-none rounded-none shadow-none ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
