@@ -86,7 +86,7 @@ export default function ProfesoresViolonchelo() {
                     className="object-cover object-center overflow-hidden rounded-none shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/oyvind-gimse_u7ktmx.webp"
+                      src="/media/profesores/oyvind-gimse.webp"
                       alt="Øyvind Gimse"
                       width={2854}
                       height={1665}
@@ -159,7 +159,7 @@ export default function ProfesoresViolonchelo() {
                     className="object-cover object-center overflow-hidden rounded-none shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/tilman-mahrenholz_tfa1le.webp"
+                      src="/media/profesores/tilman-mahrenholz.webp"
                       alt="Tilman Mahrenholz"
                       width={1234}
                       height={720}

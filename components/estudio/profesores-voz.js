@@ -90,7 +90,7 @@ export default function ProfesoresVoz() {
                     className="object-cover object-center overflow-hidden rounded-none shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/nils-nilsen_vzbeo6.webp"
+                      src="/media/profesores/nils-nilsen.webp"
                       alt="Nils Georg Nilsen"
                       width={1830}
                       height={1068}
@@ -173,7 +173,7 @@ export default function ProfesoresVoz() {
                 >
                   <div className="object-cover object-center overflow-hidden rounded-none shadow-none">
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713747/Galamian/professors/sergio-montero_eyqt5t.webp"
+                      src="/media/profesores/sergio-montero.webp"
                       alt="Sergio Montero"
                       width={987}
                       height={576}
