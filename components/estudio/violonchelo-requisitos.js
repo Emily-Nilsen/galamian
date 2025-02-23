@@ -20,8 +20,7 @@ export default function VioloncheloRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-img-5_zlk93b.webp',
+      imageSrc: '/media/galamian-junior/titulacion.jpg',
       imageAlt: 'Estudio de Violonchelo',
     },
     {
@@ -38,8 +37,7 @@ export default function VioloncheloRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-img-2_eztf5m.webp',
+      imageSrc: '/media/estudia/cello/cello-img-2.webp',
       imageAlt: 'Estudio de Violonchelo',
     },
     {
@@ -47,8 +45,7 @@ export default function VioloncheloRequisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712397/Galamian/cello/cello-img-4_vowdo9.webp',
+      imageSrc: '/media/estudia/cello/cello-img-4.webp',
       imageAlt: 'Estudio de Violonchelo',
     },
   ];

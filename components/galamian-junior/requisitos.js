@@ -15,8 +15,7 @@ export default function Requisitos() {
       name: `${t('galamianJunior:matricula_title')}`,
       description_01: `${t('galamianJunior:matricula_text_1')}`,
       description_02: `${t('galamianJunior:matricula_text_2')}`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/Galamian%20Junior/admission_w2zmns.jpg',
+      imageSrc: '/media/galamian-junior/admission.jpg',
       imageAlt: 'La matrícula de la Academia Galamian',
     },
     {
@@ -26,8 +25,7 @@ export default function Requisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/Galamian%20Junior/becas_a88cp2.jpg',
+      imageSrc: '/media/galamian-junior/becas.jpg',
       imageAlt: 'La Academia Galamian y su Joven Orquesta',
     },
     {
@@ -35,8 +33,7 @@ export default function Requisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713701/Galamian/Galamian%20Junior/titulacion_f2rm0m.jpg',
+      imageSrc: '/media/galamian-junior/titulacion.jpg',
       imageAlt: 'Joven Orquesta de la Academia Galamian',
     },
   ];

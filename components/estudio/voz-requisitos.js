@@ -19,8 +19,7 @@ export default function VozRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voice-photo-img-05_acbsra.webp',
+      imageSrc: '/media/estudia/voice/voice-photo-img-05.webp',
       imageAlt: 'Estudio de Voz',
     },
     {
@@ -37,8 +36,7 @@ export default function VozRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voice-photo-img-03_zz95tc.webp',
+      imageSrc: '/media/estudia/voice/voice-photo-img-03.webp',
       imageAlt: 'Estudio de Voz',
     },
     {
@@ -46,8 +44,7 @@ export default function VozRequisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voice-photo-img-04_orubx6.webp',
+      imageSrc: '/media/estudia/voice/voice-photo-img-04.webp',
       imageAlt: 'Estudio de Voz',
     },
   ];

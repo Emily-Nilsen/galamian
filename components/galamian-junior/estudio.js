@@ -71,7 +71,7 @@ export default function EstudioJunior() {
                     className="object-cover object-center overflow-hidden shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/Galamian%20Junior/estudio_cfejpd.jpg"
+                      src="/media/galamian-junior/estudio.jpg"
                       alt="Sala Fundación Unicaja Mª Cristina"
                       width={1720}
                       height={1147}
