@@ -2,7 +2,7 @@ const professors = {
   // VIOLIN & VIOLA
   // Jesus Reina
   jesus_name: `Jesus Reina`,
-  jesus_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jesus_gmkfut.jpg`,
+  jesus_image: `/media/profesores/jesus.jpg`,
   jesus_role: `Principal Professor`,
   jesus_chamber_role: `Violin & Viola`,
   jesus_instrument: `Violin & Viola`,
@@ -14,7 +14,7 @@ const professors = {
 
   // Anna Margrethe Nilsen
   anna_name: `Anna Nilsen`,
-  anna_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/anna_oges5p.jpg`,
+  anna_image: `/media/profesores/anna.jpg`,
   anna_role: `Principal Professor`,
   anna_chamber_role: `Violin & Viola`,
   anna_instrument: `Violin & Viola`,
@@ -26,7 +26,7 @@ const professors = {
 
   // Laura Romero
   laura_name: `Laura Romero`,
-  laura_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713701/Galamian/professors/laura_yevyeq.jpg`,
+  laura_image: `/media/profesores/laura-romero.jpeg`,
   laura_role: `Assistant Professor`,
   laura_instrument: `Violin & Viola`,
   laura_para_1: `Born in Malaga, Laura Romero Alba began playing the violin at age seven.`,
@@ -35,7 +35,7 @@ const professors = {
 
   // Irene Ortega
   irene_name: `Irene Ortega`,
-  irene_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713700/Galamian/professors/irene_nhrwkw.jpg`,
+  irene_image: `/media/profesores/irene_nhrwkw.jpg`,
   irene_role: `Resident Professor`,
   irene_para_1: `The violinist was born in Jerez de la Frontera, and she received her first violin lessons at age four.`,
   irene_para_2: `After receiving advice from violinists of the stature of Pinchas Zukerman, Patinka Kopec, Grigory Kalinovsky, Alexander Sitkovetsky and Bretislav Novotný, in 2019, Irene Ortega obtained her degree from the Galamian International Academy through The Royal Schools of Music, under the tutelage of the violinists Jesús Reina and Anna Nilsen.`,
@@ -43,7 +43,7 @@ const professors = {
 
   // Alfredo García
   alfredo_name: `Alfredo García`,
-  alfredo_image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/alfredo-garcia_xnmhie.jpg`,
+  alfredo_image: `/media/profesores/alfredo-garcia.jpeg`,
   alfredo_role: `Guest Professor`,
   alfredo_instrument: `Violin`,
   alfredo_para_1: `Recognized by music critics as one of the best and most distinguished violinists of his generation, Alfredo García Serrano (León, 1971) has had an impassioned career as a teacher, soloist and performer, which has taken him throughout Spain and the world.The countries where he has played concerts include Japan, Korea, Turkey, Italy, Poland, Austria, France, Portugal, the United States, Mexico, Argentina and Spain.`,
