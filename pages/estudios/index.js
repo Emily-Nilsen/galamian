@@ -31,8 +31,7 @@ const estudios = [
     title: 'Estudio de Violonchelo',
     href: '/estudios/violonchelo',
     description: `Formación integral: clases individuales, clases grupales, profesores invitados, música de cámara, conciertos y más.`,
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/Violonchelo_thumbnail_ujeqen.webp',
+    imageUrl: '/media/estudia/cello/Violonchelo_thumbnail_ujeqen.webp',
     category: [{ title: `Violonchelo` }],
     details: {
       age: 'Todas las edades',
@@ -44,7 +43,7 @@ const estudios = [
     href: '/estudios/voz',
     description: `Opción de formación vocal para acceso a la profesionalización con técnicas prácticas, correpetición y especialización.`,
     imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/estudio_de_voz-_thumnail_just_the_two_singers_or36jk.webp',
+      '/media/estudia/voice/estudio_de_voz-_thumnail_just_the_two_singers_or36jk.webp',
     category: [{ title: `Voz` }],
     details: {
       age: 'Todas las edades',
@@ -55,8 +54,7 @@ const estudios = [
     title: 'Jóvenes Artistas',
     href: '/estudios/jovenes-artistas',
     description: `Clases particulares y magistrales, interpretación en grupo. Incluye participación en la Joven Orquesta Academia Galamian.`,
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOVEN_ARTISTA_tn6m6w.webp',
+    imageUrl: '/media/JOVEN_ARTISTA_tn6m6w.webp',
     category: [{ title: `Violonchelo` }, { title: `Clarinete` }],
     details: {
       age: 'Approx. 8-16 años',
