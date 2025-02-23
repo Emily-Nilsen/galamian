@@ -102,19 +102,19 @@ export default function JOAG() {
                 </p>
               </div>
               <div className="flex pt-6 lg:mt-0">
-              <a
-            download
-            href="/FORMULARIO_ACCESO_JOAG.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gold-500/20 py-1.5 px-3 rounded-full font-semibold text-neutral-700 group-hover:bg-gold-500/30 group-hover:text-neutral-900 transition-all duration-150 ease-in-out"
-          >
-            Descarga Formulario de Inscripción (JOAG)
-          </a>
+                <a
+                  download
+                  href="/FORMULARIO_ACCESO_JOAG.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gold-500/20 py-1.5 px-3 rounded-full font-semibold text-neutral-700 group-hover:bg-gold-500/30 group-hover:text-neutral-900 transition-all duration-150 ease-in-out"
+                >
+                  Descarga Formulario de Inscripción (JOAG)
+                </a>
               </div>
             </div>
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/JOAG_orquesta_3_ygbsjs.webp"
+              src="/media/JOAG_orquesta_3_ygbsjs.webp"
               alt="Academia Galamian Internacional"
               className="object-cover w-[48rem] max-w-none rounded-none shadow-none ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
