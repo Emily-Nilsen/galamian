@@ -96,7 +96,7 @@ export default function ProfesoresViolin() {
                     className="object-cover object-center overflow-hidden rounded-none shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/professors/jesus-photo-01_loefpu.webp"
+                      src="/media/profesores/jesus-photo-01_loefpu.webp"
                       alt="Jesús Reina"
                       width={2367}
                       height={1381}
@@ -179,7 +179,7 @@ export default function ProfesoresViolin() {
                     className="object-cover object-center overflow-hidden rounded-none shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/anna_oges5p.jpg"
+                      src="/media/profesores/anna.jpg"
                       alt="Anna Margrethe Nilsen"
                       width={1497}
                       height={873}
@@ -263,7 +263,7 @@ export default function ProfesoresViolin() {
                     className="object-cover object-center overflow-hidden rounded-none shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/laura-romero_mf0vvn.jpg"
+                      src="/media/profesores/laura-romero.jpeg"
                       alt="Laura Romero"
                       width={1497}
                       height={873}
