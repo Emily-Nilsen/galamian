@@ -199,7 +199,7 @@ export default function Estudios() {
                     <div className="flex items-center gap-x-4">
                       <div className="flex flex-none">
                         <Image
-                          src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/edad_recommendada_ozzhrv.webp"
+                          src="/media/edad_recommendada_ozzhrv.webp"
                           alt="Edad recomendada"
                           className="w-10 h-10"
                           width={40}
