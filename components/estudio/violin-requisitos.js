@@ -20,8 +20,7 @@ export default function ViolinRequisitos() {
       description_03: `${t(
         'common:becas_text_3'
       )} ${new Date().getFullYear()}.`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp',
+      imageSrc: '/media/galamian-junior/Galamian_Junior_jiqymj.webp',
       imageAlt: 'Estudio de Violín/Viola',
     },
     {
@@ -38,8 +37,7 @@ export default function ViolinRequisitos() {
       list_1: `${t('common:practicas_item_1')}`,
       list_2: `${t('common:practicas_item_2')}`,
       list_3: `${t('common:practicas_item_3')}`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712685/Galamian/violin/group-photo-04_t3u28p.webp',
+      imageSrc: '/media/estudia/violin/group-photo-04.webp',
       imageAlt: 'Estudio de Violín/Viola',
     },
     {
@@ -47,8 +45,7 @@ export default function ViolinRequisitos() {
       description_01: `${t('common:titulacion_text_1')}`,
       description_02: `${t('common:titulacion_text_2')}`,
       description_03: `${t('common:titulacion_text_3')}`,
-      imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/cello/group-photo-01_nsd7dg.webp',
+      imageSrc: '/media/estudia/cello/group-photo-01.webp',
       imageAlt: 'Estudio de Violín/Viola',
     },
   ];
