@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-          <link rel="icon" href="/galamian-black.svg" />
+          <link rel="icon" href="/media/galamian-black.svg" />
           <link
             rel="stylesheet"
             href="https://use.typekit.net/egi6zfi.css"
