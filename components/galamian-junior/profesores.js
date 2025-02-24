@@ -22,14 +22,7 @@ export default function ProfesoresJunior() {
       bio_02: `${t('professors:laura_para_2')}`,
       bio_03: `${t('professors:laura_para_3')}`,
     },
-    // {
-    //   name: 'Irene Ortega',
-    //   role: `${t('professors:irene_role')}`,
-    //   imageUrl: '/static/galamian-junior/irene.jpg',
-    //   bio_01: `${t('professors:irene_para_1')}`,
-    //   bio_02: `${t('professors:irene_para_2')}`,
-    //   bio_03: `${t('professors:irene_para_3')}`,
-    // },
+
     {
       name: `${t('professors:jesus_name')}`,
       role: `${t('professors:jesus_role')}`,

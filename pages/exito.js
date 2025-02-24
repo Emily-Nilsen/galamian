@@ -14,7 +14,7 @@ export default function Success() {
                 <span className="sr-only">{t('exito:sr')}</span>
                 <div className="transition duration-300 ease-in hover:scale-105">
                   <Image
-                    src="/static/galamian-gold-dark.svg"
+                    src="/media/galamian-gold-dark.svg"
                     alt="Galamian logo"
                     width={60}
                     height={60}

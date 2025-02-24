@@ -15,7 +15,7 @@ export default function Bulletin() {
       <main className="pb-16 bg-white lg:pb-24">
         <div aria-hidden="true" className="relative">
           <Image
-            src="/static/eventos.jpg"
+            src="/media/eventos.jpg"
             alt={t('navbar:blogpost_preview_1')}
             className="relative object-cover object-center w-full h-96"
             width={1500}

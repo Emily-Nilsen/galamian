@@ -20,7 +20,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        notfound: `url('/static/lost.jpg')`,
+        notfound: `url('/media/lost.jpg')`,
       },
     },
   },

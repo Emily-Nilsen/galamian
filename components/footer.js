@@ -132,7 +132,7 @@ export default function Footer() {
             <Link href="/" passHref>
               <div className="cursor-pointer">
                 <Image
-                  src="/static/galamian-gold-dark.svg"
+                  src="/media/galamian-gold-dark.svg"
                   alt="Galamian logo"
                   width={50}
                   height={50}
