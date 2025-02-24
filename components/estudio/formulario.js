@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import { MailIcon } from '@heroicons/react/outline';
-import { ExclamationIcon } from '@heroicons/react/solid';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Formulario() {
@@ -13,7 +11,7 @@ export default function Formulario() {
           <div className="text-center">
             <div>
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold-dark_fcxszf.svg"
+                src="/media/galamian-gold-dark.svg"
                 alt="Galamian logo"
                 width={60}
                 height={60}

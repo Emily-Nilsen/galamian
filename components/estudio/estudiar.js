@@ -77,7 +77,7 @@ export default function Estudiar() {
                     className="object-cover object-center overflow-hidden shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712311/Galamian/general/sala-unicaja_y7yrjh.jpg"
+                      src="/media/sala-unicaja.jpg"
                       alt="Sala Fundación Unicaja Mª Cristina"
                       width={1720}
                       height={1147}

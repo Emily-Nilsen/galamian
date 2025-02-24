@@ -55,7 +55,7 @@ const Audiciones = () => {
             className="absolute inset-0 object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/audiciones_d48ubx.jpg"
+              src="/media/stock-image-01.jpg"
               alt="Audiciones"
               unoptimized={true}
               layout="fill"

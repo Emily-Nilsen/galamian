@@ -99,7 +99,7 @@ export default function Inscripcion() {
                       className="object-cover object-center overflow-hidden shadow-none"
                     >
                       <Image
-                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712376/Galamian/general/inscripcion_amynfl.jpg"
+                        src="/media/estudia/cello/cello-photo-06.webp"
                         alt="Sala Fundación Unicaja Mª Cristina"
                         width={1720}
                         height={1147}
