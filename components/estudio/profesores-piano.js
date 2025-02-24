@@ -85,7 +85,7 @@ export default function ProfesoresPiano() {
                     className="object-cover object-center overflow-hidden rounded-none shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/misha-dacic_dzbvuh.jpg"
+                      src="/media/profesores/misha-dacic.jpg"
                       alt="Misha Dacić"
                       width={2617}
                       height={1527}
@@ -168,7 +168,7 @@ export default function ProfesoresPiano() {
                     className="object-cover object-center overflow-hidden rounded-none shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713746/Galamian/professors/josu-de-solaun_f2ssfq.jpg"
+                      src="/media/profesores/josu-de-solaun.jpg"
                       alt="Josu De Solaun"
                       width={718}
                       height={419}
@@ -251,7 +251,7 @@ export default function ProfesoresPiano() {
                     className="object-cover object-center overflow-hidden rounded-none shadow-none"
                   >
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/antonio-ortiz_xgrpit.webp"
+                      src="/media/profesores/antonio-ortiz.webp"
                       alt="Antonio Ortíz"
                       width={718}
                       height={419}
