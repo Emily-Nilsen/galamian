@@ -74,7 +74,7 @@ export default function SalaUnicaja() {
               <div className="object-cover object-center w-full h-full">
                 <Image
                   unoptimized={true}
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-2_f8u4e2.webp"
+                  src="/media/unicaja-2.webp"
                   alt="Sala Fundación Unicaja Mª Cristina"
                   layout="fill"
                   objectFit="cover"
@@ -97,7 +97,7 @@ export default function SalaUnicaja() {
                 <div className="object-cover object-center w-full h-full">
                   <Image
                     unoptimized={true}
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-3_gcatci.webp"
+                    src="/media/unicaja-3.webp"
                     alt="Sala Fundación Unicaja Mª Cristina"
                     layout="fill"
                     objectFit="cover"
@@ -119,7 +119,7 @@ export default function SalaUnicaja() {
                 <div className="object-cover object-center w-full h-full">
                   <Image
                     unoptimized={true}
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712312/Galamian/general/unicaja-1_qmlb6b.webp"
+                    src="/media/unicaja-1.webp"
                     alt="Sala Fundación Unicaja Mª Cristina"
                     layout="fill"
                     objectFit="cover"

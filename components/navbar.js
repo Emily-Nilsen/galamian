@@ -82,8 +82,7 @@ export default function Navbar() {
       name: `Estudio de Violín y Viola`,
       href: '/estudios/violin',
       preview: `Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
-      imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/violin/violin-study-img-3_cnh2ey.webp',
+      imageUrl: '/media/estudia/violin/violin-study-img-3.webp',
     },
     {
       id: 2,
@@ -91,16 +90,14 @@ export default function Navbar() {
       href: '/estudios/programa-de-sonatas',
       preview:
         'Programa para pianistas que exploran el repertorio de sonatas a dúo con clases colaborativas y conciertos públicos.',
-      imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp',
+      imageUrl: '/media/galamian-junior/Galamian_Junior_jiqymj.webp',
     },
     {
       id: 3,
       name: 'Joven Orquesta Academia Galamian',
       href: '/estudios/joag',
       preview: `La JOAG ofrece oportunidades sinfónicas a jóvenes músicos, fomentando capacidades y experiencias profesionales.`,
-      imageUrl:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/JOVEN_ARTISTA_tn6m6w.webp',
+      imageUrl: '/media/JOVEN_ARTISTA_tn6m6w.webp',
     },
   ];
 
@@ -262,7 +259,7 @@ export default function Navbar() {
               <span className="sr-only">Academia Internacional Galamian</span>
               <div className="transition duration-300 ease-in hover:scale-105">
                 <Image
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold-dark_fcxszf.svg"
+                  src="/media/galamian-gold-dark.svg"
                   alt="Galamian logo"
                   width={40}
                   height={40}
@@ -615,7 +612,7 @@ export default function Navbar() {
                     <Popover.Button href="/" as={MyLink}>
                       <div className="cursor-pointer">
                         <Image
-                          src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold-dark_fcxszf.svg"
+                          src="/media/galamian-gold-dark.svg"
                           alt="Galamian logo"
                           width={40}
                           height={40}

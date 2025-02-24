@@ -156,7 +156,7 @@ export default function GalamianJunior() {
               </div>
             </div>
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Galamian/general/Galamian_Junior_jiqymj.webp"
+              src="/media/galamian-junior/Galamian_Junior_jiqymj.webp"
               alt="Academia Galamian Internacional"
               className="object-cover w-[48rem] max-w-none rounded-none shadow-none ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}

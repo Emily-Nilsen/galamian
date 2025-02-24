@@ -86,7 +86,7 @@ export default function ElProyecto() {
             >
               <div className="absolute inset-0 object-cover w-full h-full">
                 <Image
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/group-photo-07_syk94n.webp"
+                  src="/media/group-photo-07.webp"
                   alt="El Proyecto"
                   layout="fill"
                   objectFit="cover"
@@ -99,7 +99,7 @@ export default function ElProyecto() {
               <div className="relative px-8">
                 <div className="">
                   <Image
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712309/Galamian/general/galamian-gold_jnqahz.svg"
+                    src="/media/galamian-gold.svg"
                     alt="Galamian logo"
                     width={60}
                     height={60}

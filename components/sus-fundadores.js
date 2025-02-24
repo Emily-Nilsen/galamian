@@ -112,7 +112,7 @@ export default function SusFundadores() {
               <Image
                 width={1024}
                 height={1200}
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713745/Galamian/professors/jesus_gmkfut.jpg"
+                src="/media/profesores/jesus.jpg"
                 alt="Jesús Reina"
                 layout="responsive"
                 objectFit="cover"
@@ -218,7 +218,7 @@ export default function SusFundadores() {
                 <Image
                   width={1024}
                   height={1200}
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653713744/Galamian/professors/anna_oges5p.jpg"
+                  src="/media/profesores/anna.jpg"
                   alt="Anna Margrethe Nilsen"
                   layout="responsive"
                   objectFit="cover"

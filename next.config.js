@@ -6,7 +6,6 @@ module.exports = {
   ...nextTranslate(),
   images: {
     minimumCacheTTL: 31536000,
-    domains: ['res.cloudinary.com'],
     unoptimized: true,
   },
 };
