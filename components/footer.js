@@ -72,7 +72,7 @@ export default function Footer() {
       { name: `${t('footer:academia_4')}`, href: '/contacto' },
     ],
     recursos: [
-      { name: `${t('footer:recursos_1')}`, href: '/#noticias' },
+      // { name: `${t('footer:recursos_1')}`, href: '/#noticias' },
       {
         name: `Preguntas frecuentes`,
         href: '/estudia/formacion-musical-integral',
@@ -159,7 +159,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               {/* Estudia */}
-              <div>
+              {/* <div>
                 <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
                   {t('footer:estudia')}
                 </h3>
@@ -174,9 +174,9 @@ export default function Footer() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
               {/* Estudios */}
-              <div className="mt-12 md:mt-0">
+              {/* <div className="mt-12 md:mt-0">
                 <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
                   {t('footer:estudios')}
                 </h3>
@@ -191,7 +191,7 @@ export default function Footer() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
             </div>
             {/* La Academia */}
             <div className="md:grid md:grid-cols-2 md:gap-8">

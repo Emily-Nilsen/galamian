@@ -76,166 +76,156 @@ export default function Navbar() {
       icon: DocumentIcon,
     },
   ];
-  const blogPosts = [
-    {
-      id: 1,
-      name: `Estudio de Violín y Viola`,
-      href: '/estudios/violin',
-      preview: `Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
-      imageUrl: '/media/estudia/violin/violin-study-img-3.webp',
-    },
-    {
-      id: 2,
-      name: 'Programa de Sonatas «George Enescu» para pianistas',
-      href: '/estudios/programa-de-sonatas',
-      preview:
-        'Programa para pianistas que exploran el repertorio de sonatas a dúo con clases colaborativas y conciertos públicos.',
-      imageUrl: '/media/galamian-junior/Galamian_Junior_jiqymj.webp',
-    },
-    {
-      id: 3,
-      name: 'Joven Orquesta Academia Galamian',
-      href: '/estudios/joag',
-      preview: `La JOAG ofrece oportunidades sinfónicas a jóvenes músicos, fomentando capacidades y experiencias profesionales.`,
-      imageUrl: '/media/JOVEN_ARTISTA_tn6m6w.webp',
-    },
-  ];
+  // const blogPosts = [
+  //   {
+  //     id: 1,
+  //     name: `Estudio de Violín y Viola`,
+  //     href: '/estudios/violin',
+  //     preview: `Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
+  //     imageUrl: '/media/estudia/violin/violin-study-img-3.webp',
+  //   },
+  //   {
+  //     id: 2,
+  //     name: 'Programa de Sonatas «George Enescu» para pianistas',
+  //     href: '/estudios/programa-de-sonatas',
+  //     preview:
+  //       'Programa para pianistas que exploran el repertorio de sonatas a dúo con clases colaborativas y conciertos públicos.',
+  //     imageUrl: '/media/galamian-junior/Galamian_Junior_jiqymj.webp',
+  //   },
+  //   {
+  //     id: 3,
+  //     name: 'Joven Orquesta Academia Galamian',
+  //     href: '/estudios/joag',
+  //     preview: `La JOAG ofrece oportunidades sinfónicas a jóvenes músicos, fomentando capacidades y experiencias profesionales.`,
+  //     imageUrl: '/media/JOVEN_ARTISTA_tn6m6w.webp',
+  //   },
+  // ];
 
   // Study
-  const estudiar = [
-    {
-      name: `${t('navbar:estudiar_name_1')}`,
-      description: `${t(
-        'navbar:estudiar_description_1_part_1'
-      )} ${new Date().getFullYear()}/${new Date().getFullYear() + 1}${t(
-        'navbar:estudiar_description_1_part_2'
-      )}`,
-      href: '/estudia',
-      icon: AcademicCapIcon,
-    },
-    {
-      name: `Formación musical integral`,
-      description: `fd`,
-      href: '/estudia/formacion-musical-integral',
-      icon: MusicNoteIcon,
-    },
-    {
-      name: `${t('navbar:estudiar_name_2')}`,
-      description: `${t('navbar:estudiar_description_2_part_1')}`,
-      href: '/estudios',
-      icon: ClipboardListIcon,
-    },
-    {
-      name: `${t('navbar:estudiar_name_3')}`,
-      description: `${t(
-        'navbar:estudiar_description_3_part_1'
-      )}${new Date().getFullYear()}${t(
-        'navbar:estudiar_description_3_part_2'
-      )}`,
-      href: '/estudia/formulario-de-inscripcion',
-      icon: PencilAltIcon,
-    },
-  ];
-  const studies = [
-    {
-      name: `${t('footer:estudios_1')}`,
-      href: `/estudios/violin`,
-    },
-    {
-      name: `${t('footer:estudios_3')}`,
-      href: `/estudios/piano`,
-    },
-    {
-      name: `${t('footer:estudios_2')}`,
-      href: `/estudios/violonchelo`,
-    },
-    {
-      name: `${t('footer:estudios_4')}`,
-      href: `/estudios/voz`,
-    },
-    // {
-    //   name: `${t('footer:academia_3')}`,
-    //   href: `/estudios/galamian-junior`,
-    // },
-    {
-      name: `Jóvenes Artistas`,
-      href: `/estudios/jovenes-artistas`,
-    },
-    {
-      name: `Programa de Sonatas`,
-      href: `/estudios/programa-de-sonatas`,
-    },
-    {
-      name: `Artist Diploma`,
-      href: `/estudios/artist-diploma`,
-    },
-    {
-      name: `Programa de Música de Cámara`,
-      href: `/estudios/programa-de-musica-de-camara`,
-    },
-    {
-      name: `JOAG`,
-      href: `/estudios/joag`,
-    },
-    {
-      name: `OAG`,
-      href: `/estudios/oag`,
-    },
-  ];
-  const callsToAction = [
-    {
-      name: `${t('navbar:callsToAction')}`,
-      href: '/contacto',
-      icon: PhoneIcon,
-    },
-  ];
+  // const estudiar = [
+  //   {
+  //     name: `${t('navbar:estudiar_name_1')}`,
+  //     description: `${t(
+  //       'navbar:estudiar_description_1_part_1'
+  //     )} ${new Date().getFullYear()}/${new Date().getFullYear() + 1}${t(
+  //       'navbar:estudiar_description_1_part_2'
+  //     )}`,
+  //     href: '/estudia',
+  //     icon: AcademicCapIcon,
+  //   },
+  //   {
+  //     name: `Formación musical integral`,
+  //     description: `fd`,
+  //     href: '/estudia/formacion-musical-integral',
+  //     icon: MusicNoteIcon,
+  //   },
+  //   {
+  //     name: `${t('navbar:estudiar_name_2')}`,
+  //     description: `${t('navbar:estudiar_description_2_part_1')}`,
+  //     href: '/estudios',
+  //     icon: ClipboardListIcon,
+  //   },
+  //   {
+  //     name: `${t('navbar:estudiar_name_3')}`,
+  //     description: `${t(
+  //       'navbar:estudiar_description_3_part_1'
+  //     )}${new Date().getFullYear()}${t(
+  //       'navbar:estudiar_description_3_part_2'
+  //     )}`,
+  //     href: '/estudia/formulario-de-inscripcion',
+  //     icon: PencilAltIcon,
+  //   },
+  // ];
+  // const studies = [
+  //   {
+  //     name: `${t('footer:estudios_1')}`,
+  //     href: `/estudios/violin`,
+  //   },
+  //   {
+  //     name: `${t('footer:estudios_3')}`,
+  //     href: `/estudios/piano`,
+  //   },
+  //   {
+  //     name: `${t('footer:estudios_2')}`,
+  //     href: `/estudios/violonchelo`,
+  //   },
+  //   {
+  //     name: `${t('footer:estudios_4')}`,
+  //     href: `/estudios/voz`,
+  //   },
+
+  //   {
+  //     name: `Jóvenes Artistas`,
+  //     href: `/estudios/jovenes-artistas`,
+  //   },
+  //   {
+  //     name: `Programa de Sonatas`,
+  //     href: `/estudios/programa-de-sonatas`,
+  //   },
+  //   {
+  //     name: `Artist Diploma`,
+  //     href: `/estudios/artist-diploma`,
+  //   },
+  //   {
+  //     name: `Programa de Música de Cámara`,
+  //     href: `/estudios/programa-de-musica-de-camara`,
+  //   },
+  //   {
+  //     name: `JOAG`,
+  //     href: `/estudios/joag`,
+  //   },
+  //   {
+  //     name: `OAG`,
+  //     href: `/estudios/oag`,
+  //   },
+  // ];
+  // const callsToAction = [
+  //   {
+  //     name: `${t('navbar:callsToAction')}`,
+  //     href: '/contacto',
+  //     icon: PhoneIcon,
+  //   },
+  // ];
 
   // Mobile Navbar
   const mobileTabs = [
-    {
-      name: `${t('footer:estudios_1')}`,
-      href: `/estudios/violin`,
-    },
-    {
-      name: `${t('footer:estudios_3')}`,
-      href: `/estudios/piano`,
-    },
-    {
-      name: `${t('footer:estudios_2')}`,
-      href: `/estudios/violonchelo`,
-    },
-    {
-      name: `${t('footer:estudios_4')}`,
-      href: `/estudios/voz`,
-    },
     // {
-    //   name: `${t('footer:academia_3')}`,
-    //   href: `/estudios/galamian-junior`,
+    //   name: `${t('footer:estudios_1')}`,
+    //   href: `/estudios/violin`,
     // },
     // {
-    //   name: `Jóvenes Artistas`,
-    //   href: `/estudios/jovenes-artistas`,
+    //   name: `${t('footer:estudios_3')}`,
+    //   href: `/estudios/piano`,
     // },
-    {
-      name: `Programa de Sonatas`,
-      href: `/estudios/programa-de-sonatas`,
-    },
-    {
-      name: `Artist Diploma`,
-      href: `/estudios/artist-diploma`,
-    },
-    {
-      name: `Música de Cámara`,
-      href: `/estudios/programa-de-musica-de-camara`,
-    },
-    {
-      name: `JOAG`,
-      href: `/estudios/joag`,
-    },
-    {
-      name: `OAG`,
-      href: `/estudios/oag`,
-    },
+    // {
+    //   name: `${t('footer:estudios_2')}`,
+    //   href: `/estudios/violonchelo`,
+    // },
+    // {
+    //   name: `${t('footer:estudios_4')}`,
+    //   href: `/estudios/voz`,
+    // },
+
+    // {
+    //   name: `Programa de Sonatas`,
+    //   href: `/estudios/programa-de-sonatas`,
+    // },
+    // {
+    //   name: `Artist Diploma`,
+    //   href: `/estudios/artist-diploma`,
+    // },
+    // {
+    //   name: `Música de Cámara`,
+    //   href: `/estudios/programa-de-musica-de-camara`,
+    // },
+    // {
+    //   name: `JOAG`,
+    //   href: `/estudios/joag`,
+    // },
+    // {
+    //   name: `OAG`,
+    //   href: `/estudios/oag`,
+    // },
     {
       name: `${t('footer:academia_4')}`,
       href: `/contacto`,
@@ -366,7 +356,7 @@ export default function Navbar() {
                               </ul>
                             </div>
                           </nav>
-                          <Popover.Button>
+                          {/* <Popover.Button>
                             <div className="px-4 py-8 text-left bg-neutral-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
                                 <h3 className="text-base font-bold tracking-normal uppercase text-neutral-600">
@@ -425,7 +415,7 @@ export default function Navbar() {
                                 </Popover.Button>
                               </div>
                             </div>
-                          </Popover.Button>
+                          </Popover.Button> */}
                         </div>
                       </Popover.Panel>
                     </Transition>
@@ -434,7 +424,7 @@ export default function Navbar() {
               </Popover>
 
               {/* Estudia tab */}
-              <Popover>
+              {/* <Popover>
                 {({ open }) => (
                   <>
                     <Popover.Button
@@ -569,7 +559,7 @@ export default function Navbar() {
                     </Transition>
                   </>
                 )}
-              </Popover>
+              </Popover> */}
               {/* Profesores */}
               <Link href="/profesores" passHref>
                 <a className="self-end text-sm tracking-tight uppercase transition duration-300 ease-in-out text-neutral-500 hover:text-neutral-900">
@@ -656,7 +646,7 @@ export default function Navbar() {
                           </span>
                         </p>
                       </Popover.Button>
-                      {estudiar.map((item) => (
+                      {/* {estudiar.map((item) => (
                         <Popover.Button
                           key={item.name}
                           href={item.href}
@@ -674,7 +664,7 @@ export default function Navbar() {
                             </div>
                           </p>
                         </Popover.Button>
-                      ))}
+                      ))} */}
                     </div>
                   </nav>
                 </div>

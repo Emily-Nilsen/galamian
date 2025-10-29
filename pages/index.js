@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import Hero from '../components/hero';

@@ -33,6 +33,10 @@ export default function Features() {
     // },
   ];
 
+  const visibleFeatures = features.filter(
+    (feature) => feature.name !== t('inicio:feature_name_2')
+  );
+
   return (
     <div className="overflow-hidden bg-white">
       <div className="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -83,7 +87,8 @@ export default function Features() {
             </h2>
           </div>
           <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
-            {features.map((feature, i) => (
+            {visibleFeatures.map((feature, i) => (
+              // {features.map((feature, i) => (
               <div key={i}>
                 <dt>
                   <div className="flex items-center justify-center w-12 h-12 bg-neutral-50 text-gold-500">

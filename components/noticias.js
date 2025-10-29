@@ -39,7 +39,7 @@ export default function Noticias() {
       id="noticias"
       className="px-4 pt-16 pb-20 bg-neutral-50 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"
     >
-      <div className="relative max-w-lg mx-auto divide-y-2 divide-neutral-200 lg:max-w-7xl">
+      {/* <div className="relative max-w-lg mx-auto divide-y-2 divide-neutral-200 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-gold-600 sm:text-4xl">
             {t('inicio:noticias_title')}
@@ -102,7 +102,7 @@ export default function Noticias() {
             </motion.div>
           ))}
         </motion.div>
-      </div>
+      </div> */}
     </section>
   );
 }
