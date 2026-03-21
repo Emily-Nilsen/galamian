@@ -220,7 +220,7 @@ export default function Contacto() {
                         </span>
                       </dd>
                     </Link>
-                    <dt>
+                    {/* <dt>
                       <span className="sr-only">Phone number</span>
                     </dt>
                     <a
@@ -234,7 +234,7 @@ export default function Contacto() {
                         />
                         <span className="ml-3">+34 699 06 74 52</span>
                       </dd>
-                    </a>
+                    </a> */}
                     <dt>
                       <span className="sr-only">Email</span>
                     </dt>
