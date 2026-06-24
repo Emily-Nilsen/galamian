@@ -65,54 +65,28 @@ export default function Hero() {
           {/* Logo cloud */}
           <div className="flex items-center justify-center bg-neutral-100">
             <div className="px-6 py-16 mx-auto max-w-7xl sm:px-8 lg:px-10">
-              <div className="grid grid-cols-2 gap-20 md:gap-40">
+              <div className="flex justify-center">
                 <motion.div
                   initial={{
                     opacity: 0,
-                    x: -50,
+                    y: 20,
                   }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{
                     duration: 0.7,
                     delay: 1,
                     ease: 'easeOut',
                   }}
-                  className="flex justify-center col-span-1"
+                  className="flex justify-center"
                 >
-                  <div className="h-1/4">
-                    <Image
-                      width={77}
-                      height={101}
-                      src="/media/Fundacion_Reina-Nilsen_jlm5kx.svg"
-                      alt="Fundación Reina Nilsen"
-                      unoptimized={true}
-                    />
-                  </div>
-                </motion.div>
-                <motion.div
-                  initial={{
-                    opacity: 0,
-                    x: 50,
-                  }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 0.7,
-                    delay: 1,
-                    ease: 'easeOut',
-                  }}
-                  className="flex justify-center col-span-1"
-                >
-                  <div className="h-1/4">
-                    <Image
-                      width={87}
-                      height={101}
-                      src="/media/unicaja_tsxjhv.svg"
-                      alt="Unicaja Fundación"
-                      unoptimized={true}
-                    />
-                  </div>
+                  <Image
+                    width={220}
+                    height={81}
+                    src="/media/fundacion-unicaja-logo.png"
+                    alt="Fundación Unicaja"
+                    unoptimized={true}
+                  />
                 </motion.div>
               </div>
             </div>

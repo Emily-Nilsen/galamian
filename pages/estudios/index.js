@@ -1,128 +1,29 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import Layout from '../../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 
-const estudios = [
-  {
-    id: 1,
-    title: 'Estudio de Violín y Viola',
-    href: '/estudios/violin',
-    description: `Clases magistrales individuales, música de cámara, conciertos y proyectos.`,
-    imageUrl: '/media/estudia/violin/violin-study-img-2.webp',
-    category: [{ title: 'Violín' }, { title: `Viola` }],
-    details: {
-      age: 'Todas las edades',
-    },
-  },
-  {
-    id: 2,
-    title: 'Estudio de Piano',
-    href: '/estudios/piano',
-    description: `Lecciones individuales, clases magistrales, música de cámara, conciertos y prácticas de desarrollo de proyectos.`,
-    imageUrl: '/media/estudia/piano/piano_studio_k67fog.webp',
-    category: [{ title: 'Piano' }],
-    details: {
-      age: 'Todas las edades',
-    },
-  },
-  {
-    id: 3,
-    title: 'Estudio de Violonchelo',
-    href: '/estudios/violonchelo',
-    description: `Formación integral: clases individuales, clases grupales, profesores invitados, música de cámara, conciertos y más.`,
-    imageUrl: '/media/estudia/cello/Violonchelo_thumbnail_ujeqen.webp',
-    category: [{ title: `Violonchelo` }],
-    details: {
-      age: 'Todas las edades',
-    },
-  },
-  {
-    id: 4,
-    title: 'Estudio de Voz',
-    href: '/estudios/voz',
-    description: `Opción de formación vocal para acceso a la profesionalización con técnicas prácticas, correpetición y especialización.`,
-    imageUrl:
-      '/media/estudia/voice/estudio_de_voz-_thumnail_just_the_two_singers_or36jk.webp',
-    category: [{ title: `Voz` }],
-    details: {
-      age: 'Todas las edades',
-    },
-  },
-  {
-    id: 6,
-    title: 'Jóvenes Artistas',
-    href: '/estudios/jovenes-artistas',
-    description: `Clases particulares y magistrales, interpretación en grupo. Incluye participación en la Joven Orquesta Academia Galamian.`,
-    imageUrl: '/media/JOVEN_ARTISTA_tn6m6w.webp',
-    category: [{ title: `Violonchelo` }, { title: `Clarinete` }],
-    details: {
-      age: 'Approx. 8-16 años',
-    },
-  },
-  {
-    id: 7,
-    title: 'Artist Diploma «Yehudi Menuhin»',
-    href: '/estudios/artist-diploma',
-    description: `Diploma para músicos profesionales. Enfoque en repertorio, clases, recitales y actividades adicionales opcionales.`,
-    imageUrl: '/media/Artist_diploma_2_hue9cm.webp',
-    category: [
-      { title: 'Violín' },
-      { title: `Viola` },
-      { title: `Violonchelo` },
-    ],
-    details: {
-      age: 'Haber terminado el Superior o nivel similar',
-    },
-  },
-  {
-    id: 8,
-    title: 'Programa de Sonatas «George Enescu» para pianistas',
-    href: '/estudios/programa-de-sonatas',
-    description: `Programa para pianistas que exploran el repertorio de sonatas a dúo con clases colaborativas y conciertos públicos.`,
-    imageUrl: '/media/Sonata_program_thumbnail_ti3gcy.webp',
-    category: [{ title: 'Piano' }],
-    details: {
-      age: 'Edad libre',
-    },
-  },
-  {
-    id: 9,
-    title: 'Programa de Música de Cámara «Lucien Capet» - para grupos formados',
-    href: '/estudios/programa-de-musica-de-camara',
-    description: `Música de cámara destaca en formación de Academia Galamian. Programa con clases magistrales y conciertos.`,
-    imageUrl: '/media/estudia/cello/cello-photo-06.webp',
-    category: [{ title: 'Dúos' }, { title: 'Tríos' }, { title: 'Cuartetos' }],
-    details: {
-      age: 'Edad libre',
-    },
-  },
-  {
-    id: 10,
-    title: 'Joven Orquesta Academia Galamian',
-    href: '/estudios/joag',
-    description: `La JOAG ofrece oportunidades sinfónicas a jóvenes músicos, fomentando capacidades y experiencias profesionales.`,
-    imageUrl: '/media/JOAG_igc3qm.webp',
-    category: [{ title: 'JOAG' }],
-    details: {
-      age: '10-18 años',
-    },
-  },
-  {
-    id: 11,
-    title: 'Orquesta Academia Galamian',
-    href: '/estudios/oag',
-    description: `La OAG promueve la interpretación orquestal con ensayos meticulosos, profesionales destacados y exigentes conciertos.`,
-    imageUrl: '/media/estudia/violin/violin-photo-07.webp',
-    category: [{ title: 'OAG' }],
-    details: {
-      age: '18 años en adelante',
-    },
-  },
+// Lista sencilla de los programas que ofrece la Academia.
+// Los detalles completos viven en el PDF descargable, así que esta lista
+// es fácil de editar aquí mismo cuando cambie la oferta.
+const programasES = [
+  'Estudio de Violín y Viola',
+  'Cursos Intensivos (cuerda, piano, viento y voz)',
+  'Programa de Sonatas «George Enescu» (para pianistas)',
+  'Programa de Música de Cámara «Lucien Capet» (para grupos formados)',
+  'Agrupaciones Orquestales: JOAG y OAG',
+];
+
+const programasEN = [
+  'Violin & Viola Study',
+  'Intensive Courses (strings, piano, wind & voice)',
+  '«George Enescu» Sonatas Programme (for pianists)',
+  '«Lucien Capet» Chamber Music Programme (for formed groups)',
+  'Orchestral Ensembles: JOAG & OAG',
 ];
 
 export default function Estudios() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
+  const programas = lang === 'en' ? programasEN : programasES;
+
   return (
     <Layout
       title={t('layout:estudios_title')}
@@ -130,103 +31,52 @@ export default function Estudios() {
       keywords={t('layout:estudios_keywords')}
     >
       <div className="py-24 bg-white sm:py-32">
-        <div className="px-6 mx-auto max-w-7xl lg:px-8">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="text-center">
-              <h2 className="mt-1 text-4xl font-semibold text-neutral-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-                {t('estudios:estudios_title_part_1')}{' '}
-                <span className="font-bold text-gold-600">
-                  {' '}
-                  {t('estudios:estudios_title_part_2')}
-                </span>{' '}
-                {t('estudios:estudios_title_part_3')}
-              </h2>
-              <p className="max-w-xl mx-auto mt-5 text-xl text-neutral-600">
-                {t('estudios:estudios_text')}
-              </p>
-            </div>
-            <div className="flex justify-center mt-10 group">
-              <a
-                download
-                href="/Programas-de-estudio-Academia-Galamian-2024-2025.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gold-500/20 py-1.5 px-3 rounded-full font-semibold text-neutral-700 group-hover:bg-gold-500/30 group-hover:text-neutral-900 transition-all duration-150 ease-in-out"
-              >
-                Descarga PDF
-              </a>
-            </div>
+        <div className="max-w-3xl px-6 mx-auto lg:px-8">
+          <div className="text-center">
+            <h2 className="mt-1 text-4xl font-semibold text-neutral-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+              {t('estudios:estudios_title_part_1')}{' '}
+              <span className="font-bold text-gold-600">
+                {t('estudios:estudios_title_part_2')}
+              </span>{' '}
+              {t('estudios:estudios_title_part_3')}
+            </h2>
+            <p className="max-w-xl mx-auto mt-5 text-xl text-neutral-600">
+              {t('estudios:estudios_text')}
+            </p>
           </div>
-          <div className="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {estudios.map((estudio) => (
-              <article
-                key={estudio.id}
-                className="flex flex-col items-start justify-between"
+
+          {/* Lista de programas */}
+          <ul
+            role="list"
+            className="max-w-2xl mx-auto mt-12 border-t border-b divide-y border-neutral-200 divide-neutral-200"
+          >
+            {programas.map((programa) => (
+              <li
+                key={programa}
+                className="flex items-start py-5 text-lg text-neutral-800"
               >
-                <div className="relative w-full">
-                  <Image
-                    src={estudio.imageUrl}
-                    alt={estudio.title}
-                    width={1000}
-                    height={750}
-                    className="aspect-[16/9] w-full rounded-none bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-                  />
-                  <div className="absolute inset-0 rounded-none" />
-                </div>
-                <div className="max-w-xl">
-                  <div className="flex items-center mt-8 text-xs gap-x-1">
-                    {estudio.category.map((cat, i) => (
-                      <div
-                        key={i}
-                        className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600"
-                      >
-                        {cat.title}
-                      </div>
-                    ))}
-                  </div>
-                  <div className="relative w-full group">
-                    <h3 className="mt-3 text-lg font-bold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <a className="font-bold" href={estudio.href}>
-                        <span className="absolute inset-0" />
-                        {estudio.title}
-                      </a>
-                    </h3>
-                    <p className="mt-5 text-sm leading-6 text-gray-600 line-clamp-3">
-                      {estudio.description}
-                    </p>
-                  </div>
-                  <div className="relative flex items-center justify-between w-full mt-8">
-                    <div className="flex items-center gap-x-4">
-                      <div className="flex flex-none">
-                        <Image
-                          src="/media/edad_recommendada_ozzhrv.webp"
-                          alt="Edad recomendada"
-                          className="w-10 h-10"
-                          width={40}
-                          height={40}
-                        />
-                      </div>
-                      <div className="leading-6">
-                        <p className="text-sm text-gray-600">
-                          {estudio.details.age}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex flex-none ml-2">
-                      <p className="mr-2 text-sm text-gray-900">
-                        <Link href={estudio.href}>
-                          <a className="font-bold rounded-full bg-gray-50 px-3 py-1.5 hover:bg-gray-100 transition duration-150 ease-in-out">
-                            <span className="absolute inset-0" />
-                            Ver más detalles{' '}
-                            <span aria-hidden="true">&rarr;</span>
-                          </a>
-                        </Link>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </article>
+                <span
+                  className="mr-4 font-bold text-gold-600"
+                  aria-hidden="true"
+                >
+                  &#9834;
+                </span>
+                {programa}
+              </li>
             ))}
+          </ul>
+
+          {/* Descarga PDF con la información detallada */}
+          <div className="flex justify-center mt-12 group">
+            <a
+              download
+              href="/Programas-de-estudio-Academia-Galamian-2026-2027.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gold-500/20 py-2 px-4 rounded-full font-semibold text-neutral-700 group-hover:bg-gold-500/30 group-hover:text-neutral-900 transition-all duration-150 ease-in-out"
+            >
+              {t('estudios:download_pdf')}
+            </a>
           </div>
         </div>
       </div>

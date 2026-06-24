@@ -230,11 +230,13 @@ const common = {
   joag_cta_button: `Learn more`,
 
   // Registration Form
-  registration_subtitle_1: `Find the registration form below for the course access auditions for the`,
+  registration_subtitle_1: `Find the application form below for the`,
   registration_subtitle_2: ` academic year.`,
   registration_subtitle_3: `The deadline for submission is up to and including`,
-  registration_subtitle_4: `August 10, `,
+  registration_subtitle_4: `July 24, `,
   registration_subtitle_5: `.`,
+  enrol_download_button: `Download application form`,
+  enrol_send_instruction: `Download and fill out the application form and send it to:`,
   // Warning
   registration_warning: `Warning`,
   registration_warning_text: `Leaving the page before submitting the registration form will clear all filled fields.`,

@@ -27,16 +27,16 @@ const FormularioDeInscripcion = () => {
         <div className="flex justify-center mb-16 group">
           <a
             download
-            href="/FORMULARIO_INSCRIPCION_ACADEMIA.pdf"
+            href="/Formulario-de-inscripcion-Academia-Galamian-2026-2027.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gold-500/20 py-1.5 px-3 rounded-full font-semibold text-neutral-700 group-hover:bg-gold-500/30 group-hover:text-neutral-900 transition-all duration-150 ease-in-out"
           >
-            Descarga Formulario de Inscripción
+            {t('common:enrol_download_button')}
           </a>
         </div>
         <p className="my-10 text-center">
-          Descargue y rellene el Formulario de Inscripción y envíelo a:
+          {t('common:enrol_send_instruction')}
         </p>
         <div></div>
         <a
@@ -60,54 +60,28 @@ const FormularioDeInscripcion = () => {
       {/* Logo cloud */}
       <div className="flex items-center justify-center mt-16 sm:mt-20 bg-neutral-100">
         <div className="px-6 py-16 mx-auto max-w-7xl sm:px-8 lg:px-10">
-          <div className="grid grid-cols-2 gap-6 md:gap-14">
+          <div className="flex justify-center">
             <motion.div
               initial={{
                 opacity: 0,
-                x: -50,
+                y: 20,
               }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{
                 duration: 0.7,
                 delay: 0.3,
                 ease: 'easeOut',
               }}
-              className="flex col-span-1 justify-self-start"
+              className="flex justify-center"
             >
-              <div className="h-1/2">
-                <Image
-                  width={255}
-                  height={69}
-                  src="/media/reina-nilsen-grey.svg"
-                  alt="Fundación Reina Nilsen"
-                  unoptimized={true}
-                />
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{
-                opacity: 0,
-                x: 50,
-              }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.7,
-                delay: 0.3,
-                ease: 'easeOut',
-              }}
-              className="flex justify-center col-span-1"
-            >
-              <div className="h-1/2">
-                <Image
-                  width={204}
-                  height={55}
-                  src="/media/unicaja-grey.svg"
-                  alt="Unicaja Fundación"
-                  unoptimized={true}
-                />
-              </div>
+              <Image
+                width={220}
+                height={81}
+                src="/media/fundacion-unicaja-logo.png"
+                alt="Fundación Unicaja"
+                unoptimized={true}
+              />
             </motion.div>
           </div>
         </div>

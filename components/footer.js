@@ -11,10 +11,6 @@ export default function Footer() {
     estudiar: [
       { name: `${t('footer:estudia_1')}`, href: '/estudia' },
       {
-        name: `Formación musical integral`,
-        href: '/estudia/formacion-musical-integral',
-      },
-      {
         name: `${t('footer:estudia_2')}`,
         href: '/estudia/formulario-de-inscripcion',
       },
@@ -159,7 +155,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               {/* Estudia */}
-              {/* <div>
+              <div>
                 <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
                   {t('footer:estudia')}
                 </h3>
@@ -174,8 +170,8 @@ export default function Footer() {
                     </li>
                   ))}
                 </ul>
-              </div> */}
-              {/* Estudios */}
+              </div>
+              {/* Estudios (programas individuales — ocultos; lista + PDF ahora en /estudios) */}
               {/* <div className="mt-12 md:mt-0">
                 <h3 className="text-base font-bold tracking-normal uppercase text-gold-500">
                   {t('footer:estudios')}

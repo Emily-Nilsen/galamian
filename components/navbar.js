@@ -227,6 +227,14 @@ export default function Navbar() {
     //   href: `/estudios/oag`,
     // },
     {
+      name: `${t('navbar:link_2')}`,
+      href: `/estudia`,
+    },
+    {
+      name: `${t('navbar:estudiar_name_2')}`,
+      href: `/estudios`,
+    },
+    {
       name: `${t('footer:academia_4')}`,
       href: `/contacto`,
     },
@@ -560,6 +568,18 @@ export default function Navbar() {
                   </>
                 )}
               </Popover> */}
+              {/* Estudia */}
+              <Link href="/estudia" passHref>
+                <a className="self-end text-sm tracking-tight uppercase transition duration-300 ease-in-out text-neutral-500 hover:text-neutral-900">
+                  {t('navbar:link_2')}
+                </a>
+              </Link>
+              {/* Estudios */}
+              <Link href="/estudios" passHref>
+                <a className="self-end text-sm tracking-tight uppercase transition duration-300 ease-in-out text-neutral-500 hover:text-neutral-900">
+                  {t('navbar:estudiar_name_2')}
+                </a>
+              </Link>
               {/* Profesores */}
               <Link href="/profesores" passHref>
                 <a className="self-end text-sm tracking-tight uppercase transition duration-300 ease-in-out text-neutral-500 hover:text-neutral-900">

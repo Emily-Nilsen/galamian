@@ -232,12 +232,13 @@ const common = {
   joag_cta_button: `Aprende más`,
 
   // Registration Form
-  registration_subtitle_1: `Formulario de Inscripción en las audiciones de acceso para el
-  curso`,
+  registration_subtitle_1: `Formulario de inscripción para el curso`,
   registration_subtitle_2: `.`,
   registration_subtitle_3: `Fecha límite para su presentación:`,
-  registration_subtitle_4: `10 de agosto de `,
+  registration_subtitle_4: `24 de julio de `,
   registration_subtitle_5: ` (incluido).`,
+  enrol_download_button: `Descarga Formulario de Inscripción`,
+  enrol_send_instruction: `Descargue y rellene el Formulario de Inscripción y envíelo a:`,
   // Warning
   registration_warning: `Aviso`,
   registration_warning_text: `Si abandona la página antes de enviar el formulario de inscripción, se borrarán todos los campos completados.`,
