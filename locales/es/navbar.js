@@ -21,6 +21,7 @@ const navbar = {
   blogpost_name_1: `¡El bulletin vienen pronto!`,
   blogpost_preview_1: `Estén atentos a nuestras próximas noticias y eventos.`,
   link_2: `Estudia`,
+  inscripcion: `Inscripción`,
   callsToAction: `Contacto`,
   estudiar_name_1: `Estudiar en la AIG`,
   estudiar_description_1_part_1: `Encuentre información sobre estudiar en AIG, las audiciones de acceso curso`,

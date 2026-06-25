@@ -22,7 +22,7 @@ export default function Lecciones() {
   const lecciones = [
     {
       title: `${t('galamianJunior:leccion_title_1')}`,
-      href: '/estudia/formulario-de-inscripcion',
+      href: '/inscripcion',
       icon: UserIcon,
       iconForeground: 'text-gold-600',
       iconBackground: 'bg-neutral-50',
@@ -32,7 +32,7 @@ export default function Lecciones() {
     },
     {
       title: `${t('galamianJunior:leccion_title_2')}`,
-      href: '/estudia/formulario-de-inscripcion',
+      href: '/inscripcion',
       icon: BadgeCheckIcon,
       iconForeground: 'text-gold-600',
       iconBackground: 'bg-neutral-50',
@@ -42,7 +42,7 @@ export default function Lecciones() {
     },
     {
       title: `${t('galamianJunior:leccion_title_3')}`,
-      href: '/estudia/formulario-de-inscripcion',
+      href: '/inscripcion',
       icon: UsersIcon,
       iconForeground: 'text-gold-600',
       iconBackground: 'bg-neutral-50',
@@ -52,7 +52,7 @@ export default function Lecciones() {
     },
     {
       title: `${t('galamianJunior:leccion_title_4')}`,
-      href: '/estudia/formulario-de-inscripcion',
+      href: '/inscripcion',
       icon: ColorSwatchIcon,
       iconForeground: 'text-gold-600',
       iconBackground: 'bg-neutral-50',
@@ -60,7 +60,7 @@ export default function Lecciones() {
     },
     {
       title: `${t('galamianJunior:leccion_title_5')}`,
-      href: '/estudia/formulario-de-inscripcion',
+      href: '/inscripcion',
       icon: LibraryIcon,
       iconForeground: 'text-gold-600',
       iconBackground: 'bg-neutral-50',
@@ -69,7 +69,7 @@ export default function Lecciones() {
     },
     {
       title: `${t('galamianJunior:leccion_title_6')}`,
-      href: '/estudia/formulario-de-inscripcion',
+      href: '/inscripcion',
       icon: AcademicCapIcon,
       iconForeground: 'text-gold-600',
       iconBackground: 'bg-neutral-50',
@@ -80,7 +80,7 @@ export default function Lecciones() {
     },
     {
       title: `${t('galamianJunior:leccion_title_7')}`,
-      href: '/estudia/formulario-de-inscripcion',
+      href: '/inscripcion',
       icon: BookOpenIcon,
       iconForeground: 'text-gold-600',
       iconBackground: 'bg-neutral-50',
@@ -90,7 +90,7 @@ export default function Lecciones() {
     },
     {
       title: `${t('galamianJunior:leccion_title_8')}`,
-      href: '/estudia/formulario-de-inscripcion',
+      href: '/inscripcion',
       icon: UserGroupIcon,
       iconForeground: 'text-gold-600',
       iconBackground: 'bg-neutral-50',

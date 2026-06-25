@@ -130,7 +130,7 @@ export default function EstudioJunior() {
           </div>
           <Lecciones />
           <div className="mt-10">
-            <Link href="/estudia/formulario-de-inscripcion" passHref>
+            <Link href="/inscripcion" passHref>
               <a className="text-base font-semibold tracking-tight no-underline transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                 {' '}
                 {t('common:button_solicita_una_plaza')}{' '}

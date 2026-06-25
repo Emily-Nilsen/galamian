@@ -15,7 +15,7 @@ export default function CTA() {
         </h2>
         <div className="flex mt-8 lg:mt-0 lg:flex-shrink-0">
           <div className="inline-flex rounded-none">
-            <Link href="/estudia/formulario-de-inscripcion" passHref>
+            <Link href="/inscripcion" passHref>
               <a className="inline-flex items-center justify-center px-5 py-3 text-base font-semibold tracking-tight text-white transition duration-300 ease-in-out border border-transparent rounded-none bg-gold-600 hover:bg-neutral-900">
                 {t('estudia:cta_form')}
               </a>

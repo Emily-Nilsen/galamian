@@ -176,7 +176,7 @@ export default function JovenesArtistas() {
                 </p>
               </div>
               <div className="flex pt-6 lg:mt-0">
-                <Link href="/estudia/formulario-de-inscripcion" passHref>
+                <Link href="/inscripcion" passHref>
                   <a className="text-base font-semibold leading-7 transition duration-150 ease-in-out text-gold-600 hover:text-gold-500">
                     Formulario de inscripción{' '}
                     <span aria-hidden="true">&rarr;</span>

@@ -1,17 +1,11 @@
-import Formulario from '../../components/estudio/formulario';
+import Formulario from '../components/estudio/formulario';
 import Image from 'next/image';
-import Layout from '../../components/layout';
+import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
-import {
-  MailIcon,
-  MenuIcon,
-  PhoneIcon,
-  XIcon,
-  LocationMarkerIcon,
-} from '@heroicons/react/outline';
+import { MailIcon } from '@heroicons/react/outline';
 
-const FormularioDeInscripcion = () => {
+const Inscripcion = () => {
   const { t } = useTranslation();
 
   return (
@@ -35,9 +29,7 @@ const FormularioDeInscripcion = () => {
             {t('common:enrol_download_button')}
           </a>
         </div>
-        <p className="my-10 text-center">
-          {t('common:enrol_send_instruction')}
-        </p>
+        <p className="my-10 text-center">{t('common:enrol_send_instruction')}</p>
         <div></div>
         <a
           className=" hover:text-neutral-900 hover:underline"
@@ -90,4 +82,4 @@ const FormularioDeInscripcion = () => {
   );
 };
 
-export default FormularioDeInscripcion;
+export default Inscripcion;

@@ -30,7 +30,7 @@ const Audiciones = () => {
                 {t('estudia:auditions_subtitle_2')}.
               </p>
               <div className="mt-10">
-                <Link href="/estudia/formulario-de-inscripcion" passHref>
+                <Link href="/inscripcion" passHref>
                   <a className="text-base font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                     {' '}
                     {t('common:button_inscribir_1')}
@@ -223,7 +223,7 @@ const Audiciones = () => {
                       {t('estudia:access_para_3_2')}
                     </span>{' '}
                     {t('estudia:access_para_3_3')}{' '}
-                    <Link href="/estudia/formulario-de-inscripcion" passHref>
+                    <Link href="/inscripcion" passHref>
                       <a className="font-semibold tracking-tight transition duration-300 ease-in-out text-gold-600 hover:text-neutral-900">
                         {t('estudia:access_para_3_4')}
                       </a>

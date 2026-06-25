@@ -132,7 +132,7 @@ export default function Navbar() {
   //     )}${new Date().getFullYear()}${t(
   //       'navbar:estudiar_description_3_part_2'
   //     )}`,
-  //     href: '/estudia/formulario-de-inscripcion',
+  //     href: '/inscripcion',
   //     icon: PencilAltIcon,
   //   },
   // ];
@@ -227,8 +227,8 @@ export default function Navbar() {
     //   href: `/estudios/oag`,
     // },
     {
-      name: `${t('navbar:link_2')}`,
-      href: `/estudia`,
+      name: `${t('navbar:inscripcion')}`,
+      href: `/inscripcion`,
     },
     {
       name: `${t('navbar:estudiar_name_2')}`,
@@ -568,10 +568,10 @@ export default function Navbar() {
                   </>
                 )}
               </Popover> */}
-              {/* Estudia */}
-              <Link href="/estudia" passHref>
+              {/* Inscripción */}
+              <Link href="/inscripcion" passHref>
                 <a className="self-end text-sm tracking-tight uppercase transition duration-300 ease-in-out text-neutral-500 hover:text-neutral-900">
-                  {t('navbar:link_2')}
+                  {t('navbar:inscripcion')}
                 </a>
               </Link>
               {/* Estudios */}

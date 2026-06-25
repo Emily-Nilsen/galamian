@@ -9,10 +9,9 @@ export default function Footer() {
 
   const navigation = {
     estudiar: [
-      { name: `${t('footer:estudia_1')}`, href: '/estudia' },
       {
         name: `${t('footer:estudia_2')}`,
-        href: '/estudia/formulario-de-inscripcion',
+        href: '/inscripcion',
       },
       { name: `${t('footer:estudia_3')}`, href: '/estudios' },
     ],

@@ -21,6 +21,7 @@ const navbar = {
   blogpost_name_1: `The bulletin is coming soon!`,
   blogpost_preview_1: `Stay tuned for our upcoming news and events.`,
   link_2: `Study`,
+  inscripcion: `Enrolment`,
   callsToAction: `Contact`,
   estudiar_name_1: `Study at the GIA`,
   estudiar_description_1_part_1: `Find information about studying at the GIA, about auditions to attend the`,
