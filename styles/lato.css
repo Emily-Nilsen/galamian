@@ -1,0 +1,41 @@
+/* Lato 2.015, the same version Adobe Fonts served (Google Fonts has 1.x) */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('../node_modules/lato-font/fonts/lato-light/lato-light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300;
+  src: url('../node_modules/lato-font/fonts/lato-light-italic/lato-light-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../node_modules/lato-font/fonts/lato-normal/lato-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../node_modules/lato-font/fonts/lato-normal-italic/lato-normal-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('../node_modules/lato-font/fonts/lato-bold/lato-bold.woff2') format('woff2');
+}

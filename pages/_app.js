@@ -1,3 +1,6 @@
+// Self-hosted fonts, so the site no longer depends on Adobe Fonts
+import '../styles/lato.css';
+import '../styles/ysabeau-office.css';
 import '../styles/globals.css';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';

@@ -11,10 +11,6 @@ class MyDocument extends Document {
       <Html lang="es">
         <Head>
           <link rel="icon" href="/media/galamian-black.svg" />
-          <link
-            rel="stylesheet"
-            href="https://use.typekit.net/egi6zfi.css"
-          ></link>
         </Head>
         <body>
           <Main />
